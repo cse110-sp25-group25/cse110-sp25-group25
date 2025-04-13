@@ -54,3 +54,4 @@ Suggestions =
 ## **Slack Icon:**
 
 - using our logo
+- ![Logo](logo.png)

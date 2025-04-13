@@ -1,7 +1,7 @@
 # Quarter Life Crisis
 
 <!-- Team Brand Picture -->
- <img src="images/logo.png" alt="Quarter Life Crisis Team Logo" width ="300"/>
+ <img src="branding/logo.png" alt="Quarter Life Crisis Team Logo" width ="300"/>
 
 ### Our Values
 > [!IMPORTANT]
@@ -75,17 +75,17 @@ Hi I'm Nathan Chang and I'm a third year math computer science major. I'm a fan 
 Hello! My name is Ethan and I'm a third year math-computer science major. I am interested in machine learning and back-end development. I love playing poker and basketball in my free time.  
 [Ethan's Github](https://github.com/ebluong005)
 
+#### Joshua Park
+<img src="images/Joshua.png" alt="Joshua" width="200"/>
+
+Hi I’m Josh, a 4th year Computer Engineering major. I’m interested in artificial intelligence. I like surfing and snowboarding  
+[Josh's Github](https://github.com/joshjppark)
+
 
 #### Thomas Nghiem
 Hi I’m Thomas Nghiem and I’m a second year Computer Engineering major. I’m interested in learning more about robotics and embedded systems. I like to play tennis and volleyball in my free time.  
 [Thomas' Github](https://github.com/ThomasNghiem2)
 
-
-#### Joshua Park
-Hi I’m Josh, a 4th year Computer Engineering major. I’m interested in artificial intelligence. I like surfing and snowboarding  
-[Josh's Github](https://github.com/joshjppark)
-
-<!-- Joshua's Picture
-Thomas' Picture -->
+<!--Thomas' Picture -->
 
 
