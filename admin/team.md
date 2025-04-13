@@ -1,6 +1,7 @@
-# Team Name
+# Quarter Life Crisis
 
 <!-- Team Brand Picture -->
+ <img src="images/logo.png" alt="Quarter Life Crisis Team Logo" width ="300"/>
 
 ### Our Values
 > [!IMPORTANT]
