@@ -21,19 +21,11 @@ A team that codes like they’re figuring out life — with passion, confusion, 
 
 ---
 
-## **Logo Idea:**
-
-25 with some touch of chaotic (flame or crack)
-
-![Quarter Life Crisis Logo](images/logo.png)
-
----
-
 ## **Color Palette:**
 
-- Red (#CE0100)
-- Black (#000000)
-- White (#FFFFFF)
+- Red
+- Black 
+- White 
 
 ---
 
