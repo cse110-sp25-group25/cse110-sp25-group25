@@ -68,7 +68,7 @@ Hi I'm Harrison and I'm a third year computer science major. I like building thi
 Hi I'm Nathan Chang and I'm a third year math computer science major. I'm a fan building and working on projects with group mates! I'm aspiring to be hopefully a SWE or in some related field, in my free time I enjoy cafe hopping and exploring cities!  
 [Nathan's Github](https://github.com/nkcha02)
 
-#### Ethan
+#### Ethan Luong
 <img src="images/Ethan.jpg" alt="Ethan" width="200"/>
 
 Hello! My name is Ethan and I'm a third year math-computer science major. I am interested in machine learning and back-end development. I love playing poker and basketball in my free time.  
