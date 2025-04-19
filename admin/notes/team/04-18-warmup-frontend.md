@@ -54,5 +54,6 @@
 
 - [ ]  Thomas: Begin styling in the CSS file, delagte tasks if needed
 - [ ]  Harrison and Kevin: Assist in CSS
+- [ ]  Harrison: Research about card flipping
 - [ ]  Cass: Design blackjack game UI on Figma
 - [ ]  Ethan: Create a new branch for Blackjack game, plan out with Cass on the elements of the page
