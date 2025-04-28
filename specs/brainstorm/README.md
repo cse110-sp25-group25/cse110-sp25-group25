@@ -1,0 +1,3 @@
+# Brainstorm
+
+Miro board link: [Quarter Life Crisis Brainstorm Board](https://miro.com/welcomeonboard/RDdMVUtRc2NhbXFVM1lwUjRObHVhell5d1pqdnNlVjRSS3JGWDVVekYvd25xNHUrOHB1UXBkVTZFNmhOaVhESWpXSzFsVUpJRjR5d3FxSmYrcTNQU3JOcklieE15L21WUmRDaVg1OUJ0N0J6bEJJdHBrYVhKVWxIQVZVZzN0c1VBS2NFMDFkcUNFSnM0d3FEN050ekl3PT0hdjE=?share_link_id=630655134428)
