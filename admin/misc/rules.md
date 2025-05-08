@@ -24,8 +24,8 @@
 
 ## Conflict Resolution Strategy
 1. Talk with that person
-    a. Try to DM
-    b. If unresponsive, approach at lecture?
+    - Try to DM
+    - If unresponsive, approach at lecture?
 2. Communicate to TA
 3. Communicate to Professor
 
