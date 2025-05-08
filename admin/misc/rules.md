@@ -37,3 +37,8 @@
 ## Success Metrics
 - Thorough documentation
 - Pass all tests
+
+## Acknowledgement
+By signing below, you are certifying that you have read the group contract and agree to it.
+
+SIGN HERE: 
