@@ -42,3 +42,4 @@
 By signing below, you are certifying that you have read the group contract and agree to it.
 
 SIGN HERE: 
+Joshua Park
