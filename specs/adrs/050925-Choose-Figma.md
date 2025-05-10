@@ -1,6 +1,6 @@
 # ADR: Choose Figma for Frontend UI Design
 
-**Status:** Accepted 
+**Status:** Accepted
 **Date:** 2025-05-09 
 
 ## Context
