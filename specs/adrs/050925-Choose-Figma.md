@@ -30,4 +30,4 @@ Figma stood out because:
 - Some onboarding/training needed for those new to Figma.
 - Time and effort required to migrate assets from other tools.
 
-Overall, adopting Figma aligns with our goals for speed, collaboration, and design consistency across frontend development.
+Overall, adopting Figma aligns with our goals for speed, collaboration, and design consistency across frontend design.
