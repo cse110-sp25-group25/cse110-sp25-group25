@@ -1,10 +1,10 @@
 # Configuration for the Jekyll template "Just the Docs"
 
 
-status: accepted
-date: 2025-05-08
-decision-makers: [Harry, Kalkin, Kate, Evan]
-informed: [Evan, Harry, Harrison, Kate, Ethan, Kalkin, Joshua, Nathan]
+status: accepted  
+date: 2025-05-08  
+decision-makers: [Harry, Kalkin, Kate, Evan]  
+informed: [Evan, Harry, Harrison, Kate, Ethan, Kalkin, Joshua, Nathan]  
 ---
 
 # Choosing Jest for JavaScript Testing
@@ -52,5 +52,9 @@ We will confirm this decision through:
 * Neutral, because it works well with both JavaScript and TypeScript out of the box.
 * Bad, because its configuration can be complex in custom setups.
 * Bad, because performance can lag in larger codebases.
+
+## More Information
+
+For further reading or setup references, see the [Jest documentation](https://jestjs.io/docs/getting-started).
 
 
