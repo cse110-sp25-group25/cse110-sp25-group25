@@ -1,7 +1,5 @@
 # Configuration for the Jekyll template "Just the Docs"
-parent: Decisions
-nav_order: 100
-title: ADR Template
+
 
 status: accepted
 date: 2025-05-08
