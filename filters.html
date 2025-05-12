@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="filters.css" />
     <title>Restaurant Crisis</title>
   </head>
   <body>
@@ -21,14 +21,13 @@
     </header>
 
     <main>
-      <!-- Filter Landing Page -->
       <section class="filter-selection">
         <h2>Filter choices by…</h2>
         <div class="filter-buttons">
           <button onclick="showOptions('cuisine')">Cuisine</button>
-          <button onclick="showOptions('Max Price')">Max Price</button>
-          <button onclick="showOptions('Max Distance')">Max Distance</button>
-          <button onclick="showOptions('Min Rating')">Min Rating</button>
+          <button onclick="showOptions('price')">Max Price</button>
+          <button onclick="showOptions('distance')">Max Distance</button>
+          <button onclick="showOptions('rating')">Min Rating</button>
         </div>
         <button class="skip-btn">Skip</button>
       </section>
@@ -37,11 +36,12 @@
       <section class="filter-options hidden" id="cuisine-options">
         <h2>What cuisines would you like to try?</h2>
         <div class="options-grid">
-          <button class="option-btn" data-value="Cuisine">Cuisine</button>
-          <button class="option-btn" data-value="Cuisine">Cuisine</button>
-          <button class="option-btn" data-value="Cuisine">Cuisine</button>
-          <button class="option-btn" data-value="Cuisine">Cuisine</button>
-          <button class="option-btn" data-value="Cuisine">Cuisine</button>
+          <button class="option-btn" data-value="cuisine1">cuisine</button>
+          <button class="option-btn" data-value="cuisine2">cuisine</button>
+          <button class="option-btn" data-value="cuisine3">cuisine</button>
+          <button class="option-btn" data-value="cuisine4">cuisine</button>
+          <button class="option-btn" data-value="cuisine5">cuisine</button>
+          <div class="empty-cell"></div> 
         </div>
         <button onclick="confirmSelection('cuisine')" class="confirm-btn">
           Confirm
@@ -49,21 +49,24 @@
       </section>
 
       <!-- Price -->
+
       <section class="filter-options hidden" id="price-options">
-        <h2>Select a maximum price range</h2>
-        <div class="options-grid">
-          <button class="option-btn" data-value="$">$</button>
-          <button class="option-btn" data-value="$$">$$</button>
-          <button class="option-btn" data-value="$$$">$$$</button>
-        </div>
-        <button onclick="confirmSelection('price')" class="confirm-btn">
+        <h2>Set maximum distance (miles)</h2>
+        <input
+          type="number"
+          id="price-input"
+          placeholder="Enter a number"
+          min="0"
+        />
+        <button onclick="confirmSelection('distance')" class="confirm-btn">
           Confirm
         </button>
       </section>
 
+
       <!-- Distance -->
       <section class="filter-options hidden" id="distance-options">
-        <h2>Set maximum distance (miles)</h2>
+        <h2>Set maximum price ($)</h2>
         <input
           type="number"
           id="distance-input"
@@ -77,20 +80,22 @@
 
       <!-- Rating -->
       <section class="filter-options hidden" id="rating-options">
-        <h2>Select minimum rating</h2>
-        <div class="options-grid">
-          <button class="option-btn" data-value="1">1★</button>
-          <button class="option-btn" data-value="2">2★</button>
-          <button class="option-btn" data-value="3">3★</button>
-          <button class="option-btn" data-value="4">4★</button>
-          <button class="option-btn" data-value="5">5★</button>
-        </div>
-        <button onclick="confirmSelection('rating')" class="confirm-btn">
+        <h2>Set minimum rating </h2>
+        <input
+          type="number"
+          id="rating-input"
+          placeholder="Enter a number"
+          min="0"
+        />
+        <button onclick="confirmSelection('distance')" class="confirm-btn">
           Confirm
         </button>
       </section>
+
     </main>
 
     <footer></footer>
+
+    <script src="filters.js"></script>
   </body>
 </html>
