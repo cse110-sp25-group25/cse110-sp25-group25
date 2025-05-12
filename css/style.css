@@ -11,7 +11,7 @@ header {
 
 nav a {
     text-decoration: none;
-    color: #333;
+    color: #ffffff;
     font-weight: bold;
 }
 
@@ -39,7 +39,7 @@ nav ul {
     }
 
     nav a:hover {
-        color: #c1c1c1;
+        color: #f3f4e4;
     }
 
     .app-icon {
@@ -59,7 +59,7 @@ nav ul {
     }
 
     nav ul {
-        background-color: #c1c1c1;
+        background-color: #b4d2ba;
         display:block;
     }
 
@@ -69,8 +69,8 @@ nav ul {
     }
 
     nav a:hover {
-        background-color: rgb(91, 91, 91);
-        color: rgb(179, 179, 179);
+        background-color: #97bb9e;
+        color: #f3f4e4;
     }
 
     .burger-icon {
@@ -85,7 +85,7 @@ nav ul {
     }
 
     .burger-icon:hover {
-        background-color: rgb(91, 91, 91);
+        background-color: #97bb9e;
     }
 
     .app-icon {
