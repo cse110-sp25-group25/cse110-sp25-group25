@@ -28,8 +28,6 @@ const userSelections = {
   });
   
 
-
-  
   // confirm selection
   function confirmSelection(type) {
     if (type === 'cuisine') {
@@ -57,7 +55,7 @@ const userSelections = {
       }
     }
     
-    //need to check how rating works (PLACEHOLDER)
+    //need to check how rating works (logic currently PLACEHOLDER)
     if (type === 'rating') {
       const val = document.getElementById('rating-input').value;
       if (validatePositiveNumber(val) && val >= 0 && val <= 5) {

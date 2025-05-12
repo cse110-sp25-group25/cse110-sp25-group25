@@ -168,6 +168,10 @@ body {
     display: none;
   }
   
+  /* Mobile Layout Notes
+   Need to add scrollable contianer for cuisine
+   */
+   
   /* Mobile Layout */
   @media (max-width: 600px) {
     .filter-buttons {
