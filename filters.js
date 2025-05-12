@@ -28,12 +28,7 @@ const userSelections = {
   });
   
 
-  // handiling cuisine selection (multiple allowed)
-  document.querySelectorAll('.option-btn').forEach(button => {
-    button.addEventListener('click', () => {
-      button.classList.toggle('selected');
-    });
-  });
+
   
   // confirm selection
   function confirmSelection(type) {
@@ -72,7 +67,8 @@ const userSelections = {
         return;
       }
     }
-  
+    
+    //REMOVE LATER (just for testing)
     console.log('Current Selections:', userSelections);
     alert(`Saved ${type} selection!`);
   }
