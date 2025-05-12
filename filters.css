@@ -171,12 +171,29 @@ body {
   /* Mobile Layout */
   @media (max-width: 600px) {
     .filter-buttons {
-      grid-template-columns: 1fr;
+      flex-direction: column;
+      width: 100%;
+      gap: 1rem;
     }
   
     nav ul {
       flex-direction: column;
       gap: 0.5rem;
+    }
+  
+    .options-grid {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      max-height: 300px; /* control the height */
+      overflow-y: auto;  /* make it scrollable */
+      padding: 1rem;
+    }
+  
+    .option-btn {
+      width: 100%;
+      max-width: 250px;
     }
   }
   
