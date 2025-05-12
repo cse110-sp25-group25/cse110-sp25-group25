@@ -1,6 +1,6 @@
 # CI/CD Pipeline Overview
 
-![Pipeline Diagram](./phase1.png)
+![Pipeline Diagram](./phase1.drawio.png)
 <!---
 TODO: Make pipeline diagram
 -->
