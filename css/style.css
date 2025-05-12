@@ -122,19 +122,21 @@ body {
 /* mobile landing page */
 @media (max-width: 550px) {
     .main-grid {
+        position: relative;
+        display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 40px;
         padding: 20px;
     }
 
     .hero {
         align-items: flex-start; 
         text-align: left;
+        padding-right: 120px;
     }
 
     .hero h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
         line-height: 1.4;
     }
 
@@ -143,7 +145,19 @@ body {
     }
 
     .feature-card {
-        max-width: 90%;
+        border: 1px solid #aaa;
+        padding: 15px;
+        border-radius: 12px;
+
+        position: absolute;
+        right: 0;
+        width: 250px;
+        transform: translateX(70%);
+    }
+
+    .card-image {
+        width: 70%;
+        height: 200px;
     }
 
 }
