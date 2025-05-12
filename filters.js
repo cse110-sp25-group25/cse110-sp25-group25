@@ -77,3 +77,8 @@ const userSelections = {
     return !isNaN(num) && num >= 0;
   }
   
+
+// to pass ESlint
+
+window.showOptions = showOptions;
+window.confirmSelection = confirmSelection;
