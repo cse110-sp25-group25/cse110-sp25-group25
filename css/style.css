@@ -80,8 +80,8 @@ nav ul {
         right: 0;
         top: 0;
         position: absolute;
-        height: 40px;
-        padding: 2px 0;
+        height: 36px;
+        padding: 4px 4px;
     }
 
     .burger-icon:hover {
