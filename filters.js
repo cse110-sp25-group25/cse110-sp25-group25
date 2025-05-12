@@ -1,4 +1,4 @@
-// Track user selections (PLACEHOLDER)
+// track user selections data (PLACEHOLDER)
 const userSelections = {
     cuisine: [],
     price: null,
