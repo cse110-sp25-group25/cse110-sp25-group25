@@ -1,4 +1,13 @@
-function showOptions(type) {
+// Track user selections (PLACEHOLDER)
+const userSelections = {
+    cuisine: [],
+    price: null,
+    distance: null,
+    rating: null,
+  };
+  
+  //function to show selected filter options
+  function showOptions(type) {
     document.querySelector('.filter-selection').classList.add('hidden');
     document.querySelectorAll('.filter-options').forEach(el => el.classList.add('hidden'));
     document.getElementById(`${type}-options`).classList.remove('hidden');
@@ -18,16 +27,59 @@ function showOptions(type) {
     });
   });
   
+
+  // handiling cuisine selection (multiple allowed)
+  document.querySelectorAll('.option-btn').forEach(button => {
+    button.addEventListener('click', () => {
+      button.classList.toggle('selected');
+    });
+  });
+  
+  // confirm selection
   function confirmSelection(type) {
-    let selected;
-    if (type === 'distance') {
-      selected = document.getElementById('distance-input').value;
-    } else {
-      selected = [...document.querySelectorAll(`#${type}-options .option-btn.selected`)]
-        .map(btn => btn.dataset.value);
+    if (type === 'cuisine') {
+      const selected = document.querySelectorAll('#cuisine-options .option-btn.selected');
+      userSelections.cuisine = Array.from(selected).map(btn => btn.dataset.value);
     }
   
-    console.log(`${type} selected:`, selected);
+    if (type === 'price') {
+      const val = document.getElementById('price-input').value;
+      if (validatePositiveNumber(val)) {
+        userSelections.price = parseFloat(val);
+      } else {
+        alert('Please enter a valid max price.');
+        return;
+      }
+    }
   
-    // Here you would store or pass this data forward
+    if (type === 'distance') {
+      const val = document.getElementById('distance-input').value;
+      if (validatePositiveNumber(val)) {
+        userSelections.distance = parseFloat(val);
+      } else {
+        alert('Please enter a valid max distance.');
+        return;
+      }
+    }
+    
+    //need to check how rating works (PLACEHOLDER)
+    if (type === 'rating') {
+      const val = document.getElementById('rating-input').value;
+      if (validatePositiveNumber(val) && val >= 0 && val <= 5) {
+        userSelections.rating = parseFloat(val);
+      } else {
+        alert('Please enter a valid rating (0–5).');
+        return;
+      }
+    }
+  
+    console.log('Current Selections:', userSelections);
+    alert(`Saved ${type} selection!`);
   }
+  
+  // function to check positive/numeric input
+  function validatePositiveNumber(value) {
+    const num = parseFloat(value);
+    return !isNaN(num) && num >= 0;
+  }
+  
