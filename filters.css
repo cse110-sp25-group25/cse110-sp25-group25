@@ -1,0 +1,203 @@
+/* prototype css */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f3e8;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+  /* Header */
+  header {
+    background-color: #cfe3cc;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  /* Main Layout */
+  main {
+    padding: 3rem 1rem;
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  /* Headings */
+  h2 {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+  }
+  
+  /* Filter Selection Buttons Grid */
+  .filter-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    max-width: 400px;
+    margin: 0 auto 2.5rem auto;
+  }
+  
+  /* All Buttons */
+  button {
+    padding: 0.8rem 1.6rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Type 2 Buttons: Filter Selection + Option Buttons */
+  .filter-buttons button,
+  .option-btn {
+    background-color: #b4d2ba;
+    color: #4b543b;
+    transition: background-color 0.3s ease;
+  }
+  
+  .filter-buttons button:hover,
+  .option-btn:hover {
+    background-color: #97b9ae;
+    color: #4b543b;
+  }
+  
+  .option-btn.selected {
+    background-color: #dce2aa;
+    color: #4b543b;
+  }
+  
+  /* Type 1 Buttons: Skip & Confirm */
+  .skip-btn,
+  .confirm-btn {
+    background-color: #4b543b;
+    color: #f3f4e4;
+    width: 50%;
+    max-width: 200px;
+    display: block;
+    margin: 0 auto;
+    transition: background-color 0.3s ease;
+  }
+  
+  .skip-btn:hover,
+  .confirm-btn:hover {
+    background-color: #000000;
+    color: #f3f4e4;
+  }
+  
+  /* Unfiform  buttonss */
+  .filter-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    max-width: 400px;
+    margin: 0 auto 2.5rem auto;
+  }
+  
+  .filter-buttons button {
+    background-color: #b9cfb8;
+    color: #333;
+    width: 150px; /* Ensures uniform width */
+    text-align: center;
+  }
+  
+  /* Filter Options Grid */
+  .options-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem 2rem;
+    justify-items: center;
+    max-width: 400px;
+    margin: 0 auto 2rem auto;
+  }
+  
+  /* Cuisine Option Buttons */
+  .option-btn {
+    background-color: #b4d2ba;
+    color: #4b543b;
+    padding: 0.75rem 1.5rem;
+    border-radius: 12px;
+    width: 120px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .option-btn:hover {
+    background-color: #97b9ae;
+    color: #4b543b;
+  }
+  
+  .option-btn.selected {
+    background-color: #dce2aa;
+    color: #4b543b;
+  }
+  
+  /* Distance, Price, and Rating Inputs */
+  input[type="number"],
+  input[type="text"] {
+    padding: 0.75rem;
+    font-size: 1rem;
+    width: 80%;
+    max-width: 300px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 2rem;
+  }
+  
+  /* Hidden Sections */
+  .hidden {
+    display: none;
+  }
+  
+  /* Mobile Layout Notes
+   Need to add scrollable contianer for cuisine
+   */
+   
+  /* Mobile Layout */
+  @media (max-width: 600px) {
+    .filter-buttons {
+      flex-direction: column;
+      width: 100%;
+      gap: 1rem;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  
+    .options-grid {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      max-height: 300px; /* control the height */
+      overflow-y: auto;  /* make it scrollable */
+      padding: 1rem;
+    }
+  
+    .option-btn {
+      width: 100%;
+      max-width: 250px;
+    }
+  }
+  
