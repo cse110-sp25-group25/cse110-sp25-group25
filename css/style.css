@@ -63,10 +63,21 @@ body {
 
 .hero-buttons button {
     padding: 15px 30px;
-    font-size: 1rem;
+    font-size: 1.2rem;
     cursor: pointer;
     border: 1px solid #aaa;
+    border-radius: 10px;
     display: block;
+}
+
+.button-type1:hover {
+    background-color: #000000;
+    color: #f3f4e4;
+}
+
+.button-type2:hover {
+    background-color: #97bb9e;
+    color: #4b543b;
 }
 
 .feature-card {
@@ -132,12 +143,13 @@ body {
     .hero {
         align-items: flex-start; 
         text-align: left;
-        padding-right: 120px;
+        padding-right: 100px;
+        padding-left: 10px;
     }
 
     .hero h1 {
         font-size: 2rem;
-        line-height: 1.4;
+        line-height: 1.5;
     }
 
     .hero-buttons {
