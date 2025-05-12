@@ -1,5 +1,9 @@
+# cse110-sp25-group25
+
+[Team page](admin/team.md)
+
 # restaurant-crisis
-[Restaurant Crisis](https://cse110-sp25-group25.github.io/restaurant-crisis/): A CSE 110 Project (Team 25)
+[Restaurant Crisis](https://cse110-sp25-group25.github.io/cse110-sp25-group25): A CSE 110 Project (Team 25)
 
 ## Setup
 

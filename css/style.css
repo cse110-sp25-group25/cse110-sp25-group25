@@ -4,28 +4,236 @@ body {
 
 /* Nav bar styles */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 10px 20px;
-    background-color: #9e9e9e;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
+    background-color: #b4d2ba;
     margin: 0;
-    padding: 0;
-    gap: 20px;
 }
 
 nav a {
     text-decoration: none;
-    color: #333;
+    color: #ffffff;
     font-weight: bold;
-    transition: color 0.2s;
 }
 
-nav a:hover {
-    color: #c1c1c1;
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* desktop navbar */
+@media (min-width:500px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav a {
+        transition: color 0.2s;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 20px;
+    }
+
+    nav a:hover {
+        color: #f3f4e4;
+    }
+
+    .app-icon {
+        height: 40px;
+    }
+
+    .burger-icon {
+        display:none;
+    }
+}
+
+/* mobile navbar */
+@media (max-width:499px) {
+    header {
+        overflow: hidden;
+        padding: 0;
+    }
+
+    nav ul {
+        background-color: #b4d2ba;
+        display:block;
+    }
+
+    nav a {
+        display: none;
+        padding: 5px 15px;
+    }
+
+    nav a:hover {
+        background-color: #97bb9e;
+        color: #f3f4e4;
+    }
+
+    .burger-icon {
+        /* background: white; */
+        transition: color 0.2s;
+        display: block;
+        right: 0;
+        top: 0;
+        position: absolute;
+        height: 36px;
+        padding: 4px 4px;
+    }
+
+    .burger-icon:hover {
+        background-color: #97bb9e;
+    }
+
+    .app-icon {
+        height: 40px;
+        padding-left: 10px;
+    }
+}
+
+/* landing page styles */
+body {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.hero {
+    margin-bottom: 40px;
+    padding-top: 40px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 5px;
+    font-family: 'Permanent Marker', cursive;
+    font-weight: 200;
+}
+
+.hero p {
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.hero-buttons button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    display: block;
+}
+
+.button-type1:hover {
+    background-color: #000000;
+    color: #f3f4e4;
+}
+
+.button-type2:hover {
+    background-color: #97bb9e;
+    color: #4b543b;
+}
+
+.feature-card {
+    flex: 1;
+    max-width: 300px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 3rem;
+
+    border: 1px solid #aaa;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.feature-card h2 {
+    margin-top: 0;
+}
+
+.card-image {
+    width: 80%;
+    height: 300px;
+    background-color: #ccc;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.stars {
+    margin-bottom: 10px;
+}
+
+.tags span {
+    margin-right: 10px;
+    padding: 5px 10px;
+    border: 1px solid #000;
+    display: inline-block;
+    font-size: 0.9rem;
+    }
+
+.main-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 2rem;
+    padding: 40px 0;
+}
+
+/* mobile landing page */
+@media (max-width: 550px) {
+    .main-grid {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .hero {
+        align-items: flex-start; 
+        text-align: left;
+        padding-right: 100px;
+        padding-left: 10px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+        line-height: 1.5;
+    }
+
+    .hero-buttons {
+        align-items: flex-start;
+    }
+
+    .feature-card {
+        border: 1px solid #aaa;
+        padding: 15px;
+        border-radius: 12px;
+
+        position: absolute;
+        right: 0;
+        width: 250px;
+        transform: translateX(70%);
+    }
+
+    .card-image {
+        width: 70%;
+        height: 200px;
+    }
+
 }
