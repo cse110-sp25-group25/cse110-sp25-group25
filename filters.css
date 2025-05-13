@@ -7,29 +7,6 @@ body {
     color: #333;
   }
   
-  /* Header */
-  header {
-    background-color: #cfe3cc;
-    padding: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    gap: 1.5rem;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-  }
-  
   /* Main Layout */
   main {
     padding: 3rem 1rem;
@@ -178,11 +155,6 @@ body {
       flex-direction: column;
       width: 100%;
       gap: 1rem;
-    }
-  
-    nav ul {
-      flex-direction: column;
-      gap: 0.5rem;
     }
   
     .options-grid {
