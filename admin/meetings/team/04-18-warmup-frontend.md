@@ -1,4 +1,4 @@
-# 🧍 Warmup Frontend Meeting 2
+# 🧍 Warmup Frontend Meeting (04/18)
 
 ---
 
@@ -8,7 +8,6 @@
 - ⏰ **Time:** 6:00pm to 7:00pm
 - 📍 **Location:** Zoom
 - 👥 **Attendees:** Cass, Thomas, Ethan, Harrison, Kevin
-- 🤔 **Absentees**:
 
 ---
 
