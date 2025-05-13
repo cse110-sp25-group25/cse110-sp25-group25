@@ -150,7 +150,7 @@ body {
    */
    
   /* Mobile Layout */
-  @media (max-width: 600px) {
+  @media (max-width: 550px) {
     .filter-buttons {
       flex-direction: column;
       width: 100%;
