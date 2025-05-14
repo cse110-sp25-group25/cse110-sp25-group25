@@ -8,9 +8,23 @@ document.addEventListener('DOMContentLoaded', async () => {
         localStorage.setItem('restaurantData', JSON.stringify(data));
     }
 
+    const filters = JSON.parse(localStorage.getItem('userSelections'));
+    if (filters) {
+      data = applyFilters(data, filters);
+    }
     renderRestaraunts(data);
 
 });
+
+function applyFilters(data, filters) {
+  return data.filter(r => {
+    if (filters.cuisine && r.cuisine !== filters.cuisine) return false;
+    if (filters.price && r.price > filters.price) return false;
+    if (filters.distance && r.distance > filters.distance) return false;
+    if (filters.rating && r.rating < filters.rating) return false;
+    return true;
+  });
+}
 
 function renderRestaraunts(data) {
     const container = document.getElementById('restaurant-list');
@@ -29,4 +43,25 @@ function renderRestaraunts(data) {
     `;
     container.appendChild(div);
   });
+
+
+  function saveToDeck(id) {
+    const all = JSON.parse(localStorage.get('restaurantData'));
+    const saved = JSON.parse(localStorage.getItem('deck'));
+
+    const toAdd = all.find(r => r.id === id);
+    if(!toAdd) {
+      alert("Restaraunt N/A");
+      return;
+    }
+
+    const exists = saved.some( r=> r.id === id);
+    if(!exists) {
+      saved.push(toAdd);
+      localStorage.setItem('deck', JSON.stringify(saved));
+      alert("saved");
+    } else {
+      alert('already in deck');
+    }
+  }
 }
