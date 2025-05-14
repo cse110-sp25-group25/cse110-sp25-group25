@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="filters.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/scripts.js"></script>
+
     <title>Restaurant Crisis</title>
-</head>
-<body>
+  </head>
+  <body>
+    
     <header>
-        <img src="assets/app_icon.svg" alt="app_icon"> <!--insert app icon here!-->
+        <img src="assets/app-icon.png" alt="app_icon" class="app-icon"> <!--insert app icon here!-->
         <!-- nav bar -->
         <nav>
             <ul>
@@ -17,14 +22,82 @@
                 <li><a href="filters.html">Filters</a></li>
             </ul>
         </nav>
+        <img src="assets/burger-menu.png" alt="dropdown_icon" class="burger-icon"> <!-- insert burger icon here!-->
     </header>
 
     <main>
+        <section class="filter-selection">
+          <h2>Filter choices by…</h2>
+          <div class="filter-buttons">
+            <button onclick="showOptions('cuisine')">Cuisine</button>
+            <button onclick="showOptions('price')">Max Price</button>
+            <button onclick="showOptions('distance')">Max Distance</button>
+            <button onclick="showOptions('rating')">Min Rating</button>
+          </div>
+          <button class="skip-btn">Skip</button>
+        </section>
 
+        <!-- Cuisine -->
+        <section class="filter-options hidden" id="cuisine-options">
+          <h2>What cuisines would you like to try?</h2>
+          <div class="options-grid">
+            <button class="option-btn" data-value="cuisine1">cuisine</button>
+            <button class="option-btn" data-value="cuisine2">cuisine</button>
+            <button class="option-btn" data-value="cuisine3">cuisine</button>
+            <button class="option-btn" data-value="cuisine4">cuisine</button>
+            <button class="option-btn" data-value="cuisine5">cuisine</button>
+            <div class="empty-cell"></div>
+          </div>
+          <form onsubmit="confirmSelection('cuisine'); return false;">
+            <button type="submit" class="confirm-btn">Confirm</button>
+          </form>
+        </section>
+
+        <!-- Price -->
+        <section class="filter-options hidden" id="price-options">
+          <h2>Set maximum price ($)</h2>
+          <form onsubmit="confirmSelection('price'); return false;">
+            <input
+              type="number"
+              id="price-input"
+              placeholder="Enter a number"
+             
+            />
+            <button type="submit" class="confirm-btn">Confirm</button>
+          </form>
+        </section>
+
+        <!-- Distance -->
+        <section class="filter-options hidden" id="distance-options">
+          <h2>Set maximum distance (miles)</h2>
+          <form onsubmit="confirmSelection('distance'); return false;">
+            <input
+              type="number"
+              id="distance-input"
+              placeholder="Enter a number"
+              
+            />
+            <button type="submit" class="confirm-btn">Confirm</button>
+          </form>
+        </section>
+
+        <!-- Rating -->
+        <section class="filter-options hidden" id="rating-options">
+          <h2>Set minimum rating</h2>
+          <form onsubmit="confirmSelection('rating'); return false;">
+            <input
+              type="number"
+              id="rating-input"
+              placeholder="Enter a number"
+              
+            />
+            <button type="submit" class="confirm-btn">Confirm</button>
+          </form>
+        </section>
     </main>
+    <footer></footer>
 
-    <footer>
-
-    </footer>
-</body>
+    <script src="filters.js"></script>
+  </body>
 </html>
+
