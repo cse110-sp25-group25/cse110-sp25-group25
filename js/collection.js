@@ -43,10 +43,11 @@ function renderRestaraunts(data) {
     `;
     container.appendChild(div);
   });
+}
 
 
   function saveToDeck(id) {
-    const all = JSON.parse(localStorage.get('restaurantData'));
+    const all = JSON.parse(localStorage.getItem('restaurantData'));
     const saved = JSON.parse(localStorage.getItem('deck'));
 
     const toAdd = all.find(r => r.id === id);
@@ -64,4 +65,3 @@ function renderRestaraunts(data) {
       alert('already in deck');
     }
   }
-}
