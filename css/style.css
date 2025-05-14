@@ -22,7 +22,7 @@ nav ul {
 }
 
 /* desktop navbar */
-@media (min-width:500px) {
+@media (min-width:551px) {
     header {
         display: flex;
         justify-content: space-between;
@@ -52,7 +52,7 @@ nav ul {
 }
 
 /* mobile navbar */
-@media (max-width:499px) {
+@media (max-width:550px) {
     header {
         overflow: hidden;
         padding: 0;
