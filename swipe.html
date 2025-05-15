@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Swipe Restaurants</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Permanent+Marker&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <img src="assets/app-icon.png" alt="app icon" class="app-icon" />
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="collection.html">Collection</a></li>
+        <li><a href="filters.html">Filters</a></li>
+      </ul>
+    </nav>
+    <img src="assets/burger-menu.png" alt="menu" class="burger-icon" />
+  </header>
+
+  <!-- Swipe Layout -->
+  <main class="swipe-layout">
+    <div class="swipe-container">
+      <!-- Left Hint -->
+      <div class="swipe-hint left-hint">
+        <span class="hint-icon">◀</span>
+        <span class="hint-text">
+          swipe left<br/>
+          to get a new card
+        </span>
+      </div>
+
+      <!-- Card -->
+      <div id="card-container">
+        <div class="restaurant-card" data-id="1" data-name="Pizza Place">
+          <h2>Restaurant Title</h2>
+          <img
+            src="assets/restaurant.jpg"
+            alt="restaurant"
+            class="card-img"
+          />
+          <div class="details">
+            <span class="rating">⭐ 4.3</span>
+            <span class="distance">📍 10 mi</span>
+          </div>
+          <div class="tags">
+            <span class="tag">cuisine</span>
+            <span class="tag">cuisine</span>
+            <span class="tag">+2</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Hint -->
+      <div class="swipe-hint right-hint">
+        <span class="hint-icon">▶</span>
+        <span class="hint-text">
+          swipe right<br/>
+          to save to collection
+        </span>
+      </div>
+    </div>
+
+    <!-- Accept / Reject Buttons -->
+    <div class="swipe-buttons">
+      <button class="button-type2" title="Reject">❌</button>
+      <button class="button-type2" title="Accept">✅</button>
+    </div>
+  </main>
+</body>
+</html>

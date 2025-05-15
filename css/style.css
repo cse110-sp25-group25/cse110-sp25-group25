@@ -1,6 +1,10 @@
 body {
+    background-color: #f3f4e4;
+    color: #4b543b;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 24px;                  
     margin: 0;
-}
+  }
 
 /* Nav bar styles */
 header {
@@ -237,3 +241,128 @@ body {
     }
 
 }
+
+/*Swipe card styles */
+.swipe-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    /* page bg lives on body */
+  }
+  .swipe-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  /* Hints */
+  .swipe-hint {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.5rem;      /* 24px text */
+    color: #b57f50;
+    text-align: center;
+    max-width: 120px;
+  }
+  
+  .left-hint  { flex-direction: row-reverse;}
+
+  .right-hint { flex-direction: row;}
+
+  .hint-text {
+    line-height: 1.2;        /* tighten up the two lines */
+  }
+
+  .hint-icon {
+    font-size: 2.5rem;       /* ~40px arrow */
+    line-height: 1;          /* no extra spacing */
+  }
+
+  
+  /* — Restaurant Card — */
+  .restaurant-card {
+    background-color: #ffffff;              /* card bg */
+    border-radius: 20px;
+    padding: 1rem;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+  }
+  .restaurant-card h2 {
+    font-size: 36px;                        /* title 36px */
+    margin: 0.5rem 0;
+    color: #4b543b;
+  }
+  .card-img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin: 1rem 0;
+  }
+  .details {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 1.5rem;                      /* 24px */
+  }
+  .rating {
+    color: #dce2aa;                         /* star */
+  }
+  .distance {
+    color: #4b543b;
+  }
+  
+  /* Tags */
+  .tag {
+    display: inline-block;
+    margin: 0.2rem;
+    padding: 0.3rem 0.8rem;
+    font-size: 1.5rem;                      /* 24px */
+    background-color: #b4d2ba;
+    color: #4b543b;
+    border-radius: 20px;
+  }
+  
+  /* — Swipe Buttons (Type 2) — */
+  .swipe-buttons {
+    margin-top: 2rem;
+    display: flex;
+    gap: 2rem;
+  }
+  .button-type2 {
+    background-color: #b4d2ba;              /* default bg */
+    color: #4b543b;
+    font-family: inherit;
+    font-size: 2.25rem;                     /* 36px */
+    border: none;
+    border-radius: 20px;
+    padding: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .button-type2:hover {
+    background-color: #97bb9e;              /* hover bg */
+  }
+  .swipe-buttons .button-type2 {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;                     /* circular on swipe page */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* — Swipe Animations — */
+  .restaurant-card.swipe-right {
+    transform: translateX(120%) rotate(15deg);
+    opacity: 0;
+  }
+  .restaurant-card.swipe-left {
+    transform: translateX(-120%) rotate(-15deg);
+    opacity: 0;
+  }
+  
