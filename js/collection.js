@@ -15,24 +15,38 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (filters) {
       data = applyFilters(data, filters);
     }
+
+
+    if(!data || data.length == 0) {
+      console.warn("no data, can't render");
+      return;
+    }
+
     const random = data[Math.floor(Math.random() * data.length)];
     renderRestaurants(random);
-    renderDeck();
+    if (document.getElementById('deck-list')) {
+      renderDeck();
+    }
 
 });
 
 function applyFilters(data, filters) {
   return data.filter(r => {
     if (filters.cuisine && r.cuisine !== filters.cuisine) return false;
-    if (filters.price && r.price > filters.price) return false;
-    if (filters.distance && r.distance > filters.distance) return false;
-    if (filters.rating && r.rating < filters.rating) return false;
+    if (filters.price && r.price.length > filters.price.length) return false;
+
+    // Parse distance and rating
+    if (filters.distance && r.distance > parseFloat(filters.distance)) return false;
+    if (filters.rating && r.rating < parseFloat(filters.rating)) return false;
+
     return true;
   });
 }
 
 function renderRestaurants(r) {
+ 
     const container = document.getElementById('restaurant-list');
+     if(!container) return;
     container.innerHTML ='';
 
     if (Array.isArray(r)) {
@@ -75,11 +89,12 @@ function renderRestaurants(r) {
     }
   }
 
-  document.addEventListener('DOMContentLoaded', renderDeck);
+  
 
 
   function renderDeck() {
     const container = document.getElementById("deck-list");
+    if(!container) return;
     container.innerHTML ='';
 
     const saved = JSON.parse(localStorage.getItem('deck')) || [];
@@ -115,3 +130,5 @@ function renderRestaurants(r) {
 
   }
   window.saveToDeck = saveToDeck;
+  window.renderDeck = renderDeck;
+
