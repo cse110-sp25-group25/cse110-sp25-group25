@@ -1,4 +1,13 @@
 window.addEventListener('DOMContentLoaded', init);
+document.addEventListener('DOMContentLoaded', () => {
+  const deckSection = document.getElementById('deck-section');
+  if (deckSection && !window.location.pathname.includes('collection.html')) {
+    deckSection.style.display = 'none';
+  }
+});
+
+
+
 
 function init() {
     // responsive navbar on mobile
@@ -19,3 +28,4 @@ function setupDropDown() {
         });
     })
 }
+

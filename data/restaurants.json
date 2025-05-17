@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "name": "Sakura Sushi",
+    "cuisine": "Japanese",
+    "price": "$$",
+    "distance": 1.2,
+    "rating": 4.6,
+    "location": "Downtown",
+    "image": "assets/images/sakura.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Pasta Paradise",
+    "cuisine": "Italian",
+    "price": "$$$",
+    "distance": 3.5,
+    "rating": 4.2,
+    "location": "Uptown",
+    "image": "assets/images/pasta.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Burger Barn",
+    "cuisine": "American",
+    "price": "$",
+    "distance": 0.8,
+    "rating": 4.0,
+    "location": "Midtown",
+    "image": "assets/images/burger.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Curry House",
+    "cuisine": "Indian",
+    "price": "$$",
+    "distance": 2.0,
+    "rating": 4.7,
+    "location": "Downtown",
+    "image": "assets/images/curry.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Taco Town",
+    "cuisine": "Mexican",
+    "price": "$",
+    "distance": 1.5,
+    "rating": 4.3,
+    "location": "Suburbs",
+    "image": "assets/images/taco.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Pho Palace",
+    "cuisine": "Vietnamese",
+    "price": "$$",
+    "distance": 2.3,
+    "rating": 4.4,
+    "location": "Midtown",
+    "image": "assets/images/pho.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Dragon Wok",
+    "cuisine": "Chinese",
+    "price": "$$",
+    "distance": 3.1,
+    "rating": 4.1,
+    "location": "Chinatown",
+    "image": "assets/images/wok.jpg"
+  },
+  {
+    "id": 8,
+    "name": "The Greek Spot",
+    "cuisine": "Greek",
+    "price": "$$",
+    "distance": 1.9,
+    "rating": 4.5,
+    "location": "Downtown",
+    "image": "assets/images/greek.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Bagel Bros",
+    "cuisine": "Breakfast",
+    "price": "$",
+    "distance": 0.5,
+    "rating": 4.0,
+    "location": "Midtown",
+    "image": "assets/images/bagel.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Green Garden",
+    "cuisine": "Vegan",
+    "price": "$$",
+    "distance": 2.7,
+    "rating": 4.8,
+    "location": "Uptown",
+    "image": "assets/images/vegan.jpg"
+  }
+]
