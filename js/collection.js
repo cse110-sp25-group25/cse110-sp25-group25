@@ -113,9 +113,5 @@ function renderRestaurants(r) {
       }
     
 
-    function clearDeck() {
-      localStorage.removeItem('deck');
-      renderDeck();
-    }
   }
   window.saveToDeck = saveToDeck;
