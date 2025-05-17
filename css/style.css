@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    background-color: #f5f5e1; 
 }
 
 /* Nav bar styles */
@@ -110,6 +111,7 @@ body {
 
 .hero h1 {
     font-size: 3rem;
+    color: #3a3f2c;
     margin-bottom: 5px;
     font-family: 'Permanent Marker', cursive;
     font-weight: 200;
@@ -117,6 +119,7 @@ body {
 
 .hero p {
     margin-bottom: 30px;
+    color: #4b4b4b;
 }
 
 .hero-buttons {
@@ -134,9 +137,21 @@ body {
     display: block;
 }
 
+.button-type1 {
+    background-color: #4b543b;
+    color: white;
+    border: none;
+}
+
 .button-type1:hover {
     background-color: #000000;
     color: #f3f4e4;
+}
+
+.button-type2 {
+    background-color: #b4d2ba;
+    color: #4b543b;
+    border: none;
 }
 
 .button-type2:hover {
@@ -144,9 +159,11 @@ body {
     color: #4b543b;
 }
 
+/* card */
 .feature-card {
     flex: 1;
     max-width: 300px;
+    background-color: #ffffff;
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -159,6 +176,30 @@ body {
 
 .feature-card h2 {
     margin-top: 0;
+    font-weight: normal;
+    color: #3a3f2c;
+}
+
+.card-info {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 10px;
+    color: #4b4b4b;
+    font-size: 0.9rem;
+    align-items: center;
+}
+
+.icon {
+    height: 16px;
+    width: auto;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
 }
 
 .card-image {
