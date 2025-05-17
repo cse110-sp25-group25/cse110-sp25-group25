@@ -5,6 +5,11 @@ const userSelections = {
     distance: null,
     rating: null,
   };
+
+
+
+  const steps = ['cuisine', 'price', 'distance', 'rating'];
+  let currentStep = 0;
   
   //function to show selected filter options
   function showOptions(type) {
@@ -69,7 +74,24 @@ const userSelections = {
     //REMOVE LATER (just for testing)
     console.log('Current Selections:', userSelections);
     alert(`Saved ${type} selection!`);
+
+    goToNextStep();
   }
+
+
+  function goToNextStep() {
+    currentStep++;
+    if (currentStep < steps.length) {
+      showOptions(steps[currentStep]);
+    } else {
+      localStorage.setItem('userSelections', JSON.stringify(userSelections));
+      alert('Saved filters');
+      window.location.href = 'collection.html'
+    }
+    
+  }
+  
+
   
   // function to check positive/numeric input
   function validatePositiveNumber(value) {
@@ -82,3 +104,7 @@ const userSelections = {
 
 window.showOptions = showOptions;
 window.confirmSelection = confirmSelection;
+
+document.addEventListener('DOMContentLoaded', () => {
+  showOptions(steps[currentStep]);
+});
