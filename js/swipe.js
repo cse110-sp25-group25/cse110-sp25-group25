@@ -60,7 +60,7 @@ function setupButtons() {
             current.classList.remove('swipe-left');
             current.classList.remove('active-card');
 
-            newId = Number(current.id) + 1;
+            let newId = Number(current.id) + 1;
             
             let newChild = document.getElementById(newId)
             newChild.style.display = 'block';
@@ -80,7 +80,7 @@ function setupButtons() {
             current.classList.remove('swipe-right');
             current.classList.remove('active-card')
 
-            newId = Number(current.id) + 1;
+            let newId = Number(current.id) + 1;
             
             let newChild = document.getElementById(newId)
             newChild.style.display = 'block';
