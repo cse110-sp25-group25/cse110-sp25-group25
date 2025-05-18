@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         localStorage.setItem('restaurantData', JSON.stringify(data));
     }
 
-
+    // TODO for someone else: just replace this data with filtered data
     renderRestaurant(data);
     setupButtons();
 
@@ -58,13 +58,16 @@ function setupButtons() {
         setTimeout(() => {
             current.style.display = 'none';
             current.classList.remove('swipe-left');
-            current.classList.remove('active-card')
+            current.classList.remove('active-card');
+
             newId = Number(current.id) + 1;
             
             let newChild = document.getElementById(newId)
             newChild.style.display = 'block';
             newChild.classList.add('active-card');
         }, 300);
+
+        // TODO for someone else: make sure this card never shows up again (even on reload)
     });
 
     let accept = document.querySelector('button[title="Accept"]');
@@ -76,15 +79,15 @@ function setupButtons() {
             current.style.display = 'none';
             current.classList.remove('swipe-right');
             current.classList.remove('active-card')
+
             newId = Number(current.id) + 1;
             
             let newChild = document.getElementById(newId)
             newChild.style.display = 'block';
             newChild.classList.add('active-card');
         }, 300);
+
+        // TODO for someone else: save card to collection (localstorage)
+        // TODO for someone else: make sure this card never shows up again (even on reload)
     });
 }
-
-// -------------------
-
-
