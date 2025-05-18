@@ -1,8 +1,9 @@
 window.addEventListener('DOMContentLoaded', init);
 
-function init() {
+async function init() {
     // responsive navbar on mobile
     setupDropDown();
+
 }
 
 function setupDropDown() {
