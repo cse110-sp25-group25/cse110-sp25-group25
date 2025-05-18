@@ -18,6 +18,7 @@ function renderRestaurant(data) {
     const container = document.getElementById('card-container');
     container.innerHTML ='';
 
+    let id = 0;
     data.forEach(r => {
         const div = document.createElement('div');
         div.classList.add('restaurant-card');
@@ -39,12 +40,13 @@ function renderRestaurant(data) {
             </div>
             </div>
         `;
-        div.id = r["id"];
+        div.id = id;
+        id += 1;
         div.style.display = "none";
         container.appendChild(div);
     });
 
-    let first = document.getElementById('1');
+    let first = document.getElementById('0');
     first.classList.add("active-card");
     first.style.display = 'block';
 }
