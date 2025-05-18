@@ -38,9 +38,60 @@
         </span>
       </div>
 
+      <!-- Left Reviews -->
+      <div class="reviews left">
+        <p>"nice clean environment"<br><span>- customer 1</span></p>
+        <p>"yum"<br><span>- customer 2</span></p>
+        <p>"good food"<br><span>- awesome customer</span></p>
+      </div>
+
       <!-- Card -->
       <div id="card-container">
-        
+        <div class="restaurant-card" data-id="1" data-name="Pizza Place">
+          <div class="card-inner">
+            <!-- Front -->
+            <div class="card-front">
+              <h2>Restaurant Title</h2>
+              <img
+                src="assets/restaurant.jpg"
+                alt="restaurant"
+                class="card-img"
+              />
+              <div class="details">
+                <span class="rating">⭐ 4.3</span>
+                <span class="distance">📍 10 mi</span>
+              </div>
+              <div class="tags">
+                <span class="tag">cuisine</span>
+                <span class="tag">cuisine</span>
+                <span class="tag">+2</span>
+              </div>
+            </div>
+
+            <!-- Back -->
+            <div class="card-back">                
+                <div class="card-details">
+                  <h2>Restaurant Title</h2>
+                    <p>📍 <a href="#">Insert Address</a></p>
+                    <p>🕒 Open until XX:XX PM</p>
+                    <p>📞 XXX - XXX - XXXX</p>
+                    <div class="menu-images">
+                      <img src="assets/food1.jpg" alt="food">
+                      <img src="assets/food2.jpg" alt="food">
+                      <img src="assets/food3.jpg" alt="food">
+                    </div>
+                    <a href="#" class="view-menu">View Menu ↗</a>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Reviews -->
+      <div class="reviews right">
+        <p>"nice clean environment"<br><span>- customer 1</span></p>
+        <p>"yum"<br><span>- customer 2</span></p>
+        <p>"good food"<br><span>- awesome customer</span></p>
       </div>
 
       <!-- Right Hint -->
@@ -59,5 +110,7 @@
       <button class="button-type2" title="Accept">✅</button>
     </div>
   </main>
+  
+<script src="js/scripts.js"></script>
 </body>
 </html>
