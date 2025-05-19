@@ -216,13 +216,29 @@ body {
     margin-bottom: 10px;
 }
 
-.tags span {
-    margin-right: 10px;
-    padding: 5px 10px;
-    border: 1px solid #000;
-    display: inline-block;
+.tags {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.tag {
+    padding: 6px 14px;
+    border: none;
+    background-color: #b4d2ba;
+    border-radius: 20px;
     font-size: 0.9rem;
-    }
+    color: #333;
+    font-weight: 500;
+}
+
+/* this keeps the +2 text inline without styling */
+.more {
+    font-size: 0.9rem;
+    color: #333;
+    padding-top: 6px;
+}
 
 .main-grid {
     display: flex;
