@@ -111,7 +111,7 @@ body {
 
 .hero h1 {
     font-size: 3rem;
-    color: #3a3f2c;
+    color: #4b543b;
     margin-bottom: 5px;
     font-family: 'Permanent Marker', cursive;
     font-weight: 200;
@@ -119,7 +119,7 @@ body {
 
 .hero p {
     margin-bottom: 30px;
-    color: #4b4b4b;
+    color: #4b543b;
 }
 
 .hero-buttons {
