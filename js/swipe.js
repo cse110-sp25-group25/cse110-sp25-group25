@@ -88,27 +88,30 @@ function setupButtons(data) {
             let newId = Number(current.id) + 1;
             
             let newChild = document.getElementById(newId)
-            newChild.style.display = 'block';
-            newChild.classList.add('active-card');
-            checkIfAllSwiped(data, newId);
+            if (newChild){
+                newChild.style.display = 'block';
+                newChild.classList.add('active-card');
+            } else {
+                console.log("hello world")
+                checkIfAllSwiped(data);
+            }
         }, 300);
 
         // TODO for someone else: save card to collection (localstorage)
         // TODO for someone else: make sure this card never shows up again (even on reload)
 
         // show empty screen if no more cards left
-        checkIfAllSwiped(data);
     });
 }
 
- function checkIfAllSwiped(data, id) {
-    // console.log("type of data:", typeof data);
+ function checkIfAllSwiped(data) {
+    console.log("type of data:", typeof data);
     // console.log(data.length);
     const endScreen = document.getElementById("end-screen");
     const resetButton = document.getElementById("reset-btn");
 
 
-    if (id == data.length) {
+    // if (id == data.length) {
     // display end screen
     endScreen.style.display = "block";
 
@@ -116,13 +119,13 @@ function setupButtons(data) {
     resetButton.style.display = "block";
 
     // hide card screen
-    let current = document.querySelector('.active-card');
-    current.style.display = 'none';
+    // let current = document.querySelector('.active-card');
+    // current.style.display = 'none';
 
     // hide other two buttons
     const buttons = document.querySelector('.swipe-buttons');
     buttons.style.display = "none";
-    }
+    
     
     /* reset button functionality */
     resetButton.addEventListener("click", () => {
