@@ -2,7 +2,7 @@ body {
     background-color: #f3f4e4;
     color: #4b543b;
     font-family: 'Noto Sans', sans-serif;
-    font-size: 24px;                  
+    font-size: 24px;                 
     margin: 0;
   }
 
@@ -99,9 +99,6 @@ nav ul {
 }
 
 /* landing page styles */
-body {
-    font-family: 'Noto Sans', sans-serif;
-}
 
 .hero {
     margin-bottom: 40px;
