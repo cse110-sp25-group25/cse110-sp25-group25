@@ -86,9 +86,9 @@
 
 ### Harry
 
-- ✅ **What was completed:**
-- ⚠️ **Any blockers faced:**
-- 💬 **Thoughts/Reflections:**
+- ✅ **What was completed:** Dev 6 task: On accept, restaurant is saved to userDeck in localStorage. On page load, previously saved restaurants are no longer shown. Additionally, I added a counter and display to show the number of restaurants already saved. 
+- ⚠️ **Any blockers faced:** I felt that the tasks were assigned somewhat vaguely and also with redundancy between myself and some of the upstream devs. As a result, there was a lot of time spent writing placeholder upstream methods, then pulling the correct changes from an unmerged branch, then changing my own code to fit the new upstream specification/implementation.
+- 💬 **Thoughts/Reflections:** I think a lot of confusion about the backend implementation could have been avoided if the upstream tasks had been less redundant. Due to the redundancy, I felt that my other tasks were being changed every few hours based on what Kalkin was writing, and Kalkin's own implementation was changing to due another upstream task that he was calling from his code. Additionally, I felt that branches were being merged somewhat slowly, and it was difficult to keep track of all of the code that was being committed that my task was dependent on.
 
 ### Kate
 
