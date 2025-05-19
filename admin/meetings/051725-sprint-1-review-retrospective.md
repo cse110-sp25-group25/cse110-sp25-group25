@@ -80,9 +80,9 @@
 
 ### Harrison
 
-- ✅ **What was completed:**
-- ⚠️ **Any blockers faced:**
-- 💬 **Thoughts/Reflections:**
+- ✅ **What was completed:** Implemented the full layout and styling for swipe.html based on the design mockups
+- ⚠️ **Any blockers faced:** Initially struggled with aligning hint text and arrows properly- fixed it by switching to flex layout and separating text/icon spans. Also, minor visual inconsistencies.
+- 💬 **Thoughts/Reflections:** The dev-to-mockup matching process was more detail-oriented than expected, but satisfying once dialed in. Glad I took the time to structure the layout cleanly now — should make interaction hooks easier later
 
 ### Harry
 
