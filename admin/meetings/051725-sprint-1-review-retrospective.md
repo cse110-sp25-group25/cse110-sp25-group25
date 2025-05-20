@@ -166,7 +166,7 @@ Filter Page
 - https://miro.com/app/board/uXjVI0PCs7Q=/
 - Every attendee should put one sticky note on each column (Mad, Sad, Glad)
 
-![Retrospective Miro Board for 05-17](./sprint-images/sprint-review-notes.png)
+![Retrospective Miro Board for 05-17](./sprint-images/051725-sprint-1-retrospective-board.png)
 
 ---
 
