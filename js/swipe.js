@@ -7,11 +7,59 @@ document.addEventListener('DOMContentLoaded', async () => {
         localStorage.setItem('restaurantData', JSON.stringify(data));
     }
 
-    // TODO for someone else: just replace this data with filtered data
+    const filters = JSON.parse(localStorage.getItem('userSelections'));
+    if (filters) {
+      data = applyFilters(data, filters);
+    }
+
+    const viewed = JSON.parse(localStorage.getItem('viewed'));
+    if (viewed) {
+        data = removeViewed(data, viewed);
+    }
+
+    if(!data || data.length == 0) {
+        console.warn("no data, can't render");
+        return;
+    }
+
     renderRestaurant(data);
     setupButtons();
 });
 
+
+function applyFilters(data, filters) {
+    return data.filter(r => {
+        if (filters.cuisine && r.cuisine !== filters.cuisine) return false;
+        if (filters.price && r.price.length > filters.price.length) return false;
+        // Parse distance and rating
+        if (filters.distance && r.distance > parseFloat(filters.distance)) return false;
+        if (filters.rating && r.rating < parseFloat(filters.rating)) return false;
+
+        return true;
+  });
+}
+
+function removeViewed(data, viewed) {
+    return data.filter(r => {
+        return !viewed.includes(+r.id);
+    });
+}
+
+function saveToDeck(id) {
+    const all = JSON.parse(localStorage.getItem('restaurantData'));
+    const saved = JSON.parse(localStorage.getItem('deck')) || [];
+
+    const toAdd = all.find(r => r.id === id);
+    if(!toAdd) {
+      return;
+    }
+
+    const exists = saved.some( r=> r.id === id);
+    if(!exists) {
+      saved.push(toAdd);
+      localStorage.setItem('deck', JSON.stringify(saved));
+    }
+}
 
 function renderRestaurant(data) {
     const container = document.getElementById('card-container');
@@ -23,6 +71,8 @@ function renderRestaurant(data) {
     data.forEach(r => {
         const div = document.createElement('div');
         div.classList.add('restaurant-card');
+        // TODO: this is pretty hardcoded. Fix this in the future, especially the cuisine tags that 
+        // need to depend on the number of cuisines a restaurant is marked with
         div.innerHTML = `
             <div class="card-inner">
             <!-- Front -->
@@ -61,6 +111,7 @@ function renderRestaurant(data) {
             </div>
           </div>
         `;
+        div.setAttribute('data-id', r["id"]);
         div.id = `card_${id}`;
         div.style.display = "none";
         container.appendChild(div);
@@ -132,7 +183,9 @@ function setupButtons() {
             newChild.classList.add('active-card');
         }, 500);
 
-        // TODO for someone else: make sure this card never shows up again (even on reload)
+        //make sure this card never shows up again (even on reload)
+        let dataId = +current.getAttribute('data-id')
+        handleViewedCard(dataId);
     });
 
     let acceptBtn = document.querySelector('button[title="Accept"]');
@@ -151,9 +204,11 @@ function setupButtons() {
             newChild.style.display = 'block';
             newChild.classList.add('active-card');
         }, 500);
-
-        // TODO for someone else: save card to collection (localstorage)
-        // TODO for someone else: make sure this card never shows up again (even on reload)
+        // save card to collection (localstorage)
+        let dataId = +current.getAttribute('data-id')
+        saveToDeck(dataId);
+        // make sure this card never shows up again (even on reload)
+        handleViewedCard(dataId);
     });
 }
 
@@ -207,4 +262,15 @@ function setupFlipping(card) {
             }, 300);
         }
     });
+}
+
+function handleViewedCard(id) {
+    // simply save this id to local storage. this will just be reapplied as a filter
+    const viewed = JSON.parse(localStorage.getItem('viewed')) || [];
+
+    const exists = viewed.some( r=> r === id);
+    if(!exists) {
+      viewed.push(id);
+      localStorage.setItem('viewed', JSON.stringify(viewed));
+    }
 }

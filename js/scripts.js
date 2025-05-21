@@ -19,7 +19,3 @@ function setupDropDown() {
         });
     })
 }
-
-document.addEventListener('DOMContentLoaded', () => {
-  
-});
