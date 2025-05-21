@@ -254,7 +254,6 @@ function handleViewedCard(id) {
     if(!exists) {
       viewed.push(id);
       localStorage.setItem('viewed', JSON.stringify(viewed));
-      console.log("removed from possible selections");
     } else {
       console.log('already viewed');
     }
