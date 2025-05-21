@@ -58,7 +58,6 @@ function saveToDeck(id) {
     if(!exists) {
       saved.push(toAdd);
       localStorage.setItem('deck', JSON.stringify(saved));
-    } else {
     }
 }
 
@@ -72,6 +71,8 @@ function renderRestaurant(data) {
     data.forEach(r => {
         const div = document.createElement('div');
         div.classList.add('restaurant-card');
+        // TODO: this is pretty hardcoded. Fix this in the future, especially the cuisine tags that 
+        // need to depend on the number of cuisines a restaurant is marked with
         div.innerHTML = `
             <div class="card-inner">
             <!-- Front -->
@@ -110,7 +111,7 @@ function renderRestaurant(data) {
             </div>
           </div>
         `;
-        div.setAttribute('data_id', r["id"]);
+        div.setAttribute('data-id', r["id"]);
         div.id = `card_${id}`;
         div.style.display = "none";
         container.appendChild(div);
@@ -183,8 +184,8 @@ function setupButtons() {
         }, 500);
 
         //make sure this card never shows up again (even on reload)
-        let data_id = +current.getAttribute('data_id')
-        handleViewedCard(data_id);
+        let dataId = +current.getAttribute('data-id')
+        handleViewedCard(dataId);
     });
 
     let acceptBtn = document.querySelector('button[title="Accept"]');
@@ -205,10 +206,10 @@ function setupButtons() {
         }, 500);
 
         // save card to collection (localstorage)
-        let data_id = +current.getAttribute('data_id')
-        saveToDeck(data_id);
+        let dataId = +current.getAttribute('data-id')
+        saveToDeck(dataId);
         // make sure this card never shows up again (even on reload)
-        handleViewedCard(data_id);
+        handleViewedCard(dataId);
     });
 }
 
