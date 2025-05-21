@@ -59,7 +59,6 @@ function saveToDeck(id) {
       saved.push(toAdd);
       localStorage.setItem('deck', JSON.stringify(saved));
     } else {
-      console.log('already in deck');
     }
 }
 
