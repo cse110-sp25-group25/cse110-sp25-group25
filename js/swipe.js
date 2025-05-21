@@ -7,11 +7,52 @@ document.addEventListener('DOMContentLoaded', async () => {
         localStorage.setItem('restaurantData', JSON.stringify(data));
     }
 
-    // TODO for someone else: just replace this data with filtered data
+    const filters = JSON.parse(localStorage.getItem('userSelections'));
+    if (filters) {
+      data = applyFilters(data, filters);
+    }
+
+    if(!data || data.length == 0) {
+        console.warn("no data, can't render");
+        return;
+    }
+
     renderRestaurant(data);
     setupButtons();
 });
 
+
+function applyFilters(data, filters) {
+    return data.filter(r => {
+        if (filters.cuisine && r.cuisine !== filters.cuisine) return false;
+        if (filters.price && r.price.length > filters.price.length) return false;
+        // Parse distance and rating
+        if (filters.distance && r.distance > parseFloat(filters.distance)) return false;
+        if (filters.rating && r.rating < parseFloat(filters.rating)) return false;
+
+        return true;
+  });
+}
+
+function saveToDeck(id) {
+    const all = JSON.parse(localStorage.getItem('restaurantData'));
+    const saved = JSON.parse(localStorage.getItem('deck')) || [];
+
+    const toAdd = all.find(r => r.id === id);
+    if(!toAdd) {
+      console.log("Restaraunt N/A");
+      return;
+    }
+
+    const exists = saved.some( r=> r.id === id);
+    if(!exists) {
+      saved.push(toAdd);
+      localStorage.setItem('deck', JSON.stringify(saved));
+      console.log("saved");
+    } else {
+      console.log('already in deck');
+    }
+}
 
 function renderRestaurant(data) {
     const container = document.getElementById('card-container');
@@ -61,6 +102,7 @@ function renderRestaurant(data) {
             </div>
           </div>
         `;
+        div.setAttribute('data_id', r["id"]);
         div.id = `card_${id}`;
         div.style.display = "none";
         container.appendChild(div);
@@ -134,7 +176,8 @@ function setupButtons() {
             newChild.classList.add('active-card');
         }, 500);
 
-        // TODO for someone else: save card to collection (localstorage)
+        // save card to collection (localstorage)
+        saveToDeck(+current.getAttribute('data_id'));
         // TODO for someone else: make sure this card never shows up again (even on reload)
     });
 }
