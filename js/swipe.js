@@ -12,6 +12,11 @@ document.addEventListener('DOMContentLoaded', async () => {
       data = applyFilters(data, filters);
     }
 
+    const viewed = JSON.parse(localStorage.getItem('viewed'));
+    if (viewed) {
+        data = removeViewed(data, viewed);
+    }
+
     if(!data || data.length == 0) {
         console.warn("no data, can't render");
         return;
@@ -32,6 +37,12 @@ function applyFilters(data, filters) {
 
         return true;
   });
+}
+
+function removeViewed(data, viewed) {
+    return data.filter(r => {
+        return !viewed.includes(+r.id);
+    });
 }
 
 function saveToDeck(id) {
@@ -157,7 +168,9 @@ function setupButtons() {
             newChild.classList.add('active-card');
         }, 500);
 
-        // TODO for someone else: make sure this card never shows up again (even on reload)
+        //make sure this card never shows up again (even on reload)
+        let data_id = +current.getAttribute('data_id')
+        handleViewedCard(data_id);
     });
 
     let accept = document.querySelector('button[title="Accept"]');
@@ -177,8 +190,10 @@ function setupButtons() {
         }, 500);
 
         // save card to collection (localstorage)
-        saveToDeck(+current.getAttribute('data_id'));
-        // TODO for someone else: make sure this card never shows up again (even on reload)
+        let data_id = +current.getAttribute('data_id')
+        saveToDeck(data_id);
+        // make sure this card never shows up again (even on reload)
+        handleViewedCard(data_id);
     });
 }
 
@@ -232,4 +247,18 @@ function setupFlipping(card) {
             }, 300);
         }
     });
+}
+
+function handleViewedCard(id) {
+    // simply save this id to local storage. this will just be reapplied as a filter
+    const viewed = JSON.parse(localStorage.getItem('viewed')) || [];
+
+    const exists = viewed.some( r=> r === id);
+    if(!exists) {
+      viewed.push(id);
+      localStorage.setItem('viewed', JSON.stringify(viewed));
+      console.log("removed from possible selections");
+    } else {
+      console.log('already viewed');
+    }
 }

@@ -2,10 +2,18 @@ window.addEventListener('DOMContentLoaded', init);
 
 function init() {
     renderDeck();
+
+    const clearBtn = document.getElementById('clear-deck-btn');
+    if (clearBtn) {
+        clearBtn.addEventListener('click', () => {
+            localStorage.removeItem('deck');
+            localStorage.removeItem('viewed');
+            renderDeck();
+        });
+    }
 }
 
 function renderDeck() {
-    console.log('here');
     const container = document.getElementById("deck-list");
     if(!container) return;
     container.innerHTML ='';
@@ -40,13 +48,4 @@ function renderDeck() {
         `;
         container.appendChild(div);
     });
-
-
-    const clearBtn = document.getElementById('clear-deck-btn');
-    if (clearBtn) {
-    clearBtn.addEventListener('click', () => {
-        localStorage.removeItem('deck');
-        renderDeck();
-    });
-    }
   }
