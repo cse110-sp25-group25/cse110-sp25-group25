@@ -51,7 +51,6 @@ function saveToDeck(id) {
 
     const toAdd = all.find(r => r.id === id);
     if(!toAdd) {
-      console.log("Restaraunt N/A");
       return;
     }
 
