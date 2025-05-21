@@ -403,7 +403,6 @@ body {
 
 .card-front {
     background-color: #ffffff;
-    z-index: 2;                     /* Ensure it's above the back side initially */
 }
 
 .card-back {
@@ -460,12 +459,11 @@ body {
 }
 
 .reviews {
-    opacity: 0;
+    display: flex;
     transition: opacity 0.6s ease;
     font-style: italic;
     font-size: 1.25rem;
     color: #4b543b;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -487,9 +485,5 @@ body {
 
 .reviews.right {
   margin-left: 2rem;
-}
-
-.reviews.visible {
-    opacity: 1;
 }
 
