@@ -273,6 +273,5 @@ function handleViewedCard(id) {
     if(!exists) {
       viewed.push(id);
       localStorage.setItem('viewed', JSON.stringify(viewed));
-    } else {
     }
 }
