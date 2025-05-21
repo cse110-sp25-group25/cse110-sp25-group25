@@ -147,10 +147,27 @@ function renderRestaurant(data) {
     first.style.display = 'block';
 }
 
+function resetCard(cardId) {
+    const card      = document.getElementById(`card_${cardId}`);
+    const leftRev   = document.getElementById(`left_review_${cardId}`);
+    const rightRev  = document.getElementById(`right_review_${cardId}`);
+    if (!card) return;
+    // 1. force-unflip
+    card.classList.remove('flipped');
+    // 2. instantly hide review panes
+    [leftRev, rightRev].forEach(el => {
+      if (el) {
+        el.style.opacity = 0;
+        el.style.display = 'none';
+      }
+    });
+  }
+
 function setupButtons() {
-    let rej = document.querySelector('button[title="Reject"]');
-    rej.addEventListener("click", () => {
+    let declineBtn = document.querySelector('button[title="Reject"]');
+    declineBtn.addEventListener("click", () => {
         let current = document.querySelector('.active-card');
+        resetCard(current.id.split('_')[1]);
         current.classList.add('swipe-left');
 
         setTimeout(() => {
@@ -170,9 +187,10 @@ function setupButtons() {
         handleViewedCard(data_id);
     });
 
-    let accept = document.querySelector('button[title="Accept"]');
-    accept.addEventListener("click", () => {
+    let acceptBtn = document.querySelector('button[title="Accept"]');
+    acceptBtn.addEventListener("click", () => {
         let current = document.querySelector('.active-card');
+        resetCard(current.id.split('_')[1]);
         current.classList.add('swipe-right');
 
         setTimeout(() => {
