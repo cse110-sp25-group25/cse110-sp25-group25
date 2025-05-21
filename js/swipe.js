@@ -273,6 +273,7 @@ function handleViewedCard(id) {
       viewed.push(id);
       localStorage.setItem('viewed', JSON.stringify(viewed));
     }
+}
 
 function setupFlipping(card) {
     // const card = document.querySelector('.active-card');
