@@ -255,6 +255,5 @@ function handleViewedCard(id) {
       viewed.push(id);
       localStorage.setItem('viewed', JSON.stringify(viewed));
     } else {
-      console.log('already viewed');
     }
 }
