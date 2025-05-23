@@ -37,4 +37,6 @@ jobs:
             format: gnu        
             css: true  
             blacklist: "node_modules" 
-
+  jsdoc:
+    - name: JSDoc Action
+      uses: andstor/jsdoc-action@v1.2.1
