@@ -26,17 +26,18 @@ jobs:
       run: npx eslint ./
 
   validate-html:
-      runs-on: ubuntu-latest
-      steps:
-        - uses: actions/checkout@v4
-  
-        - name: Validate markup with Nu HTML Checker
-          uses: Cyb3r-Jak3/html5validator-action@v7.2.0   
-          with:
-            root: .               
-            format: gnu        
-            css: true  
-            blacklist: "node_modules" 
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate markup with Nu HTML Checker
+        uses: Cyb3r-Jak 3/html5validator-action@v7.2.0   
+        with:
+          root: .               
+          format: gnu        
+          css: true  
+          blacklist: "node_modules"
+
   jsdoc:
     - name: JSDoc Action
       uses: andstor/jsdoc-action@v1.2.1
