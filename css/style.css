@@ -1,6 +1,10 @@
 body {
+    background-color: #f3f4e4;
+    color: #4b543b;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 24px;                  
     margin: 0;
-}
+  }
 
 /* Nav bar styles */
 header {
@@ -22,7 +26,7 @@ nav ul {
 }
 
 /* desktop navbar */
-@media (min-width:500px) {
+@media (min-width:551px) {
     header {
         display: flex;
         justify-content: space-between;
@@ -52,7 +56,7 @@ nav ul {
 }
 
 /* mobile navbar */
-@media (max-width:499px) {
+@media (max-width:550px) {
     header {
         overflow: hidden;
         padding: 0;
@@ -237,3 +241,249 @@ body {
     }
 
 }
+
+/*Swipe card styles */
+.swipe-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    /* page bg lives on body */
+  }
+  .swipe-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  /* Hints */
+  .swipe-hint {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.5rem;      /* 24px text */
+    color: #b57f50;
+    text-align: center;
+    max-width: 120px;
+  }
+  
+  .left-hint  { flex-direction: row-reverse;}
+
+  .right-hint { flex-direction: row;}
+
+  .hint-text {
+    line-height: 1.2;        /* tighten up the two lines */
+  }
+
+  .hint-icon {
+    font-size: 2.5rem;       /* ~40px arrow */
+    line-height: 1;          /* no extra spacing */
+  }
+
+  
+  /* — Restaurant Card — */
+  .restaurant-card {
+    background-color: #ffffff;              /* card bg */
+    border-radius: 20px;
+    padding: 1rem;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+  }
+  .restaurant-card h2 {
+    font-size: 36px;                        /* title 36px */
+    margin: 0.5rem 0;
+    color: #4b543b;
+  }
+  .card-img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin: 1rem 0;
+  }
+  .details {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 1.5rem;                      /* 24px */
+  }
+  .rating {
+    color: #dce2aa;                         /* star */
+  }
+  .distance {
+    color: #4b543b;
+  }
+  
+  /* Tags */
+  .tag {
+    display: inline-block;
+    margin: 0.2rem;
+    padding: 0.3rem 0.8rem;
+    font-size: 1.5rem;                      /* 24px */
+    background-color: #b4d2ba;
+    color: #4b543b;
+    border-radius: 20px;
+  }
+  
+  /* — Swipe Buttons (Type 2) — */
+  .swipe-buttons {
+    margin-top: 2rem;
+    display: flex;
+    gap: 2rem;
+  }
+  .button-type2 {
+    background-color: #b4d2ba;              /* default bg */
+    color: #4b543b;
+    font-family: inherit;
+    font-size: 2.25rem;                     /* 36px */
+    border: none;
+    border-radius: 20px;
+    padding: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .button-type2:hover {
+    background-color: #97bb9e;              /* hover bg */
+  }
+  .swipe-buttons .button-type2 {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;                     /* circular on swipe page */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* — Swipe Animations — */
+  .restaurant-card.swipe-right {
+    transform: translateX(120%) rotate(15deg);
+    opacity: 0;
+  }
+  .restaurant-card.swipe-left {
+    transform: translateX(-120%) rotate(-15deg);
+    opacity: 0;
+  }
+  
+/* Flip Animation Styles */
+.restaurant-card {
+    width: 320px;
+    height: 460px;
+    perspective: 1000px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;     /* Smooth flipping */
+    transform-style: preserve-3d;   /* Allow 3D children rendering */
+    position: relative;
+}
+
+.restaurant-card.flipped .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;    /* Hide the "other side" when not visible */
+    border-radius: 20px;
+    padding: 1.5rem;
+    box-sizing: border-box;
+}
+
+.card-front {
+    background-color: #ffffff;
+}
+
+.card-back {
+    background-color: #ffffff;
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.25rem;
+}
+
+.card-details {
+    padding: 0.5rem 0.75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 1.25rem;
+    gap: 0.5rem;
+}
+
+.card-details h2{
+    font-size: 2rem;
+}
+
+.card-details p {
+    text-align: left;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0.75rem 0;
+}
+
+.menu-images {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+}
+
+.menu-images img {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.view-menu {
+    margin-top: 0.5rem;
+    color: #b57f50;
+    text-decoration: underline;
+    font-size: 0.9rem;
+}
+
+.reviews {
+    display: flex;
+    transition: opacity 0.6s ease;
+    font-style: italic;
+    font-size: 1.25rem;
+    color: #4b543b;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 1rem;
+    max-width: 160px;
+    gap: 2rem;
+}
+
+.reviews span {
+    color: #b57f50;
+    font-style: normal;
+    font-size: 1rem;
+}
+
+.reviews.left {
+  margin-right: 2rem; 
+}
+
+.reviews.right {
+  margin-left: 2rem;
+}
+

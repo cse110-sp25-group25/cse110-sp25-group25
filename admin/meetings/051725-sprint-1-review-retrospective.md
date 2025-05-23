@@ -75,8 +75,10 @@
 ### Yilin
 
 - ✅ **What was completed:**
-- ⚠️ **Any blockers faced:**
+Card swipe page and Card selection page and card details, uploaded assets/App logo to repo
+- ⚠️ **Any blockers faced:** family responsibility
 - 💬 **Thoughts/Reflections:**
+not sure whether there should be a transportation methods icon(car or walk) next to travel time
 
 ### Harrison
 

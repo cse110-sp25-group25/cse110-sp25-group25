@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Swipe Restaurants</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Permanent+Marker&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/scripts.js"></script>
+  <script src="js/swipe.js"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <img src="assets/app-icon.png" alt="app icon" class="app-icon" />
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="collection.html">Collection</a></li>
+        <li><a href="filters.html">Filters</a></li>
+      </ul>
+    </nav>
+    <img src="assets/burger-menu.png" alt="menu" class="burger-icon" />
+  </header>
+
+  <!-- Swipe Layout -->
+  <main class="swipe-layout">
+    <div class="swipe-container">
+      <!-- Left Hint -->
+      <div class="swipe-hint left-hint">
+        <span class="hint-icon">◀</span>
+        <span class="hint-text">
+          swipe left<br/>
+          to get a new card
+        </span>
+      </div>
+
+      <!-- Left Reviews -->
+      <div id="left-review-container"></div>
+
+      <!-- Card -->
+      <div id="card-container">
+      </div>
+
+      <!-- Right Reviews -->
+      <div id="right-review-container"></div>
+
+      <!-- Right Hint -->
+      <div class="swipe-hint right-hint">
+        <span class="hint-icon">▶</span>
+        <span class="hint-text">
+          swipe right<br/>
+          to save to collection
+        </span>
+      </div>
+    </div>
+
+    <!-- Accept / Reject Buttons -->
+    <div class="swipe-buttons">
+      <button class="button-type2" title="Reject">❌</button>
+      <button class="button-type2" title="Accept">✅</button>
+    </div>
+  </main>
+  
+<script src="js/scripts.js"></script>
+</body>
+</html>
