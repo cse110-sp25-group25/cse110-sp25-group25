@@ -627,8 +627,8 @@ body {
  
  /* ============================= Collections.html ============================= */
  main.collection {
-  padding-inline: clamp(1rem, 4vw, 3rem);
-  padding-block-end: 2.5rem;
+  padding-left: clamp(1rem, 4vw, 3rem);
+  padding-right: clamp(1rem, 4vw, 3rem);
 }
 
 .collection-header {
@@ -637,11 +637,11 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
-  margin-block: 1rem 0rem;
+  margin-top: 1rem;
 }
 
 .delete-deck-button {
-   margin-block: 0rem 2rem;
+   margin-bottom: 2rem;
 }
 
 .collection-header h2 {
@@ -664,7 +664,8 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
   gap: clamp(1rem, 5rem, 10rem);
-  padding-inline: clamp(1rem, 3vw, 2rem); 
+  padding-left: clamp(1rem, 3vw, 2rem);
+  padding-right: clamp(1rem, 3vw, 2rem);
 }
 
 .collection-restaurant-card {
@@ -704,7 +705,8 @@ body {
   text-align: center;
   font-size: 1.1rem;
   opacity: 0.8;
-  margin-block: 4rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
 /* ===== CLEAR-BUTTON ===== */
