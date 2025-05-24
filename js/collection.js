@@ -9,7 +9,7 @@ function init() {
 
     // render resturant cards if they exist
     if(savedResturants.length ===0) {
-        renderDeck(NaN, deckList);
+        renderDeck(null, deckList);
     } else{
         renderDeck(savedResturants, deckList);
         buildCuisineFilter(savedResturants, filterSelect); // populate filter
@@ -19,7 +19,7 @@ function init() {
     clearBtn.addEventListener('click', () => {
         localStorage.removeItem('deck');
         localStorage.removeItem('viewed');
-        renderDeck(Nan, deckList);
+        renderDeck(null, deckList);
         filterSelect.innerHTML = '<option value="all">All cuisines</option>';
     });
 
