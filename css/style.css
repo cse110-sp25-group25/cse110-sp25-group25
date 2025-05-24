@@ -355,7 +355,17 @@ body {
     align-items: center;
     justify-content: center;
   }
-  
+
+  /* — Reset Buttons — */
+  .reset-btn .button-type3{
+    background-color: #4CAF50; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    border-radius: 8px;
+  }
+        
   /* — Swipe Animations — */
   .restaurant-card.swipe-right {
     transform: translateX(120%) rotate(15deg);
