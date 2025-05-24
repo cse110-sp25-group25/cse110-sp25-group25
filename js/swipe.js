@@ -12,10 +12,10 @@ document.addEventListener('DOMContentLoaded', async () => {
       data = applyFilters(data, filters);
     }
 
-    // const viewed = JSON.parse(localStorage.getItem('viewed'));
-    // if (viewed) {
-    //     data = removeViewed(data, viewed);
-    // }
+    const viewed = JSON.parse(localStorage.getItem('viewed'));
+    if (viewed) {
+        data = removeViewed(data, viewed);
+    }
 
     if(!data || data.length == 0) {
         console.warn("no data, can't render");
