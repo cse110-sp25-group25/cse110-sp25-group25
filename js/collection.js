@@ -1,34 +1,71 @@
 window.addEventListener('DOMContentLoaded', init);
 
 function init() {
-    renderDeck();
 
-    const clearBtn = document.getElementById('clear-deck-btn');
-    if (clearBtn) {
-        clearBtn.addEventListener('click', () => {
-            localStorage.removeItem('deck');
-            localStorage.removeItem('viewed');
-            renderDeck();
-        });
+    const deckList = document.querySelector(".deck-list");
+    const clearBtn = document.querySelector('.clear-deck-btn');
+    const filterSelect = document.getElementById('filter-select');
+    const savedResturants = JSON.parse(localStorage.getItem('deck')) || [];
+
+    // render resturant cards if they exist
+    if(savedResturants.length ===0) {
+        renderDeck(NaN, deckList);
+    } else{
+        renderDeck(savedResturants, deckList);
+        buildCuisineFilter(savedResturants, filterSelect); // populate filter
     }
+
+    // make the clear button functionality
+    clearBtn.addEventListener('click', () => {
+        localStorage.removeItem('deck');
+        localStorage.removeItem('viewed');
+        renderDeck(Nan, deckList);
+        filterSelect.innerHTML = '<option value="all">All cuisines</option>';
+    });
+
+    // get subset of resturants from the filter
+    filterSelect.addEventListener('change', ({ target }) => {
+      const val = target.value;
+      let subset;
+
+      if (val === 'all') {
+        // show all resturants
+        subset = savedResturants;
+      } else {
+        //show only subset of resturants
+        subset = savedResturants.filter(r => {
+            const cuisine = (r.cuisine || '').toLowerCase();
+            return cuisine === val.toLowerCase();
+        });
+      }
+      renderDeck(subset, deckList);
+    });
 }
 
-function renderDeck() {
-    const container = document.getElementById("deck-list");
-    if(!container) return;
-    container.innerHTML ='';
+function buildCuisineFilter(savedResturants, filterSelect) {
+    const cuisines = [...new Set(
+        savedResturants.map(r => r.cuisine)
+            .filter(Boolean)
+        )];
 
-    const saved = JSON.parse(localStorage.getItem('deck')) || [];
+    cuisines.forEach(c => {
+      const opt = document.createElement('option');
+      opt.value = c.toLowerCase();
+      opt.textContent = c;
+      filterSelect.appendChild(opt);
+    });
+  }
 
-    if(saved.length ===0) {
-        container.innerHTML = '<p>no saved restaurants.</p>';
-        return;
+function renderDeck(subset, deckList) {
+    deckList.innerHTML = ''
+    if(!subset) {
+      deckList.innerHTML ='<p class="empty-state" role="status">You haven\'t saved any restaurants yet. Swipe right on the main page to add some.</p>';
+      return;
     }
 
-
-    saved.forEach(r => {
+    subset.forEach(r => {
         const div = document.createElement("div");
-        div.classList.add("restaurant-card");
+        div.className = "collection-restaurant-card";
         div.innerHTML = `
             <h2>${r["name"]}</h2>
             <img
@@ -46,6 +83,6 @@ function renderDeck() {
             <span class="tag">+2</span>
             </div>
         `;
-        container.appendChild(div);
+        deckList.appendChild(div);
     });
   }

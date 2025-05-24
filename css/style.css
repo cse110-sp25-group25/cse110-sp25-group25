@@ -625,6 +625,98 @@ body {
  }
  
  
- 
+ /* ============================= Collections.html ============================= */
+ main.collection {
+  padding-inline: clamp(1rem, 4vw, 3rem);
+  padding-block-end: 2.5rem;
+}
+
+.collection-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-block: 1rem 0rem;
+}
+
+.delete-deck-button {
+   margin-block: 0rem 2rem;
+}
+
+.collection-header h2 {
+  font-family: "Permanent Marker", sans-serif;
+  font-size: clamp(1.8rem, 2.5vw + 1rem, 2.4rem);
+}
+
+
+.filter-select {
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  border: 1px solid var(--border, #e0e0e0);
+  font-size: 0.95rem;
+  background: var(--bg, #fff);
+  cursor: pointer;
+}
+
+/* ========== CARD GRID ========== */
+.deck-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  gap: clamp(1rem, 5rem, 10rem);
+  padding-inline: clamp(1rem, 3vw, 2rem); 
+}
+
+.collection-restaurant-card {
+  width: 100%;
+  max-width: 15rem;   /* card size */
+  max-height: 26rem;
+  padding: 0.75rem;
+  padding-block-end: 2.5rem;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
+
+.collection-restaurant-card h2,
+.collection-restaurant-card h3 {
+  font-size: 1.4rem;   /* card name size */
+  line-height: 1.25;
+  text-align: center;
+}
+
+.collection-restaurant-card .tags {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-top: 0.4rem;
+  align-items: center;
+}
+
+.collection-restaurant-card .tag {
+  font-size: 1.3rem;
+  border-radius: 4px;
+  width: 8rem;
+}
+
+/* ===== EMPTY-STATE ===== */
+.empty-state {
+  text-align: center;
+  font-size: 1.1rem;
+  opacity: 0.8;
+  margin-block: 4rem;
+}
+
+/* ===== CLEAR-BUTTON ===== */
+.clear-deck-btn {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #ef6060;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
  
  

@@ -23,14 +23,28 @@
         <img src="assets/burger-menu.png" alt="dropdown_icon" class="burger-icon"> <!-- insert burger icon here!-->
     </header>
 
-    <main>
-        <h2>Your deck</h2>
-        <div id="deck-list"></div>
-        <button id="clear-deck-btn">Clear Deck</button>
+
+    <main class="collection">
+      <div class="collection-header">
+        <h2>Your deck</h2> 
+        <label>
+            <span class="visually-hidden">Filter by cuisine</span>
+            <select id="filter-select" class="filter-select">
+            <option value="all">All cuisines</option>
+            </select>
+        </label>
+      </div>
+      <div class="delete-deck-button">
+        <button class="clear-deck-btn" class="button-type3" title="Clear saved deck">
+        🗑️ Clear Deck
+        </button>
+      </div>
+      <div class="deck-list"></div>
+
+     
     </main>
 
     <footer>
-
     </footer>
 </body>
 </html>
