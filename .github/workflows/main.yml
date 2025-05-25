@@ -17,13 +17,11 @@ jobs:
       - uses: actions/checkout@v4
       - name: Install dependencies
         run: npm ci
-      - name: Unit Test with coverage      # changed: enable coverage output
-        run: npm test -- --coverage
-      - name: Convert LCOV → Cobertura
-        run: |           
-          npx lcov-to-cobertura-xml \
-            -i coverage/lcov.info \
-            -o coverage/cobertura-coverage.xml
+      - name: Unit Test with coverage
+        run: |
+          npm test -- --coverage \
+            --coverageReporters=lcov \
+            --coverageReporters=cobertura 
       - name: Find pull-request number   
         if: github.event_name == 'pull_request'
         id: pr
