@@ -55,30 +55,3 @@ jobs:
           format: gnu        
           css: true  
           blacklist: "node_modules"
-  jsdoc:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    steps:
-      - name: Checkout branch
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0  # needed to push back
-          ref: ${{ github.head_ref || github.ref_name }}
-
-      - name: Install modules
-        run: npm install
-
-      - name: Run JSDoc
-        run: npx jsdoc ./js -r -d ./docs/jsdoc
-
-      - name: Commit and push docs
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-
-          git add docs/jsdoc
-          git commit -m "Update JSDoc documentation" || echo "No changes"
-
-          BRANCH_NAME="${{ github.head_ref || github.ref_name }}"
-          git push origin HEAD:$BRANCH_NAME
