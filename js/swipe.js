@@ -39,6 +39,13 @@ function applyFilters(data, filters) {
   });
 }
 
+/**
+ * A function that takes in a list of data, a list of viewed elements, and returns the subset of the original list
+ * that is not in the second.
+ * @param data original list
+ * @param viewed items to remove
+ * @returns the set difference data \ viewed
+ */
 function removeViewed(data, viewed) {
     return data.filter(r => {
         return !viewed.includes(+r.id);
