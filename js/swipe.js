@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', async () => {
   let data = JSON.parse(localStorage.getItem('restaurantData'));
 
-  if (!data || true) {
+  if (!data) {
       const res = await fetch('data/restaurants.json');
       data = await res.json();
       localStorage.setItem('restaurantData', JSON.stringify(data));

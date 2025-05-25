@@ -431,7 +431,7 @@ body {
    position: relative;
    top: -2px; /* 🔼 raise the icon slightly */
  }
- 
+
    /* Tags */
   .tag {
     display: inline-block;
@@ -592,9 +592,9 @@ body {
    justify-content: space-evenly;
    align-items: center;
    position: absolute;
-   top: 37%;
+   top: 33%;
    transform: translateY(-50%);
-   width: 50%;
+   width: 60%;
    font-style: italic;
  }
  
@@ -606,12 +606,12 @@ body {
  
  
  .reviews.left {
-   left: -100px
+   left: -10px
  }
  
  
  .reviews.right {
-  right: -100px;
+  right: -10px;
   
  }
  
