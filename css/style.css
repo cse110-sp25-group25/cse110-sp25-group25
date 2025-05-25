@@ -461,7 +461,18 @@ body {
     align-items: center;
     justify-content: center;
   }
-   /* — Swipe Animations — */
+
+  /* — Reset Buttons — */
+  .reset-btn .button-type3{
+    background-color: #4CAF50; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    border-radius: 8px;
+  }
+        
+  /* — Swipe Animations — */
   .restaurant-card.swipe-right {
     transform: translateX(120%) rotate(15deg);
     opacity: 0;
@@ -614,6 +625,97 @@ body {
  }
  
  
- 
+ /* ============================= Collections.html ============================= */
+ main.collection {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.collection-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.collection-header h2 {
+  font-family: "Permanent Marker", sans-serif;
+  font-size: 2rem;
+}
+
+
+.filter-select {
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  border: 1px solid var(--border, #e0e0e0);
+  font-size: 0.95rem;
+  background: var(--bg, #fff);
+  cursor: pointer;
+}
+
+/* ========== CARD GRID ========== */
+.deck-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  gap: 5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.collection-restaurant-card {
+  width: 100%;
+  max-width: 15rem;   /* card size */
+  max-height: 26rem;
+  padding: 0.75rem;
+  padding-bottom: 2rem;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
+
+.collection-restaurant-card h2,
+.collection-restaurant-card h3 {
+  font-size: 1.4rem;   /* card name size */
+  line-height: 1.25;
+  text-align: center;
+}
+
+.collection-restaurant-card .tags {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-top: 0.4rem;
+  align-items: center;
+}
+
+.collection-restaurant-card .tag {
+  font-size: 1.3rem;
+  border-radius: 4px;
+  width: 8rem;
+}
+
+/* ===== EMPTY-STATE ===== */
+.empty-state {
+  text-align: center;
+  font-size: 1.1rem;
+  opacity: 0.8;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+/* ===== CLEAR-BUTTON ===== */
+.clear-deck-btn {
+  padding: 0.75rem 1.5rem;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #ef6060;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
  
  
