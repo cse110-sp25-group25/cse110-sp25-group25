@@ -28,42 +28,70 @@
 
   <!-- Swipe Layout -->
   <main class="swipe-layout">
+    <div class="card-subheader">
+      <p class="card-instruction">click the card to view details</p>
+      <img src="assets/help-icon.png" alt="help icon" class="help-icon" />
+    </div>
     <div class="swipe-container">
       <!-- Left Hint -->
       <div class="swipe-hint left-hint">
-        <span class="hint-icon">◀</span>
+        <img src="assets/left-arrow.png" alt="left arrow" class="hint-icon" />
         <span class="hint-text">
-          swipe left<br/>
+          swipe left<br />
           to get a new card
         </span>
       </div>
-
-      <!-- Left Reviews -->
+  
+      <!-- Left Reviews (optional) -->
       <div id="left-review-container"></div>
-
+  
       <!-- Card -->
       <div id="card-container">
+        <div class="restaurant-card" data-id="1" data-name="Pizza Place">
+          <h2>Restaurant Title</h2>
+          <img src="assets/restaurant.jpg" alt="restaurant" class="card-img" />
+          <div class="details">
+            <span class="rating">
+              <img src="assets/star-icon.png" alt="star" class="icon-inline" />
+              4.3
+            </span>
+            <span class="distance">
+              <img src="assets/location-icon.png" alt="pin" class="icon-inline" />
+              10 mi
+            </span>
+          </div>
+          <div class="tags">
+            <span class="tag">cuisine</span>
+            <span class="tag">cuisine</span>
+            <span class="tag">+2</span>
+          </div>
+        </div>
       </div>
-
-      <!-- Right Reviews -->
+  
+      <!-- Right Reviews (optional) -->
       <div id="right-review-container"></div>
-
+  
       <!-- Right Hint -->
       <div class="swipe-hint right-hint">
-        <span class="hint-icon">▶</span>
+        <img src="assets/right-arrow.png" alt="right arrow" class="hint-icon" />
         <span class="hint-text">
-          swipe right<br/>
+          swipe right<br />
           to save to collection
         </span>
       </div>
     </div>
-
+  
     <!-- Accept / Reject Buttons -->
     <div class="swipe-buttons">
-      <button class="button-type2" title="Reject">❌</button>
-      <button class="button-type2" title="Accept">✅</button>
+      <button class="button-type2" title="Reject">
+        <img src="assets/decline-icon.png" alt="reject" width="36" />
+      </button>
+      <button class="button-type2" title="Accept">
+        <img src="assets/accept-icon.png" alt="accept" width="36" />
+      </button>
     </div>
   </main>
+  
   
 <script src="js/scripts.js"></script>
 </body>

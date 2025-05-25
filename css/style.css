@@ -478,8 +478,7 @@ body {
     border-radius: 20px;
     overflow: hidden;
     position: relative;
- }
- 
+ } 
  
  .card-inner {
     position: relative;
@@ -603,15 +602,88 @@ body {
   margin-right: 2rem;
  }
  
+ .hint-icon {
+   width: 40px;
+   height: 40px;
+ }
+ 
+ .icon-inline {
+   width: 24px;
+   height: 24px;
+   vertical-align: middle;
+   margin-right: 6px;
+ }
  
  .reviews.right {
   margin-left: 2rem;
  }
  
- 
  .reviews.visible {
     opacity: 1;
  }
+
+ .card-subheader {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 100%;
+   max-width: 900px;
+   margin-bottom: 1rem;
+   color: #b57f50;
+   font-size: 1.2rem;
+ }
+ 
+ .card-instruction {
+   margin: 0;
+   padding-left: 1rem;
+ }
+ 
+ .help-icon {
+   width: 36px;
+   height: 36px;
+   margin-right: 1rem;
+ }
+
+ .card-top-row {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 0.5rem;
+   padding: 0 0.5rem;
+ }
+ 
+ .card-instruction {
+   color: #b57f50;
+   font-size: 1rem;
+   margin: 0;
+ }
+ 
+ .help-icon {
+   width: 32px;
+   height: 32px;
+ }
+ 
+ /* inside the white card, flex‐layout the header */
+ .restaurant-card .card-header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 1rem 1rem;
+ }
+ 
+ .restaurant-card .card-instruction {
+   margin: 0;
+   font-size: 1rem;
+   color: #b57f50;
+ }
+ 
+ .restaurant-card .help-icon {
+   width: 32px;
+   height: 32px;
+ }
+ 
+ 
+ 
  
  
  
