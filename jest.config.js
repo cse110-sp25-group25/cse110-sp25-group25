@@ -6,5 +6,6 @@ export default {
   coverageReporters: ['text', 'lcov'],
   transform: {}, // to suppress babel warning
   verbose: true,
-  testMatch: ['**/specs/**/*.test.js']
+  testMatch: ['**/__tests__/**/*.test.js'],
+  testEnvironment: 'jsdom'  
 };
