@@ -78,7 +78,7 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
           git add docs/jsdoc
-          git commit -m "Update JSDoc documentation [skip ci]" || echo "No changes"
+          git commit -m "Update JSDoc documentation" || echo "No changes"
 
           BRANCH_NAME="${{ github.head_ref || github.ref_name }}"
           git push origin HEAD:$BRANCH_NAME
