@@ -28,12 +28,28 @@ jobs:
         uses: jwalton/gh-find-current-pr@v1
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-      - name: Quality Monitor summary      # added: aggregate & comment
+      - name: Quality Monitor summary
         if: github.event_name == 'pull_request'
         uses: uhafner/quality-monitor@v1
         with:
           pr-number:    ${{ steps.pr.outputs.number }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
+          config: |                        # <-- NEW
+            {
+              "coverage": [
+                {
+                  "name": "Cobertura",
+                  "tools": [
+                    {
+                      "id": "cobertura",
+                      "name": "Line Coverage",
+                      "metric": "line",
+                      "pattern": "**/coverage/cobertura-coverage.xml"
+                    }
+                  ]
+                }
+              ]
+            }
     
   lint:
     runs-on: ubuntu-latest
