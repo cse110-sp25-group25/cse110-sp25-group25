@@ -29,7 +29,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Validate markup with Nu HTML Checker
-        uses: Cyb3r-Jak 3/html5validator-action@v7.2.0   
+        uses: Cyb3r-Jak3/html5validator-action@v7.2.0   
         with:
           root: .               
           format: gnu        
@@ -46,9 +46,9 @@ jobs:
     name: Run the quality monitor
     runs-on: ubuntu-latest
 
-    permissions:          # <<–– give the token only what these steps need
+    permissions:        
       contents: read
-      pull-requests: write   # quality-monitor posts a PR comment
+      pull-requests: write  
 
     steps:
       - uses: actions/checkout@v4
