@@ -8,8 +8,6 @@ Install the following dependencies:
 ```
 npm install --save-dev eslint @eslint/js
 npm install --save-dev jest
-npm install --save-dev jsdoc
-
 ```
 
 To run the tests, simply run
