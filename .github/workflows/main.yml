@@ -7,7 +7,7 @@ on:
   pull_request:
     # run on all PRs
 
-jobs: 
+jobs:
   tests: 
     runs-on: ubuntu-latest 
     permissions:          # added: token so Quality Monitor can comment
@@ -56,6 +56,8 @@ jobs:
           css: true  
           blacklist: "node_modules"
   jsdoc:
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
@@ -63,3 +65,10 @@ jobs:
       run: npm install
     - name: Run JSDoc
       run: npx jsdoc ./js -r -d ./docs/jsdoc
+    - name: Commit generated docs
+    run: |
+      git config --global user.name "github-actions[bot]"
+      git config --global user.email "github-actions[bot]@users.noreply.github.com"
+      git add docs/jsdoc
+      git commit -m "Update JSDoc documentation [skip ci]" || echo "No changes to commit"
+      git push
