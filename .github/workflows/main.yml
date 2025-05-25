@@ -10,12 +10,32 @@ on:
 jobs: 
   tests: 
     runs-on: ubuntu-latest 
+    permissions:          # added: token so Quality Monitor can comment
+      contents: read
+      pull-requests: write
     steps:
-      - uses: actions/checkout@v4 
-      - name: Install Dependencies
-        run: npm install
-      - name: Unit Test
-        run: npm run test  
+      - uses: actions/checkout@v4
+      - name: Install dependencies
+        run: npm ci
+      - name: Unit Test with coverage      # changed: enable coverage output
+        run: npm test -- --coverage
+      - name: Convert LCOV → Cobertura     
+        run: npx lcov-to-cobertura-xml \ 
+             -i coverage/lcov.info \
+             -o coverage/cobertura-coverage.xml
+      - name: Find pull-request number   
+        if: github.event_name == 'pull_request'
+        id: pr
+        uses: jwalton/gh-find-current-pr@v1
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Quality Monitor summary      # added: aggregate & comment
+        if: github.event_name == 'pull_request'
+        uses: uhafner/quality-monitor@v1
+        with:
+          pr-number:    ${{ steps.pr.outputs.number }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+    
   lint:
     runs-on: ubuntu-latest
     steps:
@@ -41,29 +61,3 @@ jobs:
       - uses: actions/checkout@v4
       - name: JSDoc Action
         uses: andstor/jsdoc-action@v1.2.1
-
-  # monitor-project-quality:
-  #   name: Run the quality monitor
-  #   runs-on: ubuntu-latest
-
-  #   permissions:        
-  #     contents: read
-  #     pull-requests: write  
-
-  #   steps:
-  #     - uses: actions/checkout@v4
-
-  #     - name: Build (compile, test, mutation coverage, static analysis)
-  #       run: mvn -ntp clean verify -Ppit
-
-  #     - name: Find current pull-request number
-  #       id: pr
-  #       uses: jwalton/gh-find-current-pr@v1
-  #       with:
-  #         github-token: ${{ secrets.GITHUB_TOKEN }}   # ← add token here too (optional but recommended)
-
-  #     - name: Run Quality Monitor
-  #       uses: uhafner/quality-monitor@v1
-  #       with:
-  #         pr-number:    ${{ steps.pr.outputs.number }}
-  #         github-token: ${{ secrets.GITHUB_TOKEN }}   # ← required
