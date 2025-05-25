@@ -37,3 +37,11 @@ jobs: # the things being executed
             format: gnu        
             css: true  
             blacklist: "node_modules" 
+  jsdoc:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Dependencies
+        run: npm install
+      - name: Generate JSDoc
+        run: npx jsdoc -c jsdoc.json -d admin/test-output/jsdoc # generate JSDoc documentation
