@@ -274,3 +274,6 @@ function handleViewedCard(id) {
       localStorage.setItem('viewed', JSON.stringify(viewed));
     }
 }
+
+export { applyFilters, removeViewed };
+
