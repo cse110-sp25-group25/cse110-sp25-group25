@@ -21,11 +21,20 @@ document.addEventListener('DOMContentLoaded', async () => {
         console.warn("no data, can't render");
         return;
     }
-
+    data = shuffleArray(data);
     renderRestaurant(data);
     setupButtons();
 });
 
+
+
+function shuffleArray(array) {
+  for (let i = array.length -1; i> 0; i--) {
+    const j = Math.floor(Math.random() * (i+1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+}
 
 function applyFilters(data, filters) {
     return data.filter(r => {
