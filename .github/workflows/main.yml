@@ -44,6 +44,7 @@ jobs:
       run: npm install
     - name: Run ESLint
       run: npx eslint ./ --ignore-pattern docs/jsdoc
+
   validate-html:
     runs-on: ubuntu-latest
     steps:
@@ -54,4 +55,4 @@ jobs:
           root: .               
           format: gnu        
           css: true  
-          blacklist: "node_modules"
+          blacklist: "node_modules, docs/jsdoc"
