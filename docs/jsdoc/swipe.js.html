@@ -1,4 +1,32 @@
-document.addEventListener('DOMContentLoaded', async () => {
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: swipe.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: swipe.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>document.addEventListener('DOMContentLoaded', async () => {
     let data = JSON.parse(localStorage.getItem('restaurantData'));
 
     if (!data) {
@@ -27,19 +55,13 @@ document.addEventListener('DOMContentLoaded', async () => {
 });
 
 
-/**
- * A function to remove the subset of data that doesn't satisfy the desired filters
- * @param {Array} data original list of data
- * @param {Array} filters list of filters to apply
- * @returns the subset of data that satisfies the desired filters
- */
 function applyFilters(data, filters) {
     return data.filter(r => {
-        if (filters.cuisine && r.cuisine !== filters.cuisine) return false;
-        if (filters.price && r.price.length > filters.price.length) return false;
+        if (filters.cuisine &amp;&amp; r.cuisine !== filters.cuisine) return false;
+        if (filters.price &amp;&amp; r.price.length > filters.price.length) return false;
         // Parse distance and rating
-        if (filters.distance && r.distance > parseFloat(filters.distance)) return false;
-        if (filters.rating && r.rating < parseFloat(filters.rating)) return false;
+        if (filters.distance &amp;&amp; r.distance > parseFloat(filters.distance)) return false;
+        if (filters.rating &amp;&amp; r.rating &lt; parseFloat(filters.rating)) return false;
 
         return true;
   });
@@ -87,42 +109,42 @@ function renderRestaurant(data) {
         // TODO: this is pretty hardcoded. Fix this in the future, especially the cuisine tags that 
         // need to depend on the number of cuisines a restaurant is marked with
         div.innerHTML = `
-            <div class="card-inner">
-            <!-- Front -->
-            <div class="card-front">
-              <h2>${r["name"]}</h2>
-              <img
+            &lt;div class="card-inner">
+            &lt;!-- Front -->
+            &lt;div class="card-front">
+              &lt;h2>${r["name"]}&lt;/h2>
+              &lt;img
                 src="assets/restaurant.jpg"
                 alt="restaurant"
                 class="card-img"
               />
-              <div class="details">
-                <span class="rating">⭐ ${r["rating"]}</span>
-                <span class="distance">📍 ${r["distance"]} mi</span>
-              </div>
-              <div class="tags">
-                <span class="tag">${r["cuisine"]}</span>
-                <span class="tag">cuisine</span>
-                <span class="tag">+2</span>
-              </div>
-            </div>
+              &lt;div class="details">
+                &lt;span class="rating">⭐ ${r["rating"]}&lt;/span>
+                &lt;span class="distance">📍 ${r["distance"]} mi&lt;/span>
+              &lt;/div>
+              &lt;div class="tags">
+                &lt;span class="tag">${r["cuisine"]}&lt;/span>
+                &lt;span class="tag">cuisine&lt;/span>
+                &lt;span class="tag">+2&lt;/span>
+              &lt;/div>
+            &lt;/div>
 
-            <!-- Back -->
-            <div class="card-back">                
-                <div class="card-details">
-                  <h2>Restaurant Title</h2>
-                    <p>📍 <a href="#">Insert Address</a></p>
-                    <p>🕒 Open until XX:XX PM</p>
-                    <p>📞 XXX - XXX - XXXX</p>
-                    <div class="menu-images">
-                      <img src="assets/food1.jpg" alt="food">
-                      <img src="assets/food2.jpg" alt="food">
-                      <img src="assets/food3.jpg" alt="food">
-                    </div>
-                    <a href="#" class="view-menu">View Menu ↗</a>
-                </div>
-            </div>
-          </div>
+            &lt;!-- Back -->
+            &lt;div class="card-back">                
+                &lt;div class="card-details">
+                  &lt;h2>Restaurant Title&lt;/h2>
+                    &lt;p>📍 &lt;a href="#">Insert Address&lt;/a>&lt;/p>
+                    &lt;p>🕒 Open until XX:XX PM&lt;/p>
+                    &lt;p>📞 XXX - XXX - XXXX&lt;/p>
+                    &lt;div class="menu-images">
+                      &lt;img src="assets/food1.jpg" alt="food">
+                      &lt;img src="assets/food2.jpg" alt="food">
+                      &lt;img src="assets/food3.jpg" alt="food">
+                    &lt;/div>
+                    &lt;a href="#" class="view-menu">View Menu ↗&lt;/a>
+                &lt;/div>
+            &lt;/div>
+          &lt;/div>
         `;
         div.setAttribute('data-id', r["id"]);
         div.id = `card_${id}`;
@@ -133,9 +155,9 @@ function renderRestaurant(data) {
         leftReview.classList.add('reviews', 'left');
         leftReview.id = `left_review_${id}`;
         leftReview.innerHTML = `
-            <p>"nice clean environment"<br><span>- customer 1</span></p>
-            <p>"yum"<br><span>- customer 2</span></p>
-            <p>"good food"<br><span>- awesome customer</span></p>
+            &lt;p>"nice clean environment"&lt;br>&lt;span>- customer 1&lt;/span>&lt;/p>
+            &lt;p>"yum"&lt;br>&lt;span>- customer 2&lt;/span>&lt;/p>
+            &lt;p>"good food"&lt;br>&lt;span>- awesome customer&lt;/span>&lt;/p>
         `;
         leftReview.style.display = 'none';
         leftReviewContainer.appendChild(leftReview);
@@ -145,9 +167,9 @@ function renderRestaurant(data) {
         rightReview.classList.add('reviews', 'right');
         rightReview.id = `right_review_${id}`;
         rightReview.innerHTML = `
-            <p>"nice relaxing environment"<br><span>- customer 3</span></p>
-            <p>"so good"<br><span>- customer 4</span></p>
-            <p>"love it!"<br><span>- customer 5</span></p>
+            &lt;p>"nice relaxing environment"&lt;br>&lt;span>- customer 3&lt;/span>&lt;/p>
+            &lt;p>"so good"&lt;br>&lt;span>- customer 4&lt;/span>&lt;/p>
+            &lt;p>"love it!"&lt;br>&lt;span>- customer 5&lt;/span>&lt;/p>
         `;
         rightReview.style.display = 'none';
         rightReviewContainer.appendChild(rightReview);
@@ -251,7 +273,7 @@ function setupFlipping(card) {
             rightReviews.style.display = 'flex';
 
             // Hide hints when flipped
-            if (leftHint && rightHint) {
+            if (leftHint &amp;&amp; rightHint) {
                 leftHint.style.display = 'none';
                 rightHint.style.display = 'none';
             }
@@ -268,7 +290,7 @@ function setupFlipping(card) {
                 leftReviews.style.display = 'none';
                 rightReviews.style.display = 'none';
 
-                if (leftHint && rightHint) {
+                if (leftHint &amp;&amp; rightHint) {
                     leftHint.style.display = 'flex';
                     rightHint.style.display = 'flex';
                 }
@@ -287,3 +309,26 @@ function handleViewedCard(id) {
       localStorage.setItem('viewed', JSON.stringify(viewed));
     }
 }
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#removeViewed">removeViewed</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.4</a> on Sun May 25 2025 14:21:21 GMT-0700 (Pacific Daylight Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>
