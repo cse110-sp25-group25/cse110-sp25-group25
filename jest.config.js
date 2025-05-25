@@ -1,7 +1,7 @@
 // jest.config.js
 export default {
   collectCoverage: true,
-  collectCoverageFrom: ['js/**/*.js'], 
+  collectCoverageFrom: ['js/**/*.utils.js'],
   coverageDirectory: 'coverage',
   coverageReporters: ['text', 'lcov'],
   transform: {}, // to suppress babel warning
