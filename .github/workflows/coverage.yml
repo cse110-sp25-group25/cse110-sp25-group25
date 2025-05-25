@@ -1,20 +1,20 @@
+# .github/workflows/coverage.yml
 name: Code Coverage
 
 on:
-  pull_request:
-    branches: [main]
   push:
+    branches: [main]
+  pull_request:
     branches: [main]
 
 jobs:
   test-and-report:
     runs-on: ubuntu-latest
-
     steps:
       - name: ⬇️ Checkout code
         uses: actions/checkout@v3
 
-      - name: 🟢 Set up Node
+      - name: 🟢 Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 18
@@ -28,11 +28,8 @@ jobs:
       - name: 📊 Generate Coverage Report
         uses: davelosert/vitest-coverage-report-action@v2
         with:
-          coverage-file: coverage/lcov.info
-          report-formats: markdown,badge
-          output-file: coverage-report.md
+          github-token: ${{ secrets.GITHUB_TOKEN }}          # required
+          json-summary-path: coverage/coverage-summary.json  # Jest’s summary JSON
+          json-final-path:   coverage/coverage-final.json    # full coverage JSON
+          comment-on:       pr                               # post to the PR
 
-      - name: 💬 Post coverage as PR comment
-        uses: marocchino/sticky-pull-request-comment@v2
-        with:
-          path: coverage-report.md
