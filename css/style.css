@@ -423,6 +423,15 @@ body {
   .distance {
     color: #4b543b;
   }
+
+  .icon {
+   height: 18px;
+   width: 18px;
+   margin-right: 5px;
+   position: relative;
+   top: -2px; /* 🔼 raise the icon slightly */
+ }
+ 
    /* Tags */
   .tag {
     display: inline-block;
@@ -576,21 +585,18 @@ body {
  
  
  .reviews {
-    opacity: 0;
-    transition: opacity 0.6s ease;
-    font-style: italic;
-    font-size: 1.25rem;
-    color: #4b543b;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 0 1rem;
-    max-width: 160px;
-    gap: 2rem;
+   transition: opacity 0.3s ease;
+   opacity: 0;
+   display: none;
+   flex-direction: column;
+   justify-content: space-evenly;
+   align-items: center;
+   position: absolute;
+   top: 37%;
+   transform: translateY(-50%);
+   width: 50%;
+   font-style: italic;
  }
- 
  
  .reviews span {
     color: #b57f50;
@@ -600,18 +606,17 @@ body {
  
  
  .reviews.left {
-  margin-right: 2rem;
+   left: -100px
  }
  
  
  .reviews.right {
-  margin-left: 2rem;
+  right: -100px;
+  
  }
  
  
- .reviews.visible {
-    opacity: 1;
- }
+
  
  
  
