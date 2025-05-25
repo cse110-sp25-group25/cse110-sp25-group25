@@ -28,7 +28,7 @@ jobs:
       - name: 📊 Code Coverage Summary
         uses: irongut/CodeCoverageSummary@v1.3.0
         with:
-          filename: coverage/lcov.info
+          filename: ./coverage/lcov.info
           badge: true
           format: markdown
           output: both
