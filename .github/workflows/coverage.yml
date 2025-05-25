@@ -25,18 +25,14 @@ jobs:
       - name: ✅ Run tests with coverage
         run: npm test
 
-      - name: 🔧 Clean up lcov.info for compatibility
-        run: sed -i '/^TN:$/d' ./coverage/lcov.info
-
-      - name: 📊 Code Coverage Summary
-        uses: irongut/CodeCoverageSummary@v1.3.0
+      - name: 📊 Generate Coverage Report
+        uses: davelosert/vitest-coverage-report-action@v2
         with:
-          filename: ./coverage/lcov.info
-          badge: true
-          format: markdown
-          output: both
+          coverage-file: coverage/lcov.info
+          report-formats: markdown,badge
+          output-file: coverage-report.md
 
       - name: 💬 Post coverage as PR comment
         uses: marocchino/sticky-pull-request-comment@v2
         with:
-          path: code-coverage-results.md
+          path: coverage-report.md
