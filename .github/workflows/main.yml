@@ -66,9 +66,9 @@ jobs:
     - name: Run JSDoc
       run: npx jsdoc ./js -r -d ./docs/jsdoc
     - name: Commit generated docs
-    run: |
-      git config --global user.name "github-actions[bot]"
-      git config --global user.email "github-actions[bot]@users.noreply.github.com"
-      git add docs/jsdoc
-      git commit -m "Update JSDoc documentation [skip ci]" || echo "No changes to commit"
-      git push
+      run: |
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        git add docs/jsdoc
+        git commit -m "Update JSDoc documentation [skip ci]" || echo "No changes to commit"
+        git push
