@@ -70,4 +70,4 @@ jobs:
           root: .               
           format: gnu        
           css: true  
-          blacklist: "docs/jsdoc/*,node_modules"
+          blacklist: "./docs/jsdoc/,node_modules"
