@@ -58,10 +58,8 @@ jobs:
   jsdoc:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - name: JSDoc Action
-        uses: andstor/jsdoc-action@v1.2.1
-        with:
-          source_dir: ./js
-          recurse: true
-          output_dir: ./docs/jsdoc
+    - uses: actions/checkout@v4
+    - name: Install modules
+      run: npm install
+    - name: Run JSDoc
+      run: npx jsdoc ./js -r -d ./docs/jsdoc
