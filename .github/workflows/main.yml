@@ -37,3 +37,17 @@ jobs:
           format: gnu        
           css: true  
           blacklist: docs
+
+  jsdoc:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v4
+
+      - name: Install modules
+        run: npm install
+
+      - name: Run JSDoc
+        run: npx jsdoc ./js -r -d ./docs/jsdoc
