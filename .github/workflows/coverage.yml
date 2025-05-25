@@ -25,6 +25,9 @@ jobs:
       - name: ✅ Run tests with coverage
         run: npm test
 
+      - name: 🔧 Clean up lcov.info for compatibility
+        run: sed -i '/^TN:$/d' ./coverage/lcov.info
+
       - name: 📊 Code Coverage Summary
         uses: irongut/CodeCoverageSummary@v1.3.0
         with:
