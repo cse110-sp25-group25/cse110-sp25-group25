@@ -10,15 +10,6 @@ const STEPS = ['cuisine', 'price', 'distance', 'rating'];
 let current   = 0;          // index inside STEPS
 let editMode  = false;      // true = user only fixes one step, then exit
 
-function openForEdit(step) {
-  const idx = STEPS.indexOf(step);
-  if (idx === -1) return; 
-
-  current  = idx;
-  editMode = true;                 
-  showOptions(step);   
-}
-
 function nextStep() {
   current += 1;
   if (current < STEPS.length) {
