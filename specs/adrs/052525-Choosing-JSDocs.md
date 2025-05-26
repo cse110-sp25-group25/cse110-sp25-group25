@@ -1,6 +1,6 @@
 ---
 status: "{proposed}"
-date: {2025-05-25}
+date: 2025-05-25
 decision-makers: {Evan, Kevin}
 consulted: {Shelby}
 informed: {Evan, Harry, Harrison, Kate, Ethan, Kalkin, Joshua, Nathan, Joshua, Cass, Yilin, Thomas}
