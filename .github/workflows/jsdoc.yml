@@ -10,12 +10,13 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      pull-requests: write
     steps:
       - name: Checkout branch
         uses: actions/checkout@v4
         with:
           fetch-depth: 0  # needed to push back
-          ref: ${{ github.head_ref || github.ref_name }}
+          ref: main
 
       - name: Install modules
         run: npm install
@@ -28,20 +29,18 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          git checkout -b jsdoc/generate-docs
+          git checkout -B jsdoc/generate-docs
 
           git add docs/jsdoc
           git commit -m "Update JSDoc documentation" || echo "No changes"
 
-          git push --force --set-upstream origin jsdoc/generate-docs
+          git push -f --set-upstream origin jsdoc/generate-docs
 
-      - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v6
+      - name: Create Pull request
+        uses: diillson/auto-pull-request@v1.0.1
         with:
-          branch: jsdoc/generate-docs
-          title: "Update JSDoc Documentation"
-          body: |
-            This pull request updates the generated JSDoc documentation.
-            It was automatically created by a GitHub Action.
-          base: main
-
+          source_branch: "jsdoc/generate-docs"
+          destination_branch: "main"
+          pr_title: "Automatic Documentation Update"
+          pr_body: | 
+            :crown: *An automated PR to update docs*
