@@ -93,9 +93,9 @@
 
 ### Yilin
 
-- **What was completed:**
-- **Any blockers faced:**
-- **Thoughts/Reflections:**
+- **What was completed:** designed a prompt on collection page. (after user select a card, jumping to collection page with a prompt)
+- **Any blockers faced:** family responsibility
+- **Thoughts/Reflections:** besides food images on the back of card, is it better to add food names and prices?
 
 ### Harrison
 
