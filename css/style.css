@@ -613,7 +613,11 @@ body {
     opacity: 1;
  }
  
- 
- 
- 
- 
+ html, body {
+   overflow-x:hidden;
+   max-width:100%;
+ }
+
+ body {
+   overflow-x:clip;
+ }
