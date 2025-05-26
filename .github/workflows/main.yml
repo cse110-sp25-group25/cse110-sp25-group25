@@ -37,7 +37,7 @@ jobs:
           root: .               
           format: gnu        
           css: true  
-          blacklist: "docs coverage" 
+          blacklist: "coverage docs" 
 
   jsdoc:
     runs-on: ubuntu-latest
