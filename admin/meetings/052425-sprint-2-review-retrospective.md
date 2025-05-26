@@ -87,9 +87,9 @@
 
 ### Thomas
 
-- **What was completed:**
-- **Any blockers faced:**
-- **Thoughts/Reflections:**
+- **What was completed:** Collection page design, JSDoc ADR
+- **Any blockers faced:** Tight on time, but no issues
+- **Thoughts/Reflections:** I can try to contribute to more dev tasks as well
 
 ### Yilin
 
