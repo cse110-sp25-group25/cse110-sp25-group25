@@ -1,3 +1,5 @@
+// import {applyFilters, removeViewed} from './swipe.utils.js'
+
 document.addEventListener('DOMContentLoaded', async () => {
     let data = JSON.parse(localStorage.getItem('restaurantData'));
 
@@ -287,6 +289,3 @@ function handleViewedCard(id) {
       localStorage.setItem('viewed', JSON.stringify(viewed));
     }
 }
-
-export { applyFilters, removeViewed };
-
