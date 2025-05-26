@@ -1,4 +1,4 @@
-name: CI 
+name: CI # name of the test
 
 on:
   push:
@@ -7,16 +7,15 @@ on:
   pull_request:
     # run on all PRs
 
-jobs: 
-  tests:
-    runs-on: ubuntu-latest
+jobs: # the things being executed
+  tests: # the name of your status check, will become important when you do branch protection
+    runs-on: ubuntu-latest # which device on Github's server that you are running the Actions on
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4 # using version 4 of Actions
       - name: Install Dependencies
         run: npm install
       - name: Unit Test
-        run: npm run test
-    
+        run: npm run test # run all tests
   lint:
     runs-on: ubuntu-latest
     steps:
@@ -24,30 +23,17 @@ jobs:
     - name: Install modules
       run: npm install
     - name: Run ESLint
-      run: npx eslint ./ --ignore-pattern docs/jsdoc
+      run: npx eslint ./
 
   validate-html:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4 
-      - name: Validate markup with Nu HTML Checker
-        uses: Cyb3r-Jak3/html5validator-action@v7.2.0   
-        with:
-          root: .               
-          format: gnu        
-          css: true  
-          blacklist: docs
-
-  jsdoc:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    steps:
-      - name: Checkout branch
-        uses: actions/checkout@v4
-
-      - name: Install modules
-        run: npm install
-
-      - name: Run JSDoc
-        run: npx jsdoc ./js -r -d ./docs/jsdoc
+      runs-on: ubuntu-latest
+      steps:
+        - uses: actions/checkout@v4
+  
+        - name: Validate markup with Nu HTML Checker
+          uses: Cyb3r-Jak3/html5validator-action@v7.2.0   
+          with:
+            root: .               
+            format: gnu        
+            css: true  
+            blacklist: "node_modules" 

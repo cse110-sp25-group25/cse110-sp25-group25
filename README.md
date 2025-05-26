@@ -1,5 +1,26 @@
-# Food Flip (Team 25 | Quarter Life Crisis)
-[Food Flip](https://cse110-sp25-group25.github.io/cse110-sp25-group25): A CSE 110 Project (Team 25)
+# Restaurant Crisis (Team 25 | Quarter Life Crisis)
+[Restaurant Crisis](https://cse110-sp25-group25.github.io/cse110-sp25-group25): A CSE 110 Project (Team 25)
+
+## Setup
+
+Install the following dependencies:
+
+```
+npm install --save-dev eslint @eslint/js
+npm install --save-dev jest
+```
+
+To run the tests, simply run
+
+```
+npm run test
+```
+
+To run the linter, simply run
+
+```
+npx eslint ./
+```
 
 ## How is work done on the team? (For grading purposes, for TA)
 - There are two teams: **Designers** and **Developers**
@@ -45,30 +66,3 @@
 
 ### Team Status Video
 - [Team Status Video 1 (YouTube Link)](https://www.youtube.com/watch?v=xgqD52VNC9c)
-
----
-
-## Setup
-
-Install the following dependencies:
-
-```
-npm install --save-dev eslint @eslint/js
-npm install --save-dev jest
-```
-
-To run the tests, simply run
-
-```
-npm run test
-```
-
-To run the linter, simply run
-
-```
-npx eslint ./
-```
-
-## Documentation
-
-Documentation for code can be viewed [here](https://cse110-sp25-group25.github.io/docs/jsdoc).
