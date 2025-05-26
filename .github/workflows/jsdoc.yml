@@ -3,7 +3,7 @@ name: JSDoc Generation
 on:
   push:
     branches:
-      - main # only run on direct pushes to main
+      - main
 
 jobs:  
   jsdoc:
@@ -27,6 +27,8 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git checkout -b document-generation
 
           git add docs/jsdoc
           git commit -m "Update JSDoc documentation" || echo "No changes"
