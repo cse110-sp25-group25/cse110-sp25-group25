@@ -71,4 +71,4 @@ npx eslint ./
 
 ## Documentation
 
-Documentation for code can be viewed [here](https://cse110-sp25-group25.github.io/docs/jsdoc).
+Documentation for code can be viewed [here](https://cse110-sp25-group25.github.io/cse110-sp25-group25/docs/jsdoc).
