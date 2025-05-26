@@ -2,7 +2,7 @@
 export default {
   collectCoverage: true,
   collectCoverageFrom: ['js/**/*.utils.js'],
-  coverageDirectory: 'coverage',
+  coverageDirectory: 'docs/coverage',
   coverageReporters: [
     'json-summary',  // ← tells Jest to write coverage/coverage-summary.json
     'json', 
