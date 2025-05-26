@@ -7,6 +7,7 @@ on:
 
 jobs:  
   jsdoc:
+    if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -25,7 +26,6 @@ jobs:
         run: npx jsdoc ./js -r -d ./docs/jsdoc
 
       - name: Commit and push docs
-        if: github.actor != 'github-actions[bot]'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -38,7 +38,6 @@ jobs:
           git push -f --set-upstream origin jsdoc/generate-docs
 
       - name: Create Pull request
-        if: github.actor != 'github-actions[bot]'
         uses: diillson/auto-pull-request@v1.0.1
         with:
           source_branch: "jsdoc/generate-docs"
