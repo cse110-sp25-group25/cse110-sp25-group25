@@ -27,6 +27,12 @@ document.addEventListener('DOMContentLoaded', async () => {
 });
 
 
+/**
+ * A function to remove the subset of data that doesn't satisfy the desired filters
+ * @param {Array} data original list of data
+ * @param {Array} filters list of filters to apply
+ * @returns the subset of data that satisfies the desired filters
+ */
 function applyFilters(data, filters) {
     return data.filter(r => {
         if (filters.cuisine && r.cuisine !== filters.cuisine) return false;
@@ -39,6 +45,13 @@ function applyFilters(data, filters) {
   });
 }
 
+/**
+ * A function that takes in a list of data, a list of viewed elements, and returns the subset of the original list
+ * that is not in the second.
+ * @param data original list
+ * @param viewed items to remove
+ * @returns the set difference data \ viewed
+ */
 function removeViewed(data, viewed) {
     return data.filter(r => {
         return !viewed.includes(+r.id);
