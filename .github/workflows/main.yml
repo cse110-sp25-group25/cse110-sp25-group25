@@ -24,7 +24,7 @@ jobs:
     - name: Install modules
       run: npm install
     - name: Run ESLint
-      run: npx eslint ./ --ignore-pattern docs/jsdoc
+      run: npx eslint ./ --ignore-pattern docs/
 
   validate-html:
     runs-on: ubuntu-latest
