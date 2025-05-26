@@ -1,7 +1,7 @@
 ---
 # These are optional metadata elements. Feel free to remove any of them.
 status: "{accepted}"
-date: {2025-05-24}
+date: 2025-05-24
 decision-makers: {Evan, Kevin, Kalkin, Harrison, Harry, Thomas}
 consulted: {CI/CD Pipeline Team}
 informed: {Evan, Harry, Harrison, Kate, Ethan, Kalkin, Joshua, Nathan, Joshua, Cass, Yilin, Thomas}
