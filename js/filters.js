@@ -136,10 +136,6 @@ function confirmSelection(type) {
   } else {
     nextStep();          // continue to next question
   }
-  //REMOVE LATER (just for testing)
-  console.log('Current Selections:', userSelections);
-  alert(`Saved ${type} selection!`);
-}
 
 
 // function to check positive/numeric input
