@@ -83,7 +83,7 @@ document.getElementById('done-btn').addEventListener('click', () => {
 function confirmSelection(type) {
   if (type === 'cuisine') {
     const selected = document.querySelectorAll('#cuisine-options .option-btn.selected');
-    if (selected.length === 0)                     // user left it blank  ⇒  skip
+    if (selected === '') {                       // user left it blank  ⇒  skip
       userSelections.cuisine = null;
     }
     else userSelections.cuisine = Array.from(selected).map(btn => btn.dataset.value);
@@ -136,6 +136,10 @@ function confirmSelection(type) {
   } else {
     nextStep();          // continue to next question
   }
+  //REMOVE LATER (just for testing)
+  console.log('Current Selections:', userSelections);
+  alert(`Saved ${type} selection!`);
+}
 
 
 // function to check positive/numeric input
