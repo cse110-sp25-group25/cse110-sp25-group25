@@ -30,7 +30,6 @@ document.addEventListener('DOMContentLoaded', async () => {
 function applyFilters(data, filters) {
     return data.filter(r => {
         if (filters.cuisine && filters.cuisine.length>0 && !filters.cuisine.includes(r.cuisine)){
-            console.log(`Filtering out ${r.name} because cuisine does not match: ${r.cuisine} !== ${filters.cuisine}`);
             return false;
         } 
         if (filters.price && r.price.length > filters.price.length) return false;
