@@ -105,9 +105,9 @@
 
 ### Harry
 
-- **What was completed: In-progress**
+- **What was completed:** Finished the full form flow for setting filters for restaurants.
 - **Any blockers faced: N/A**
-- **Thoughts/Reflections:**
+- **Thoughts/Reflections:** I felt pretty stressed about this week's assignment but mostly due to my own procrastination. I think in the future it might be good to have a specialized devops task for CI/CD and other dilverables that are separate from webpage dev.
 
 ### Kate
 
