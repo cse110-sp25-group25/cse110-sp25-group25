@@ -83,7 +83,7 @@ document.getElementById('done-btn').addEventListener('click', () => {
 function confirmSelection(type) {
   if (type === 'cuisine') {
     const selected = document.querySelectorAll('#cuisine-options .option-btn.selected');
-    if (selected === '') {                       // user left it blank  ⇒  skip
+    if (selected.length === 0)                     // user left it blank  ⇒  skip
       userSelections.cuisine = null;
     }
     else userSelections.cuisine = Array.from(selected).map(btn => btn.dataset.value);
