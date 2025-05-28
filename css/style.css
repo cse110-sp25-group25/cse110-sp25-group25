@@ -499,12 +499,10 @@ body {
     position: relative;
  }
  
- 
  .restaurant-card.flipped .card-inner {
-    transform: rotateY(180deg);
- }
- 
- 
+   transform: rotateY(180deg);
+}
+
  .card-front, .card-back {
     position: absolute;
     top: 0;
@@ -591,9 +589,9 @@ body {
    flex-direction: column;
    justify-content: space-evenly;
    align-items: center;
-   position: absolute;
+   position: relative;
    top: 33%;
-   transform: translateY(-50%);
+   transform: translateY(-0%);
    width: 60%;
    font-style: italic;
  }
@@ -604,18 +602,14 @@ body {
     font-size: 1rem;
  }
  
- 
  .reviews.left {
-   left: -10px
+   left: 110px;
  }
- 
  
  .reviews.right {
   right: -10px;
-  
  }
- 
- 
+  
 
  
  
