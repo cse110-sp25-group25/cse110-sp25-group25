@@ -149,20 +149,37 @@ function renderRestaurant(data) {
 }
 
 function resetCard(cardId) {
-    const card      = document.getElementById(`card_${cardId}`);
-    const leftRev   = document.getElementById(`left_review_${cardId}`);
-    const rightRev  = document.getElementById(`right_review_${cardId}`);
-    if (!card) return;
-    // 1. force-unflip
-    card.classList.remove('flipped');
-    // 2. instantly hide review panes
-    [leftRev, rightRev].forEach(el => {
-      if (el) {
-        el.style.opacity = 0;
-        el.style.display = 'none';
-      }
-    });
+  const card      = document.getElementById(`card_${cardId}`);
+  const leftRev   = document.getElementById(`left_review_${cardId}`);
+  const rightRev  = document.getElementById(`right_review_${cardId}`);
+  const leftHint  = document.querySelector('.left-hint');
+  const rightHint = document.querySelector('.right-hint');
+
+  if (!card) return;
+
+  // 1. Force-unflip
+  card.classList.remove('flipped');
+
+  // 2. Hide reviews
+  [leftRev, rightRev].forEach(el => {
+    if (el) {
+      el.style.opacity = 0;
+      el.style.display = 'none';
+    }
+  });
+
+  // 3. Restore swipe arrows
+  if (leftHint) {
+    leftHint.style.display = 'flex';
+    leftHint.style.opacity = 1;
   }
+  if (rightHint) {
+    rightHint.style.display = 'flex';
+    rightHint.style.opacity = 1;
+  }
+}
+
+
 
 function setupButtons() {
     let declineBtn = document.querySelector('button[title="Reject"]');

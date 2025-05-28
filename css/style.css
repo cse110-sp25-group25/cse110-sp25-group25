@@ -682,7 +682,12 @@ body {
    height: 32px;
  }
  
- 
+ .restaurant-card.flipped ~ .right-hint,
+.restaurant-card.flipped ~ .left-hint {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
  
  
  
