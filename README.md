@@ -30,11 +30,16 @@
   - [Review & Retrospective](admin/meetings/051725-sprint-1-review-retrospective.md)
 - **Sprint 2**
   - [Planning](admin/meetings/team/05-19.md)
+  - [Review & Retrospective](admin/meetings/052425-sprint-2-review-retrospective.md)
 
 
 ### ADRs
 - [Choosing Figma](specs/adrs/050925-Choose-Figma.md)
 - [Choosing JEST](specs/adrs/051025-Choosing-JEST.md)
+- [Choosing GitHub Pages](specs/adrs/052325-Choosing-Github-Pages.md)
+- [Choosing Local Storage](specs/adrs/052225-Choose-Local-Storage.md)
+- [Choosing JS Docs](specs/adrs/052525-Choosing-JSDocs.md)
+- [Choosing Quality Monitor](specs/adrs/052425-Choosing-Quality-Monitor.md)
 
 ### CI/CD Pipeline
 - **Phase 1**
