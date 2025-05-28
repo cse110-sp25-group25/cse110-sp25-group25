@@ -36,4 +36,4 @@ jobs: # the things being executed
             root: .               
             format: gnu        
             css: true  
-            blacklist: "node_modules coverage" 
+            blacklist: "node_modules coverage docs" 
