@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 
     renderRestaurant(data);
-    setupButtons();
+    setupButtons(data);
 });
 
 
@@ -179,7 +179,13 @@ function resetCard(cardId) {
     });
   }
 
-function setupButtons() {
+function setupButtons(data) {
+    let swipedCount   = 0;
+    const totalCards  = data.length;
+
+    const resetButton = document.querySelector('.button-type3');
+    resetButton.style.display = "none";
+
     let declineBtn = document.querySelector('button[title="Reject"]');
     declineBtn.addEventListener("click", () => {
         let current = document.querySelector('.active-card');
@@ -192,10 +198,16 @@ function setupButtons() {
             current.classList.remove('active-card');
 
             let newId = Number(current.id.split('_')[1]) + 1;
+            swipedCount += 1;
             
             let newChild = document.getElementById(`card_${newId}`)
-            newChild.style.display = 'block';
-            newChild.classList.add('active-card');
+            if (newChild){
+                newChild.style.display = 'block';
+                newChild.classList.add('active-card');
+            }
+            if (swipedCount == totalCards) {
+                checkIfAllSwiped(data);
+            }
         }, 500);
 
         //make sure this card never shows up again (even on reload)
@@ -215,9 +227,16 @@ function setupButtons() {
             current.classList.remove('active-card')
 
             let newId = Number(current.id.split('_')[1]) + 1;
+            swipedCount += 1;
+
             let newChild = document.getElementById(`card_${newId}`)
-            newChild.style.display = 'block';
-            newChild.classList.add('active-card');
+            if (newChild){
+                newChild.style.display = 'block';
+                newChild.classList.add('active-card');
+            }
+            if (swipedCount == totalCards){
+                checkIfAllSwiped(data);
+            }
         }, 500);
         // save card to collection (localstorage)
         let dataId = +current.getAttribute('data-id')
@@ -288,4 +307,34 @@ function handleViewedCard(id) {
       viewed.push(id);
       localStorage.setItem('viewed', JSON.stringify(viewed));
     }
+}
+
+ function checkIfAllSwiped(data) {
+    const endScreen = document.getElementById("end-screen");
+    const resetButton = document.querySelector('.button-type3');
+
+    // display end screen
+    endScreen.style.display = "block";
+
+    // show reset button
+    resetButton.style.display = "block";
+
+
+    // hide other two buttons
+    const buttons = document.querySelector('.swipe-buttons');
+    buttons.style.display = "none";
+    
+    
+    /* reset button functionality */
+    resetButton.addEventListener("click", () => {
+      // hide end screen
+      endScreen.style.display = "none";
+    
+      // display buttons
+      const buttons = document.querySelector('.swipe-buttons');
+      buttons.style.display = "flex";
+
+      renderRestaurant(data);
+      setupButtons(data);
+    });
 }
