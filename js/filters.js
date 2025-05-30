@@ -9,6 +9,7 @@ const userSelections = {
   //function to show selected filter options
   function showOptions(type) {
     document.querySelector('.filter-selection').classList.add('hidden');
+    document.querySelector('.progress-container').classList.remove('hidden');
     document.querySelectorAll('.filter-options').forEach(el => el.classList.add('hidden'));
     document.getElementById(`${type}-options`).classList.remove('hidden');
   }
