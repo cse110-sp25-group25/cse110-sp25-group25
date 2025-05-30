@@ -470,6 +470,31 @@ body {
     transform: translateX(-120%) rotate(-15deg);
     opacity: 0;
   }
+
+   /* — Reset Buttons — */
+  .reset-btn .button-type3{
+    background-color: #4CAF50; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    border-radius: 8px;
+  }
+
+  #end-screen{
+   /* position: fixed;         sit on top of the page */
+   /* inset: 0;                shorthand for top/right/bottom/left: 0 */
+
+   /* center its children */
+   display: flex;
+   justify-content: center; /* horizontal center */
+   align-items:  center;    /* vertical   center */
+
+   /* cosmetics */
+   /* background: rgba(255,255,255,0.9);  optional light backdrop */
+   text-align: center;   
+  }
+
   /* Flip Animation Styles */
  .restaurant-card {
     width: 320px;
@@ -617,8 +642,3 @@ body {
  .reviews.visible {
     opacity: 1;
  }
- 
- 
- 
- 
- 

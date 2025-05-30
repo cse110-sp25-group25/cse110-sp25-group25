@@ -1,0 +1,164 @@
+main.collection {
+        padding: 1rem;
+        flex: 1;
+        display: flex;
+        gap: 1.5rem;
+        height: 100vh;
+      }
+
+/* Left info panel */
+.left-panel {
+    flex: 0 0 30%;
+    max-width: 35%;
+    padding: 1rem;
+    position: sticky;
+    top: 4.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.left-panel h2 {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+}
+
+.left-body {
+    flex: 0 0 auto;
+    height: 70vh; /* shrink-wrap to its content */
+    margin-top: 1rem;
+    background: #fff;
+    border-radius: 4rem;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+.empty-msg {
+    text-align: center;
+    color: #666;
+}
+
+/* Right list / grid */
+.card-area {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.filters-bar{
+  background: b4d2ba;
+  display:flex;
+  align-items:center;
+  padding: 2rem;
+}
+
+.filter-group{
+    flex:1;
+}
+.filter-select {
+padding: 0.5rem 0.75rem;
+border-radius: 8px;
+border: 1px solid var(--border, #e0e0e0);
+font-size: 0.95rem;
+background: var(--bg, #fff);
+cursor: pointer;
+}
+
+
+.cards-scroll{
+    flex:1 1 auto;
+    overflow-y:auto;
+    padding-top:1rem
+}
+
+
+.collection-header {
+display: flex;
+align-items: center;
+gap: 1rem;
+margin-bottom: 1rem;
+}
+.collection-header h2 {
+margin-right: auto;
+font-size: 1.3rem;
+}
+
+.clear-deck-btn {
+background: transparent;
+border: none;
+font-size: 0.9rem;
+cursor: pointer;
+}
+
+.card-grid {
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+gap: 1.5rem;
+}
+
+.deck-list {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+gap: 5rem;
+padding-left: 1.5rem;
+padding-right: 1.5rem;
+}
+
+.detail-card h3{
+    text-align: center;
+}
+
+/* Individual restaurant card */
+.collection-restaurant-card {
+width: 100%;
+max-width: 15rem;
+max-height: 26rem;
+padding: 0.75rem;
+padding-bottom: 2rem;
+border-radius: 2rem;
+background: #fff;
+box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
+
+.collection-restaurant-card h2 {
+font-size: 1.4rem;
+line-height: 1.25;
+text-align: center;
+}
+
+.collection-restaurant-card .tags {
+display: flex;
+flex-direction: column;
+gap: 0.25rem;
+margin-top: 0.4rem;
+align-items: center;
+}
+
+.collection-restaurant-card .tag {
+font-size: 1.3rem;
+border-radius: 4px;
+width: 8rem;
+background-color: b4d2ba;
+color: rgb(44, 43, 43);
+}
+
+
+.collection-restaurant-card:hover {
+transform: translateY(-4px);
+box-shadow: 0 6px 8px rgb(0, 0, 0);
+}
+
+.clear-deck-btn {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #ef6060;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
