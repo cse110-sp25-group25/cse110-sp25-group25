@@ -37,7 +37,9 @@ document.addEventListener('DOMContentLoaded', async () => {
  */
 function applyFilters(data, filters) {
     return data.filter(r => {
-        if (filters.cuisine && r.cuisine !== filters.cuisine) return false;
+        if (filters.cuisine && filters.cuisine.length>0 && !filters.cuisine.includes(r.cuisine)){
+            return false;
+        } 
         if (filters.price && r.price.length > filters.price.length) return false;
         // Parse distance and rating
         if (filters.distance && r.distance > parseFloat(filters.distance)) return false;
@@ -289,3 +291,4 @@ function handleViewedCard(id) {
       localStorage.setItem('viewed', JSON.stringify(viewed));
     }
 }
+

@@ -7,9 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/filters.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/scripts.js"></script>
-    <script src="js/filters.js"></script>
-
     <title>Restaurant Crisis</title>
   </head>
   <body>
@@ -36,22 +33,29 @@
             <button onclick="showOptions('distance')">Max Distance</button>
             <button onclick="showOptions('rating')">Min Rating</button>
           </div>
-          <button class="skip-btn">Skip</button>
+          <button id="skip-btn">Skip</button>
         </section>
 
         <!-- Cuisine -->
         <section class="filter-options hidden" id="cuisine-options">
           <h2>What cuisines would you like to try?</h2>
           <div class="options-grid">
-            <button class="option-btn" data-value="cuisine1">cuisine</button>
-            <button class="option-btn" data-value="cuisine2">cuisine</button>
-            <button class="option-btn" data-value="cuisine3">cuisine</button>
-            <button class="option-btn" data-value="cuisine4">cuisine</button>
-            <button class="option-btn" data-value="cuisine5">cuisine</button>
+            <button class="option-btn" data-value="Italian">Italian</button>
+            <button class="option-btn" data-value="American">American</button>
+            <button class="option-btn" data-value="Chinese">Chinese</button>
+            <button class="option-btn" data-value="Indian">Indian</button>
+            <button class="option-btn" data-value="Mexican">Mexican</button>
+            <button class="option-btn" data-value="Japanese">Japanese</button>
+            <button class="option-btn" data-value="Vietnamese">Vietnamese</button>
+            <button class="option-btn" data-value="Greek">Greek</button>
+            <button class="option-btn" data-value="Breakfast">Breakfast</button>
+            <button class="option-btn" data-value="Vegan">Vegan</button>
+          
             <div class="empty-cell"></div>
           </div>
           <form onsubmit="confirmSelection('cuisine'); return false;">
             <button type="submit" class="confirm-btn">Confirm</button>
+            <!-- <button id="skip-btn" class="skip-btn">Skip</button> -->
           </form>
         </section>
 
@@ -62,10 +66,11 @@
             <input
               type="number"
               id="price-input"
-              placeholder="Enter a number"
+              placeholder="Enter a number or leave blank"
              
             />
             <button type="submit" class="confirm-btn">Confirm</button>
+            <!-- <button id="skip-btn" class="skip-btn">Skip</button> -->
           </form>
         </section>
 
@@ -76,10 +81,11 @@
             <input
               type="number"
               id="distance-input"
-              placeholder="Enter a number"
+              placeholder="Enter a number or leave blank"
               
             />
             <button type="submit" class="confirm-btn">Confirm</button>
+            <!-- <button id="skip-btn" class="skip-btn">Skip</button> -->
           </form>
         </section>
 
@@ -90,14 +96,37 @@
             <input
               type="number"
               id="rating-input"
-              placeholder="Enter a number"
+              placeholder="Enter a number between 0 and 5 or leave blank if you don't care"
               
             />
             <button type="submit" class="confirm-btn">Confirm</button>
+            <!-- <button id="skip-btn" class="skip-btn">Skip</button> -->
           </form>
         </section>
     </main>
+    <section id="summary" class="hidden">
+      <h2>Your current filters</h2>
+    
+      <ul>
+        <li>Cuisine: <span id="sum-cuisine"></span>
+            <button onclick="openForEdit('cuisine')">Edit</button>
+        </li>
+        <li>Max price: <span id="sum-price"></span>
+            <button onclick="openForEdit('price')">Edit</button>
+        </li>
+        <li>Max distance: <span id="sum-distance"></span>
+            <button onclick="openForEdit('distance')">Edit</button>
+        </li>
+        <li>Min rating: <span id="sum-rating"></span>
+            <button onclick="openForEdit('rating')">Edit</button>
+        </li>
+      </ul>
+    
+      <button id="done-btn">Done → Start swiping</button>
+    </section>
     <footer></footer>
+    <script src="js/scripts.js"></script>
+    <script src="js/filters.js"></script>
 
   </body>
 </html>
