@@ -470,6 +470,25 @@ body {
     transform: translateX(-120%) rotate(-15deg);
     opacity: 0;
   }
+
+   /* — Reset Buttons — */
+  .reset-btn .button-type3{
+    background-color: #4CAF50; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    border-radius: 8px;
+  }
+
+  .end-screen{
+   display: none;
+   justify-content: center;
+   /* align-items:  center; */
+   text-align: center;  
+   margin-top: 20px; 
+  }
+
   /* Flip Animation Styles */
  .restaurant-card {
     width: 320px;
@@ -617,8 +636,3 @@ body {
  .reviews.visible {
     opacity: 1;
  }
- 
- 
- 
- 
- 
