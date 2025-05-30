@@ -47,7 +47,7 @@ main.collection {
 }
 
 .filters-bar{
-  background: b4d2ba;
+  color: #b4d2ba;
   display:flex;
   align-items:center;
   padding: 2rem;
@@ -139,7 +139,7 @@ align-items: center;
 font-size: 1.3rem;
 border-radius: 4px;
 width: 8rem;
-background-color: b4d2ba;
+background: #b4d2ba;
 color: rgb(44, 43, 43);
 }
 

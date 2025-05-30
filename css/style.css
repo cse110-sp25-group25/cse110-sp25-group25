@@ -481,18 +481,12 @@ body {
     border-radius: 8px;
   }
 
-  #end-screen{
-   /* position: fixed;         sit on top of the page */
-   /* inset: 0;                shorthand for top/right/bottom/left: 0 */
-
-   /* center its children */
-   display: flex;
-   justify-content: center; /* horizontal center */
-   align-items:  center;    /* vertical   center */
-
-   /* cosmetics */
-   /* background: rgba(255,255,255,0.9);  optional light backdrop */
-   text-align: center;   
+  .end-screen{
+   display: none;
+   justify-content: center;
+   /* align-items:  center; */
+   text-align: center;  
+   margin-top: 20px; 
   }
 
   /* Flip Animation Styles */
