@@ -10,6 +10,19 @@ const STEPS = ['cuisine', 'price', 'distance', 'rating'];
 let current   = 0;          // index inside STEPS
 let editMode  = false;      // true = user only fixes one step, then exit
 
+function updateProgressBar() {
+  const steps = document.querySelectorAll('.step');
+  
+  steps.forEach((step, index) => {
+    const stepElement = step;
+    stepElement.classList.remove('active');
+    
+    if (index === current) {
+      stepElement.classList.add('active');
+    }
+  });
+}
+
 function nextStep() {
   current += 1;
   if (current < STEPS.length) {
@@ -26,6 +39,7 @@ function finalise() {
   document.getElementById('sum-rating'  ).textContent = userSelections.rating   ?? '—';
 
   document.querySelectorAll('main > section').forEach(s => s.classList.add('hidden'));
+  document.querySelector('.progress-bar').classList.add('hidden');
   document.getElementById('summary').classList.remove('hidden');
 }
 
@@ -36,6 +50,16 @@ function showOptions(type) {
   document.querySelector('.filter-selection').classList.add('hidden');
   document.querySelectorAll('.filter-options').forEach(el => el.classList.add('hidden'));
   document.getElementById(`${type}-options`).classList.remove('hidden');
+
+  // Show progress bar when a filter is selected
+  document.querySelector('.progress-bar').classList.remove('hidden');
+
+  // Update progress bar based on the step
+  const stepIndex = STEPS.indexOf(type);
+  if (stepIndex !== -1) {
+    current = stepIndex;
+    updateProgressBar();
+  }
 }
   
 document.querySelectorAll('.option-btn').forEach(btn => {
