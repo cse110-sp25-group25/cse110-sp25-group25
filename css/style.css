@@ -114,6 +114,29 @@ body {
     }
  }
  
+ /* mobile swipe */
+ @media (max-width: 550px) {
+   #left-review-container,
+   #right-review-container {
+     display: none; /* hide both containers */
+   }
+ 
+   .reviews {
+     position: static;
+     width: 100%;
+     top: auto;
+     transform: none;
+     text-align: center;
+     margin-top: 1rem;
+     padding: 0 1rem;
+   }
+ 
+   .restaurant-card.flipped .reviews {
+     display: flex !important;
+     opacity: 1 !important;
+   }
+ }
+ 
  
  /* landing page styles */
  
@@ -611,7 +634,7 @@ body {
  }
   
 
- 
+
  
  
  

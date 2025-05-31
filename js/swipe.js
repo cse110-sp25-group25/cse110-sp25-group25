@@ -140,6 +140,13 @@ function renderRestaurant(data) {
     leftReviewContainer.appendChild(leftReviewElement);
     rightReviewContainer.appendChild(rightReviewElement);
 
+     // add mobile review rendering
+    //const mobileReviews = document.getElementById(`mobile_review_${cardId}`);
+    const mobileReviewContainer = document.getElementById('mobile-review-container');
+    if (window.innerWidth <= 550 && mobileReviewContainer) {
+      const mobileReview = createReviewElement(reviews.slice(0, 1), 'mobile', id);
+      mobileReviewContainer.appendChild(mobileReview);
+    }
     setupFlipping(div);
     id += 1;
   });
@@ -149,6 +156,9 @@ function renderRestaurant(data) {
     first.classList.add('active-card');
     first.style.display = 'block';
   }
+
+ 
+ 
 }
 
 function setupFlipping(card) {
@@ -156,6 +166,7 @@ function setupFlipping(card) {
   const cardId = card.id.split('_')[1];
   const leftReviews = document.getElementById(`left_review_${cardId}`);
   const rightReviews = document.getElementById(`right_review_${cardId}`);
+  const mobileReviews = document.getElementById(`mobile_review_${cardId}`);
   const leftHint = document.querySelector('.left-hint');
   const rightHint = document.querySelector('.right-hint');
 
@@ -167,21 +178,26 @@ function setupFlipping(card) {
         // Fade in reviews
           leftReviews.style.display = 'flex';
           rightReviews.style.display = 'flex';
+          mobileReviews.style.display = 'flex';
 
           if (leftHint) leftHint.style.display = 'none';
           if (rightHint) rightHint.style.display = 'none';
+          if (mobileReviews) mobileReviews.style.display = 'flex';
 
           setTimeout(() => {
               leftReviews.style.opacity = 1;
               rightReviews.style.opacity = 1;
+              mobileReviews.style.opacity = 1;
           }, 300);
       } else {
           leftReviews.style.opacity = 0;
           rightReviews.style.opacity = 0;
+          mobileReviews.style.opacity = 0;
 
           setTimeout(() => {
               leftReviews.style.display = 'none';
               rightReviews.style.display = 'none';
+              mobileReviews.style.display = 'none';
 
               if (leftHint && rightHint) {
                 leftHint.style.display = 'flex';
