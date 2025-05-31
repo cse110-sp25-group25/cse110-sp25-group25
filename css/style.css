@@ -1,641 +1,642 @@
 body {
-    background-color: #f3f4e4;
-    color: #4b543b;
-    font-family: 'Noto Sans', sans-serif;
-    font-size: 24px;                
-    margin: 0;
-  }
- 
- 
- /* Nav bar styles */
- header {
-    padding: 10px 20px;
-    background-color: #b4d2ba;
-    margin: 0;
- }
- 
- 
- nav a {
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: bold;
- }
- 
- 
- nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
- }
- 
- 
- /* desktop navbar */
- @media (min-width:551px) {
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
- 
- 
-    nav a {
-        transition: color 0.2s;
-    }
- 
- 
-    nav ul {
-        display: flex;
-        gap: 20px;
-    }
- 
- 
-    nav a:hover {
-        color: #f3f4e4;
-    }
- 
- 
-    .app-icon {
-        height: 40px;
-    }
- 
- 
-    .burger-icon {
-        display:none;
-    }
- }
- 
- 
- /* mobile navbar */
- @media (max-width:550px) {
-    header {
-        overflow: hidden;
-        padding: 0;
-    }
- 
- 
-    nav ul {
-        background-color: #b4d2ba;
-        display:block;
-    }
- 
- 
-    nav a {
-        display: none;
-        padding: 5px 15px;
-    }
- 
- 
-    nav a:hover {
-        background-color: #97bb9e;
-        color: #f3f4e4;
-    }
- 
- 
-    .burger-icon {
-        /* background: white; */
-        transition: color 0.2s;
-        display: block;
-        right: 0;
-        top: 0;
-        position: absolute;
-        height: 36px;
-        padding: 4px 4px;
-    }
- 
- 
-    .burger-icon:hover {
-        background-color: #97bb9e;
-    }
- 
- 
-    .app-icon {
-        height: 40px;
-        padding-left: 10px;
-    }
- }
- 
- /* mobile swipe */
- @media (max-width: 550px) {
-   #left-review-container,
-   #right-review-container {
-     display: none; /* hide both containers */
-   }
- 
-   .reviews {
-     position: static;
-     width: 100%;
-     top: auto;
-     transform: none;
-     text-align: center;
-     margin-top: 1rem;
-     padding: 0 1rem;
-   }
- 
-   .restaurant-card.flipped .reviews {
-     display: flex !important;
-     opacity: 1 !important;
-   }
- }
- 
- 
- /* landing page styles */
- 
- 
- .hero {
-    margin-bottom: 40px;
-    padding-top: 40px;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
- }
- 
- 
- .hero h1 {
-    font-size: 3rem;
-    color: #4b543b;
-    margin-bottom: 5px;
-    font-family: 'Permanent Marker', cursive;
-    font-weight: 200;
- }
- 
- 
- .hero p {
-    margin-bottom: 30px;
-    color: #4b543b;
- }
- 
- 
- .hero-buttons {
-    display: flex;
-    flex-direction: column;
-    row-gap: 20px;
- }
- 
- 
- .hero-buttons button {
-    padding: 15px 30px;
-    font-size: 1.2rem;
-    cursor: pointer;
-    border: 1px solid #aaa;
-    border-radius: 10px;
-    display: block;
- }
- 
- 
- .button-type1 {
-    background-color: #4b543b;
-    color: white;
-    border: none;
- }
- 
- 
- .button-type1:hover {
-    background-color: #000000;
-    color: #f3f4e4;
- }
- 
- 
- .button-type2 {
-    background-color: #b4d2ba;
-    color: #4b543b;
-    border: none;
- }
- 
- 
- .button-type2:hover {
-    background-color: #97bb9e;
-    color: #4b543b;
- }
- 
- 
- /* card */
- .feature-card {
-    flex: 1;
-    max-width: 300px;
-    background-color: #ffffff;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-top: 3rem;
- 
- 
-    border: 1px solid #aaa;
-    padding: 20px;
-    border-radius: 12px;
- }
- 
- 
- .feature-card h2 {
-    margin-top: 0;
-    font-weight: normal;
-    color: #3a3f2c;
- }
- 
- 
- .card-info {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-bottom: 10px;
-    color: #4b4b4b;
-    font-size: 0.9rem;
-    align-items: center;
- }
- 
- 
- .icon {
-    height: 16px;
-    width: auto;
-    margin-right: 5px;
-    vertical-align: middle;
- }
- 
- 
- .info-item {
-    display: flex;
-    align-items: center;
- }
- 
- 
- .card-image {
-    width: 80%;
-    height: 300px;
-    margin-bottom: 10px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
- }
- 
- 
- .restaurant-img {
-    width: 100%;       /* or set a fixed size like 300px */
-    height: 100%;      /* maintains aspect ratio */
-    border-radius: 10px; /* optional for rounded corners */
-    object-fit: cover;  /* ensures the image fills its container nicely */
- }
- 
- 
- .stars {
-    margin-bottom: 10px;
- }
- 
- 
- .tags {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 10px;
- }
- 
- 
- .tag {
-    padding: 6px 14px;
-    border: none;
-    background-color: #b4d2ba;
-    border-radius: 20px;
-    font-size: 0.9rem;
-    color: #333;
-    font-weight: 500;
- }
- 
- 
- /* this keeps the +2 text inline without styling */
- .more {
-    font-size: 0.9rem;
-    color: #333;
-    padding-top: 6px;
- }
- 
- 
- .main-grid {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 50px;
-    max-width: 1000px;
-    margin: 0 auto;
-    margin-top: 2rem;
-    padding: 40px 0;
- }
- 
- 
- /* mobile landing page */
- @media (max-width: 550px) {
-    .main-grid {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 20px;
-    }
- 
- 
-    .hero {
-        align-items: flex-start;
-        text-align: left;
-        padding-right: 100px;
-        padding-left: 10px;
-    }
- 
- 
-    .hero h1 {
-        font-size: 2rem;
-        line-height: 1.5;
-    }
- 
- 
-    .hero-buttons {
-        align-items: flex-start;
-    }
- 
- 
-    .feature-card {
-        border: 1px solid #aaa;
-        padding: 15px;
-        border-radius: 12px;
- 
- 
-        position: absolute;
-        right: 0;
-        width: 250px;
-        transform: translateX(70%);
-    }
- 
- 
-    .card-image {
-        width: 70%;
-        height: 200px;
-    }
- 
- 
- }
- 
- 
- /*Swipe card styles */
- .swipe-layout {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem;
-    /* page bg lives on body */
-  }
-  .swipe-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-  }
-   /* Hints */
-  .swipe-hint {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-size: 1.5rem;      /* 24px text */
-    color: #b57f50;
-    text-align: center;
-    max-width: 120px;
-  }
-   .left-hint  { flex-direction: row-reverse;}
- 
- 
-  .right-hint { flex-direction: row;}
- 
- 
-  .hint-text {
-    line-height: 1.2;        /* tighten up the two lines */
-  }
- 
- 
-  .hint-icon {
-    font-size: 2.5rem;       /* ~40px arrow */
-    line-height: 1;          /* no extra spacing */
-  }
- 
- 
-   /* — Restaurant Card — */
-  .restaurant-card {
-    background-color: #ffffff;              /* card bg */
-    border-radius: 20px;
-    padding: 1rem;
-    width: 300px;
-    text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
-  }
-  .restaurant-card h2 {
-    font-size: 36px;                        /* title 36px */
-    margin: 0.5rem 0;
-    color: #4b543b;
-  }
-  .card-img {
-    width: 100%;
-    height: auto;
-    border-radius: 12px;
-    margin: 1rem 0;
-  }
-  .details {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    font-size: 1.5rem;                      /* 24px */
-  }
-  .rating {
-    color: #dce2aa;                         /* star */
-  }
-  .distance {
-    color: #4b543b;
-  }
-
-  .icon {
-   height: 18px;
-   width: 18px;
-   margin-right: 5px;
-   position: relative;
-   top: -2px; /* 🔼 raise the icon slightly */
+   background-color: #f3f4e4;
+   color: #4b543b;
+   font-family: 'Noto Sans', sans-serif;
+   font-size: 24px;                
+   margin: 0;
  }
 
-   /* Tags */
-  .tag {
-    display: inline-block;
-    margin: 0.2rem;
-    padding: 0.3rem 0.8rem;
-    font-size: 1.5rem;                      /* 24px */
-    background-color: #b4d2ba;
-    color: #4b543b;
-    border-radius: 20px;
-  }
-   /* — Swipe Buttons (Type 2) — */
-  .swipe-buttons {
-    margin-top: 2rem;
-    display: flex;
-    gap: 2rem;
-  }
-  .button-type2 {
-    background-color: #b4d2ba;              /* default bg */
-    color: #4b543b;
-    font-family: inherit;
-    font-size: 2.25rem;                     /* 36px */
-    border: none;
-    border-radius: 20px;
-    padding: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  .button-type2:hover {
-    background-color: #97bb9e;              /* hover bg */
-  }
-  .swipe-buttons .button-type2 {
-    width: 64px;
-    height: 64px;
-    border-radius: 50%;                     /* circular on swipe page */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-   /* — Swipe Animations — */
-  .restaurant-card.swipe-right {
-    transform: translateX(120%) rotate(15deg);
-    opacity: 0;
-  }
-  .restaurant-card.swipe-left {
-    transform: translateX(-120%) rotate(-15deg);
-    opacity: 0;
-  }
-  /* Flip Animation Styles */
- .restaurant-card {
-    width: 320px;
-    height: 460px;
-    perspective: 1000px;
-    border-radius: 20px;
-    overflow: hidden;
-    position: relative;
- }
- 
- 
- .card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    transition: transform 0.6s;     /* Smooth flipping */
-    transform-style: preserve-3d;   /* Allow 3D children rendering */
-    position: relative;
- }
- 
- .restaurant-card.flipped .card-inner {
-   transform: rotateY(180deg);
+
+/* Nav bar styles */
+header {
+   padding: 10px 20px;
+   background-color: #b4d2ba;
+   margin: 0;
 }
 
- .card-front, .card-back {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;    /* Hide the "other side" when not visible */
-    border-radius: 20px;
-    padding: 1.5rem;
-    box-sizing: border-box;
- }
- 
- 
- .card-front {
-    background-color: #ffffff;
-    z-index: 2;                     /* Ensure it's above the back side initially */
- }
- 
- 
- .card-back {
-    background-color: #ffffff;
-    transform: rotateY(180deg);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0.25rem;
- }
- 
- 
- .card-details {
-    padding: 0.5rem 0.75rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    font-size: 1.25rem;
-    gap: 0.5rem;
- }
- 
- 
- .card-details h2{
-    font-size: 2rem;
- }
- 
- 
- .card-details p {
-    text-align: left;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    margin: 0.75rem 0;
- }
- 
- 
- .menu-images {
-    display: flex;
-    justify-content: center;
-    gap: 0.5rem;
-    margin-top: 0.75rem;
- }
- 
- 
- .menu-images img {
-    width: 60px;
-    height: 60px;
-    border-radius: 8px;
-    object-fit: cover;
- }
- 
- 
- .view-menu {
-    margin-top: 0.5rem;
-    color: #b57f50;
-    text-decoration: underline;
-    font-size: 0.9rem;
- }
- 
- 
- .reviews {
-   transition: opacity 0.3s ease;
-   opacity: 0;
-   display: none;
+
+nav a {
+   text-decoration: none;
+   color: #ffffff;
+   font-weight: bold;
+}
+
+
+nav ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+
+/* desktop navbar */
+@media (min-width:551px) {
+   header {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+   }
+
+
+   nav a {
+       transition: color 0.2s;
+   }
+
+
+   nav ul {
+       display: flex;
+       gap: 20px;
+   }
+
+
+   nav a:hover {
+       color: #f3f4e4;
+   }
+
+
+   .app-icon {
+       height: 40px;
+   }
+
+
+   .burger-icon {
+       display:none;
+   }
+}
+
+
+/* mobile navbar */
+@media (max-width:550px) {
+   header {
+       overflow: hidden;
+       padding: 0;
+   }
+
+
+   nav ul {
+       background-color: #b4d2ba;
+       display:block;
+   }
+
+
+   nav a {
+       display: none;
+       padding: 5px 15px;
+   }
+
+
+   nav a:hover {
+       background-color: #97bb9e;
+       color: #f3f4e4;
+   }
+
+
+   .burger-icon {
+       /* background: white; */
+       transition: color 0.2s;
+       display: block;
+       right: 0;
+       top: 0;
+       position: absolute;
+       height: 36px;
+       padding: 4px 4px;
+   }
+
+
+   .burger-icon:hover {
+       background-color: #97bb9e;
+   }
+
+
+   .app-icon {
+       height: 40px;
+       padding-left: 10px;
+   }
+}
+
+
+/* landing page styles */
+
+
+.hero {
+   margin-bottom: 40px;
+   padding-top: 40px;
+   flex: 1;
+   display: flex;
    flex-direction: column;
-   justify-content: space-evenly;
+   align-items: flex-start;
+}
+
+
+.hero h1 {
+   font-size: 3rem;
+   color: #4b543b;
+   margin-bottom: 5px;
+   font-family: 'Permanent Marker', cursive;
+   font-weight: 200;
+}
+
+
+.hero p {
+   margin-bottom: 30px;
+   color: #4b543b;
+}
+
+
+.hero-buttons {
+   display: flex;
+   flex-direction: column;
+   row-gap: 20px;
+}
+
+
+.hero-buttons button {
+   padding: 15px 30px;
+   font-size: 1.2rem;
+   cursor: pointer;
+   border: 1px solid #aaa;
+   border-radius: 10px;
+   display: block;
+}
+
+
+.button-type1 {
+   background-color: #4b543b;
+   color: white;
+   border: none;
+}
+
+
+.button-type1:hover {
+   background-color: #000000;
+   color: #f3f4e4;
+}
+
+
+.button-type2 {
+   background-color: #b4d2ba;
+   color: #4b543b;
+   border: none;
+}
+
+
+.button-type2:hover {
+   background-color: #97bb9e;
+   color: #4b543b;
+}
+
+
+/* card */
+.feature-card {
+   flex: 1;
+   max-width: 300px;
+   background-color: #ffffff;
+   flex-direction: column;
    align-items: center;
+   text-align: center;
+   margin-top: 3rem;
+
+
+   border: 1px solid #aaa;
+   padding: 20px;
+   border-radius: 12px;
+}
+
+
+.feature-card h2 {
+   margin-top: 0;
+   font-weight: normal;
+   color: #3a3f2c;
+}
+
+
+.card-info {
+   display: flex;
+   justify-content: center;
+   gap: 20px;
+   margin-bottom: 10px;
+   color: #4b4b4b;
+   font-size: 0.9rem;
+   align-items: center;
+}
+
+
+.icon {
+   height: 16px;
+   width: auto;
+   margin-right: 5px;
+   vertical-align: middle;
+}
+
+
+.info-item {
+   display: flex;
+   align-items: center;
+}
+
+
+.card-image {
+   width: 80%;
+   height: 300px;
+   margin-bottom: 10px;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+
+.restaurant-img {
+   width: 100%;       /* or set a fixed size like 300px */
+   height: 100%;      /* maintains aspect ratio */
+   border-radius: 10px; /* optional for rounded corners */
+   object-fit: cover;  /* ensures the image fills its container nicely */
+}
+
+
+.stars {
+   margin-bottom: 10px;
+}
+
+
+.tags {
+   display: flex;
+   justify-content: center;
+   gap: 10px;
+   margin-top: 10px;
+}
+
+
+.tag {
+   padding: 6px 14px;
+   border: none;
+   background-color: #b4d2ba;
+   border-radius: 20px;
+   font-size: 0.9rem;
+   color: #333;
+   font-weight: 500;
+}
+
+
+/* this keeps the +2 text inline without styling */
+.more {
+   font-size: 0.9rem;
+   color: #333;
+   padding-top: 6px;
+}
+
+
+.main-grid {
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+   gap: 50px;
+   max-width: 1000px;
+   margin: 0 auto;
+   margin-top: 2rem;
+   padding: 40px 0;
+}
+
+
+/* mobile landing page */
+@media (max-width: 550px) {
+   .main-grid {
+       position: relative;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       padding: 20px;
+   }
+
+
+   .hero {
+       align-items: flex-start;
+       text-align: left;
+       padding-right: 100px;
+       padding-left: 10px;
+   }
+
+
+   .hero h1 {
+       font-size: 2rem;
+       line-height: 1.5;
+   }
+
+
+   .hero-buttons {
+       align-items: flex-start;
+   }
+
+
+   .feature-card {
+       border: 1px solid #aaa;
+       padding: 15px;
+       border-radius: 12px;
+
+
+       position: absolute;
+       right: 0;
+       width: 250px;
+       transform: translateX(70%);
+   }
+
+
+   .card-image {
+       width: 70%;
+       height: 200px;
+   }
+
+
+}
+
+
+/*Swipe card styles */
+.swipe-layout {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 2rem;
+   /* page bg lives on body */
+ }
+ .swipe-container {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 2rem;
+ }
+  /* Hints */
+ .swipe-hint {
+   display: flex;
+   align-items: center;
+   gap: 0.5rem;
+   font-size: 1.5rem;      /* 24px text */
+   color: #b57f50;
+   text-align: center;
+   max-width: 120px;
+ }
+  .left-hint  { flex-direction: row-reverse;}
+
+
+ .right-hint { flex-direction: row;}
+
+
+ .hint-text {
+   line-height: 1.2;        /* tighten up the two lines */
+ }
+
+
+ .hint-icon {
+   font-size: 2.5rem;       /* ~40px arrow */
+   line-height: 1;          /* no extra spacing */
+ }
+
+
+  /* — Restaurant Card — */
+ .restaurant-card {
+   background-color: #ffffff;              /* card bg */
+   border-radius: 20px;
+   padding: 1rem;
+   width: 300px;
+   text-align: center;
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+   transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+ }
+ .restaurant-card h2 {
+   font-size: 36px;                        /* title 36px */
+   margin: 0.5rem 0;
+   color: #4b543b;
+ }
+ .card-img {
+   width: 100%;
+   height: auto;
+   border-radius: 12px;
+   margin: 1rem 0;
+ }
+ .details {
+   display: flex;
+   justify-content: center;
+   gap: 1rem;
+   font-size: 1.5rem;                      /* 24px */
+ }
+ .rating {
+   color: #dce2aa;                         /* star */
+ }
+ .distance {
+   color: #4b543b;
+ }
+
+ .icon {
+  height: 18px;
+  width: 18px;
+  margin-right: 5px;
+  position: relative;
+  top: -2px; /* 🔼 raise the icon slightly */
+}
+
+  /* Tags */
+ .tag {
+   display: inline-block;
+   margin: 0.2rem;
+   padding: 0.3rem 0.8rem;
+   font-size: 1.5rem;                      /* 24px */
+   background-color: #b4d2ba;
+   color: #4b543b;
+   border-radius: 20px;
+ }
+  /* — Swipe Buttons (Type 2) — */
+ .swipe-buttons {
+   margin-top: 2rem;
+   display: flex;
+   gap: 2rem;
+ }
+ .button-type2 {
+   background-color: #b4d2ba;              /* default bg */
+   color: #4b543b;
+   font-family: inherit;
+   font-size: 2.25rem;                     /* 36px */
+   border: none;
+   border-radius: 20px;
+   padding: 1rem;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+ }
+ .button-type2:hover {
+   background-color: #97bb9e;              /* hover bg */
+ }
+ .swipe-buttons .button-type2 {
+   width: 64px;
+   height: 64px;
+   border-radius: 50%;                     /* circular on swipe page */
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+  /* — Swipe Animations — */
+ .restaurant-card.swipe-right {
+   transform: translateX(120%) rotate(15deg);
+   opacity: 0;
+ }
+ .restaurant-card.swipe-left {
+   transform: translateX(-120%) rotate(-15deg);
+   opacity: 0;
+ }
+ /* Flip Animation Styles */
+.restaurant-card {
+   width: 320px;
+   height: 460px;
+   perspective: 1000px;
+   border-radius: 20px;
+   overflow: hidden;
    position: relative;
-   top: 33%;
-   transform: translateY(-0%);
-   width: 60%;
-   font-style: italic;
- }
- 
- .reviews span {
-    color: #b57f50;
-    font-style: normal;
-    font-size: 1rem;
- }
- 
- .reviews.left {
-   left: 110px;
- }
- 
- .reviews.right {
-  right: -10px;
- }
-  
+}
 
 
+.card-inner {
+   position: relative;
+   width: 100%;
+   height: 100%;
+   transition: transform 0.6s;     /* Smooth flipping */
+   transform-style: preserve-3d;   /* Allow 3D children rendering */
+   position: relative;
+}
+
+.restaurant-card.flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   backface-visibility: hidden;    /* Hide the "other side" when not visible */
+   border-radius: 20px;
+   padding: 1.5rem;
+   box-sizing: border-box;
+}
+
+
+.card-front {
+   background-color: #ffffff;
+   z-index: 2;                     /* Ensure it's above the back side initially */
+}
+
+
+.card-back {
+   background-color: #ffffff;
+   transform: rotateY(180deg);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 0.25rem;
+}
+
+
+.card-details {
+   padding: 0.5rem 0.75rem;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   font-size: 1.25rem;
+   gap: 0.5rem;
+}
+
+
+.card-details h2{
+   font-size: 2rem;
+}
+
+
+.card-details p {
+   text-align: left;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   gap: 0.5rem;
+   margin: 0.75rem 0;
+}
+
+
+.menu-images {
+   display: flex;
+   justify-content: center;
+   gap: 0.5rem;
+   margin-top: 0.75rem;
+}
+
+
+.menu-images img {
+   width: 60px;
+   height: 60px;
+   border-radius: 8px;
+   object-fit: cover;
+}
+
+
+.view-menu {
+   margin-top: 0.5rem;
+   color: #b57f50;
+   text-decoration: underline;
+   font-size: 0.9rem;
+}
+
+
+.reviews {
+  transition: opacity 0.3s ease;
+  opacity: 0;
+  display: none;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+  top: 33%;
+  transform: translateY(-0%);
+  width: 60%;
+  font-style: italic;
+}
+
+.reviews span {
+   color: #b57f50;
+   font-style: normal;
+   font-size: 1rem;
+}
+
+.reviews.left {
+  left: 110px;
+}
+
+.reviews.right {
+ right: -10px;
+}
+
+@media (max-width: 550px) {
+   #left-review-container, #right-review-container {
+     display: none; /* hide desktop side-reviews */
+   }
  
+   .mobile-review-container {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin-top: 1rem;
+     gap: 10px;
+   }
  
+   .mobile-review-container p {
+     text-align: center;
+     font-style: italic;
+   }
  
+   .mobile-review-container span {
+     color: #b57f50;
+     font-style: normal;
+     font-size: 0.9rem;
+   }
+ }
  
+
+
+
+
+

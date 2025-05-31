@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', async () => {
   let data = JSON.parse(localStorage.getItem('restaurantData'));
 
-  if (true) {
+  if (!data) {
       const res = await fetch('data/restaurants.json');
       data = await res.json();
       localStorage.setItem('restaurantData', JSON.stringify(data));
@@ -140,13 +140,23 @@ function renderRestaurant(data) {
     leftReviewContainer.appendChild(leftReviewElement);
     rightReviewContainer.appendChild(rightReviewElement);
 
-     // add mobile review rendering
-    //const mobileReviews = document.getElementById(`mobile_review_${cardId}`);
-    const mobileReviewContainer = document.getElementById('mobile-review-container');
-    if (window.innerWidth <= 550 && mobileReviewContainer) {
-      const mobileReview = createReviewElement(reviews.slice(0, 1), 'mobile', id);
-      mobileReviewContainer.appendChild(mobileReview);
+    // MOBILE REVIEW START
+    if (window.innerWidth <= 550) {
+      const mobileReviewDiv = document.createElement('div');
+      mobileReviewDiv.classList.add('mobile-review-container');
+      mobileReviewDiv.id = `mobile_review_${id}`;
+
+      (reviews || []).forEach(rev => {
+        const p = document.createElement('p');
+        p.innerHTML = `"${rev.text}"<br><span>- ${rev.author}</span>`;
+        mobileReviewDiv.appendChild(p);
+      });
+
+      mobileReviewDiv.style.display = 'none';
+      container.appendChild(mobileReviewDiv);
     }
+    // MOBILE REVIEW END
+
     setupFlipping(div);
     id += 1;
   });
@@ -156,54 +166,57 @@ function renderRestaurant(data) {
     first.classList.add('active-card');
     first.style.display = 'block';
   }
-
- 
- 
 }
 
 function setupFlipping(card) {
-  // const card = document.querySelector('.active-card');
   const cardId = card.id.split('_')[1];
   const leftReviews = document.getElementById(`left_review_${cardId}`);
   const rightReviews = document.getElementById(`right_review_${cardId}`);
-  const mobileReviews = document.getElementById(`mobile_review_${cardId}`);
   const leftHint = document.querySelector('.left-hint');
   const rightHint = document.querySelector('.right-hint');
+  const mobileReviews = document.getElementById(`mobile_review_${cardId}`); // MOBILE
 
   card.addEventListener('click', () => {
       card.classList.toggle('flipped');
       const isFlipped = card.classList.contains('flipped');
 
       if (isFlipped) {
-        // Fade in reviews
           leftReviews.style.display = 'flex';
           rightReviews.style.display = 'flex';
-          mobileReviews.style.display = 'flex';
 
           if (leftHint) leftHint.style.display = 'none';
           if (rightHint) rightHint.style.display = 'none';
-          if (mobileReviews) mobileReviews.style.display = 'flex';
 
           setTimeout(() => {
               leftReviews.style.opacity = 1;
               rightReviews.style.opacity = 1;
-              mobileReviews.style.opacity = 1;
           }, 300);
+
+          if (window.innerWidth <= 550 && mobileReviews) {
+            mobileReviews.style.display = 'flex';
+            mobileReviews.style.opacity = 1;
+          }
+
       } else {
           leftReviews.style.opacity = 0;
           rightReviews.style.opacity = 0;
-          mobileReviews.style.opacity = 0;
 
           setTimeout(() => {
               leftReviews.style.display = 'none';
               rightReviews.style.display = 'none';
-              mobileReviews.style.display = 'none';
 
               if (leftHint && rightHint) {
                 leftHint.style.display = 'flex';
                 rightHint.style.display = 'flex';
-            }
+              }
           }, 300);
+
+          if (window.innerWidth <= 550 && mobileReviews) {
+            mobileReviews.style.opacity = 0;
+            setTimeout(() => {
+              mobileReviews.style.display = 'none';
+            }, 300);
+          }
       }
   });
 }
@@ -212,6 +225,7 @@ function resetCard(cardId) {
   const card = document.getElementById(`card_${cardId}`);
   const leftRev = document.getElementById(`left_review_${cardId}`);
   const rightRev = document.getElementById(`right_review_${cardId}`);
+  const mobileRev = document.getElementById(`mobile_review_${cardId}`); // MOBILE
   if (!card) return;
 
   card.classList.remove('flipped');
@@ -221,6 +235,11 @@ function resetCard(cardId) {
           el.style.display = 'none';
       }
   });
+
+  if (mobileRev) {
+    mobileRev.style.opacity = 0;
+    mobileRev.style.display = 'none';
+  }
 }
 
 function setupButtons() {
