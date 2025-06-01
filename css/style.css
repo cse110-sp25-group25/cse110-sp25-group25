@@ -669,6 +669,10 @@ body {
    height: auto;
  }
  
- 
+ @media (max-width: 600px) {
+  .swipe-hint {
+    display: none;
+  }
+}
  
  
