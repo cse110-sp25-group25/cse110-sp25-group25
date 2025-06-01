@@ -1,5 +1,18 @@
 // import {applyFilters, removeViewed} from './swipe.utils.js'
 
+
+document.addEventListener('DOMContentLoaded', async () => {
+    const clearBtn = document.getElementById('clear-filters-btn');
+    if (clearBtn) {
+      clearBtn.addEventListener('click', () => {
+        localStorage.removeItem('userSelections');
+        alert('All filters have been cleared. To set new ones, go back to the filters page.');
+        window.location.reload();
+
+    });
+    }
+    await loadAndRender();
+  });
 document.addEventListener('DOMContentLoaded', async () => {
     let data = JSON.parse(localStorage.getItem('restaurantData'));
 
@@ -27,6 +40,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     renderRestaurant(data);
     setupButtons();
 });
+
+
 
 
 /**
