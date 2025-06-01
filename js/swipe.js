@@ -153,7 +153,7 @@ function renderRestaurant(data) {
       });
 
       mobileReviewDiv.style.display = 'none';
-      container.appendChild(mobileReviewDiv);
+      document.querySelector('.swipe-layout').appendChild(mobileReviewDiv);
     }
     // MOBILE REVIEW END
 
