@@ -10,9 +10,16 @@ const STEPS = ['cuisine', 'price', 'distance', 'rating'];
 let current   = 0;          // index inside STEPS
 let editMode  = false;      // true = user only fixes one step, then exit
 
+
+/**
+ * Updates the progress bar by setting the active step based on the current index.
+ * 
+ * Iterates through all elements with the class 'step', removing the 'active' class from each,
+ * and then adds the 'active' class to the step that matches the current active index.
+ */
 function updateProgressBar() {
   const steps = document.querySelectorAll('.step');
-  
+
   steps.forEach((step, index) => {
     const stepElement = step;
     stepElement.classList.remove('active');
@@ -43,9 +50,15 @@ function finalise() {
   document.getElementById('summary').classList.remove('hidden');
 }
 
-
-
-//function to show selected filter options
+/**
+ * Shows the selected filter options and reveals the progress bar.
+ * 
+ * Hides the filter selection section and all filter option sections, then shows
+ * the specific filter options for the given type. Also makes the progress bar visible
+ * and updates it to highlight the current step.
+ * 
+ * @param {string} type - The type of filter to show options for ('cuisine', 'price', 'distance', 'rating')
+ */
 function showOptions(type) {
   document.querySelector('.filter-selection').classList.add('hidden');
   document.querySelectorAll('.filter-options').forEach(el => el.classList.add('hidden'));
