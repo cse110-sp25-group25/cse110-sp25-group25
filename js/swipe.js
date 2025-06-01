@@ -142,16 +142,17 @@ function renderRestaurant(data) {
 
     // MOBILE REVIEW START
     if (window.innerWidth <= 550) {
+      console.log("Appended mobile reviews for card", id);
       const mobileReviewDiv = document.createElement('div');
       mobileReviewDiv.classList.add('mobile-review-container');
       mobileReviewDiv.id = `mobile_review_${id}`;
-
+    
       (reviews || []).forEach(rev => {
         const p = document.createElement('p');
         p.innerHTML = `"${rev.text}"<br><span>- ${rev.author}</span>`;
         mobileReviewDiv.appendChild(p);
       });
-
+    
       mobileReviewDiv.style.display = 'none';
       document.querySelector('.swipe-layout').appendChild(mobileReviewDiv);
     }
