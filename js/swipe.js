@@ -198,7 +198,6 @@ function resetCard(cardId) {
       }
     });
   
-    // ← ADD THIS: bring the swipe hints BACK
     const leftHint  = document.querySelector('.left-hint');
     const rightHint = document.querySelector('.right-hint');
     if (leftHint && rightHint) {
