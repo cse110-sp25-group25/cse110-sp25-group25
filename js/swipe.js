@@ -11,7 +11,6 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     });
     }
-    await loadAndRender();
   });
 document.addEventListener('DOMContentLoaded', async () => {
     let data = JSON.parse(localStorage.getItem('restaurantData'));
