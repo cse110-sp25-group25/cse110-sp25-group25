@@ -62,7 +62,6 @@ body {
   }
   
   /* Type 1 Buttons: Skip & Confirm */
-  .skip-btn,
   .confirm-btn {
     background-color: #4b543b;
     color: #f3f4e4;
@@ -87,7 +86,7 @@ body {
     align-items: center;
     gap: 1.5rem;
     max-width: 400px;
-    margin: 0 auto 2.5rem auto;
+    margin: 1 auto 2.5rem auto;
   }
   
   .filter-buttons button {
@@ -116,6 +115,7 @@ body {
     width: 120px;
     text-align: center;
     transition: background-color 0.3s ease;
+    margin: 1rem; 
   }
   
   .option-btn:hover {
@@ -127,7 +127,19 @@ body {
     background-color: #dce2aa;
     color: #4b543b;
   }
+  #cuisine-grid {
+    /* turn it into a responsive grid that auto–fits */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
   
+    /* the first value = row gap, second = column gap */
+    gap: 2rem 2.5rem;
+  
+    /* keep the whole block centred in its section */
+    max-width: 600px;          /* tweak as you like */
+    margin: 0 auto 3rem auto;  /* centers horizontally, adds space below */
+    justify-items: center;     /* centre each button inside its cell */
+  }
   /* Distance, Price, and Rating Inputs */
   input[type="number"],
   input[type="text"] {

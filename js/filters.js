@@ -5,7 +5,11 @@ const userSelections = {
     distance: null,
     rating: null,
   };
-
+function getUniqueCuisines() {
+  const all = JSON.parse(localStorage.getItem('restaurantData') || '[]');
+  const set = new Set(all.map(r => r.cuisine).filter(c => typeof c === 'string'));
+  return Array.from(set).sort((a, b) => a.localeCompare(b));
+}
 const STEPS = ['cuisine', 'price', 'distance', 'rating'];
 let current   = 0;          // index inside STEPS
 let editMode  = false;      // true = user only fixes one step, then exit
@@ -33,10 +37,28 @@ function finalise() {
 
 //function to show selected filter options
 function showOptions(type) {
+  alert("showOptions called with:", type);  // <–– add this line
+
   document.querySelector('.filter-selection').classList.add('hidden');
   document.querySelectorAll('.filter-options').forEach(el => el.classList.add('hidden'));
   document.getElementById(`${type}-options`).classList.remove('hidden');
 }
+document.addEventListener('DOMContentLoaded', () => {
+  const cuisineGrid = document.getElementById('cuisine-grid');
+  if (cuisineGrid) {
+    cuisineGrid.innerHTML = '';
+
+    // Get all unique cuisines
+    const cuisines = getUniqueCuisines();
+    cuisines.forEach(cuisine => {
+      const btn = document.createElement('button');
+      btn.classList.add('option-btn');
+      btn.setAttribute('data-value', cuisine);
+      btn.textContent = cuisine;
+      cuisineGrid.appendChild(btn);
+    });
+
+  }
   
 document.querySelectorAll('.option-btn').forEach(btn => {
   btn.addEventListener('click', () => {
@@ -50,8 +72,6 @@ document.querySelectorAll('.option-btn').forEach(btn => {
       btn.classList.add('selected');
     }
   });
-});
-document.addEventListener('DOMContentLoaded', () => {
   const skipAll = document.getElementById('skip-btn');
 
   skipAll.addEventListener('click', () => {
@@ -60,22 +80,10 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-// document.getElementById('skip-btn').addEventListener('click', () => {
-//   const step = STEPS[current];
-//   userSelections[step] = step === 'cuisine' ? [] : null;
-
-//   localStorage.setItem('userSelections', JSON.stringify(userSelections));
-
-//   if (editMode) {
-//     finalise();
-//   } else {
-//     nextStep();
-//   }
-// });
-
-document.getElementById('done-btn').addEventListener('click', () => {
-  window.location.href = 'swipe.html';        // or swipe.html
-});
+  document.getElementById('done-btn').addEventListener('click', () => {
+    window.location.href = 'swipe.html';        // or swipe.html
+  });
+  });
 
   
 

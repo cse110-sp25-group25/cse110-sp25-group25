@@ -39,19 +39,8 @@
         <!-- Cuisine -->
         <section class="filter-options hidden" id="cuisine-options">
           <h2>What cuisines would you like to try?</h2>
-          <div class="options-grid">
-            <button class="option-btn" data-value="Italian">Italian</button>
-            <button class="option-btn" data-value="American">American</button>
-            <button class="option-btn" data-value="Chinese">Chinese</button>
-            <button class="option-btn" data-value="Indian">Indian</button>
-            <button class="option-btn" data-value="Mexican">Mexican</button>
-            <button class="option-btn" data-value="Japanese">Japanese</button>
-            <button class="option-btn" data-value="Vietnamese">Vietnamese</button>
-            <button class="option-btn" data-value="Greek">Greek</button>
-            <button class="option-btn" data-value="Breakfast">Breakfast</button>
-            <button class="option-btn" data-value="Vegan">Vegan</button>
-          
-            <div class="empty-cell"></div>
+          <div class="options-grid" id ="cuisine-grid">
+            <!-- <div class="empty-cell"></div> -->
           </div>
           <form onsubmit="confirmSelection('cuisine'); return false;">
             <button type="submit" class="confirm-btn">Confirm</button>
