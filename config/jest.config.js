@@ -1,15 +1,16 @@
-// jest.config.js
+// config/jest.config.js
 export default {
+  rootDir: '../',
   collectCoverage: true,
   collectCoverageFrom: ['js/**/*.utils.js'],
   coverageDirectory: 'docs/coverage',
   coverageReporters: [
-    'json-summary',  // ← tells Jest to write coverage/coverage-summary.json
-    'json', 
+    'json-summary',
+    'json',
     'lcov',
     'text'
   ],
-  transform: {},    // suppress babel warning
+  transform: {}, // suppress babel warning
   verbose: true,
   testMatch: ['**/__tests__/**/*.test.js'],
   testEnvironment: 'jsdom'
