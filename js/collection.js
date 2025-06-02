@@ -117,7 +117,7 @@ function init() {
  * Given an array of saved restaurant objects, extracts the distinct
  * `cuisine` values and appends them as <option> elements to the 'cuisine' filter
  *
- * @param {Array<{ cuisine?: string }>} savedRestaurants  Array of restaurant
+ * @param {Array<{cuisine: string }>} savedRestaurants  Array of restaurant
  *        objects; each may carry a `cuisine` string (e.g. "Italian").
  * @param {HTMLSelectElement}          filterSelect       The <select> element
  *        that will receive the dynamically-created <option> children.
