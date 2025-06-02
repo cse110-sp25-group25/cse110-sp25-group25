@@ -15,7 +15,10 @@ jobs:
       - name: Install Dependencies
         run: npm install
       - name: Unit tests + coverage
-        run: npm test
+        run: | 
+          JEST_JUNIT_OUTPUT=docs/coverage/junit.xml \
+          npm test --coverage \
+          --coverageReporters=lcov --coverageReporters=cobertura
       - name: Upload test reports
         uses: actions/upload-artifact@v4
         with:
@@ -32,11 +35,13 @@ jobs:
     - name: Install modules
       run: npm install
     - name: Run ESLint
-      run: npx eslint ./ --ignore-pattern docs/
+      run: npx eslint . --ignore-pattern docs/ \
+        -f @microsoft/eslint-formatter-sarif \
+        -o eslint.sarif
     - name: Upload reports
       uses: actions/upload-artifact@v4
       with:
-        name: reports
+        name: lint-reports
         path: eslint.sarif
 
   validate-html:
@@ -109,7 +114,7 @@ jobs:
                   "metric": "line",
                   "tools": [
                     { "id": "cobertura",
-                      "pattern": "**/coverage/cobertura-coverage.xml" }
+                      "pattern": "**/docs/coverage/cobertura-coverage.xml" }
                   ]}
               ]
             }
