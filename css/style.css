@@ -614,32 +614,9 @@ nav ul {
 }
 
 @media (max-width: 550px) {
-   #left-review-container, #right-review-container {
-     display: none; /* hide desktop side-reviews */
-   }
  
-   .mobile-review-container {
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     margin-top: 1rem;
-     gap: 10px;
-   }
- 
-   .mobile-review-container p {
-     text-align: center;
-     font-style: italic;
-   }
- 
-   .mobile-review-container span {
-     color: #b57f50;
-     font-style: normal;
-     font-size: 0.9rem;
-   }
+   
  }
- 
-
-
 
 
 

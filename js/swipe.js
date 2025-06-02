@@ -1,5 +1,3 @@
-// import {applyFilters, removeViewed} from './swipe.utils.js'
-
 document.addEventListener('DOMContentLoaded', async () => {
   let data = JSON.parse(localStorage.getItem('restaurantData'));
 
@@ -28,34 +26,18 @@ document.addEventListener('DOMContentLoaded', async () => {
   setupButtons();
 });
 
-
-/**
- * A function to remove the subset of data that doesn't satisfy the desired filters
- * @param {Array} data original list of data
- * @param {Array} filters list of filters to apply
- * @returns the subset of data that satisfies the desired filters
- */
 function applyFilters(data, filters) {
-    return data.filter(r => {
-        if (filters.cuisine && filters.cuisine.length>0 && !filters.cuisine.includes(r.cuisine)){
-            return false;
-        } 
-        if (filters.price && r.price.length > filters.price.length) return false;
-        // Parse distance and rating
-        if (filters.distance && r.distance > parseFloat(filters.distance)) return false;
-        if (filters.rating && r.rating < parseFloat(filters.rating)) return false;
+  return data.filter(r => {
+      if (filters.cuisine && r.cuisine !== filters.cuisine) return false;
+      if (filters.price && r.price.length > filters.price.length) return false;
+      // Parse distance and rating
+      if (filters.distance && r.distance > parseFloat(filters.distance)) return false;
+      if (filters.rating && r.rating < parseFloat(filters.rating)) return false;
 
-        return true;
+      return true;
   });
 }
 
-/**
- * A function that takes in a list of data, a list of viewed elements, and returns the subset of the original list
- * that is not in the second.
- * @param data original list
- * @param viewed items to remove
- * @returns the set difference data \ viewed
- */
 function removeViewed(data, viewed) {
   return data.filter(r => {
     return !viewed.includes(+r.id);
@@ -158,24 +140,6 @@ function renderRestaurant(data) {
     leftReviewContainer.appendChild(leftReviewElement);
     rightReviewContainer.appendChild(rightReviewElement);
 
-    // MOBILE REVIEW START
-    if (window.innerWidth <= 550) {
-      console.log("Appended mobile reviews for card", id);
-      const mobileReviewDiv = document.createElement('div');
-      mobileReviewDiv.classList.add('mobile-review-container');
-      mobileReviewDiv.id = `mobile_review_${id}`;
-    
-      (reviews || []).forEach(rev => {
-        const p = document.createElement('p');
-        p.innerHTML = `"${rev.text}"<br><span>- ${rev.author}</span>`;
-        mobileReviewDiv.appendChild(p);
-      });
-    
-      mobileReviewDiv.style.display = 'none';
-      document.querySelector('.swipe-layout').appendChild(mobileReviewDiv);
-    }
-    // MOBILE REVIEW END
-
     setupFlipping(div);
     id += 1;
   });
@@ -188,18 +152,19 @@ function renderRestaurant(data) {
 }
 
 function setupFlipping(card) {
+  // const card = document.querySelector('.active-card');
   const cardId = card.id.split('_')[1];
   const leftReviews = document.getElementById(`left_review_${cardId}`);
   const rightReviews = document.getElementById(`right_review_${cardId}`);
   const leftHint = document.querySelector('.left-hint');
   const rightHint = document.querySelector('.right-hint');
-  const mobileReviews = document.getElementById(`mobile_review_${cardId}`); // MOBILE
 
   card.addEventListener('click', () => {
       card.classList.toggle('flipped');
       const isFlipped = card.classList.contains('flipped');
 
       if (isFlipped) {
+        // Fade in reviews
           leftReviews.style.display = 'flex';
           rightReviews.style.display = 'flex';
 
@@ -210,12 +175,6 @@ function setupFlipping(card) {
               leftReviews.style.opacity = 1;
               rightReviews.style.opacity = 1;
           }, 300);
-
-          if (window.innerWidth <= 550 && mobileReviews) {
-            mobileReviews.style.display = 'flex';
-            mobileReviews.style.opacity = 1;
-          }
-
       } else {
           leftReviews.style.opacity = 0;
           rightReviews.style.opacity = 0;
@@ -227,15 +186,8 @@ function setupFlipping(card) {
               if (leftHint && rightHint) {
                 leftHint.style.display = 'flex';
                 rightHint.style.display = 'flex';
-              }
+            }
           }, 300);
-
-          if (window.innerWidth <= 550 && mobileReviews) {
-            mobileReviews.style.opacity = 0;
-            setTimeout(() => {
-              mobileReviews.style.display = 'none';
-            }, 300);
-          }
       }
   });
 }
@@ -244,7 +196,6 @@ function resetCard(cardId) {
   const card = document.getElementById(`card_${cardId}`);
   const leftRev = document.getElementById(`left_review_${cardId}`);
   const rightRev = document.getElementById(`right_review_${cardId}`);
-  const mobileRev = document.getElementById(`mobile_review_${cardId}`); // MOBILE
   if (!card) return;
 
   card.classList.remove('flipped');
@@ -254,11 +205,6 @@ function resetCard(cardId) {
           el.style.display = 'none';
       }
   });
-
-  if (mobileRev) {
-    mobileRev.style.opacity = 0;
-    mobileRev.style.display = 'none';
-  }
 }
 
 function setupButtons() {
@@ -318,4 +264,3 @@ function handleViewedCard(id) {
     localStorage.setItem('viewed', JSON.stringify(viewed));
   }
 }
-
