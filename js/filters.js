@@ -5,6 +5,12 @@ const userSelections = {
     distance: null,
     rating: null,
   };
+
+  /**
+ * Retrieves a sorted list of unique cuisines from restaurant data stored in localStorage.
+ *
+ * @returns {string[]} An alphabetically sorted array of unique cuisine strings.
+ */
 function getUniqueCuisines() {
   const all = JSON.parse(localStorage.getItem('restaurantData') || '[]');
   const set = new Set(all.map(r => r.cuisine).filter(c => typeof c === 'string'));
@@ -14,6 +20,11 @@ const STEPS = ['cuisine', 'price', 'distance', 'rating'];
 let current   = 0;          // index inside STEPS
 let editMode  = false;      // true = user only fixes one step, then exit
 
+ /**
+ * Advances to the next step in the filter selection process.
+ *
+ * @returns {void}
+ */
 function nextStep() {
   current += 1;
   if (current < STEPS.length) {
@@ -23,6 +34,11 @@ function nextStep() {
   }
 }
 
+/**
+ * Finalizes the filter selections and displays a summary.
+ *  *
+ * @returns {void}
+ * */
 function finalise() {
   document.getElementById('sum-cuisine' ).textContent = userSelections.cuisine.join(', ') || '—';
   document.getElementById('sum-price'   ).textContent = userSelections.price    ?? '—';
@@ -36,11 +52,18 @@ function finalise() {
 
 
 //function to show selected filter options
+/**
+ * @param {string} type - The type of filter to display options for.
+ * @return {void}
+ * */
 function showOptions(type) {
   document.querySelector('.filter-selection').classList.add('hidden');
   document.querySelectorAll('.filter-options').forEach(el => el.classList.add('hidden'));
   document.getElementById(`${type}-options`).classList.remove('hidden');
 }
+
+// Event listener for DOMContentLoaded to initialize the filter options
+
 document.addEventListener('DOMContentLoaded', () => {
   const cuisineGrid = document.getElementById('cuisine-grid');
   if (cuisineGrid) {
@@ -58,9 +81,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   }
   
+  // Set up event listeners for filter buttons
 document.querySelectorAll('.option-btn').forEach(btn => {
   btn.addEventListener('click', () => {
-    // For multi-select (Cuisine), allow multiple
     if (btn.closest('#cuisine-options')) {
       btn.classList.toggle('selected');
     } else {
@@ -85,7 +108,11 @@ document.querySelectorAll('.option-btn').forEach(btn => {
 
   
 
-// confirm selection
+/**
+ * Confirms the user's selection for a specific filter type and updates the userSelections object.
+ * @param {string} type - The type of filter being confirmed (e.g., 'cuisine', 'price', 'distance', 'rating').
+ * @return {void}
+ * */
 function confirmSelection(type) {
   if (type === 'cuisine') {
     const selected = document.querySelectorAll('#cuisine-options .option-btn.selected');
@@ -149,6 +176,11 @@ function confirmSelection(type) {
 
 
 // function to check positive/numeric input
+/**
+ * Validates that the input value is a positive number.
+ * @param {string} value - The input value to validate.
+ * @returns {boolean} True if the value is a valid positive number, false otherwise.
+ */
 function validatePositiveNumber(value) {
   const num = parseFloat(value);
   return !isNaN(num) && num >= 0;

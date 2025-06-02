@@ -1,6 +1,7 @@
 // import {applyFilters, removeViewed} from './swipe.utils.js'
 
 
+// This script handles the swipe functionality for restaurant cards, including filtering, flipping, and saving to a deck.
 document.addEventListener('DOMContentLoaded', async () => {
     const clearBtn = document.getElementById('clear-filters-btn');
     if (clearBtn) {
@@ -73,6 +74,11 @@ function removeViewed(data, viewed) {
     });
 }
 
+/**
+ * saves a restaurant to the deck in localStorage.
+ *  @param {number} id - The ID of the restaurant to save.
+ * @return {void}
+ * */
 function saveToDeck(id) {
     const all = JSON.parse(localStorage.getItem('restaurantData'));
     const saved = JSON.parse(localStorage.getItem('deck')) || [];
@@ -89,6 +95,11 @@ function saveToDeck(id) {
     }
 }
 
+/**
+ * Renders the restaurant cards and their details in the swipe layout.
+ * @param {Array} data - The array of restaurant data to render.
+ * @return {void}
+ * */
 function renderRestaurant(data) {
     const layout = document.querySelector('.swipe-layout');
     const existingHeader = layout.querySelector('.swipe-header');
@@ -194,6 +205,11 @@ function renderRestaurant(data) {
     first.style.display = 'block';
 }
 
+/**
+ * Resets the card to its initial state, removing any flipped state and hiding review panes.
+ * @param {string} cardId - The ID of the card to reset.
+ * @return {void}
+ * */
 function resetCard(cardId) {
     const card      = document.getElementById(`card_${cardId}`);
     const leftRev   = document.getElementById(`left_review_${cardId}`);
