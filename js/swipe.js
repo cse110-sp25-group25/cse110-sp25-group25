@@ -1,5 +1,6 @@
-// import {applyFilters, removeViewed} from './swipe.utils.js'
+import {applyFilters, removeViewed} from './swipe.utils.js'
 
+alert('Welcome to the restaurant swipe app! Here you can filter restaurants based on your preferences and swipe through them. Click on a card to view details, and use the buttons to accept or reject restaurants. Enjoy your experience!');
 
 document.addEventListener('DOMContentLoaded', async () => {
     const clearBtn = document.getElementById('clear-filters-btn');
@@ -11,10 +12,8 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     });
     }
-  });
-document.addEventListener('DOMContentLoaded', async () => {
     let data = JSON.parse(localStorage.getItem('restaurantData'));
-
+    alert(data)
     if (!data) {
         const res = await fetch('data/restaurants.json');
         data = await res.json();
