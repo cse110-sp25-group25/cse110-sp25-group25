@@ -106,7 +106,7 @@ jobs:
               ],
               "coverage": [
                 { "name": "Line Coverage",
-                  "metric": "line",
+                  "metric": "LINE", 
                   "tools": [
                     { "id": "cobertura",
                       "pattern": "**/docs/coverage/cobertura-coverage.xml" }
