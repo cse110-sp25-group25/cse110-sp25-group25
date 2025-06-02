@@ -85,9 +85,6 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           config: |
             {
-              "tests": { "tools": [
-                { "id": "test", "pattern": "**/junit.xml" }
-              ]},
               "analysis": [
                 { "name": "Style", "tools": [
                   { "id": "sarif", "pattern": "**/*.sarif" }
