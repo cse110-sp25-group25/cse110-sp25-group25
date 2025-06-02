@@ -8,21 +8,21 @@
     href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Permanent+Marker&display=swap"
     rel="stylesheet"
   />
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="/css/style.css" />
 </head>
 
 <body>
   <!-- Header -->
   <header>
-    <img src="assets/app-icon.png" alt="app icon" class="app-icon" />
+    <img src="/assets/app-icon.png" alt="app icon" class="app-icon" />
     <nav>
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="collection.html">Collection</a></li>
-        <li><a href="filters.html">Filters</a></li>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/pages/collection.html">Collection</a></li>
+          <li><a href="/pages/filters.html">Filters</a></li>
       </ul>
-    </nav>
-    <img src="assets/burger-menu.png" alt="menu" class="burger-icon" />
+  </nav>
+    <img src="/assets/burger-menu.png" alt="menu" class="burger-icon" />
   </header>
 
   <!-- Swipe Layout -->
@@ -30,7 +30,7 @@
     <div class="swipe-container">
       <!-- Left Hint -->
       <div class="swipe-hint left-hint">
-        <img src="assets/left-arrow.png" alt="Swipe Left" class="hint-icon" />
+        <img src="/assets/left-arrow.png" alt="Swipe Left" class="hint-icon" />
         <span class="hint-text">
           swipe left<br/>
           to get a new card
@@ -48,7 +48,7 @@
 
       <!-- Right Hint -->
       <div class="swipe-hint right-hint">
-        <img src="assets/right-arrow.png" alt="Swipe Right" class="hint-icon" />
+        <img src="/assets/right-arrow.png" alt="Swipe Right" class="hint-icon" />
         <span class="hint-text">
           swipe right<br/>
           to save to collection
@@ -59,16 +59,16 @@
     <!-- Accept / Reject Buttons -->
     <div class="swipe-buttons">
       <button class="button-type2" title="Reject">
-        <img src="assets/decline-icon.png" alt="Reject" />
+        <img src="/assets/decline-icon.png" alt="Reject" />
       </button>
       <button class="button-type2" title="Accept">
-        <img src="assets/accept-icon.png" alt="Accept" />
+        <img src="/assets/accept-icon.png" alt="Accept" />
       </button>
     </div>
   </main>
 
   <!-- Scripts -->
-  <script src="js/scripts.js"></script>  <!-- for navbar toggling, etc. -->
-  <script src="js/swipe.js"></script>    <!-- rendering & swipe/flip logic -->
+  <script type="module" src="/js/swipe.js"></script>    <!-- rendering & swipe/flip logic -->
+  <script src="/js/scripts.js"></script>  <!-- for navbar toggling, etc. -->
 </body>
 </html>

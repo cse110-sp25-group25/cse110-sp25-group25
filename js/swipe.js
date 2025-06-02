@@ -1,4 +1,4 @@
-// import {applyFilters, removeViewed} from './swipe.utils.js'
+import {applyFilters, removeViewed} from '/js/swipe.utils.js'
 
 document.addEventListener('DOMContentLoaded', async () => {
     let data = JSON.parse(localStorage.getItem('restaurantData'));
@@ -28,40 +28,10 @@ document.addEventListener('DOMContentLoaded', async () => {
     setupButtons();
 });
 
-
 /**
- * A function to remove the subset of data that doesn't satisfy the desired filters
- * @param {Array} data original list of data
- * @param {Array} filters list of filters to apply
- * @returns the subset of data that satisfies the desired filters
+ * Given the id of a restaurant, save this id to the "deck" list in local storage
+ * @param id id of the restaurant
  */
-function applyFilters(data, filters) {
-    return data.filter(r => {
-        if (filters.cuisine && filters.cuisine.length>0 && !filters.cuisine.includes(r.cuisine)){
-            return false;
-        } 
-        if (filters.price && r.price.length > filters.price.length) return false;
-        // Parse distance and rating
-        if (filters.distance && r.distance > parseFloat(filters.distance)) return false;
-        if (filters.rating && r.rating < parseFloat(filters.rating)) return false;
-
-        return true;
-  });
-}
-
-/**
- * A function that takes in a list of data, a list of viewed elements, and returns the subset of the original list
- * that is not in the second.
- * @param data original list
- * @param viewed items to remove
- * @returns the set difference data \ viewed
- */
-function removeViewed(data, viewed) {
-    return data.filter(r => {
-        return !viewed.includes(+r.id);
-    });
-}
-
 function saveToDeck(id) {
     const all = JSON.parse(localStorage.getItem('restaurantData'));
     const saved = JSON.parse(localStorage.getItem('deck')) || [];
@@ -78,6 +48,11 @@ function saveToDeck(id) {
     }
 }
 
+/**
+ * Populate the restuarant card container with a list of 
+ * restaurants
+ * @param data input list of restaurants (assumed to be filtered already)
+ */
 function renderRestaurant(data) {
     const layout = document.querySelector('.swipe-layout');
     const existingHeader = layout.querySelector('.swipe-header');
@@ -88,7 +63,7 @@ function renderRestaurant(data) {
         header.className = 'swipe-header';
         header.innerHTML = `
             <span class="instruction-text">click the card to view details</span>
-            <img src="assets/help-icon.png" alt="help" class="help-icon" />
+            <img src="/assets/help-icon.png" alt="help" class="help-icon" />
     `;
     // put it immediately before the swipe-container
     const container = layout.querySelector('.swipe-container');
@@ -114,7 +89,7 @@ function renderRestaurant(data) {
             <div class="card-front">
               <h2>${r["name"]}</h2>
               <img
-                src="assets/restaurant.jpg"
+                src="/assets/restaurant.jpg"
                 alt="restaurant"
                 class="card-img"
               />
@@ -137,9 +112,9 @@ function renderRestaurant(data) {
                     <p>🕒 Open until XX:XX PM</p>
                     <p>📞 XXX - XXX - XXXX</p>
                     <div class="menu-images">
-                      <img src="assets/food1.jpg" alt="food">
-                      <img src="assets/food2.jpg" alt="food">
-                      <img src="assets/food3.jpg" alt="food">
+                      <img src="/assets/food1.jpg" alt="food">
+                      <img src="/assets/food2.jpg" alt="food">
+                      <img src="/assets/food3.jpg" alt="food">
                     </div>
                     <a href="#" class="view-menu">View Menu ↗</a>
                 </div>
@@ -183,6 +158,11 @@ function renderRestaurant(data) {
     first.style.display = 'block';
 }
 
+/**
+ * Before moving onto the next card when swiping, this resets the 
+ * current card by flipping it face up
+ * @param {*} cardId current card
+ */
 function resetCard(cardId) {
     const card      = document.getElementById(`card_${cardId}`);
     const leftRev   = document.getElementById(`left_review_${cardId}`);
@@ -206,7 +186,10 @@ function resetCard(cardId) {
     }
   }
   
-
+/**
+ * Set up event listeners for the accept and return buttons,
+ * updating local storage on each decision
+ */
 function setupButtons() {
     let declineBtn = document.querySelector('button[title="Reject"]');
     declineBtn.addEventListener("click", () => {
@@ -255,8 +238,12 @@ function setupButtons() {
     });
 }
 
+/**
+ * Handle logic for when a card is clicked,
+ * adding appropriate classes to animate the flip
+ * @param card input card
+ */
 function setupFlipping(card) {
-    // const card = document.querySelector('.active-card');
     const cardId = card.id.split('_')[1];
 
     const leftReviews = document.getElementById(`left_review_${cardId}`);
@@ -307,8 +294,12 @@ function setupFlipping(card) {
     });
 }
 
+/**
+ * Simply saves this restaurant id to local storage.
+ * This will just be reapplied as a filter
+ * @param id id of restaurant
+ */
 function handleViewedCard(id) {
-    // simply save this id to local storage. this will just be reapplied as a filter
     const viewed = JSON.parse(localStorage.getItem('viewed')) || [];
 
     const exists = viewed.some( r=> r === id);

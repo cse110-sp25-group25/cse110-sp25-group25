@@ -13,6 +13,9 @@ function init() {
     }
 }
 
+/**
+ * Render all saved cards to the page by reading LocalStorage
+ */
 function renderDeck() {
     const container = document.getElementById("deck-list");
     if(!container) return;
@@ -32,7 +35,7 @@ function renderDeck() {
         div.innerHTML = `
             <h2>${r["name"]}</h2>
             <img
-                src="assets/restaurant.jpg"
+                src="/assets/restaurant.jpg"
                 alt="restaurant"
                 class="card-img"
             />
