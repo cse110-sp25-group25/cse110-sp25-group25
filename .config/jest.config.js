@@ -1,4 +1,4 @@
-// config/jest.config.js
+// .config/jest.config.js
 export default {
   rootDir: '../',
   collectCoverage: true,
