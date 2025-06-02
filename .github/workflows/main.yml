@@ -34,23 +34,13 @@ jobs:
         with:
           pr-number:    ${{ steps.pr.outputs.number }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          config: |                        # <-- NEW
+          config: |
             {
-              "coverage": [
-                {
-                  "name": "Cobertura",
-                  "tools": [
-                    {
-                      "id": "cobertura",
-                      "name": "Line Coverage",
-                      "metric": "line",
-                      "pattern": "**/coverage/cobertura-coverage.xml"
-                    }
-                  ]
-                }
-              ]
+              "tests":   { "tools":[{ "id":"test", "pattern":"**/junit.xml"        }]},
+              "analysis":[{ "name":"Style", "tools":[{ "id":"sarif", "pattern":"**/*.sarif"}]}],
+              "coverage":[{ "name":"Line Coverage", "metric":"line",
+                            "tools":[{ "id":"cobertura", "pattern":"**/coverage/cobertura-coverage.xml"}]}]
             }
-    
   lint:
     runs-on: ubuntu-latest
     steps:
