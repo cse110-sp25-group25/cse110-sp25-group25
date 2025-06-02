@@ -349,47 +349,6 @@ body {
  }
  
  
- /*Swipe card styles */
- .swipe-layout {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem;
-    /* page bg lives on body */
-  }
-  .swipe-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-  }
-   /* Hints */
-  .swipe-hint {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-size: 1.5rem;      /* 24px text */
-    color: #b57f50;
-    text-align: center;
-    max-width: 120px;
-  }
-   .left-hint  { flex-direction: row-reverse;}
- 
- 
-  .right-hint { flex-direction: row;}
- 
- 
-  .hint-text {
-    line-height: 1.2;        /* tighten up the two lines */
-  }
- 
- 
-  .hint-icon {
-    font-size: 2.5rem;       /* ~40px arrow */
-    line-height: 1;          /* no extra spacing */
-  }
- 
- 
    /* — Restaurant Card — */
   .restaurant-card {
     background-color: #ffffff;              /* card bg */
@@ -433,12 +392,82 @@ body {
     color: #4b543b;
     border-radius: 20px;
   }
+
+  /*** SWIPE LAYOUT ***/
+
+  .swipe-layout {
+   position: relative;     /* so absolute children use this as origin */
+   max-width: 360px;       /* match your card/container width */
+   margin: 3rem auto 0;    /* center it and push down from top */
+   padding-bottom: 6rem;   /* extra room for buttons */
+ }
+ 
+ 
+ .swipe-container {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 1rem;                   /* tighten up spacing */
+ }
+ 
+ /* — Swipe Hints — */
+.swipe-hint {
+   position: absolute;
+   top: 50%;
+   /* remove any left/right here */
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 0.5rem;
+   text-align: center;
+   color: #b57f50;
+   font-size: 1rem;
+   width: 120px;       /* wrap at 120px */
+   max-width: 120px;
+ }
+ 
+ .left-hint {
+   left: 0;                             /* anchor at left edge */
+   transform: translate(-100%, -50%);  /* move left by its own width */
+ }
+ 
+ .right-hint {
+   right: 0;                            /* anchor at right edge */
+   transform: translate(100%, -50%);   /* move right by its own width */
+ }
+ 
+ .hint-icon {
+   width: 32px;
+   height: auto;
+ }
+ 
+ .hint-icon {
+   width: 64px;                 /* size your arrow images */
+   height: auto;
+ }
+ 
+ /* ACCEPT / REJECT BUTTONS */
+ .swipe-buttons {
+   position: absolute;
+   bottom: 0;                   /* sit at bottom of .swipe-layout */
+   left: 50%;
+   transform: translateX(-50%);
+   display: flex;
+   gap: 2rem;
+ }
+
+ .button-type2 img {
+  width: 48px;                 /* shrink your check/x icons */
+  height: auto;
+}
+
    /* — Swipe Buttons (Type 2) — */
   .swipe-buttons {
     margin-top: 2rem;
     display: flex;
     gap: 2rem;
   }
+  
   .button-type2 {
     background-color: #b4d2ba;              /* default bg */
     color: #4b543b;
@@ -635,3 +664,31 @@ body {
  .reviews.visible {
     opacity: 1;
  }
+ 
+ /* — Swipe Header — */
+.swipe-header {
+   position: absolute;
+   top: -2rem;               /* tweak to sit right above your card */
+   left: 50%;
+   transform: translateX(-50%);
+   display: flex;
+   align-items: center;
+   gap: 0.5rem;
+ }
+ 
+ .instruction-text {
+   color: #b57f50;
+   font-size: 1.3rem;
+   white-space: nowrap;
+ }
+ 
+ .help-icon {
+   width: 28px;              /* matches your mockup */
+   height: auto;
+ }
+ 
+ @media (max-width: 600px) {
+  .swipe-hint {
+    display: none;
+  }
+}
