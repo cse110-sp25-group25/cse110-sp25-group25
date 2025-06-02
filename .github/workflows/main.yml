@@ -87,8 +87,8 @@ jobs:
     steps:
       - uses: actions/download-artifact@v4
         with:
-          name: reports
-          path: ./reports
+          merge-multiple: true
+          path: .
       - name: Quality Monitor summary
         uses: uhafner/quality-monitor@v1
         with:
