@@ -1,0 +1,46 @@
+<?xml version="1.0" ?>
+<!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
+<coverage lines-valid="7" lines-covered="7" line-rate="1" branches-valid="16" branches-covered="10" branch-rate="0.625" timestamp="1748829574474" complexity="0" version="0.1">
+  <sources>
+    <source>/Users/harry/CSE 110/cse110-sp25-group25</source>
+  </sources>
+  <packages>
+    <package name="main" line-rate="1" branch-rate="0.625">
+      <classes>
+        <class name="swipe.utils.js" filename="js/swipe.utils.js" line-rate="1" branch-rate="0.625">
+          <methods>
+            <method name="applyFilters" hits="1" signature="()V">
+              <lines>
+                <line number="2" hits="1"/>
+              </lines>
+            </method>
+            <method name="(anonymous_1)" hits="3" signature="()V">
+              <lines>
+                <line number="3" hits="3"/>
+              </lines>
+            </method>
+            <method name="removeViewed" hits="1" signature="()V">
+              <lines>
+                <line number="12" hits="1"/>
+              </lines>
+            </method>
+            <method name="(anonymous_3)" hits="3" signature="()V">
+              <lines>
+                <line number="13" hits="3"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="3" hits="1" branch="false"/>
+            <line number="4" hits="3" branch="true" condition-coverage="100% (4/4)"/>
+            <line number="5" hits="2" branch="true" condition-coverage="50% (2/4)"/>
+            <line number="6" hits="2" branch="true" condition-coverage="50% (2/4)"/>
+            <line number="7" hits="2" branch="true" condition-coverage="50% (2/4)"/>
+            <line number="8" hits="2" branch="false"/>
+            <line number="13" hits="3" branch="false"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+  </packages>
+</coverage>

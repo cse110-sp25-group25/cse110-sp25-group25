@@ -14,8 +14,16 @@ jobs:
       - uses: actions/checkout@v4
       - name: Install Dependencies
         run: npm install
-      - name: Unit Test
-        run: npm run test
+      - name: Unit tests + coverage
+        run: npm test
+      - name: Upload test reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: tests-reports
+          path: |
+            docs/coverage/junit.xml
+            docs/coverage/cobertura-coverage.xml
+          if-no-files-found: error
     
   lint:
     runs-on: ubuntu-latest
@@ -85,6 +93,9 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           config: |
             {
+              "tests": { "tools": [
+                { "id": "test", "pattern": "**/junit.xml" }
+              ]},
               "analysis": [
                 { "name": "Style", "tools": [
                   { "id": "sarif", "pattern": "**/*.sarif" }
