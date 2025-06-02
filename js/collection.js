@@ -191,17 +191,15 @@ function applyFilters(filters, savedRestaurants, deckList) {
  *     appends the card to `deckList`.  Finally, it makes the “Clear Deck”
  *     button visible.
  *
- * @param {Array<{
- *   name:      string,
- *   rating:    number|string,
- *   distance:  number|string,
- *   cuisine:   string,
- * }>} subset            Array of restaurant objects to display.
- *
- * @param {HTMLElement}  deckList          The container (e.g. <div id="card-grid">)
- *                                         that receives the generated card nodes.
- *
- * @returns {void}                         (DOM is updated in place; no return value)
+ * 
+ * @param {Array.<{name:string,
+ *                 rating:(number|string),
+ *                 distance:(number|string),
+ *                 cuisine:string}>} subset
+ *        Restaurants to render.
+ * @param {HTMLElement} deckList
+ *        Container that receives the generated cards.
+ * @returns {void}                  (DOM is updated in place; no return value)
  */
 function renderDeck(subset, deckList) {
     deckList.innerHTML = ''
