@@ -37,8 +37,6 @@ function finalise() {
 
 //function to show selected filter options
 function showOptions(type) {
-  alert("showOptions called with:", type);  // <–– add this line
-
   document.querySelector('.filter-selection').classList.add('hidden');
   document.querySelectorAll('.filter-options').forEach(el => el.classList.add('hidden'));
   document.getElementById(`${type}-options`).classList.remove('hidden');
