@@ -192,13 +192,8 @@ function applyFilters(filters, savedRestaurants, deckList) {
  *     button visible.
  *
  * 
- * @param {Array.<{name:string,
- *                 rating:(number|string),
- *                 distance:(number|string),
- *                 cuisine:string}>} subset
- *        Restaurants to render.
- * @param {HTMLElement} deckList
- *        Container that receives the generated cards.
+ * @param {Array} subset            Restaurants to render.
+ * @param {HTMLElement} deckList    Container that receives the generated cards.
  * @returns {void}                  (DOM is updated in place; no return value)
  */
 function renderDeck(subset, deckList) {
