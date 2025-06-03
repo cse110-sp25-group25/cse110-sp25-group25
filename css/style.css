@@ -447,6 +447,8 @@ nav ul {
    margin-top: 2rem;
    display: flex;
    gap: 2rem;
+   justify-content: center;
+   width: 100%;
  }
  .button-type2 {
    background-color: #b4d2ba;              /* default bg */
@@ -613,10 +615,71 @@ nav ul {
  right: -10px;
 }
 
+.card-buttons-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 @media (max-width: 550px) {
- 
-   
- }
+  .swipe-container {
+    flex-direction: column;
+    gap: 0;
+    align-items: center;
+  }
+
+  .swipe-hint.left-hint,
+  .swipe-hint.right-hint {
+    display: none !important;
+  }
+
+  .card-buttons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    order: 1;
+  }
+
+  .swipe-buttons {
+    margin-top: 1rem;
+    width: 100%;
+    justify-content: center;
+  }
+
+  #left-review-container,
+  #right-review-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    order: 2;
+  }
+
+  .reviews {
+    position: static;
+    width: 100%;
+    max-width: 300px;
+    margin: 0;
+    padding: 0.5rem;
+    transform: none;
+    gap: 0;
+  }
+
+  .reviews.left,
+  .reviews.right {
+    left: auto;
+    right: auto;
+  }
+
+  .reviews p {
+    margin: 0.5rem 0;
+    text-align: center;
+  }
+}
 
 
 
