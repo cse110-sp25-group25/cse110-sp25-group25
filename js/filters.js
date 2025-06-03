@@ -97,19 +97,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-// document.getElementById('skip-btn').addEventListener('click', () => {
-//   const step = STEPS[current];
-//   userSelections[step] = step === 'cuisine' ? [] : null;
-
-//   localStorage.setItem('userSelections', JSON.stringify(userSelections));
-
-//   if (editMode) {
-//     finalise();
-//   } else {
-//     nextStep();
-//   }
-// });
-
 document.getElementById('done-btn').addEventListener('click', () => {
   window.location.href = 'swipe.html';        // or swipe.html
 });
@@ -173,9 +160,6 @@ function confirmSelection(type) {
   } else {
     nextStep();          // continue to next question
   }
-  //REMOVE LATER (just for testing)
-  console.log('Current Selections:', userSelections);
-  alert(`Saved ${type} selection!`);
 }
 
 

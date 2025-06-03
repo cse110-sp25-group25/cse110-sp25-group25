@@ -71,7 +71,7 @@ npm run test
 To run the linter, simply run
 
 ```
-npx eslint ./
+npx eslint ./ --ignore-pattern docs/  --config .config/eslint.config.js 
 ```
 
 ## Documentation

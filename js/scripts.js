@@ -5,6 +5,9 @@ function init() {
     setupDropDown();
 }
 
+/**
+ * Sets up responsive navbar on mobile
+ */
 function setupDropDown() {
     const dropDown = document.querySelector(".burger-icon");
     const navLinks = document.querySelectorAll("nav a")
