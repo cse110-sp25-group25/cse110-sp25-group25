@@ -1,102 +1,2152 @@
 [
-    {
-      "id": 1,
-      "name": "Sakura Sushi",
-      "cuisine": "Japanese",
-      "price": "$$",
-      "distance": 1.2,
-      "rating": 4.6,
-      "location": "Downtown",
-      "image": "assets/images/sakura.jpg"
-    },
-    {
-      "id": 2,
-      "name": "Pasta Paradise",
-      "cuisine": "Italian",
-      "price": "$$$",
-      "distance": 3.5,
-      "rating": 4.2,
-      "location": "Uptown",
-      "image": "assets/images/pasta.jpg"
-    },
-    {
-      "id": 3,
-      "name": "Burger Barn",
-      "cuisine": "American",
-      "price": "$",
-      "distance": 0.8,
-      "rating": 4.0,
-      "location": "Midtown",
-      "image": "assets/images/burger.jpg"
-    },
-    {
-      "id": 4,
-      "name": "Curry House",
-      "cuisine": "Indian",
-      "price": "$$",
-      "distance": 2.0,
-      "rating": 4.7,
-      "location": "Downtown",
-      "image": "assets/images/curry.jpg"
-    },
-    {
-      "id": 5,
-      "name": "Taco Town",
-      "cuisine": "Mexican",
-      "price": "$",
-      "distance": 1.5,
-      "rating": 4.3,
-      "location": "Suburbs",
-      "image": "assets/images/taco.jpg"
-    },
-    {
-      "id": 6,
-      "name": "Pho Palace",
-      "cuisine": "Vietnamese",
-      "price": "$$",
-      "distance": 2.3,
-      "rating": 4.4,
-      "location": "Midtown",
-      "image": "assets/images/pho.jpg"
-    },
-    {
-      "id": 7,
-      "name": "Dragon Wok",
-      "cuisine": "Chinese",
-      "price": "$$",
-      "distance": 3.1,
-      "rating": 4.1,
-      "location": "Chinatown",
-      "image": "assets/images/wok.jpg"
-    },
-    {
-      "id": 8,
-      "name": "The Greek Spot",
-      "cuisine": "Greek",
-      "price": "$$",
-      "distance": 1.9,
-      "rating": 4.5,
-      "location": "Downtown",
-      "image": "assets/images/greek.jpg"
-    },
-    {
-      "id": 9,
-      "name": "Bagel Bros",
-      "cuisine": "Breakfast",
-      "price": "$",
-      "distance": 0.5,
-      "rating": 4.0,
-      "location": "Midtown",
-      "image": "assets/images/bagel.jpg"
-    },
-    {
-      "id": 10,
-      "name": "Green Garden",
-      "cuisine": "Vegan",
-      "price": "$$",
-      "distance": 2.7,
-      "rating": 4.8,
-      "location": "Uptown",
-      "image": "assets/images/vegan.jpg"
-    }
-  ]
+  {
+    "id": 51,
+    "name": "La Jolla Bistro",
+    "cuisine": "Italian",
+    "price": "$",
+    "distance": 5.4,
+    "rating": 3.9,
+    "address": "151 Prospect St",
+    "phone": "858 - 488 - 3907",
+    "hours": "Open until 9:00 PM",
+    "image": "assets/restaurant.jpg",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Great location",
+        "author": "customer 1"
+      },
+      {
+        "text": "Loved it",
+        "author": "customer 2"
+      },
+      {
+        "text": "Delicious food",
+        "author": "customer 3"
+      },
+      {
+        "text": "Highly recommend",
+        "author": "customer 4"
+      },
+      {
+        "text": "Nice ambiance",
+        "author": "customer 5"
+      },
+      {
+        "text": "Loved it",
+        "author": "customer 6"
+      }
+    ]
+  },
+  {
+    "id": 52,
+    "name": "Del Mar Tacos",
+    "cuisine": "Mexican",
+    "price": "$$",
+    "distance": 3.5,
+    "rating": 4.8,
+    "address": "152 Camino Del Mar",
+    "phone": "858 - 939 - 3604",
+    "hours": "Open until 9:00 PM",
+    "image": "assets/restaurant.jpg",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Delicious food",
+        "author": "customer 1"
+      },
+      {
+        "text": "Nice ambiance",
+        "author": "customer 2"
+      },
+      {
+        "text": "Nice ambiance",
+        "author": "customer 3"
+      },
+      {
+        "text": "Delicious food",
+        "author": "customer 4"
+      },
+      {
+        "text": "Delicious food",
+        "author": "customer 5"
+      },
+      {
+        "text": "Service could be better",
+        "author": "customer 6"
+      }
+    ]
+  },
+  {
+    "id": 53,
+    "name": "Sunset Grill",
+    "cuisine": "Italian",
+    "price": "$$$",
+    "distance": 6.2,
+    "rating": 4.3,
+    "address": "153 Prospect St",
+    "phone": "858 - 224 - 6562",
+    "hours": "Open until 9:00 PM",
+    "image": "assets/restaurant.jpg",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Highly recommend",
+        "author": "customer 1"
+      },
+      {
+        "text": "Delicious food",
+        "author": "customer 2"
+      },
+      {
+        "text": "Highly recommend",
+        "author": "customer 3"
+      },
+      {
+        "text": "Delicious food",
+        "author": "customer 4"
+      },
+      {
+        "text": "Highly recommend",
+        "author": "customer 5"
+      },
+      {
+        "text": "Service could be better",
+        "author": "customer 6"
+      }
+    ]
+  },
+  {
+    "id": 54,
+    "name": "Pacific Catch",
+    "cuisine": "French",
+    "price": "$$$",
+    "distance": 6.9,
+    "rating": 4.6,
+    "address": "154 Prospect St",
+    "phone": "858 - 544 - 3281",
+    "hours": "Open until 9:00 PM",
+    "image": "assets/restaurant.jpg",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Great location",
+        "author": "customer 1"
+      },
+      {
+        "text": "Service could be better",
+        "author": "customer 2"
+      },
+      {
+        "text": "Nice ambiance",
+        "author": "customer 3"
+      },
+      {
+        "text": "Service could be better",
+        "author": "customer 4"
+      },
+      {
+        "text": "Service could be better",
+        "author": "customer 5"
+      },
+      {
+        "text": "Highly recommend",
+        "author": "customer 6"
+      }
+    ]
+  },
+  {
+    "id": 55,
+    "name": "Ocean Breeze Cafe",
+    "cuisine": "Italian",
+    "price": "$$$",
+    "distance": 6.0,
+    "rating": 4.4,
+    "address": "155 Camino Del Mar",
+    "phone": "858 - 152 - 1526",
+    "hours": "Open until 9:00 PM",
+    "image": "assets/restaurant.jpg",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Nice ambiance",
+        "author": "customer 1"
+      },
+      {
+        "text": "Great location",
+        "author": "customer 2"
+      },
+      {
+        "text": "Nice ambiance",
+        "author": "customer 3"
+      },
+      {
+        "text": "Service could be better",
+        "author": "customer 4"
+      },
+      {
+        "text": "Great location",
+        "author": "customer 5"
+      },
+      {
+        "text": "Highly recommend",
+        "author": "customer 6"
+      }
+    ]
+  },
+  {
+    "id": 56,
+    "name": "Saffron Thai",
+    "cuisine": "Thai",
+    "price": "$$",
+    "distance": 3.7,
+    "rating": 3.8,
+    "address": "156 La Jolla Blvd",
+    "phone": "858 - 639 - 5216",
+    "hours": "Open until 9:00 PM",
+    "image": "assets/restaurant.jpg",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Nice ambiance",
+        "author": "customer 1"
+      },
+      {
+        "text": "Loved it",
+        "author": "customer 2"
+      },
+      {
+        "text": "Great location",
+        "author": "customer 3"
+      },
+      {
+        "text": "Delicious food",
+        "author": "customer 4"
+      },
+      {
+        "text": "Service could be better",
+        "author": "customer 5"
+      },
+      {
+        "text": "Nice ambiance",
+        "author": "customer 6"
+      }
+    ]
+  },
+  {
+    "id": 57,
+    "name": "Trattoria Del Mare",
+    "cuisine": "Italian",
+    "price": "$$$",
+    "distance": 6.3,
+    "rating": 4.0,
+    "address": "157 Camino Del Mar",
+    "phone": "858 - 670 - 6839",
+    "hours": "Open until 9:00 PM",
+    "image": "assets/restaurant.jpg",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Loved it",
+        "author": "customer 1"
+      },
+      {
+        "text": "Nice ambiance",
+        "author": "customer 2"
+      },
+      {
+        "text": "Loved it",
+        "author": "customer 3"
+      },
+      {
+        "text": "Loved it",
+        "author": "customer 4"
+      },
+      {
+        "text": "Highly recommend",
+        "author": "customer 5"
+      },
+      {
+        "text": "Great location",
+        "author": "customer 6"
+      }
+    ]
+  },
+  {
+    "id": 58,
+    "name": "Bluefin Sushi",
+    "cuisine": "Japanese",
+    "price": "$$$",
+    "distance": 1.4,
+    "rating": 4.9,
+    "address": "158 Prospect St",
+    "phone": "858 - 489 - 6804",
+    "hours": "Open until 9:00 PM",
+    "image": "assets/restaurant.jpg",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Service could be better",
+        "author": "customer 1"
+      },
+      {
+        "text": "Delicious food",
+        "author": "customer 2"
+      },
+      {
+        "text": "Great location",
+        "author": "customer 3"
+      },
+      {
+        "text": "Service could be better",
+        "author": "customer 4"
+      },
+      {
+        "text": "Highly recommend",
+        "author": "customer 5"
+      },
+      {
+        "text": "Delicious food",
+        "author": "customer 6"
+      }
+    ]
+  },
+  {
+    "id": 59,
+    "name": "Green Fork",
+    "cuisine": "Japanese",
+    "price": "$",
+    "distance": 5.7,
+    "rating": 3.7,
+    "address": "159 Camino Del Mar",
+    "phone": "858 - 437 - 4631",
+    "hours": "Open until 10:00 PM",
+    "image": "assets/restaurant.jpg",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Delicious food",
+        "author": "customer 1"
+      },
+      {
+        "text": "Service could be better",
+        "author": "customer 2"
+      },
+      {
+        "text": "Loved it",
+        "author": "customer 3"
+      },
+      {
+        "text": "Service could be better",
+        "author": "customer 4"
+      },
+      {
+        "text": "Nice ambiance",
+        "author": "customer 5"
+      },
+      {
+        "text": "Loved it",
+        "author": "customer 6"
+      }
+    ]
+  },
+  {
+    "id": 60,
+    "name": "La Playa Cantina",
+    "cuisine": "Mexican",
+    "price": "$$",
+    "distance": 0.7,
+    "rating": 3.7,
+    "address": "160 La Jolla Blvd",
+    "phone": "858 - 150 - 5572",
+    "hours": "Open until 9:00 PM",
+    "image": "assets/restaurant.jpg",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Delicious food",
+        "author": "customer 1"
+      },
+      {
+        "text": "Great location",
+        "author": "customer 2"
+      },
+      {
+        "text": "Loved it",
+        "author": "customer 3"
+      },
+      {
+        "text": "Service could be better",
+        "author": "customer 4"
+      },
+      {
+        "text": "Nice ambiance",
+        "author": "customer 5"
+      },
+      {
+        "text": "Service could be better",
+        "author": "customer 6"
+      }
+    ]
+  },
+  {
+    "id": 61,
+    "name": "The Curry Pot",
+    "cuisine": "Indian",
+    "price": "$$$",
+    "distance": 0.6,
+    "rating": 4.8,
+    "address": "161 La Jolla Blvd",
+    "phone": "858 - 296 - 2065",
+    "hours": "Open until 9:00 PM",
+    "image": "assets/restaurant.jpg",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Delicious food",
+        "author": "customer 1"
+      },
+      {
+        "text": "Service could be better",
+        "author": "customer 2"
+      },
+      {
+        "text": "Great location",
+        "author": "customer 3"
+      },
+      {
+        "text": "Loved it",
+        "author": "customer 4"
+      },
+      {
+        "text": "Delicious food",
+        "author": "customer 5"
+      },
+      {
+        "text": "Loved it",
+        "author": "customer 6"
+      }
+    ]
+  },
+  {
+    "id": 62,
+    "name": "Del Mar Pizza Co.",
+    "cuisine": "Italian",
+    "price": "$$",
+    "distance": 7.8,
+    "rating": 4.9,
+    "address": "162 Prospect St",
+    "phone": "858 - 704 - 8435",
+    "hours": "Open until 9:00 PM",
+    "image": "assets/restaurant.jpg",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Highly recommend",
+        "author": "customer 1"
+      },
+      {
+        "text": "Nice ambiance",
+        "author": "customer 2"
+      },
+      {
+        "text": "Great location",
+        "author": "customer 3"
+      },
+      {
+        "text": "Loved it",
+        "author": "customer 4"
+      },
+      {
+        "text": "Service could be better",
+        "author": "customer 5"
+      },
+      {
+        "text": "Delicious food",
+        "author": "customer 6"
+      }
+    ]
+  },
+  {
+    "id": 63,
+    "name": "Seaside BBQ",
+    "cuisine": "Italian",
+    "price": "$$$",
+    "distance": 1.1,
+    "rating": 4.8,
+    "address": "163 Camino Del Mar",
+    "phone": "858 - 431 - 4678",
+    "hours": "Open until 9:00 PM",
+    "image": "assets/restaurant.jpg",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Great location",
+        "author": "customer 1"
+      },
+      {
+        "text": "Loved it",
+        "author": "customer 2"
+      },
+      {
+        "text": "Loved it",
+        "author": "customer 3"
+      },
+      {
+        "text": "Nice ambiance",
+        "author": "customer 4"
+      },
+      {
+        "text": "Great location",
+        "author": "customer 5"
+      },
+      {
+        "text": "Highly recommend",
+        "author": "customer 6"
+      }
+    ]
+  },
+  {
+    "id": 64,
+    "name": "Mediterraneo",
+    "cuisine": "Italian",
+    "price": "$",
+    "distance": 4.0,
+    "rating": 4.6,
+    "address": "164 La Jolla Blvd",
+    "phone": "858 - 528 - 4040",
+    "hours": "Open until 9:00 PM",
+    "image": "assets/restaurant.jpg",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Nice ambiance",
+        "author": "customer 1"
+      },
+      {
+        "text": "Nice ambiance",
+        "author": "customer 2"
+      },
+      {
+        "text": "Delicious food",
+        "author": "customer 3"
+      },
+      {
+        "text": "Service could be better",
+        "author": "customer 4"
+      },
+      {
+        "text": "Loved it",
+        "author": "customer 5"
+      },
+      {
+        "text": "Loved it",
+        "author": "customer 6"
+      }
+    ]
+  },
+  {
+    "id": 65,
+    "name": "Tidepool Kitchen",
+    "cuisine": "Indian",
+    "price": "$$",
+    "distance": 6.3,
+    "rating": 3.8,
+    "address": "165 Prospect St",
+    "phone": "858 - 482 - 2259",
+    "hours": "Open until 9:00 PM",
+    "image": "assets/restaurant.jpg",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Delicious food",
+        "author": "customer 1"
+      },
+      {
+        "text": "Nice ambiance",
+        "author": "customer 2"
+      },
+      {
+        "text": "Great location",
+        "author": "customer 3"
+      },
+      {
+        "text": "Delicious food",
+        "author": "customer 4"
+      },
+      {
+        "text": "Nice ambiance",
+        "author": "customer 5"
+      },
+      {
+        "text": "Great location",
+        "author": "customer 6"
+      }
+    ]
+  },
+  {
+    "id": 66,
+    "name": "North Shore Burgers",
+    "cuisine": "Italian",
+    "price": "$$",
+    "distance": 6.6,
+    "rating": 4.0,
+    "address": "166 Torrey Pines Rd",
+    "phone": "858 - 565 - 1080",
+    "hours": "Open until 11:00 PM",
+    "image": "assets/restaurant.jpg",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Loved it",
+        "author": "customer 1"
+      },
+      {
+        "text": "Loved it",
+        "author": "customer 2"
+      },
+      {
+        "text": "Nice ambiance",
+        "author": "customer 3"
+      },
+      {
+        "text": "Delicious food",
+        "author": "customer 4"
+      },
+      {
+        "text": "Highly recommend",
+        "author": "customer 5"
+      },
+      {
+        "text": "Nice ambiance",
+        "author": "customer 6"
+      }
+    ]
+  },
+  {
+    "id": 67,
+    "name": "Pho Paradise",
+    "cuisine": "Vietnamese",
+    "price": "$",
+    "distance": 3.7,
+    "rating": 3.9,
+    "address": "167 La Jolla Blvd",
+    "phone": "858 - 769 - 4096",
+    "hours": "Open until 9:00 PM",
+    "image": "assets/restaurant.jpg",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Great location",
+        "author": "customer 1"
+      },
+      {
+        "text": "Highly recommend",
+        "author": "customer 2"
+      },
+      {
+        "text": "Delicious food",
+        "author": "customer 3"
+      },
+      {
+        "text": "Great location",
+        "author": "customer 4"
+      },
+      {
+        "text": "Loved it",
+        "author": "customer 5"
+      },
+      {
+        "text": "Delicious food",
+        "author": "customer 6"
+      }
+    ]
+  },
+  {
+    "id": 68,
+    "name": "Aloha Poke",
+    "cuisine": "Japanese",
+    "price": "$$$",
+    "distance": 0.9,
+    "rating": 4.2,
+    "address": "168 Torrey Pines Rd",
+    "phone": "858 - 691 - 7443",
+    "hours": "Open until 9:00 PM",
+    "image": "assets/restaurant.jpg",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Service could be better",
+        "author": "customer 1"
+      },
+      {
+        "text": "Delicious food",
+        "author": "customer 2"
+      },
+      {
+        "text": "Delicious food",
+        "author": "customer 3"
+      },
+      {
+        "text": "Delicious food",
+        "author": "customer 4"
+      },
+      {
+        "text": "Delicious food",
+        "author": "customer 5"
+      },
+      {
+        "text": "Nice ambiance",
+        "author": "customer 6"
+      }
+    ]
+  },
+  {
+    "id": 69,
+    "name": "Bistro Provence",
+    "cuisine": "Mexican",
+    "price": "$$$",
+    "distance": 3.4,
+    "rating": 3.5,
+    "address": "169 Prospect St",
+    "phone": "858 - 480 - 5120",
+    "hours": "Open until 9:00 PM",
+    "image": "assets/restaurant.jpg",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Service could be better",
+        "author": "customer 1"
+      },
+      {
+        "text": "Service could be better",
+        "author": "customer 2"
+      },
+      {
+        "text": "Loved it",
+        "author": "customer 3"
+      },
+      {
+        "text": "Nice ambiance",
+        "author": "customer 4"
+      },
+      {
+        "text": "Nice ambiance",
+        "author": "customer 5"
+      },
+      {
+        "text": "Service could be better",
+        "author": "customer 6"
+      }
+    ]
+  },
+  {
+    "id": 70,
+    "name": "Sushi Zen",
+    "cuisine": "Japanese",
+    "price": "$",
+    "distance": 7.3,
+    "rating": 3.6,
+    "address": "170 Prospect St",
+    "phone": "858 - 395 - 5262",
+    "hours": "Open until 9:00 PM",
+    "image": "assets/restaurant.jpg",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Delicious food",
+        "author": "customer 1"
+      },
+      {
+        "text": "Nice ambiance",
+        "author": "customer 2"
+      },
+      {
+        "text": "Loved it",
+        "author": "customer 3"
+      },
+      {
+        "text": "Service could be better",
+        "author": "customer 4"
+      },
+      {
+        "text": "Nice ambiance",
+        "author": "customer 5"
+      },
+      {
+        "text": "Service could be better",
+        "author": "customer 6"
+      }
+    ]
+  },
+  {
+    "id": 71,
+    "name": "The Greek Spot",
+    "cuisine": "Italian",
+    "price": "$$$",
+    "distance": 3.0,
+    "rating": 4.3,
+    "address": "171 Torrey Pines Rd",
+    "phone": "858 - 299 - 5507",
+    "hours": "Open until 9:00 PM",
+    "image": "assets/restaurant.jpg",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Great location",
+        "author": "customer 1"
+      },
+      {
+        "text": "Service could be better",
+        "author": "customer 2"
+      },
+      {
+        "text": "Delicious food",
+        "author": "customer 3"
+      },
+      {
+        "text": "Service could be better",
+        "author": "customer 4"
+      },
+      {
+        "text": "Highly recommend",
+        "author": "customer 5"
+      },
+      {
+        "text": "Delicious food",
+        "author": "customer 6"
+      }
+    ]
+  },
+  {
+    "id": 72,
+    "name": "Noodle House",
+    "cuisine": "Thai",
+    "price": "$$",
+    "distance": 6.4,
+    "rating": 3.7,
+    "address": "172 Torrey Pines Rd",
+    "phone": "858 - 457 - 9870",
+    "hours": "Open until 9:00 PM",
+    "image": "assets/restaurant.jpg",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Great location",
+        "author": "customer 1"
+      },
+      {
+        "text": "Service could be better",
+        "author": "customer 2"
+      },
+      {
+        "text": "Nice ambiance",
+        "author": "customer 3"
+      },
+      {
+        "text": "Nice ambiance",
+        "author": "customer 4"
+      },
+      {
+        "text": "Great location",
+        "author": "customer 5"
+      },
+      {
+        "text": "Delicious food",
+        "author": "customer 6"
+      }
+    ]
+  },
+  {
+    "id": 73,
+    "name": "Tandoori Flame",
+    "cuisine": "Indian",
+    "price": "$",
+    "distance": 3.1,
+    "rating": 4.6,
+    "address": "173 Prospect St",
+    "phone": "858 - 932 - 4420",
+    "hours": "Open until 9:00 PM",
+    "image": "assets/restaurant.jpg",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Loved it",
+        "author": "customer 1"
+      },
+      {
+        "text": "Delicious food",
+        "author": "customer 2"
+      },
+      {
+        "text": "Highly recommend",
+        "author": "customer 3"
+      },
+      {
+        "text": "Delicious food",
+        "author": "customer 4"
+      },
+      {
+        "text": "Service could be better",
+        "author": "customer 5"
+      },
+      {
+        "text": "Highly recommend",
+        "author": "customer 6"
+      }
+    ]
+  },
+  {
+    "id": 74,
+    "name": "Coastal Vegan",
+    "cuisine": "Japanese",
+    "price": "$$$",
+    "distance": 6.3,
+    "rating": 4.3,
+    "address": "174 Torrey Pines Rd",
+    "phone": "858 - 114 - 6310",
+    "hours": "Open until 9:00 PM",
+    "image": "assets/restaurant.jpg",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Service could be better",
+        "author": "customer 1"
+      },
+      {
+        "text": "Loved it",
+        "author": "customer 2"
+      },
+      {
+        "text": "Highly recommend",
+        "author": "customer 3"
+      },
+      {
+        "text": "Great location",
+        "author": "customer 4"
+      },
+      {
+        "text": "Delicious food",
+        "author": "customer 5"
+      },
+      {
+        "text": "Service could be better",
+        "author": "customer 6"
+      }
+    ]
+  },
+  {
+    "id": 75,
+    "name": "Bayview Steakhouse",
+    "cuisine": "Italian",
+    "price": "$",
+    "distance": 3.2,
+    "rating": 3.6,
+    "address": "175 Camino Del Mar",
+    "phone": "858 - 944 - 8462",
+    "hours": "Open until 9:00 PM",
+    "image": "assets/restaurant.jpg",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Loved it",
+        "author": "customer 1"
+      },
+      {
+        "text": "Great location",
+        "author": "customer 2"
+      },
+      {
+        "text": "Great location",
+        "author": "customer 3"
+      },
+      {
+        "text": "Delicious food",
+        "author": "customer 4"
+      },
+      {
+        "text": "Highly recommend",
+        "author": "customer 5"
+      },
+      {
+        "text": "Highly recommend",
+        "author": "customer 6"
+      }
+    ]
+  },
+  {
+    "id": 76,
+    "name": "Caffe Italia",
+    "cuisine": "Italian",
+    "price": "$$",
+    "distance": 4.4,
+    "rating": 4.9,
+    "address": "176 Camino Del Mar",
+    "phone": "858 - 534 - 1965",
+    "hours": "Open until 9:00 PM",
+    "image": "assets/restaurant.jpg",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Loved it",
+        "author": "customer 1"
+      },
+      {
+        "text": "Highly recommend",
+        "author": "customer 2"
+      },
+      {
+        "text": "Highly recommend",
+        "author": "customer 3"
+      },
+      {
+        "text": "Great location",
+        "author": "customer 4"
+      },
+      {
+        "text": "Nice ambiance",
+        "author": "customer 5"
+      },
+      {
+        "text": "Service could be better",
+        "author": "customer 6"
+      }
+    ]
+  },
+  {
+    "id": 77,
+    "name": "La Jolla Sweets",
+    "cuisine": "Greek",
+    "price": "$",
+    "distance": 3.1,
+    "rating": 3.8,
+    "address": "177 Camino Del Mar",
+    "phone": "858 - 574 - 8179",
+    "hours": "Open until 9:00 PM",
+    "image": "assets/restaurant.jpg",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Great location",
+        "author": "customer 1"
+      },
+      {
+        "text": "Service could be better",
+        "author": "customer 2"
+      },
+      {
+        "text": "Highly recommend",
+        "author": "customer 3"
+      },
+      {
+        "text": "Highly recommend",
+        "author": "customer 4"
+      },
+      {
+        "text": "Loved it",
+        "author": "customer 5"
+      },
+      {
+        "text": "Loved it",
+        "author": "customer 6"
+      }
+    ]
+  },
+  {
+    "id": 78,
+    "name": "Mariscos Playa Azul",
+    "cuisine": "Mexican",
+    "price": "$$",
+    "distance": 4.6,
+    "rating": 4.9,
+    "address": "178 La Jolla Blvd",
+    "phone": "858 - 109 - 6947",
+    "hours": "Open until 9:00 PM",
+    "image": "assets/restaurant.jpg",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Highly recommend",
+        "author": "customer 1"
+      },
+      {
+        "text": "Delicious food",
+        "author": "customer 2"
+      },
+      {
+        "text": "Delicious food",
+        "author": "customer 3"
+      },
+      {
+        "text": "Nice ambiance",
+        "author": "customer 4"
+      },
+      {
+        "text": "Service could be better",
+        "author": "customer 5"
+      },
+      {
+        "text": "Delicious food",
+        "author": "customer 6"
+      }
+    ]
+  },
+  {
+    "id": 79,
+    "name": "Wok & Roll",
+    "cuisine": "Chinese",
+    "price": "$",
+    "distance": 7.7,
+    "rating": 4.3,
+    "address": "179 La Jolla Blvd",
+    "phone": "858 - 295 - 3775",
+    "hours": "Open until 9:00 PM",
+    "image": "assets/restaurant.jpg",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Service could be better",
+        "author": "customer 1"
+      },
+      {
+        "text": "Delicious food",
+        "author": "customer 2"
+      },
+      {
+        "text": "Loved it",
+        "author": "customer 3"
+      },
+      {
+        "text": "Highly recommend",
+        "author": "customer 4"
+      },
+      {
+        "text": "Loved it",
+        "author": "customer 5"
+      },
+      {
+        "text": "Great location",
+        "author": "customer 6"
+      }
+    ]
+  },
+  {
+    "id": 80,
+    "name": "Brunch Haven",
+    "cuisine": "Thai",
+    "price": "$",
+    "distance": 7.9,
+    "rating": 3.6,
+    "address": "180 Prospect St",
+    "phone": "858 - 765 - 4166",
+    "hours": "Open until 9:00 PM",
+    "image": "assets/restaurant.jpg",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Great location",
+        "author": "customer 1"
+      },
+      {
+        "text": "Loved it",
+        "author": "customer 2"
+      },
+      {
+        "text": "Service could be better",
+        "author": "customer 3"
+      },
+      {
+        "text": "Nice ambiance",
+        "author": "customer 4"
+      },
+      {
+        "text": "Loved it",
+        "author": "customer 5"
+      },
+      {
+        "text": "Great location",
+        "author": "customer 6"
+      }
+    ]
+  },
+  {
+    "id": 81,
+    "name": "Del Mar Crerie",
+    "cuisine": "Thai",
+    "price": "$$",
+    "distance": 2.5,
+    "rating": 4.0,
+    "address": "181 Camino Del Mar",
+    "phone": "858 - 287 - 8724",
+    "hours": "Open until 9:00 PM",
+    "image": "assets/restaurant.jpg",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Service could be better",
+        "author": "customer 1"
+      },
+      {
+        "text": "Highly recommend",
+        "author": "customer 2"
+      },
+      {
+        "text": "Great location",
+        "author": "customer 3"
+      },
+      {
+        "text": "Loved it",
+        "author": "customer 4"
+      },
+      {
+        "text": "Highly recommend",
+        "author": "customer 5"
+      },
+      {
+        "text": "Highly recommend",
+        "author": "customer 6"
+      }
+    ]
+  },
+  {
+    "id": 82,
+    "name": "Oceanfront Brasserie",
+    "cuisine": "Italian",
+    "price": "$$",
+    "distance": 4.4,
+    "rating": 4.1,
+    "address": "182 La Jolla Blvd",
+    "phone": "858 - 572 - 3944",
+    "hours": "Open until 9:00 PM",
+    "image": "assets/restaurant.jpg",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Nice ambiance",
+        "author": "customer 1"
+      },
+      {
+        "text": "Great location",
+        "author": "customer 2"
+      },
+      {
+        "text": "Highly recommend",
+        "author": "customer 3"
+      },
+      {
+        "text": "Loved it",
+        "author": "customer 4"
+      },
+      {
+        "text": "Highly recommend",
+        "author": "customer 5"
+      },
+      {
+        "text": "Delicious food",
+        "author": "customer 6"
+      }
+    ]
+  },
+  {
+    "id": 83,
+    "name": "Taste of India",
+    "cuisine": "Indian",
+    "price": "$",
+    "distance": 5.6,
+    "rating": 4.8,
+    "address": "183 Prospect St",
+    "phone": "858 - 320 - 2842",
+    "hours": "Open until 9:00 PM",
+    "image": "assets/restaurant.jpg",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Delicious food",
+        "author": "customer 1"
+      },
+      {
+        "text": "Nice ambiance",
+        "author": "customer 2"
+      },
+      {
+        "text": "Service could be better",
+        "author": "customer 3"
+      },
+      {
+        "text": "Highly recommend",
+        "author": "customer 4"
+      },
+      {
+        "text": "Delicious food",
+        "author": "customer 5"
+      },
+      {
+        "text": "Nice ambiance",
+        "author": "customer 6"
+      }
+    ]
+  },
+  {
+    "id": 84,
+    "name": "Korean Soul Kitchen",
+    "cuisine": "Vietnamese",
+    "price": "$$$",
+    "distance": 5.5,
+    "rating": 3.6,
+    "address": "184 Torrey Pines Rd",
+    "phone": "858 - 413 - 7998",
+    "hours": "Open until 9:00 PM",
+    "image": "assets/restaurant.jpg",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Great location",
+        "author": "customer 1"
+      },
+      {
+        "text": "Nice ambiance",
+        "author": "customer 2"
+      },
+      {
+        "text": "Delicious food",
+        "author": "customer 3"
+      },
+      {
+        "text": "Delicious food",
+        "author": "customer 4"
+      },
+      {
+        "text": "Loved it",
+        "author": "customer 5"
+      },
+      {
+        "text": "Loved it",
+        "author": "customer 6"
+      }
+    ]
+  },
+  {
+    "id": 85,
+    "name": "La Jolla Kebabs",
+    "cuisine": "Greek",
+    "price": "$$$",
+    "distance": 3.9,
+    "rating": 4.6,
+    "address": "185 Prospect St",
+    "phone": "858 - 704 - 3639",
+    "hours": "Open until 9:00 PM",
+    "image": "assets/restaurant.jpg",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Delicious food",
+        "author": "customer 1"
+      },
+      {
+        "text": "Nice ambiance",
+        "author": "customer 2"
+      },
+      {
+        "text": "Service could be better",
+        "author": "customer 3"
+      },
+      {
+        "text": "Highly recommend",
+        "author": "customer 4"
+      },
+      {
+        "text": "Delicious food",
+        "author": "customer 5"
+      },
+      {
+        "text": "Highly recommend",
+        "author": "customer 6"
+      }
+    ]
+  },
+  {
+    "id": 86,
+    "name": "Bao House",
+    "cuisine": "Chinese",
+    "price": "$$",
+    "distance": 4.5,
+    "rating": 4.1,
+    "address": "186 La Jolla Blvd",
+    "phone": "858 - 675 - 8900",
+    "hours": "Open until 9:00 PM",
+    "image": "assets/restaurant.jpg",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Great location",
+        "author": "customer 1"
+      },
+      {
+        "text": "Highly recommend",
+        "author": "customer 2"
+      },
+      {
+        "text": "Nice ambiance",
+        "author": "customer 3"
+      },
+      {
+        "text": "Delicious food",
+        "author": "customer 4"
+      },
+      {
+        "text": "Service could be better",
+        "author": "customer 5"
+      },
+      {
+        "text": "Loved it",
+        "author": "customer 6"
+      }
+    ]
+  },
+  {
+    "id": 87,
+    "name": "Spice Route",
+    "cuisine": "Mexican",
+    "price": "$$$",
+    "distance": 4.5,
+    "rating": 4.1,
+    "address": "187 Prospect St",
+    "phone": "858 - 440 - 3638",
+    "hours": "Open until 9:00 PM",
+    "image": "assets/restaurant.jpg",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Highly recommend",
+        "author": "customer 1"
+      },
+      {
+        "text": "Great location",
+        "author": "customer 2"
+      },
+      {
+        "text": "Highly recommend",
+        "author": "customer 3"
+      },
+      {
+        "text": "Loved it",
+        "author": "customer 4"
+      },
+      {
+        "text": "Service could be better",
+        "author": "customer 5"
+      },
+      {
+        "text": "Service could be better",
+        "author": "customer 6"
+      }
+    ]
+  },
+  {
+    "id": 88,
+    "name": "California Bites",
+    "cuisine": "Chinese",
+    "price": "$$$",
+    "distance": 2.7,
+    "rating": 4.3,
+    "address": "188 Torrey Pines Rd",
+    "phone": "858 - 746 - 5660",
+    "hours": "Open until 9:00 PM",
+    "image": "assets/restaurant.jpg",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Delicious food",
+        "author": "customer 1"
+      },
+      {
+        "text": "Delicious food",
+        "author": "customer 2"
+      },
+      {
+        "text": "Service could be better",
+        "author": "customer 3"
+      },
+      {
+        "text": "Loved it",
+        "author": "customer 4"
+      },
+      {
+        "text": "Great location",
+        "author": "customer 5"
+      },
+      {
+        "text": "Great location",
+        "author": "customer 6"
+      }
+    ]
+  },
+  {
+    "id": 89,
+    "name": "Chateau Del Mar",
+    "cuisine": "Italian",
+    "price": "$",
+    "distance": 1.8,
+    "rating": 3.9,
+    "address": "189 Torrey Pines Rd",
+    "phone": "858 - 640 - 3078",
+    "hours": "Open until 9:00 PM",
+    "image": "assets/restaurant.jpg",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Loved it",
+        "author": "customer 1"
+      },
+      {
+        "text": "Great location",
+        "author": "customer 2"
+      },
+      {
+        "text": "Great location",
+        "author": "customer 3"
+      },
+      {
+        "text": "Loved it",
+        "author": "customer 4"
+      },
+      {
+        "text": "Highly recommend",
+        "author": "customer 5"
+      },
+      {
+        "text": "Delicious food",
+        "author": "customer 6"
+      }
+    ]
+  },
+  {
+    "id": 90,
+    "name": "Burger Bar",
+    "cuisine": "Vietnamese",
+    "price": "$",
+    "distance": 3.7,
+    "rating": 4.2,
+    "address": "190 Prospect St",
+    "phone": "858 - 841 - 3286",
+    "hours": "Open until 9:00 PM",
+    "image": "assets/restaurant.jpg",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Great location",
+        "author": "customer 1"
+      },
+      {
+        "text": "Loved it",
+        "author": "customer 2"
+      },
+      {
+        "text": "Loved it",
+        "author": "customer 3"
+      },
+      {
+        "text": "Loved it",
+        "author": "customer 4"
+      },
+      {
+        "text": "Service could be better",
+        "author": "customer 5"
+      },
+      {
+        "text": "Service could be better",
+        "author": "customer 6"
+      }
+    ]
+  },
+  {
+    "id": 91,
+    "name": "Tsunami Ramen",
+    "cuisine": "Japanese",
+    "price": "$$",
+    "distance": 3.9,
+    "rating": 4.4,
+    "address": "191 La Jolla Blvd",
+    "phone": "858 - 357 - 3658",
+    "hours": "Open until 9:00 PM",
+    "image": "assets/restaurant.jpg",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Loved it",
+        "author": "customer 1"
+      },
+      {
+        "text": "Great location",
+        "author": "customer 2"
+      },
+      {
+        "text": "Highly recommend",
+        "author": "customer 3"
+      },
+      {
+        "text": "Nice ambiance",
+        "author": "customer 4"
+      },
+      {
+        "text": "Service could be better",
+        "author": "customer 5"
+      },
+      {
+        "text": "Delicious food",
+        "author": "customer 6"
+      }
+    ]
+  },
+  {
+    "id": 92,
+    "name": "Tapas & Tacos",
+    "cuisine": "Mexican",
+    "price": "$$$",
+    "distance": 2.4,
+    "rating": 4.8,
+    "address": "192 Prospect St",
+    "phone": "858 - 977 - 1986",
+    "hours": "Open until 9:00 PM",
+    "image": "assets/restaurant.jpg",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Great location",
+        "author": "customer 1"
+      },
+      {
+        "text": "Service could be better",
+        "author": "customer 2"
+      },
+      {
+        "text": "Loved it",
+        "author": "customer 3"
+      },
+      {
+        "text": "Loved it",
+        "author": "customer 4"
+      },
+      {
+        "text": "Nice ambiance",
+        "author": "customer 5"
+      },
+      {
+        "text": "Service could be better",
+        "author": "customer 6"
+      }
+    ]
+  },
+  {
+    "id": 93,
+    "name": "Sea Salt Deli",
+    "cuisine": "Italian",
+    "price": "$$",
+    "distance": 7.6,
+    "rating": 4.1,
+    "address": "193 La Jolla Blvd",
+    "phone": "858 - 610 - 9645",
+    "hours": "Open until 9:00 PM",
+    "image": "assets/restaurant.jpg",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Nice ambiance",
+        "author": "customer 1"
+      },
+      {
+        "text": "Service could be better",
+        "author": "customer 2"
+      },
+      {
+        "text": "Service could be better",
+        "author": "customer 3"
+      },
+      {
+        "text": "Service could be better",
+        "author": "customer 4"
+      },
+      {
+        "text": "Nice ambiance",
+        "author": "customer 5"
+      },
+      {
+        "text": "Loved it",
+        "author": "customer 6"
+      }
+    ]
+  },
+  {
+    "id": 94,
+    "name": "Basil & Lime",
+    "cuisine": "Mexican",
+    "price": "$$",
+    "distance": 4.0,
+    "rating": 4.0,
+    "address": "194 Prospect St",
+    "phone": "858 - 777 - 6470",
+    "hours": "Open until 9:00 PM",
+    "image": "assets/restaurant.jpg",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Nice ambiance",
+        "author": "customer 1"
+      },
+      {
+        "text": "Loved it",
+        "author": "customer 2"
+      },
+      {
+        "text": "Nice ambiance",
+        "author": "customer 3"
+      },
+      {
+        "text": "Delicious food",
+        "author": "customer 4"
+      },
+      {
+        "text": "Great location",
+        "author": "customer 5"
+      },
+      {
+        "text": "Loved it",
+        "author": "customer 6"
+      }
+    ]
+  },
+  {
+    "id": 95,
+    "name": "Golden Wok",
+    "cuisine": "Chinese",
+    "price": "$$$",
+    "distance": 6.7,
+    "rating": 4.4,
+    "address": "195 Torrey Pines Rd",
+    "phone": "858 - 269 - 8980",
+    "hours": "Open until 9:00 PM",
+    "image": "assets/restaurant.jpg",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Service could be better",
+        "author": "customer 1"
+      },
+      {
+        "text": "Great location",
+        "author": "customer 2"
+      },
+      {
+        "text": "Great location",
+        "author": "customer 3"
+      },
+      {
+        "text": "Great location",
+        "author": "customer 4"
+      },
+      {
+        "text": "Service could be better",
+        "author": "customer 5"
+      },
+      {
+        "text": "Service could be better",
+        "author": "customer 6"
+      }
+    ]
+  },
+  {
+    "id": 96,
+    "name": "The Sandwich Deck",
+    "cuisine": "Vietnamese",
+    "price": "$",
+    "distance": 3.1,
+    "rating": 4.2,
+    "address": "196 Torrey Pines Rd",
+    "phone": "858 - 627 - 2935",
+    "hours": "Open until 9:00 PM",
+    "image": "assets/restaurant.jpg",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Delicious food",
+        "author": "customer 1"
+      },
+      {
+        "text": "Nice ambiance",
+        "author": "customer 2"
+      },
+      {
+        "text": "Loved it",
+        "author": "customer 3"
+      },
+      {
+        "text": "Great location",
+        "author": "customer 4"
+      },
+      {
+        "text": "Delicious food",
+        "author": "customer 5"
+      },
+      {
+        "text": "Highly recommend",
+        "author": "customer 6"
+      }
+    ]
+  },
+  {
+    "id": 97,
+    "name": "Shoreline Grill",
+    "cuisine": "Indian",
+    "price": "$$",
+    "distance": 2.2,
+    "rating": 4.1,
+    "address": "197 Prospect St",
+    "phone": "858 - 788 - 2706",
+    "hours": "Open until 9:00 PM",
+    "image": "assets/restaurant.jpg",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Nice ambiance",
+        "author": "customer 1"
+      },
+      {
+        "text": "Service could be better",
+        "author": "customer 2"
+      },
+      {
+        "text": "Highly recommend",
+        "author": "customer 3"
+      },
+      {
+        "text": "Nice ambiance",
+        "author": "customer 4"
+      },
+      {
+        "text": "Great location",
+        "author": "customer 5"
+      },
+      {
+        "text": "Service could be better",
+        "author": "customer 6"
+      }
+    ]
+  },
+  {
+    "id": 98,
+    "name": "El Pueblo",
+    "cuisine": "Mexican",
+    "price": "$",
+    "distance": 1.0,
+    "rating": 5.0,
+    "address": "198 Prospect St",
+    "phone": "858 - 284 - 9145",
+    "hours": "Open until 9:00 PM",
+    "image": "assets/restaurant.jpg",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Highly recommend",
+        "author": "customer 1"
+      },
+      {
+        "text": "Loved it",
+        "author": "customer 2"
+      },
+      {
+        "text": "Nice ambiance",
+        "author": "customer 3"
+      },
+      {
+        "text": "Great location",
+        "author": "customer 4"
+      },
+      {
+        "text": "Loved it",
+        "author": "customer 5"
+      },
+      {
+        "text": "Highly recommend",
+        "author": "customer 6"
+      }
+    ]
+  },
+  {
+    "id": 99,
+    "name": "Zest Mediterranean",
+    "cuisine": "French",
+    "price": "$",
+    "distance": 6.2,
+    "rating": 3.7,
+    "address": "199 Prospect St",
+    "phone": "858 - 702 - 1469",
+    "hours": "Open until 9:00 PM",
+    "image": "assets/restaurant.jpg",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Service could be better",
+        "author": "customer 1"
+      },
+      {
+        "text": "Nice ambiance",
+        "author": "customer 2"
+      },
+      {
+        "text": "Delicious food",
+        "author": "customer 3"
+      },
+      {
+        "text": "Loved it",
+        "author": "customer 4"
+      },
+      {
+        "text": "Service could be better",
+        "author": "customer 5"
+      },
+      {
+        "text": "Service could be better",
+        "author": "customer 6"
+      }
+    ]
+  },
+  {
+    "id": 100,
+    "name": "Harbor House",
+    "cuisine": "Mexican",
+    "price": "$$",
+    "distance": 2.6,
+    "rating": 3.8,
+    "address": "200 Prospect St",
+    "phone": "858 - 422 - 9536",
+    "hours": "Open until 9:00 PM",
+    "image": "assets/restaurant.jpg",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Service could be better",
+        "author": "customer 1"
+      },
+      {
+        "text": "Delicious food",
+        "author": "customer 2"
+      },
+      {
+        "text": "Loved it",
+        "author": "customer 3"
+      },
+      {
+        "text": "Great location",
+        "author": "customer 4"
+      },
+      {
+        "text": "Service could be better",
+        "author": "customer 5"
+      },
+      {
+        "text": "Service could be better",
+        "author": "customer 6"
+      }
+    ]
+  }
+]
