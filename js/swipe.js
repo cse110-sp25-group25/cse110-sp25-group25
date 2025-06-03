@@ -26,6 +26,12 @@ document.addEventListener('DOMContentLoaded', async () => {
   setupButtons();
 });
 
+/**
+ * Filters restaurant data based on user-selected filters.
+ * @param {Array<Object>} data - The list of restaurant objects.
+ * @param {Object} filters - Object containing filtering criteria (cuisine, price, distance, rating).
+ * @returns {Array<Object>} Filtered list of restaurants.
+ */
 function applyFilters(data, filters) {
   return data.filter(r => {
       if (filters.cuisine && r.cuisine !== filters.cuisine) return false;
@@ -38,12 +44,22 @@ function applyFilters(data, filters) {
   });
 }
 
+/**
+ * Removes restaurants that have already been viewed.
+ * @param {Array<Object>} data - The list of restaurant objects.
+ * @param {Array<number>} viewed - Array of viewed restaurant IDs.
+ * @returns {Array<Object>} Filtered restaurant data.
+ */
 function removeViewed(data, viewed) {
   return data.filter(r => {
     return !viewed.includes(+r.id);
 });
 }
 
+/**
+ * Saves a restaurant to the user's deck if not already present.
+ * @param {number} id - ID of the restaurant to save.
+ */
 function saveToDeck(id) {
   const all = JSON.parse(localStorage.getItem('restaurantData'));
   const saved = JSON.parse(localStorage.getItem('deck')) || [];
@@ -60,6 +76,13 @@ function saveToDeck(id) {
   }
 }
 
+/**
+ * Creates a review container element.
+ * @param {Array<Object>} reviews - List of review objects with `text` and `author`.
+ * @param {string} side - Either 'left' or 'right', determines where it's shown.
+ * @param {number} id - Unique ID for the card/review container.
+ * @returns {HTMLDivElement} The review container element.
+ */
 function createReviewElement(reviews, side, id) {
   const reviewDiv = document.createElement('div');
   reviewDiv.classList.add('reviews', side);
@@ -76,6 +99,10 @@ function createReviewElement(reviews, side, id) {
   return reviewDiv;
 }
 
+/**
+ * Renders all restaurant cards and associated review elements.
+ * @param {Array<Object>} data - List of restaurant objects to render.
+ */
 function renderRestaurant(data) {
   const container = document.getElementById('card-container');
   const rightReviewContainer = document.getElementById('right-review-container');
@@ -151,6 +178,10 @@ function renderRestaurant(data) {
   }
 }
 
+/**
+ * Sets up flipping interaction on a card to toggle between front and back.
+ * @param {HTMLElement} card - The card element to attach flipping logic to.
+ */
 function setupFlipping(card) {
   // const card = document.querySelector('.active-card');
   const cardId = card.id.split('_')[1];
@@ -192,6 +223,10 @@ function setupFlipping(card) {
   });
 }
 
+/**
+ * Resets the state of a card and hides its reviews.
+ * @param {number|string} cardId - The card's unique identifier.
+ */
 function resetCard(cardId) {
   const card = document.getElementById(`card_${cardId}`);
   const leftRev = document.getElementById(`left_review_${cardId}`);
@@ -207,6 +242,9 @@ function resetCard(cardId) {
   });
 }
 
+/**
+ * Sets up accept/reject button logic and swiping transitions.
+ */
 function setupButtons() {
   const declineBtn = document.querySelector('button[title="Reject"]');
   const acceptBtn = document.querySelector('button[title="Accept"]');
@@ -254,6 +292,10 @@ function setupButtons() {
   });
 }
 
+/**
+ * Saves a restaurant ID to the list of viewed restaurants in localStorage.
+ * @param {number} id - The ID of the viewed restaurant.
+ */
 function handleViewedCard(id) {
   // simply save this id to local storage. this will just be reapplied as a filter
   const viewed = JSON.parse(localStorage.getItem('viewed')) || [];
