@@ -100,9 +100,6 @@ jobs:
               "analysis": [
                 { "name": "Style", "tools": [
                   { "id": "sarif", "pattern": "**/*.sarif" }
-                ]},
-                { "name": "HTML",  "tools": [
-                  { "id": "html",  "pattern": "**/html5.json" }
                 ]}
               ],
               "coverage": [
