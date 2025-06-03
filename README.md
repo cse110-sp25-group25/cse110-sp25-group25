@@ -22,6 +22,8 @@
 ### Meeting Notes
 - [All Team Meeting Notes](admin/meetings/team)
 - [All TA Meeting notes](admin/meetings/ta)
+- **Spring Task + Total Points**
+  - [Spring Task for each week and Total Point](admin/meetings/sprint-task)
 - **Final Project Brainstorming**
   - [Project Pitch Session Meeting Notes](admin/meetings/team/04-24-brainstorm.md)
   - [Research and Brainstorming of App (Miro Board Screenshots)](specs/brainstorm)
