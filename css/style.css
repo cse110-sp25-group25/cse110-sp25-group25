@@ -432,7 +432,41 @@ nav ul {
       width: 100%;
       order: 1;
     }
+
+/* ACCEPT / REJECT BUTTONS */
+.swipe-buttons {
+   position: absolute;
+   bottom: 0;                   /* sit at bottom of .swipe-layout */
+   left: 50%;
+   transform: translateX(-50%);
+   display: flex;
+   gap: 2rem;
+ }
+
+ .button-type2 img {
+  width: 48px;                 /* shrink your check/x icons */
+  height: auto;
+}
+
+   /* — Swipe Buttons (Type 2) — */
+  .swipe-buttons {
+    margin-top: 2rem;
+    display: flex;
+    gap: 2rem;
+  }
   
+  .button-type2 {
+    background-color: #b4d2ba;              /* default bg */
+    color: #4b543b;
+    font-family: inherit;
+    font-size: 2.25rem;                     /* 36px */
+    border: none;
+    border-radius: 20px;
+    padding: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
  .button-type2:hover {
    background-color: #97bb9e;              /* hover bg */
  }
@@ -648,6 +682,7 @@ nav ul {
 }
 
 
+/* Mobile reviews */
 @media (max-width: 550px) {
   .swipe-container {
     flex-direction: column;
