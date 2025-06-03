@@ -22,13 +22,20 @@
 ### Meeting Notes
 - [All Team Meeting Notes](admin/meetings/team)
 - [All TA Meeting notes](admin/meetings/ta)
+- **Total Points & Contribution**
+  - [Total Points Sheet](https://docs.google.com/spreadsheets/d/1KHr-oWJG1LsK_x6JcyCNjkuOzHwOuADGSEI65wSjzXE/edit?gid=0)
 - **Final Project Brainstorming**
   - [Project Pitch Session Meeting Notes](admin/meetings/team/04-24-brainstorm.md)
   - [Research and Brainstorming of App (Miro Board Screenshots)](specs/brainstorm)
+- **Initial Roadmap/ Project Planning**
+  - [Roadmap](admin/meetings/team/05-01.md)
 - **Sprint 1**
+  - [Planning](admin/meetings/team/05-06.md)
+  - This is before we got the class assignment. So, we didn't do the review & retrospective
+- **Sprint 2**
   - [Planning](admin/meetings/team/05-12.md)
   - [Review & Retrospective](admin/meetings/051725-sprint-1-review-retrospective.md)
-- **Sprint 2**
+- **Sprint 3**
   - [Planning](admin/meetings/team/05-19.md)
   - [Review & Retrospective](admin/meetings/052425-sprint-2-review-retrospective.md)
 
