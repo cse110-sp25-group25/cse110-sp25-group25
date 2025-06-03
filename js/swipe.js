@@ -1,3 +1,7 @@
+// import {applyFilters, removeViewed} from './swipe.utils.js'
+
+
+// This script handles the swipe functionality for restaurant cards, including filtering, flipping, and saving to a deck.
 document.addEventListener('DOMContentLoaded', async () => {
   const clearBtn = document.getElementById('clear-filters-btn');
   if (clearBtn) {

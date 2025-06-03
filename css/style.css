@@ -325,6 +325,28 @@ nav ul {
    padding: 40px 0;
 }
 
+/* — Swipe Header — */
+.swipe-header {
+   position: absolute;
+   top: -2rem;               /* sits above the card */
+   left: 50%;
+   transform: translateX(-50%);
+   display: flex;
+   align-items: center;
+   gap: 0.5rem;
+ }
+ 
+ .instruction-text {
+   color: #b57f50;
+   font-size: 1.3rem;
+   white-space: nowrap;
+ }
+ 
+ .help-icon {
+   width: 28px;
+   height: auto;
+ }
+
 /*Swipe card styles */
 .swipe-layout {
    display: flex;
@@ -435,12 +457,11 @@ nav ul {
 
 /* ACCEPT / REJECT BUTTONS */
 .swipe-buttons {
-   position: absolute;
-   bottom: 0;                   /* sit at bottom of .swipe-layout */
-   left: 50%;
-   transform: translateX(-50%);
+   position: static; /* removes absolute positioning for mobile/desktop */
+   margin-top: 1rem;
    display: flex;
    gap: 2rem;
+   justify-content: center;
  }
 
  .button-type2 img {
@@ -661,6 +682,12 @@ nav ul {
   font-style: italic;
 }
 
+.reviews.visible {
+   display: flex;
+   opacity: 1;
+ }
+ 
+
 .reviews span {
    color: #b57f50;
    font-style: normal;
@@ -742,6 +769,3 @@ nav ul {
     text-align: center;
   }
 }
-
-
-

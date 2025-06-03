@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: swipe.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: swipe.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>// import {applyFilters, removeViewed} from './swipe.utils.js'
+
+
+// This script handles the swipe functionality for restaurant cards, including filtering, flipping, and saving to a deck.
+document.addEventListener('DOMContentLoaded', async () => {
+    const clearBtn = document.getElementById('clear-filters-btn');
+    if (clearBtn) {
+      clearBtn.addEventListener('click', () => {
+        localStorage.removeItem('userSelections');
+        alert('All filters have been cleared. To set new ones, go back to the filters page.');
+        window.location.reload();
+
+    });
+    }
+    let data = JSON.parse(localStorage.getItem('restaurantData'));
+    if (!data) {
+        const res = await fetch('data/restaurants.json');
+        data = await res.json();
+        localStorage.setItem('restaurantData', JSON.stringify(data));
+    }
+
+    const filters = JSON.parse(localStorage.getItem('userSelections'));
+    if (filters) {
+      data = applyFilters(data, filters);
+    }
+
+    const viewed = JSON.parse(localStorage.getItem('viewed'));
+    if (viewed) {
+        data = removeViewed(data, viewed);
+    }
+
+    if(!data || data.length == 0) {
+        console.warn("no data, can't render");
+        return;
+    }
+
+    renderRestaurant(data);
+    setupButtons();
+});
+
+
+
+
+/**
+ * A function to remove the subset of data that doesn't satisfy the desired filters
+ * @param {Array} data original list of data
+ * @param {Array} filters list of filters to apply
+ * @returns the subset of data that satisfies the desired filters
+ */
+function applyFilters(data, filters) {
+    return data.filter(r => {
+        if (filters.cuisine &amp;&amp; filters.cuisine.length>0 &amp;&amp; !filters.cuisine.includes(r.cuisine)){
+            return false;
+        } 
+        if (filters.price &amp;&amp; r.price.length > filters.price.length) return false;
+        // Parse distance and rating
+        if (filters.distance &amp;&amp; r.distance > parseFloat(filters.distance)) return false;
+        if (filters.rating &amp;&amp; r.rating &lt; parseFloat(filters.rating)) return false;
+
+        return true;
+  });
+}
+
+/**
+ * A function that takes in a list of data, a list of viewed elements, and returns the subset of the original list
+ * that is not in the second.
+ * @param data original list
+ * @param viewed items to remove
+ * @returns the set difference data \ viewed
+ */
+function removeViewed(data, viewed) {
+    return data.filter(r => {
+        return !viewed.includes(+r.id);
+    });
+}
+
+/**
+ * saves a restaurant to the deck in localStorage.
+ *  @param {number} id - The ID of the restaurant to save.
+ * @return {void}
+ * */
+function saveToDeck(id) {
+    const all = JSON.parse(localStorage.getItem('restaurantData'));
+    const saved = JSON.parse(localStorage.getItem('deck')) || [];
+
+    const toAdd = all.find(r => r.id === id);
+    if(!toAdd) {
+      return;
+    }
+
+    const exists = saved.some( r=> r.id === id);
+    if(!exists) {
+      saved.push(toAdd);
+      localStorage.setItem('deck', JSON.stringify(saved));
+    }
+}
+
+/**
+ * Renders the restaurant cards and their details in the swipe layout.
+ * @param {Array} data - The array of restaurant data to render.
+ * @return {void}
+ * */
+function renderRestaurant(data) {
+    const layout = document.querySelector('.swipe-layout');
+    const existingHeader = layout.querySelector('.swipe-header');
+
+    // 1) If we haven’t already inserted it, create &amp; insert it
+    if (!existingHeader) {
+        const header = document.createElement('div');
+        header.className = 'swipe-header';
+        header.innerHTML = `
+            &lt;span class="instruction-text">click the card to view details&lt;/span>
+            &lt;img src="assets/help-icon.png" alt="help" class="help-icon" />
+    `;
+    // put it immediately before the swipe-container
+    const container = layout.querySelector('.swipe-container');
+    layout.insertBefore(header, container);
+  }
+    
+    const container           = document.getElementById('card-container');
+    const leftReviewContainer = document.getElementById('left-review-container');
+    const rightReviewContainer= document.getElementById('right-review-container');
+    container.innerHTML           = '';
+    leftReviewContainer.innerHTML = '';
+    rightReviewContainer.innerHTML= '';
+
+    let id = 0;
+    data.forEach(r => {
+        const div = document.createElement('div');
+        div.classList.add('restaurant-card');
+        // TODO: this is pretty hardcoded. Fix this in the future, especially the cuisine tags that 
+        // need to depend on the number of cuisines a restaurant is marked with
+        div.innerHTML = `
+            &lt;div class="card-inner">
+            &lt;!-- Front -->
+            &lt;div class="card-front">
+              &lt;h2>${r["name"]}&lt;/h2>
+              &lt;img
+                src="assets/restaurant.jpg"
+                alt="restaurant"
+                class="card-img"
+              />
+              &lt;div class="details">
+                &lt;span class="rating">⭐ ${r["rating"]}&lt;/span>
+                &lt;span class="distance">📍 ${r["distance"]} mi&lt;/span>
+              &lt;/div>
+              &lt;div class="tags">
+                &lt;span class="tag">${r["cuisine"]}&lt;/span>
+              &lt;/div>
+            &lt;/div>
+
+            &lt;!-- Back -->
+            &lt;div class="card-back">                
+                &lt;div class="card-details">
+                  &lt;h2>Restaurant Title&lt;/h2>
+                    &lt;p>📍 &lt;a href="#">Insert Address&lt;/a>&lt;/p>
+                    &lt;p>🕒 Open until XX:XX PM&lt;/p>
+                    &lt;p>📞 XXX - XXX - XXXX&lt;/p>
+                    &lt;div class="menu-images">
+                      &lt;img src="assets/food1.jpg" alt="food">
+                      &lt;img src="assets/food2.jpg" alt="food">
+                      &lt;img src="assets/food3.jpg" alt="food">
+                    &lt;/div>
+                    &lt;a href="#" class="view-menu">View Menu ↗&lt;/a>
+                &lt;/div>
+            &lt;/div>
+          &lt;/div>
+        `;
+        div.setAttribute('data-id', r["id"]);
+        div.id = `card_${id}`;
+        div.style.display = "none";
+        container.appendChild(div);
+
+        const leftReview = document.createElement('div');
+        leftReview.classList.add('reviews', 'left');
+        leftReview.id = `left_review_${id}`;
+        leftReview.innerHTML = `
+            &lt;p>"nice clean environment"&lt;br>&lt;span>- customer 1&lt;/span>&lt;/p>
+            &lt;p>"yum"&lt;br>&lt;span>- customer 2&lt;/span>&lt;/p>
+            &lt;p>"good food"&lt;br>&lt;span>- awesome customer&lt;/span>&lt;/p>
+        `;
+        leftReview.style.display = 'none';
+        leftReviewContainer.appendChild(leftReview);
+
+
+        const rightReview = document.createElement('div');
+        rightReview.classList.add('reviews', 'right');
+        rightReview.id = `right_review_${id}`;
+        rightReview.innerHTML = `
+            &lt;p>"nice relaxing environment"&lt;br>&lt;span>- customer 3&lt;/span>&lt;/p>
+            &lt;p>"so good"&lt;br>&lt;span>- customer 4&lt;/span>&lt;/p>
+            &lt;p>"love it!"&lt;br>&lt;span>- customer 5&lt;/span>&lt;/p>
+        `;
+        rightReview.style.display = 'none';
+        rightReviewContainer.appendChild(rightReview);
+
+        setupFlipping(div);
+        id += 1;
+    });
+
+    let first = document.getElementById('card_0');
+    first.classList.add("active-card");
+    first.style.display = 'block';
+}
+
+/**
+ * Resets the card to its initial state, removing any flipped state and hiding review panes.
+ * @param {string} cardId - The ID of the card to reset.
+ * @return {void}
+ * */
+function resetCard(cardId) {
+    const card      = document.getElementById(`card_${cardId}`);
+    const leftRev   = document.getElementById(`left_review_${cardId}`);
+    const rightRev  = document.getElementById(`right_review_${cardId}`);
+    if (!card) return;
+    // 1. force-unflip
+    card.classList.remove('flipped');
+    // 2. instantly hide review panes
+    [leftRev, rightRev].forEach(el => {
+      if (el) {
+        el.style.opacity = 0;
+        el.style.display = 'none';
+      }
+    });
+  
+    const leftHint  = document.querySelector('.left-hint');
+    const rightHint = document.querySelector('.right-hint');
+    if (leftHint &amp;&amp; rightHint) {
+      leftHint.style.display  = 'flex';
+      rightHint.style.display = 'flex';
+    }
+  }
+  
+
+function setupButtons() {
+    let declineBtn = document.querySelector('button[title="Reject"]');
+    declineBtn.addEventListener("click", () => {
+        let current = document.querySelector('.active-card');
+        resetCard(current.id.split('_')[1]);
+        current.classList.add('swipe-left');
+
+        setTimeout(() => {
+            current.style.display = 'none';
+            current.classList.remove('swipe-left');
+            current.classList.remove('active-card');
+
+            let newId = Number(current.id.split('_')[1]) + 1;
+            
+            let newChild = document.getElementById(`card_${newId}`)
+            newChild.style.display = 'block';
+            newChild.classList.add('active-card');
+        }, 500);
+
+        //make sure this card never shows up again (even on reload)
+        let dataId = +current.getAttribute('data-id')
+        handleViewedCard(dataId);
+    });
+
+    let acceptBtn = document.querySelector('button[title="Accept"]');
+    acceptBtn.addEventListener("click", () => {
+        let current = document.querySelector('.active-card');
+        resetCard(current.id.split('_')[1]);
+        current.classList.add('swipe-right');
+
+        setTimeout(() => {
+            current.style.display = 'none';
+            current.classList.remove('swipe-right');
+            current.classList.remove('active-card')
+
+            let newId = Number(current.id.split('_')[1]) + 1;
+            let newChild = document.getElementById(`card_${newId}`)
+            newChild.style.display = 'block';
+            newChild.classList.add('active-card');
+        }, 500);
+        // save card to collection (localstorage)
+        let dataId = +current.getAttribute('data-id')
+        saveToDeck(dataId);
+        // make sure this card never shows up again (even on reload)
+        handleViewedCard(dataId);
+    });
+}
+
+function setupFlipping(card) {
+    // const card = document.querySelector('.active-card');
+    const cardId = card.id.split('_')[1];
+
+    const leftReviews = document.getElementById(`left_review_${cardId}`);
+    const rightReviews = document.getElementById(`right_review_${cardId}`);
+    const leftHint = document.querySelector('.left-hint');
+    const rightHint = document.querySelector('.right-hint');
+
+    leftReviews.style.display = 'none';
+    leftReviews.style.opacity = 0;
+    rightReviews.style.display = 'none';
+    rightReviews.style.opacity = 0;
+
+
+    card.addEventListener('click', () => {
+        card.classList.toggle('flipped');
+
+        const isFlipped = card.classList.contains('flipped');
+
+        if (isFlipped) {
+            // Fade in reviews
+            leftReviews.style.display = 'flex';
+            rightReviews.style.display = 'flex';
+
+            // Hide hints when flipped
+            if (leftHint &amp;&amp; rightHint) {
+                leftHint.style.display = 'none';
+                rightHint.style.display = 'none';
+            }
+
+            setTimeout(() => {
+                leftReviews.style.opacity = 1;
+                rightReviews.style.opacity = 1;
+            }, 300);
+        } else {
+            leftReviews.style.opacity = 0;
+            rightReviews.style.opacity = 0;
+
+            setTimeout(() => {
+                leftReviews.style.display = 'none';
+                rightReviews.style.display = 'none';
+
+                if (leftHint &amp;&amp; rightHint) {
+                    leftHint.style.display = 'flex';
+                    rightHint.style.display = 'flex';
+                }
+            }, 300);
+        }
+    });
+}
+
+function handleViewedCard(id) {
+    // simply save this id to local storage. this will just be reapplied as a filter
+    const viewed = JSON.parse(localStorage.getItem('viewed')) || [];
+
+    const exists = viewed.some( r=> r === id);
+    if(!exists) {
+      viewed.push(id);
+      localStorage.setItem('viewed', JSON.stringify(viewed));
+    }
+}
+
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#applyFilters">applyFilters</a></li><li><a href="global.html#confirmSelection">confirmSelection</a></li><li><a href="global.html#finalise">finalise</a></li><li><a href="global.html#getUniqueCuisines">getUniqueCuisines</a></li><li><a href="global.html#removeViewed">removeViewed</a></li><li><a href="global.html#renderRestaurant">renderRestaurant</a></li><li><a href="global.html#resetCard">resetCard</a></li><li><a href="global.html#saveToDeck">saveToDeck</a></li><li><a href="global.html#showOptions">showOptions</a></li><li><a href="global.html#updateProgressBar">updateProgressBar</a></li><li><a href="global.html#validatePositiveNumber">validatePositiveNumber</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.4</a> on Tue Jun 03 2025 03:09:54 GMT+0000 (Coordinated Universal Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

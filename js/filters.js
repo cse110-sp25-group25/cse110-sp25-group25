@@ -5,78 +5,215 @@ const userSelections = {
     distance: null,
     rating: null,
   };
-  
-  //function to show selected filter options
-  function showOptions(type) {
-    document.querySelector('.filter-selection').classList.add('hidden');
-    document.querySelectorAll('.filter-options').forEach(el => el.classList.add('hidden'));
-    document.getElementById(`${type}-options`).classList.remove('hidden');
+
+  /**
+ * Retrieves a sorted list of unique cuisines from restaurant data stored in localStorage.
+ *
+ * @returns {string[]} An alphabetically sorted array of unique cuisine strings.
+ */
+function getUniqueCuisines() {
+  const all = JSON.parse(localStorage.getItem('restaurantData') || '[]');
+  const set = new Set(all.map(r => r.cuisine).filter(c => typeof c === 'string'));
+  return Array.from(set).sort((a, b) => a.localeCompare(b));
+}
+const STEPS = ['cuisine', 'price', 'distance', 'rating'];
+let current   = 0;          // index inside STEPS
+let editMode  = false;      // true = user only fixes one step, then exit
+
+
+/**
+ * Updates the progress bar by setting the active step based on the current index.
+ * 
+ * Iterates through all elements with the class 'step', removing the 'active' class from each,
+ * and then adds the 'active' class to the step that matches the current active index.
+ */
+function updateProgressBar() {
+  const steps = document.querySelectorAll('.step');
+
+  steps.forEach((step, index) => {
+    const stepElement = step;
+    stepElement.classList.remove('active');
+    
+    if (index === current) {
+      stepElement.classList.add('active');
+    }
+  });
+}
+
+function nextStep() {
+  current += 1;
+  if (current < STEPS.length) {
+    showOptions(STEPS[current]);
+  } else {
+    finalise();    
+  }
+}
+
+/**
+ * Finalizes the filter selections and displays a summary.
+ *  *
+ * @returns {void}
+ * */
+function finalise() {
+  document.getElementById('sum-cuisine' ).textContent = userSelections.cuisine.join(', ') || '—';
+  document.getElementById('sum-price'   ).textContent = userSelections.price    ?? '—';
+  document.getElementById('sum-distance').textContent = userSelections.distance ?? '—';
+  document.getElementById('sum-rating'  ).textContent = userSelections.rating   ?? '—';
+
+  document.querySelectorAll('main > section').forEach(s => s.classList.add('hidden'));
+  document.querySelector('.progress-bar').classList.add('hidden');
+  document.getElementById('summary').classList.remove('hidden');
+}
+
+/**
+ * Shows the selected filter options and reveals the progress bar.
+ * 
+ * Hides the filter selection section and all filter option sections, then shows
+ * the specific filter options for the given type. Also makes the progress bar visible
+ * and updates it to highlight the current step.
+ * 
+ * @param {string} type - The type of filter to show options for ('cuisine', 'price', 'distance', 'rating')
+ */
+function showOptions(type) {
+  document.querySelector('.filter-selection').classList.add('hidden');
+  document.querySelectorAll('.filter-options').forEach(el => el.classList.add('hidden'));
+  document.getElementById(`${type}-options`).classList.remove('hidden');
+
+  // Show progress bar when a filter is selected
+  document.querySelector('.progress-bar').classList.remove('hidden');
+
+  // Update progress bar based on the step
+  const stepIndex = STEPS.indexOf(type);
+  if (stepIndex !== -1) {
+    current = stepIndex;
+    updateProgressBar();
+  }
+}
+
+// Event listener for DOMContentLoaded to initialize the filter options
+
+document.addEventListener('DOMContentLoaded', () => {
+  const cuisineGrid = document.getElementById('cuisine-grid');
+  if (cuisineGrid) {
+    cuisineGrid.innerHTML = '';
+
+    // Get all unique cuisines
+    const cuisines = getUniqueCuisines();
+    cuisines.forEach(cuisine => {
+      const btn = document.createElement('button');
+      btn.classList.add('option-btn');
+      btn.setAttribute('data-value', cuisine);
+      btn.textContent = cuisine;
+      cuisineGrid.appendChild(btn);
+    });
+
   }
   
-  document.querySelectorAll('.option-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      // For multi-select (Cuisine), allow multiple
-      if (btn.closest('#cuisine-options')) {
-        btn.classList.toggle('selected');
-      } else {
-        // For others, make single select
-        const siblings = btn.parentElement.querySelectorAll('.option-btn');
-        siblings.forEach(b => b.classList.remove('selected'));
-        btn.classList.add('selected');
-      }
-    });
+  // Set up event listeners for filter buttons
+document.querySelectorAll('.option-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    if (btn.closest('#cuisine-options')) {
+      btn.classList.toggle('selected');
+    } else {
+      // For others, make single select
+      const siblings = btn.parentElement.querySelectorAll('.option-btn');
+      siblings.forEach(b => b.classList.remove('selected'));
+      btn.classList.add('selected');
+    }
   });
+  const skipAll = document.getElementById('skip-btn');
+
+  skipAll.addEventListener('click', () => {
+    // leave defaults (every filter empty/null)
+    window.location.href = 'swipe.html';  
+  });
+});
+
+  document.getElementById('done-btn').addEventListener('click', () => {
+    window.location.href = 'swipe.html';        // or swipe.html
+  });
+  });
+
   
 
-  // confirm selection
-  function confirmSelection(type) {
-    if (type === 'cuisine') {
-      const selected = document.querySelectorAll('#cuisine-options .option-btn.selected');
-      userSelections.cuisine = Array.from(selected).map(btn => btn.dataset.value);
+/**
+ * Confirms the user's selection for a specific filter type and updates the userSelections object.
+ * @param {string} type - The type of filter being confirmed (e.g., 'cuisine', 'price', 'distance', 'rating').
+ * @return {void}
+ * */
+function confirmSelection(type) {
+  if (type === 'cuisine') {
+    const selected = document.querySelectorAll('#cuisine-options .option-btn.selected');
+    if (selected === '') {                       // user left it blank  ⇒  skip
+      userSelections.cuisine = null;
     }
-  
-    if (type === 'price') {
-      const val = document.getElementById('price-input').value;
-      if (validatePositiveNumber(val)) {
-        userSelections.price = parseFloat(val);
-      } else {
-        alert('Please enter a valid max price.');
-        return;
-      }
+    else userSelections.cuisine = Array.from(selected).map(btn => btn.dataset.value);
+  }
+
+  if (type === 'price') {
+    const val = document.getElementById('price-input').value;
+    if (validatePositiveNumber(val)) {
+      userSelections.price = parseFloat(val);
+    } else if (val === '') { // user left it blank  ⇒  skip
+      userSelections.price = null;
     }
-  
-    if (type === 'distance') {
-      const val = document.getElementById('distance-input').value;
-      if (validatePositiveNumber(val)) {
-        userSelections.distance = parseFloat(val);
-      } else {
-        alert('Please enter a valid max distance.');
-        return;
-      }
+    else{
+      alert('Please enter a valid max price.');
+      return;
     }
-    
-    //need to check how rating works (logic currently PLACEHOLDER)
-    if (type === 'rating') {
-      const val = document.getElementById('rating-input').value;
-      if (validatePositiveNumber(val) && val >= 0 && val <= 5) {
-        userSelections.rating = parseFloat(val);
-      } else {
-        alert('Please enter a valid rating (0–5).');
-        return;
-      }
+  }
+
+  if (type === 'distance') {
+    const val = document.getElementById('distance-input').value;
+    if (validatePositiveNumber(val)) {
+      userSelections.distance = parseFloat(val);
+    } 
+    else if (val === '') { // user left it blank  ⇒  skip
+      userSelections.distance = null;
+    } else {
+      alert('Please enter a valid max distance.');
+      return;
     }
-    
-    //REMOVE LATER (just for testing)
-    console.log('Current Selections:', userSelections);
-    alert(`Saved ${type} selection!`);
   }
   
-  // function to check positive/numeric input
-  function validatePositiveNumber(value) {
-    const num = parseFloat(value);
-    return !isNaN(num) && num >= 0;
+  //need to check how rating works (logic currently PLACEHOLDER)
+  if (type === 'rating') {
+    const val = document.getElementById('rating-input').value;
+    if (validatePositiveNumber(val) && val >= 0 && val <= 5) {
+      userSelections.rating = parseFloat(val);
+    } else if (val === '') { // user left it blank  ⇒  skip
+      userSelections.rating = null;
+    }
+    else {
+      alert('Please enter a valid rating (0–5).');
+      return;
+    }
   }
-  
+
+  localStorage.setItem('userSelections', JSON.stringify(userSelections));
+
+  if (editMode) {
+    finalise();          // one-shot edit → exit
+  } else {
+    nextStep();          // continue to next question
+  }
+  //REMOVE LATER (just for testing)
+  console.log('Current Selections:', userSelections);
+  alert(`Saved ${type} selection!`);
+}
+
+
+// function to check positive/numeric input
+/**
+ * Validates that the input value is a positive number.
+ * @param {string} value - The input value to validate.
+ * @returns {boolean} True if the value is a valid positive number, false otherwise.
+ */
+function validatePositiveNumber(value) {
+  const num = parseFloat(value);
+  return !isNaN(num) && num >= 0;
+}
+
 
 // to pass ESlint
 

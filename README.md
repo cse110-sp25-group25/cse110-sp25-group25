@@ -1,26 +1,5 @@
-# Restaurant Crisis (Team 25 | Quarter Life Crisis)
-[Restaurant Crisis](https://cse110-sp25-group25.github.io/cse110-sp25-group25): A CSE 110 Project (Team 25)
-
-## Setup
-
-Install the following dependencies:
-
-```
-npm install --save-dev eslint @eslint/js
-npm install --save-dev jest
-```
-
-To run the tests, simply run
-
-```
-npm run test
-```
-
-To run the linter, simply run
-
-```
-npx eslint ./
-```
+# Food Flip (Team 25 | Quarter Life Crisis)
+[Food Flip](https://cse110-sp25-group25.github.io/cse110-sp25-group25): A CSE 110 Project (Team 25)
 
 ## How is work done on the team? (For grading purposes, for TA)
 - There are two teams: **Designers** and **Developers**
@@ -51,11 +30,16 @@ npx eslint ./
   - [Review & Retrospective](admin/meetings/051725-sprint-1-review-retrospective.md)
 - **Sprint 2**
   - [Planning](admin/meetings/team/05-19.md)
+  - [Review & Retrospective](admin/meetings/052425-sprint-2-review-retrospective.md)
 
 
 ### ADRs
 - [Choosing Figma](specs/adrs/050925-Choose-Figma.md)
 - [Choosing JEST](specs/adrs/051025-Choosing-JEST.md)
+- [Choosing GitHub Pages](specs/adrs/052325-Choosing-Github-Pages.md)
+- [Choosing Local Storage](specs/adrs/052225-Choose-Local-Storage.md)
+- [Choosing JS Docs](specs/adrs/052525-Choosing-JSDocs.md)
+- [Choosing Quality Monitor](specs/adrs/052425-Choosing-Quality-Monitor.md)
 
 ### CI/CD Pipeline
 - **Phase 1**
@@ -66,3 +50,30 @@ npx eslint ./
 
 ### Team Status Video
 - [Team Status Video 1 (YouTube Link)](https://www.youtube.com/watch?v=xgqD52VNC9c)
+
+---
+
+## Setup
+
+Install the following dependencies:
+
+```
+npm install --save-dev eslint @eslint/js
+npm install --save-dev jest
+```
+
+To run the tests, simply run
+
+```
+npm run test
+```
+
+To run the linter, simply run
+
+```
+npx eslint ./
+```
+
+## Documentation
+
+Documentation for code can be viewed [here](https://cse110-sp25-group25.github.io/cse110-sp25-group25/docs/jsdoc).
