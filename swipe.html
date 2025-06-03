@@ -10,6 +10,7 @@
   />
   <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
   <!-- Header -->
   <header>
@@ -22,14 +23,19 @@
       </ul>
     </nav>
     <img src="assets/burger-menu.png" alt="menu" class="burger-icon" />
+
   </header>
+  <div class="header-action-bar">
+    <button id="clear-filters-btn" class="button-type2">Clear Filters</button>
+  </div>
 
   <!-- Swipe Layout -->
   <main class="swipe-layout">
     <div class="swipe-container">
+      
       <!-- Left Hint -->
       <div class="swipe-hint left-hint">
-        <span class="hint-icon">◀</span>
+        <img src="assets/left-arrow.png" alt="Swipe Left" class="hint-icon" />
         <span class="hint-text">
           swipe left<br/>
           to get a new card
@@ -57,7 +63,7 @@
       
       <!-- Right Hint -->
       <div class="swipe-hint right-hint">
-        <span class="hint-icon">▶</span>
+        <img src="assets/right-arrow.png" alt="Swipe Right" class="hint-icon" />
         <span class="hint-text">
           swipe right<br/>
           to save to collection

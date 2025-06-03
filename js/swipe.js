@@ -1,301 +1,313 @@
 document.addEventListener('DOMContentLoaded', async () => {
-  let data = JSON.parse(localStorage.getItem('restaurantData'));
+  const clearBtn = document.getElementById('clear-filters-btn');
+  if (clearBtn) {
+    clearBtn.addEventListener('click', () => {
+      localStorage.removeItem('userSelections');
+      alert('All filters have been cleared. To set new ones, go back to the filters page.');
+      window.location.reload();
 
+  });
+  }
+  let data = JSON.parse(localStorage.getItem('restaurantData'));
   if (!data) {
       const res = await fetch('data/restaurants.json');
       data = await res.json();
       localStorage.setItem('restaurantData', JSON.stringify(data));
   }
 
-  const filters = JSON.parse(localStorage.getItem('userSelections'));
-  if (filters) {
-      data = applyFilters(data, filters);
-  }
+const filters = JSON.parse(localStorage.getItem('userSelections'));
+if (filters) {
+    data = applyFilters(data, filters);
+}
 
-  const viewed = JSON.parse(localStorage.getItem('viewed'));
-  if (viewed) {
-      data = removeViewed(data, viewed);
-  }
+const viewed = JSON.parse(localStorage.getItem('viewed'));
+if (viewed) {
+    data = removeViewed(data, viewed);
+}
 
-  if (!data || data.length === 0) {
-      console.warn("no data, can't render");
-      return;
-  }
+if (!data || data.length === 0) {
+    console.warn("no data, can't render");
+    return;
+}
 
-  renderRestaurant(data);
-  setupButtons();
+renderRestaurant(data);
+setupButtons();
 });
 
 /**
- * Filters restaurant data based on user-selected filters.
- * @param {Array<Object>} data - The list of restaurant objects.
- * @param {Object} filters - Object containing filtering criteria (cuisine, price, distance, rating).
- * @returns {Array<Object>} Filtered list of restaurants.
- */
+* A function to remove the subset of data that doesn't satisfy the desired filters
+* @param {Array} data original list of data
+* @param {Array} filters list of filters to apply
+* @returns the subset of data that satisfies the desired filters
+*/
 function applyFilters(data, filters) {
   return data.filter(r => {
-      if (filters.cuisine && r.cuisine !== filters.cuisine) return false;
+      if (filters.cuisine && filters.cuisine.length>0 && !filters.cuisine.includes(r.cuisine)){
+          return false;
+      } 
       if (filters.price && r.price.length > filters.price.length) return false;
       // Parse distance and rating
       if (filters.distance && r.distance > parseFloat(filters.distance)) return false;
       if (filters.rating && r.rating < parseFloat(filters.rating)) return false;
 
       return true;
-  });
-}
-
-/**
- * Removes restaurants that have already been viewed.
- * @param {Array<Object>} data - The list of restaurant objects.
- * @param {Array<number>} viewed - Array of viewed restaurant IDs.
- * @returns {Array<Object>} Filtered restaurant data.
- */
-function removeViewed(data, viewed) {
-  return data.filter(r => {
-    return !viewed.includes(+r.id);
 });
 }
 
 /**
- * Saves a restaurant to the user's deck if not already present.
- * @param {number} id - ID of the restaurant to save.
- */
+* A function that takes in a list of data, a list of viewed elements, and returns the subset of the original list
+* that is not in the second.
+* @param data original list
+* @param viewed items to remove
+* @returns the set difference data \ viewed
+*/
+function removeViewed(data, viewed) {
+return data.filter(r => {
+  return !viewed.includes(+r.id);
+});
+}
+
+/**
+* saves a restaurant to the deck in localStorage.
+*  @param {number} id - The ID of the restaurant to save.
+* @return {void}
+* */
 function saveToDeck(id) {
-  const all = JSON.parse(localStorage.getItem('restaurantData'));
-  const saved = JSON.parse(localStorage.getItem('deck')) || [];
+const all = JSON.parse(localStorage.getItem('restaurantData'));
+const saved = JSON.parse(localStorage.getItem('deck')) || [];
 
-  const toAdd = all.find(r => r.id === id);
-  if(!toAdd) {
-    return;
-  }
+const toAdd = all.find(r => r.id === id);
+if(!toAdd) {
+  return;
+}
 
-  const exists = saved.some( r=> r.id === id);
-  if(!exists) {
-      saved.push(toAdd);
-      localStorage.setItem('deck', JSON.stringify(saved));
-  }
+const exists = saved.some( r=> r.id === id);
+if(!exists) {
+    saved.push(toAdd);
+    localStorage.setItem('deck', JSON.stringify(saved));
+}
 }
 
 /**
- * Creates a review container element.
- * @param {Array<Object>} reviews - List of review objects with `text` and `author`.
- * @param {string} side - Either 'left' or 'right', determines where it's shown.
- * @param {number} id - Unique ID for the card/review container.
- * @returns {HTMLDivElement} The review container element.
- */
+* Creates a review container element.
+* @param {Array<Object>} reviews - List of review objects with `text` and `author`.
+* @param {string} side - Either 'left' or 'right', determines where it's shown.
+* @param {number} id - Unique ID for the card/review container.
+* @returns {HTMLDivElement} The review container element.
+*/
 function createReviewElement(reviews, side, id) {
-  const reviewDiv = document.createElement('div');
-  reviewDiv.classList.add('reviews', side);
-  reviewDiv.id = `${side}_review_${id}`;
+const reviewDiv = document.createElement('div');
+reviewDiv.classList.add('reviews', side);
+reviewDiv.id = `${side}_review_${id}`;
 
-  let innerHTML = '';
-  for (let i = 0; i < reviews.length; i++) {
-      innerHTML += `<p>"${reviews[i].text}"<br><span>- ${reviews[i].author}</span></p>`;
-  }
+let innerHTML = '';
+for (let i = 0; i < reviews.length; i++) {
+    innerHTML += `<p>"${reviews[i].text}"<br><span>- ${reviews[i].author}</span></p>`;
+}
 
-  reviewDiv.innerHTML = innerHTML;
-  reviewDiv.style.display = 'none';
+reviewDiv.innerHTML = innerHTML;
+reviewDiv.style.display = 'none';
 
-  return reviewDiv;
+return reviewDiv;
 }
 
 /**
- * Renders all restaurant cards and associated review elements.
- * @param {Array<Object>} data - List of restaurant objects to render.
- */
+* Renders all restaurant cards and associated review elements.
+* @param {Array<Object>} data - List of restaurant objects to render.
+*/
 function renderRestaurant(data) {
-  const container = document.getElementById('card-container');
-  const rightReviewContainer = document.getElementById('right-review-container');
-  const leftReviewContainer = document.getElementById('left-review-container');
-  container.innerHTML ='';
+const container = document.getElementById('card-container');
+const rightReviewContainer = document.getElementById('right-review-container');
+const leftReviewContainer = document.getElementById('left-review-container');
+container.innerHTML ='';
 
-  let id = 0;
-  data.forEach(r => {
-    const div = document.createElement('div');
-    div.classList.add('restaurant-card');
+let id = 0;
+data.forEach(r => {
+  const div = document.createElement('div');
+  div.classList.add('restaurant-card');
 
-    div.innerHTML = `
-      <div class="card-inner">
-        <!-- Front -->
-        <div class="card-front">
-          <h2>${r.name}</h2>
-          <img src="${r.image}" alt="${r.name}" class="card-img" />
-          <div class="details">
-            <span class="rating">
-              <img src="assets/star-icon.png" alt="star" class="icon" />
-              ${r.rating}
-            </span>
-            <span class="distance">
-              <img src="assets/location-icon.png" alt="location" class="icon" />
-              ${r.distance} mi
-            </span>
-          </div>
-          <div class="tags">
-            <span class="tag">${r.cuisine}</span>
-            ${r.tags?.map(tag => `<span class="tag">${tag}</span>`).join('') || ''}
-          </div>
+  div.innerHTML = `
+    <div class="card-inner">
+      <!-- Front -->
+      <div class="card-front">
+        <h2>${r.name}</h2>
+        <img src="${r.image}" alt="${r.name}" class="card-img" />
+        <div class="details">
+          <span class="rating">
+            <img src="assets/star-icon.png" alt="star" class="icon" />
+            ${r.rating}
+          </span>
+          <span class="distance">
+            <img src="assets/location-icon.png" alt="location" class="icon" />
+            ${r.distance} mi
+          </span>
         </div>
-
-        <!-- Back -->
-        <div class="card-back">                
-          <div class="card-details">
-            <h2>${r.name}</h2>
-            <p>📍 <a href="#">${r.location}</a></p>
-            <p>🕒 ${r.hours}</p>
-            <p>📞 ${r.phone}</p>
-            <div class="menu-images">
-              ${(r.menuImages || []).map(src => `<img src="${src}" alt="food">`).join('')}
-            </div>
-            <a href="#" class="view-menu">View Menu ↗</a>
-          </div>
+        <div class="tags">
+          <span class="tag">${r.cuisine}</span>
+          ${r.tags?.map(tag => `<span class="tag">${tag}</span>`).join('') || ''}
         </div>
       </div>
-    `;
 
-    div.setAttribute('data-id', r.id);
-    div.id = `card_${id}`;
-    div.style.display = 'none';
-    container.appendChild(div);
+      <!-- Back -->
+      <div class="card-back">                
+        <div class="card-details">
+          <h2>${r.name}</h2>
+          <p>📍 <a href="#">${r.location}</a></p>
+          <p>🕒 ${r.hours}</p>
+          <p>📞 ${r.phone}</p>
+          <div class="menu-images">
+            ${(r.menuImages || []).map(src => `<img src="${src}" alt="food">`).join('')}
+          </div>
+          <a href="#" class="view-menu">View Menu ↗</a>
+        </div>
+      </div>
+    </div>
+  `;
 
-    const reviews = r.reviews || [];
-    const leftReviews = reviews.slice(0, 3);
-    const rightReviews = reviews.slice(3, 6);
+  div.setAttribute('data-id', r.id);
+  div.id = `card_${id}`;
+  div.style.display = 'none';
+  container.appendChild(div);
 
-    const leftReviewElement = createReviewElement(leftReviews, 'left', id);
-    const rightReviewElement = createReviewElement(rightReviews, 'right', id);
+  const reviews = r.reviews || [];
+  const leftReviews = reviews.slice(0, 3);
+  const rightReviews = reviews.slice(3, 6);
 
-    leftReviewContainer.appendChild(leftReviewElement);
-    rightReviewContainer.appendChild(rightReviewElement);
+  const leftReviewElement = createReviewElement(leftReviews, 'left', id);
+  const rightReviewElement = createReviewElement(rightReviews, 'right', id);
 
-    setupFlipping(div);
-    id += 1;
-  });
+  leftReviewContainer.appendChild(leftReviewElement);
+  rightReviewContainer.appendChild(rightReviewElement);
 
-  const first = document.getElementById('card_0');
-  if (first) {
-    first.classList.add('active-card');
-    first.style.display = 'block';
-  }
+  setupFlipping(div);
+  id += 1;
+});
+
+const first = document.getElementById('card_0');
+if (first) {
+  first.classList.add('active-card');
+  first.style.display = 'block';
+}
 }
 
 /**
- * Sets up flipping interaction on a card to toggle between front and back.
- * @param {HTMLElement} card - The card element to attach flipping logic to.
- */
+* Sets up flipping interaction on a card to toggle between front and back.
+* @param {HTMLElement} card - The card element to attach flipping logic to.
+*/
 function setupFlipping(card) {
-  // const card = document.querySelector('.active-card');
-  const cardId = card.id.split('_')[1];
-  const leftReviews = document.getElementById(`left_review_${cardId}`);
-  const rightReviews = document.getElementById(`right_review_${cardId}`);
-  const leftHint = document.querySelector('.left-hint');
-  const rightHint = document.querySelector('.right-hint');
+// const card = document.querySelector('.active-card');
+const cardId = card.id.split('_')[1];
+const leftReviews = document.getElementById(`left_review_${cardId}`);
+const rightReviews = document.getElementById(`right_review_${cardId}`);
+const leftHint = document.querySelector('.left-hint');
+const rightHint = document.querySelector('.right-hint');
 
-  card.addEventListener('click', () => {
-      card.classList.toggle('flipped');
-      const isFlipped = card.classList.contains('flipped');
+card.addEventListener('click', () => {
+    card.classList.toggle('flipped');
+    const isFlipped = card.classList.contains('flipped');
 
-      if (isFlipped) {
-        // Fade in reviews
-          leftReviews.style.display = 'flex';
-          rightReviews.style.display = 'flex';
+    if (isFlipped) {
+      // Fade in reviews
+        leftReviews.style.display = 'flex';
+        rightReviews.style.display = 'flex';
 
-          if (leftHint) leftHint.style.display = 'none';
-          if (rightHint) rightHint.style.display = 'none';
+        if (leftHint) leftHint.style.display = 'none';
+        if (rightHint) rightHint.style.display = 'none';
 
-          setTimeout(() => {
-              leftReviews.style.opacity = 1;
-              rightReviews.style.opacity = 1;
-          }, 300);
-      } else {
-          leftReviews.style.opacity = 0;
-          rightReviews.style.opacity = 0;
+        setTimeout(() => {
+            leftReviews.style.opacity = 1;
+            rightReviews.style.opacity = 1;
+        }, 300);
+    } else {
+        leftReviews.style.opacity = 0;
+        rightReviews.style.opacity = 0;
 
-          setTimeout(() => {
-              leftReviews.style.display = 'none';
-              rightReviews.style.display = 'none';
+        setTimeout(() => {
+            leftReviews.style.display = 'none';
+            rightReviews.style.display = 'none';
 
-              if (leftHint && rightHint) {
-                leftHint.style.display = 'flex';
-                rightHint.style.display = 'flex';
-            }
-          }, 300);
-      }
-  });
+            if (leftHint && rightHint) {
+              leftHint.style.display = 'flex';
+              rightHint.style.display = 'flex';
+          }
+        }, 300);
+    }
+});
 }
 
 /**
- * Resets the state of a card and hides its reviews.
- * @param {number|string} cardId - The card's unique identifier.
- */
+* Resets the state of a card and hides its reviews.
+* @param {number|string} cardId - The card's unique identifier.
+*/
 function resetCard(cardId) {
-  const card = document.getElementById(`card_${cardId}`);
-  const leftRev = document.getElementById(`left_review_${cardId}`);
-  const rightRev = document.getElementById(`right_review_${cardId}`);
-  if (!card) return;
+const card = document.getElementById(`card_${cardId}`);
+const leftRev = document.getElementById(`left_review_${cardId}`);
+const rightRev = document.getElementById(`right_review_${cardId}`);
+if (!card) return;
 
-  card.classList.remove('flipped');
-  [leftRev, rightRev].forEach(el => {
-      if (el) {
-          el.style.opacity = 0;
-          el.style.display = 'none';
-      }
-  });
+card.classList.remove('flipped');
+[leftRev, rightRev].forEach(el => {
+    if (el) {
+        el.style.opacity = 0;
+        el.style.display = 'none';
+    }
+});
 }
 
 /**
- * Sets up accept/reject button logic and swiping transitions.
- */
+* Sets up accept/reject button logic and swiping transitions.
+*/
 function setupButtons() {
-  const declineBtn = document.querySelector('button[title="Reject"]');
-  const acceptBtn = document.querySelector('button[title="Accept"]');
+const declineBtn = document.querySelector('button[title="Reject"]');
+const acceptBtn = document.querySelector('button[title="Accept"]');
 
-  declineBtn.addEventListener("click", () => {
-      const current = document.querySelector('.active-card');
-      resetCard(current.id.split('_')[1]);
-      current.classList.add('swipe-left');
+declineBtn.addEventListener("click", () => {
+    const current = document.querySelector('.active-card');
+    resetCard(current.id.split('_')[1]);
+    current.classList.add('swipe-left');
 
-      setTimeout(() => {
-          current.style.display = 'none';
-          current.classList.remove('swipe-left', 'active-card');
+    setTimeout(() => {
+        current.style.display = 'none';
+        current.classList.remove('swipe-left', 'active-card');
 
-          const newId = Number(current.id.split('_')[1]) + 1;
-          const newCard = document.getElementById(`card_${newId}`);
-          if (newCard) {
-              newCard.style.display = 'block';
-              newCard.classList.add('active-card');
-          }
-      }, 500);
+        const newId = Number(current.id.split('_')[1]) + 1;
+        const newCard = document.getElementById(`card_${newId}`);
+        if (newCard) {
+            newCard.style.display = 'block';
+            newCard.classList.add('active-card');
+        }
+    }, 500);
 
-      handleViewedCard(+current.getAttribute('data-id'));
-  });
+    handleViewedCard(+current.getAttribute('data-id'));
+});
 
-  acceptBtn.addEventListener("click", () => {
-      const current = document.querySelector('.active-card');
-      resetCard(current.id.split('_')[1]);
-      current.classList.add('swipe-right');
+acceptBtn.addEventListener("click", () => {
+    const current = document.querySelector('.active-card');
+    resetCard(current.id.split('_')[1]);
+    current.classList.add('swipe-right');
 
-      setTimeout(() => {
-          current.style.display = 'none';
-          current.classList.remove('swipe-right', 'active-card');
+    setTimeout(() => {
+        current.style.display = 'none';
+        current.classList.remove('swipe-right', 'active-card');
 
-          const newId = Number(current.id.split('_')[1]) + 1;
-          const newCard = document.getElementById(`card_${newId}`);
-          if (newCard) {
-              newCard.style.display = 'block';
-              newCard.classList.add('active-card');
-          }
-      }, 500);
+        const newId = Number(current.id.split('_')[1]) + 1;
+        const newCard = document.getElementById(`card_${newId}`);
+        if (newCard) {
+            newCard.style.display = 'block';
+            newCard.classList.add('active-card');
+        }
+    }, 500);
 
-      const dataId = +current.getAttribute('data-id');
-      saveToDeck(dataId);
-      handleViewedCard(dataId);
-  });
+    const dataId = +current.getAttribute('data-id');
+    saveToDeck(dataId);
+    handleViewedCard(dataId);
+});
 }
 
 /**
- * Saves a restaurant ID to the list of viewed restaurants in localStorage.
- * @param {number} id - The ID of the viewed restaurant.
- */
+* Saves a restaurant ID to the list of viewed restaurants in localStorage.
+* @param {number} id - The ID of the viewed restaurant.
+*/
 function handleViewedCard(id) {
   // simply save this id to local storage. this will just be reapplied as a filter
   const viewed = JSON.parse(localStorage.getItem('viewed')) || [];

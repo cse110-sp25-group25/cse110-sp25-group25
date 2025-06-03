@@ -14,6 +14,21 @@ header {
    margin: 0;
 }
 
+#clear-filters-btn {
+   position: absolute;
+   top: 70px;                
+   right: 20px;            
+   font-size: 1rem;          
+   padding: 0.25rem 0.5rem;  
+   background-color: #b4d2ba; 
+   color: #ffffff; 
+   border: none;
+   border-radius: 10px; 
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+   z-index: 1;
+ }
+
 
 nav a {
    text-decoration: none;
@@ -180,6 +195,20 @@ nav ul {
 }
 
 
+
+
+ #left-review-container {
+   margin: 0 1rem; /* or padding */
+   width: 260px;
+ }
+
+ #right-review-container {
+   margin: 0 1rem; /* or padding */
+   width: 260px;
+ }
+ 
+
+
 .button-type2:hover {
    background-color: #97bb9e;
    color: #4b543b;
@@ -296,59 +325,6 @@ nav ul {
    padding: 40px 0;
 }
 
-
-/* mobile landing page */
-@media (max-width: 550px) {
-   .main-grid {
-       position: relative;
-       display: flex;
-       flex-direction: column;
-       align-items: center;
-       padding: 20px;
-   }
-
-
-   .hero {
-       align-items: flex-start;
-       text-align: left;
-       padding-right: 100px;
-       padding-left: 10px;
-   }
-
-
-   .hero h1 {
-       font-size: 2rem;
-       line-height: 1.5;
-   }
-
-
-   .hero-buttons {
-       align-items: flex-start;
-   }
-
-
-   .feature-card {
-       border: 1px solid #aaa;
-       padding: 15px;
-       border-radius: 12px;
-
-
-       position: absolute;
-       right: 0;
-       width: 250px;
-       transform: translateX(70%);
-   }
-
-
-   .card-image {
-       width: 70%;
-       height: 200px;
-   }
-
-
-}
-
-
 /*Swipe card styles */
 .swipe-layout {
    display: flex;
@@ -390,40 +366,6 @@ nav ul {
  }
 
 
-  /* — Restaurant Card — */
- .restaurant-card {
-   background-color: #ffffff;              /* card bg */
-   border-radius: 20px;
-   padding: 1rem;
-   width: 300px;
-   text-align: center;
-   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-   transition: transform 0.3s ease-out, opacity 0.3s ease-out;
- }
- .restaurant-card h2 {
-   font-size: 36px;                        /* title 36px */
-   margin: 0.5rem 0;
-   color: #4b543b;
- }
- .card-img {
-   width: 100%;
-   height: auto;
-   border-radius: 12px;
-   margin: 1rem 0;
- }
- .details {
-   display: flex;
-   justify-content: center;
-   gap: 1rem;
-   font-size: 1.5rem;                      /* 24px */
- }
- .rating {
-   color: #dce2aa;                         /* star */
- }
- .distance {
-   color: #4b543b;
- }
-
  .icon {
   height: 18px;
   width: 18px;
@@ -461,6 +403,36 @@ nav ul {
    cursor: pointer;
    transition: background-color 0.3s ease;
  }
+
+   /* — Restaurant Card — */
+   .restaurant-card {
+      background-color: #ffffff;              /* card bg */
+      border-radius: 20px;
+      padding: 1rem;
+      width: 300px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+    }
+    .restaurant-card h2 {
+      font-size: 36px;                        /* title 36px */
+      margin: 0.5rem 0;
+      color: #4b543b;
+    }
+    .card-img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      margin: 1rem 0;
+    }
+    .details {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      width: 100%;
+      order: 1;
+    }
+  
  .button-type2:hover {
    background-color: #97bb9e;              /* hover bg */
  }
@@ -472,6 +444,60 @@ nav ul {
    align-items: center;
    justify-content: center;
  }
+
+  /*** SWIPE LAYOUT ***/
+
+  .swipe-layout {
+   position: relative;     /* so absolute children use this as origin */
+   max-width: 360px;       /* match your card/container width */
+   margin: 3rem auto 0;    /* center it and push down from top */
+   padding-bottom: 6rem;   /* extra room for buttons */
+ }
+ 
+ 
+ .swipe-container {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 1rem;                   /* tighten up spacing */
+ }
+ 
+ /* — Swipe Hints — */
+.swipe-hint {
+   position: absolute;
+   top: 50%;
+   /* remove any left/right here */
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 0.5rem;
+   text-align: center;
+   color: #b57f50;
+   font-size: 1rem;
+   width: 120px;       /* wrap at 120px */
+   max-width: 120px;
+ }
+ 
+ .left-hint {
+   left: 0;                             /* anchor at left edge */
+   transform: translate(-100%, -50%);  /* move left by its own width */
+ }
+ 
+ .right-hint {
+   right: 0;                            /* anchor at right edge */
+   transform: translate(100%, -50%);   /* move right by its own width */
+ }
+ 
+ .hint-icon {
+   width: 32px;
+   height: auto;
+ }
+ 
+ .hint-icon {
+   width: 64px;                 /* size your arrow images */
+   height: auto;
+ }
+ 
   /* — Swipe Animations — */
  .restaurant-card.swipe-right {
    transform: translateX(120%) rotate(15deg);
@@ -620,6 +646,7 @@ nav ul {
   flex-direction: column;
   align-items: center;
 }
+
 
 @media (max-width: 550px) {
   .swipe-container {
