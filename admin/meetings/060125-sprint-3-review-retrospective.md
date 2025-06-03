@@ -78,9 +78,9 @@ Due: Sunday, June 1 by 11:59 PM**
 
 ### Yilin
 
-- **What was completed:**
-- **Any blockers faced:**
-- **Thoughts/Reflections:**
+- **What was completed:** Finalized design and decided on what to implement
+- **Any blockers faced:** no
+- **Thoughts/Reflections:** need to implement the changes
 
 ### Harrison
 
