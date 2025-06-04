@@ -216,7 +216,7 @@ function resetCard(cardId) {
       rightHint.style.display = 'flex';
     }
   }
-  
+
 
 function setupButtons(data) {
     console.log("setting up buttons");
@@ -335,26 +335,6 @@ card.addEventListener('click', () => {
     }
 });
 }
-
-/**
-* Resets the state of a card and hides its reviews.
-* @param {number|string} cardId - The card's unique identifier.
-*/
-function resetCard(cardId) {
-const card = document.getElementById(`card_${cardId}`);
-const leftRev = document.getElementById(`left_review_${cardId}`);
-const rightRev = document.getElementById(`right_review_${cardId}`);
-if (!card) return;
-
-card.classList.remove('flipped');
-[leftRev, rightRev].forEach(el => {
-    if (el) {
-        el.style.opacity = 0;
-        el.style.display = 'none';
-    }
-});
-}
-
 
 /**
 * Saves a restaurant ID to the list of viewed restaurants in localStorage.
