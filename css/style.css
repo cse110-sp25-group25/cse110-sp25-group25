@@ -348,13 +348,7 @@ nav ul {
  }
 
 /*Swipe card styles */
-.swipe-layout {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   padding: 2rem;
-   /* page bg lives on body */
- }
+
  .swipe-container {
    display: flex;
    align-items: center;
@@ -503,11 +497,16 @@ nav ul {
   /*** SWIPE LAYOUT ***/
 
   .swipe-layout {
-   position: relative;     /* so absolute children use this as origin */
-   max-width: 360px;       /* match your card/container width */
-   margin: 3rem auto 0;    /* center it and push down from top */
-   padding-bottom: 6rem;   /* extra room for buttons */
- }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    position: relative;
+    max-width: 360px;
+    margin: 3rem auto 0;
+    padding-bottom: 6rem;
+  }
+  
  
  
  .swipe-container {
@@ -543,10 +542,6 @@ nav ul {
    transform: translate(100%, -50%);   /* move right by its own width */
  }
  
- .hint-icon {
-   width: 32px;
-   height: auto;
- }
  
  .hint-icon {
    width: 64px;                 /* size your arrow images */
@@ -578,7 +573,6 @@ nav ul {
    height: 100%;
    transition: transform 0.6s;     /* Smooth flipping */
    transform-style: preserve-3d;   /* Allow 3D children rendering */
-   position: relative;
 }
 
 
