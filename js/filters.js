@@ -11,8 +11,17 @@ const userSelections = {
  *
  * @returns {string[]} An alphabetically sorted array of unique cuisine strings.
  */
-function getUniqueCuisines() {
-  const all = JSON.parse(localStorage.getItem('restaurantData') || '[]');
+async function getUniqueCuisines() {
+  let all = JSON.parse(localStorage.getItem('restaurantData') || '[]');
+  if (all.length === 0) {
+
+    const res = await fetch('data/restaurants.json');
+    all = await res.json();
+    localStorage.setItem('restaurantData', JSON.stringify(all));
+  
+  }
+  all = JSON.parse(localStorage.getItem('restaurantData') || '[]');
+  alert (`Found ${all.length} restaurants in localStorage.`);
   const set = new Set(all.map(r => r.cuisine).filter(c => typeof c === 'string'));
   return Array.from(set).sort((a, b) => a.localeCompare(b));
 }
@@ -92,13 +101,14 @@ function showOptions(type) {
 
 // Event listener for DOMContentLoaded to initialize the filter options
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
   const cuisineGrid = document.getElementById('cuisine-grid');
   if (cuisineGrid) {
+    
     cuisineGrid.innerHTML = '';
 
     // Get all unique cuisines
-    const cuisines = getUniqueCuisines();
+    const cuisines = await getUniqueCuisines();
     cuisines.forEach(cuisine => {
       const btn = document.createElement('button');
       btn.classList.add('option-btn');
