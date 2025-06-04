@@ -1,138 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Restaurant Crisis, a card app for discovering new places to eat.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/filters.css">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Restaurant Crisis, a card app for discovering new places to eat." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/filters.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Restaurant Crisis</title>
   </head>
   <body>
-    
     <header>
-        <img src="assets/app-icon.png" alt="app_icon" class="app-icon"> 
-        <!-- nav bar -->
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="collection.html">Collection</a></li>
-                <li><a href="filters.html">Filters</a></li>
-            </ul>
-        </nav>
-        <img src="assets/burger-menu.png" alt="dropdown_icon" class="burger-icon"> 
+      <img src="assets/app-icon.png" alt="app icon" class="app-icon" />
+      <!-- nav bar -->
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="collection.html">Collection</a></li>
+          <li><a href="filters.html">Filters</a></li>
+        </ul>
+      </nav>
+      <img src="assets/burger-menu.png" alt="dropdown icon" class="burger-icon" />
     </header>
 
     <main>
-        <!-- Progress Step Bar -->
-        <div class="progress-bar hidden">
-            <div class="step" data-step="cuisine">
-                <span class="step-text">Cuisine</span>
-                <div class="step-line"></div>
-            </div>
-            <div class="step" data-step="price">
-                <span class="step-text">Price</span>
-                <div class="step-line"></div>
-            </div>
-            <div class="step" data-step="distance">
-                <span class="step-text">Distance</span>
-                <div class="step-line"></div>
-            </div>
-            <div class="step" data-step="rating">
-                <span class="step-text">Rating</span>
-                <div class="step-line"></div>
-            </div>
+      <!-- Progress Step Bar -->
+      <div class="progress-bar hidden">
+        <div class="step" data-step="cuisine">
+          <span class="step-text">Cuisine</span>
+          <div class="step-line"></div>
         </div>
+        <div class="step" data-step="price">
+          <span class="step-text">Price</span>
+          <div class="step-line"></div>
+        </div>
+        <div class="step" data-step="distance">
+          <span class="step-text">Distance</span>
+          <div class="step-line"></div>
+        </div>
+        <div class="step" data-step="rating">
+          <span class="step-text">Rating</span>
+          <div class="step-line"></div>
+        </div>
+      </div>
 
-        <!-- Filter Selection -->
-        <section class="filter-selection">
-          <h2>Filter choices by…</h2>
-          <div class="filter-buttons">
-            <button onclick="showOptions('cuisine')">Cuisine</button>
-            <button onclick="showOptions('price')">Max Price</button>
-            <button onclick="showOptions('distance')">Max Distance</button>
-            <button onclick="showOptions('rating')">Min Rating</button>
-          </div>
-          <button id="skip-btn">Skip</button>
-        </section>
+      <!-- Filter Selection -->
+      <section class="filter-selection">
+        <h2>Filter choices by…</h2>
+        <div class="filter-buttons">
+          <button onclick="showOptions('cuisine')">Cuisine</button>
+          <button onclick="showOptions('price')">Max Price</button>
+          <button onclick="showOptions('distance')">Max Distance</button>
+          <button onclick="showOptions('rating')">Min Rating</button>
+        </div>
+        <button id="skip-btn">Skip</button>
+      </section>
 
-        <!-- Cuisine -->
-        <section class="filter-options hidden" id="cuisine-options">
-          <h2>What cuisines would you like to try?</h2>
-          <div class="options-grid" id ="cuisine-grid">
-          </div>
-          <form onsubmit="confirmSelection('cuisine'); return false;">
-            <button type="submit" class="confirm-btn">Confirm</button>
-          </form>
-        </section>
+      <!-- Cuisine -->
+      <section class="filter-options hidden" id="cuisine-options">
+        <h2>What cuisines would you like to try?</h2>
+        <div class="options-grid" id="cuisine-grid"></div>
+        <form onsubmit="confirmSelection('cuisine'); return false;">
+          <button type="submit" class="confirm-btn">Confirm</button>
+        </form>
+      </section>
 
-        <!-- Price -->
-        <section class="filter-options hidden" id="price-options">
-          <h2>Set maximum price ($)</h2>
-          <form onsubmit="confirmSelection('price'); return false;">
-            <input
-              type="number"
-              id="price-input"
-              placeholder="Enter a number or leave blank"
-             
-            />
-            <button type="submit" class="confirm-btn">Confirm</button>
-          </form>
-        </section>
+      <!-- Price -->
+      <section class="filter-options hidden" id="price-options">
+        <h2>Set maximum price ($)</h2>
+        <form onsubmit="confirmSelection('price'); return false;">
+          <input
+            type="number"
+            id="price-input"
+            placeholder="Enter a number or leave blank"
+          />
+          <button type="submit" class="confirm-btn">Confirm</button>
+        </form>
+      </section>
 
-        <!-- Distance -->
-        <section class="filter-options hidden" id="distance-options">
-          <h2>Set maximum distance (miles)</h2>
-          <form onsubmit="confirmSelection('distance'); return false;">
-            <input
-              type="number"
-              id="distance-input"
-              placeholder="Enter a number or leave blank"
-              
-            />
-            <button type="submit" class="confirm-btn">Confirm</button>
-          </form>
-        </section>
+      <!-- Distance -->
+      <section class="filter-options hidden" id="distance-options">
+        <h2>Set maximum distance (miles)</h2>
+        <form onsubmit="confirmSelection('distance'); return false;">
+          <input
+            type="number"
+            id="distance-input"
+            placeholder="Enter a number or leave blank"
+          />
+          <button type="submit" class="confirm-btn">Confirm</button>
+        </form>
+      </section>
 
-        <!-- Rating -->
-        <section class="filter-options hidden" id="rating-options">
-          <h2>Set minimum rating</h2>
-          <form onsubmit="confirmSelection('rating'); return false;">
-            <input
-              type="number"
-              id="rating-input"
-              placeholder="Enter a number between 0 and 5 or leave blank if you don't care"
-              
-            />
-            <button type="submit" class="confirm-btn">Confirm</button>
-          </form>
-        </section>
+      <!-- Rating -->
+      <section class="filter-options hidden" id="rating-options">
+        <h2>Set minimum rating</h2>
+        <form onsubmit="confirmSelection('rating'); return false;">
+          <input
+            type="number"
+            id="rating-input"
+            placeholder="Enter a number between 0 and 5 or leave blank if you don't care"
+          />
+          <button type="submit" class="confirm-btn">Confirm</button>
+        </form>
+      </section>
     </main>
+
+    <!-- Filter Summary -->
     <section id="summary" class="hidden">
       <h2>Your current filters</h2>
-    
       <ul>
-        <li>Cuisine: <span id="sum-cuisine"></span>
-            <button onclick="openForEdit('cuisine')">Edit</button>
+        <li>
+          Cuisine: <span id="sum-cuisine"></span>
+          <button onclick="openForEdit('cuisine')">Edit</button>
         </li>
-        <li>Max price: <span id="sum-price"></span>
-            <button onclick="openForEdit('price')">Edit</button>
+        <li>
+          Max price: <span id="sum-price"></span>
+          <button onclick="openForEdit('price')">Edit</button>
         </li>
-        <li>Max distance: <span id="sum-distance"></span>
-            <button onclick="openForEdit('distance')">Edit</button>
+        <li>
+          Max distance: <span id="sum-distance"></span>
+          <button onclick="openForEdit('distance')">Edit</button>
         </li>
-        <li>Min rating: <span id="sum-rating"></span>
-            <button onclick="openForEdit('rating')">Edit</button>
+        <li>
+          Min rating: <span id="sum-rating"></span>
+          <button onclick="openForEdit('rating')">Edit</button>
         </li>
       </ul>
-    
       <button id="done-btn">Done → Start swiping</button>
     </section>
+
     <footer></footer>
+
     <script src="js/scripts.js"></script>
     <script src="js/filters.js"></script>
-
   </body>
 </html>
-
