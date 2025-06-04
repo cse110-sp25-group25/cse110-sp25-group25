@@ -39,6 +39,12 @@ main.collection {
     color: #666;
 }
 
+.empty-state {
+    align-items: center;
+    text-align: center;
+    color: #666;
+}
+
 /* Right list / grid */
 .card-area {
     flex: 1;
@@ -107,6 +113,8 @@ padding-right: 1.5rem;
 
 .detail-card h3{
     text-align: center;
+
+  overflow: auto;
 }
 
 
@@ -248,7 +256,7 @@ object-fit: cover;
    Mobile‐friendly overrides
    (max‐width: 600px or 768px, tweak to taste)
    ========================================================================================== */
-@media (max-width: 600px) {
+@media (max-width: 550px) {
 
   /* 1) Stack the main <main class="collection"> vertically */
   main.collection {
@@ -322,8 +330,8 @@ object-fit: cover;
 
 
   .left-body {
-    height: auto;
     position: static;
+    max-height: 50%;
   }
 
     .collection-card-front .tags {
@@ -346,6 +354,10 @@ object-fit: cover;
   }
 
     /* ---- "backside" ----  */
+
+    /* .collection-card-back {
+    height: 50%;
+  } */
     .collection-card-back .card-details {
     padding: 0.5rem 0.75rem;
     display: flex;
@@ -354,6 +366,7 @@ object-fit: cover;
     text-align: center;
     font-size: 1.25rem;
     gap: 0.8rem;
+    height: 50%;
   }
 
   /* ---------------------------
@@ -369,7 +382,7 @@ object-fit: cover;
     font-size: 1rem;
     color: #A67C52;
     cursor: pointer;
-    margin-top: 8rem;
+    margin-top: 2rem;
     }
 
     /* The arrow itself */

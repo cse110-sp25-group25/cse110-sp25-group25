@@ -199,8 +199,11 @@ function renderDeck(subset, deckList) {
                   class="card-img"
                 />
                 <div class="details">
-                  <span class="rating">⭐ ${r["rating"]}</span>
-                  <span class="distance">📍 ${r["distance"]} mi</span>
+                  <img src="assets/dark-star-icon.png" alt="star icon" class="emoji"/>
+                  <span class="rating"> ${r["rating"]} </span>
+                  <span></span>
+                  <img src="assets/location-icon.png" alt="star icon" class="emoji"/>
+                  <span class="distance">${r["distance"]} mi</span>
                 </div>
                 <div class="tags">
                   <span class="tag">${r["cuisine"]}</span>
@@ -233,18 +236,14 @@ function handleCardClick(r) {
   deckBody.dataset.address = "123 Cobblestone Core";
   deckBody.dataset.hours = "12 AM - 10 PM";
   deckBody.dataset.phone_number = "XXX-XXX-XXX";
-  deckBody.dataset.website = "https://www.bonchon.com/";
-  // deckBody.dataset.photo1src = r.dataset.menuImages[0];
-  // deckBody.dataset.photo2src = r.dataset.menuImages[1];
-  // deckBody.dataset.photo3src = r.dataset.menuImages[2];
-  deckBody.dataset.photo1src = "assets/restaurant.jpg";
-  deckBody.dataset.photo2src = "assets/restaurant.jpg";
-  deckBody.dataset.photo3src = "assets/restaurant.jpg";
+  deckBody.dataset.website = r.website ?? "";
+  deckBody.dataset.photo1src = r.menuImages[0];
+  deckBody.dataset.photo2src = r.menuImages[1];
+  deckBody.dataset.photo3src = r.menuImages[2];
 
   const isMobile = window.matchMedia("(max-width: 600px)").matches;
   if (isMobile){
     // remove card area if in mobile view
-    console.log("clicked on card in mobile view");
     deckBody.classList.remove('hidden');
     const cardArea = document.querySelector('.card-area');
     cardArea.classList.add('hidden');
@@ -254,7 +253,7 @@ function handleCardClick(r) {
     backBtnContainer.innerHTML = `
     <button id="back-button" class="back-button">
       <span class="back-button-arrow">←</span>
-      <span class="back-button-text"> Return to collection</span>
+      <span class="back-button-text"> Return to Collection</span>
     </button>`;
     backBtnContainer.classList.remove('hidden');
 
@@ -271,8 +270,11 @@ function handleCardClick(r) {
       <h3>${r.name}</h3>
       <img src="assets/restaurant.jpg" alt="restaurant" class="card-img"/>
       <div class="details">
-        <span class="rating">⭐ ${r["rating"]}</span>
-        <span class="distance">📍 ${r["distance"]} mi</span>
+        <img src="assets/dark-star-icon.png" alt="star icon" class="emoji"/>
+        <span class="rating"> ${r["rating"]} </span>
+        <span></span>
+        <img src="assets/location-icon.png" alt="star icon" class="emoji"/>
+        <span class="distance">${r["distance"]} mi</span>
       </div>
       <div class="tags">
         <span class="tag">${r.cuisine}</span>
