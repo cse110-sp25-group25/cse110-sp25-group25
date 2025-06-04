@@ -31,6 +31,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   if (!data || data.length === 0) {
       console.warn("no data, can't render");
+      document.querySelector('.button-type3').style.display = "none";
       return;
   }
 
