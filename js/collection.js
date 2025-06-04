@@ -1,4 +1,9 @@
+
 window.addEventListener('DOMContentLoaded', init);
+
+const MOBILE_HIDER = document.createElement('style');
+MOBILE_HIDER.innerHTML = `.hidden { display: none !important; }`;
+document.head.appendChild(MOBILE_HIDER);
 
 function init() {
 
@@ -8,9 +13,18 @@ function init() {
     const ratingsFilter = document.getElementById('ratings-filter');
     const distanceFilter = document.getElementById('distance-filter');
     const savedRestaurants = JSON.parse(localStorage.getItem('deck')) || [];
+
+    // back button for mobile view
+    const backBtnContainer = document.getElementById("back-button-container");
+    backBtnContainer.classList.add('hidden');
     
     // left view card div
     const deckBody = document.getElementById('left-body');
+
+    const isMobile = window.matchMedia("(max-width: 600px)").matches;
+    if (isMobile) {
+      deckBody.classList.add('hidden');
+    }
 
     // render resturant cards if they exist
     if(savedRestaurants.length === 0) {
@@ -60,53 +74,22 @@ function init() {
       if (deckBody.dataset.side == "front"){
         // show the backside of the card
         deckBody.dataset.side = "back";
-        deckBody.innerHTML = `
-          <style>
-          .div-imgs{
-            display:flex;
-            gap:.5rem;
-          }
-          .div-imgs img{
-            width:7rem;
-            height:6rem;
-            margin-top:2rem;
-            margin-bottom:1.5rem;
-            object-fit:cover;
-            border-radius:.5rem;
-          }
-          </style>
-          <article style="background:#fff; display:flex;flex-direction:column;gap:1rem;
-          align-items:center;flex:1 1 auto;">
-
-            <h3 style="font-size:3rem;margin:0">${deckBody.dataset.name}</h3>
-
-            <div style="display:flex;align-items:center;gap:.6rem;font-size:.95rem;color:#555;">
-              <span style="font-size:1.25rem;color:#9aca8e;">📍</span>
-              <a style="color:#b86e32;text-decoration:underline;font-size:1.5rem;">${deckBody.dataset.address}</a>
-            </div>
-
-            <div style="display:flex;align-items:center;gap:.6rem;font-size:.95rem;color:#555;">
-              <span style="font-size:1.25rem;color:#9aca8e;">🕒</span>
-              <span style="font-size:1.5rem;">Hours: ${deckBody.dataset.hours}</span>
-            </div>
-
-            <div style="display:flex;align-items:center;gap:.8rem;font-size:.95rem;color:#555;">
-              <span style="font-size:2rem;color:#9aca8e;">📞</span>
-              <span style="font-size:1.5rem;">${deckBody.dataset.phone_number}</span>
-            </div>
-
-            <div class=div-imgs>
-              <img src=${deckBody.dataset.photo1src}  alt="Dish 1">
-              <img src=${deckBody.dataset.photo2src}  alt="Dish 2">
-              <img src=${deckBody.dataset.photo3src}  alt="Dish 3">
-            </div>
-
-            <a href="${deckBody.dataset.website}" target="_blank" rel="noopener noreferrer"
-              style="
-                color:#b86e32;
-                font-weight:600;
-                align-self:center;">View Menu <span aria-hidden="true">↗︎</span></a>
-          </article>`;}
+        deckBody.innerHTML=`
+            <div class="collection-card-back">                
+                <div class="card-details">
+                  <h2>${deckBody.dataset.name}</h2>
+                    <p>📍 <a href="#">${deckBody.dataset.address}</a></p>
+                    <p>🕒 Hours ${deckBody.dataset.hours} PM</p>
+                    <p>📞 ${deckBody.dataset.phone_number}</p>
+                    <div class="menu-images">
+                      <img src=${deckBody.dataset.photo1src} alt="food">
+                      <img src=${deckBody.dataset.photo2src} alt="food">
+                      <img src=${deckBody.dataset.photo3src} alt="food">
+                    </div>
+                    <a class="link" href="${deckBody.dataset.website}" target="_blank" rel="noopener noreferrer">View Menu ↗</a>
+                </div>
+            </div>`;
+      }
     });
 }
 
@@ -206,24 +189,25 @@ function renderDeck(subset, deckList) {
 
     subset.forEach(r => {
         const div = document.createElement("div");
-        div.className = "collection-restaurant-card";
-        div.innerHTML = `
-            <h2>${r["name"]}</h2>
-            <img
-                src="assets/restaurant.jpg"
-                alt="restaurant"
-                class="card-img"
-            />
-            <div class="details">
-              <span class="rating">⭐ ${r["rating"]}</span>
-              <span class="distance">📍 ${r["distance"]} mi</span>
-            </div>
-            <div class="tags">
-              <span class="tag">${r["cuisine"]}</span>
-              <span class="tag">cuisine</span>
-              <span class="tag">+2</span>
-            </div>
-        `;
+        // div.className = "collection-card-front";
+        div.innerHTML=`
+              <div class="collection-card-front">
+                <h2>${r["name"]}</h2>
+                <img
+                  src="assets/restaurant.jpg"
+                  alt="restaurant"
+                  class="card-img"
+                />
+                <div class="details">
+                  <span class="rating">⭐ ${r["rating"]}</span>
+                  <span class="distance">📍 ${r["distance"]} mi</span>
+                </div>
+                <div class="tags">
+                  <span class="tag">${r["cuisine"]}</span>
+                  <span class="tag">cuisine</span>
+                  <span class="tag">+2</span>
+                </div>
+              </div>`;
         div.addEventListener('click', () => handleCardClick(r));
 
         deckList.appendChild(div);
@@ -245,19 +229,51 @@ function handleCardClick(r) {
   const deckBody = document.getElementById('left-body');
   deckBody._r = r;
   deckBody.dataset.side = "front";
-  deckBody.dataset.name = r.name
-  deckBody.dataset.address = "123 Cobblestone Core"
-  deckBody.dataset.hours = "12 AM - 10 PM"
-  deckBody.dataset.phone_number = "XXX-XXX-XXX"
-  deckBody.dataset.website = "https://www.bonchon.com/"
-  deckBody.dataset.photo1src = "assets/restaurant.jpg"
-  deckBody.dataset.photo2src = "assets/restaurant.jpg"
-  deckBody.dataset.photo3src = "assets/restaurant.jpg"
+  deckBody.dataset.name = r.name;
+  deckBody.dataset.address = "123 Cobblestone Core";
+  deckBody.dataset.hours = "12 AM - 10 PM";
+  deckBody.dataset.phone_number = "XXX-XXX-XXX";
+  deckBody.dataset.website = "https://www.bonchon.com/";
+  // deckBody.dataset.photo1src = r.dataset.menuImages[0];
+  // deckBody.dataset.photo2src = r.dataset.menuImages[1];
+  // deckBody.dataset.photo3src = r.dataset.menuImages[2];
+  deckBody.dataset.photo1src = "assets/restaurant.jpg";
+  deckBody.dataset.photo2src = "assets/restaurant.jpg";
+  deckBody.dataset.photo3src = "assets/restaurant.jpg";
 
+  const isMobile = window.matchMedia("(max-width: 600px)").matches;
+  if (isMobile){
+    // remove card area if in mobile view
+    console.log("clicked on card in mobile view");
+    deckBody.classList.remove('hidden');
+    const cardArea = document.querySelector('.card-area');
+    cardArea.classList.add('hidden');
+ 
+    // go back button
+    const backBtnContainer = document.getElementById("back-button-container");
+    backBtnContainer.innerHTML = `
+    <button id="back-button" class="back-button">
+      <span class="back-button-arrow">←</span>
+      <span class="back-button-text"> Return to collection</span>
+    </button>`;
+    backBtnContainer.classList.remove('hidden');
+
+    backBtnContainer.addEventListener('click', () => {
+      // hide 
+      deckBody.classList.add('hidden');
+      backBtnContainer.classList.add('hidden');
+      cardArea.classList.remove('hidden');
+    });
+  }
+  
   deckBody.innerHTML = `
     <article class="detail-card">
-      <img src="assets/restaurant.jpg" alt="restaurant" class="card-img"/>
       <h3>${r.name}</h3>
+      <img src="assets/restaurant.jpg" alt="restaurant" class="card-img"/>
+      <div class="details">
+        <span class="rating">⭐ ${r["rating"]}</span>
+        <span class="distance">📍 ${r["distance"]} mi</span>
+      </div>
       <div class="tags">
         <span class="tag">${r.cuisine}</span>
         <span class="tag">cuisine</span>
