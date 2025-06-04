@@ -406,7 +406,6 @@ object-fit: cover;
     .back-button:hover,
     .back-button:focus {
     background-color: rgba(166, 124, 82, 0.1);
-    outline: none;
     }
 
 }
