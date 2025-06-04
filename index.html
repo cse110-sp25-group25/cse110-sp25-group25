@@ -1,69 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Restaurant Crisis, a card app for discovering new places to eat.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Permanent+Marker&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Restaurant Crisis, a card app for discovering new places to eat." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Permanent+Marker&display=swap" rel="stylesheet" />
     <script src="js/scripts.js"></script>
     <title>Restaurant Crisis</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <img src="assets/app-icon.png" alt="app_icon" class="app-icon"> <!--insert app icon here!-->
-        <!-- nav bar -->
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="collection.html">Collection</a></li>
-                <li><a href="filters.html">Filters</a></li>
-            </ul>
-        </nav>
-        <img src="assets/burger-menu.png" alt="dropdown_icon" class="burger-icon"> <!-- insert burger icon here!-->
+      <img src="assets/app-icon.png" alt="app icon" class="app-icon" />
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="collection.html">Collection</a></li>
+          <li><a href="filters.html">Filters</a></li>
+        </ul>
+      </nav>
+      <img src="assets/burger-menu.png" alt="dropdown icon" class="burger-icon" />
     </header>
 
     <main>
-       <!-- landing page -->
-       <div class = "main-grid">
+      <div class="main-grid">
         <section class="hero">
-            <h1>SWIPE. SAVOR. REPEAT.</h1>
-            <p>Let the deck decide where you dine next!</p>
+          <h1>SWIPE. SAVOR. REPEAT.</h1>
+          <p>Let the deck decide where you dine next!</p>
 
-            <div class="hero-buttons">
-                <button class="button-type1" onclick="location.href='swipe.html'">PICK RANDOM</button>
-                <button class="button-type2" onclick="location.href='filters.html'">CHOOSE FILTERS</button>
-            </div>
+          <div class="hero-buttons">
+            <button class="button-type1" onclick="location.href='swipe.html'">PICK RANDOM</button>
+            <button class="button-type2" onclick="location.href='filters.html'">CHOOSE FILTERS</button>
+          </div>
         </section>
 
         <section class="feature-card">
-            <h2 class="card-title">Restaurant Title</h2>
-         
-            <div class="card-image">
-              <img src="assets/restaurant.jpg" alt="Restaurant Preview" class="restaurant-img"/>
+          <h2 class="card-title">Restaurant Title</h2>
+
+          <div class="card-image">
+            <img src="assets/restaurant.jpg" alt="restaurant preview" class="restaurant-img" />
+          </div>
+
+          <div class="card-info">
+            <div class="info-item">
+              <img src="assets/star-icon.png" alt="star rating" class="icon" />
+              <span>4.3</span>
             </div>
-         
-            <div class="card-info">
-              <div class="info-item">
-                <img src="assets/star-icon.png" alt="Star Rating" class="icon" />
-                <span>4.3</span>
-              </div>
-              <div class="info-item">
-                <img src="assets/location-icon.png" alt="Location Icon" class="icon" />
-                <span>10 mi</span>
-              </div>
+            <div class="info-item">
+              <img src="assets/location-icon.png" alt="location icon" class="icon" />
+              <span>10 mi</span>
             </div>
-         
-            <div class="tags">
-              <span class="tag">cuisine</span>
-            </div>
-          </section>
-    </div>
-        
+          </div>
+
+          <div class="tags">
+            <span class="tag">cuisine</span>
+          </div>
+        </section>
+      </div>
     </main>
 
-    <footer>
-
-    </footer>
-</body>
+    <footer></footer>
+  </body>
 </html>
