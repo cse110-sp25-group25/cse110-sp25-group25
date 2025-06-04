@@ -21,7 +21,6 @@ async function getUniqueCuisines() {
   
   }
   all = JSON.parse(localStorage.getItem('restaurantData') || '[]');
-  alert (`Found ${all.length} restaurants in localStorage.`);
   const set = new Set(all.map(r => r.cuisine).filter(c => typeof c === 'string'));
   return Array.from(set).sort((a, b) => a.localeCompare(b));
 }
