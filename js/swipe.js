@@ -26,6 +26,11 @@ document.addEventListener('DOMContentLoaded', async () => {
     setupButtons();
 });
 
+/**
+ * Shuffles the elements of an array in place.
+ * @param {Array} array The array to be shuffled.
+ * @returns {Array} The shuffled array.
+ */
 
 
 function shuffleArray(array) {
