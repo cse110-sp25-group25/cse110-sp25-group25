@@ -159,7 +159,8 @@ body {
     transition: background-color 0.3s ease;
     margin: 1rem; 
   }
-  
+
+ /* Redudant  
   .option-btn:hover {
     background-color: #97b9ae;
     color: #4b543b;
@@ -169,6 +170,8 @@ body {
     background-color: #dce2aa;
     color: #4b543b;
   }
+  */
+  
   #cuisine-grid {
     /* turn it into a responsive grid that auto–fits */
     display: grid;

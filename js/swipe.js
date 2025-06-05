@@ -1,3 +1,5 @@
+'use strict';
+
 // import {applyFilters, removeViewed} from './swipe.utils.js'
 
 
