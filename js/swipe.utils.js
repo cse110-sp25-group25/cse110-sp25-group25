@@ -11,9 +11,9 @@ function applyFilters(data, filters) {
     });
   }
   
-  function removeViewed(data, viewed) {
-    return data.filter(r => !viewed.includes(+r.id));
-  }
+function removeViewed(data, viewed) {
+  return data.filter(r => !viewed.includes(+r.id));
+}
   
-  export { applyFilters, removeViewed };
+export { applyFilters, removeViewed };
   
