@@ -4,6 +4,10 @@ import css from "@eslint/css";
 import { defineConfig } from "eslint/config";
 
 export default defineConfig([
+  // 👇 Global ignore rule
+  {
+    ignores: ["coverage/**", "node_modules/**"]
+  },
   {
     files: ["**/*.{js,mjs,cjs}"],
     plugins: { js },
@@ -11,7 +15,7 @@ export default defineConfig([
     languageOptions: {
       globals: {
         ...globals.browser,
-        ...globals.jest 
+        ...globals.jest
       }
     }
   },
@@ -22,4 +26,3 @@ export default defineConfig([
     extends: ["css/recommended"]
   }
 ]);
-

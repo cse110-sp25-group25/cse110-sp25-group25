@@ -1,102 +1,212 @@
 [
-    {
-      "id": 1,
-      "name": "Sakura Sushi",
-      "cuisine": "Japanese",
-      "price": "$$",
-      "distance": 1.2,
-      "rating": 4.6,
-      "location": "Downtown",
-      "image": "assets/images/sakura.jpg"
-    },
-    {
-      "id": 2,
-      "name": "Pasta Paradise",
-      "cuisine": "Italian",
-      "price": "$$$",
-      "distance": 3.5,
-      "rating": 4.2,
-      "location": "Uptown",
-      "image": "assets/images/pasta.jpg"
-    },
-    {
-      "id": 3,
-      "name": "Burger Barn",
-      "cuisine": "American",
-      "price": "$",
-      "distance": 0.8,
-      "rating": 4.0,
-      "location": "Midtown",
-      "image": "assets/images/burger.jpg"
-    },
-    {
-      "id": 4,
-      "name": "Curry House",
-      "cuisine": "Indian",
-      "price": "$$",
-      "distance": 2.0,
-      "rating": 4.7,
-      "location": "Downtown",
-      "image": "assets/images/curry.jpg"
-    },
-    {
-      "id": 5,
-      "name": "Taco Town",
-      "cuisine": "Mexican",
-      "price": "$",
-      "distance": 1.5,
-      "rating": 4.3,
-      "location": "Suburbs",
-      "image": "assets/images/taco.jpg"
-    },
-    {
-      "id": 6,
-      "name": "Pho Palace",
-      "cuisine": "Vietnamese",
-      "price": "$$",
-      "distance": 2.3,
-      "rating": 4.4,
-      "location": "Midtown",
-      "image": "assets/images/pho.jpg"
-    },
-    {
-      "id": 7,
-      "name": "Dragon Wok",
-      "cuisine": "Chinese",
-      "price": "$$",
-      "distance": 3.1,
-      "rating": 4.1,
-      "location": "Chinatown",
-      "image": "assets/images/wok.jpg"
-    },
-    {
-      "id": 8,
-      "name": "The Greek Spot",
-      "cuisine": "Greek",
-      "price": "$$",
-      "distance": 1.9,
-      "rating": 4.5,
-      "location": "Downtown",
-      "image": "assets/images/greek.jpg"
-    },
-    {
-      "id": 9,
-      "name": "Bagel Bros",
-      "cuisine": "Breakfast",
-      "price": "$",
-      "distance": 0.5,
-      "rating": 4.0,
-      "location": "Midtown",
-      "image": "assets/images/bagel.jpg"
-    },
-    {
-      "id": 10,
-      "name": "Green Garden",
-      "cuisine": "Vegan",
-      "price": "$$",
-      "distance": 2.7,
-      "rating": 4.8,
-      "location": "Uptown",
-      "image": "assets/images/vegan.jpg"
-    }
-  ]
+  {
+    "id": 1,
+    "name": "Sakura Sushi",
+    "cuisine": "Japanese",
+    "price": "$$",
+    "distance": 1.2,
+    "rating": 4.6,
+    "location": "Downtown",
+    "phone": "123 - 456 - 7890",
+    "hours": "Open until 9:00 PM",
+    "image": "assets/restaurant.jpg",
+    "menuImages": ["assets/sushi-1.png", "assets/sushi-2.png", "assets/sushi-3.png"],
+    "reviews": [
+      { "text": "Fresh and delicious", "author": "customer 1" },
+      { "text": "Great sushi rolls", "author": "customer 2" },
+      { "text": "Cozy ambiance", "author": "customer 3" },
+      { "text": "Authentic taste", "author": "customer 4" },
+      { "text": "Fast service", "author": "customer 5" },
+      { "text": "Would come again", "author": "customer 6" }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Pasta Paradise",
+    "cuisine": "Italian",
+    "price": "$$$",
+    "distance": 3.5,
+    "rating": 4.2,
+    "location": "Uptown",
+    "phone": "987 - 654 - 3210",
+    "hours": "Open until 10:00 PM",
+    "image": "assets/restaurant.jpg",
+    "menuImages": ["assets/sushi-1.png", "assets/sushi-2.png", "assets/sushi-3.png"],
+    "reviews": [
+      { "text": "Authentic Italian flavors", "author": "guest 1" },
+      { "text": "Loved the fettuccine", "author": "guest 2" },
+      { "text": "Romantic ambiance", "author": "guest 3" },
+      { "text": "Top notch wine list", "author": "guest 4" },
+      { "text": "Attentive staff", "author": "guest 5" },
+      { "text": "Would visit again", "author": "guest 6" }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Burger Barn",
+    "cuisine": "American",
+    "price": "$",
+    "distance": 0.8,
+    "rating": 4.0,
+    "location": "Midtown",
+    "phone": "456 - 789 - 1234",
+    "hours": "Open until 8:00 PM",
+    "image": "assets/restaurant.jpg",
+    "menuImages": ["assets/sushi-1.png", "assets/sushi-2.png", "assets/sushi-3.png"],
+    "reviews": [
+      { "text": "Juiciest burger in town", "author": "local fan" },
+      { "text": "Crispy fries", "author": "customer A" },
+      { "text": "Great value", "author": "customer B" },
+      { "text": "Quick service", "author": "customer C" },
+      { "text": "Kid friendly", "author": "customer D" },
+      { "text": "Simple and tasty", "author": "customer E" }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Curry House",
+    "cuisine": "Indian",
+    "price": "$$",
+    "distance": 2.0,
+    "rating": 4.7,
+    "location": "Downtown",
+    "phone": "222 - 333 - 4444",
+    "hours": "Open until 10:00 PM",
+    "image": "assets/restaurant.jpg",
+    "menuImages": ["assets/sushi-1.png", "assets/sushi-2.png", "assets/sushi-3.png"],
+    "reviews": [
+      { "text": "Spicy and flavorful", "author": "foodie 1" },
+      { "text": "Best naan I've had", "author": "foodie 2" },
+      { "text": "Tandoori was perfect", "author": "foodie 3" },
+      { "text": "Good vegetarian options", "author": "foodie 4" },
+      { "text": "Will recommend", "author": "foodie 5" },
+      { "text": "Loved the samosas", "author": "foodie 6" }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Taco Town",
+    "cuisine": "Mexican",
+    "price": "$",
+    "distance": 1.5,
+    "rating": 4.3,
+    "location": "Suburbs",
+    "phone": "888 - 999 - 7777",
+    "hours": "Open until 11:00 PM",
+    "image": "assets/restaurant.jpg",
+    "menuImages": ["assets/sushi-1.png", "assets/sushi-2.png", "assets/sushi-3.png"],
+    "reviews": [
+      { "text": "Authentic street tacos", "author": "Carlos" },
+      { "text": "So many salsas!", "author": "Amy" },
+      { "text": "Birria is fire", "author": "Tony" },
+      { "text": "Cheap and amazing", "author": "Nina" },
+      { "text": "Lively vibe", "author": "Ben" },
+      { "text": "Big portions", "author": "Kelly" }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Pho Palace",
+    "cuisine": "Vietnamese",
+    "price": "$$",
+    "distance": 2.3,
+    "rating": 4.4,
+    "location": "Midtown",
+    "phone": "323 - 111 - 2222",
+    "hours": "Open until 9:30 PM",
+    "image": "assets/restaurant.jpg",
+    "menuImages": ["assets/sushi-1.png", "assets/sushi-2.png", "assets/sushi-3.png"],
+    "reviews": [
+      { "text": "Rich broth", "author": "Quang" },
+      { "text": "Fresh herbs", "author": "Annie" },
+      { "text": "Banh mi also great", "author": "Tommy" },
+      { "text": "Cozy place", "author": "Tram" },
+      { "text": "Pho tai was perfect", "author": "Lan" },
+      { "text": "Love the ambiance", "author": "Ken" }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Dragon Wok",
+    "cuisine": "Chinese",
+    "price": "$$",
+    "distance": 3.1,
+    "rating": 4.1,
+    "location": "Chinatown",
+    "phone": "555 - 111 - 5555",
+    "hours": "Open until 10:30 PM",
+    "image": "assets/restaurant.jpg",
+    "menuImages": ["assets/sushi-1.png", "assets/sushi-2.png", "assets/sushi-3.png"],
+    "reviews": [
+      { "text": "Classic takeout feel", "author": "Jing" },
+      { "text": "Orange chicken = win", "author": "Bob" },
+      { "text": "Lo mein is bomb", "author": "Daisy" },
+      { "text": "Fast delivery", "author": "Steve" },
+      { "text": "Egg rolls are crispy", "author": "Mark" },
+      { "text": "Nice lunch combos", "author": "Sue" }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "The Greek Spot",
+    "cuisine": "Greek",
+    "price": "$$",
+    "distance": 1.9,
+    "rating": 4.5,
+    "location": "Downtown",
+    "phone": "999 - 222 - 1111",
+    "hours": "Open until 10:00 PM",
+    "image": "assets/restaurant.jpg",
+    "menuImages": ["assets/sushi-1.png", "assets/sushi-2.png", "assets/sushi-3.png"],
+    "reviews": [
+      { "text": "Great gyros", "author": "George" },
+      { "text": "Fresh pita", "author": "Niko" },
+      { "text": "Feta everything", "author": "Sophie" },
+      { "text": "Fast service", "author": "Maria" },
+      { "text": "Lamb was perfect", "author": "Alex" },
+      { "text": "Good prices", "author": "Theo" }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Bagel Bros",
+    "cuisine": "Breakfast",
+    "price": "$",
+    "distance": 0.5,
+    "rating": 4.0,
+    "location": "Midtown",
+    "phone": "444 - 333 - 2222",
+    "hours": "Open until 2:00 PM",
+    "image": "assets/restaurant.jpg",
+    "menuImages": ["assets/sushi-1.png", "assets/sushi-2.png", "assets/sushi-3.png"],
+    "reviews": [
+      { "text": "Perfect lox bagel", "author": "Liam" },
+      { "text": "Great coffee too", "author": "Emma" },
+      { "text": "Toasted to perfection", "author": "Olivia" },
+      { "text": "Quick morning fix", "author": "Noah" },
+      { "text": "Fresh every day", "author": "Ava" },
+      { "text": "Love the vibe", "author": "Mia" }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Green Garden",
+    "cuisine": "Vegan",
+    "price": "$$",
+    "distance": 2.7,
+    "rating": 4.8,
+    "location": "Uptown",
+    "phone": "111 - 222 - 3333",
+    "hours": "Open until 8:30 PM",
+    "image": "assets/restaurant.jpg",
+    "menuImages": ["assets/sushi-1.png", "assets/sushi-2.png", "assets/sushi-3.png"],
+    "reviews": [
+      { "text": "So many plant-based options", "author": "Sam" },
+      { "text": "Love the smoothies", "author": "Kim" },
+      { "text": "Tofu wrap was amazing", "author": "Leo" },
+      { "text": "Clean and green", "author": "Zoe" },
+      { "text": "Big vegan menu", "author": "Max" },
+      { "text": "Really filling meals", "author": "Ella" }
+    ]
+  }
+]
