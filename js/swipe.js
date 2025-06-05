@@ -158,9 +158,18 @@ data.forEach(r => {
       <div class="card-back">                
         <div class="card-details">
           <h2>${r.name}</h2>
-          <p>📍 <a href="#">${r.location}</a></p>
-          <p>🕒 ${r.hours}</p>
-          <p>📞 ${r.phone}</p>
+          <p>
+            <img src="assets/location-icon.png" alt="Location" class="icon-img">
+            <a href="#">${r.address}</a>
+          </p>
+          <p>
+            <img src="assets/time-icon.png" alt="Hours" class="icon-img">
+            ${r.hours}
+          </p>
+          <p>
+            <img src="assets/phone-icon.png" alt="Phone" class="icon-img">
+            ${r.phone}
+          </p>
           <div class="menu-images">
             ${(r.menuImages || []).map(src => `<img src="${src}" alt="food">`).join('')}
           </div>

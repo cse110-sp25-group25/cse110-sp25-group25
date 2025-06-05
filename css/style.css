@@ -383,11 +383,18 @@ nav ul {
 
 
  .icon {
-  height: 18px;
-  width: 18px;
+  height: 28px;
+  width: 28px;
   margin-right: 5px;
   position: relative;
   top: -2px; /* 🔼 raise the icon slightly */
+}
+
+.icon-img {
+  width: 28px;
+  height: 28px;
+  vertical-align: middle;
+  margin-right: 6px;
 }
 
   /* Tags */
@@ -763,3 +770,5 @@ nav ul {
     text-align: center;
   }
 }
+
+
