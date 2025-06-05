@@ -5,13 +5,14 @@
     <meta name="description" content="Restaurant Crisis, a card app for discovering new places to eat.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/collections.css">
     <script src="js/scripts.js"></script>
     <script src="js/collection.js"></script>
     <title>Restaurant Crisis</title>
 </head>
 <body>
     <header>
-        <a href="index.html"><img src="assets/app-icon.png" alt="app icon" class="app-icon" /></a>
+        <img src="assets/app-icon.png" alt="app_icon" class="app-icon"> <!--insert app icon here!-->
         <!-- nav bar -->
         <nav>
             <ul>
@@ -23,14 +24,55 @@
         <img src="assets/burger-menu.png" alt="dropdown_icon" class="burger-icon"> <!-- insert burger icon here!-->
     </header>
 
-    <main>
-        <h2>Your deck</h2>
-        <div id="deck-list"></div>
-        <button id="clear-deck-btn">Clear Deck</button>
+
+    <main class="collection">
+      <aside class="left-panel" id="left-panel">
+        <h2>Collection</h2>
+        <div class="left-body" id="left-body">
+          <p class="empty-msg">Click on a card to view details</p>
+        </div>
+        <!-- <div  style="display: none;" id="back-button-container"></div> -->
+         <div id="back-button-container"></div>
+      </aside>
+
+      <!--  Right card list  -->
+      <section class="card-area">
+        <div class="filters-bar">
+          <div class="filter-group">
+            <select id="cuisine-filter" class="filter-select">
+              <option value="all">All Restaurants</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <select id="ratings-filter" class="filter-select">
+              <option value="all">All Ratings</option>
+              <option value="5">5 Stars</option>
+              <option value="4">4 Stars</option>
+              <option value="3">3 Stars</option>
+              <option value="2">2 Stars</option>
+              <option value="1">1 Star</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <select id="distance-filter" class="filter-select">
+              <option value="all">Any Distance</option>
+              <option value="4">Within 4 Miles</option>
+              <option value="3">Within 3 Miles</option>
+              <option value="2">Within 2 Miles</option>
+              <option value="1">Within 1 Miles</option>
+            </select>
+          </div>
+        </div>
+        
+        <!--  Cards are injected here by collection.js  -->
+        <div class="cards-scroll">
+          <div class="deck-list" id="card-grid"></div>
+          <button class="clear-deck-btn" title="Clear saved deck">🗑️ Clear Deck</button>
+        </div>
+      </section>
     </main>
 
     <footer>
-
     </footer>
 </body>
 </html>

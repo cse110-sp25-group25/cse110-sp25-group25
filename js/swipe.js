@@ -31,11 +31,12 @@ if (viewed) {
 
 if (!data || data.length === 0) {
     console.warn("no data, can't render");
+    document.querySelector('.button-type3').style.display = "none";
     return;
 }
 
 renderRestaurant(data);
-setupButtons();
+setupButtons(data);
 });
 
 /**
@@ -270,7 +271,13 @@ card.classList.remove('flipped');
 /**
 * Sets up accept/reject button logic and swiping transitions.
 */
-function setupButtons() {
+function setupButtons(data) {
+let swipedCount   = 0;
+const totalCards  = data.length;
+
+const resetButton = document.querySelector('.button-type3');
+resetButton.style.display = "none";
+
 const declineBtn = document.querySelector('button[title="Reject"]');
 const acceptBtn = document.querySelector('button[title="Accept"]');
 
@@ -284,10 +291,15 @@ declineBtn.addEventListener("click", () => {
         current.classList.remove('swipe-left', 'active-card');
 
         const newId = Number(current.id.split('_')[1]) + 1;
+        swipedCount += 1;
+
         const newCard = document.getElementById(`card_${newId}`);
         if (newCard) {
             newCard.style.display = 'block';
             newCard.classList.add('active-card');
+        }
+        if (swipedCount == totalCards) {
+          checkIfAllSwiped(data);
         }
     }, 500);
 
@@ -304,10 +316,15 @@ acceptBtn.addEventListener("click", () => {
         current.classList.remove('swipe-right', 'active-card');
 
         const newId = Number(current.id.split('_')[1]) + 1;
+        swipedCount += 1;
+
         const newCard = document.getElementById(`card_${newId}`);
         if (newCard) {
             newCard.style.display = 'block';
             newCard.classList.add('active-card');
+        }
+        if (swipedCount == totalCards){
+          checkIfAllSwiped(data);
         }
     }, 500);
 
@@ -330,4 +347,39 @@ function handleViewedCard(id) {
     viewed.push(id);
     localStorage.setItem('viewed', JSON.stringify(viewed));
   }
+}
+
+function checkIfAllSwiped(data) {
+    const endScreen = document.getElementById("end-screen");
+    const cardContainer = document.getElementById("card-container");
+    const resetButton = document.querySelector('.button-type3');
+
+    // hide cardContainer
+    cardContainer.style.display = "none";
+
+    // display end screen
+    endScreen.style.display = "block";
+
+    // show reset button
+    resetButton.style.display = "block";
+
+
+    // hide other two buttons
+    const buttons = document.querySelector('.swipe-buttons');
+    buttons.style.display = "none";
+
+
+    /* reset button functionality */
+    resetButton.addEventListener("click", () => {
+      // hide end screen
+      endScreen.style.display = "none";
+
+      // display buttons and card container
+      const buttons = document.querySelector('.swipe-buttons');
+      buttons.style.display = "flex";
+      cardContainer.style.display = "flex";
+
+      renderRestaurant(data);
+      setupButtons(data);
+    });
 }

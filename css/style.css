@@ -559,6 +559,26 @@ nav ul {
    width: 64px;                 /* size your arrow images */
    height: auto;
  }
+
+ .emoji {
+   height: 20px;
+   width: 20px;
+   margin-top: 0.2rem;
+}
+
+ /* — Reset Buttons — */
+  .reset-btn .button-type3{
+    background-color: #4CAF50; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    border-radius: 8px;
+  }
+
+  .end-screen h2{
+   text-align: center;
+  }
  
   /* — Swipe Animations — */
  .restaurant-card.swipe-right {
@@ -776,5 +796,3 @@ nav ul {
     text-align: center;
   }
 }
-
-
