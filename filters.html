@@ -86,15 +86,16 @@
         <!-- Rating -->
         <section class="filter-options hidden" id="rating-options">
           <h2>Set minimum rating</h2>
-          <form onsubmit="confirmSelection('rating'); return false;">
-            <input
-              type="number"
-              id="rating-input"
-              placeholder="Enter a number between 0 and 5 or leave blank if you don't care"
-              
-            />
-            <button type="submit" class="confirm-btn">Confirm</button>
-          </form>
+          <div class="filter-options hidden" id="rating-options">
+            <h2>What is the lowest rating you will accept?</h2>
+          
+            <!-- ⭐ Star container where stars are dynamically rendered -->
+            <div id="star-container" class="star-rating"></div>
+          
+            <form onsubmit="confirmSelection('rating'); return false;">
+              <button type="submit" class="confirm-btn">Next</button>
+            </form>
+          </div>
         </section>
     </main>
     <section id="summary" class="hidden">
