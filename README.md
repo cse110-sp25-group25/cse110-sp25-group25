@@ -14,6 +14,7 @@
 >   - [ADRs](#adrs)
 >   - [CI/CD Pipeline](#cicd-pipeline)
 >   - [Team Status Video](#team-status-video)
+> - [Non-Assignment Additional Artifacts](#non-assignment-additional-artifacts)
 
 
 ## How do I use FoodFlip?
@@ -174,4 +175,7 @@ To work smoothly as a team, follow these rules when contributing:
 ### Team Status Video
 - [Team Status Video 1 (YouTube Link)](https://www.youtube.com/watch?v=xgqD52VNC9c)
 
+---
 
+## Non-Assignment Additional Artifacts
+- [Stakeholder Testing](docs/stakeholder-testing.md)
