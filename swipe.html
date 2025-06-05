@@ -52,7 +52,6 @@
         </div>
         
         <!-- Accept / Reject Buttons -->
-        <!-- Accept / Reject Buttons -->
         <div class="swipe-buttons">
           <button class="button-type2" title="Reject">
             <img src="assets/decline-icon.png" alt="Reject" />
@@ -63,11 +62,22 @@
         </div>
       </div>
       
-      <!-- End Screen -->
-      <div id="end-screen" class="end-screen" style="display: none;">
+      <!--------------- End Screen --------------->
+      <div id="end-screen" class="end-screen"  style="display: none;">
         <h2>You've reached the end!</h2>
+        <div class="buttons-div">
+          <!-- Button #1: view rejected cards -->
+          <button id="view-rejected-btn" class="button-type3">
+            Go look at rejected cards
+          </button>
+  
+          <!-- Button #2: reset all viewed -->
+          <button id="full-reset-btn" class="button-type3">
+            Reset all viewed
+          </button>
+        </div>
       </div>
-      
+
       <!-- Right Reviews -->
       <div id="right-review-container"></div>
       
@@ -81,10 +91,6 @@
       </div>
     </div>
 
-    <!-- Reset Button -->
-    <div class="reset-btn">
-       <button class="button-type3">Reset Deck</button>
-    </div>
 
   </main>
     <!-- Scripts -->

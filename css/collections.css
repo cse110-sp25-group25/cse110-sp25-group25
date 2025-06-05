@@ -362,6 +362,12 @@ object-fit: cover;
     max-height: 50%;
   }
 
+  .left-panel{
+    max-width: 100%;
+    position: static;
+    top: auto;
+  }
+
     .collection-card-front .tags {
     display: flex;
     flex-direction: row;

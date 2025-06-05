@@ -566,19 +566,48 @@ nav ul {
    margin-top: 0.2rem;
 }
 
- /* — Reset Buttons — */
-  .reset-btn .button-type3{
-    background-color: #4CAF50; 
-    color: white; 
-    border: none; 
-    padding: 10px 20px; 
-    font-size: 16px; 
-    border-radius: 8px;
-  }
 
-  .end-screen h2{
-   text-align: center;
-  }
+/* ----------------------------------------------------------
+   End of swiping buttons and end screen
+   ---------------------------------------------------------- */
+
+.end-screen h2{
+  text-align: center;
+}
+
+.end-screen .buttons-div{
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#view-rejected-btn,
+#full-reset-btn {
+  /* Use a clean, legible sans-serif */
+  font-family: "Segoe UI", Roboto, sans-serif;
+  font-size: 1rem;               /* ~16px text */
+  font-weight: 500;
+  color: #4a4a38;
+
+  /* Generous padding for a “pill” shape */
+  padding: 0.75rem 1.5rem;       /* 12px top/bottom, 24px left/right */
+  border: 2px solid transparent;/* we’ll override per button below */
+  border-radius: 999px;          /* fully rounded edges */
+  background-color: #b4d2ba;
+
+  cursor: pointer;
+  outline: none;
+  margin: 0.5rem;                /* small gap between the two buttons */
+}
+
+#view-rejected-btn:focus,
+#full-reset-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(74, 74, 56, 0.3);
+}
+/* ---------------------------------------------------------- */
+
  
   /* — Swipe Animations — */
  .restaurant-card.swipe-right {
