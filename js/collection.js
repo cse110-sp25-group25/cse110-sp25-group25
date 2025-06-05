@@ -32,7 +32,7 @@ function renderDeck() {
         const div = document.createElement('div');
         div.classList.add('restaurant-card');
         div.innerHTML = `
-            <h2>${r["name"]}</h2>
+            <h2>${r['name']}</h2>
             <img
                 src='assets/restaurant.jpg'
                 alt='restaurant'
