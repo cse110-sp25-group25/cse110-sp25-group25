@@ -101,11 +101,13 @@ function showOptions(type) {
 
 document.addEventListener('DOMContentLoaded', async () => {
   const cuisineGrid = document.getElementById('cuisine-grid');
-  if (cuisineGrid) {
-    
-    cuisineGrid.innerHTML = '';
+  const skipAll = document.getElementById('skip-btn');
+  const doneBtn = document.getElementById('done-btn');
+  const starContainer = document.getElementById('star-container');
 
-    // Get all unique cuisines
+  // Load cuisines dynamically
+  if (cuisineGrid) {
+    cuisineGrid.innerHTML = '';
     const cuisines = await getUniqueCuisines();
     cuisines.forEach(cuisine => {
       const btn = document.createElement('button');
@@ -114,25 +116,25 @@ document.addEventListener('DOMContentLoaded', async () => {
       btn.textContent = cuisine;
       cuisineGrid.appendChild(btn);
     });
+  }
 
     showOptions('cuisine')
-    const starContainer = document.getElementById('star-container');
-    if (starContainer) {
-      for (let i = 1; i <= 5; i++) {
-        const star = document.createElement('img');
-        star.src = 'assets/star-icon.png';
-        star.alt = `${i} star`;
-        star.classList.add('star');
-        star.dataset.value = i;
-        star.addEventListener('click', () => {
-          document.querySelectorAll('.star').forEach(s => s.classList.remove('selected'));
-          for (let j = 0; j < i; j++) {
-            document.querySelectorAll('.star')[j].classList.add('selected');
-          }
-          userSelections.rating = i;
-        });
-        starContainer.appendChild(star);
-      }
+  // Load stars dynamically
+  if (starContainer) {
+    for (let i = 1; i <= 5; i++) {
+      const star = document.createElement('img');
+      star.src = 'assets/star-icon.png';
+      star.alt = `${i} star`;
+      star.classList.add('star');
+      star.dataset.value = i;
+      star.addEventListener('click', () => {
+        document.querySelectorAll('.star').forEach(s => s.classList.remove('selected'));
+        for (let j = 0; j < i; j++) {
+          document.querySelectorAll('.star')[j].classList.add('selected');
+        }
+        userSelections.rating = i;
+      });
+      starContainer.appendChild(star);
     }
   }
   
