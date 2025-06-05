@@ -9,13 +9,12 @@
     rel="stylesheet"
   />
   <link rel="stylesheet" href="css/style.css" />
-  <script src="js/scripts.js"></script>
-  <script src="js/swipe.js"></script>
 </head>
+
 <body>
   <!-- Header -->
   <header>
-    <img src="assets/app-icon.png" alt="app icon" class="app-icon" />
+    <a href="index.html"><img src="assets/app-icon.png" alt="app icon" class="app-icon" /></a>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -24,14 +23,19 @@
       </ul>
     </nav>
     <img src="assets/burger-menu.png" alt="menu" class="burger-icon" />
+
   </header>
+  <div class="header-action-bar">
+    <button id="clear-filters-btn" class="button-type2">Clear Filters</button>
+  </div>
 
   <!-- Swipe Layout -->
   <main class="swipe-layout">
     <div class="swipe-container">
+      
       <!-- Left Hint -->
       <div class="swipe-hint left-hint">
-        <span class="hint-icon">◀</span>
+        <img src="assets/left-arrow.png" alt="Swipe Left" class="hint-icon" />
         <span class="hint-text">
           swipe left<br/>
           to get a new card
@@ -40,17 +44,31 @@
 
       <!-- Left Reviews -->
       <div id="left-review-container"></div>
-
-      <!-- Card -->
-      <div id="card-container">
+      
+      <!-- Card and Buttons Container -->
+      <div class="card-buttons-container">
+        <!-- Card -->
+        <div id="card-container">
+        </div>
+        
+        <!-- Accept / Reject Buttons -->
+        <!-- Accept / Reject Buttons -->
+        <div class="swipe-buttons">
+          <button class="button-type2" title="Reject">
+            <img src="assets/decline-icon.png" alt="Reject" />
+          </button>
+          <button class="button-type2" title="Accept">
+            <img src="assets/accept-icon.png" alt="Accept" />
+          </button>
+        </div>
       </div>
 
       <!-- Right Reviews -->
       <div id="right-review-container"></div>
-
+      
       <!-- Right Hint -->
       <div class="swipe-hint right-hint">
-        <span class="hint-icon">▶</span>
+        <img src="assets/right-arrow.png" alt="Swipe Right" class="hint-icon" />
         <span class="hint-text">
           swipe right<br/>
           to save to collection
@@ -58,13 +76,11 @@
       </div>
     </div>
 
-    <!-- Accept / Reject Buttons -->
-    <div class="swipe-buttons">
-      <button class="button-type2" title="Reject">❌</button>
-      <button class="button-type2" title="Accept">✅</button>
-    </div>
+
   </main>
-  
-<script src="js/scripts.js"></script>
-</body>
+    <!-- Scripts -->
+    <script src="js/scripts.js"></script>  <!-- for navbar toggling, etc. -->
+    <script src="js/swipe.js"></script>    <!-- rendering & swipe/flip logic -->
+  </body>
+
 </html>
