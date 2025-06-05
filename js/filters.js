@@ -116,6 +116,24 @@ document.addEventListener('DOMContentLoaded', async () => {
     });
 
     showOptions('cuisine')
+    const starContainer = document.getElementById('star-container');
+    if (starContainer) {
+      for (let i = 1; i <= 5; i++) {
+        const star = document.createElement('img');
+        star.src = 'assets/star-icon.png';
+        star.alt = `${i} star`;
+        star.classList.add('star');
+        star.dataset.value = i;
+        star.addEventListener('click', () => {
+          document.querySelectorAll('.star').forEach(s => s.classList.remove('selected'));
+          for (let j = 0; j < i; j++) {
+            document.querySelectorAll('.star')[j].classList.add('selected');
+          }
+          userSelections.rating = i;
+        });
+        starContainer.appendChild(star);
+      }
+    }
   }
   
   // Set up event listeners for filter buttons
