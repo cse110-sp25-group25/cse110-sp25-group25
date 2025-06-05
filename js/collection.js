@@ -1,3 +1,5 @@
+'use strict';
+
 window.addEventListener('DOMContentLoaded', init);
 
 function init() {
@@ -14,7 +16,7 @@ function init() {
 }
 
 function renderDeck() {
-    const container = document.getElementById("deck-list");
+    const container = document.getElementById('deck-list');
     if(!container) return;
     container.innerHTML ='';
 
@@ -27,23 +29,23 @@ function renderDeck() {
 
 
     saved.forEach(r => {
-        const div = document.createElement("div");
-        div.classList.add("restaurant-card");
+        const div = document.createElement('div');
+        div.classList.add('restaurant-card');
         div.innerHTML = `
             <h2>${r["name"]}</h2>
             <img
-                src="assets/restaurant.jpg"
-                alt="restaurant"
-                class="card-img"
+                src='assets/restaurant.jpg'
+                alt='restaurant'
+                class='card-img'
             />
-            <div class="details">
-            <span class="rating">⭐ ${r["rating"]}</span>
-            <span class="distance">📍 ${r["distance"]} mi</span>
+            <div class='details'>
+            <span class='rating'>⭐ ${r['rating']}</span>
+            <span class='distance'>📍 ${r['distance']} mi</span>
             </div>
-            <div class="tags">
-            <span class="tag">${r["cuisine"]}</span>
-            <span class="tag">cuisine</span>
-            <span class="tag">+2</span>
+            <div class='tags'>
+            <span class='tag'>${r['cuisine']}</span>
+            <span class='tag'>cuisine</span>
+            <span class='tag'>+2</span>
             </div>
         `;
         container.appendChild(div);

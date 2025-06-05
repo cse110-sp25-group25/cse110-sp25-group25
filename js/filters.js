@@ -1,3 +1,5 @@
+'use strict';
+
 // track user selections data (PLACEHOLDER)
 const userSelections = {
     cuisine: [],
