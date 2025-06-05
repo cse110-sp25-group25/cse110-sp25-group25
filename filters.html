@@ -99,12 +99,13 @@
         <section class="filter-options hidden" id="rating-options">
           <h2>Set minimum rating</h2>
           <form onsubmit="confirmSelection('rating'); return false;">
-            <input
-              type="number"
-              id="rating-input"
-              placeholder="Enter a number between 0 and 5 or leave blank if you don't care"
-              
-            />
+            <div id="star-rating">
+              <img src="dark-star-icon.png" data-value="1" class="star">
+              <img src="dark-star-icon.png" data-value="2" class="star">
+              <img src="dark-star-icon.png" data-value="3" class="star">
+              <img src="dark-star-icon.png" data-value="4" class="star">
+              <img src="dark-star-icon.png" data-value="5" class="star">
+            </div>
             <button type="submit" class="confirm-btn">Confirm</button>
           </form>
         </section>
