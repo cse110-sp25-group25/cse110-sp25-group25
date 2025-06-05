@@ -1,212 +1,2148 @@
 [
   {
     "id": 1,
-    "name": "Sakura Sushi",
-    "cuisine": "Japanese",
-    "price": "$$",
-    "distance": 1.2,
-    "rating": 4.6,
-    "location": "Downtown",
-    "phone": "123 - 456 - 7890",
-    "hours": "Open until 9:00 PM",
-    "image": "assets/restaurant.jpg",
-    "menuImages": ["assets/sushi-1.png", "assets/sushi-2.png", "assets/sushi-3.png"],
+    "name": "Juice Cafe",
+    "cuisine": "Cafes",
+    "price": "",
+    "distance": 3.2,
+    "rating": 5.0,
+    "location": "San Diego",
+    "phone": "(619) 971-8223",
+    "hours": "Open until 8:30 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/ut2WVyhladvAZGw3lY25tw/o.jpg",
+    "menuImages": [
+      "https://s3-media0.fl.yelpcdn.com/bphoto/ut2WVyhladvAZGw3lY25tw/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/6eI2EUU0ZPP8MikYS9ETaQ/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/2V4O45iW4hU8ePdchplNFw/o.jpg"
+    ],
     "reviews": [
-      { "text": "Fresh and delicious", "author": "customer 1" },
-      { "text": "Great sushi rolls", "author": "customer 2" },
-      { "text": "Cozy ambiance", "author": "customer 3" },
-      { "text": "Authentic taste", "author": "customer 4" },
-      { "text": "Fast service", "author": "customer 5" },
-      { "text": "Would come again", "author": "customer 6" }
+      {
+        "text": "Ordered the pina colada smoothie and it was so good.  Carlos welcomed us to this new location.  We really enjoyed the music, my husband even asked for the...",
+        "author": "Karen M."
+      },
+      {
+        "text": "Lovely new juice place. Good selection of smoothies, coffee, and boba. The people working are so friendly. Definitely a nice place to become a regular customer.",
+        "author": "Victor C."
+      },
+      {
+        "text": "Just went in recently for opening. Ordered a Mauna Keau and an Almond Joy, delicious!!! Excited to have this place in the area. I'll be coming here on my...",
+        "author": "San Diego C."
+      },
+      {
+        "text": "Best place for juices/bobas in LA Jolla. Carlos was so helpful in making my selection and the watermelon juice, Strawberry smoothie and Thai tea were all...",
+        "author": "A J."
+      },
+      {
+        "text": "Great coffee and service great ambiance as well moss treats me good and gave me an extra shot",
+        "author": "Mike P."
+      },
+      {
+        "text": "",
+        "author": ""
+      }
     ]
   },
   {
     "id": 2,
-    "name": "Pasta Paradise",
-    "cuisine": "Italian",
-    "price": "$$$",
-    "distance": 3.5,
-    "rating": 4.2,
-    "location": "Uptown",
-    "phone": "987 - 654 - 3210",
-    "hours": "Open until 10:00 PM",
-    "image": "assets/restaurant.jpg",
-    "menuImages": ["assets/sushi-1.png", "assets/sushi-2.png", "assets/sushi-3.png"],
+    "name": "Mikey’s Mealz",
+    "cuisine": "Salad",
+    "price": "",
+    "distance": 22.2,
+    "rating": 5.0,
+    "location": "San Diego",
+    "phone": "(619) 932-2246",
+    "hours": "",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/7IwWy3N-h0RtyoYCoX4Quw/o.jpg",
+    "menuImages": [
+      "https://s3-media0.fl.yelpcdn.com/bphoto/7IwWy3N-h0RtyoYCoX4Quw/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/PLQJ9os5d4c89t-lrzRZGA/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/PxYOjfo_rI2SFp8qPL0Egw/o.jpg"
+    ],
     "reviews": [
-      { "text": "Authentic Italian flavors", "author": "guest 1" },
-      { "text": "Loved the fettuccine", "author": "guest 2" },
-      { "text": "Romantic ambiance", "author": "guest 3" },
-      { "text": "Top notch wine list", "author": "guest 4" },
-      { "text": "Attentive staff", "author": "guest 5" },
-      { "text": "Would visit again", "author": "guest 6" }
+      {
+        "text": "Mikey catered a wedding rehearsal luncheon for us, and his team did an amazing job! Our son's wedding rehearsal meant a lot to us, so we wanted something...",
+        "author": "Ken C."
+      },
+      {
+        "text": "Mikey's mom made me some overnight oats and a SCREAMING tofu meal today to sample. WOW! I am blown away with the taste of the tofu. Thanks mom! We love all...",
+        "author": "Franco F."
+      },
+      {
+        "text": "Got a chance to try Mikey's Mealz this week and wanted to share my experiences \n\n\n1. Adobada chicken\n\nThis was definitely my favorite! Meat is cooked really...",
+        "author": "Nicole T."
+      },
+      {
+        "text": "A life changing experience for me and I couldn't be more grateful that I have Mikey's Mealz available for me.  I don't know what I would do without them....",
+        "author": "Billy D."
+      },
+      {
+        "text": "Let's just say this food is Phenomenal. It is extremely flavorful and how it's prepared fresh every time. The turkey meatloaf is my favorite and let's just...",
+        "author": "Dominique A."
+      },
+      {
+        "text": "Super fresh and perfect portions for my days on the go. Thank you Mikey! I will be a returning customer.",
+        "author": "Sara F."
+      }
     ]
   },
   {
     "id": 3,
-    "name": "Burger Barn",
-    "cuisine": "American",
-    "price": "$",
-    "distance": 0.8,
-    "rating": 4.0,
-    "location": "Midtown",
-    "phone": "456 - 789 - 1234",
-    "hours": "Open until 8:00 PM",
-    "image": "assets/restaurant.jpg",
-    "menuImages": ["assets/sushi-1.png", "assets/sushi-2.png", "assets/sushi-3.png"],
+    "name": "Plant Based Meals",
+    "cuisine": "Food Delivery Services",
+    "price": "",
+    "distance": 6.3,
+    "rating": 5.0,
+    "location": "San Diego",
+    "phone": "(858) 255-0590",
+    "hours": "Open until 7:00 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/wXZn1VLKoqdOEXc8JKAh_Q/o.jpg",
+    "menuImages": [
+      "https://s3-media0.fl.yelpcdn.com/bphoto/wXZn1VLKoqdOEXc8JKAh_Q/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/lVxHV6GNpPtClTGACwJrYQ/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/PmxBSpE1kzEFLkSMDBgxMA/o.jpg"
+    ],
     "reviews": [
-      { "text": "Juiciest burger in town", "author": "local fan" },
-      { "text": "Crispy fries", "author": "customer A" },
-      { "text": "Great value", "author": "customer B" },
-      { "text": "Quick service", "author": "customer C" },
-      { "text": "Kid friendly", "author": "customer D" },
-      { "text": "Simple and tasty", "author": "customer E" }
+      {
+        "text": "Seriously, the food and sauces are amazing! It's nothing like I thought it would be. My doctor told me that I should consider incorporating a plant-based...",
+        "author": "Edward B."
+      },
+      {
+        "text": "So good and fresh. I used to do Factor and I switched to support San Diego local. You won't regret it. Everything is so delicious. I could eat their black...",
+        "author": "Ripal P."
+      },
+      {
+        "text": "I love the meals I've had from PBM.  they're so different and so creatively made. best things about them is you can have them warm or cold. to this date I...",
+        "author": "Derek V."
+      },
+      {
+        "text": "Forget 5 Stars, this place is 6 Stars! I have literally, over the past three years, tried everything on their extensive menu. The food is EPIC! Preparing...",
+        "author": "Dima I."
+      },
+      {
+        "text": "I'm not a vegan and I absolutely love these meals. So if you're waffling because you're not a vegan, squash your doubts and just go for it! The meals are...",
+        "author": "A S."
+      },
+      {
+        "text": "BEYOND delicious and AMAZING customer service!! I can not believe this place doesn't have 100000 positive reviews. I am not strictly 100% plant based but...",
+        "author": "Jen S."
+      }
     ]
   },
   {
     "id": 4,
-    "name": "Curry House",
-    "cuisine": "Indian",
-    "price": "$$",
-    "distance": 2.0,
-    "rating": 4.7,
-    "location": "Downtown",
-    "phone": "222 - 333 - 4444",
-    "hours": "Open until 10:00 PM",
-    "image": "assets/restaurant.jpg",
-    "menuImages": ["assets/sushi-1.png", "assets/sushi-2.png", "assets/sushi-3.png"],
+    "name": "FRSH Woodfired Pizza",
+    "cuisine": "Food Trucks",
+    "price": "",
+    "distance": 8.2,
+    "rating": 5.0,
+    "location": "San Diego",
+    "phone": "(858) 999-4230",
+    "hours": "",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/KOJXP35xwGmnHjuCTy9Ylg/o.jpg",
+    "menuImages": [
+      "https://s3-media0.fl.yelpcdn.com/bphoto/KOJXP35xwGmnHjuCTy9Ylg/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/oxIWiPfYszRhTiV4d2_DXw/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/0bi0rM5sUV-Eo5GZM9yhLw/o.jpg"
+    ],
     "reviews": [
-      { "text": "Spicy and flavorful", "author": "foodie 1" },
-      { "text": "Best naan I've had", "author": "foodie 2" },
-      { "text": "Tandoori was perfect", "author": "foodie 3" },
-      { "text": "Good vegetarian options", "author": "foodie 4" },
-      { "text": "Will recommend", "author": "foodie 5" },
-      { "text": "Loved the samosas", "author": "foodie 6" }
+      {
+        "text": "We hired FRSH to cater our family party (45ish people) at our home. Ian was responsive over email and made the whole process so easy for us!\n\nFor the menu...",
+        "author": "Kristen W."
+      },
+      {
+        "text": "Seemingly, this looks like a small business, until you realize it's Woodfired pizza. So I was immediately intrigued. And oh man, that pizza was so good....",
+        "author": "Bethany B."
+      },
+      {
+        "text": "Lucky enough to get the very last pizza available from FRSH at Second Chance Brewery tonight!  So delicious, garlic flavor came through perfectly on our...",
+        "author": "Linda K."
+      },
+      {
+        "text": "Just had Ian and FRSH cater a friends birthday party. The pizza could not have been better. You can tell the dough is made with love, and there is no...",
+        "author": "Tyler T."
+      },
+      {
+        "text": "We had Frsh Pizza out for a birthday party for about 20 people, and it was really wonderful. Pizza and pretzels are delicious, and the guys could not be...",
+        "author": "Mira K."
+      },
+      {
+        "text": "We had an amazing party thanks to FRSH Woodfired Pizza! Their service, attitude and pizza was terrific! and their pretzels were a great addition!  We are so...",
+        "author": "Gary C."
+      }
     ]
   },
   {
     "id": 5,
-    "name": "Taco Town",
-    "cuisine": "Mexican",
-    "price": "$",
-    "distance": 1.5,
-    "rating": 4.3,
-    "location": "Suburbs",
-    "phone": "888 - 999 - 7777",
-    "hours": "Open until 11:00 PM",
-    "image": "assets/restaurant.jpg",
-    "menuImages": ["assets/sushi-1.png", "assets/sushi-2.png", "assets/sushi-3.png"],
+    "name": "RC3 BBQ",
+    "cuisine": "Food Delivery Services",
+    "price": "",
+    "distance": 22.6,
+    "rating": 5.0,
+    "location": "Escondido",
+    "phone": "(760) 566-2269",
+    "hours": "Open until 8:00 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/_jUq1QKVD0XAEB3JsFIIRw/o.jpg",
+    "menuImages": [
+      "https://s3-media0.fl.yelpcdn.com/bphoto/_jUq1QKVD0XAEB3JsFIIRw/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/zKQBQmUMvaokmAI4oUiCnA/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/zHjmlX-7xb7nlqRRoNU_ig/o.jpg"
+    ],
     "reviews": [
-      { "text": "Authentic street tacos", "author": "Carlos" },
-      { "text": "So many salsas!", "author": "Amy" },
-      { "text": "Birria is fire", "author": "Tony" },
-      { "text": "Cheap and amazing", "author": "Nina" },
-      { "text": "Lively vibe", "author": "Ben" },
-      { "text": "Big portions", "author": "Kelly" }
+      {
+        "text": "RC3 catered our Christmas party this weekend and they were AWESOME!!!!  Could not have asked for a better experience and food was INCREDIBLE!!!  All of our...",
+        "author": "Karen B."
+      },
+      {
+        "text": "The tri tip was amazing! I didn't need to put any sauce on it. It was flavorful and so tender! Since I was walking around at Cruisin' Grand in Escondido...",
+        "author": "Danielle F."
+      },
+      {
+        "text": "Robert and his team are super friendly and engaging...The food was fantastic from the Burnt Ends, Ribs, to Chicken Lolipops and more...I had about 75 people...",
+        "author": "Keith M."
+      },
+      {
+        "text": "Arguably the best BBQ I've had! They set up and tore down in a timely manner. Everyone was beyond friendly. And of course, all my guests LOVED the food....",
+        "author": "Megan C."
+      },
+      {
+        "text": "Absolutely delicious!!!  We went to Cruisin Grand and couldn't keep walking without having some.  We got a plate with 3 different meats, coleslaw, beans,...",
+        "author": "Kari M."
+      },
+      {
+        "text": "This BBQ is the best so amazing the flavor is amazing. The prices are really good for the amount of food u get and goes to a worthy cause.",
+        "author": "Cassandra B."
+      }
     ]
   },
   {
     "id": 6,
-    "name": "Pho Palace",
-    "cuisine": "Vietnamese",
-    "price": "$$",
-    "distance": 2.3,
-    "rating": 4.4,
-    "location": "Midtown",
-    "phone": "323 - 111 - 2222",
-    "hours": "Open until 9:30 PM",
-    "image": "assets/restaurant.jpg",
-    "menuImages": ["assets/sushi-1.png", "assets/sushi-2.png", "assets/sushi-3.png"],
+    "name": "Huey's Chicken & Fries",
+    "cuisine": "Food Trucks",
+    "price": "",
+    "distance": 17.6,
+    "rating": 5.0,
+    "location": "Spring Valley",
+    "phone": "(619) 413-4445",
+    "hours": "",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/x2tR-ZYc6VxK_X7aoYRxKQ/o.jpg",
+    "menuImages": [
+      "https://s3-media0.fl.yelpcdn.com/bphoto/x2tR-ZYc6VxK_X7aoYRxKQ/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/qX7Kk5x2wrncYIwNVtauhQ/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/65rEMCEgh6YuGDfwqKEiWw/o.jpg"
+    ],
     "reviews": [
-      { "text": "Rich broth", "author": "Quang" },
-      { "text": "Fresh herbs", "author": "Annie" },
-      { "text": "Banh mi also great", "author": "Tommy" },
-      { "text": "Cozy place", "author": "Tram" },
-      { "text": "Pho tai was perfect", "author": "Lan" },
-      { "text": "Love the ambiance", "author": "Ken" }
+      {
+        "text": "I attended an event for Hueys Chicken at the Sugar Factory where they handed out the mac & cheese, chicken tenders and fries! It was really yummy! I'd...",
+        "author": "Nalee S."
+      },
+      {
+        "text": "The chicken was amazing and the fries were so delicious. The sauce is top notch. The presentation of the food was great. Ordering and pick up were easy. Get...",
+        "author": "Gina W."
+      },
+      {
+        "text": "This chicken sandwich is AMAZING! The pickup process was super easy and the food was nice and fresh. This chicken sandwich is huge and worth every penny. I...",
+        "author": "Dallas P."
+      },
+      {
+        "text": "A few different people told me about this place so I decided to check it out. The order and pick up process was super easy and the food was amazing. All of...",
+        "author": "Teri A."
+      },
+      {
+        "text": "I really enjoyed the Hueys bowl. The krack sauce is amazing! Its something innovative and different from your typical chicken spot. 10/10!",
+        "author": "Luis M."
+      },
+      {
+        "text": "Heard great things about these sandwiches and was excited to try them. They did not disappoint and FAR EXCEEDED any chicken sandwich I'm EVER had. I implore...",
+        "author": "Ryan D."
+      }
     ]
   },
   {
     "id": 7,
-    "name": "Dragon Wok",
-    "cuisine": "Chinese",
-    "price": "$$",
-    "distance": 3.1,
-    "rating": 4.1,
-    "location": "Chinatown",
-    "phone": "555 - 111 - 5555",
-    "hours": "Open until 10:30 PM",
-    "image": "assets/restaurant.jpg",
-    "menuImages": ["assets/sushi-1.png", "assets/sushi-2.png", "assets/sushi-3.png"],
+    "name": "Carnitas La Bendición",
+    "cuisine": "Food Trucks",
+    "price": "",
+    "distance": 13.8,
+    "rating": 5.0,
+    "location": "San Diego",
+    "phone": "(619) 453-4507",
+    "hours": "Open until 6:00 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/ixEWirN0sov7docCdfLuRw/o.jpg",
+    "menuImages": [
+      "https://s3-media0.fl.yelpcdn.com/bphoto/ixEWirN0sov7docCdfLuRw/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/cwsu0M73lYT7JZkxHXFY-g/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/TsjOYbUYFtF-3Ox6hHd_Cg/o.jpg"
+    ],
     "reviews": [
-      { "text": "Classic takeout feel", "author": "Jing" },
-      { "text": "Orange chicken = win", "author": "Bob" },
-      { "text": "Lo mein is bomb", "author": "Daisy" },
-      { "text": "Fast delivery", "author": "Steve" },
-      { "text": "Egg rolls are crispy", "author": "Mark" },
-      { "text": "Nice lunch combos", "author": "Sue" }
+      {
+        "text": "Carnitas are gas!!! Very good quesadillas and the pineapple drink was wayyyy better than expected",
+        "author": "Lincoln G."
+      },
+      {
+        "text": "Upon walking up to the taco truck you are greeted with such happy workers. And the food was absolutely amazing and savory some for the best carnitas tacos...",
+        "author": "Faith F."
+      },
+      {
+        "text": "Had to try this place because of the enticing signs I kept seeing every time I pass by this area.  It's a small food truck on the corner of Euclid, I think...",
+        "author": "Kimme F."
+      },
+      {
+        "text": "Food is always good I used to eat here ones a week for the past 2 years. Always get it by the pound best deal ever with rice and beans \"Delicious\"\nThe lady...",
+        "author": "Sheldon A."
+      },
+      {
+        "text": "The sign outside caught my attention because it said Taco Tuesday $1 carnitas tacos.  We made a U-turn at the next intersection to give this food truck a...",
+        "author": "Ali B."
+      },
+      {
+        "text": "The reviews are NOT lying to you. My eyes are not deceiving me. This carnita taco is soo fire. She gave me a sample taco while I waited for my boyfriends...",
+        "author": "Ashley Y."
+      }
     ]
   },
   {
     "id": 8,
-    "name": "The Greek Spot",
-    "cuisine": "Greek",
+    "name": "Thumbs Up! Bacon and BBQ",
+    "cuisine": "Caterers",
     "price": "$$",
-    "distance": 1.9,
-    "rating": 4.5,
-    "location": "Downtown",
-    "phone": "999 - 222 - 1111",
-    "hours": "Open until 10:00 PM",
-    "image": "assets/restaurant.jpg",
-    "menuImages": ["assets/sushi-1.png", "assets/sushi-2.png", "assets/sushi-3.png"],
+    "distance": 16.7,
+    "rating": 4.9,
+    "location": "San Diego",
+    "phone": "(619) 709-0626",
+    "hours": "Open until 12:00 AM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/7cJtP7dVmSUYT3q6lvzxYA/o.jpg",
+    "menuImages": [
+      "https://s3-media0.fl.yelpcdn.com/bphoto/7cJtP7dVmSUYT3q6lvzxYA/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/jZuKFDR6sGKhRwcZzrCpvg/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/P-vqlXkl3UyTWybchy1oEw/o.jpg"
+    ],
     "reviews": [
-      { "text": "Great gyros", "author": "George" },
-      { "text": "Fresh pita", "author": "Niko" },
-      { "text": "Feta everything", "author": "Sophie" },
-      { "text": "Fast service", "author": "Maria" },
-      { "text": "Lamb was perfect", "author": "Alex" },
-      { "text": "Good prices", "author": "Theo" }
+      {
+        "text": "Smoked chicken is flavorful, moist, and overall delicious. The sides here are also great. I love their bbq sauces as well. \n\nGreat business customer service...",
+        "author": "Taura G."
+      },
+      {
+        "text": "Two Thumbs Up is banging.\n\nThis is my favorite BBQ joint in San Diego and it just happens to be connected to my favorite brewery, Burgeon Brewing...",
+        "author": "Mark W."
+      },
+      {
+        "text": "I'd say 3.5 stars. \n\nWe got the smoked wings, sausage and the bacon sliders to share between 3 people. Hands down, the smoked wings were delicious! Great...",
+        "author": "Kim V."
+      },
+      {
+        "text": "The great food is not even the best part of Thumbs Up. It's Myles, who is such a friendly guy. \n\nHe forgot to charge me for a soda water and was gracious...",
+        "author": "Jeremy C."
+      },
+      {
+        "text": "Great people and positive vibes!! We ordered the 2x2 and meat platter and the collard greens were bomb.com! The Mac and cheese were okay, and the corn balls...",
+        "author": "Kitty C."
+      },
+      {
+        "text": "Myles and Hailee are serving up some real good bbq!!! Service is amazing. They are so friendly. We got bbq wings and pulled pork and a side of bacon. The...",
+        "author": "Amy J."
+      }
     ]
   },
   {
     "id": 9,
-    "name": "Bagel Bros",
-    "cuisine": "Breakfast",
-    "price": "$",
-    "distance": 0.5,
-    "rating": 4.0,
-    "location": "Midtown",
-    "phone": "444 - 333 - 2222",
-    "hours": "Open until 2:00 PM",
-    "image": "assets/restaurant.jpg",
-    "menuImages": ["assets/sushi-1.png", "assets/sushi-2.png", "assets/sushi-3.png"],
+    "name": "Stella's Pizza Pie",
+    "cuisine": "Pizza",
+    "price": "",
+    "distance": 9.1,
+    "rating": 4.9,
+    "location": "San Diego",
+    "phone": "(619) 259-3388",
+    "hours": "Open until 5:00 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/Ps_tqMsPKx-PhOxzMybTpg/o.jpg",
+    "menuImages": [
+      "https://s3-media0.fl.yelpcdn.com/bphoto/Ps_tqMsPKx-PhOxzMybTpg/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/92GfSVOPGgmg1GFpN4KQcw/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/3YTCswJokhnIiRPKElwUUQ/o.jpg"
+    ],
     "reviews": [
-      { "text": "Perfect lox bagel", "author": "Liam" },
-      { "text": "Great coffee too", "author": "Emma" },
-      { "text": "Toasted to perfection", "author": "Olivia" },
-      { "text": "Quick morning fix", "author": "Noah" },
-      { "text": "Fresh every day", "author": "Ava" },
-      { "text": "Love the vibe", "author": "Mia" }
+      {
+        "text": "From the very first tasting to the final slice served on our big day, Stella's Pizza Pie was absolutely phenomenal. Amy and her team went above and beyond...",
+        "author": "Sydney S."
+      },
+      {
+        "text": "When we first started looking for catering for our March 2025 wedding, we weren't sure what exactly we wanted. Then we heard about Stella's Pizza Pie. Our...",
+        "author": "Maura S."
+      },
+      {
+        "text": "Highly recommend Stella's Pizza Pie! We had them cater our wedding and they were such a joy to work with!! They are very responsive, which was a huge plus...",
+        "author": "Sommer L."
+      },
+      {
+        "text": "I can't say enough great things about Stella's Pizza Pie Catering, their crazy delicious food, or their amazing staff! We interviewed & researched around 10...",
+        "author": "Mark R."
+      },
+      {
+        "text": "My husband and I are so blessed to have been able to have Stella's Pizza Pie at our wedding. Everyone absolutely loved it. From the beginning they were so...",
+        "author": "Alena A."
+      },
+      {
+        "text": "Can not recommend Stella's Pizza enough! The communication was great from beginning to end for our daughter's wedding and the food was so so good! They...",
+        "author": "Jenn B."
+      }
     ]
   },
   {
     "id": 10,
-    "name": "Green Garden",
-    "cuisine": "Vegan",
-    "price": "$$",
-    "distance": 2.7,
-    "rating": 4.8,
-    "location": "Uptown",
-    "phone": "111 - 222 - 3333",
-    "hours": "Open until 8:30 PM",
-    "image": "assets/restaurant.jpg",
-    "menuImages": ["assets/sushi-1.png", "assets/sushi-2.png", "assets/sushi-3.png"],
+    "name": "Taco Tuesday",
+    "cuisine": "Food Trucks",
+    "price": "$",
+    "distance": 22.0,
+    "rating": 4.9,
+    "location": "San Diego",
+    "phone": "(619) 340-7409",
+    "hours": "",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/d1M7amBeiu8-tdLw4WxQRg/o.jpg",
+    "menuImages": [
+      "https://s3-media0.fl.yelpcdn.com/bphoto/d1M7amBeiu8-tdLw4WxQRg/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/bo4dHf6eyA_DoNA2beOhJw/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/JRM1Np7advbz_CZBcKxKew/o.jpg"
+    ],
     "reviews": [
-      { "text": "So many plant-based options", "author": "Sam" },
-      { "text": "Love the smoothies", "author": "Kim" },
-      { "text": "Tofu wrap was amazing", "author": "Leo" },
-      { "text": "Clean and green", "author": "Zoe" },
-      { "text": "Big vegan menu", "author": "Max" },
-      { "text": "Really filling meals", "author": "Ella" }
+      {
+        "text": "We were lucky enough to work with the Taco Tuesday for our wedding and our guests loved it!! The team was amazing to work with - quick communication and...",
+        "author": "Ryana B."
+      },
+      {
+        "text": "Wow, I was really impressed with the carnitas tacos!! I ran into this food truck the other day when I was craving Mexican food and it did not let me down....",
+        "author": "Pablo T."
+      },
+      {
+        "text": "Had the beef/potato and birria tacos at Guajome Academy's back to school night and they were both unbelievably good. I was just in Cancun for a week and...",
+        "author": "Mark D."
+      },
+      {
+        "text": "ONE OF THE BEST TACO TRUCKS IN SAN DIEGO!\n\nI know stating this is fighting words, as everyone will defend their taco truck and burrito spots, but truly this...",
+        "author": "Donathon C."
+      },
+      {
+        "text": "Amazing!!! I had them cater an all  you can eat event for my office and my staff was so happy with them!  I highly highly highly recommend! \n\nThey had so...",
+        "author": "Tiffany A."
+      },
+      {
+        "text": "I had them when they catered a wedding I attended. The beans are to die for! The tortilla? Bomb.com. I had the smoked fish, birria, and barbacoa. All had...",
+        "author": "Michelle H."
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Chefs Cafe & Catering",
+    "cuisine": "Breakfast & Brunch",
+    "price": "$",
+    "distance": 1.4,
+    "rating": 4.9,
+    "location": "San Diego",
+    "phone": "(858) 876-2433",
+    "hours": "",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/iSON_F23La9ONLkmwAsrzA/o.jpg",
+    "menuImages": [
+      "https://s3-media0.fl.yelpcdn.com/bphoto/iSON_F23La9ONLkmwAsrzA/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/DXKuUu8IFoDK-hvTDgNoLA/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/0W-IVMWUYBBbS6GKJCzkng/o.jpg"
+    ],
+    "reviews": [
+      {
+        "text": "You know how on Cheers the bar would say \"Norm\" when he walked in? That's the vibe. They are so welcoming, and it seems to be multi generational family...",
+        "author": "Char C."
+      },
+      {
+        "text": "Called this business close to closing for the day and was treated with respect, energy, and warmth as if it was the beginning of the day.\n\nPicked up my...",
+        "author": "Israel G."
+      },
+      {
+        "text": "Chef Felix, Erica and the Entire Family that runs this Hidden Gem in North Torrey Pines knows they're doing in the Kitchen for sure!  The menu is great with...",
+        "author": "Michael T."
+      },
+      {
+        "text": "I highly recommend this place for breakfast.  I ordered breakfast sandwich croissants.   Very delicious love the food and the people are very nice. It's...",
+        "author": "Jkh D."
+      },
+      {
+        "text": "This a a cafe within one of the biotech buildings but the food is much better than you'd expect. We walked over from the hospital and found the food to be...",
+        "author": "Anshu B."
+      },
+      {
+        "text": "Once you find this place, people are very nice, good was great.  Very good value for money.",
+        "author": "Mark W."
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "name": "La Perla del Pacifico",
+    "cuisine": "Food Trucks",
+    "price": "$",
+    "distance": 14.2,
+    "rating": 4.9,
+    "location": "San Diego",
+    "phone": "(619) 410-7439",
+    "hours": "Open until 5:00 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/z1VKB-dEfAPFFQxcdp_Lzw/o.jpg",
+    "menuImages": [
+      "https://s3-media0.fl.yelpcdn.com/bphoto/z1VKB-dEfAPFFQxcdp_Lzw/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/393KG5Gm--7hUdJPERE2SA/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/eouKXmGKxWZoXyuItioB6Q/o.jpg"
+    ],
+    "reviews": [
+      {
+        "text": "Delicious crispy fresh fish tacos. These were my gateway to liking tacos. Never preferred tacos in the past until I had these that a coworker recommended....",
+        "author": "malia p."
+      },
+      {
+        "text": "Good amount of food for what you pay for . \n\nWe have only come here for the fish and shrimp tacos which are great In my opinion the fish breading is a...",
+        "author": "Alma P."
+      },
+      {
+        "text": "Went there last night and was the best carne asada burrito ever... also had the carne asada quesadilla and my husband said was the best he's had.... I would...",
+        "author": "Staci B."
+      },
+      {
+        "text": "La verdad he comido en muchas loncherías de mariscos aquí en San Diego pero no hay otra con los tacos de pescado sin tanta masa y si quieren aguachiles...",
+        "author": "Ramon T."
+      },
+      {
+        "text": "Yummmmy try the best tacos in San Diego their consome is one of the best too salty but flavor as spices is good!",
+        "author": "Susana G."
+      },
+      {
+        "text": "Love this place !! Everything is good!!\nEverything is very good, I've ordered pretty much everything off the menu. And everything is delicious.\nCeviche made...",
+        "author": "Jerry A."
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Casa Ocho",
+    "cuisine": "Street Vendors",
+    "price": "",
+    "distance": 3.6,
+    "rating": 4.9,
+    "location": "San Diego",
+    "phone": "",
+    "hours": "",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/KHoRj4kghfJsWvePpOl8-A/o.jpg",
+    "menuImages": [
+      "https://s3-media0.fl.yelpcdn.com/bphoto/KHoRj4kghfJsWvePpOl8-A/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/VTnhk_PXjnEPi4nNj_6VDw/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/J-5ixh1vPmA0kHuAr4G5EA/o.jpg"
+    ],
+    "reviews": [
+      {
+        "text": "Casa Ocho is a hidden gem of Old Town, located in the back patio of Flor & Seed coffee shop. You'll have to walk through the coffee shop to get to the...",
+        "author": "Ivonnie S."
+      },
+      {
+        "text": "I didn't realize that Casa Ocho only serves vegetarian food when I arrived. They are located in the back patio of Flora and Seed and there is just one table...",
+        "author": "Dung N."
+      },
+      {
+        "text": "Casa Ocho is a food vendor that is certainly putting a twist on Avocado Toast  and a number of established popular Mexican Food items. I have ordered their...",
+        "author": "Jack M."
+      },
+      {
+        "text": "We stopped by a famer's market on a random Sunday afternoon in La Jolla and stumbled upon this food vendor making incredible looking food that made our...",
+        "author": "Victoria O."
+      },
+      {
+        "text": "Casa Ocho has their own spot in the back patio of Flor and Seed in Old Town San Diego! Perfect place to get your mexagrub on with your morning coffee from...",
+        "author": "Maryanne A."
+      },
+      {
+        "text": "Now located on the back patio of @florandseed in #oldtownsandiego , Casa Ocho is serving up street-style #mexagrub Thurs-Mon from 7am till sold out....",
+        "author": "Crystal K."
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Criscito Pizza",
+    "cuisine": "Pizza",
+    "price": "$$",
+    "distance": 2.4,
+    "rating": 4.9,
+    "location": "San Diego",
+    "phone": "(858) 261-0179",
+    "hours": "Open until 8:00 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/xS0ark91ysN5do2AdYd_zw/o.jpg",
+    "menuImages": [
+      "https://s3-media0.fl.yelpcdn.com/bphoto/xS0ark91ysN5do2AdYd_zw/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/kWSUXl734-cBahKfuOHBFg/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/hvVSyYxWaXihl0A4jRu-Qg/o.jpg"
+    ],
+    "reviews": [
+      {
+        "text": "Criscito pizza is right next to Torrey Pines State Natural Reserve \nThis pizza spot is so close to the beach I recommend picking this up and having a picnic...",
+        "author": "Daisy P."
+      },
+      {
+        "text": "Yum! I came in without any expectations because i'm thinking, a lot of pizza around san diego tends to taste the same. Not this place! We ordered a classic...",
+        "author": "Calixta E."
+      },
+      {
+        "text": "We enjoyed the roasted salad, neapolitan white pizza and a neapolitan fig & goat cheese pizza. Food was so inviting I forgot to take pictures of our 2...",
+        "author": "Christina J."
+      },
+      {
+        "text": "Visiting San Diego and was done for the day. Didn't want to go out so I looked on DoorDash and found Criscito. After referencing on Yelp, I made the...",
+        "author": "Anita L."
+      },
+      {
+        "text": "The pizza dough, sauce, and cheese were very good. I really liked the wood fired and the crust had a good taste. I think it was really just the toppings...",
+        "author": "Jacob S."
+      },
+      {
+        "text": "Fantastic pizza! We are Gluten sensitive but can digest true sourdough and this pizza was perfect for us. Unique flavors and all three that we tried were...",
+        "author": "Jillian W."
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Mariscos El Katrin",
+    "cuisine": "Food Trucks",
+    "price": "",
+    "distance": 13.5,
+    "rating": 4.9,
+    "location": "San Diego",
+    "phone": "(619) 779-8880",
+    "hours": "Open until 5:00 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/UN6sXEIqGyZyF_RlQIh_iQ/o.jpg",
+    "menuImages": [
+      "https://s3-media0.fl.yelpcdn.com/bphoto/UN6sXEIqGyZyF_RlQIh_iQ/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/E0ww5LveyumwKSiHn7tJ2g/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/rI02DXJ8aTlhSNNUAteB-w/o.jpg"
+    ],
+    "reviews": [
+      {
+        "text": "Stopped by for a quick lunch... had the Fish taco & the shrimp ceviche tostada.\nThe tostada was good but the fish taco was AMAZINGLY DELICIOUS!!!!!!  It was...",
+        "author": "Tony E."
+      },
+      {
+        "text": "I  do like what they are doing here at Mariscos El Katrin which is not really food truck but rather a trailer pulled by a truck, not that there's anything...",
+        "author": "Jack M."
+      },
+      {
+        "text": "Best ceviche in San Diego for an unbeatable price! \n\nThe ceviche is fresh, delicious, and very filling. Most of the ceviche dishes are cured in lemon juice...",
+        "author": "Nancy N."
+      },
+      {
+        "text": "So I typically do not frequent food trucks but this came up on my IG because they park outside of a brewery I follow. The pictures looked delicious and the...",
+        "author": "Crystal R."
+      },
+      {
+        "text": "Shout out to NATASHA and the gentleman manning the grill all to themselves! Delicious food and everything is FRESH! They even hooked us up with a free taco...",
+        "author": "Abrahan D."
+      },
+      {
+        "text": "I wish I could have this food everyday. So good we went straight back after finishing our first round and ordered more. The fried fish tacos are amazing,...",
+        "author": "Adam B."
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Caliente BBQ catering",
+    "cuisine": "Caterers",
+    "price": "$$",
+    "distance": 19.4,
+    "rating": 4.8,
+    "location": "Spring Valley",
+    "phone": "(619) 244-0112",
+    "hours": "Open until 8:00 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/QQ3NliEVMW1JeSAifwwdtQ/o.jpg",
+    "menuImages": [
+      "https://s3-media0.fl.yelpcdn.com/bphoto/QQ3NliEVMW1JeSAifwwdtQ/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/gLAvaRuy0zp_ZPE1BePHqQ/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/GHXHQSsG-hZqVWjXXPT3bQ/o.jpg"
+    ],
+    "reviews": [
+      {
+        "text": "I can't reccomend Caliente BBQ enough! We wanted to have a BBQ event for a party we were throwing for fifty guests. We gave Caliente BBQ very little heads...",
+        "author": "Mike K."
+      },
+      {
+        "text": "This is our second time having Caliente BBQ cater our events. Mike is wonderful to work with! He and his crew were wonderful and very friendly. Food was...",
+        "author": "Neena Bella A."
+      },
+      {
+        "text": "What a wonderful experience working with Michael from Caliente BBQ. For our weekly company lunch we wanted to mix it up a bit and eat outside at the park....",
+        "author": "Julie J."
+      },
+      {
+        "text": "These people charged me $130 for ONE PLATE OF BBQ when they came to visit at my apartments!!!!! One plate was $12 and some change! They only gave me back...",
+        "author": "Jenevie S."
+      },
+      {
+        "text": "You can really taste the love and preparation that goes into the food. Our family had a catered event for my grandfathers birthday. Food was delicious. I...",
+        "author": "H L."
+      },
+      {
+        "text": "Check out these portions!!! Gotta say BBQ was on point, love their different selections of BBQ sauce, and what can I say about the sweet creamy corn but...",
+        "author": "Ernesto R."
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "name": "AJ's Creole Cuisine & West Coast Smokehouse",
+    "cuisine": "Food Stands",
+    "price": "",
+    "distance": 11.3,
+    "rating": 4.8,
+    "location": "San Diego",
+    "phone": "(858) 652-2114",
+    "hours": "",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/0d75RlwHLmkt7h1ifyEQpA/o.jpg",
+    "menuImages": [
+      "https://s3-media0.fl.yelpcdn.com/bphoto/0d75RlwHLmkt7h1ifyEQpA/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/4uypAbJ3QyMOo0c7HsO0Qg/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/F9gTtnG4-pw4XHrOOnyixg/o.jpg"
+    ],
+    "reviews": [
+      {
+        "text": "The owners are so fun and kind! They make sure you get exactly what you are craving in each and every bite. The Shrimp Po'boy was delicious and made to...",
+        "author": "Nadeaja S."
+      },
+      {
+        "text": "absolutely delicious. great vibes and service, everything we had was amazing. will definitely be back soon!",
+        "author": "Annie E."
+      },
+      {
+        "text": "At the Hillcrest Farmers Market, there's one Creole cuisine stand that's a true gem, offering bold flavors and a taste of New Orleans in every bite. Whether...",
+        "author": "Kristen K."
+      },
+      {
+        "text": "Food is delicious ~ !!\nprices are ridiculously high. \nCustomer service is good, not great.",
+        "author": "Sheila C."
+      },
+      {
+        "text": "Ordered jambalaya w/andouille and shrimp, catfish slider and Mac n cheese. All 3 were delicious. Mac was 8.5 outta 10 at least. Excellent cheesy(tangy, and...",
+        "author": "Laura W."
+      },
+      {
+        "text": "Do yourself a favor and go out of your way to try this food. I've never had friend chicken that melted in my mouth like this place! You can see the pictures...",
+        "author": "Lexi G."
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "name": "The Funky Frenchie",
+    "cuisine": "Breakfast & Brunch",
+    "price": "",
+    "distance": 11.0,
+    "rating": 4.8,
+    "location": "San Diego",
+    "phone": "(619) 519-0138",
+    "hours": "",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/cSlFdF3EjC4E3IA3CAuJZg/o.jpg",
+    "menuImages": [
+      "https://s3-media0.fl.yelpcdn.com/bphoto/cSlFdF3EjC4E3IA3CAuJZg/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/1mlf3XDh6OFAylW_EW5ktA/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/LeWOqO2R7jWw4IIjW4YKCg/o.jpg"
+    ],
+    "reviews": [
+      {
+        "text": "I think we'll be walking around Harbor Island after discovering this place. It closes at 1:30pm and open only on  Friday, Saturday and Sunday - for the...",
+        "author": "Arnold T."
+      },
+      {
+        "text": "Wow. The customer service here went way above my expectations. We ordered our food and a short time later the rain started. They don't have a covered spot...",
+        "author": "Curt T."
+      },
+      {
+        "text": "I can see why this place has been in the magazines! The frenchie waffles are adorable, and the breakfast croissants are deliciously fresh. I like how...",
+        "author": "Jillian G."
+      },
+      {
+        "text": "Unfortunately, I would not come back here. My friend and I visited for lunch, and it was reminiscent of a concession stand at a sports game. Although there...",
+        "author": "Peggy H."
+      },
+      {
+        "text": "Almost a little hole in the wall between the yacht dealer, but worth coming over.  Had the Avocado toast and the Buena Dias breakfast sandwich. Both were...",
+        "author": "Erin M."
+      },
+      {
+        "text": "Secret spot found!  Fantastic little family run hole in the wall.  Excellent food. Friendly service. Great coffee. Will be back.",
+        "author": "Erich M."
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Parakeet Cafe",
+    "cuisine": "Vegetarian",
+    "price": "",
+    "distance": 1.0,
+    "rating": 4.8,
+    "location": "San Diego",
+    "phone": "",
+    "hours": "Open until 2:00 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/TUd9fncxV7ifLSmOwIggvA/o.jpg",
+    "menuImages": [
+      "https://s3-media0.fl.yelpcdn.com/bphoto/TUd9fncxV7ifLSmOwIggvA/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/aOktSzHkHsphGobi5cMGbg/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/sv3x-iE0UFTUyPan1baqbw/o.jpg"
+    ],
+    "reviews": [
+      {
+        "text": "Wow. \n\nDrinks: Amazing tonic selection. Or champs in a bottle, or cold pressed coconut water... or a super fresh and yummy Latte! What's not to love?\n\nFood:...",
+        "author": "Robyn K."
+      },
+      {
+        "text": "PARAKEET!!! I love this place so much. Everything is so fresh and delicious. Very kind and inviting service. The menu is pricey, but everything is...",
+        "author": "J W."
+      },
+      {
+        "text": "Parakeet Cafe offers delicious healthy food with a cute outdoor patio to enjoy the meal. \n\nCharcoal Waffle (5/5) - the coconut cream and date syrup were...",
+        "author": "Melanie H."
+      },
+      {
+        "text": "Super cute cafe tucked in the middle of a small campus of office buildings. There is plenty of outdoor and indoor seating, and the decor is so cute! I love...",
+        "author": "Marie Elise O."
+      },
+      {
+        "text": "Location is great. Able to work while eating & drinking their healthy & delicious food. Service is always top notch, friendly & knowledgeable staff.",
+        "author": "Viviene B."
+      },
+      {
+        "text": "Phenomenal! Healthy food with a beautiful atmosphere, can sit out on the patio or indoors and both are comfortable, spacious, clean seating. Food options...",
+        "author": "Brooke B."
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Boker Kitchen",
+    "cuisine": "Mediterranean",
+    "price": "",
+    "distance": 1.8,
+    "rating": 4.8,
+    "location": "San Diego",
+    "phone": "(858) 203-3881",
+    "hours": "Open until 5:00 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/AFvpTDrG5eXx25ak364JEg/o.jpg",
+    "menuImages": [
+      "https://s3-media0.fl.yelpcdn.com/bphoto/AFvpTDrG5eXx25ak364JEg/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/Qg0sb7nLIlMe4uBKxKizLw/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/lM5f5iZun0BH60ZOcRZrew/o.jpg"
+    ],
+    "reviews": [
+      {
+        "text": "I am a babka connoisseur so feel very qualified in saying the chocolate babka at Boker is the best babka in San Diego! I have no pictures because I eat it...",
+        "author": "Ally G."
+      },
+      {
+        "text": "Amazing place! The borekas and pastries are delicious!\nThey have a beautiful breakfast spread and the tables outside are very nice. \nGreat for a quick bite...",
+        "author": "Ariel D."
+      },
+      {
+        "text": "My first and definitely not my last time eating here! \n\nWe ordered the shakshuka, eggplant carpaccio, the pita labneh plate and the lox plate,  chocolate...",
+        "author": "Elina K."
+      },
+      {
+        "text": "When I heard about Boker Kitchen, I knew my husband and I would have to go and I'm so glad we did!!! \n\nThe staff is very friendly and the menu options are...",
+        "author": "Miriam G."
+      },
+      {
+        "text": "Amazing meal here. Six of us came and shared things and were thrilled with the food and value.  A friend came and was disappointed by what he ordered. But...",
+        "author": "Alyssa S."
+      },
+      {
+        "text": "Having dined at the original downtown location of its sister flagship restaurant, I had certain expectations of Boker Kitchen. A major difference between...",
+        "author": "Emmett T."
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "name": "Namino",
+    "cuisine": "Kebab",
+    "price": "",
+    "distance": 0.7,
+    "rating": 4.8,
+    "location": "San Diego",
+    "phone": "(858) 257-7679",
+    "hours": "Open until 9:00 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/bZNf0jYjEqiTx66m1eOqrw/o.jpg",
+    "menuImages": [
+      "https://s3-media0.fl.yelpcdn.com/bphoto/bZNf0jYjEqiTx66m1eOqrw/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/9WqXb5-hNXkYhrnNES2i5g/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/ZiFJsN3sDtJVk600Mwwsvw/o.jpg"
+    ],
+    "reviews": [
+      {
+        "text": "This is a charming and welcoming little restaurant. The food here is made fresh to order, and tastes great. Might be a little slow but--again, its super...",
+        "author": "Yousaf J."
+      },
+      {
+        "text": "I came across their ad in Yahoo.  I was driving to Harbor Freight, so I stopped here to see what the great reviews were raving about.  There were still auto...",
+        "author": "Julia G."
+      },
+      {
+        "text": "Tucked in the west corner of Miramar off a side road is the small food trailer Namino, a hidden gem! \nI arrived just before close on a Saturday so some...",
+        "author": "Ian R."
+      },
+      {
+        "text": "The reviews are right! One of my top Medi spots. Awesome flavor, from the rice to the meat and the salad. They are equally aaahmazing! It was a great...",
+        "author": "Agnes D."
+      },
+      {
+        "text": "Really friendly owner, Ali Agha was funny and took great care of us. The Tahchin was fabulous as well, I will go back for the Kababs next time and let...",
+        "author": "Ali K."
+      },
+      {
+        "text": "Namino will exceed your expectations. Highly recommended for anyone who appreciates high-quality Persian food and outstanding hospitality!",
+        "author": "Sarvnaz H."
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "name": "Oriste Fairway Cafe & Tavern",
+    "cuisine": "Salad",
+    "price": "",
+    "distance": 1.0,
+    "rating": 4.8,
+    "location": "San Diego",
+    "phone": "(858) 784-9824",
+    "hours": "Open until 3:00 PM",
+    "image": "",
+    "menuImages": [],
+    "reviews": [
+      {
+        "text": "Oriste was a pleasant surprise!  The owner was more than welcoming. We were here for a quick snack and ended up with a Caesar salad and probably one of the...",
+        "author": "Kristin L."
+      },
+      {
+        "text": "The food is always delicious, every time I order with a side of rice it's about 30/40/30 on whether I will get rice or fries or nothing at all on the side....",
+        "author": "Andrew E."
+      },
+      {
+        "text": "This place is awesome. I work in the area and will come here for wholesome food and authentic Greek vibes. The owner Danny is always going out of his to...",
+        "author": "Arian B."
+      },
+      {
+        "text": "Someone in my office knows the owners of Oriste and had them cater an office lunch.  I love Greek food but usually, the food at restaurants is bland and...",
+        "author": "Samir C."
+      },
+      {
+        "text": "Amazing experience and amazing food! Such great service. Wonderful sized portions and love the French fries! Honestly I go here even when I'm not working...",
+        "author": "James H."
+      },
+      {
+        "text": "Great pear salad. Its healthy, fresh and delicious. Good food, esp the tatziki sauce.",
+        "author": "Aa F."
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "name": "Gluten Freedom Baking Company",
+    "cuisine": "Bakeries",
+    "price": "",
+    "distance": 3.7,
+    "rating": 4.8,
+    "location": "San Diego",
+    "phone": "(858) 352-6054",
+    "hours": "Open until 1:00 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/g7GPPXjmZB_hKsbWm-7WLg/o.jpg",
+    "menuImages": [
+      "https://s3-media0.fl.yelpcdn.com/bphoto/g7GPPXjmZB_hKsbWm-7WLg/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/k9gd6x_0g9yhbTr16ULwWg/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/i1aSPTu6sbmz88kq87Qulw/o.jpg"
+    ],
+    "reviews": [
+      {
+        "text": "My husband loves this bakery! He has a gluten allergy and this is the only gluten free bread he eats. He gets the rosemary sourdough loaf from the Little...",
+        "author": "Ally G."
+      },
+      {
+        "text": "My weekend is never complete unless I go see my guys from Gluten Freedom. I've been gluten free since 2017 and this place is INCREDIBLE. The cinnamon roll...",
+        "author": "Mary K."
+      },
+      {
+        "text": "Delicious breads and pies! Amazing recipes. Keep up the good work! I have also tried the take and bake cookies. These are best warm. The dinner rolls are...",
+        "author": "cynthia m."
+      },
+      {
+        "text": "Wonderful bread, amazing cinnamon rolls and a delicious Oatmeal Raison cookie! \nAll gluten free! I would highly recommend you try their products! The bread...",
+        "author": "Bonni S."
+      },
+      {
+        "text": "Purchased some muffins here form the Little Italy Farmer's market. They were blue berry. The actual muffin was good but the topping on the muffin was not...",
+        "author": "Madison G."
+      },
+      {
+        "text": "Great pop up event today. Cinnamon rolls and pumpkin muffins are my favorite! Would love store front!",
+        "author": "Lorraine C."
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "name": "TOAST Cafe",
+    "cuisine": "Cafes",
+    "price": "",
+    "distance": 3.2,
+    "rating": 4.8,
+    "location": "San Diego",
+    "phone": "(858) 925-7552",
+    "hours": "Open until 2:00 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/p98u4UNyWrB3rS70ftjyYw/o.jpg",
+    "menuImages": [
+      "https://s3-media0.fl.yelpcdn.com/bphoto/p98u4UNyWrB3rS70ftjyYw/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/6fNdUArcq1PIMEEdbH2qqg/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/Q_N7vpJl3c-X2DGU0keeDg/o.jpg"
+    ],
+    "reviews": [
+      {
+        "text": "Toast! \n\n-next to office buildings but has a nice little sunny backyard\n-healthy nuce options hut if you are eyeing that breakfast sandwich they dont serve...",
+        "author": "Sara S."
+      },
+      {
+        "text": "Toast is an absolute hidden gem! Tucked away in a commercial building, it's the kind of place you might overlook -- but once you find it, you'll be so glad...",
+        "author": "Kimmy M."
+      },
+      {
+        "text": "Great cafe to work and meet. So much indoor and outdoor seating with plenty of outlets. Great selection of food and drinks as well!\n\nService was great, as...",
+        "author": "Mika C."
+      },
+      {
+        "text": "Tasty option for a quick takeout brunch while visiting from out of town. The churros were a fun little add on to our meal!",
+        "author": "Nika F."
+      },
+      {
+        "text": "Amazing Filipino breakfast burrito!!! Typically I stay away from burritos as they are not my favorite (uncomfortable contortion of the jaw to get a little...",
+        "author": "Swan L."
+      },
+      {
+        "text": "Perfect place, found it by surprise!\nOrdered Turkish breakfast for 2 people, very thoughtful and tasteful presentation!",
+        "author": "Olga S."
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "name": "Subterranean Coffee",
+    "cuisine": "Breakfast & Brunch",
+    "price": "",
+    "distance": 3.1,
+    "rating": 4.8,
+    "location": "San Diego",
+    "phone": "(858) 247-7044",
+    "hours": "",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/Jw9CP1NXYxmKkY3Z907lwg/o.jpg",
+    "menuImages": [
+      "https://s3-media0.fl.yelpcdn.com/bphoto/Jw9CP1NXYxmKkY3Z907lwg/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/-Nk8zLjv_aI3QftzhAUmqQ/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/fmUN0sFyqNbaEMcIaKa4jA/o.jpg"
+    ],
+    "reviews": [
+      {
+        "text": "Subterranean Coffee has opened a location at the International Shops in the La Jolla Cove area. While there is ample foot traffic on the touristy Prospect...",
+        "author": "Emmett T."
+      },
+      {
+        "text": "Really unique coffee selection. We got the white blackberry mocha and it was great! Good flavor pairings, lovely customer service, and staff was eager to...",
+        "author": "Keila P."
+      },
+      {
+        "text": "Definitely check this place out!! Serious good coffee - like next level coffee. I ordered a simple iced vanilla coffee mostly to wake up but I loved it from...",
+        "author": "Janet E."
+      },
+      {
+        "text": "Hello Subterranean Coffee Shop La Jolla! After a successful run in North Park for many years, Subterranean Coffee has opened a small shop in La Jolla at the...",
+        "author": "Jack M."
+      },
+      {
+        "text": "Hard to find. But once you find it, there are some great vibes from the curated music to the chic wallpaper. Little decor touches like the record player and...",
+        "author": "Nancy I."
+      },
+      {
+        "text": "After walking the beautiful La Jolla Coast Trail and conquering the many steps in Sunny Jim's sea cave, we decided to check out this local coffee shop/cafe...",
+        "author": "Joy E."
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "name": "Sue’s Korean Kitchen",
+    "cuisine": "Korean",
+    "price": "$$",
+    "distance": 3.9,
+    "rating": 4.8,
+    "location": "San Diego",
+    "phone": "(858) 352-6511",
+    "hours": "Open until 8:00 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/d3TunuAWgr4uM0ebeUUTeQ/o.jpg",
+    "menuImages": [
+      "https://s3-media0.fl.yelpcdn.com/bphoto/d3TunuAWgr4uM0ebeUUTeQ/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/6BaKbou_XHBvRgcHCFidUA/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/sSENTnNola0EpIEMBrrL3Q/o.jpg"
+    ],
+    "reviews": [
+      {
+        "text": "The Kimbap is very authentic and tastes like home made perfection. The food is extremely well made with traditional ingredients, and the restaurant is...",
+        "author": "Katherine C."
+      },
+      {
+        "text": "While visiting San Diego for conference, I was craving Korean food early morning.  As this place was open at 10:30am, I decided to give it a shot.  \n\nSmall...",
+        "author": "Peter S."
+      },
+      {
+        "text": "I was in the area for work around Sorrento Valley, right on the border of Mira Mesa, and decided to grab some food to go. Ordered a bibimbap and...",
+        "author": "Amy K."
+      },
+      {
+        "text": "Cute little mom and pop shop. There isn't seating inside but there are some tables outside. Plenty of parking since it's in a large plaza.\n\nThey have a...",
+        "author": "Hanna Y."
+      },
+      {
+        "text": "I ADORE this small shop! Originally came here with my friend for silly reason due to the fact I shared names with this place but pleasantly surprised to...",
+        "author": "Su T."
+      },
+      {
+        "text": "Fast service, delicious casual Korean food and reasonable prices! This place had been on my radar for a long time in terms of must-try food spots in San...",
+        "author": "Michael L."
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "name": "Cafe 477",
+    "cuisine": "Cafes",
+    "price": "",
+    "distance": 0.6,
+    "rating": 4.8,
+    "location": "San Diego",
+    "phone": "(858) 300-7799",
+    "hours": "Open until 3:00 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/I1ZYKsCeQVp5vbTUYiKQZw/o.jpg",
+    "menuImages": [
+      "https://s3-media0.fl.yelpcdn.com/bphoto/I1ZYKsCeQVp5vbTUYiKQZw/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/WMXPIKFNWNR9FNhcpwk6hQ/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/kqEQESWiUV9qpu6_mEXwqg/o.jpg"
+    ],
+    "reviews": [
+      {
+        "text": "Good service, nice ambiance to study, and good drinks. Most of the drinks I have gotten here have been pretty satisfying.",
+        "author": "Sarah W."
+      },
+      {
+        "text": "Great little cafe hidden away inside some professional buildings at the corner of La Jolla Village Drive and Villa La Jolla Drive.\n\nTried the hot mocha with...",
+        "author": "Peter E."
+      },
+      {
+        "text": "Overall a good spot for grabbing a quick breakfast cafe food. The drinks and food were nothing to rave about but the ample table space and decor were nice....",
+        "author": "Alan S."
+      },
+      {
+        "text": "Typical coffee shop cafe. There was seating areas and a nice outdoor space. It was located in the middle of a shopping plaza on the second floor. Service...",
+        "author": "Linda S."
+      },
+      {
+        "text": "Cozy and clean!\n\nThis coffee shop is conveniently located near the shops and UCSD. I ordered a decaf vanilla latte-it was well balanced! The place itself...",
+        "author": "Zue D."
+      },
+      {
+        "text": "I do tend to check different coffee places every now and then and this one caught my eye. The coffee is very good, the atmosphere is relaxed, super friendly...",
+        "author": "Mauricio M."
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "name": "Quick Stop Grill",
+    "cuisine": "Food Trucks",
+    "price": "",
+    "distance": 9.8,
+    "rating": 4.8,
+    "location": "San Diego",
+    "phone": "(619) 715-9375",
+    "hours": "Open until 8:00 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/tAq6pi3TpQQ-E6ytVit5Mg/o.jpg",
+    "menuImages": [
+      "https://s3-media0.fl.yelpcdn.com/bphoto/tAq6pi3TpQQ-E6ytVit5Mg/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/vAUIwUkMYBbCO8Py5pHmuQ/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/D5GazJdfY3qICJRpehJImQ/o.jpg"
+    ],
+    "reviews": [
+      {
+        "text": "I found QSG at Escondido's Food Truck Fridays event.\n\nI ordered their loaded Fries (Chicken served over Seasoned Fries, topped with onions, bell peppers,...",
+        "author": "Marcus F."
+      },
+      {
+        "text": "Really good Mediterranean/Middle Eastern food truck! They came to visit Ventana Carlsbad and had a good variety of stuff to choose from. \nI got the loaded...",
+        "author": "Anne L."
+      },
+      {
+        "text": "Headed up to Civita park this evening for Tuesday food truck night and decided to give these guys a try. This place is wonderful. I ordered the loaded fries...",
+        "author": "Kim J."
+      },
+      {
+        "text": "These guys came to the Pumpkin Station farm location in Escondido for a few hours today, and I ordered the loaded fries for a quick meal on my employee...",
+        "author": "Emily R."
+      },
+      {
+        "text": "I ordered the falafel plate and gyro wrap to go and didn't realize how burnt the food was until I got home. The salad, rice and veggies were fine, but the...",
+        "author": "Kay E."
+      },
+      {
+        "text": "The food was really good in the person taking our order was really really nice. We got the loaded french fries a chicken gyro and two steak burritos and...",
+        "author": "Kristen G."
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "name": "Mary's Gourmet Salads",
+    "cuisine": "Salad",
+    "price": "$$",
+    "distance": 3.7,
+    "rating": 4.8,
+    "location": "La Jolla",
+    "phone": "(858) 703-0808",
+    "hours": "Open until 8:00 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/XWaryRj507ivJvks0FLHug/o.jpg",
+    "menuImages": [
+      "https://s3-media0.fl.yelpcdn.com/bphoto/XWaryRj507ivJvks0FLHug/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/dKBFoGAlGp_YzRnIN5Miww/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/Bo2PoOa29efyeNxtvPTv3Q/o.jpg"
+    ],
+    "reviews": [
+      {
+        "text": "All of their dressings seem healthy... no fillers. \n\nTheir salads are big and their extra large salads are amazingly big. \n\nI recommend this place if you...",
+        "author": "Arlene P."
+      },
+      {
+        "text": "I so want to love this place. This was actually the second time I've been here. I held off writing a review the first time because I had a not so great...",
+        "author": "Robyn S."
+      },
+      {
+        "text": "Update:\n\nI learned my beef was with Uber not Mary's Gourmet Salad. So I'd be grudgingly joined Uber one although I feel like it's extortion, this time I...",
+        "author": "Gary H."
+      },
+      {
+        "text": "This was an amazing salad. Everything was fresh and made to order. I will frequent this establishment again.",
+        "author": "Tallbrowngiraffe B."
+      },
+      {
+        "text": "Ok wow..... I came here because of all the raving yelp reviews but did not expect to love it this much!!! I didn't know salad could taste this good ahaha -...",
+        "author": "Shannon Z."
+      },
+      {
+        "text": "I ate there for the first time yesterday for lunch and had a delicious salad. I had the small one and it was plenty for lunch. Everything was fresh, just...",
+        "author": "Betsy B."
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "name": "El Cevichero",
+    "cuisine": "Food Trucks",
+    "price": "",
+    "distance": 5.6,
+    "rating": 4.8,
+    "location": "San Diego",
+    "phone": "(619) 622-4404",
+    "hours": "Open until 7:00 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/kyGzVHKPJ7RJakFnNn4AJQ/o.jpg",
+    "menuImages": [
+      "https://s3-media0.fl.yelpcdn.com/bphoto/kyGzVHKPJ7RJakFnNn4AJQ/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/43zIj3i6390Q639_MTSAfw/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/fdJwF5JYbsdYmqO5K1fS6A/o.jpg"
+    ],
+    "reviews": [
+      {
+        "text": "5 Stars - Worth Every Mile!\n\nWe drove 40 minutes just to try this hidden gem--and let me tell you, it was so worth it. Supporting small businesses is...",
+        "author": "Hailey H."
+      },
+      {
+        "text": "Amazing flavor and freshness.. was a bit skeptical because it's in the parking lot of a smog check place but man oh man I was pleasantly surprised. I got...",
+        "author": "Jamie A."
+      },
+      {
+        "text": "Baja fish tacos on a Tuesday are $8.99. This is an incredible value for these delicious full sized tacos and is a whole meal. Located in the lot of a gas...",
+        "author": "Glenn A."
+      },
+      {
+        "text": "Back again! And wow the fish tacos were good. Ramon is so nice and accommodating and the salsas are amazing. Definitely recommend.",
+        "author": "Harper M."
+      },
+      {
+        "text": "Best Mexican food in PB! Everything is fantastic on the menu, the specials are great and the ceviche is better than most places I've had in Mexico! Must eat...",
+        "author": "Gage B."
+      },
+      {
+        "text": "**February 2024: Sunday Afternoon**\n\nMy friend and I were on the hunt for some delicious Mexican food as one of my favorite trucks was no longer around....",
+        "author": "Irene Y."
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "name": "The Krispy Boyz",
+    "cuisine": "Tacos",
+    "price": "$",
+    "distance": 6.4,
+    "rating": 4.8,
+    "location": "San Diego",
+    "phone": "(619) 623-4845",
+    "hours": "",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/EWEqXT_uDFjzba5IJj2ZYQ/o.jpg",
+    "menuImages": [
+      "https://s3-media0.fl.yelpcdn.com/bphoto/EWEqXT_uDFjzba5IJj2ZYQ/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/zsCvkcLByHoHyC69hek9Jw/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/Xj2HcPCiixWzCsHR1J1PuQ/o.jpg"
+    ],
+    "reviews": [
+      {
+        "text": "Y'all! We experienced The Krispy Boyz at the Oceanside Farmer's Market and let me start out by saying... Oh Em Goodness!!!!\n\nThe \"Boyz\" have a fun,...",
+        "author": "Tiffany C."
+      },
+      {
+        "text": "A birria Mac and cheese taco?? Who knew it could be so good!\n\nThis is the epitome of cultures combining to make something so delicious only the melting pot...",
+        "author": "Luiza M."
+      },
+      {
+        "text": "Got their Quesabirria with Mac & Cheese because it sounded really unique. Honestly, not worth the price. It was just a small, soggy taco and I couldn't...",
+        "author": "Katherine K."
+      },
+      {
+        "text": "The Quesabirria and Quesabirria with Mac and cheese tacos??? It was enough to grab my attention. \n\nI checked out Krazy Boys at their pop up at Mira Mesa...",
+        "author": "Theodore U."
+      },
+      {
+        "text": "Their surf and turf taco might be the best taco I've ever had in my life... insanely delicious.",
+        "author": "kt b."
+      },
+      {
+        "text": "I'm picky when it comes to food, but this blew me away! The mac & cheese was creamy, cheesy, and perfectly seasoned, while the birria was tender, juicy, and...",
+        "author": "Lucey L."
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "name": "Tadian",
+    "cuisine": "Breakfast & Brunch",
+    "price": "$",
+    "distance": 3.0,
+    "rating": 4.8,
+    "location": "San Diego",
+    "phone": "(858) 453-5740",
+    "hours": "Open until 3:00 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/aJyli1ldMhG9OaEHg0vjOQ/o.jpg",
+    "menuImages": [
+      "https://s3-media0.fl.yelpcdn.com/bphoto/aJyli1ldMhG9OaEHg0vjOQ/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/oT2Q6iMh09keEMzjgiIEYw/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/GsKcUmGGYp4xmvyCGuModQ/o.jpg"
+    ],
+    "reviews": [
+      {
+        "text": "Found this place close to my work on Yelp. I've tried 2 sandwiches on the menu and I have to say that they were both fantastic. I saw an earlier review...",
+        "author": "Yung K."
+      },
+      {
+        "text": "everyone is tripping i dont know how this has 5 stars. 10 dollars for a terrible excuse for a burrito, like cheap store bought flour tortillas, dry, egg is...",
+        "author": "Noah P."
+      },
+      {
+        "text": "Meh. What else can I say, really?\nThe sandwiches were passable.\nThe decor was passable.\nThe service was passable (they also got confused on my order somehow).",
+        "author": "Brad T."
+      },
+      {
+        "text": "I came here on a Monday for lunch after seeing all of the great reviews. You would order your lunch at the counter and the Chipotle Turkey Sandwich caught...",
+        "author": "Michael H."
+      },
+      {
+        "text": "What a gem?!? This is one of the tastiest sandos I've had in a long time! The flavors were great. The bread was fresh, soft and toasted. This little mom and...",
+        "author": "Robyn S."
+      },
+      {
+        "text": "What an unexpected hit. I was coming from a doctors appointment and wanted a sandwich and yelped this place. I love how flavorful each option of their...",
+        "author": "Alan S."
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "name": "Soma Cafe & Deli",
+    "cuisine": "Cafes",
+    "price": "",
+    "distance": 1.7,
+    "rating": 5.0,
+    "location": "San Diego",
+    "phone": "(858) 453-1400",
+    "hours": "Open until 2:30 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/FHupF_SWNaGny9RO-NMN1A/o.jpg",
+    "menuImages": [
+      "https://s3-media0.fl.yelpcdn.com/bphoto/FHupF_SWNaGny9RO-NMN1A/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/M_9gaKJFX2HoYVMeUzsXXw/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/y2BsIrmoYVHpW5GO1yXnjA/o.jpg"
+    ],
+    "reviews": [
+      {
+        "text": "Had a very nice experience here.  Stopped in for a late lunch and was greeted by a nice gent with a nice smile.  I asked what his favorite item was and he...",
+        "author": "Sandra G."
+      },
+      {
+        "text": "Have had a number of great meals here.  Food is fantastic and great and friendly service.  Under new ownership since COVID, and we're really liking have...",
+        "author": "Drew J."
+      },
+      {
+        "text": "Seriously love this place!\n\nThe food is always hot and fresh. The staff are so friendly and kind. Such a good variety of vegetarian items (my fave right now...",
+        "author": "Megan C."
+      },
+      {
+        "text": "Very convenient location, nice little place with easy parking and good food.  Recommend",
+        "author": "Re M."
+      },
+      {
+        "text": "",
+        "author": ""
+      },
+      {
+        "text": "",
+        "author": ""
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "name": "Havana Kitchen",
+    "cuisine": "Cuban",
+    "price": "$$",
+    "distance": 3.4,
+    "rating": 4.8,
+    "location": "La Jolla",
+    "phone": "(858) 215-5848",
+    "hours": "Open until 8:00 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/7antrhdR8EuOBFdxGnQPbA/o.jpg",
+    "menuImages": [
+      "https://s3-media0.fl.yelpcdn.com/bphoto/7antrhdR8EuOBFdxGnQPbA/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/6rRqzhW65aZA8YbL5CRHWA/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/Fpu0VZcFLdTc8I3SScl1dA/o.jpg"
+    ],
+    "reviews": [
+      {
+        "text": "Havana kitchen is a must when coming to La Jolla! We started with the Ropa Vieja, steak grill sandwich and a carafe of the white sangria. Everything was...",
+        "author": "Sergio I."
+      },
+      {
+        "text": "yum Yum Yum! I'm so glad I tried this place because the entire meal was delicious. I came in yesterday around dinner time and they weren't busy at all,...",
+        "author": "Calixta E."
+      },
+      {
+        "text": "This place is such a hidden gem. I'm so glad I went to this place. Ever since my partner and I have eaten here, we've been back so many times. This is...",
+        "author": "Kevin T."
+      },
+      {
+        "text": "We swung by Havana Kitchen for a weekday lunch and somehow had the whole place to ourselves, like our own private Cuban hideout. Chill vibes, no rush, just...",
+        "author": "Elizabeth M."
+      },
+      {
+        "text": "Seems like this is a delicious hidden gem in Torrey Pines that been around for a little over a year now.\n\nThe small parking lot for this restaurant is...",
+        "author": "Mark F."
+      },
+      {
+        "text": "Who knew Cuban food was this delicious?!?  \n\nStopped in for a late breakfast on a Saturday morning. The place was empty but as soon as we got our food the...",
+        "author": "Michelle F."
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "name": "Swiss Grill",
+    "cuisine": "Food Trucks",
+    "price": "$$",
+    "distance": 12.2,
+    "rating": 4.7,
+    "location": "San Marcos",
+    "phone": "(760) 274-4947",
+    "hours": "",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/Bt03H5KKoiEBNhhJo2inig/o.jpg",
+    "menuImages": [
+      "https://s3-media0.fl.yelpcdn.com/bphoto/Bt03H5KKoiEBNhhJo2inig/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/QWANipyAH5U1VSWiGTbMVw/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/0JR8rPvK-URup8dVrvtlMA/o.jpg"
+    ],
+    "reviews": [
+      {
+        "text": "Dal and Daniel at Swiss Grill Gourmet Rotisserie, the food they make, their overall service delivery, and the way they make customers feel welcomed is top...",
+        "author": "Adam G."
+      },
+      {
+        "text": "Ohhh baby this place is money!!\n\nMy wife and I were checking out a little farmers market while we were staying at the Welk Resort in Escondido. We walked...",
+        "author": "Jordon S."
+      },
+      {
+        "text": "So happy to see Swiss Grill once again! Still the same high quality food and the same level of deliciousness! The sausage, chicken and pork ribs were...",
+        "author": "randy h."
+      },
+      {
+        "text": "Swiss Grill is Back! After a health issue these guys are back and better than ever! Their chicken is AMAZING but I was also BLOWN AWAY with their ribs....",
+        "author": "David H."
+      },
+      {
+        "text": "Love this business! All the choices are delicious and well prepared with perfect seasoning. Today I had the half chicken, 2 rib, coleslaw and veggi combo....",
+        "author": "Lynn H."
+      },
+      {
+        "text": "Found at the Welk Farmers' Market ( Every Monday 3-7 PM).\n\nOne of the busiest food options at this farmers' market is Rollswisserie. Their rotating spits of...",
+        "author": "Marcus F."
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "name": "The Craft Taco at SOVA",
+    "cuisine": "Tacos",
+    "price": "$$",
+    "distance": 2.3,
+    "rating": 4.7,
+    "location": "San Diego",
+    "phone": "(858) 345-1042",
+    "hours": "Open until 8:00 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/8U3fE-55cbQXnBVjLtYb3w/o.jpg",
+    "menuImages": [
+      "https://s3-media0.fl.yelpcdn.com/bphoto/8U3fE-55cbQXnBVjLtYb3w/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/jjn1zGOtT0Q8U-RQKkMHOw/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/nhg4QvzTFUF9YXctSlQK5Q/o.jpg"
+    ],
+    "reviews": [
+      {
+        "text": "First time here and honestly first time writing a review. A solid taco spot with decent prices but good drink prices. Def recommend as Al pastor tacos are...",
+        "author": "Alberto M."
+      },
+      {
+        "text": "The food is always delicious! Service is incredibly personal and professional at the same time. The ambiance is also a great mix of modern and rustic....",
+        "author": "Jaysen R."
+      },
+      {
+        "text": "We ordered food here before we headed to New English Brewery. \nOrdered on the kiosk near the front door. Super easy. \nThe street taco plate was perfect. Got...",
+        "author": "Ryan S."
+      },
+      {
+        "text": "Discovered this place by accident today. It's in the middle of nowhere so not exactly the most convenient except for the businesses around the corner from...",
+        "author": "Sara S."
+      },
+      {
+        "text": "Delicious food with super friendly service!! I've been here twice now, and have had a great experience each time. The meat on the tacos are flavorful and...",
+        "author": "Theresa L."
+      },
+      {
+        "text": "This place is an absolute hidden gem.   Excellent tacos, great selection.  Perfect for quiet place to quickly grab dinner after work or a quick lunch around...",
+        "author": "Jeremy A."
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "name": "Pizza Trolley",
+    "cuisine": "Food Trucks",
+    "price": "",
+    "distance": 17.5,
+    "rating": 4.7,
+    "location": "Carlsbad",
+    "phone": "(760) 402-7717",
+    "hours": "Open until 6:00 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/UGqexfnAPptaWDQrq14p0A/o.jpg",
+    "menuImages": [
+      "https://s3-media0.fl.yelpcdn.com/bphoto/UGqexfnAPptaWDQrq14p0A/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/W31UU0C57AfvRGbPZ2FSJg/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/djsigXWpBChOYC-butdz1A/o.jpg"
+    ],
+    "reviews": [
+      {
+        "text": "My family and I visited the Flower Gardens and stumbled upon the Pizza Trolley. We ordered three pepperoni pizzas, Italian Sub, and a Kids Meal. This fed 4...",
+        "author": "Jill K."
+      },
+      {
+        "text": "Best Pizza in San Diego!!! We had cheese, margherita, pepperoni, Italian Sandwich, and hot dogs. The sauce and crust is perfect! The scenery is amazing. The...",
+        "author": "Sarah C."
+      },
+      {
+        "text": "Pizza Trolly food truck was at the Flower Fields. My niece wanted pizza, and I wanted nachos from a different truck. We each ordered what we wanted and then...",
+        "author": "Michelle D."
+      },
+      {
+        "text": "Billy and Chapman are legends. Best pizza I've had on the west coast, and they're holding down the flower garden. Best dudes ever.\nThanks again guys",
+        "author": "Cameron P."
+      },
+      {
+        "text": "I love the Pizza Trolley! The food is consistently great and it doesn't take long at all to come out. The owner Chapman, and his team, are always super...",
+        "author": "Leilani L."
+      },
+      {
+        "text": "Such a gem! Cute little trolley parked outside New Motion, serving 10 inch pizzas and salads. Each pizza was $10 and comes with 4 slices, perfect for 1...",
+        "author": "Sharon L."
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "name": "Pamir Kabob House",
+    "cuisine": "Afghan",
+    "price": "$$",
+    "distance": 3.6,
+    "rating": 4.7,
+    "location": "La Jolla",
+    "phone": "(858) 352-6670",
+    "hours": "Open until 9:00 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/EjYVK03Ih2sgo8fG9kTLIw/o.jpg",
+    "menuImages": [
+      "https://s3-media0.fl.yelpcdn.com/bphoto/EjYVK03Ih2sgo8fG9kTLIw/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/laZk6PvkU8l1XSKxNj-qaA/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/D6vCsM0432rMKHplRvZ9uA/o.jpg"
+    ],
+    "reviews": [
+      {
+        "text": "This place is a hidden treasure, a little off the beaten beach path and not too far from the CVS. We initially came here because Yelp said they had outdoor...",
+        "author": "Sharon Y."
+      },
+      {
+        "text": "Lovely Afghan restaurant. Owner was super nice.\n\nNo wait on a Wednesday at 7pm.\n\nTotal $85.90 (including tip) for dinner for 2.\n\n* Borta $8.95 - 3 stars....",
+        "author": "Ziyan C."
+      },
+      {
+        "text": "Came here on a whim because we have seen it often. We ordered the grape leaves, the mango lassi, and the tandoori chicken kebab as well as the mantu...",
+        "author": "Anna H."
+      },
+      {
+        "text": "YUM!!!!!  I would give them 10 stars if I could!  Great ambience, service and food!  This is true homemade Afghani food. It's not bland or over spicy, it's...",
+        "author": "Debby L."
+      },
+      {
+        "text": "I had such a delicious lunch here! The food is fresh and full of flavor. Chicken kabob lunch special was bomb, and we got naan bread that came with a few...",
+        "author": "Acasia V."
+      },
+      {
+        "text": "First time trying Afghan food and it  was absolutely delicious. We met the owner who practically runs the place (greets you, takes your order, etc)  she was...",
+        "author": "Vanessa G."
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "name": "Gata",
+    "cuisine": "Wine Bars",
+    "price": "",
+    "distance": 3.2,
+    "rating": 4.7,
+    "location": "San Diego",
+    "phone": "(858) 336-5550",
+    "hours": "Open until 12:00 AM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/vHtxHZwZ071YtXyg1VIPOQ/o.jpg",
+    "menuImages": [
+      "https://s3-media0.fl.yelpcdn.com/bphoto/vHtxHZwZ071YtXyg1VIPOQ/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/rplzpKP9Rz5W_kNabsnRdw/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/8ijPilkuQXSYAox9q8Xd3A/o.jpg"
+    ],
+    "reviews": [
+      {
+        "text": "Gata is a new wine bar that has opened up in the Village of La Jolla. It not only has great wine, but amazing food as well. I have been a few times now and...",
+        "author": "Lynn Y."
+      },
+      {
+        "text": "Gata is a new wine bar in the village of La Jolla that is a couple of doors to the west of the US Post Office. I believe it may have the same ownership as...",
+        "author": "Emmett T."
+      },
+      {
+        "text": "Lovely service, delicious wine, tasty menu, chill ambiance (and no TVs, delightfully!). This is my new favorite place to grab a drink at the end of the day....",
+        "author": "Chelle J."
+      },
+      {
+        "text": "At a wine bar, you'd expect an interesting wine selection. It lacked both quality and variety. It feels more like just a bar. The staff was very friendly.",
+        "author": "Ruud V."
+      },
+      {
+        "text": "We had such a great experience! Don was lovely and we enjoyed meeting the staff. This is such a great spot especially for locals and just what La Jolla...",
+        "author": "Catherine E."
+      },
+      {
+        "text": "Just what La Jolla needed! A fantastic date spot to get away from the usual thing. Having met the owner and GM, it is obvious that they have a vision. If...",
+        "author": "Jim R."
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "name": "Kuljem Chicken & Beer",
+    "cuisine": "Korean",
+    "price": "$$",
+    "distance": 1.8,
+    "rating": 4.7,
+    "location": "San Diego",
+    "phone": "(858) 230-6496",
+    "hours": "Open until 2:00 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/V4mxrk3Jf8P_p2q1YCe_bQ/o.jpg",
+    "menuImages": [
+      "https://s3-media0.fl.yelpcdn.com/bphoto/V4mxrk3Jf8P_p2q1YCe_bQ/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/ALjtyiRrGwUv5P2BB7yNxw/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/IQAMdEUA3gpWEyuc0k7x0Q/o.jpg"
+    ],
+    "reviews": [
+      {
+        "text": "I'd come back any time for the kimchi pasta\nThe bulgogi fries were the best part of the meal!!!",
+        "author": "Annie V."
+      },
+      {
+        "text": "Loved it here! The food was so amazing, the service was quick, and I felt super satisfied after. The Honeyjam and Saigon chicken are a must try they were...",
+        "author": "Joshua K."
+      },
+      {
+        "text": "in love with all the food items especially the kimchi pasta and the bulgogi fries!!!!",
+        "author": "Jeanie V."
+      },
+      {
+        "text": "Honestly a solid korean fried chicken place.\n\nThe chicken was cooked really well and was moist. The breading was super light and crispy. The flavors we got...",
+        "author": "Katie L."
+      },
+      {
+        "text": "This is a really good Korean fried chicken spot located close to UTC in its own shopping center.\n\nWe ordered the Combo 3 which feeds 4-6 people and comes...",
+        "author": "Rodley C."
+      },
+      {
+        "text": "I was able to try the Combo 3 and the bulgogi fried rice which was a good amount of food.\nWe went with the tteokbokki and cheese sticks \nThe tteokbokki had...",
+        "author": "Gian D."
+      }
+    ]
+  },
+  {
+    "id": 41,
+    "name": "Carmel Sushi",
+    "cuisine": "Korean",
+    "price": "$$",
+    "distance": 3.0,
+    "rating": 4.7,
+    "location": "San Diego",
+    "phone": "(858) 755-3130",
+    "hours": "Open until 9:30 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/nvvPNPSnjrytTg6gShou8g/o.jpg",
+    "menuImages": [
+      "https://s3-media0.fl.yelpcdn.com/bphoto/nvvPNPSnjrytTg6gShou8g/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/na7EfZFlTV7jbato4UZ-kA/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/XiwxPiyp-mVUkargfXYhFA/o.jpg"
+    ],
+    "reviews": [
+      {
+        "text": "The undo soup base is awesome, my family love the ban Chan dishes too! The service is really nice, and the decor of the restaurant is so cute!! I strongly...",
+        "author": "Yuyan X."
+      },
+      {
+        "text": "We arrived at 11:45 AM on a Friday.  Plenty of parking at this plaza.  \n\nThe restaurant was still not so busy so we were greeted and sat down at a table...",
+        "author": "Krajicek K."
+      },
+      {
+        "text": "The hot tea is delicious as is the miso soup. I had the curry chicken which was tasty and unique. My son loves the curry and regular tonkatsu. \n\nThe service...",
+        "author": "Margo C."
+      },
+      {
+        "text": "FOOD POISONING ALERT! Recently went to the hospital for 3 days due to undercooked chicken from takeout from this restaurant and recommend avoiding!\n\nWe had...",
+        "author": "Matt S."
+      },
+      {
+        "text": "Quick and easy sushi+japanese fix!  They have sushi, katsu curry, ramen and other items.  Good quality and fast service.  Definitely a gem in Carmel Valley/...",
+        "author": "Alexys -."
+      },
+      {
+        "text": "My husband and I were in the area and in the mood for sushi. We saw reviews and tried this place out and it was great! Attentive staff and delicious and...",
+        "author": "Cierra G."
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "name": "moment sushi",
+    "cuisine": "Japanese",
+    "price": "",
+    "distance": 2.0,
+    "rating": 4.7,
+    "location": "San Diego",
+    "phone": "(858) 230-6268",
+    "hours": "Open until 2:30 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/l1p2txzv8lM--MDFzbDtpQ/o.jpg",
+    "menuImages": [
+      "https://s3-media0.fl.yelpcdn.com/bphoto/l1p2txzv8lM--MDFzbDtpQ/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/Z3QBtPyJoBluAPsNUhJbXg/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/S0fYCpcayq9im6jvE4Mqug/o.jpg"
+    ],
+    "reviews": [
+      {
+        "text": "Best sushi I have ever had, including in Japan! It's expensive though. Go for a birthday so they bring out the singing bear for you.",
+        "author": "Louisa T."
+      },
+      {
+        "text": "We came here without a reservation so we were only able to sit at the bar. So note that if you want a table, make sure to make a reservation. We came in and...",
+        "author": "Nancee T."
+      },
+      {
+        "text": "I was stopping by San Diego for a short time, but wanted to grab some sushi with my parents before my flight! Moment sushi was one of the few places that...",
+        "author": "Megan H."
+      },
+      {
+        "text": "we had moment sushi bookmarked for a while as we drive by there all the time, we finally made it in!!! and spoiler alet, we have added to our list of...",
+        "author": "Cesar C."
+      },
+      {
+        "text": "Delicious! I loved the feel and ambiance at Moment Sushi, it's a simplistic light and airy feel and there were dining bubbles out on the patio. It was...",
+        "author": "Swan L."
+      },
+      {
+        "text": "Fresh, delicious sushi with great vibes! Moment Sushi offers a solid selection of classic and creative rolls, all made with fresh, high-quality fish. The...",
+        "author": "Hang V."
+      }
+    ]
+  },
+  {
+    "id": 43,
+    "name": "American Pizza Manufacturing",
+    "cuisine": "Pizza",
+    "price": "",
+    "distance": 3.9,
+    "rating": 4.7,
+    "location": "La Jolla",
+    "phone": "(858) 246-6756",
+    "hours": "Open until 8:30 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/O9cZtT0wVt8PXIrUu_ZXoA/o.jpg",
+    "menuImages": [
+      "https://s3-media0.fl.yelpcdn.com/bphoto/O9cZtT0wVt8PXIrUu_ZXoA/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/YXOTr-tGYbHnxsFNK07v8Q/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/dFUY25nAmSdkFNl_I7yqSA/o.jpg"
+    ],
+    "reviews": [
+      {
+        "text": "Once again, I have to rate this place a total 10/10. Second time here and I have nothing but compliments for the owner, staff, and quality of food. Andrew...",
+        "author": "Nico Z."
+      },
+      {
+        "text": "20/10. Excellent, actually outstanding customer service, delicious pizza, wine, giant cookie and in a location that just can't be beat. Couldn't ask for...",
+        "author": "Haley H."
+      },
+      {
+        "text": "Delicious pizza. And, as usual, it's very much about the crust.  Never had a take-n-bake with a crust better than in-house pizza, but this one accomplished...",
+        "author": "S. O."
+      },
+      {
+        "text": "Great food. Fun to take and bake. Truly nice people running this place. Hidden gem hiding in plain sight.",
+        "author": "David C."
+      },
+      {
+        "text": "This shop offers take and bake homemade pizzas, which makes a wonderful, unique experience - perfect for a date night, girls gathering, or family pizza...",
+        "author": "Molly G."
+      },
+      {
+        "text": "A Must Try! American Pizza Mfg is a Take and Bake Pizza establishment -you order one of their signature pies (or create your own pie with whatever...",
+        "author": "Robyn C."
+      }
+    ]
+  },
+  {
+    "id": 44,
+    "name": "Empanada Kitchen",
+    "cuisine": "Breakfast & Brunch",
+    "price": "",
+    "distance": 3.8,
+    "rating": 4.7,
+    "location": "San Diego",
+    "phone": "(858) 732-0023",
+    "hours": "Open until 9:00 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/bk9ikdvnPjfwvPLgOblZtQ/o.jpg",
+    "menuImages": [
+      "https://s3-media0.fl.yelpcdn.com/bphoto/bk9ikdvnPjfwvPLgOblZtQ/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/_vzDdKqZsYNSph0nXp2Gpw/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/HGajYor7Q0WiMjaU-p1xmg/o.jpg"
+    ],
+    "reviews": [
+      {
+        "text": "The empanadas tasted great I love the beef. The chili choir sauce was a great mix not too spicy. The service was fast and the cashier person was very...",
+        "author": "Rhonda F."
+      },
+      {
+        "text": "Homemade visiting a \"Tia\" vibes, great service! I tried a soup and empanadas they were both delicious. \nIf you stay away from deep fried foods then don't...",
+        "author": "Eveline G."
+      },
+      {
+        "text": "Great tasting & filling empanadas, one of the best I've had. My favorite is the lamb, it's hard to find good lamb anywhere but here their lamb is very good....",
+        "author": "Andy M."
+      },
+      {
+        "text": "Empanada Kitchen is a great empanada spot offering a 3 for $11 special. I ordered catering for a large group, and they provide quick delivery. The...",
+        "author": "Julie B."
+      },
+      {
+        "text": "Quaint little shop, took 12 empanadas to-go. The food was good, reheated in the airfryer - don't made dinner super simple. 4 stars because the parking...",
+        "author": "Ashley A."
+      },
+      {
+        "text": "There's a bunch of different eateries on Pearl Street, but there was no line and no waiting at the Empanada Kitchen on a Sunday evening. We enjoyed all of...",
+        "author": "Annabelle R."
+      }
+    ]
+  },
+  {
+    "id": 45,
+    "name": "Smallgoods Cheese Shop & Cafe",
+    "cuisine": "Cheese Shops",
+    "price": "$$",
+    "distance": 3.8,
+    "rating": 4.7,
+    "location": "La Jolla",
+    "phone": "(858) 886-7217",
+    "hours": "Open until 5:00 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/rbFlIOiu2eXJyteS4BplSg/o.jpg",
+    "menuImages": [
+      "https://s3-media0.fl.yelpcdn.com/bphoto/rbFlIOiu2eXJyteS4BplSg/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/p65d9Ky_IdM90SoIpoN27Q/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/oFBHo7rsMvi59CudhYt8GA/o.jpg"
+    ],
+    "reviews": [
+      {
+        "text": "Many businesses have come and gone on this street, i know small goods is here to stay. \n\nHigh quality, local ingredients, nicely set up shop. \n\nThe...",
+        "author": "Alex D."
+      },
+      {
+        "text": "I've started coming here more often for my team because the sandwiches are made with quality ingredients and it seems really healthy.\n\nIn one of my large...",
+        "author": "Lene V."
+      },
+      {
+        "text": "The best sandwiches and the most delicious strong, smooth coffee. The customer service was exceptional. Cute little cheese and sandwich. Shop in La Jolla....",
+        "author": "Rita S."
+      },
+      {
+        "text": "We love supporting a small business especially when you are face to face with the owners everyday. Jenn and Mike make our community whole with their quality...",
+        "author": "Morgan B."
+      },
+      {
+        "text": "https://studio.youtube.com/video/Qxjh1mF9Xps/edit\n\nCheck out my little video of the charcuterie platter.\n\nWe just moved to La Jolla and are having so much...",
+        "author": "Cat N."
+      },
+      {
+        "text": "Brie & ham sandwich is unreal!!! The owner is sweet and offered some samples of the cheeses too. Place is super fast, cute, and has all local ingredients....",
+        "author": "Danielle G."
+      }
+    ]
+  },
+  {
+    "id": 46,
+    "name": "Inferno Woodfired Kitchen",
+    "cuisine": "Food Trucks",
+    "price": "$$",
+    "distance": 20.6,
+    "rating": 4.7,
+    "location": "Vista",
+    "phone": "(760) 805-8024",
+    "hours": "Open until 10:00 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/NsIrw9YVbq2XAAP_pxPkNA/o.jpg",
+    "menuImages": [
+      "https://s3-media0.fl.yelpcdn.com/bphoto/NsIrw9YVbq2XAAP_pxPkNA/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/HFPvzjYqBDt_VqTtb5P0vg/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/TD665QDU-XLZQhADrWttnA/o.jpg"
+    ],
+    "reviews": [
+      {
+        "text": "Scott and his team catered my sister's surprise 30th birthday party, and the pizza was absolutely phenomenal! Scott was a pleasure to work with leading up...",
+        "author": "Jason E."
+      },
+      {
+        "text": "I wish we could give Inferno more than five stars. Inferno was one of the first vendors we hired for our wedding, and Scott really set the tone. He was...",
+        "author": "Alyson D."
+      },
+      {
+        "text": "The text message screenshots speak for themselves. Not worth the price, not accommodating, and very disappointing. Go elsewhere especially for a fancy event!",
+        "author": "Tatjana G."
+      },
+      {
+        "text": "I wish I could give Scott and his team 10 starts instead of 5. Not only was he easy to work with before the date, but he showed up when he said he would,...",
+        "author": "Allyson R."
+      },
+      {
+        "text": "We got to try these guys out at Barrel Harbor Brewery.  They trailer in their wood fired oven, set out their dough and make whatever you want off their...",
+        "author": "Mark D."
+      },
+      {
+        "text": "Scott and his team are absolutely amazing. \nThey used to regularly stop at the Camden Old Creek apartments in San Marcos before the pandemic. They recently...",
+        "author": "Kim S."
+      }
+    ]
+  },
+  {
+    "id": 47,
+    "name": "Taquizas Los Chuchys",
+    "cuisine": "Caterers",
+    "price": "$$",
+    "distance": 19.7,
+    "rating": 4.7,
+    "location": "Chula Vista",
+    "phone": "(619) 649-1997",
+    "hours": "Open until 6:00 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/9c6oJC-YLk72kFrvMaDTzg/o.jpg",
+    "menuImages": [
+      "https://s3-media0.fl.yelpcdn.com/bphoto/9c6oJC-YLk72kFrvMaDTzg/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/YN62-xQ5pnkMUXtus5fo_w/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/lmBWwcwINvhpFAGCO7E8oQ/o.jpg"
+    ],
+    "reviews": [
+      {
+        "text": "Phenomenal. They just catered our event for about 200 people. The experience was fantastic from start to finish.\n\nCustomer service: Communication was...",
+        "author": "Kiki T."
+      },
+      {
+        "text": "TLC was AMAZING!! They catered our son's 25th birthday and couldn't recommend them enough. Tasty tacos and all the fixings and we are picky when it comes to...",
+        "author": "Melissa G."
+      },
+      {
+        "text": "What an impressive catering service! Some of the best Mexican food I've ever had, and I lived in Baja for 10 months!\n\nI've worked at a lot of events that...",
+        "author": "Nathaniel A."
+      },
+      {
+        "text": "We recently attended an event at Santee Lakes that was catered by Taquizas Los Chuchys. The food was fantastic.\n\nOn the menu: Tacos! Al Pastor, Pollo and...",
+        "author": "Pete T."
+      },
+      {
+        "text": "Had employee appreciation day at work today. Taquizas Los Chuchys crew pulled up and started putting their canopy up and grilling station. They had a table...",
+        "author": "Khamphone K."
+      },
+      {
+        "text": "Okay so this past weekend we stumbled upon this taco place..however I can't check in because the address is not in Chula Vista ,and it is NOt in National...",
+        "author": "Senia O."
+      }
+    ]
+  },
+  {
+    "id": 48,
+    "name": "Ridgewalk Social",
+    "cuisine": "Burgers",
+    "price": "",
+    "distance": 0.5,
+    "rating": 4.7,
+    "location": "La Jolla",
+    "phone": "(858) 412-3212",
+    "hours": "Open until 9:00 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/ZlPjBD5nwFtEY8xBbKOVvw/o.jpg",
+    "menuImages": [
+      "https://s3-media0.fl.yelpcdn.com/bphoto/ZlPjBD5nwFtEY8xBbKOVvw/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/ffcXahLTlFXn_Zfn5f8odQ/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/KpKWklxPLJ1IeU3XNV_04w/o.jpg"
+    ],
+    "reviews": [
+      {
+        "text": "Loved the Baja Chicken Wrap. The fries weren't my favorite; they were too starchy(?) and not crispy.\n\nPortion size is great for the price. This was less...",
+        "author": "Sarah N."
+      },
+      {
+        "text": "Favorite food spot at UCSD! My favorites are the Brussel Sprout Chicken Wrap and the House Salad. Big food portions and one of the only places that serves...",
+        "author": "Holly R."
+      },
+      {
+        "text": "The food was mediocre. Wasn't super high quality, kind of oily. $15 for chicken and fries. \n\nService and atmosphere were good enough.",
+        "author": "Jacob L."
+      },
+      {
+        "text": "ok so i stopped by here for some lunch before my classes. i ordered the RS burger. took a bit to come out but it was pretty busy so i can't complain bout...",
+        "author": "Eric C."
+      },
+      {
+        "text": "At UCSD Liontree Arena, fresh cut french fries, chicken tenders ask for bbq sauce it comes with 4 chicken tenders, fries, buffalo sauce, ranch....",
+        "author": "Jody S."
+      },
+      {
+        "text": "Cozy little spot next to RIMAC that serves burgers and wraps. I got a Baja chicken wrap last time I visited and it was loaded with flavor. Price isn't too...",
+        "author": "Andrew C."
+      }
+    ]
+  },
+  {
+    "id": 49,
+    "name": "Simply Fresh",
+    "cuisine": "Sandwiches",
+    "price": "$",
+    "distance": 11.4,
+    "rating": 4.7,
+    "location": "San Diego",
+    "phone": "(858) 337-6993",
+    "hours": "Open until 9:00 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/bVp9PfZ4BACjelOjJMqf7g/o.jpg",
+    "menuImages": [
+      "https://s3-media0.fl.yelpcdn.com/bphoto/bVp9PfZ4BACjelOjJMqf7g/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/02BFaIqdp-CE7rj373JtoA/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/JQy29Dm5jYF5F8DMr6OPVA/o.jpg"
+    ],
+    "reviews": [
+      {
+        "text": "What I liked:\n\nDelicious dish with pulled pork - the meat was tender and well separated, and rice perfectly complemented the taste\n\nVariability of choice -...",
+        "author": "Gale H."
+      },
+      {
+        "text": "I discovered Simply Fresh at Helix Brewery in La Mesa on a friend's recommendation, and their creative take on the Cubano completely won me over. While not...",
+        "author": "Elliot C."
+      },
+      {
+        "text": "Worth every penny! absolutely delicious.  Highly recommend their chicken caesar wrap.  out of this world delicious.  Hoping to see them in North county.   I...",
+        "author": "Marlena R."
+      },
+      {
+        "text": "Tried this truck out while they were parked at UCSD. I ordered the Cuban panini and it was delicious! Paid 16$ with tax and I wasn't expecting such huge...",
+        "author": "Luigi C."
+      },
+      {
+        "text": "Food is great and everyone is super friendly.  Give them a shot.  I've tried a few things and haven't been disappointed.",
+        "author": "Andrew B."
+      },
+      {
+        "text": "Simply Fresh has once again exceeded my expectations. Last time I got their food I went with the chicken cesar wrap and it was the BEST wrap of my life. I...",
+        "author": "Ellie M."
+      }
+    ]
+  },
+  {
+    "id": 50,
+    "name": "Copa Vida",
+    "cuisine": "Coffee & Tea",
+    "price": "$",
+    "distance": 1.1,
+    "rating": 4.7,
+    "location": "San Diego",
+    "phone": "(858) 812-5558",
+    "hours": "Open until 3:00 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/mgv9PX1gGp1Qp7Iejfrp_A/o.jpg",
+    "menuImages": [
+      "https://s3-media0.fl.yelpcdn.com/bphoto/mgv9PX1gGp1Qp7Iejfrp_A/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/vzkMRe94COZSOQnvoe1yDA/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/wILr5bg65_CLeep88qRfEQ/o.jpg"
+    ],
+    "reviews": [
+      {
+        "text": "The aesthetic, vibes, ambience, and coffee are phenomenal here. Truly a hidden gem. I lived near here for a while, and didn't even know it was here. So glad...",
+        "author": "Mark R."
+      },
+      {
+        "text": "The coffee and cake here are just ok ok but close to business center, very convenient.",
+        "author": "Silvia L."
+      },
+      {
+        "text": "Love this restaurant. Great place to relax and have great food. The service is amazing and it's very tucked into trees.",
+        "author": "Negar T."
+      },
+      {
+        "text": "Hidden coffee shop gem that is beautiful and very clean! My friend and I wanted to inquire about holding an event there and the barista had their manager...",
+        "author": "Lynn K."
+      },
+      {
+        "text": "I can't believe I haven't been here sooner! \n\nDrinks/Food: I had a matcha latte with simple syrup that wasn't the best I've ever had, but was still pretty...",
+        "author": "Tina D."
+      },
+      {
+        "text": "Hey folks. I'm unable to review any Archdale NC fare since I am in San Diego again. So let's talk about Copa Vida for a minute. Needless to say it is...",
+        "author": "Barry B."
+      }
     ]
   }
 ]
