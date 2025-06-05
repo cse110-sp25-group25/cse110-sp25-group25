@@ -97,7 +97,7 @@ function showOptions(type) {
     updateProgressBar();
   }
 }
-
+let selectedRating = null;
 // Event listener for DOMContentLoaded to initialize the filter options
 
 document.addEventListener('DOMContentLoaded', async () => {
@@ -115,7 +115,21 @@ document.addEventListener('DOMContentLoaded', async () => {
       btn.textContent = cuisine;
       cuisineGrid.appendChild(btn);
     });
+  }   
+  const stars = document.querySelectorAll('#star-rating .star');
 
+  stars.forEach(star => {
+    star.addEventListener('click', () => {
+      selectedRating = parseInt(star.getAttribute('data-value'));
+      updateStarDisplay(selectedRating);
+    });
+  });
+ 
+  function updateStarDisplay(rating) {
+    stars.forEach(star => {
+      const value = parseInt(star.getAttribute('data-value'));
+      star.src = value <= rating ? 'assets/star-icon.png' : 'assets/dark-star-icon.png';
+    });
   }
   
   // Set up event listeners for filter buttons
@@ -184,31 +198,12 @@ function confirmSelection(type) {
       return;
     }
   }
-  
-  let selectedRating = null;
-  const stars = document.querySelectorAll('#star-rating .star');
 
-  stars.forEach(star => {
-    star.addEventListener('click', () => {
-      selectedRating = parseInt(star.getAttribute('data-value'));
-      updateStarDisplay(selectedRating);
-    });
-  });
- 
-  function updateStarDisplay(rating) {
-    stars.forEach(star => {
-      const value = parseInt(star.getAttribute('data-value'));
-      star.src = value <= rating ? 'assets/star-icon.png' : 'assets/dark-star-icon.png';
-    });
-  }
-
-  function confirmSelection(type) {
-    if (type === 'rating') {
-      if (selectedRating === null) {
-        userSelections.rating = null; // user skipped
-      } else {
-        userSelections.rating = selectedRating;
-      }
+  if (type === 'rating') {
+    if (selectedRating === null) {
+      userSelections.rating = null; // user skipped
+    } else {
+      userSelections.rating = selectedRating;
     }
   }
 
