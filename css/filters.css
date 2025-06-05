@@ -204,6 +204,26 @@ body {
     animation: fadeIn 0.4s ease-in-out;
   }
 
+  .star-rating {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-bottom: 2rem;
+  }
+  
+  .star {
+    width: 80px;
+    height: 80px;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: transform 0.2s, opacity 0.2s;
+  }
+  
+  .star.selected {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+
   @keyframes fadeIn {
     from { 
         opacity: 0; 
@@ -287,24 +307,15 @@ body {
       width: 100%;
       max-width: 250px;
     }
-    .star-rating {
-      display: flex;
-      justify-content: center;
-      gap: 0.75rem;
-      margin-bottom: 2rem;
-    }
-    
+
     .star {
-      width: 40px;
-      height: 40px;
-      opacity: 0.5;
-      cursor: pointer;
-      transition: transform 0.2s, opacity 0.2s;
+      width: 32px;
+      height: 32px;
     }
-    
+  
     .star.selected {
-      opacity: 1;
-      transform: scale(1.2);
+      transform: scale(1.05);
     }
+
   }
   

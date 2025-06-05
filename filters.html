@@ -85,17 +85,11 @@
 
         <!-- Rating -->
         <section class="filter-options hidden" id="rating-options">
-          <h2>Set minimum rating</h2>
-          <div class="filter-options hidden" id="rating-options">
-            <h2>What is the lowest rating you will accept?</h2>
-          
-            <!-- ⭐ Star container where stars are dynamically rendered -->
-            <div id="star-container" class="star-rating"></div>
-          
-            <form onsubmit="confirmSelection('rating'); return false;">
-              <button type="submit" class="confirm-btn">Next</button>
-            </form>
-          </div>
+          <h2>What is the lowest rating you will accept?</h2>
+          <div id="star-container" class="star-rating"></div>
+          <form onsubmit="confirmSelection('rating'); return false;">
+            <button type="submit" class="confirm-btn">Next</button>
+          </form>
         </section>
     </main>
     <section id="summary" class="hidden">
