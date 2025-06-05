@@ -197,7 +197,7 @@ function confirmSelection(type) {
   function updateStarDisplay(rating) {
     stars.forEach(star => {
       const value = parseInt(star.getAttribute('data-value'));
-      star.src = value <= rating ? 'star-icon.png' : 'dark-star-icon.png';
+      star.src = value <= rating ? 'assets/star-icon.png' : 'assets/dark-star-icon.png';
     });
   }
 
