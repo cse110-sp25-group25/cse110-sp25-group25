@@ -208,7 +208,6 @@ function confirmSelection(type) {
       } else {
         userSelections.rating = selectedRating;
       }
-      console.log('Rating selection:', userSelections.rating);
     }
   }
 
