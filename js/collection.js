@@ -79,21 +79,6 @@ function init() {
           deckBody.dataset.photo2src,
           deckBody.dataset.photo3src
         ];
-        // deckBody.innerHTML=`
-        //     <div class="collection-card-back">                
-        //         <div class="card-details">
-        //           <h2>${deckBody.dataset.name}</h2>
-        //             <p>📍 <a href="#">${deckBody.dataset.address}</a></p>
-        //             <p>🕒 Hours ${deckBody.dataset.hours} PM</p>
-        //             <p>📞 ${deckBody.dataset.phone_number}</p>
-        //             <div class="menu-images">
-        //               <img src=${deckBody.dataset.photo1src} alt="food">
-        //               <img src=${deckBody.dataset.photo2src} alt="food">
-        //               <img src=${deckBody.dataset.photo3src} alt="food">
-        //             </div>
-        //             <a class="link" href="${deckBody.dataset.website}" target="_blank" rel="noopener noreferrer">View Menu ↗</a>
-        //         </div>
-        //     </div>`;
         deckBody.innerHTML=`
         <div class="collection-card-back">                
         <div class="card-details">
