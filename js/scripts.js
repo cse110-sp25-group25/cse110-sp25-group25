@@ -8,15 +8,15 @@ function init() {
 }
 
 function setupDropDown() {
-    const dropDown = document.querySelector(".burger-icon");
-    const navLinks = document.querySelectorAll("nav a")
-    dropDown.addEventListener("click", function () {
+    const dropDown = document.querySelector('.burger-icon');
+    const navLinks = document.querySelectorAll('nav a')
+    dropDown.addEventListener('click', function () {
         navLinks.forEach(function (link) {
-            if (link.style.display != "block") {
-                link.style.display = "block";
+            if (link.style.display != 'block') {
+                link.style.display = 'block';
             }
             else {
-                link.style.display = "none";
+                link.style.display = 'none';
             }
         });
     })
