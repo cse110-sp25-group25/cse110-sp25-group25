@@ -1,9 +1,15 @@
+html, body {
+  /* overflow: hidden; */
+  height: 100%;
+}
+
 main.collection {
-        padding: 1rem;
+        /* padding: 1rem; */
         flex: 1;
         display: flex;
-        gap: 1.5rem;
         height: 100vh;
+        max-height: 100vh;
+        overflow: hidden;
       }
 
 /* Left info panel */
@@ -11,15 +17,17 @@ main.collection {
     flex: 0 0 30%;
     max-width: 35%;
     padding: 1rem;
+    max-height: 100%;
     position: sticky;
-    top: 4.5rem;
-    display: flex;
     flex-direction: column;
-}
+    position: static;             /* remove sticky behavior for simplicity */
+    top: auto;                    /* reset the top offset */
+    margin: 0;
+  }
 
 .left-panel h2 {
-    font-size: 1.25rem;
-    margin-bottom: 0.75rem;
+    font-size: 2.25rem;
+    margin-bottom: 1rem;
 }
 
 .left-body {
@@ -50,7 +58,9 @@ main.collection {
     flex: 1;
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
+
 
 .filters-bar{
   color: #b4d2ba;
@@ -63,13 +73,19 @@ main.collection {
     flex:1;
 }
 .filter-select {
-padding: 0.5rem 0.75rem;
-border-radius: 8px;
-border: 1px solid var(--border, #e0e0e0);
-font-size: 0.95rem;
-background: var(--bg, #fff);
-cursor: pointer;
+  padding: 0.5rem 0.75rem;
+  border-radius: 1rem;
+  border: 1px solid var(--border, #e0e0e0);
+  font-size: 1rem;
+  
+  background: var(--bg, #fff);
+  cursor: pointer;
+  color: #ffffff;             /* white text */
+  background-color: #b4d2ba;;  /* blue background (bootstrap‐style) */
+  border: none;
+  cursor: pointer;
 }
+
 
 
 .cards-scroll{
@@ -264,19 +280,23 @@ object-fit: cover;
     max-width: 100vw;        /* ensure it never shrinks below full‐width */
   }
 
+  html,
+  body {
+    overflow-x: hidden;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
   main.collection {
     flex-direction: column;       /* instead of row */
     height: auto;                 /* allow natural page height */
     width: 100vw;            /* force exactly the viewport width */
     max-width: 100vw;        /* ensure it never shrinks below full‐width */
     margin: 0;
+    padding:0;
   }
 
-  .left-panel {
-    max-width: 100%;              /* allow full‐width */
-    position: static;             /* remove sticky behavior for simplicity */
-    top: auto;                    /* reset the top offset */
-  }
 
 
   .filters-bar {
@@ -285,17 +305,17 @@ object-fit: cover;
     gap: 8px;
     padding: 0.5rem;
     margin-top: 0;
-}
+  }
 
   .filter-group {
   flex: 1;  /* flex-grow:1, flex-shrink:1, flex-basis:0 → equal widths */
   min-width: 0;  /* allows the child select to shrink below its content size when needed */
-}
+  }
 
   .filter-select {
   display: inline-block;      /* shrink to fit content */
   width: 100%;               /* fill its .filter-group */
-  padding: 4px 10px;         /* adjust for a compact pill */
+  /* padding: 4px 10px;         adjust for a compact pill */
   font-size: 0.8rem;         /* slightly smaller text */
   color: #ffffff;             /* white text */
   background-color: #b4d2ba;;  /* blue background (bootstrap‐style) */
@@ -313,8 +333,8 @@ object-fit: cover;
   .deck-list {
     grid-template-columns: repeat(2, minmax(0, 48%)); 
     gap: 1rem;                    /* smaller gap between cards */
-    padding-left: 0.5rem;         /* less side padding */
-    padding-right: 0.5rem;
+    /* padding-left: 0.5rem;         less side padding */
+    /* padding-right: 0.5rem; */
     justify-content: center;
   }
 
