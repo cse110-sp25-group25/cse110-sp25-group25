@@ -185,17 +185,30 @@ function confirmSelection(type) {
     }
   }
   
-  //need to check how rating works (logic currently PLACEHOLDER)
-  if (type === 'rating') {
-    const val = document.getElementById('rating-input').value;
-    if (validatePositiveNumber(val) && val >= 0 && val <= 5) {
-      userSelections.rating = parseFloat(val);
-    } else if (val === '') { // user left it blank  ⇒  skip
-      userSelections.rating = null;
-    }
-    else {
-      alert('Please enter a valid rating (0–5).');
-      return;
+  let selectedRating = null;
+  const stars = document.querySelectorAll('#star-rating .star');
+
+  stars.forEach(star => {
+    star.addEventListener('click', () => {
+      selectedRating = parseInt(star.getAttribute('data-value'));
+      updateStarDisplay(selectedRating);
+    });
+  });
+  function updateStarDisplay(rating) {
+    stars.forEach(star => {
+      const value = parseInt(star.getAttribute('data-value'));
+      star.src = value <= rating ? 'star-icon.png' : 'dark-star-icon.png';
+    });
+  }
+
+  function confirmSelection(type) {
+    if (type === 'rating') {
+      if (selectedRating === null) {
+        userSelections.rating = null; // user skipped
+      } else {
+        userSelections.rating = selectedRating;
+      }
+      console.log('Rating selection:', userSelections.rating);
     }
   }
 
