@@ -199,15 +199,11 @@ function confirmSelection(type) {
   
   //need to check how rating works (logic currently PLACEHOLDER)
   if (type === 'rating') {
-    const val = document.getElementById('rating-input').value;
-    if (validatePositiveNumber(val) && val >= 0 && val <= 5) {
-      userSelections.rating = parseFloat(val);
-    } else if (val === '') { // user left it blank  ⇒  skip
+    const selectedStars = document.querySelectorAll('.star.selected');
+    if (selectedStars.length === 0) {
       userSelections.rating = null;
-    }
-    else {
-      alert('Please enter a valid rating (0–5).');
-      return;
+    } else {
+      userSelections.rating = selectedStars.length;
     }
   }
 
