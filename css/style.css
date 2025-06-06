@@ -194,8 +194,65 @@ nav ul {
    border: none;
 }
 
+/* landing page instructions */
 
+#instructions {
+  background-color: #b4d2ba;
+  padding: 4rem 4rem 8rem 4rem;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+}
 
+#instructions h1 {
+  font-size: 3rem;
+  color: #4b543b;
+  font-family: 'Permanent Marker', cursive;
+  font-weight: 200;
+  margin-bottom: 2em;
+}
+
+#instruction-container {
+  display: flex;
+}
+
+.instruction-step {
+  background-color: #f3f4e4;
+  position: relative;
+  max-width: 25%;
+  margin: 1rem;
+  padding: 2em;
+  border-radius: 20px;
+}
+
+.instruction-step h1 {
+  background-color: #f3f4e4;
+  height: 2em;
+  width: 2em;
+  line-height: 2em;
+  border-radius: 50%;
+  border: 0.2em solid #b4d2ba;
+  position: absolute;
+  top: -2em;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+}
+
+.instruction-step button {
+  width: fit-content;
+  padding: 1em 2em;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 10px;
+  position: absolute;
+  bottom: -1em;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+}
+
+/* swipe reviews */
 
  #left-review-container {
    margin: 0 1rem; /* or padding */
