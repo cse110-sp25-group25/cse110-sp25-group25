@@ -106,7 +106,7 @@ reviewDiv.id = `${side}_review_${id}`;
 
 let innerHTML = '';
 for (let i = 0; i < reviews.length; i++) {
-    innerHTML += `<p>"${reviews[i].text}"<br><span>- ${reviews[i].author}</span></p>`;
+  innerHTML += `<p class="review-text">"${reviews[i].text}"<br><span>- ${reviews[i].author}</span></p>`;
 }
 
 reviewDiv.innerHTML = innerHTML;

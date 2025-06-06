@@ -689,6 +689,15 @@ nav ul {
   font-style: italic;
 }
 
+.review-text {
+  max-height: 6em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4; 
+  -webkit-box-orient: vertical;
+}
+
 .reviews.visible {
    display: flex;
    opacity: 1;
