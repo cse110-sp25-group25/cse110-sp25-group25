@@ -329,8 +329,7 @@ nav ul {
 /* filters progress bar styles */
 
 .step {
-  background: none;
-  padding: 0;
+  cursor: pointer;
 }
 
 .step:hover .step-text {
