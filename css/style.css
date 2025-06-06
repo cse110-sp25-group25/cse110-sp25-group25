@@ -189,9 +189,15 @@ nav ul {
 
 
 .button-type2 {
-   background-color: #b4d2ba;
-   color: #4b543b;
-   border: none;
+  background-color: #b4d2ba;
+  color: #4b543b;
+  border: none;
+  border-radius: 20px;
+  font-family: inherit;
+  font-size: 2.25rem;                     /* 36px */
+  padding: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 
@@ -413,25 +419,6 @@ nav ul {
    color: #4b543b;
    border-radius: 20px;
  }
-  /* — Swipe Buttons (Type 2) — */
- .swipe-buttons {
-   margin-top: 2rem;
-   display: flex;
-   gap: 2rem;
-   justify-content: center;
-   width: 100%;
- }
- .button-type2 {
-   background-color: #b4d2ba;              /* default bg */
-   color: #4b543b;
-   font-family: inherit;
-   font-size: 2.25rem;                     /* 36px */
-   border: none;
-   border-radius: 20px;
-   padding: 1rem;
-   cursor: pointer;
-   transition: background-color 0.3s ease;
- }
 
    /* — Restaurant Card — */
    .restaurant-card {
@@ -462,49 +449,30 @@ nav ul {
       order: 1;
     }
 
-/* ACCEPT / REJECT BUTTONS */
-.swipe-buttons {
-   position: static; /* removes absolute positioning for mobile/desktop */
-   margin-top: 1rem;
-   display: flex;
-   gap: 2rem;
-   justify-content: center;
- }
-
- .button-type2 img {
-  width: 48px;                 /* shrink your check/x icons */
-  height: auto;
-}
-
-   /* — Swipe Buttons (Type 2) — */
+   /* — Swipe Buttons — */
   .swipe-buttons {
+    position: static; /* removes absolute positioning for mobile/desktop */
     margin-top: 2rem;
     display: flex;
     gap: 2rem;
-  }
-  
-  .button-type2 {
-    background-color: #b4d2ba;              /* default bg */
-    color: #4b543b;
-    font-family: inherit;
-    font-size: 2.25rem;                     /* 36px */
-    border: none;
-    border-radius: 20px;
-    padding: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
+    justify-content: center;
+   
+   > button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:none;
+    border:none;
 
- .button-type2:hover {
-   background-color: #97bb9e;              /* hover bg */
- }
- .swipe-buttons .button-type2 {
-   width: 64px;
-   height: 64px;
-   border-radius: 50%;                     /* circular on swipe page */
-   display: flex;
-   align-items: center;
-   justify-content: center;
+      > img {
+        width: 4rem;              /* shrink your check/x icons */
+        height: auto;
+      }
+
+      > img:hover {
+        filter: brightness(80%)
+      }
+   }
  }
 
   /*** SWIPE LAYOUT ***/
