@@ -116,6 +116,26 @@ return reviewDiv;
 }
 
 /**
+ * Ensures that there are exactly three images in the array.
+ * If there are fewer than three, it fills the rest with default images.
+ * @param {Array<string>} imgArray - Array of image URLs.
+ * @returns {Array<string>} Array with exactly three image URLs.
+ * */
+function ensureThreeImages(imgArray) {
+  const fallbackImages = [
+    "assets/default1.jpg",
+    "assets/default2.jpg",
+    "assets/default3.jpg",
+  ];
+
+  const images = (imgArray || []).slice(0, 3);
+  while (images.length < 3) {
+    images.push(fallbackImages[images.length]);
+  }
+  return images;
+}
+
+/**
 * Renders all restaurant cards and associated review elements.
 * @param {Array<Object>} data - List of restaurant objects to render.
 */
@@ -169,7 +189,7 @@ data.forEach(r => {
             ${r.phone}
           </p>
           <div class="menu-images">
-            ${(r.menuImages || []).map(src => `<img src="${src}" alt="food">`).join('')}
+            ${ensureThreeImages(r.menuImages).map(src => `<img src="${src}" alt="food">`).join('')}
           </div>
           <a href="#" class="view-menu">View Menu ↗</a>
         </div>
