@@ -430,25 +430,25 @@ nav ul {
     display: flex;
     gap: 2rem;
     justify-content: center;
-   
-   > button {
+  }
+
+  .swipe-buttons button {
     display: flex;
     align-items: center;
     justify-content: center;
     background:none;
     border:none;
+  }
 
-      > img {
-        width: 4rem;              /* shrink your check/x icons */
-        height: auto;
-      }
+  .swipe-buttons button img {
+    width: 4rem;              /* shrink your check/x icons */
+    height: auto;
+  }
 
-      > img:hover {
-        opacity: 0.6;
-        filter: alpha(opacity=60);
-      }
-   }
- }
+  .swipe-buttons button img:hover {
+    filter: brightness(80%)
+  }
+
 
   /*** SWIPE LAYOUT ***/
 
