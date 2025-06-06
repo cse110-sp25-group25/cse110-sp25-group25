@@ -296,58 +296,59 @@ body {
     padding: 40px 0;
  }
  
+   @media (max-width: 550px) {
+      .main-grid {
+         position: relative;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         padding: 20px;
+         margin-top: -4rem;
+      }
  
- /* mobile landing page */
- @media (max-width: 550px) {
-    .main-grid {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 20px;
-    }
- 
- 
-    .hero {
-        align-items: flex-start;
-        text-align: left;
-        padding-right: 100px;
-        padding-left: 10px;
-    }
- 
- 
-    .hero h1 {
-        font-size: 2rem;
-        line-height: 1.5;
-    }
- 
- 
-    .hero-buttons {
-        align-items: flex-start;
-    }
- 
- 
-    .feature-card {
-        border: 1px solid #aaa;
-        padding: 15px;
-        border-radius: 12px;
- 
- 
-        position: absolute;
-        right: 0;
-        width: 250px;
-        transform: translateX(70%);
-    }
- 
- 
-    .card-image {
-        width: 70%;
-        height: 200px;
-    }
- 
- 
- }
- 
+      .hero {
+         align-items: center;
+         flex-direction: column;
+      }
+   
+      .hero h1 {
+         align-items: center;
+         text-align: center;
+         flex-direction: column;
+         font-size: 2rem;
+         line-height: 1.5;
+      }
+
+      .hero p {
+         text-align: center;
+         flex-direction: column;
+         font-size: 1.2rem;
+         line-height: 1.5;
+      }
+   
+      .hero-buttons {
+         align-items: center;
+      }
+   
+      .feature-card {
+         border: 1px solid #aaa;
+         padding: 10px;
+         border-radius: 12px;
+         transform: scale(90%);
+         margin-top: -4rem;
+   
+         position: relative;
+         align-self: center;
+         width: 300px;
+      }
+   
+      .card-image {
+         width: 70%;
+         height: 200px;
+      }
+   }
+
+
  
    /* — Restaurant Card — */
   .restaurant-card {
