@@ -163,6 +163,16 @@ document.querySelectorAll('.option-btn').forEach(btn => {
  * @return {void}
  * */
 function confirmSelection(type) {
+  confirmSelection(type, null);
+}
+
+/**
+ * Confirms the user's selection for a specific filter type and updates the userSelections object.
+ * @param {string} type - The type of filter being confirmed (e.g., 'cuisine', 'price', 'distance', 'rating').
+ * @param {string} newType - The next filter to show (if using navigation)
+ * @return {void}
+ * */
+function confirmSelection(type, newType) {
   if (type === 'cuisine') {
     const selected = document.querySelectorAll('#cuisine-options .option-btn.selected');
     if (selected === '') {                       // user left it blank  ⇒  skip
@@ -209,11 +219,17 @@ function confirmSelection(type) {
 
   localStorage.setItem('userSelections', JSON.stringify(userSelections));
 
-  if (editMode) {
-    finalise();          // one-shot edit → exit
-  } else {
-    nextStep();          // continue to next question
+  if (newType == null) {
+    if (editMode) {
+      finalise();          // one-shot edit → exit
+    } else {
+      nextStep();          // continue to next question
+    }
   }
+  else {
+    showOptions(newType);
+  }
+
   //REMOVE LATER (just for testing)
   console.log('Current Selections:', userSelections);
   alert(`Saved ${type} selection!`);
@@ -223,8 +239,9 @@ function confirmSelection(type) {
 //Set up event listeners for progress bar steps
 document.querySelectorAll('.step').forEach(btn => {
   btn.addEventListener('click', () => {
-    const type = btn.getAttribute('data-step');
-    showOptions(type);
+    const oldType = STEPS[current];
+    const newType = btn.getAttribute('data-step');
+    confirmSelection(oldType, newType);
   });
 });
 
