@@ -1,6 +1,5 @@
 'use strict';
 
-// js/swipe.utils.js
 function applyFilters(data, filters) {
     return data.filter(r => {
       if (filters.cuisine && r.cuisine !== filters.cuisine) return false;
