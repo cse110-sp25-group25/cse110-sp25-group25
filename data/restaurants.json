@@ -1,57 +1,15 @@
 [
   {
     "id": 1,
-    "name": "Juice Cafe",
-    "cuisine": "Cafes",
-    "price": "",
-    "distance": 3.2,
-    "rating": 5.0,
-    "location": "San Diego",
-    "phone": "(619) 971-8223",
-    "hours": "Open until 8:30 PM",
-    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/ut2WVyhladvAZGw3lY25tw/o.jpg",
-    "menuImages": [
-      "https://s3-media0.fl.yelpcdn.com/bphoto/ut2WVyhladvAZGw3lY25tw/o.jpg",
-      "https://s3-media0.fl.yelpcdn.com/bphoto/6eI2EUU0ZPP8MikYS9ETaQ/o.jpg",
-      "https://s3-media0.fl.yelpcdn.com/bphoto/2V4O45iW4hU8ePdchplNFw/o.jpg"
-    ],
-    "reviews": [
-      {
-        "text": "Ordered the pina colada smoothie and it was so good.  Carlos welcomed us to this new location.  We really enjoyed the music, my husband even asked for the...",
-        "author": "Karen M."
-      },
-      {
-        "text": "Lovely new juice place. Good selection of smoothies, coffee, and boba. The people working are so friendly. Definitely a nice place to become a regular customer.",
-        "author": "Victor C."
-      },
-      {
-        "text": "Just went in recently for opening. Ordered a Mauna Keau and an Almond Joy, delicious!!! Excited to have this place in the area. I'll be coming here on my...",
-        "author": "San Diego C."
-      },
-      {
-        "text": "Best place for juices/bobas in LA Jolla. Carlos was so helpful in making my selection and the watermelon juice, Strawberry smoothie and Thai tea were all...",
-        "author": "A J."
-      },
-      {
-        "text": "Great coffee and service great ambiance as well moss treats me good and gave me an extra shot",
-        "author": "Mike P."
-      },
-      {
-        "text": "",
-        "author": ""
-      }
-    ]
-  },
-  {
-    "id": 2,
     "name": "Mikey’s Mealz",
     "cuisine": "Salad",
     "price": "",
     "distance": 22.2,
     "rating": 5.0,
     "location": "San Diego",
+    "address": "688 Hollister St, Ste B, San Diego, CA 92154",
     "phone": "(619) 932-2246",
-    "hours": "",
+    "hours": "Open until 6:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/7IwWy3N-h0RtyoYCoX4Quw/o.jpg",
     "menuImages": [
       "https://s3-media0.fl.yelpcdn.com/bphoto/7IwWy3N-h0RtyoYCoX4Quw/o.jpg",
@@ -86,6 +44,50 @@
     ]
   },
   {
+    "id": 2,
+    "name": "Huey's Chicken & Fries",
+    "cuisine": "Food Trucks",
+    "price": "",
+    "distance": 17.6,
+    "rating": 5.0,
+    "location": "Spring Valley",
+    "address": "Spring Valley, CA 91977",
+    "phone": "(619) 413-4445",
+    "hours": "",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/x2tR-ZYc6VxK_X7aoYRxKQ/o.jpg",
+    "menuImages": [
+      "https://s3-media0.fl.yelpcdn.com/bphoto/x2tR-ZYc6VxK_X7aoYRxKQ/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/qX7Kk5x2wrncYIwNVtauhQ/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/65rEMCEgh6YuGDfwqKEiWw/o.jpg"
+    ],
+    "reviews": [
+      {
+        "text": "I attended an event for Hueys Chicken at the Sugar Factory where they handed out the mac & cheese, chicken tenders and fries! It was really yummy! I'd...",
+        "author": "Nalee S."
+      },
+      {
+        "text": "The chicken was amazing and the fries were so delicious. The sauce is top notch. The presentation of the food was great. Ordering and pick up were easy. Get...",
+        "author": "Gina W."
+      },
+      {
+        "text": "This chicken sandwich is AMAZING! The pickup process was super easy and the food was nice and fresh. This chicken sandwich is huge and worth every penny. I...",
+        "author": "Dallas P."
+      },
+      {
+        "text": "A few different people told me about this place so I decided to check it out. The order and pick up process was super easy and the food was amazing. All of...",
+        "author": "Teri A."
+      },
+      {
+        "text": "I really enjoyed the Hueys bowl. The krack sauce is amazing! Its something innovative and different from your typical chicken spot. 10/10!",
+        "author": "Luis M."
+      },
+      {
+        "text": "Heard great things about these sandwiches and was excited to try them. They did not disappoint and FAR EXCEEDED any chicken sandwich I'm EVER had. I implore...",
+        "author": "Ryan D."
+      }
+    ]
+  },
+  {
     "id": 3,
     "name": "Plant Based Meals",
     "cuisine": "Food Delivery Services",
@@ -93,6 +95,7 @@
     "distance": 6.3,
     "rating": 5.0,
     "location": "San Diego",
+    "address": "San Diego, CA 92111",
     "phone": "(858) 255-0590",
     "hours": "Open until 7:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/wXZn1VLKoqdOEXc8JKAh_Q/o.jpg",
@@ -130,12 +133,57 @@
   },
   {
     "id": 4,
+    "name": "Juice Cafe",
+    "cuisine": "Cafes",
+    "price": "",
+    "distance": 3.2,
+    "rating": 5.0,
+    "location": "San Diego",
+    "address": "1122 Wall St, San Diego, CA 92037",
+    "phone": "(619) 971-8223",
+    "hours": "Open until 8:30 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/ut2WVyhladvAZGw3lY25tw/o.jpg",
+    "menuImages": [
+      "https://s3-media0.fl.yelpcdn.com/bphoto/ut2WVyhladvAZGw3lY25tw/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/6eI2EUU0ZPP8MikYS9ETaQ/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/2V4O45iW4hU8ePdchplNFw/o.jpg"
+    ],
+    "reviews": [
+      {
+        "text": "Ordered the pina colada smoothie and it was so good.  Carlos welcomed us to this new location.  We really enjoyed the music, my husband even asked for the...",
+        "author": "Karen M."
+      },
+      {
+        "text": "Lovely new juice place. Good selection of smoothies, coffee, and boba. The people working are so friendly. Definitely a nice place to become a regular customer.",
+        "author": "Victor C."
+      },
+      {
+        "text": "Just went in recently for opening. Ordered a Mauna Keau and an Almond Joy, delicious!!! Excited to have this place in the area. I'll be coming here on my...",
+        "author": "San Diego C."
+      },
+      {
+        "text": "Best place for juices/bobas in LA Jolla. Carlos was so helpful in making my selection and the watermelon juice, Strawberry smoothie and Thai tea were all...",
+        "author": "A J."
+      },
+      {
+        "text": "Great coffee and service great ambiance as well moss treats me good and gave me an extra shot",
+        "author": "Mike P."
+      },
+      {
+        "text": "",
+        "author": ""
+      }
+    ]
+  },
+  {
+    "id": 5,
     "name": "FRSH Woodfired Pizza",
     "cuisine": "Food Trucks",
     "price": "",
     "distance": 8.2,
     "rating": 5.0,
     "location": "San Diego",
+    "address": "San Diego, CA 92110",
     "phone": "(858) 999-4230",
     "hours": "",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/KOJXP35xwGmnHjuCTy9Ylg/o.jpg",
@@ -172,13 +220,14 @@
     ]
   },
   {
-    "id": 5,
+    "id": 6,
     "name": "RC3 BBQ",
     "cuisine": "Food Delivery Services",
     "price": "",
     "distance": 22.6,
     "rating": 5.0,
     "location": "Escondido",
+    "address": "Escondido, CA 92027",
     "phone": "(760) 566-2269",
     "hours": "Open until 8:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/_jUq1QKVD0XAEB3JsFIIRw/o.jpg",
@@ -215,49 +264,6 @@
     ]
   },
   {
-    "id": 6,
-    "name": "Huey's Chicken & Fries",
-    "cuisine": "Food Trucks",
-    "price": "",
-    "distance": 17.6,
-    "rating": 5.0,
-    "location": "Spring Valley",
-    "phone": "(619) 413-4445",
-    "hours": "",
-    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/x2tR-ZYc6VxK_X7aoYRxKQ/o.jpg",
-    "menuImages": [
-      "https://s3-media0.fl.yelpcdn.com/bphoto/x2tR-ZYc6VxK_X7aoYRxKQ/o.jpg",
-      "https://s3-media0.fl.yelpcdn.com/bphoto/qX7Kk5x2wrncYIwNVtauhQ/o.jpg",
-      "https://s3-media0.fl.yelpcdn.com/bphoto/65rEMCEgh6YuGDfwqKEiWw/o.jpg"
-    ],
-    "reviews": [
-      {
-        "text": "I attended an event for Hueys Chicken at the Sugar Factory where they handed out the mac & cheese, chicken tenders and fries! It was really yummy! I'd...",
-        "author": "Nalee S."
-      },
-      {
-        "text": "The chicken was amazing and the fries were so delicious. The sauce is top notch. The presentation of the food was great. Ordering and pick up were easy. Get...",
-        "author": "Gina W."
-      },
-      {
-        "text": "This chicken sandwich is AMAZING! The pickup process was super easy and the food was nice and fresh. This chicken sandwich is huge and worth every penny. I...",
-        "author": "Dallas P."
-      },
-      {
-        "text": "A few different people told me about this place so I decided to check it out. The order and pick up process was super easy and the food was amazing. All of...",
-        "author": "Teri A."
-      },
-      {
-        "text": "I really enjoyed the Hueys bowl. The krack sauce is amazing! Its something innovative and different from your typical chicken spot. 10/10!",
-        "author": "Luis M."
-      },
-      {
-        "text": "Heard great things about these sandwiches and was excited to try them. They did not disappoint and FAR EXCEEDED any chicken sandwich I'm EVER had. I implore...",
-        "author": "Ryan D."
-      }
-    ]
-  },
-  {
     "id": 7,
     "name": "Carnitas La Bendición",
     "cuisine": "Food Trucks",
@@ -265,6 +271,7 @@
     "distance": 13.8,
     "rating": 5.0,
     "location": "San Diego",
+    "address": "1956 54th St, San Diego, CA 92105",
     "phone": "(619) 453-4507",
     "hours": "Open until 6:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/ixEWirN0sov7docCdfLuRw/o.jpg",
@@ -308,6 +315,7 @@
     "distance": 16.7,
     "rating": 4.9,
     "location": "San Diego",
+    "address": "San Diego, CA 92110",
     "phone": "(619) 709-0626",
     "hours": "Open until 12:00 AM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/7cJtP7dVmSUYT3q6lvzxYA/o.jpg",
@@ -351,6 +359,7 @@
     "distance": 9.1,
     "rating": 4.9,
     "location": "San Diego",
+    "address": "San Diego, CA 92108",
     "phone": "(619) 259-3388",
     "hours": "Open until 5:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/Ps_tqMsPKx-PhOxzMybTpg/o.jpg",
@@ -388,14 +397,59 @@
   },
   {
     "id": 10,
+    "name": "Chefs Cafe & Catering",
+    "cuisine": "Breakfast & Brunch",
+    "price": "$",
+    "distance": 1.4,
+    "rating": 4.9,
+    "location": "San Diego",
+    "address": "10901 North Torrey Pines Rd, Bldg 5, San Diego, CA 92037",
+    "phone": "(858) 876-2433",
+    "hours": "",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/iSON_F23La9ONLkmwAsrzA/o.jpg",
+    "menuImages": [
+      "https://s3-media0.fl.yelpcdn.com/bphoto/iSON_F23La9ONLkmwAsrzA/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/DXKuUu8IFoDK-hvTDgNoLA/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/0W-IVMWUYBBbS6GKJCzkng/o.jpg"
+    ],
+    "reviews": [
+      {
+        "text": "Nice employees, skilled chefs, great place. I was able to order carne asada fries because they had a carne special that day - maybe best I ever had. Fries...",
+        "author": "Grant M."
+      },
+      {
+        "text": "You know how on Cheers the bar would say \"Norm\" when he walked in? That's the vibe. They are so welcoming, and it seems to be multi generational family...",
+        "author": "Char C."
+      },
+      {
+        "text": "Called this business close to closing for the day and was treated with respect, energy, and warmth as if it was the beginning of the day.\n\nPicked up my...",
+        "author": "Israel G."
+      },
+      {
+        "text": "Chef Felix, Erica and the Entire Family that runs this Hidden Gem in North Torrey Pines knows they're doing in the Kitchen for sure!  The menu is great with...",
+        "author": "Michael T."
+      },
+      {
+        "text": "I highly recommend this place for breakfast.  I ordered breakfast sandwich croissants.   Very delicious love the food and the people are very nice. It's...",
+        "author": "Jkh D."
+      },
+      {
+        "text": "This a a cafe within one of the biotech buildings but the food is much better than you'd expect. We walked over from the hospital and found the food to be...",
+        "author": "Anshu B."
+      }
+    ]
+  },
+  {
+    "id": 11,
     "name": "Taco Tuesday",
     "cuisine": "Food Trucks",
     "price": "$",
     "distance": 22.0,
     "rating": 4.9,
     "location": "San Diego",
+    "address": "San Diego, CA 92101",
     "phone": "(619) 340-7409",
-    "hours": "",
+    "hours": "Open until 8:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/d1M7amBeiu8-tdLw4WxQRg/o.jpg",
     "menuImages": [
       "https://s3-media0.fl.yelpcdn.com/bphoto/d1M7amBeiu8-tdLw4WxQRg/o.jpg",
@@ -430,49 +484,6 @@
     ]
   },
   {
-    "id": 11,
-    "name": "Chefs Cafe & Catering",
-    "cuisine": "Breakfast & Brunch",
-    "price": "$",
-    "distance": 1.4,
-    "rating": 4.9,
-    "location": "San Diego",
-    "phone": "(858) 876-2433",
-    "hours": "",
-    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/iSON_F23La9ONLkmwAsrzA/o.jpg",
-    "menuImages": [
-      "https://s3-media0.fl.yelpcdn.com/bphoto/iSON_F23La9ONLkmwAsrzA/o.jpg",
-      "https://s3-media0.fl.yelpcdn.com/bphoto/DXKuUu8IFoDK-hvTDgNoLA/o.jpg",
-      "https://s3-media0.fl.yelpcdn.com/bphoto/0W-IVMWUYBBbS6GKJCzkng/o.jpg"
-    ],
-    "reviews": [
-      {
-        "text": "You know how on Cheers the bar would say \"Norm\" when he walked in? That's the vibe. They are so welcoming, and it seems to be multi generational family...",
-        "author": "Char C."
-      },
-      {
-        "text": "Called this business close to closing for the day and was treated with respect, energy, and warmth as if it was the beginning of the day.\n\nPicked up my...",
-        "author": "Israel G."
-      },
-      {
-        "text": "Chef Felix, Erica and the Entire Family that runs this Hidden Gem in North Torrey Pines knows they're doing in the Kitchen for sure!  The menu is great with...",
-        "author": "Michael T."
-      },
-      {
-        "text": "I highly recommend this place for breakfast.  I ordered breakfast sandwich croissants.   Very delicious love the food and the people are very nice. It's...",
-        "author": "Jkh D."
-      },
-      {
-        "text": "This a a cafe within one of the biotech buildings but the food is much better than you'd expect. We walked over from the hospital and found the food to be...",
-        "author": "Anshu B."
-      },
-      {
-        "text": "Once you find this place, people are very nice, good was great.  Very good value for money.",
-        "author": "Mark W."
-      }
-    ]
-  },
-  {
     "id": 12,
     "name": "La Perla del Pacifico",
     "cuisine": "Food Trucks",
@@ -480,8 +491,9 @@
     "distance": 14.2,
     "rating": 4.9,
     "location": "San Diego",
+    "address": "3201 National Ave, San Diego, CA 92113",
     "phone": "(619) 410-7439",
-    "hours": "Open until 5:00 PM",
+    "hours": "Open until 6:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/z1VKB-dEfAPFFQxcdp_Lzw/o.jpg",
     "menuImages": [
       "https://s3-media0.fl.yelpcdn.com/bphoto/z1VKB-dEfAPFFQxcdp_Lzw/o.jpg",
@@ -523,6 +535,7 @@
     "distance": 3.6,
     "rating": 4.9,
     "location": "San Diego",
+    "address": "7335 Girard Ave, San Diego, CA 92037",
     "phone": "",
     "hours": "",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/KHoRj4kghfJsWvePpOl8-A/o.jpg",
@@ -566,8 +579,9 @@
     "distance": 2.4,
     "rating": 4.9,
     "location": "San Diego",
+    "address": "10675 Calle Mar de Mariposa, San Diego, CA 92130",
     "phone": "(858) 261-0179",
-    "hours": "Open until 8:00 PM",
+    "hours": "Open until 9:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/xS0ark91ysN5do2AdYd_zw/o.jpg",
     "menuImages": [
       "https://s3-media0.fl.yelpcdn.com/bphoto/xS0ark91ysN5do2AdYd_zw/o.jpg",
@@ -609,6 +623,7 @@
     "distance": 13.5,
     "rating": 4.9,
     "location": "San Diego",
+    "address": "3636 Gateway Center Dr, San Diego, CA 92102",
     "phone": "(619) 779-8880",
     "hours": "Open until 5:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/UN6sXEIqGyZyF_RlQIh_iQ/o.jpg",
@@ -652,6 +667,7 @@
     "distance": 19.4,
     "rating": 4.8,
     "location": "Spring Valley",
+    "address": "Spring Valley, CA 91978",
     "phone": "(619) 244-0112",
     "hours": "Open until 8:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/QQ3NliEVMW1JeSAifwwdtQ/o.jpg",
@@ -695,8 +711,9 @@
     "distance": 11.3,
     "rating": 4.8,
     "location": "San Diego",
+    "address": "San Diego, CA 92127",
     "phone": "(858) 652-2114",
-    "hours": "",
+    "hours": "Open until 7:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/0d75RlwHLmkt7h1ifyEQpA/o.jpg",
     "menuImages": [
       "https://s3-media0.fl.yelpcdn.com/bphoto/0d75RlwHLmkt7h1ifyEQpA/o.jpg",
@@ -738,8 +755,9 @@
     "distance": 11.0,
     "rating": 4.8,
     "location": "San Diego",
+    "address": "955 Harbor Island Dr, Ste 200, San Diego, CA 92101",
     "phone": "(619) 519-0138",
-    "hours": "",
+    "hours": "Open until 1:30 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/cSlFdF3EjC4E3IA3CAuJZg/o.jpg",
     "menuImages": [
       "https://s3-media0.fl.yelpcdn.com/bphoto/cSlFdF3EjC4E3IA3CAuJZg/o.jpg",
@@ -781,6 +799,7 @@
     "distance": 1.0,
     "rating": 4.8,
     "location": "San Diego",
+    "address": "3535 General Atomics Ct, San Diego, CA 92121",
     "phone": "",
     "hours": "Open until 2:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/TUd9fncxV7ifLSmOwIggvA/o.jpg",
@@ -818,55 +837,13 @@
   },
   {
     "id": 20,
-    "name": "Boker Kitchen",
-    "cuisine": "Mediterranean",
-    "price": "",
-    "distance": 1.8,
-    "rating": 4.8,
-    "location": "San Diego",
-    "phone": "(858) 203-3881",
-    "hours": "Open until 5:00 PM",
-    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/AFvpTDrG5eXx25ak364JEg/o.jpg",
-    "menuImages": [
-      "https://s3-media0.fl.yelpcdn.com/bphoto/AFvpTDrG5eXx25ak364JEg/o.jpg",
-      "https://s3-media0.fl.yelpcdn.com/bphoto/Qg0sb7nLIlMe4uBKxKizLw/o.jpg",
-      "https://s3-media0.fl.yelpcdn.com/bphoto/lM5f5iZun0BH60ZOcRZrew/o.jpg"
-    ],
-    "reviews": [
-      {
-        "text": "I am a babka connoisseur so feel very qualified in saying the chocolate babka at Boker is the best babka in San Diego! I have no pictures because I eat it...",
-        "author": "Ally G."
-      },
-      {
-        "text": "Amazing place! The borekas and pastries are delicious!\nThey have a beautiful breakfast spread and the tables outside are very nice. \nGreat for a quick bite...",
-        "author": "Ariel D."
-      },
-      {
-        "text": "My first and definitely not my last time eating here! \n\nWe ordered the shakshuka, eggplant carpaccio, the pita labneh plate and the lox plate,  chocolate...",
-        "author": "Elina K."
-      },
-      {
-        "text": "When I heard about Boker Kitchen, I knew my husband and I would have to go and I'm so glad we did!!! \n\nThe staff is very friendly and the menu options are...",
-        "author": "Miriam G."
-      },
-      {
-        "text": "Amazing meal here. Six of us came and shared things and were thrilled with the food and value.  A friend came and was disappointed by what he ordered. But...",
-        "author": "Alyssa S."
-      },
-      {
-        "text": "Having dined at the original downtown location of its sister flagship restaurant, I had certain expectations of Boker Kitchen. A major difference between...",
-        "author": "Emmett T."
-      }
-    ]
-  },
-  {
-    "id": 21,
     "name": "Namino",
     "cuisine": "Kebab",
     "price": "",
     "distance": 0.7,
     "rating": 4.8,
     "location": "San Diego",
+    "address": "3211 Holiday Ct, Ste 100, San Diego, CA 92037",
     "phone": "(858) 257-7679",
     "hours": "Open until 9:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/bZNf0jYjEqiTx66m1eOqrw/o.jpg",
@@ -903,52 +880,14 @@
     ]
   },
   {
-    "id": 22,
-    "name": "Oriste Fairway Cafe & Tavern",
-    "cuisine": "Salad",
-    "price": "",
-    "distance": 1.0,
-    "rating": 4.8,
-    "location": "San Diego",
-    "phone": "(858) 784-9824",
-    "hours": "Open until 3:00 PM",
-    "image": "",
-    "menuImages": [],
-    "reviews": [
-      {
-        "text": "Oriste was a pleasant surprise!  The owner was more than welcoming. We were here for a quick snack and ended up with a Caesar salad and probably one of the...",
-        "author": "Kristin L."
-      },
-      {
-        "text": "The food is always delicious, every time I order with a side of rice it's about 30/40/30 on whether I will get rice or fries or nothing at all on the side....",
-        "author": "Andrew E."
-      },
-      {
-        "text": "This place is awesome. I work in the area and will come here for wholesome food and authentic Greek vibes. The owner Danny is always going out of his to...",
-        "author": "Arian B."
-      },
-      {
-        "text": "Someone in my office knows the owners of Oriste and had them cater an office lunch.  I love Greek food but usually, the food at restaurants is bland and...",
-        "author": "Samir C."
-      },
-      {
-        "text": "Amazing experience and amazing food! Such great service. Wonderful sized portions and love the French fries! Honestly I go here even when I'm not working...",
-        "author": "James H."
-      },
-      {
-        "text": "Great pear salad. Its healthy, fresh and delicious. Good food, esp the tatziki sauce.",
-        "author": "Aa F."
-      }
-    ]
-  },
-  {
-    "id": 23,
+    "id": 21,
     "name": "Gluten Freedom Baking Company",
     "cuisine": "Bakeries",
     "price": "",
     "distance": 3.7,
     "rating": 4.8,
     "location": "San Diego",
+    "address": "8597 Spectrum Ln, San Diego, CA 92121",
     "phone": "(858) 352-6054",
     "hours": "Open until 1:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/g7GPPXjmZB_hKsbWm-7WLg/o.jpg",
@@ -985,6 +924,90 @@
     ]
   },
   {
+    "id": 22,
+    "name": "Oriste Fairway Cafe & Tavern",
+    "cuisine": "Salad",
+    "price": "",
+    "distance": 1.0,
+    "rating": 4.8,
+    "location": "San Diego",
+    "address": "3300 N Torrey Pines Ct, San Diego, CA 92037",
+    "phone": "(858) 784-9824",
+    "hours": "Open until 3:00 PM",
+    "image": "",
+    "menuImages": [],
+    "reviews": [
+      {
+        "text": "Oriste was a pleasant surprise!  The owner was more than welcoming. We were here for a quick snack and ended up with a Caesar salad and probably one of the...",
+        "author": "Kristin L."
+      },
+      {
+        "text": "The food is always delicious, every time I order with a side of rice it's about 30/40/30 on whether I will get rice or fries or nothing at all on the side....",
+        "author": "Andrew E."
+      },
+      {
+        "text": "This place is awesome. I work in the area and will come here for wholesome food and authentic Greek vibes. The owner Danny is always going out of his to...",
+        "author": "Arian B."
+      },
+      {
+        "text": "Someone in my office knows the owners of Oriste and had them cater an office lunch.  I love Greek food but usually, the food at restaurants is bland and...",
+        "author": "Samir C."
+      },
+      {
+        "text": "Amazing experience and amazing food! Such great service. Wonderful sized portions and love the French fries! Honestly I go here even when I'm not working...",
+        "author": "James H."
+      },
+      {
+        "text": "Great pear salad. Its healthy, fresh and delicious. Good food, esp the tatziki sauce.",
+        "author": "Aa F."
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "name": "Boker Kitchen",
+    "cuisine": "Mediterranean",
+    "price": "",
+    "distance": 1.8,
+    "rating": 4.8,
+    "location": "San Diego",
+    "address": "8935 Towne Ctr Dr, San Diego, CA 92101",
+    "phone": "(858) 203-3881",
+    "hours": "Open until 2:30 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/AFvpTDrG5eXx25ak364JEg/o.jpg",
+    "menuImages": [
+      "https://s3-media0.fl.yelpcdn.com/bphoto/AFvpTDrG5eXx25ak364JEg/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/Qg0sb7nLIlMe4uBKxKizLw/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/lM5f5iZun0BH60ZOcRZrew/o.jpg"
+    ],
+    "reviews": [
+      {
+        "text": "I am a babka connoisseur so feel very qualified in saying the chocolate babka at Boker is the best babka in San Diego! I have no pictures because I eat it...",
+        "author": "Ally G."
+      },
+      {
+        "text": "Amazing place! The borekas and pastries are delicious!\nThey have a beautiful breakfast spread and the tables outside are very nice. \nGreat for a quick bite...",
+        "author": "Ariel D."
+      },
+      {
+        "text": "My first and definitely not my last time eating here! \n\nWe ordered the shakshuka, eggplant carpaccio, the pita labneh plate and the lox plate,  chocolate...",
+        "author": "Elina K."
+      },
+      {
+        "text": "When I heard about Boker Kitchen, I knew my husband and I would have to go and I'm so glad we did!!! \n\nThe staff is very friendly and the menu options are...",
+        "author": "Miriam G."
+      },
+      {
+        "text": "Amazing meal here. Six of us came and shared things and were thrilled with the food and value.  A friend came and was disappointed by what he ordered. But...",
+        "author": "Alyssa S."
+      },
+      {
+        "text": "Having dined at the original downtown location of its sister flagship restaurant, I had certain expectations of Boker Kitchen. A major difference between...",
+        "author": "Emmett T."
+      }
+    ]
+  },
+  {
     "id": 24,
     "name": "TOAST Cafe",
     "cuisine": "Cafes",
@@ -992,6 +1015,7 @@
     "distance": 3.2,
     "rating": 4.8,
     "location": "San Diego",
+    "address": "11455 El Camino Real, San Diego, CA 92130",
     "phone": "(858) 925-7552",
     "hours": "Open until 2:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/p98u4UNyWrB3rS70ftjyYw/o.jpg",
@@ -1035,6 +1059,7 @@
     "distance": 3.1,
     "rating": 4.8,
     "location": "San Diego",
+    "address": "1237 Prospect St, Ste V, San Diego, CA 92037",
     "phone": "(858) 247-7044",
     "hours": "",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/Jw9CP1NXYxmKkY3Z907lwg/o.jpg",
@@ -1072,55 +1097,13 @@
   },
   {
     "id": 26,
-    "name": "Sue’s Korean Kitchen",
-    "cuisine": "Korean",
-    "price": "$$",
-    "distance": 3.9,
-    "rating": 4.8,
-    "location": "San Diego",
-    "phone": "(858) 352-6511",
-    "hours": "Open until 8:00 PM",
-    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/d3TunuAWgr4uM0ebeUUTeQ/o.jpg",
-    "menuImages": [
-      "https://s3-media0.fl.yelpcdn.com/bphoto/d3TunuAWgr4uM0ebeUUTeQ/o.jpg",
-      "https://s3-media0.fl.yelpcdn.com/bphoto/6BaKbou_XHBvRgcHCFidUA/o.jpg",
-      "https://s3-media0.fl.yelpcdn.com/bphoto/sSENTnNola0EpIEMBrrL3Q/o.jpg"
-    ],
-    "reviews": [
-      {
-        "text": "The Kimbap is very authentic and tastes like home made perfection. The food is extremely well made with traditional ingredients, and the restaurant is...",
-        "author": "Katherine C."
-      },
-      {
-        "text": "While visiting San Diego for conference, I was craving Korean food early morning.  As this place was open at 10:30am, I decided to give it a shot.  \n\nSmall...",
-        "author": "Peter S."
-      },
-      {
-        "text": "I was in the area for work around Sorrento Valley, right on the border of Mira Mesa, and decided to grab some food to go. Ordered a bibimbap and...",
-        "author": "Amy K."
-      },
-      {
-        "text": "Cute little mom and pop shop. There isn't seating inside but there are some tables outside. Plenty of parking since it's in a large plaza.\n\nThey have a...",
-        "author": "Hanna Y."
-      },
-      {
-        "text": "I ADORE this small shop! Originally came here with my friend for silly reason due to the fact I shared names with this place but pleasantly surprised to...",
-        "author": "Su T."
-      },
-      {
-        "text": "Fast service, delicious casual Korean food and reasonable prices! This place had been on my radar for a long time in terms of must-try food spots in San...",
-        "author": "Michael L."
-      }
-    ]
-  },
-  {
-    "id": 27,
     "name": "Cafe 477",
     "cuisine": "Cafes",
     "price": "",
     "distance": 0.6,
     "rating": 4.8,
     "location": "San Diego",
+    "address": "8950 Villa La Jolla Dr, San Diego, CA 92037",
     "phone": "(858) 300-7799",
     "hours": "Open until 3:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/I1ZYKsCeQVp5vbTUYiKQZw/o.jpg",
@@ -1157,13 +1140,14 @@
     ]
   },
   {
-    "id": 28,
+    "id": 27,
     "name": "Quick Stop Grill",
     "cuisine": "Food Trucks",
     "price": "",
     "distance": 9.8,
     "rating": 4.8,
     "location": "San Diego",
+    "address": "4491 Park Blvd, San Diego, CA 92116",
     "phone": "(619) 715-9375",
     "hours": "Open until 8:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/tAq6pi3TpQQ-E6ytVit5Mg/o.jpg",
@@ -1200,6 +1184,50 @@
     ]
   },
   {
+    "id": 28,
+    "name": "Sue’s Korean Kitchen",
+    "cuisine": "Korean",
+    "price": "$$",
+    "distance": 3.9,
+    "rating": 4.8,
+    "location": "San Diego",
+    "address": "6755 Mira Mesa Blvd, Ste 109, San Diego, CA 92121",
+    "phone": "(858) 352-6511",
+    "hours": "Open until 8:00 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/d3TunuAWgr4uM0ebeUUTeQ/o.jpg",
+    "menuImages": [
+      "https://s3-media0.fl.yelpcdn.com/bphoto/d3TunuAWgr4uM0ebeUUTeQ/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/6BaKbou_XHBvRgcHCFidUA/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/sSENTnNola0EpIEMBrrL3Q/o.jpg"
+    ],
+    "reviews": [
+      {
+        "text": "The Kimbap is very authentic and tastes like home made perfection. The food is extremely well made with traditional ingredients, and the restaurant is...",
+        "author": "Katherine C."
+      },
+      {
+        "text": "While visiting San Diego for conference, I was craving Korean food early morning.  As this place was open at 10:30am, I decided to give it a shot.  \n\nSmall...",
+        "author": "Peter S."
+      },
+      {
+        "text": "I was in the area for work around Sorrento Valley, right on the border of Mira Mesa, and decided to grab some food to go. Ordered a bibimbap and...",
+        "author": "Amy K."
+      },
+      {
+        "text": "Cute little mom and pop shop. There isn't seating inside but there are some tables outside. Plenty of parking since it's in a large plaza.\n\nThey have a...",
+        "author": "Hanna Y."
+      },
+      {
+        "text": "I ADORE this small shop! Originally came here with my friend for silly reason due to the fact I shared names with this place but pleasantly surprised to...",
+        "author": "Su T."
+      },
+      {
+        "text": "Fast service, delicious casual Korean food and reasonable prices! This place had been on my radar for a long time in terms of must-try food spots in San...",
+        "author": "Michael L."
+      }
+    ]
+  },
+  {
     "id": 29,
     "name": "Mary's Gourmet Salads",
     "cuisine": "Salad",
@@ -1207,6 +1235,7 @@
     "distance": 3.7,
     "rating": 4.8,
     "location": "La Jolla",
+    "address": "723 Pearl St, La Jolla, CA 92037",
     "phone": "(858) 703-0808",
     "hours": "Open until 8:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/XWaryRj507ivJvks0FLHug/o.jpg",
@@ -1250,6 +1279,7 @@
     "distance": 5.6,
     "rating": 4.8,
     "location": "San Diego",
+    "address": "1905 Grand Ave, San Diego, CA 92109",
     "phone": "(619) 622-4404",
     "hours": "Open until 7:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/kyGzVHKPJ7RJakFnNn4AJQ/o.jpg",
@@ -1293,6 +1323,7 @@
     "distance": 6.4,
     "rating": 4.8,
     "location": "San Diego",
+    "address": "San Diego, CA 92109",
     "phone": "(619) 623-4845",
     "hours": "",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/EWEqXT_uDFjzba5IJj2ZYQ/o.jpg",
@@ -1336,6 +1367,7 @@
     "distance": 3.0,
     "rating": 4.8,
     "location": "San Diego",
+    "address": "5955 Mira Mesa Blvd, Ste K, San Diego, CA 92121",
     "phone": "(858) 453-5740",
     "hours": "Open until 3:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/aJyli1ldMhG9OaEHg0vjOQ/o.jpg",
@@ -1379,6 +1411,7 @@
     "distance": 1.7,
     "rating": 5.0,
     "location": "San Diego",
+    "address": "11120 Roselle St, Ste J, San Diego, CA 92121",
     "phone": "(858) 453-1400",
     "hours": "Open until 2:30 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/FHupF_SWNaGny9RO-NMN1A/o.jpg",
@@ -1422,6 +1455,7 @@
     "distance": 3.4,
     "rating": 4.8,
     "location": "La Jolla",
+    "address": "1055 Torrey Pines Rd, Ste 101, La Jolla, CA 92037",
     "phone": "(858) 215-5848",
     "hours": "Open until 8:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/7antrhdR8EuOBFdxGnQPbA/o.jpg",
@@ -1465,6 +1499,7 @@
     "distance": 12.2,
     "rating": 4.7,
     "location": "San Marcos",
+    "address": "San Marcos, CA 92024",
     "phone": "(760) 274-4947",
     "hours": "",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/Bt03H5KKoiEBNhhJo2inig/o.jpg",
@@ -1508,6 +1543,7 @@
     "distance": 2.3,
     "rating": 4.7,
     "location": "San Diego",
+    "address": "11585 Sorrento Valley Rd, Ste 108, San Diego, CA 92121",
     "phone": "(858) 345-1042",
     "hours": "Open until 8:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/8U3fE-55cbQXnBVjLtYb3w/o.jpg",
@@ -1551,6 +1587,7 @@
     "distance": 17.5,
     "rating": 4.7,
     "location": "Carlsbad",
+    "address": "5704 Paseo Del Norte, Carlsbad, CA 92008",
     "phone": "(760) 402-7717",
     "hours": "Open until 6:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/UGqexfnAPptaWDQrq14p0A/o.jpg",
@@ -1594,6 +1631,7 @@
     "distance": 3.6,
     "rating": 4.7,
     "location": "La Jolla",
+    "address": "737 Pearl St, La Jolla, CA 92037",
     "phone": "(858) 352-6670",
     "hours": "Open until 9:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/EjYVK03Ih2sgo8fG9kTLIw/o.jpg",
@@ -1637,6 +1675,7 @@
     "distance": 3.2,
     "rating": 4.7,
     "location": "San Diego",
+    "address": "1122 Wall St, San Diego, CA 92037",
     "phone": "(858) 336-5550",
     "hours": "Open until 12:00 AM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/vHtxHZwZ071YtXyg1VIPOQ/o.jpg",
@@ -1680,6 +1719,7 @@
     "distance": 1.8,
     "rating": 4.7,
     "location": "San Diego",
+    "address": "8895 Towne Centre Dr, Ste 101, San Diego, CA 92122",
     "phone": "(858) 230-6496",
     "hours": "Open until 2:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/V4mxrk3Jf8P_p2q1YCe_bQ/o.jpg",
@@ -1723,6 +1763,7 @@
     "distance": 3.0,
     "rating": 4.7,
     "location": "San Diego",
+    "address": "11130 E Ocean Air Dr, Ste 101, San Diego, CA 92130",
     "phone": "(858) 755-3130",
     "hours": "Open until 9:30 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/nvvPNPSnjrytTg6gShou8g/o.jpg",
@@ -1766,6 +1807,7 @@
     "distance": 2.0,
     "rating": 4.7,
     "location": "San Diego",
+    "address": "9254 Scranton Rd, Ste 101, San Diego, CA 92121",
     "phone": "(858) 230-6268",
     "hours": "Open until 2:30 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/l1p2txzv8lM--MDFzbDtpQ/o.jpg",
@@ -1809,6 +1851,7 @@
     "distance": 3.9,
     "rating": 4.7,
     "location": "La Jolla",
+    "address": "7402 La Jolla Blvd, La Jolla, CA 92037",
     "phone": "(858) 246-6756",
     "hours": "Open until 8:30 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/O9cZtT0wVt8PXIrUu_ZXoA/o.jpg",
@@ -1852,6 +1895,7 @@
     "distance": 3.8,
     "rating": 4.7,
     "location": "San Diego",
+    "address": "613 Pearl St, San Diego, CA 92037",
     "phone": "(858) 732-0023",
     "hours": "Open until 9:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/bk9ikdvnPjfwvPLgOblZtQ/o.jpg",
@@ -1895,6 +1939,7 @@
     "distance": 3.8,
     "rating": 4.7,
     "location": "La Jolla",
+    "address": "7524 La Jolla Blvd, La Jolla, CA 92037",
     "phone": "(858) 886-7217",
     "hours": "Open until 5:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/rbFlIOiu2eXJyteS4BplSg/o.jpg",
@@ -1938,6 +1983,7 @@
     "distance": 20.6,
     "rating": 4.7,
     "location": "Vista",
+    "address": "Vista, CA 92081",
     "phone": "(760) 805-8024",
     "hours": "Open until 10:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/NsIrw9YVbq2XAAP_pxPkNA/o.jpg",
@@ -1975,55 +2021,13 @@
   },
   {
     "id": 47,
-    "name": "Taquizas Los Chuchys",
-    "cuisine": "Caterers",
-    "price": "$$",
-    "distance": 19.7,
-    "rating": 4.7,
-    "location": "Chula Vista",
-    "phone": "(619) 649-1997",
-    "hours": "Open until 6:00 PM",
-    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/9c6oJC-YLk72kFrvMaDTzg/o.jpg",
-    "menuImages": [
-      "https://s3-media0.fl.yelpcdn.com/bphoto/9c6oJC-YLk72kFrvMaDTzg/o.jpg",
-      "https://s3-media0.fl.yelpcdn.com/bphoto/YN62-xQ5pnkMUXtus5fo_w/o.jpg",
-      "https://s3-media0.fl.yelpcdn.com/bphoto/lmBWwcwINvhpFAGCO7E8oQ/o.jpg"
-    ],
-    "reviews": [
-      {
-        "text": "Phenomenal. They just catered our event for about 200 people. The experience was fantastic from start to finish.\n\nCustomer service: Communication was...",
-        "author": "Kiki T."
-      },
-      {
-        "text": "TLC was AMAZING!! They catered our son's 25th birthday and couldn't recommend them enough. Tasty tacos and all the fixings and we are picky when it comes to...",
-        "author": "Melissa G."
-      },
-      {
-        "text": "What an impressive catering service! Some of the best Mexican food I've ever had, and I lived in Baja for 10 months!\n\nI've worked at a lot of events that...",
-        "author": "Nathaniel A."
-      },
-      {
-        "text": "We recently attended an event at Santee Lakes that was catered by Taquizas Los Chuchys. The food was fantastic.\n\nOn the menu: Tacos! Al Pastor, Pollo and...",
-        "author": "Pete T."
-      },
-      {
-        "text": "Had employee appreciation day at work today. Taquizas Los Chuchys crew pulled up and started putting their canopy up and grilling station. They had a table...",
-        "author": "Khamphone K."
-      },
-      {
-        "text": "Okay so this past weekend we stumbled upon this taco place..however I can't check in because the address is not in Chula Vista ,and it is NOt in National...",
-        "author": "Senia O."
-      }
-    ]
-  },
-  {
-    "id": 48,
     "name": "Ridgewalk Social",
     "cuisine": "Burgers",
     "price": "",
     "distance": 0.5,
     "rating": 4.7,
     "location": "La Jolla",
+    "address": "10000 Hopkins Dr, La Jolla, CA 92093",
     "phone": "(858) 412-3212",
     "hours": "Open until 9:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/ZlPjBD5nwFtEY8xBbKOVvw/o.jpg",
@@ -2060,6 +2064,50 @@
     ]
   },
   {
+    "id": 48,
+    "name": "Taquizas Los Chuchys",
+    "cuisine": "Caterers",
+    "price": "$$",
+    "distance": 19.7,
+    "rating": 4.7,
+    "location": "Chula Vista",
+    "address": "713 Broadway, Ste I, Chula Vista, CA 91910",
+    "phone": "(619) 649-1997",
+    "hours": "Open until 6:00 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/9c6oJC-YLk72kFrvMaDTzg/o.jpg",
+    "menuImages": [
+      "https://s3-media0.fl.yelpcdn.com/bphoto/9c6oJC-YLk72kFrvMaDTzg/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/YN62-xQ5pnkMUXtus5fo_w/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/lmBWwcwINvhpFAGCO7E8oQ/o.jpg"
+    ],
+    "reviews": [
+      {
+        "text": "Phenomenal. They just catered our event for about 200 people. The experience was fantastic from start to finish.\n\nCustomer service: Communication was...",
+        "author": "Kiki T."
+      },
+      {
+        "text": "TLC was AMAZING!! They catered our son's 25th birthday and couldn't recommend them enough. Tasty tacos and all the fixings and we are picky when it comes to...",
+        "author": "Melissa G."
+      },
+      {
+        "text": "What an impressive catering service! Some of the best Mexican food I've ever had, and I lived in Baja for 10 months!\n\nI've worked at a lot of events that...",
+        "author": "Nathaniel A."
+      },
+      {
+        "text": "We recently attended an event at Santee Lakes that was catered by Taquizas Los Chuchys. The food was fantastic.\n\nOn the menu: Tacos! Al Pastor, Pollo and...",
+        "author": "Pete T."
+      },
+      {
+        "text": "Had employee appreciation day at work today. Taquizas Los Chuchys crew pulled up and started putting their canopy up and grilling station. They had a table...",
+        "author": "Khamphone K."
+      },
+      {
+        "text": "Okay so this past weekend we stumbled upon this taco place..however I can't check in because the address is not in Chula Vista ,and it is NOt in National...",
+        "author": "Senia O."
+      }
+    ]
+  },
+  {
     "id": 49,
     "name": "Simply Fresh",
     "cuisine": "Sandwiches",
@@ -2067,6 +2115,7 @@
     "distance": 11.4,
     "rating": 4.7,
     "location": "San Diego",
+    "address": "San Diego, CA 92104",
     "phone": "(858) 337-6993",
     "hours": "Open until 9:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/bVp9PfZ4BACjelOjJMqf7g/o.jpg",
@@ -2104,12 +2153,57 @@
   },
   {
     "id": 50,
+    "name": "Takaramono Sushi",
+    "cuisine": "Sushi Bars",
+    "price": "",
+    "distance": 3.8,
+    "rating": 4.7,
+    "location": "San Diego",
+    "address": "7513 La Jolla Blvd, San Diego, CA 92037",
+    "phone": "(858) 230-6140",
+    "hours": "Open until 9:30 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/pbaLn1wMOYI1bWtToztuGA/o.jpg",
+    "menuImages": [
+      "https://s3-media0.fl.yelpcdn.com/bphoto/pbaLn1wMOYI1bWtToztuGA/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/Ig02LlcYUYnVA4EknWAxUQ/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/uStJmPFML9s9jG2wYCbkCg/o.jpg"
+    ],
+    "reviews": [
+      {
+        "text": "This was hands down the best dining experience my boyfriend and I have had together. As soon as we entered, we were mesmerized by the ambiance. The...",
+        "author": "Sydney L."
+      },
+      {
+        "text": "We had higher expectations. Despite having a reservation we waited 20 minutes after being seated for our waitress to come by and take our appetizer order...",
+        "author": "Serli N."
+      },
+      {
+        "text": "Although pretty pricey, this place is absolutely delicious! Their quality taste exactly like the quality I got when I went to Japan this past year. I went...",
+        "author": "Kim L."
+      },
+      {
+        "text": "My husband and I had the best lunch at Takaramono Sushi. The service was impeccable -- prompt, friendly, and attentive. We started with the edamame and...",
+        "author": "Thalia L."
+      },
+      {
+        "text": "Nice little modern Japanese restaurant with high quality food, great service, and reasonable prices!\n\nI eat a lot of sushi so I can be pretty picky about...",
+        "author": "Sisi C."
+      },
+      {
+        "text": "My favorite sushi place so far! It's hard not to fall in love with this place! The chef and food here is amazing! The staff, the one server we've had each...",
+        "author": "Juliana C."
+      }
+    ]
+  },
+  {
+    "id": 51,
     "name": "Copa Vida",
     "cuisine": "Coffee & Tea",
     "price": "$",
     "distance": 1.1,
     "rating": 4.7,
     "location": "San Diego",
+    "address": "10578 Science Center Dr, San Diego, CA 92122",
     "phone": "(858) 812-5558",
     "hours": "Open until 3:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/mgv9PX1gGp1Qp7Iejfrp_A/o.jpg",
@@ -2146,49 +2240,6 @@
     ]
   },
   {
-    "id": 51,
-    "name": "Takaramono Sushi",
-    "cuisine": "Sushi Bars",
-    "price": "",
-    "distance": 3.8,
-    "rating": 4.7,
-    "location": "San Diego",
-    "phone": "(858) 230-6140",
-    "hours": "Open until 3:00 PM",
-    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/pbaLn1wMOYI1bWtToztuGA/o.jpg",
-    "menuImages": [
-      "https://s3-media0.fl.yelpcdn.com/bphoto/pbaLn1wMOYI1bWtToztuGA/o.jpg",
-      "https://s3-media0.fl.yelpcdn.com/bphoto/Ig02LlcYUYnVA4EknWAxUQ/o.jpg",
-      "https://s3-media0.fl.yelpcdn.com/bphoto/uStJmPFML9s9jG2wYCbkCg/o.jpg"
-    ],
-    "reviews": [
-      {
-        "text": "This was hands down the best dining experience my boyfriend and I have had together. As soon as we entered, we were mesmerized by the ambiance. The...",
-        "author": "Sydney L."
-      },
-      {
-        "text": "We had higher expectations. Despite having a reservation we waited 20 minutes after being seated for our waitress to come by and take our appetizer order...",
-        "author": "Serli N."
-      },
-      {
-        "text": "Although pretty pricey, this place is absolutely delicious! Their quality taste exactly like the quality I got when I went to Japan this past year. I went...",
-        "author": "Kim L."
-      },
-      {
-        "text": "My husband and I had the best lunch at Takaramono Sushi. The service was impeccable -- prompt, friendly, and attentive. We started with the edamame and...",
-        "author": "Thalia L."
-      },
-      {
-        "text": "Nice little modern Japanese restaurant with high quality food, great service, and reasonable prices!\n\nI eat a lot of sushi so I can be pretty picky about...",
-        "author": "Sisi C."
-      },
-      {
-        "text": "My favorite sushi place so far! It's hard not to fall in love with this place! The chef and food here is amazing! The staff, the one server we've had each...",
-        "author": "Juliana C."
-      }
-    ]
-  },
-  {
     "id": 52,
     "name": "Chicago Fire Grill",
     "cuisine": "Salad",
@@ -2196,6 +2247,7 @@
     "distance": 1.8,
     "rating": 4.6,
     "location": "San Diego",
+    "address": "8935 Towne Centre Dr, Ste 109, San Diego, CA 92122",
     "phone": "(858) 622-0224",
     "hours": "Open until 8:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/z6Ke7pTEakzwLG0CG45O1Q/o.jpg",
@@ -2239,6 +2291,7 @@
     "distance": 4.5,
     "rating": 4.6,
     "location": "San Diego",
+    "address": "8920 Kenamar Dr, San Diego, CA 92121",
     "phone": "(619) 880-6383",
     "hours": "Open until 9:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/h0-63pvn11SnzKllf_t2tw/o.jpg",
@@ -2282,6 +2335,7 @@
     "distance": 3.5,
     "rating": 4.6,
     "location": "San Diego",
+    "address": "6165 Greenwich Dr, Ste 100, San Diego, CA 92122",
     "phone": "(858) 587-2585",
     "hours": "Open until 3:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/KSh-mMZzP2yKYVDWuxEZiQ/o.jpg",
@@ -2325,8 +2379,9 @@
     "distance": 12.7,
     "rating": 4.6,
     "location": "San Diego",
+    "address": "1313 J St, San Diego, CA 92101",
     "phone": "(619) 534-9315",
-    "hours": "Open until 9:00 PM",
+    "hours": "Open until 10:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/bGQcCgjw_CS2wfGbHs2wEg/o.jpg",
     "menuImages": [
       "https://s3-media0.fl.yelpcdn.com/bphoto/bGQcCgjw_CS2wfGbHs2wEg/o.jpg",
@@ -2355,62 +2410,20 @@
         "author": "Mayra G."
       },
       {
-        "text": "Wagyu burger was quite bland.  Hot dog, however, was tasty and the bun was buttery and soft.  Michelada was very good and generous on the mix.  Choose your...",
-        "author": "Yvonne A."
+        "text": "When is the last time you had a chili cheese dog? \n\nHmmm.... High school? That's a long time ago!! \n\nFound ourselves in the neighborhood and decided to stop...",
+        "author": "Michelle F."
       }
     ]
   },
   {
     "id": 56,
-    "name": "Eat Crispy Burger",
-    "cuisine": "Burgers",
-    "price": "$$",
-    "distance": 1.1,
-    "rating": 4.6,
-    "location": "San Diego",
-    "phone": "(858) 379-1002",
-    "hours": "Open until 9:00 PM",
-    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/YcMxLxtxHzSncqHS2nKNgQ/o.jpg",
-    "menuImages": [
-      "https://s3-media0.fl.yelpcdn.com/bphoto/YcMxLxtxHzSncqHS2nKNgQ/o.jpg",
-      "https://s3-media0.fl.yelpcdn.com/bphoto/lDqwcm9AtTHL0IYBO1qajQ/o.jpg",
-      "https://s3-media0.fl.yelpcdn.com/bphoto/AhfOqoMxKv4htAV8NOoV4Q/o.jpg"
-    ],
-    "reviews": [
-      {
-        "text": "The Eat Crispy Burger empire is growing.  I started eating at Eat Crispy Burger back in 2022 when the first location opened in Encinitas.  The delicious...",
-        "author": "Soo H."
-      },
-      {
-        "text": "I am not one normally that gravitates towards \"Smash\" burgers as I prefer a nice medium rare juicy burger, but I will have to say that this was pretty...",
-        "author": "Jason N."
-      },
-      {
-        "text": "I'll start by saying I was so excited to try this place as I love shake shack by hat dealing with the parking at UTC mall\n\nOrdered the double OG to keep it...",
-        "author": "Horatio M."
-      },
-      {
-        "text": "Great restaurant. Hate the parking. Unfortunately it's located in the same parking lot of Regents Pizza so it gets tough with parking. \n\nWhen you first walk...",
-        "author": "Christine T."
-      },
-      {
-        "text": "Eat Crispy Burger strikes again!  From a small burger joint in Encinitas to now four locations and counting. Some of the best smash burgers in town.  Owners...",
-        "author": "Ron Q."
-      },
-      {
-        "text": "Had to try the new spot in the neighborhood. This is a great spot for eat crispy burger with college students and offices. It's a good value meal to get a...",
-        "author": "Brian D."
-      }
-    ]
-  },
-  {
-    "id": 57,
     "name": "Rosemonts Cafe",
     "cuisine": "Cafes",
     "price": "",
     "distance": 4.2,
     "rating": 4.6,
     "location": "San Diego",
+    "address": "6830 La Jolla Blvd, Ste 101, San Diego, CA 92037",
     "phone": "(858) 352-6311",
     "hours": "Open until 4:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/ueldO147H05sw0WPSKyEIQ/o.jpg",
@@ -2447,13 +2460,14 @@
     ]
   },
   {
-    "id": 58,
+    "id": 57,
     "name": "Shawarma Guys",
     "cuisine": "Food Trucks",
     "price": "$$",
     "distance": 12.2,
     "rating": 4.6,
     "location": "San Diego",
+    "address": "3012 Grape St, San Diego, CA 92102",
     "phone": "(619) 340-1234",
     "hours": "Open until 9:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/hZg2fPmU5dpEPc5qrSxt1g/o.jpg",
@@ -2490,13 +2504,14 @@
     ]
   },
   {
-    "id": 59,
+    "id": 58,
     "name": "Sub Fusion",
     "cuisine": "Food Trucks",
     "price": "$$",
     "distance": 2.4,
     "rating": 4.6,
     "location": "La Jolla",
+    "address": "La Jolla, CA 92122",
     "phone": "(619) 872-5554",
     "hours": "Open until 1:30 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/mAG92aLOAerqzrMEJYRqCQ/o.jpg",
@@ -2533,13 +2548,14 @@
     ]
   },
   {
-    "id": 60,
+    "id": 59,
     "name": "Mom's Pizza and Pasta",
     "cuisine": "Pizza",
     "price": "$$",
     "distance": 2.4,
     "rating": 4.6,
     "location": "San Diego",
+    "address": "3422 Tripp Ct, Ste A, San Diego, CA 92121",
     "phone": "(858) 201-3225",
     "hours": "Open until 2:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/JsDW_NWukaa6_BzqirAb0Q/o.jpg",
@@ -2576,13 +2592,14 @@
     ]
   },
   {
-    "id": 61,
+    "id": 60,
     "name": "Rose Canyon Deli",
     "cuisine": "Delis",
     "price": "$",
     "distance": 3.7,
     "rating": 4.6,
     "location": "San Diego",
+    "address": "4901 Morena Blvd, Ste 301, San Diego, CA 92117",
     "phone": "(858) 270-7600",
     "hours": "Open until 6:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/ZSkJzgKs6TrWNbrbIbCjig/o.jpg",
@@ -2619,6 +2636,50 @@
     ]
   },
   {
+    "id": 61,
+    "name": "Eat Crispy Burger",
+    "cuisine": "Burgers",
+    "price": "$$",
+    "distance": 1.1,
+    "rating": 4.6,
+    "location": "San Diego",
+    "address": "4150 Regents Park Row, Ste 170, San Diego, CA 92037",
+    "phone": "(858) 379-1002",
+    "hours": "Open until 10:00 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/YcMxLxtxHzSncqHS2nKNgQ/o.jpg",
+    "menuImages": [
+      "https://s3-media0.fl.yelpcdn.com/bphoto/YcMxLxtxHzSncqHS2nKNgQ/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/lDqwcm9AtTHL0IYBO1qajQ/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/AhfOqoMxKv4htAV8NOoV4Q/o.jpg"
+    ],
+    "reviews": [
+      {
+        "text": "The Eat Crispy Burger empire is growing.  I started eating at Eat Crispy Burger back in 2022 when the first location opened in Encinitas.  The delicious...",
+        "author": "Soo H."
+      },
+      {
+        "text": "I got an original burger combo (burger, fries, large drink) for $14, and I think the value of it was pretty good. I added lettuce to mine (can also add...",
+        "author": "Ryan N."
+      },
+      {
+        "text": "I am not one normally that gravitates towards \"Smash\" burgers as I prefer a nice medium rare juicy burger, but I will have to say that this was pretty...",
+        "author": "Jason N."
+      },
+      {
+        "text": "I'll start by saying I was so excited to try this place as I love shake shack by hat dealing with the parking at UTC mall\n\nOrdered the double OG to keep it...",
+        "author": "Horatio M."
+      },
+      {
+        "text": "Great restaurant. Hate the parking. Unfortunately it's located in the same parking lot of Regents Pizza so it gets tough with parking. \n\nWhen you first walk...",
+        "author": "Christine T."
+      },
+      {
+        "text": "Eat Crispy Burger strikes again!  From a small burger joint in Encinitas to now four locations and counting. Some of the best smash burgers in town.  Owners...",
+        "author": "Ron Q."
+      }
+    ]
+  },
+  {
     "id": 62,
     "name": "Global Tacos Grill",
     "cuisine": "Caterers",
@@ -2626,6 +2687,7 @@
     "distance": 3.7,
     "rating": 4.6,
     "location": "San Diego",
+    "address": "San Diego, CA 92121",
     "phone": "(858) 314-8586",
     "hours": "Open until 9:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/4DEdaXFBT96hRFdTpAoh-Q/o.jpg",
@@ -2669,6 +2731,7 @@
     "distance": 2.2,
     "rating": 4.6,
     "location": "San Diego",
+    "address": "11545 Sorrento Valley Rd, San Diego, CA 92121",
     "phone": "",
     "hours": "",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/ZSKj_x8wz97OIK2imgxPqA/o.jpg",
@@ -2712,6 +2775,7 @@
     "distance": 2.0,
     "rating": 4.6,
     "location": "San Diego",
+    "address": "9450 Scranton Rd, Ste 114G, San Diego, CA 92121",
     "phone": "(858) 412-3309",
     "hours": "Open until 4:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/UAfddtX5AISlqH5y6f-XTw/o.jpg",
@@ -2755,6 +2819,7 @@
     "distance": 4.0,
     "rating": 4.6,
     "location": "San Diego",
+    "address": "4714 Clairemont Mesa Blvd, San Diego, CA 92117",
     "phone": "(858) 732-0010",
     "hours": "Open until 4:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/BTVDX_El7EVr6C1xU9fyHw/o.jpg",
@@ -2798,6 +2863,7 @@
     "distance": 14.2,
     "rating": 4.6,
     "location": "San Diego",
+    "address": "4637 Market St, San Diego, CA 92102",
     "phone": "(858) 267-8135",
     "hours": "Open until 12:00 AM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/CwTXM8XSX3mCG7Ie3Edg-g/o.jpg",
@@ -2841,6 +2907,7 @@
     "distance": 1.5,
     "rating": 4.6,
     "location": "San Diego",
+    "address": "4545 La Jolla Village Dr, Ste F9, San Diego, CA 92122",
     "phone": "(858) 352-6066",
     "hours": "Open until 12:00 AM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/-YzkvfHFczIUgTp_DeG6YQ/o.jpg",
@@ -2878,12 +2945,57 @@
   },
   {
     "id": 68,
+    "name": "Higher Grounds Coffee Cafe",
+    "cuisine": "Cafes",
+    "price": "",
+    "distance": 4.2,
+    "rating": 4.6,
+    "location": "San Diego",
+    "address": "5887 Copley Dr, San Diego, CA 92111",
+    "phone": "(619) 206-8000",
+    "hours": "Open until 3:00 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/bcswmkUiD8Vlm14BFWtg7A/o.jpg",
+    "menuImages": [
+      "https://s3-media0.fl.yelpcdn.com/bphoto/bcswmkUiD8Vlm14BFWtg7A/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/lFX7VM8YI3gU1MgLRM1ZAg/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/UzC0UbQES6eXCA4nRv6UDw/o.jpg"
+    ],
+    "reviews": [
+      {
+        "text": "Man, I had a California burrito from the place and it was one of the best burritos I've ever had and I'm not even a Cali burrito kinda girl. The carne was...",
+        "author": "Keisha B."
+      },
+      {
+        "text": "I work right next door to this café, and I must say I really enjoy having lunch here. I've tried multiple dishes, and I've had very few complaints. The...",
+        "author": "Andrea J."
+      },
+      {
+        "text": "I can't say enough great things about higher ground and the quality of their coffee and their food. I just drove here all the way from El Cajon to enjoy...",
+        "author": "Savin H."
+      },
+      {
+        "text": "Delightful & totally unexpected culinary experience while visiting Kaiser, where I enjoyed, perhaps the best Chorizo Burrito with red sauce & Avocado aïoli...",
+        "author": "Robert S."
+      },
+      {
+        "text": "Today I stopped by higher ground coffee before I went to physical therapy at kaiser . They have their own private parking lot and you're not supposed to...",
+        "author": "Cat N."
+      },
+      {
+        "text": "This place is really good and staff is great. I'm surprised that the coffee and sandwiches are actually high quality. \n\nI got the Maui coffee & Mexican...",
+        "author": "Nirel M."
+      }
+    ]
+  },
+  {
+    "id": 69,
     "name": "Crossroads Deli",
     "cuisine": "Delis",
     "price": "$",
     "distance": 1.9,
     "rating": 4.6,
     "location": "San Diego",
+    "address": "9085 Judicial Dr, Ste 100, San Diego, CA 92122",
     "phone": "(858) 458-0921",
     "hours": "Open until 3:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/WEAgMhyHo9mDZxi5MyLZXA/o.jpg",
@@ -2920,15 +3032,16 @@
     ]
   },
   {
-    "id": 69,
+    "id": 70,
     "name": "Blue Ocean Sushi & Grill",
     "cuisine": "Sushi Bars",
     "price": "",
     "distance": 1.3,
     "rating": 4.6,
     "location": "San Diego",
+    "address": "4313 La Jolla Village Dr, Ste 2265, San Diego, CA 92122",
     "phone": "(858) 352-6376",
-    "hours": "Open until 9:30 PM",
+    "hours": "Open until 10:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/2ITKmBfLLs-ppImShI7sEQ/o.jpg",
     "menuImages": [
       "https://s3-media0.fl.yelpcdn.com/bphoto/2ITKmBfLLs-ppImShI7sEQ/o.jpg",
@@ -2963,56 +3076,58 @@
     ]
   },
   {
-    "id": 70,
-    "name": "Higher Grounds Coffee Cafe",
-    "cuisine": "Cafes",
-    "price": "",
-    "distance": 4.2,
+    "id": 71,
+    "name": "Viet Nom",
+    "cuisine": "Vietnamese",
+    "price": "$$",
+    "distance": 1.8,
     "rating": 4.6,
     "location": "San Diego",
-    "phone": "(619) 206-8000",
-    "hours": "Open until 3:00 PM",
-    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/bcswmkUiD8Vlm14BFWtg7A/o.jpg",
+    "address": "8895 Towne Centre Dr, San Diego, CA 92122",
+    "phone": "(858) 412-4440",
+    "hours": "Open until 10:30 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/C9kCYkygoxElMvKqRptVIg/o.jpg",
     "menuImages": [
-      "https://s3-media0.fl.yelpcdn.com/bphoto/bcswmkUiD8Vlm14BFWtg7A/o.jpg",
-      "https://s3-media0.fl.yelpcdn.com/bphoto/lFX7VM8YI3gU1MgLRM1ZAg/o.jpg",
-      "https://s3-media0.fl.yelpcdn.com/bphoto/UzC0UbQES6eXCA4nRv6UDw/o.jpg"
+      "https://s3-media0.fl.yelpcdn.com/bphoto/C9kCYkygoxElMvKqRptVIg/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/MntPPN5llIrL2yGaYf4KlA/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/TeRlzs_xlr8MTUWBDUU3pg/o.jpg"
     ],
     "reviews": [
       {
-        "text": "Man, I had a California burrito from the place and it was one of the best burritos I've ever had and I'm not even a Cali burrito kinda girl. The carne was...",
-        "author": "Keisha B."
+        "text": "Food was good, decent portion would've been better with a little more noodles\n\nService was good, servers were nice and quick.\n\nthe ambiance is calm and...",
+        "author": "Eric Z."
       },
       {
-        "text": "I work right next door to this café, and I must say I really enjoy having lunch here. I've tried multiple dishes, and I've had very few complaints. The...",
-        "author": "Andrea J."
+        "text": "The pho was extremely good. The broth was very fragrant and flavorful. Our server, Sabrina, was delightful and extremely helpful.",
+        "author": "Melvic B."
       },
       {
-        "text": "Delightful & totally unexpected culinary experience while visiting Kaiser, where I enjoyed, perhaps the best Chorizo Burrito with red sauce & Avocado aïoli...",
-        "author": "Robert S."
+        "text": "VIET NOM is the kind of lunch spot that makes you wonder why you ever settled for bland takeout. I stopped by for a midday meal and ordered the boneless rib...",
+        "author": "kyler w."
       },
       {
-        "text": "Today I stopped by higher ground coffee before I went to physical therapy at kaiser . They have their own private parking lot and you're not supposed to...",
-        "author": "Cat N."
+        "text": "Food was pho-nominal! The rib was fall off the bone, v tender and soft. The broth was flavorful and I can taste the beef. Toppings were all fresh and...",
+        "author": "Zaide P."
       },
       {
-        "text": "This place is really good and staff is great. I'm surprised that the coffee and sandwiches are actually high quality. \n\nI got the Maui coffee & Mexican...",
-        "author": "Nirel M."
+        "text": "I got the pho nam and grilled pork spring rolls. \n\nNot only is the decor super cute and the food super scrumptious, but the staff is also super friendly and...",
+        "author": "Julia W."
       },
       {
-        "text": "Stopped here for a small coffee while waiting for a relative at the hospital for a procedure. This coffee shop is very large inside and if you needed to get...",
-        "author": "Crystal M."
+        "text": "Came on a busy Sunday, although I understand it's never the servers fault, I was very irritated.\n\nThey had one server bussing, seating, and running food. He...",
+        "author": "Laurence S."
       }
     ]
   },
   {
-    "id": 71,
+    "id": 72,
     "name": "Cafe Vahik",
     "cuisine": "Coffee & Tea",
     "price": "$$",
     "distance": 4.3,
     "rating": 4.6,
     "location": "La Jolla",
+    "address": "6780 La Jolla Blvd, La Jolla, CA 92037",
     "phone": "(858) 459-1895",
     "hours": "Open until 3:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/BgqLXQom9ruP23DvwzzmNw/o.jpg",
@@ -3049,13 +3164,14 @@
     ]
   },
   {
-    "id": 72,
+    "id": 73,
     "name": "Luckybolt Kitchen + Bakery",
     "cuisine": "Bakeries",
     "price": "$$",
     "distance": 1.6,
     "rating": 4.6,
     "location": "San Diego",
+    "address": "10920 Roselle St, Ste 104, San Diego, CA 92121",
     "phone": "(858) 352-6766",
     "hours": "Open until 2:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/EKQAALyW2gaaWtJgZsZB_g/o.jpg",
@@ -3092,49 +3208,6 @@
     ]
   },
   {
-    "id": 73,
-    "name": "Viet Nom",
-    "cuisine": "Vietnamese",
-    "price": "$$",
-    "distance": 1.8,
-    "rating": 4.6,
-    "location": "San Diego",
-    "phone": "(858) 412-4440",
-    "hours": "Open until 9:30 PM",
-    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/C9kCYkygoxElMvKqRptVIg/o.jpg",
-    "menuImages": [
-      "https://s3-media0.fl.yelpcdn.com/bphoto/C9kCYkygoxElMvKqRptVIg/o.jpg",
-      "https://s3-media0.fl.yelpcdn.com/bphoto/MntPPN5llIrL2yGaYf4KlA/o.jpg",
-      "https://s3-media0.fl.yelpcdn.com/bphoto/TeRlzs_xlr8MTUWBDUU3pg/o.jpg"
-    ],
-    "reviews": [
-      {
-        "text": "Food was good, decent portion would've been better with a little more noodles\n\nService was good, servers were nice and quick.\n\nthe ambiance is calm and...",
-        "author": "Eric Z."
-      },
-      {
-        "text": "The pho was extremely good. The broth was very fragrant and flavorful. Our server, Sabrina, was delightful and extremely helpful.",
-        "author": "Melvic B."
-      },
-      {
-        "text": "VIET NOM is the kind of lunch spot that makes you wonder why you ever settled for bland takeout. I stopped by for a midday meal and ordered the boneless rib...",
-        "author": "kyler w."
-      },
-      {
-        "text": "Food was pho-nominal! The rib was fall off the bone, v tender and soft. The broth was flavorful and I can taste the beef. Toppings were all fresh and...",
-        "author": "Zaide P."
-      },
-      {
-        "text": "I got the pho nam and grilled pork spring rolls. \n\nNot only is the decor super cute and the food super scrumptious, but the staff is also super friendly and...",
-        "author": "Julia W."
-      },
-      {
-        "text": "Came on a busy Sunday, although I understand it's never the servers fault, I was very irritated.\n\nThey had one server bussing, seating, and running food. He...",
-        "author": "Laurence S."
-      }
-    ]
-  },
-  {
     "id": 74,
     "name": "STP Bar-N-Grill",
     "cuisine": "Bars",
@@ -3142,8 +3215,9 @@
     "distance": 4.7,
     "rating": 4.6,
     "location": "San Diego",
+    "address": "5487 Clairemont Mesa Blvd, San Diego, CA 92117",
     "phone": "(858) 430-6911",
-    "hours": "Open until 8:00 PM",
+    "hours": "Open until 9:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/3LJMsTGLsNTv7ahfeOYJ1w/o.jpg",
     "menuImages": [
       "https://s3-media0.fl.yelpcdn.com/bphoto/3LJMsTGLsNTv7ahfeOYJ1w/o.jpg",
@@ -3151,10 +3225,6 @@
       "https://s3-media0.fl.yelpcdn.com/bphoto/V0oUykwNmIoPpN5GRg-ZLw/o.jpg"
     ],
     "reviews": [
-      {
-        "text": "Great burgers. Haven't tried the other stuff but burgers are A1 I'd highly recommend sitting on there patio and enjoying a relaxed burger",
-        "author": "Kevin R."
-      },
       {
         "text": "Wonderful staff and positively patriotic which unfortunately is rare to see in California but highly appreciated when I do see it. \n\nAnd they offer dog...",
         "author": "Nick C."
@@ -3174,6 +3244,10 @@
       {
         "text": "One of the best places for burgers , the service is very good too. This place has a unique ambiance. If you enjoy classic rock and roll music playing in the...",
         "author": "T D."
+      },
+      {
+        "text": "This was a truly awesome and unexpected find! My work peep and I stopped here for a lunch whilst doing some real estate shopping and loved everything about...",
+        "author": "Jonna J."
       }
     ]
   },
@@ -3185,6 +3259,7 @@
     "distance": 3.7,
     "rating": 4.6,
     "location": "San Diego",
+    "address": "6835 Flanders Dr, San Diego, CA 92121",
     "phone": "(858) 282-0591",
     "hours": "Open until 8:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/Hl7_mEoez-YvK_sLThaqqg/o.jpg",
@@ -3195,6 +3270,10 @@
     ],
     "reviews": [
       {
+        "text": "i've been to their other location before and it was phenomenal then and it still is now. my favorite poke spot in socal, just wish it wasn't so far from me...",
+        "author": "Jacob B."
+      },
+      {
         "text": "Quality ingredients are the difference. It is do fantastic in it's simplicity that you don't get or need a lot of extras. Fish, sauce, rice. Perfect.\n\nThe...",
         "author": "Marcos O."
       },
@@ -3203,20 +3282,16 @@
         "author": "Rey D."
       },
       {
-        "text": "If you love poke then you gotta stop by, we got the a small and medium bowl but gotta try the poke nachos the next time I go back.  \n\nOrdered the macaroni...",
-        "author": "Joey E."
-      },
-      {
         "text": "Came here on a Tuesday at 3pm. They have happy hour from 3pm to 5pm all beer and poke items $2 off. There was no line at all. The place was really clean and...",
         "author": "Joycee K."
       },
       {
-        "text": "This place is definitely worth the hype! These nachos are out of this world delicious. The salmon has such a fresh flavor. The sauce is so tasty. The wonton...",
-        "author": "Madalina A."
+        "text": "Came here on a Thursday at 4:30 for an early dinner.  This is in Mira Mesa area surrounded by business offices.  There was plenty of parking. Upon walking...",
+        "author": "Imee C."
       },
       {
-        "text": "Don't let the location fool you. Looks like it's in some kind of industrial neighborhood. Plenty of parking. Plenty of outdoor seating & space, as well as...",
-        "author": "Lea L."
+        "text": "This place is definitely worth the hype! These nachos are out of this world delicious. The salmon has such a fresh flavor. The sauce is so tasty. The wonton...",
+        "author": "Madalina A."
       }
     ]
   },
@@ -3228,8 +3303,9 @@
     "distance": 3.2,
     "rating": 4.5,
     "location": "La Jolla",
+    "address": "1109 Wall St, La Jolla, CA 92037",
     "phone": "",
-    "hours": "Open until 3:00 PM",
+    "hours": "Open until 2:30 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/vSH5Wsuj1azZfKLCcKRkuQ/o.jpg",
     "menuImages": [
       "https://s3-media0.fl.yelpcdn.com/bphoto/vSH5Wsuj1azZfKLCcKRkuQ/o.jpg",
@@ -3271,6 +3347,7 @@
     "distance": 4.0,
     "rating": 4.5,
     "location": "San Diego",
+    "address": "4706 Clairemont Mesa Blvd, San Diego, CA 92117",
     "phone": "(858) 246-6903",
     "hours": "Open until 2:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/i4OFhQZogpHDbwRBL2ph0A/o.jpg",
@@ -3314,6 +3391,7 @@
     "distance": 3.1,
     "rating": 4.5,
     "location": "San Diego",
+    "address": "1237 Prospect St, San Diego, CA 92037",
     "phone": "(858) 352-6075",
     "hours": "Open until 8:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/siF2TfF9IfeswojfAPXtDg/o.jpg",
@@ -3357,6 +3435,7 @@
     "distance": 11.4,
     "rating": 4.5,
     "location": "San Diego",
+    "address": "San Diego, CA 92101",
     "phone": "(619) 733-1318",
     "hours": "Open until 12:00 AM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/ESc5hXS3tp6vTUSSy6ptmg/o.jpg",
@@ -3400,6 +3479,7 @@
     "distance": 3.4,
     "rating": 4.5,
     "location": "La Jolla",
+    "address": "7650 Girard Ave, Ste 400, La Jolla, CA 92037",
     "phone": "(858) 633-3893",
     "hours": "Open until 8:30 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/6PB2KzK7PB-_SAq-JkeheA/o.jpg",
@@ -3443,6 +3523,7 @@
     "distance": 0.9,
     "rating": 4.5,
     "location": "San Diego",
+    "address": "8657 Villa La Jolla Dr, Ste 103, San Diego, CA 92037",
     "phone": "",
     "hours": "Open until 10:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/1JUPMIc8IN6dULCtVfPe4A/o.jpg",
@@ -3486,8 +3567,9 @@
     "distance": 3.3,
     "rating": 4.5,
     "location": "La Jolla",
+    "address": "7863 Girard Ave, 301 F3, La Jolla, CA 92037",
     "phone": "(858) 551-5105",
-    "hours": "Open until 8:30 PM",
+    "hours": "Open until 9:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/SDUW-Msj9jJFbAuPiYzbYA/o.jpg",
     "menuImages": [
       "https://s3-media0.fl.yelpcdn.com/bphoto/SDUW-Msj9jJFbAuPiYzbYA/o.jpg",
@@ -3529,6 +3611,7 @@
     "distance": 1.4,
     "rating": 4.5,
     "location": "San Diego",
+    "address": "7728 Regents Rd, Ste 501, San Diego, CA 92122",
     "phone": "(619) 990-6812",
     "hours": "Open until 2:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/EOTE3kxwO0vJFjK9SWZbXg/o.jpg",
@@ -3566,226 +3649,13 @@
   },
   {
     "id": 84,
-    "name": "Georgia Southern BBQ",
-    "cuisine": "Food Trucks",
-    "price": "$$",
-    "distance": 16.2,
-    "rating": 5.0,
-    "location": "San Diego",
-    "phone": "(619) 928-9499",
-    "hours": "Open until 6:00 PM",
-    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/jSJ6nOyBcsupfzJhxPQm9w/o.jpg",
-    "menuImages": [
-      "https://s3-media0.fl.yelpcdn.com/bphoto/jSJ6nOyBcsupfzJhxPQm9w/o.jpg",
-      "https://s3-media0.fl.yelpcdn.com/bphoto/RnVkdBOcwg4NmhiZUbiztg/o.jpg",
-      "https://s3-media0.fl.yelpcdn.com/bphoto/mEcHhSNgxMjkgl8rdt2YWQ/o.jpg"
-    ],
-    "reviews": [
-      {
-        "text": "If you're looking for damn good BBQ, look no further than the Georgia Southern BBQ food truck. Forget about those fancy sit down restaurants. \n\nThere was a...",
-        "author": "Ron G."
-      },
-      {
-        "text": "A great BBQ truck/trailer! I ordered ribs and brisket, along with potato salad and the black eyed peas and white rice side. The black eyed peas were SO...",
-        "author": "Fernando E."
-      },
-      {
-        "text": "What a delicious Bbq truck ! Great Ribs, potato salad was wonderful and the Chill was spectacular, full of meat !",
-        "author": "Jonathon S."
-      },
-      {
-        "text": "",
-        "author": ""
-      },
-      {
-        "text": "",
-        "author": ""
-      },
-      {
-        "text": "",
-        "author": ""
-      }
-    ]
-  },
-  {
-    "id": 85,
-    "name": "Brick & Bell Plus",
-    "cuisine": "Bakeries",
-    "price": "",
-    "distance": 3.4,
-    "rating": 4.5,
-    "location": "San Diego",
-    "phone": "",
-    "hours": "Open until 3:00 PM",
-    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/h1YjRkOF5i5EGyr3J8x_fA/o.jpg",
-    "menuImages": [
-      "https://s3-media0.fl.yelpcdn.com/bphoto/h1YjRkOF5i5EGyr3J8x_fA/o.jpg",
-      "https://s3-media0.fl.yelpcdn.com/bphoto/UbBE2ZH_6_Ac4uYa1mCBeg/o.jpg",
-      "https://s3-media0.fl.yelpcdn.com/bphoto/4GJ5CngBw6fd2jy9t4oj_g/o.jpg"
-    ],
-    "reviews": [
-      {
-        "text": "Awesome place in La Jolla. Great quality food. If you are looking for a real meal, with nutrition and taste, this is the spot. \n\nService was spot on,...",
-        "author": "Gustavo P."
-      },
-      {
-        "text": "This 'Plus' branch of the Brick & Bell business, which was founded over 20 years ago, has been open for several months now in the middle of a block on Fay...",
-        "author": "Emmett T."
-      },
-      {
-        "text": "Brick and Bell Plus is the latest to open in this area of La Jolla.\n\nAfter a power walk with my pup Fendi, I decided to stop inside.  Located on Fay St and...",
-        "author": "Henri V."
-      },
-      {
-        "text": "Great spot for breakfast, lunch or just a snack. Homemade style food super clean and healthy. Highly recommend trying the lunch bowls and the mini (and...",
-        "author": "Tati L."
-      },
-      {
-        "text": "Amazing homemade food style\nGreat option for healthy lunch \n\nThey also offer GF and Sugar free pastries, cheesecakes bites are the best!",
-        "author": "Lucas Eduardo B."
-      },
-      {
-        "text": "Best coffee in town.\nAmazing service and food\nGreat location and cozy atmosphere \nI totally recommend",
-        "author": "Thiago M."
-      }
-    ]
-  },
-  {
-    "id": 86,
-    "name": "Afghan Restaurant",
-    "cuisine": "Afghan",
-    "price": "",
-    "distance": 4.7,
-    "rating": 4.8,
-    "location": "San Diego",
-    "phone": "",
-    "hours": "Open until 8:00 PM",
-    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/Pftd6F4c1YKEMSG-k9a01g/o.jpg",
-    "menuImages": [
-      "https://s3-media0.fl.yelpcdn.com/bphoto/Pftd6F4c1YKEMSG-k9a01g/o.jpg",
-      "https://s3-media0.fl.yelpcdn.com/bphoto/JDDyaMcAq4AliSuJB0hujQ/o.jpg"
-    ],
-    "reviews": [
-      {
-        "text": "We had lunch here this week and we were so impressed. Honestly, we liked everything. The salad that came with the entree was very good, the mantu appetizer...",
-        "author": "Sierra V."
-      },
-      {
-        "text": "Decided to try this afghan restaurant.  There used to be a grocery store here but now it is just a restaurant.  They also do catering.  I ordered their...",
-        "author": "Mel H."
-      },
-      {
-        "text": "Food was so good! Lamb melts in your mouth. I felt like I was at a high end restaurant with the customer service! Wonderful spot with wonderful staff.",
-        "author": "Halle C."
-      },
-      {
-        "text": "Great food, the kabobs juicy hot and seasoned that melts in your mouth , the service is family style and clean homey ambiance",
-        "author": "W M."
-      },
-      {
-        "text": "",
-        "author": ""
-      },
-      {
-        "text": "",
-        "author": ""
-      }
-    ]
-  },
-  {
-    "id": 87,
-    "name": "Bistro Pazzo",
-    "cuisine": "Italian",
-    "price": "$$",
-    "distance": 3.2,
-    "rating": 4.5,
-    "location": "La Jolla",
-    "phone": "(858) 456-4005",
-    "hours": "Open until 9:00 PM",
-    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/Chh8KoZLzwZSL7Gwn6rI4w/o.jpg",
-    "menuImages": [
-      "https://s3-media0.fl.yelpcdn.com/bphoto/Chh8KoZLzwZSL7Gwn6rI4w/o.jpg",
-      "https://s3-media0.fl.yelpcdn.com/bphoto/VSZZ0OABASzfp_9_Uocorg/o.jpg",
-      "https://s3-media0.fl.yelpcdn.com/bphoto/-3Isc7MU_Y2l6qwdo7OBbw/o.jpg"
-    ],
-    "reviews": [
-      {
-        "text": "A cute, quaint family-owned restaurant a couple of streets off of the main bustling downtown La Jolla. \n\nWe had the risotto, which my partner Kevin served...",
-        "author": "Katherine C."
-      },
-      {
-        "text": "Really great neighborhood Italian bistro   I had delicious cioppino. Very fresh fish and well prepared.  Goid service and homey ambiance.  I will hecome a...",
-        "author": "Ruth S."
-      },
-      {
-        "text": "The food is amazing!!!! Everything we ordered was sooooo tasty. When you walk in, you can smell the sauce and fresh bread. They bring you fresh bread with...",
-        "author": "Nicole S."
-      },
-      {
-        "text": "Fantastic in every way! Pleasant owner,food is great! Very quiet and just plain very nice experience!",
-        "author": "Steve s."
-      },
-      {
-        "text": "This was a fantastic food and delightfully, fun experience. This neighborhood spot pleased an outsider from Colorado.",
-        "author": "Jon L."
-      },
-      {
-        "text": "We felt like a good cup of coffee and dessert after our Japanese rolls around the corner and dropped in at Pazzo.... a bit late but the owner was friendly...",
-        "author": "Ruud N."
-      }
-    ]
-  },
-  {
-    "id": 88,
-    "name": "Treehouse",
-    "cuisine": "Breakfast & Brunch",
-    "price": "",
-    "distance": 3.0,
-    "rating": 5.0,
-    "location": "San Diego",
-    "phone": "",
-    "hours": "Open until 3:00 PM",
-    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/c4ngymz26bpBmbDwzloOnw/o.jpg",
-    "menuImages": [
-      "https://s3-media0.fl.yelpcdn.com/bphoto/c4ngymz26bpBmbDwzloOnw/o.jpg",
-      "https://s3-media0.fl.yelpcdn.com/bphoto/gIMDpEKP0axydkcYt7AoBQ/o.jpg",
-      "https://s3-media0.fl.yelpcdn.com/bphoto/CJdf49wmzbXxn9FEoDFBoA/o.jpg"
-    ],
-    "reviews": [
-      {
-        "text": "We came to visit TREE HOUSE. This location is easy to spot because it has huge, all-glass windows around it. \n\nThey greeted us right away and told us they...",
-        "author": "Michael G."
-      },
-      {
-        "text": "A Modern Treehouse with all-around stunning decor. There's not a bad seat indoors or outdoors. The restroom is nice and pristine. A...",
-        "author": "Susan Y."
-      },
-      {
-        "text": "A classy food and cool happy hour spot, perhaps something new for Qualcommers....  the happy hour is not yet open one guy said maybe in 2 months, but they...",
-        "author": "Rey D."
-      },
-      {
-        "text": "",
-        "author": ""
-      },
-      {
-        "text": "",
-        "author": ""
-      },
-      {
-        "text": "",
-        "author": ""
-      }
-    ]
-  },
-  {
-    "id": 89,
     "name": "AROI Thai",
     "cuisine": "Thai",
     "price": "$$",
     "distance": 3.6,
     "rating": 4.5,
     "location": "La Jolla",
+    "address": "7523 Fay Ave, Ste A, La Jolla, CA 92037",
     "phone": "(858) 729-1883",
     "hours": "Open until 3:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/ErdNVxNncYFE7NW3S5T11w/o.jpg",
@@ -3822,72 +3692,34 @@
     ]
   },
   {
-    "id": 90,
-    "name": "Jersey Mike's Subs",
-    "cuisine": "Sandwiches",
+    "id": 85,
+    "name": "Treehouse",
+    "cuisine": "Breakfast & Brunch",
     "price": "",
-    "distance": 1.3,
+    "distance": 3.0,
     "rating": 5.0,
     "location": "San Diego",
-    "phone": "(858) 250-3200",
-    "hours": "Open until 9:00 PM",
-    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/fUjMWJegrfmvjg407GzSrg/o.jpg",
-    "menuImages": [],
-    "reviews": [
-      {
-        "text": "Jersey Mike's is one of our favorite place to go we usually get clubs yummy is very delicious..",
-        "author": "Azita A."
-      },
-      {
-        "text": "We ordered catering from Jersey Mike's. Sean helped us with the order and he was such a pleasure to work with. The 14 catering boxes we ordered the day...",
-        "author": "Ali O."
-      },
-      {
-        "text": "There is one worker here (I need to get their name) that is always so kind, so professional, and knows my name every time I go pick up my sandwich (even...",
-        "author": "Sara S."
-      },
-      {
-        "text": "",
-        "author": ""
-      },
-      {
-        "text": "",
-        "author": ""
-      },
-      {
-        "text": "",
-        "author": ""
-      }
-    ]
-  },
-  {
-    "id": 91,
-    "name": "Calzone Life",
-    "cuisine": "Pizza",
-    "price": "",
-    "distance": 17.9,
-    "rating": 5.0,
-    "location": "Escondido",
-    "phone": "(442) 350-0111",
-    "hours": "Open until 10:00 PM",
-    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/l5Og8Nyvhe86R2k5mS5wmQ/o.jpg",
+    "address": "9945 Pacific Heights Blvd, Ste 200, San Diego, CA 92121",
+    "phone": "",
+    "hours": "Open until 3:00 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/c4ngymz26bpBmbDwzloOnw/o.jpg",
     "menuImages": [
-      "https://s3-media0.fl.yelpcdn.com/bphoto/PCQdb1poGIzFbJ0NrG6L_g/o.jpg",
-      "https://s3-media0.fl.yelpcdn.com/bphoto/g5cIBKP7Bb88A3Ki-Oo1ow/o.jpg",
-      "https://s3-media0.fl.yelpcdn.com/bphoto/jicHwlNJSNlYDI3DIH79sA/o.jpg"
+      "https://s3-media0.fl.yelpcdn.com/bphoto/c4ngymz26bpBmbDwzloOnw/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/gIMDpEKP0axydkcYt7AoBQ/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/CJdf49wmzbXxn9FEoDFBoA/o.jpg"
     ],
     "reviews": [
       {
-        "text": "We initially shied away from trying Calzone Life because it said Delivery Only, however, when I looked up the address I noticed (1) it's located in the...",
-        "author": "Talar P."
+        "text": "We came to visit TREE HOUSE. This location is easy to spot because it has huge, all-glass windows around it. \n\nThey greeted us right away and told us they...",
+        "author": "Michael G."
       },
       {
-        "text": "This was my first visit to Calzone and it will not be my last! The food was absolutely delicious at an amazing value. They didn't disappoint. Best calzone...",
-        "author": "Ohnah T."
+        "text": "A Modern Treehouse with all-around stunning decor. There's not a bad seat indoors or outdoors. The restroom is nice and pristine. A...",
+        "author": "Susan Y."
       },
       {
-        "text": "Friendly service, good food, really enjoyed the experience, will be revisiting very soon. Never going to order a calzone anywhere else ever again.",
-        "author": "Jack H."
+        "text": "A classy food and cool happy hour spot, perhaps something new for Qualcommers....  the happy hour is not yet open one guy said maybe in 2 months, but they...",
+        "author": "Rey D."
       },
       {
         "text": "",
@@ -3904,15 +3736,147 @@
     ]
   },
   {
-    "id": 92,
+    "id": 86,
+    "name": "Afghan Restaurant",
+    "cuisine": "Afghan",
+    "price": "",
+    "distance": 4.7,
+    "rating": 4.8,
+    "location": "San Diego",
+    "address": "5440 Clairemont Mesa Blvd, Ste B, San Diego, CA 92117",
+    "phone": "",
+    "hours": "Open until 9:00 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/Pftd6F4c1YKEMSG-k9a01g/o.jpg",
+    "menuImages": [
+      "https://s3-media0.fl.yelpcdn.com/bphoto/Pftd6F4c1YKEMSG-k9a01g/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/JDDyaMcAq4AliSuJB0hujQ/o.jpg"
+    ],
+    "reviews": [
+      {
+        "text": "We had lunch here this week and we were so impressed. Honestly, we liked everything. The salad that came with the entree was very good, the mantu appetizer...",
+        "author": "Sierra V."
+      },
+      {
+        "text": "Decided to try this afghan restaurant.  There used to be a grocery store here but now it is just a restaurant.  They also do catering.  I ordered their...",
+        "author": "Mel H."
+      },
+      {
+        "text": "Food was so good! Lamb melts in your mouth. I felt like I was at a high end restaurant with the customer service! Wonderful spot with wonderful staff.",
+        "author": "Halle C."
+      },
+      {
+        "text": "Great food, the kabobs juicy hot and seasoned that melts in your mouth , the service is family style and clean homey ambiance",
+        "author": "W M."
+      },
+      {
+        "text": "",
+        "author": ""
+      },
+      {
+        "text": "",
+        "author": ""
+      }
+    ]
+  },
+  {
+    "id": 87,
+    "name": "Brick & Bell Plus",
+    "cuisine": "Bakeries",
+    "price": "",
+    "distance": 3.4,
+    "rating": 4.5,
+    "location": "San Diego",
+    "address": "7825 Fay Ave, San Diego, CA 92037",
+    "phone": "",
+    "hours": "Open until 3:00 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/h1YjRkOF5i5EGyr3J8x_fA/o.jpg",
+    "menuImages": [
+      "https://s3-media0.fl.yelpcdn.com/bphoto/h1YjRkOF5i5EGyr3J8x_fA/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/UbBE2ZH_6_Ac4uYa1mCBeg/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/4GJ5CngBw6fd2jy9t4oj_g/o.jpg"
+    ],
+    "reviews": [
+      {
+        "text": "Awesome place in La Jolla. Great quality food. If you are looking for a real meal, with nutrition and taste, this is the spot. \n\nService was spot on,...",
+        "author": "Gustavo P."
+      },
+      {
+        "text": "This 'Plus' branch of the Brick & Bell business, which was founded over 20 years ago, has been open for several months now in the middle of a block on Fay...",
+        "author": "Emmett T."
+      },
+      {
+        "text": "Brick and Bell Plus is the latest to open in this area of La Jolla.\n\nAfter a power walk with my pup Fendi, I decided to stop inside.  Located on Fay St and...",
+        "author": "Henri V."
+      },
+      {
+        "text": "Great spot for breakfast, lunch or just a snack. Homemade style food super clean and healthy. Highly recommend trying the lunch bowls and the mini (and...",
+        "author": "Tati L."
+      },
+      {
+        "text": "Amazing homemade food style\nGreat option for healthy lunch \n\nThey also offer GF and Sugar free pastries, cheesecakes bites are the best!",
+        "author": "Lucas Eduardo B."
+      },
+      {
+        "text": "Best coffee in town.\nAmazing service and food\nGreat location and cozy atmosphere \nI totally recommend",
+        "author": "Thiago M."
+      }
+    ]
+  },
+  {
+    "id": 88,
+    "name": "Bistro Pazzo",
+    "cuisine": "Italian",
+    "price": "$$",
+    "distance": 3.2,
+    "rating": 4.5,
+    "location": "La Jolla",
+    "address": "7930 Ivanhoe Ave, La Jolla, CA 92037",
+    "phone": "(858) 456-4005",
+    "hours": "Open until 9:00 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/Chh8KoZLzwZSL7Gwn6rI4w/o.jpg",
+    "menuImages": [
+      "https://s3-media0.fl.yelpcdn.com/bphoto/Chh8KoZLzwZSL7Gwn6rI4w/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/VSZZ0OABASzfp_9_Uocorg/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/-3Isc7MU_Y2l6qwdo7OBbw/o.jpg"
+    ],
+    "reviews": [
+      {
+        "text": "A cute, quaint family-owned restaurant a couple of streets off of the main bustling downtown La Jolla. \n\nWe had the risotto, which my partner Kevin served...",
+        "author": "Katherine C."
+      },
+      {
+        "text": "Really great neighborhood Italian bistro   I had delicious cioppino. Very fresh fish and well prepared.  Goid service and homey ambiance.  I will hecome a...",
+        "author": "Ruth S."
+      },
+      {
+        "text": "The food is amazing!!!! Everything we ordered was sooooo tasty. When you walk in, you can smell the sauce and fresh bread. They bring you fresh bread with...",
+        "author": "Nicole S."
+      },
+      {
+        "text": "Fantastic in every way! Pleasant owner,food is great! Very quiet and just plain very nice experience!",
+        "author": "Steve s."
+      },
+      {
+        "text": "This was a fantastic food and delightfully, fun experience. This neighborhood spot pleased an outsider from Colorado.",
+        "author": "Jon L."
+      },
+      {
+        "text": "We felt like a good cup of coffee and dessert after our Japanese rolls around the corner and dropped in at Pazzo.... a bit late but the owner was friendly...",
+        "author": "Ruud N."
+      }
+    ]
+  },
+  {
+    "id": 89,
     "name": "Afghani Food International Market & Restaurant",
     "cuisine": "Afghan",
     "price": "$$",
     "distance": 4.7,
     "rating": 4.5,
     "location": "San Diego",
+    "address": "5440 Clairemont Mesa Blvd, Ste B, San Diego, CA 92117",
     "phone": "(858) 524-4741",
-    "hours": "Open until 8:00 PM",
+    "hours": "Open until 9:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/Zye9jiYiWUsTwW3Lg9WOLg/o.jpg",
     "menuImages": [
       "https://s3-media0.fl.yelpcdn.com/bphoto/Zye9jiYiWUsTwW3Lg9WOLg/o.jpg",
@@ -3947,6 +3911,134 @@
     ]
   },
   {
+    "id": 90,
+    "name": "Calzone Life",
+    "cuisine": "Pizza",
+    "price": "",
+    "distance": 17.9,
+    "rating": 5.0,
+    "location": "Escondido",
+    "address": "501 W Felicita Ave, Ste 103, Escondido, CA 92025",
+    "phone": "(442) 350-0111",
+    "hours": "Open until 11:00 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/l5Og8Nyvhe86R2k5mS5wmQ/o.jpg",
+    "menuImages": [
+      "https://s3-media0.fl.yelpcdn.com/bphoto/PCQdb1poGIzFbJ0NrG6L_g/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/g5cIBKP7Bb88A3Ki-Oo1ow/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/jicHwlNJSNlYDI3DIH79sA/o.jpg"
+    ],
+    "reviews": [
+      {
+        "text": "We initially shied away from trying Calzone Life because it said Delivery Only, however, when I looked up the address I noticed (1) it's located in the...",
+        "author": "Talar P."
+      },
+      {
+        "text": "This was my first visit to Calzone and it will not be my last! The food was absolutely delicious at an amazing value. They didn't disappoint. Best calzone...",
+        "author": "Ohnah T."
+      },
+      {
+        "text": "Friendly service, good food, really enjoyed the experience, will be revisiting very soon. Never going to order a calzone anywhere else ever again.",
+        "author": "Jack H."
+      },
+      {
+        "text": "",
+        "author": ""
+      },
+      {
+        "text": "",
+        "author": ""
+      },
+      {
+        "text": "",
+        "author": ""
+      }
+    ]
+  },
+  {
+    "id": 91,
+    "name": "Georgia Southern BBQ",
+    "cuisine": "Food Trucks",
+    "price": "$$",
+    "distance": 16.2,
+    "rating": 5.0,
+    "location": "San Diego",
+    "address": "San Diego, CA 92114",
+    "phone": "(619) 928-9499",
+    "hours": "",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/jSJ6nOyBcsupfzJhxPQm9w/o.jpg",
+    "menuImages": [
+      "https://s3-media0.fl.yelpcdn.com/bphoto/jSJ6nOyBcsupfzJhxPQm9w/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/RnVkdBOcwg4NmhiZUbiztg/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/TzOLbWfn0EBVcAh638Uu1Q/o.jpg"
+    ],
+    "reviews": [
+      {
+        "text": "If you're looking for damn good BBQ, look no further than the Georgia Southern BBQ food truck. Forget about those fancy sit down restaurants. \n\nThere was a...",
+        "author": "Ron G."
+      },
+      {
+        "text": "A great BBQ truck/trailer! I ordered ribs and brisket, along with potato salad and the black eyed peas and white rice side. The black eyed peas were SO...",
+        "author": "Fernando E."
+      },
+      {
+        "text": "What a delicious Bbq truck ! Great Ribs, potato salad was wonderful and the Chill was spectacular, full of meat !",
+        "author": "Jonathon S."
+      },
+      {
+        "text": "",
+        "author": ""
+      },
+      {
+        "text": "",
+        "author": ""
+      },
+      {
+        "text": "",
+        "author": ""
+      }
+    ]
+  },
+  {
+    "id": 92,
+    "name": "Jersey Mike's Subs",
+    "cuisine": "Sandwiches",
+    "price": "",
+    "distance": 1.3,
+    "rating": 5.0,
+    "location": "San Diego",
+    "address": "7770 Regents Rd, Ste 102, San Diego, CA 92122",
+    "phone": "(858) 250-3200",
+    "hours": "Open until 9:00 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/fUjMWJegrfmvjg407GzSrg/o.jpg",
+    "menuImages": [],
+    "reviews": [
+      {
+        "text": "Jersey Mike's is one of our favorite place to go we usually get clubs yummy is very delicious..",
+        "author": "Azita A."
+      },
+      {
+        "text": "We ordered catering from Jersey Mike's. Sean helped us with the order and he was such a pleasure to work with. The 14 catering boxes we ordered the day...",
+        "author": "Ali O."
+      },
+      {
+        "text": "There is one worker here (I need to get their name) that is always so kind, so professional, and knows my name every time I go pick up my sandwich (even...",
+        "author": "Sara S."
+      },
+      {
+        "text": "",
+        "author": ""
+      },
+      {
+        "text": "",
+        "author": ""
+      },
+      {
+        "text": "",
+        "author": ""
+      }
+    ]
+  },
+  {
     "id": 93,
     "name": "The Go Go Truck",
     "cuisine": "Food Trucks",
@@ -3954,6 +4046,7 @@
     "distance": 10.1,
     "rating": 4.5,
     "location": "San Diego",
+    "address": "San Diego, CA 92116",
     "phone": "(619) 713-4881",
     "hours": "Open until 8:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/AIvMyajn2O-ZwnnhqzjAFQ/o.jpg",
@@ -3997,8 +4090,9 @@
     "distance": 0.7,
     "rating": 4.5,
     "location": "La Jolla",
+    "address": "3211 Holiday Ct, La Jolla, CA 92037",
     "phone": "(858) 587-9848",
-    "hours": "Open until 8:00 PM",
+    "hours": "Open until 9:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/NRWn2Ol_aYFS391FF-il6A/o.jpg",
     "menuImages": [
       "https://s3-media0.fl.yelpcdn.com/bphoto/NRWn2Ol_aYFS391FF-il6A/o.jpg",
@@ -4040,6 +4134,7 @@
     "distance": 3.3,
     "rating": 4.5,
     "location": "La Jolla",
+    "address": "6435 Caminito Blythefield, Ste G, La Jolla, CA 92037",
     "phone": "(858) 886-7985",
     "hours": "Open until 2:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/aYi-r1k26iuy7CmH7cNoDA/o.jpg",
@@ -4083,6 +4178,7 @@
     "distance": 0.3,
     "rating": 4.5,
     "location": "La Jolla",
+    "address": "9500 Gilman Dr, La Jolla, CA 92093",
     "phone": "(858) 822-4547",
     "hours": "Open until 4:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/o3P278MUbuqnrhb__4tSCw/o.jpg",
@@ -4126,8 +4222,9 @@
     "distance": 4.7,
     "rating": 4.5,
     "location": "San Diego",
+    "address": "5450 Clairemont Mesa Blvd, Ste G, San Diego, CA 92117",
     "phone": "(858) 430-6878",
-    "hours": "Open until 8:00 PM",
+    "hours": "Open until 8:30 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/sJJ0qqLHEPvacQbvi7n2ww/o.jpg",
     "menuImages": [
       "https://s3-media0.fl.yelpcdn.com/bphoto/sJJ0qqLHEPvacQbvi7n2ww/o.jpg",
@@ -4169,6 +4266,7 @@
     "distance": 7.2,
     "rating": 4.5,
     "location": "San Diego",
+    "address": "9756 Mira Mesa Blvd, San Diego, CA 92126",
     "phone": "(858) 774-7202",
     "hours": "Open until 2:00 AM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/rhU6H_2kYSh45IYunMKa5A/o.jpg",
@@ -4212,6 +4310,7 @@
     "distance": 3.2,
     "rating": 4.5,
     "location": "San Diego",
+    "address": "11375 El Camino Real, San Diego, CA 92130",
     "phone": "(858) 793-1200",
     "hours": "Open until 2:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/D0SUa4tPZswfCYiqCLybZA/o.jpg",
@@ -4255,8 +4354,9 @@
     "distance": 2.2,
     "rating": 4.5,
     "location": "San Diego",
+    "address": "2134 Avenida De La Playa, San Diego, CA 92037",
     "phone": "(888) 535-2227",
-    "hours": "Open until 7:30 PM",
+    "hours": "Open until 8:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/ob3NPAVCAD0Ew0lZF48k1g/o.jpg",
     "menuImages": [
       "https://s3-media0.fl.yelpcdn.com/bphoto/ob3NPAVCAD0Ew0lZF48k1g/o.jpg",
@@ -4298,6 +4398,7 @@
     "distance": 3.4,
     "rating": 4.5,
     "location": "La Jolla",
+    "address": "1030-G Torrey Pines Rd, La Jolla, CA 92037",
     "phone": "(858) 263-4463",
     "hours": "Open until 2:30 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/h3Bk7nNxcL_rBI2Cr_huBA/o.jpg",
@@ -4341,8 +4442,9 @@
     "distance": 1.2,
     "rating": 4.5,
     "location": "San Diego",
+    "address": "4126 Executive Dr, San Diego, CA 92037",
     "phone": "(858) 362-1353",
-    "hours": "Open until 7:30 PM",
+    "hours": "Open until 3:30 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/13EmuaCINZrgswkHyuRPog/o.jpg",
     "menuImages": [
       "https://s3-media0.fl.yelpcdn.com/bphoto/13EmuaCINZrgswkHyuRPog/o.jpg",
@@ -4384,6 +4486,7 @@
     "distance": 3.4,
     "rating": 4.5,
     "location": "La Jolla",
+    "address": "1030 Torrey Pines Rd, Ste B, La Jolla, CA 92037",
     "phone": "(858) 246-7818",
     "hours": "Open until 9:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/KqdrZItXAXMr4a_l_xDkdA/o.jpg",
@@ -4427,6 +4530,7 @@
     "distance": 2.4,
     "rating": 4.5,
     "location": "San Diego",
+    "address": "10945 Vista Sorrento Pkwy, San Diego, CA 92130",
     "phone": "",
     "hours": "Open until 2:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/MspblLk6vR5cwczo8VSb7A/o.jpg",
@@ -4470,6 +4574,7 @@
     "distance": 3.2,
     "rating": 4.5,
     "location": "San Diego",
+    "address": "8008 Girard Ave, Ste 220, San Diego, CA 92037",
     "phone": "(858) 900-2799",
     "hours": "Open until 9:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/CgXdEDlsP-HTYJnCOxTByQ/o.jpg",
@@ -4513,6 +4618,7 @@
     "distance": 4.0,
     "rating": 4.4,
     "location": "San Diego",
+    "address": "6765 Mira Mesa Blvd, San Diego, CA 92121",
     "phone": "(858) 247-5005",
     "hours": "Open until 9:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/VE3g9B4vNmvYDJO1VMBBug/o.jpg",
@@ -4556,6 +4662,7 @@
     "distance": 3.1,
     "rating": 4.4,
     "location": "La Jolla",
+    "address": "1237 Prospect St, Ste J, La Jolla, CA 92037",
     "phone": "(858) 456-6235",
     "hours": "Open until 4:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/uUwrlTCNiBfvbwaePKQdSQ/o.jpg",
@@ -4599,8 +4706,9 @@
     "distance": 2.2,
     "rating": 4.4,
     "location": "La Jolla",
+    "address": "2179 Avenida De La Playa, La Jolla, CA 92037",
     "phone": "(858) 246-6321",
-    "hours": "Open until 9:00 PM",
+    "hours": "Open until 10:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/B3CqCDaAONp7ojgDThEtUQ/o.jpg",
     "menuImages": [
       "https://s3-media0.fl.yelpcdn.com/bphoto/B3CqCDaAONp7ojgDThEtUQ/o.jpg",
@@ -4636,98 +4744,13 @@
   },
   {
     "id": 109,
-    "name": "Bistro Du Marché",
-    "cuisine": "French",
-    "price": "$$$",
-    "distance": 3.5,
-    "rating": 4.4,
-    "location": "La Jolla",
-    "phone": "(858) 551-7500",
-    "hours": "Open until 8:30 PM",
-    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/P0z7Lvtu6cmZGLxvPC4YiA/o.jpg",
-    "menuImages": [
-      "https://s3-media0.fl.yelpcdn.com/bphoto/P0z7Lvtu6cmZGLxvPC4YiA/o.jpg",
-      "https://s3-media0.fl.yelpcdn.com/bphoto/a4FU8BF3OcScEYtrQNK6RQ/o.jpg",
-      "https://s3-media0.fl.yelpcdn.com/bphoto/ScMazkf-zJ3zqttB1LS9Jg/o.jpg"
-    ],
-    "reviews": [
-      {
-        "text": "Perfect food, spectacular service. I was in town for a conference & dined alone at the bar. Julian was so kind and attentive. A highlight of my trip to San...",
-        "author": "Amy R."
-      },
-      {
-        "text": "Excellent food, excellent service! We went to Bistro Du Marché for my birthday dinner. We had been through southern France about a year ago and were looking...",
-        "author": "Jenn B."
-      },
-      {
-        "text": "Wonderful dinner here last weekend. We came in earlier than our reservation and still got seated quickly even though the dining room was already full. The...",
-        "author": "Jacqueline L."
-      },
-      {
-        "text": "Signature pour commencer (appetizers), hearty plats principaux (entrées), and classic desserts done very well at this neighborhood French bistro!...",
-        "author": "Joyce L."
-      },
-      {
-        "text": "Bistro Du Marche is a wonderful French restaurant in La Jolla. Their duck is amazing. The steaks are the best in town. The service is fancy hi bunny.",
-        "author": "Tracy M."
-      },
-      {
-        "text": "Amazing authentic French restaurant. So glad I tried this establishment.\n\nService is great, atmosphere is nice (very elegant and sophisticated), and the...",
-        "author": "KC C."
-      }
-    ]
-  },
-  {
-    "id": 110,
-    "name": "Din Tai Fung",
-    "cuisine": "Taiwanese",
-    "price": "$$$",
-    "distance": 1.4,
-    "rating": 4.4,
-    "location": "San Diego",
-    "phone": "(858) 375-5988",
-    "hours": "Open until 9:30 PM",
-    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/VmEJ0hAKdzeid6JOV9PA5w/o.jpg",
-    "menuImages": [
-      "https://s3-media0.fl.yelpcdn.com/bphoto/VmEJ0hAKdzeid6JOV9PA5w/o.jpg",
-      "https://s3-media0.fl.yelpcdn.com/bphoto/ecWeGDiyi_J4QhN2S6GSVg/o.jpg",
-      "https://s3-media0.fl.yelpcdn.com/bphoto/kK_DgSMnnzBrPtPkwKWzwg/o.jpg"
-    ],
-    "reviews": [
-      {
-        "text": "We ordered vegan noodles with spicy sauce, chicken fried noodles, bbq baby back ribs, and a few other things. Overall food was really good but it should be...",
-        "author": "Andrew C."
-      },
-      {
-        "text": "Everything here is fantastic between the service, the food, the atmosphere. Hands down favorite restaurant in San Diego!",
-        "author": "Kristi H."
-      },
-      {
-        "text": "It's delicious. Even my kids love it. More words are needed to fill the required eighty five.",
-        "author": "John I."
-      },
-      {
-        "text": "It's been a minute since I've left a review for Din Tai Fung and considering I've been here twice in the last few weeks, it's long overdue. I stick to my...",
-        "author": "Audrey L."
-      },
-      {
-        "text": "Environment: Facility is clean and aesthetically pleasing. The waiting lobby has a direct view to staff hand wrapping the dumplings and XLB. \n\nService:...",
-        "author": "Natalie P."
-      },
-      {
-        "text": "This place was everything they rave about- and service is fast. Please get the martini Lychee martinis they are everything lol - \nAnd all the dumplings made...",
-        "author": "Carmen M."
-      }
-    ]
-  },
-  {
-    "id": 111,
     "name": "Aqua Mare Cucina Italiana ",
     "cuisine": "Italian",
     "price": "",
     "distance": 3.9,
     "rating": 4.4,
     "location": "Del Mar",
+    "address": "2282 Carmel Valley Rd, Del Mar, CA 92014",
     "phone": "(858) 755-7100",
     "hours": "Open until 9:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/NAYKcU6w4BYagrETbpK0SA/o.jpg",
@@ -4764,6 +4787,94 @@
     ]
   },
   {
+    "id": 110,
+    "name": "Bistro Du Marché",
+    "cuisine": "French",
+    "price": "$$$",
+    "distance": 3.5,
+    "rating": 4.4,
+    "location": "La Jolla",
+    "address": "7437 Girard Ave, La Jolla, CA 92037",
+    "phone": "(858) 551-7500",
+    "hours": "Open until 8:30 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/P0z7Lvtu6cmZGLxvPC4YiA/o.jpg",
+    "menuImages": [
+      "https://s3-media0.fl.yelpcdn.com/bphoto/P0z7Lvtu6cmZGLxvPC4YiA/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/a4FU8BF3OcScEYtrQNK6RQ/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/ScMazkf-zJ3zqttB1LS9Jg/o.jpg"
+    ],
+    "reviews": [
+      {
+        "text": "Perfect food, spectacular service. I was in town for a conference & dined alone at the bar. Julian was so kind and attentive. A highlight of my trip to San...",
+        "author": "Amy R."
+      },
+      {
+        "text": "Excellent food, excellent service! We went to Bistro Du Marché for my birthday dinner. We had been through southern France about a year ago and were looking...",
+        "author": "Jenn B."
+      },
+      {
+        "text": "Wonderful dinner here last weekend. We came in earlier than our reservation and still got seated quickly even though the dining room was already full. The...",
+        "author": "Jacqueline L."
+      },
+      {
+        "text": "Signature pour commencer (appetizers), hearty plats principaux (entrées), and classic desserts done very well at this neighborhood French bistro!...",
+        "author": "Joyce L."
+      },
+      {
+        "text": "Bistro Du Marche is a wonderful French restaurant in La Jolla. Their duck is amazing. The steaks are the best in town. The service is fancy hi bunny.",
+        "author": "Tracy M."
+      },
+      {
+        "text": "Amazing authentic French restaurant. So glad I tried this establishment.\n\nService is great, atmosphere is nice (very elegant and sophisticated), and the...",
+        "author": "KC C."
+      }
+    ]
+  },
+  {
+    "id": 111,
+    "name": "Din Tai Fung",
+    "cuisine": "Taiwanese",
+    "price": "$$$",
+    "distance": 1.4,
+    "rating": 4.4,
+    "location": "San Diego",
+    "address": "4301 La Jolla Village Dr, Ste 2000, San Diego, CA 92122",
+    "phone": "(858) 375-5988",
+    "hours": "Open until 10:00 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/VmEJ0hAKdzeid6JOV9PA5w/o.jpg",
+    "menuImages": [
+      "https://s3-media0.fl.yelpcdn.com/bphoto/VmEJ0hAKdzeid6JOV9PA5w/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/ecWeGDiyi_J4QhN2S6GSVg/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/kK_DgSMnnzBrPtPkwKWzwg/o.jpg"
+    ],
+    "reviews": [
+      {
+        "text": "We ordered vegan noodles with spicy sauce, chicken fried noodles, bbq baby back ribs, and a few other things. Overall food was really good but it should be...",
+        "author": "Andrew C."
+      },
+      {
+        "text": "Everything here is fantastic between the service, the food, the atmosphere. Hands down favorite restaurant in San Diego!",
+        "author": "Kristi H."
+      },
+      {
+        "text": "Best place ever to take your family and friends .  I recommend the green beans, dumplings ,sweet and sour soup, lastly definitely try their sticky ribs",
+        "author": "Ana A."
+      },
+      {
+        "text": "Delicious food!!!! We went there to celebrate my birthday and the food did not disappoint.\n\nThe service was great also. Every time we asked anybody, not...",
+        "author": "Eloisa G."
+      },
+      {
+        "text": "It's been a minute since I've left a review for Din Tai Fung and considering I've been here twice in the last few weeks, it's long overdue. I stick to my...",
+        "author": "Audrey L."
+      },
+      {
+        "text": "Environment: Facility is clean and aesthetically pleasing. The waiting lobby has a direct view to staff hand wrapping the dumplings and XLB. \n\nService:...",
+        "author": "Natalie P."
+      }
+    ]
+  },
+  {
     "id": 112,
     "name": "Cove House",
     "cuisine": "New American",
@@ -4771,6 +4882,7 @@
     "distance": 3.2,
     "rating": 4.4,
     "location": "La Jolla",
+    "address": "8030 Girard Ave, La Jolla, CA 92037",
     "phone": "(858) 999-0034",
     "hours": "Open until 6:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/UNMkfSy2QS8BDp_1hdmNXA/o.jpg",
@@ -4814,6 +4926,7 @@
     "distance": 1.3,
     "rating": 4.4,
     "location": "San Diego",
+    "address": "4301 La Jolla Village Dr, San Diego, CA 92122",
     "phone": "",
     "hours": "Open until 2:30 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/JxLSpaGCVGpK_hpTg8BDCQ/o.jpg",
@@ -4857,8 +4970,9 @@
     "distance": 1.6,
     "rating": 4.4,
     "location": "San Diego",
+    "address": "4577 La Jolla Village Dr, San Diego, CA 92122",
     "phone": "(858) 352-6424",
-    "hours": "Open until 10:00 PM",
+    "hours": "Open until 10:30 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/dMBLNa462YkPfpZqAv4sKw/o.jpg",
     "menuImages": [
       "https://s3-media0.fl.yelpcdn.com/bphoto/dMBLNa462YkPfpZqAv4sKw/o.jpg",
@@ -4900,8 +5014,9 @@
     "distance": 1.6,
     "rating": 4.4,
     "location": "San Diego",
+    "address": "4655 Executive Dr, Ste 100, San Diego, CA 92121",
     "phone": "(858) 352-6111",
-    "hours": "Open until 3:00 PM",
+    "hours": "Open until 2:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/T6QZeU0nlVo_z4t9EAhXWQ/o.jpg",
     "menuImages": [
       "https://s3-media0.fl.yelpcdn.com/bphoto/T6QZeU0nlVo_z4t9EAhXWQ/o.jpg",
@@ -4943,6 +5058,7 @@
     "distance": 2.8,
     "rating": 4.4,
     "location": "San Diego",
+    "address": "10066 Pacific Heights Blvd, San Diego, CA 92121",
     "phone": "(858) 453-3900",
     "hours": "Open until 6:30 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/r7hjQ8kPjl7VoBmJAU3ikQ/o.jpg",
@@ -4986,8 +5102,9 @@
     "distance": 3.8,
     "rating": 4.4,
     "location": "La Jolla",
+    "address": "621 Pearl St, La Jolla, CA 92037",
     "phone": "(858) 551-6666",
-    "hours": "Open until 9:00 PM",
+    "hours": "Open until 10:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/fKof6PG-GW9bPAAoAFONww/o.jpg",
     "menuImages": [
       "https://s3-media0.fl.yelpcdn.com/bphoto/fKof6PG-GW9bPAAoAFONww/o.jpg",
@@ -5016,8 +5133,8 @@
         "author": "Alyssa W."
       },
       {
-        "text": "I don't particularly understand what the hype is for this taco spot. Waited for about 1 hour to try it. Found out you can skip the line by ordering ahead...",
-        "author": "Samantha D."
+        "text": "Hit up The Taco Stand in La Jolla and just like their other spots, there was a line, but it moved pretty quickly. Seating is super limited, so be ready to...",
+        "author": "Thanh T."
       }
     ]
   },
@@ -5029,6 +5146,7 @@
     "distance": 1.1,
     "rating": 4.4,
     "location": "La Jolla",
+    "address": "4150 Regents Park Row, Ste 120, La Jolla, CA 92037",
     "phone": "(858) 412-6274",
     "hours": "Open until 9:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/3pMatp8j1zGQKr-lqXLvVA/o.jpg",
@@ -5072,6 +5190,7 @@
     "distance": 3.6,
     "rating": 4.4,
     "location": "San Diego",
+    "address": "7335 Girard Ave, San Diego, CA 92037",
     "phone": "(619) 300-8199",
     "hours": "",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/UVBsToND7JTILaVs5Q4PMg/o.jpg",
@@ -5115,6 +5234,7 @@
     "distance": 0.5,
     "rating": 4.4,
     "location": "San Diego",
+    "address": "9300 Campus Point Dr, Fl 1, San Diego, CA 92037",
     "phone": "",
     "hours": "Open until 8:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/TwLT_LcbO3QA64CQ6OHtFA/o.jpg",
@@ -5158,6 +5278,7 @@
     "distance": 0.5,
     "rating": 4.4,
     "location": "La Jolla",
+    "address": "9685 Scholars Dr N, Ste CT0121, La Jolla, CA 92093",
     "phone": "(858) 777-2054",
     "hours": "Open until 8:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/sTYc2Vylg4yiKUx-9n7EeQ/o.jpg",
@@ -5201,6 +5322,7 @@
     "distance": 3.4,
     "rating": 4.4,
     "location": "San Diego",
+    "address": "1030 Torrey Pines Rd, San Diego, CA 92037",
     "phone": "(858) 412-4779",
     "hours": "Open until 3:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/pHR8B1DfPR_75tIicI4SlA/o.jpg",
@@ -5244,8 +5366,9 @@
     "distance": 0.9,
     "rating": 4.4,
     "location": "La Jolla",
+    "address": "8707 Villa La Jolla Dr, La Jolla, CA 92037",
     "phone": "(858) 263-0818",
-    "hours": "Open until 9:15 PM",
+    "hours": "Open until 9:45 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/IeaQscxUPHQoEYJ6a_tucQ/o.jpg",
     "menuImages": [
       "https://s3-media0.fl.yelpcdn.com/bphoto/IeaQscxUPHQoEYJ6a_tucQ/o.jpg",
@@ -5287,6 +5410,7 @@
     "distance": 1.4,
     "rating": 4.4,
     "location": "San Diego",
+    "address": "8755 Biological Grade, San Diego, CA 92037",
     "phone": "(858) 952-2550",
     "hours": "Open until 4:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/koeijXF0K_p5AZsTHlfKrw/o.jpg",
@@ -5330,8 +5454,9 @@
     "distance": 3.6,
     "rating": 4.4,
     "location": "La Jolla",
+    "address": "915 Pearl St, Ste A, La Jolla, CA 92037",
     "phone": "(858) 459-3764",
-    "hours": "Open until 10:00 PM",
+    "hours": "Open until 10:30 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/ulgWGMYbGcBgE8d1L6NWtw/o.jpg",
     "menuImages": [
       "https://s3-media0.fl.yelpcdn.com/bphoto/ulgWGMYbGcBgE8d1L6NWtw/o.jpg",
@@ -5373,6 +5498,7 @@
     "distance": 8.8,
     "rating": 4.4,
     "location": "San Diego",
+    "address": "Corner Of Mission Center Rd And Hazard Center Dr, San Diego, CA 92108",
     "phone": "(619) 341-7397",
     "hours": "Open until 7:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/6BSLD_odSp7N0wvRxePIKw/o.jpg",
@@ -5416,6 +5542,7 @@
     "distance": 2.2,
     "rating": 4.4,
     "location": "La Jolla",
+    "address": "2168 Avenida De La Playa, La Jolla, CA 92037",
     "phone": "(858) 412-5308",
     "hours": "Open until 10:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/lGvOjhC3fQGd_jEqJvMNRw/o.jpg",
@@ -5459,6 +5586,7 @@
     "distance": 0.1,
     "rating": 4.4,
     "location": "San Diego",
+    "address": "3151 Matthews Lane - Ucsd Price Ctr E, San Diego, CA 92093",
     "phone": "(858) 203-3364",
     "hours": "Open until 7:30 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/xRz83NUV5EtEWpGbBj-VZg/o.jpg",
@@ -5502,6 +5630,7 @@
     "distance": 10.9,
     "rating": 4.4,
     "location": "San Diego",
+    "address": "3540 El Cajon Blvd, San Diego, CA 92104",
     "phone": "(619) 906-9632",
     "hours": "Open until 7:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/SmPE-yWsJuufa49Skqmiwg/o.jpg",
@@ -5545,6 +5674,7 @@
     "distance": 12.2,
     "rating": 4.4,
     "location": "San Diego",
+    "address": "3030 Grape St, San Diego, CA 92102",
     "phone": "(619) 761-2835",
     "hours": "Open until 12:00 AM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/7qP5PEQcnjvtt-HDowkWxg/o.jpg",
@@ -5588,8 +5718,9 @@
     "distance": 3.9,
     "rating": 4.4,
     "location": "San Diego",
+    "address": "4705 A Clairemont Drive, Ste 817-041, San Diego, CA 92117",
     "phone": "(858) 270-1798",
-    "hours": "Open until 8:00 PM",
+    "hours": "Open until 8:30 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/Rvi25AwYapqizR6zD1XoiA/o.jpg",
     "menuImages": [
       "https://s3-media0.fl.yelpcdn.com/bphoto/Rvi25AwYapqizR6zD1XoiA/o.jpg",
@@ -5631,8 +5762,9 @@
     "distance": 3.1,
     "rating": 4.4,
     "location": "La Jolla",
+    "address": "1158 Prospect St, La Jolla, CA 92037",
     "phone": "(858) 551-8250",
-    "hours": "Open until 8:00 PM",
+    "hours": "Open until 9:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/vzH45Tvt0AD8Zux05Gl64w/o.jpg",
     "menuImages": [
       "https://s3-media0.fl.yelpcdn.com/bphoto/vzH45Tvt0AD8Zux05Gl64w/o.jpg",
@@ -5668,55 +5800,13 @@
   },
   {
     "id": 133,
-    "name": "The Butcher N Cheese",
-    "cuisine": "Burgers",
-    "price": "$$",
-    "distance": 3.9,
-    "rating": 4.4,
-    "location": "San Diego",
-    "phone": "(858) 483-3723",
-    "hours": "Open until 9:00 PM",
-    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/qv1d3p2RsN10Q1vmO202Dw/o.jpg",
-    "menuImages": [
-      "https://s3-media0.fl.yelpcdn.com/bphoto/qv1d3p2RsN10Q1vmO202Dw/o.jpg",
-      "https://s3-media0.fl.yelpcdn.com/bphoto/h2ERBGNoAaN9WwpSEUuvpw/o.jpg",
-      "https://s3-media0.fl.yelpcdn.com/bphoto/uO3Tqm68AZ4QmYLS3fRIzA/o.jpg"
-    ],
-    "reviews": [
-      {
-        "text": "Food was great but service by Vienna was, as always, the best.\nThe bourbon burger is my favorite and adding garlic to the tater tots is always a winner.",
-        "author": "David"
-      },
-      {
-        "text": "Food and service was excellent had the cheese burger and onion rings and a couple coronas very tasty and refreshing",
-        "author": "Edward T."
-      },
-      {
-        "text": "I had a burger here that added shrimp to it .. say whaaaar?  Yes, and it was delicious, and was the highlight of my visit, I don't remember anything outside...",
-        "author": "C D."
-      },
-      {
-        "text": "The service here is very nice, quick, and accommodating.\nThe garlic herbed fries were perfectly crispy and seasoned.\nMy bourbon burger was very juicy and...",
-        "author": "Katusha D."
-      },
-      {
-        "text": "I wish I took pictures!!  Ugh - well, I usually roll my eyes at a burger above $15.00 - however, I HAPPILY paid nearly $20 for a burger here!\n\nThe staff was...",
-        "author": "Mel D."
-      },
-      {
-        "text": "Burger joint\nAmerican food\nSmall indoor seating \nOutdoor seating available \nRestrooms are outside \nNoticed a lot of to go orders\nAmex accepted\nLarge Parking...",
-        "author": "Javier B."
-      }
-    ]
-  },
-  {
-    "id": 134,
     "name": "City Tacos",
     "cuisine": "Tacos",
     "price": "$$",
     "distance": 1.7,
     "rating": 4.4,
     "location": "San Diego",
+    "address": "11045 Roselle St, Ste 100, San Diego, CA 92121",
     "phone": "(858) 271-5374",
     "hours": "Open until 3:30 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/hpKoqNrBxjEy4S9xu6f_kQ/o.jpg",
@@ -5753,15 +5843,16 @@
     ]
   },
   {
-    "id": 135,
+    "id": 134,
     "name": "Yakitori Taisho",
     "cuisine": "Japanese",
     "price": "$$",
     "distance": 4.5,
     "rating": 4.4,
     "location": "San Diego",
+    "address": "5185 Clairemont Mesa Blvd, San Diego, CA 92117",
     "phone": "(858) 752-0468",
-    "hours": "Open until 10:00 PM",
+    "hours": "Open until 11:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/plgqsAdiLVNi5DdMTStsyw/o.jpg",
     "menuImages": [
       "https://s3-media0.fl.yelpcdn.com/bphoto/plgqsAdiLVNi5DdMTStsyw/o.jpg",
@@ -5796,13 +5887,14 @@
     ]
   },
   {
-    "id": 136,
+    "id": 135,
     "name": "Thai Test Kitchen",
     "cuisine": "Noodles",
     "price": "$$",
     "distance": 2.1,
     "rating": 4.4,
     "location": "San Diego",
+    "address": "10184 Telesis Ct, San Diego, CA 92121",
     "phone": "(858) 263-4189",
     "hours": "Open until 4:30 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/WoTD9qp5FwfcyRghTrM4zw/o.jpg",
@@ -5839,15 +5931,16 @@
     ]
   },
   {
-    "id": 137,
+    "id": 136,
     "name": "Eddie V's Prime Seafood",
     "cuisine": "Seafood",
     "price": "$$$$",
     "distance": 3.0,
     "rating": 4.4,
     "location": "La Jolla",
+    "address": "1270 Prospect St, La Jolla, CA 92037",
     "phone": "(858) 459-5500",
-    "hours": "Open until 9:00 PM",
+    "hours": "Open until 10:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/HOuWELJ0aS0c0r04ScpPOw/o.jpg",
     "menuImages": [
       "https://s3-media0.fl.yelpcdn.com/bphoto/HKOLLzDjuJK4dpkgOnYIJA/o.jpg",
@@ -5882,13 +5975,14 @@
     ]
   },
   {
-    "id": 138,
+    "id": 137,
     "name": "Seoul Man Food Truck",
     "cuisine": "Korean",
     "price": "$$",
     "distance": 3.8,
     "rating": 4.4,
     "location": "La Jolla",
+    "address": "La Jolla, CA 92037",
     "phone": "(844) 986-5227",
     "hours": "",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/LGimQn-LKgI7V2TRgvZCbA/o.jpg",
@@ -5925,15 +6019,16 @@
     ]
   },
   {
-    "id": 139,
+    "id": 138,
     "name": "The Quay Cafe",
     "cuisine": "Breakfast & Brunch",
     "price": "",
     "distance": 1.5,
     "rating": 4.4,
     "location": "San Diego",
+    "address": "9390 Towne Centre Dr, San Diego, CA 92121",
     "phone": "(858) 221-2148",
-    "hours": "Open until 6:00 PM",
+    "hours": "Open until 2:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/OFyJZomxt5HCQZHCgfatyQ/o.jpg",
     "menuImages": [
       "https://s3-media0.fl.yelpcdn.com/bphoto/OFyJZomxt5HCQZHCgfatyQ/o.jpg",
@@ -5968,13 +6063,14 @@
     ]
   },
   {
-    "id": 140,
+    "id": 139,
     "name": "Raymundo’s Taco Shop",
     "cuisine": "Fast Food",
     "price": "",
     "distance": 3.2,
     "rating": 4.3,
     "location": "La Jolla",
+    "address": "7918 Ivanhoe Ave, La Jolla, CA 92037",
     "phone": "(858) 352-6867",
     "hours": "Open until 5:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/SyDx1g8BiZ9NCSfNRA17yw/o.jpg",
@@ -6011,13 +6107,14 @@
     ]
   },
   {
-    "id": 141,
+    "id": 140,
     "name": "Mangia Mangia Mobile",
     "cuisine": "Italian",
     "price": "$$",
     "distance": 7.6,
     "rating": 4.3,
     "location": "San Diego",
+    "address": "San Diego, CA 92123",
     "phone": "(858) 736-5733",
     "hours": "Open until 8:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/QMfihE7Eodkl2E7FqM_XGg/o.jpg",
@@ -6054,13 +6151,14 @@
     ]
   },
   {
-    "id": 142,
+    "id": 141,
     "name": "Lia’s Lumpia",
     "cuisine": "Filipino",
     "price": "$$",
     "distance": 13.8,
     "rating": 4.3,
     "location": "San Diego",
+    "address": "2219 Logan Ave, San Diego, CA 92113",
     "phone": "(619) 736-4484",
     "hours": "Open until 9:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/UlLyMQsolfv68BkkOI33cg/o.jpg",
@@ -6097,13 +6195,14 @@
     ]
   },
   {
-    "id": 143,
+    "id": 142,
     "name": "Founder's Deli",
     "cuisine": "Burgers",
     "price": "",
     "distance": 2.5,
     "rating": 4.3,
     "location": "San Diego",
+    "address": "10185 McKellar Ct, San Diego, CA 92121",
     "phone": "",
     "hours": "Open until 4:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/2H_IH1c4eCuT_tl4ZwVUyA/o.jpg",
@@ -6140,15 +6239,16 @@
     ]
   },
   {
-    "id": 144,
+    "id": 143,
     "name": "The Hub",
     "cuisine": "Cafes",
     "price": "$",
     "distance": 2.9,
     "rating": 4.3,
     "location": "San Diego",
+    "address": "10145 Pacific Heights Blvd, Qualcomm Campus, San Diego, CA 92121",
     "phone": "",
-    "hours": "Open until 7:00 PM",
+    "hours": "Open until 4:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/fgqV6jIt7k065O7QepuWFw/o.jpg",
     "menuImages": [
       "https://s3-media0.fl.yelpcdn.com/bphoto/fgqV6jIt7k065O7QepuWFw/o.jpg",
@@ -6183,15 +6283,16 @@
     ]
   },
   {
-    "id": 145,
+    "id": 144,
     "name": "Chin’s Szechwan - La Jolla",
     "cuisine": "Noodles",
     "price": "",
     "distance": 3.8,
     "rating": 4.3,
     "location": "La Jolla",
+    "address": "623 Pearl St, La Jolla, CA 92037",
     "phone": "(858) 454-7597",
-    "hours": "Open until 8:30 PM",
+    "hours": "Open until 9:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/N_OtkoG1blTPDJYYF9baTQ/o.jpg",
     "menuImages": [
       "https://s3-media0.fl.yelpcdn.com/bphoto/N_OtkoG1blTPDJYYF9baTQ/o.jpg",
@@ -6226,13 +6327,14 @@
     ]
   },
   {
-    "id": 146,
+    "id": 145,
     "name": "The WineSellar & Brasserie",
     "cuisine": "French",
     "price": "$$$",
     "distance": 3.4,
     "rating": 4.3,
     "location": "San Diego",
+    "address": "9550 Waples St, Ste 115, San Diego, CA 92121",
     "phone": "(858) 450-9557",
     "hours": "Open until 2:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/GtodLJNw2sFjWeTdF7kq3Q/o.jpg",
@@ -6269,13 +6371,14 @@
     ]
   },
   {
-    "id": 147,
+    "id": 146,
     "name": "Buga Korean BBQ",
     "cuisine": "Barbeque",
     "price": "$$$",
     "distance": 4.8,
     "rating": 4.3,
     "location": "San Diego",
+    "address": "5580 Clairemont Mesa Blvd, San Diego, CA 92117",
     "phone": "(858) 560-1010",
     "hours": "Open until 10:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/6jNVWWIRFtxdZg4WySMPZg/o.jpg",
@@ -6312,15 +6415,16 @@
     ]
   },
   {
-    "id": 148,
+    "id": 147,
     "name": "Pazza Market & Cucina",
     "cuisine": "Italian",
     "price": "$$",
     "distance": 1.6,
     "rating": 4.3,
     "location": "San Diego",
+    "address": "4577 La Jolla Village Dr, San Diego, CA 92122",
     "phone": "(619) 347-0371",
-    "hours": "Open until 9:00 PM",
+    "hours": "Open until 9:30 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/sUQpLbsaWByp7h4TwTOV3g/o.jpg",
     "menuImages": [
       "https://s3-media0.fl.yelpcdn.com/bphoto/sUQpLbsaWByp7h4TwTOV3g/o.jpg",
@@ -6355,13 +6459,14 @@
     ]
   },
   {
-    "id": 149,
+    "id": 148,
     "name": "The Corner Mercantile & Eatery",
     "cuisine": "Coffee & Tea",
     "price": "",
     "distance": 2.2,
     "rating": 4.3,
     "location": "San Diego",
+    "address": "8080 La Jolla Shores Dr, San Diego, CA 92037",
     "phone": "(858) 246-6294",
     "hours": "Open until 7:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/XtxzxgbwasfkDELWbxT89Q/o.jpg",
@@ -6398,15 +6503,16 @@
     ]
   },
   {
-    "id": 150,
+    "id": 149,
     "name": "URBN Sushi",
     "cuisine": "Japanese",
     "price": "$$",
     "distance": 1.8,
     "rating": 4.3,
     "location": "San Diego",
+    "address": "8895 Towne Centre Dr, Ste 100, San Diego, CA 92122",
     "phone": "(858) 230-6565",
-    "hours": "Open until 3:00 PM",
+    "hours": "Open until 10:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/zzgMvgHjlucr6lamTcTiXg/o.jpg",
     "menuImages": [
       "https://s3-media0.fl.yelpcdn.com/bphoto/zzgMvgHjlucr6lamTcTiXg/o.jpg",
@@ -6441,15 +6547,16 @@
     ]
   },
   {
-    "id": 151,
+    "id": 150,
     "name": "Bernini's Bistro & Bar",
     "cuisine": "New American",
     "price": "$$",
     "distance": 3.6,
     "rating": 4.3,
     "location": "La Jolla",
+    "address": "7550 Fay Ave, La Jolla, CA 92037",
     "phone": "(858) 454-5013",
-    "hours": "Open until 8:30 PM",
+    "hours": "Open until 9:30 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/2IRZN4Ga35pzoVffvWwnnQ/o.jpg",
     "menuImages": [
       "https://s3-media0.fl.yelpcdn.com/bphoto/2IRZN4Ga35pzoVffvWwnnQ/o.jpg",
@@ -6484,13 +6591,14 @@
     ]
   },
   {
-    "id": 152,
+    "id": 151,
     "name": "Creative Deli",
     "cuisine": "Delis",
     "price": "$",
     "distance": 3.4,
     "rating": 4.3,
     "location": "San Diego",
+    "address": "6837 Nancy Ridge Dr, Ste F, San Diego, CA 92121",
     "phone": "(858) 457-5697",
     "hours": "Open until 3:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/FWVQZnjVmxeDqg1Me1CMmQ/o.jpg",
@@ -6527,15 +6635,16 @@
     ]
   },
   {
-    "id": 153,
+    "id": 152,
     "name": "Shorehouse Kitchen",
     "cuisine": "Coffee & Tea",
     "price": "$$",
     "distance": 2.2,
     "rating": 4.3,
     "location": "La Jolla",
+    "address": "2236 Avenida De La Playa, La Jolla, CA 92037",
     "phone": "(858) 459-3300",
-    "hours": "Open until 2:30 PM",
+    "hours": "Open until 3:30 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/SXjgmOi6dbu_RPXdFqxTwg/o.jpg",
     "menuImages": [
       "https://s3-media0.fl.yelpcdn.com/bphoto/SXjgmOi6dbu_RPXdFqxTwg/o.jpg",
@@ -6564,25 +6673,26 @@
         "author": "Phillipe M."
       },
       {
-        "text": "Fabulous brunch spot with great outdoor dining to people watch, hang with friends and pet friendly with a dog menu. Service was great and food took some...",
-        "author": "Traci N."
+        "text": "The staff is very welcoming and seated us right away. Thankfully We didn't have a wait time. It is almost impossible to find a parking since La Jolla beach...",
+        "author": "Jessica V."
       }
     ]
   },
   {
-    "id": 154,
+    "id": 153,
     "name": "Amardeen Cafe",
     "cuisine": "Mediterranean",
     "price": "$$",
     "distance": 1.8,
     "rating": 4.3,
     "location": "San Diego",
+    "address": "8915 Towne Centre Dr, Ste 103, San Diego, CA 92122",
     "phone": "(858) 404-1395",
     "hours": "Open until 9:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/v986cmaorHI43c2AbFSO4w/o.jpg",
     "menuImages": [
+      "https://s3-media0.fl.yelpcdn.com/bphoto/v986cmaorHI43c2AbFSO4w/o.jpg",
       "https://s3-media0.fl.yelpcdn.com/bphoto/-fQUx4S74wqRFyxpMJnHSw/o.jpg",
-      "https://s3-media0.fl.yelpcdn.com/bphoto/b5GCQWhmGeAVDAgROC34Sg/o.jpg",
       "https://s3-media0.fl.yelpcdn.com/bphoto/TKRZkfHKLn45bahLB0aNlw/o.jpg"
     ],
     "reviews": [
@@ -6613,15 +6723,16 @@
     ]
   },
   {
-    "id": 155,
+    "id": 154,
     "name": "La Jolla Boba",
     "cuisine": "Burgers",
     "price": "",
     "distance": 1.1,
     "rating": 4.3,
     "location": "San Diego",
+    "address": "4150 Regents Park Row, San Diego, CA 92037",
     "phone": "",
-    "hours": "Open until 8:00 PM",
+    "hours": "Open until 9:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/IR7RJ4MF9ogcMPLVtdTsRg/o.jpg",
     "menuImages": [
       "https://s3-media0.fl.yelpcdn.com/bphoto/IR7RJ4MF9ogcMPLVtdTsRg/o.jpg",
@@ -6656,13 +6767,14 @@
     ]
   },
   {
-    "id": 156,
+    "id": 155,
     "name": "Shiku Sushi",
     "cuisine": "Sushi Bars",
     "price": "$$",
     "distance": 3.0,
     "rating": 4.3,
     "location": "La Jolla",
+    "address": "1277 Prospect St, La Jolla, CA 92037",
     "phone": "(858) 456-7118",
     "hours": "Open until 9:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/FcDa9JHrrH_hgljCk6qAyg/o.jpg",
@@ -6699,13 +6811,14 @@
     ]
   },
   {
-    "id": 157,
+    "id": 156,
     "name": "Dosa Studio Pure Vegetarian Restaurant & Catering",
     "cuisine": "Indian",
     "price": "$$",
     "distance": 3.9,
     "rating": 4.3,
     "location": "San Diego",
+    "address": "6755 Mira Mesa Blvd, Ste 113, San Diego, CA 92121",
     "phone": "(858) 246-6164",
     "hours": "Open until 2:30 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/eo8nC_QkQ6kjLUu_b1lBMw/o.jpg",
@@ -6742,15 +6855,16 @@
     ]
   },
   {
-    "id": 158,
+    "id": 157,
     "name": "Piazza 1909",
     "cuisine": "Italian",
     "price": "$$$",
     "distance": 3.4,
     "rating": 4.3,
     "location": "San Diego",
+    "address": "7731 Fay Ave, San Diego, CA 92037",
     "phone": "(858) 412-3108",
-    "hours": "Open until 9:00 PM",
+    "hours": "Open until 9:30 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/EYyA56MeA2Mp1YXTkAKYrg/o.jpg",
     "menuImages": [
       "https://s3-media0.fl.yelpcdn.com/bphoto/EYyA56MeA2Mp1YXTkAKYrg/o.jpg",
@@ -6785,15 +6899,16 @@
     ]
   },
   {
-    "id": 159,
+    "id": 158,
     "name": "The Amalfi Llama",
     "cuisine": "Italian",
     "price": "$$$",
     "distance": 1.6,
     "rating": 4.3,
     "location": "San Diego",
+    "address": "4575 La Jolla Village Dr, Ste 1155, San Diego, CA 92122",
     "phone": "(858) 224-9606",
-    "hours": "Open until 12:00 AM",
+    "hours": "Open until 1:00 AM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/kv47rVHdP_wJaWFA6I0_8g/o.jpg",
     "menuImages": [
       "https://s3-media0.fl.yelpcdn.com/bphoto/kv47rVHdP_wJaWFA6I0_8g/o.jpg",
@@ -6828,15 +6943,16 @@
     ]
   },
   {
-    "id": 160,
+    "id": 159,
     "name": "ZENTRL Kitchen + Bar",
     "cuisine": "Breakfast & Brunch",
     "price": "",
     "distance": 3.5,
     "rating": 4.3,
     "location": "San Diego",
+    "address": "7611 Fay Ave, Located inside THE LOT, San Diego, CA 92037",
     "phone": "(858) 222-9792",
-    "hours": "Open until 9:30 PM",
+    "hours": "Open until 12:00 AM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/GCZKgA7cSJhbL9MC_yRz-A/o.jpg",
     "menuImages": [
       "https://s3-media0.fl.yelpcdn.com/bphoto/GCZKgA7cSJhbL9MC_yRz-A/o.jpg",
@@ -6871,13 +6987,14 @@
     ]
   },
   {
-    "id": 161,
+    "id": 160,
     "name": "True Food Kitchen",
     "cuisine": "New American",
     "price": "$$",
     "distance": 1.3,
     "rating": 4.3,
     "location": "San Diego",
+    "address": "4303 La Jolla Village Dr, Ste 2100, San Diego, CA 92122",
     "phone": "(858) 431-4384",
     "hours": "Open until 9:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/g-jBQByhzGMeVNNd_51KFA/o.jpg",
@@ -6914,13 +7031,14 @@
     ]
   },
   {
-    "id": 162,
+    "id": 161,
     "name": "Sugar and Scribe ",
     "cuisine": "Bakeries",
     "price": "$$",
     "distance": 3.5,
     "rating": 4.3,
     "location": "La Jolla",
+    "address": "7660 Fay Ave, La Jolla, CA 92037",
     "phone": "(858) 274-1733",
     "hours": "Open until 2:30 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/bp89TDF6sY7t8ytWnQ7DPw/o.jpg",
@@ -6939,6 +7057,10 @@
         "author": "Julie D."
       },
       {
+        "text": "Sugar & Scribe is my top pick for brunch in San Diego! While there's usually a wait, it's absolutely worth it. The decor is charming, and the location is...",
+        "author": "Alycia M."
+      },
+      {
         "text": "We went on a Saturday breakfast. There was a good 30 minutes wait but it didn't feel long because there are boutiques around the area. \n\nI'm always at awe...",
         "author": "Jessica F."
       },
@@ -6947,25 +7069,22 @@
         "author": "Hanny O."
       },
       {
-        "text": "Drove down to La Jolla for a birthday breakfast at my girlfriend's favorite brunch spot and had the best time. We also were able to bring our dog and sit...",
-        "author": "Carter K."
-      },
-      {
         "text": "We were looking for a new place to try out while in the area and decided to try this out. There is a small parking lot but can get full when its busy. The...",
         "author": "Patricia L."
       }
     ]
   },
   {
-    "id": 163,
+    "id": 162,
     "name": "Tahini",
     "cuisine": "Mediterranean",
     "price": "",
     "distance": 0.4,
     "rating": 4.3,
     "location": "San Diego",
+    "address": "9625 Scholars Dr N, Ste 113, San Diego, CA 92037",
     "phone": "(858) 779-3272",
-    "hours": "Open until 8:00 PM",
+    "hours": "Open until 3:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/NWFww1Xe_Werx07Jk0LzsA/o.jpg",
     "menuImages": [
       "https://s3-media0.fl.yelpcdn.com/bphoto/NWFww1Xe_Werx07Jk0LzsA/o.jpg",
@@ -7000,13 +7119,14 @@
     ]
   },
   {
-    "id": 164,
+    "id": 163,
     "name": "Cafe Milano",
     "cuisine": "Italian",
     "price": "$$",
     "distance": 3.7,
     "rating": 4.3,
     "location": "San Diego",
+    "address": "711 Pearl St, San Diego, CA 92037",
     "phone": "(858) 454-3806",
     "hours": "Open until 9:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/iAc-1iav7OKyoXn4jDbY7g/o.jpg",
@@ -7043,6 +7163,50 @@
     ]
   },
   {
+    "id": 164,
+    "name": "BHC Chicken - Sorrento Valley",
+    "cuisine": "Korean",
+    "price": "$$",
+    "distance": 2.0,
+    "rating": 4.3,
+    "location": "San Diego",
+    "address": "9450 Scranton Rd, Ste 112, San Diego, CA 92121",
+    "phone": "(858) 352-6089",
+    "hours": "Open until 11:00 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/_IzF2WoO7CwgDMihEG25uQ/o.jpg",
+    "menuImages": [
+      "https://s3-media0.fl.yelpcdn.com/bphoto/_IzF2WoO7CwgDMihEG25uQ/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/4pOWyT65Nw62mpdpibiAGg/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/7ueUMdlJQ84687cPiks4og/o.jpg"
+    ],
+    "reviews": [
+      {
+        "text": "FOOD: 10/10\nI tried both the hot and original bburinkle wings and each piece of chicken we ate was big, crunchy, and full of so much flavor. I really...",
+        "author": "Paige T."
+      },
+      {
+        "text": "It was my first time trying and I think after like 2 wings, I was tired of the burrinkle flavor; it was too sweet. It was good with the sauce though; and I...",
+        "author": "Zaide P."
+      },
+      {
+        "text": "My friend and I were craving some Korean Fried Chicken so we gave this place a try! \n\nOnce we walked in we were allowed to sit at a table of our choice and...",
+        "author": "Rachel G."
+      },
+      {
+        "text": "Coming into the restaurant, you could sit down and be served or you can walk up to the cashier, place your order, then sit down. There is plenty of parking...",
+        "author": "Lena N."
+      },
+      {
+        "text": "There are so many options in San Diego for Korean Fried Chicken and BHC is just another addition to the scene. We decided to dine in to see whether or not...",
+        "author": "Roger P."
+      },
+      {
+        "text": "I've been here a few times with my boyfriend and the service is always spectacular. Casual ambiance with K-Pop playing in the background or TMZ on the TV...",
+        "author": "Nancy H."
+      }
+    ]
+  },
+  {
     "id": 165,
     "name": "La Casita De Vero",
     "cuisine": "Mexican",
@@ -7050,8 +7214,9 @@
     "distance": 15.5,
     "rating": 4.3,
     "location": "El Cajon",
+    "address": "1423 N Cuyamaca St, El Cajon, CA 92020",
     "phone": "(619) 215-5960",
-    "hours": "Open until 9:00 PM",
+    "hours": "Open until 7:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/W7CGx14QWXMRx6MEy3nYjQ/o.jpg",
     "menuImages": [
       "https://s3-media0.fl.yelpcdn.com/bphoto/8PzExmbpclcLntJQR8mpUA/o.jpg",
@@ -7093,8 +7258,9 @@
     "distance": 3.2,
     "rating": 4.3,
     "location": "San Diego",
+    "address": "1025 Prospect St, Ste 130, San Diego, CA 92037",
     "phone": "(858) 206-0919",
-    "hours": "Open until 9:30 PM",
+    "hours": "Open until 10:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/vEErAVh-k4Z4ts7Fq_rCdg/o.jpg",
     "menuImages": [
       "https://s3-media0.fl.yelpcdn.com/bphoto/vEErAVh-k4Z4ts7Fq_rCdg/o.jpg",
@@ -7130,44 +7296,45 @@
   },
   {
     "id": 167,
-    "name": "BHC Chicken - Sorrento Valley",
-    "cuisine": "Korean",
+    "name": "Board & Brew - UTC",
+    "cuisine": "Sandwiches",
     "price": "$$",
-    "distance": 2.0,
+    "distance": 1.6,
     "rating": 4.3,
     "location": "San Diego",
-    "phone": "(858) 352-6089",
-    "hours": "Open until 11:00 PM",
-    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/_IzF2WoO7CwgDMihEG25uQ/o.jpg",
+    "address": "4577 La Jolla Village Dr, Ste 1232, San Diego, CA 92122",
+    "phone": "(760) 691-6260",
+    "hours": "Open until 9:00 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/QcViaG_5Asaw2tuEMN1GLA/o.jpg",
     "menuImages": [
-      "https://s3-media0.fl.yelpcdn.com/bphoto/_IzF2WoO7CwgDMihEG25uQ/o.jpg",
-      "https://s3-media0.fl.yelpcdn.com/bphoto/4pOWyT65Nw62mpdpibiAGg/o.jpg",
-      "https://s3-media0.fl.yelpcdn.com/bphoto/7ueUMdlJQ84687cPiks4og/o.jpg"
+      "https://s3-media0.fl.yelpcdn.com/bphoto/QcViaG_5Asaw2tuEMN1GLA/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/zUkjnY5VatDug6T4hG6LQg/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/rhjCgKvYuvNzgHd5eoaLnQ/o.jpg"
     ],
     "reviews": [
       {
-        "text": "FOOD: 10/10\nI tried both the hot and original bburinkle wings and each piece of chicken we ate was big, crunchy, and full of so much flavor. I really...",
-        "author": "Paige T."
+        "text": "BIG shout out to the Saturday afternoon staff at the UTC location! I took a friend for a bday sandwich to his fav spot (you guys) and everyone made our time...",
+        "author": "Omid John A."
       },
       {
-        "text": "It was my first time trying and I think after like 2 wings, I was tired of the burrinkle flavor; it was too sweet. It was good with the sauce though; and I...",
-        "author": "Zaide P."
+        "text": "Sandwiches are consistently delicious at all\nLocations but the customer service at the UTC spot is the best! Brian always has a smile on his face and is...",
+        "author": "Ashton I."
       },
       {
-        "text": "My friend and I were craving some Korean Fried Chicken so we gave this place a try! \n\nOnce we walked in we were allowed to sit at a table of our choice and...",
-        "author": "Rachel G."
+        "text": "Sandwiches are definitely up there when thinking about my favorite foods- especially in terms of lunches. Now being based in San Diego, everyone and their...",
+        "author": "Allison P."
       },
       {
-        "text": "Coming into the restaurant, you could sit down and be served or you can walk up to the cashier, place your order, then sit down. There is plenty of parking...",
-        "author": "Lena N."
+        "text": "I would give this location a 0/5 star if I could. My partner and I visited and I asked to veganize the veggie by taking off cheese and sauce. The first...",
+        "author": "Jes W."
       },
       {
-        "text": "There are so many options in San Diego for Korean Fried Chicken and BHC is just another addition to the scene. We decided to dine in to see whether or not...",
-        "author": "Roger P."
+        "text": "I found quality food, fast, courteous service and a friendly atmosphere and reasonable prices. Also very clean. The staff seems to really care.",
+        "author": "C. M."
       },
       {
-        "text": "I've been here a few times with my boyfriend and the service is always spectacular. Casual ambiance with K-Pop playing in the background or TMZ on the TV...",
-        "author": "Nancy H."
+        "text": "First time trying Board & Brew!\n\nI ordered:\n-toms choice (roast beef and turkey) $11.95\n\nSandwich was good! No complaints. Seating inside and outside. The...",
+        "author": "Arthur T."
       }
     ]
   },
@@ -7179,6 +7346,7 @@
     "distance": 25.8,
     "rating": 4.3,
     "location": "San Diego",
+    "address": "4211 Camino De La Plz, San Diego, CA 92173",
     "phone": "(619) 554-6138",
     "hours": "Open until 7:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/Xqm-qF0jB-780oRKuXO_Bw/o.jpg",
@@ -7222,8 +7390,9 @@
     "distance": 0.5,
     "rating": 4.3,
     "location": "San Diego",
+    "address": "9500 Gilman Dr, UCSD Rimac Annex, Retail Venue B, San Diego, CA 92093",
     "phone": "(512) 222-8915",
-    "hours": "Open until 10:00 PM",
+    "hours": "Open until 8:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/y1JKaV6wkAccr2TW-bMFxw/o.jpg",
     "menuImages": [
       "https://s3-media0.fl.yelpcdn.com/bphoto/y1JKaV6wkAccr2TW-bMFxw/o.jpg",
@@ -7265,6 +7434,7 @@
     "distance": 1.4,
     "rating": 4.3,
     "location": "San Diego",
+    "address": "4353 La Jolla Village Dr, Ste H28, San Diego, CA 92122",
     "phone": "(858) 433-5777",
     "hours": "Open until 9:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/cT12bVuU04EWm8P3A4ZxRg/o.jpg",
@@ -7308,6 +7478,7 @@
     "distance": 3.4,
     "rating": 4.3,
     "location": "La Jolla",
+    "address": "1030 Torrey Pines Rd, Ste E, La Jolla, CA 92037",
     "phone": "(858) 246-7911",
     "hours": "Open until 9:30 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/SC1TURQ0NdXDJs2mBTWMbg/o.jpg",
@@ -7345,55 +7516,13 @@
   },
   {
     "id": 172,
-    "name": "Board & Brew - UTC",
-    "cuisine": "Sandwiches",
-    "price": "$$",
-    "distance": 1.6,
-    "rating": 4.3,
-    "location": "San Diego",
-    "phone": "(760) 691-6260",
-    "hours": "Open until 9:00 PM",
-    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/QcViaG_5Asaw2tuEMN1GLA/o.jpg",
-    "menuImages": [
-      "https://s3-media0.fl.yelpcdn.com/bphoto/QcViaG_5Asaw2tuEMN1GLA/o.jpg",
-      "https://s3-media0.fl.yelpcdn.com/bphoto/zUkjnY5VatDug6T4hG6LQg/o.jpg",
-      "https://s3-media0.fl.yelpcdn.com/bphoto/rhjCgKvYuvNzgHd5eoaLnQ/o.jpg"
-    ],
-    "reviews": [
-      {
-        "text": "Sandwiches are consistently delicious at all\nLocations but the customer service at the UTC spot is the best! Brian always has a smile on his face and is...",
-        "author": "Ashton I."
-      },
-      {
-        "text": "Sandwiches are definitely up there when thinking about my favorite foods- especially in terms of lunches. Now being based in San Diego, everyone and their...",
-        "author": "Allison P."
-      },
-      {
-        "text": "I would give this location a 0/5 star if I could. My partner and I visited and I asked to veganize the veggie by taking off cheese and sauce. The first...",
-        "author": "Jes W."
-      },
-      {
-        "text": "BIG shout out to the Saturday afternoon staff at the UTC location! I took a friend for a bday sandwich to his fav spot (you guys) and everyone made our time...",
-        "author": "Omid John A."
-      },
-      {
-        "text": "First time trying Board & Brew!\n\nI ordered:\n-toms choice (roast beef and turkey) $11.95\n\nSandwich was good! No complaints. Seating inside and outside. The...",
-        "author": "Arthur T."
-      },
-      {
-        "text": "This spot is great for a lunch and a drink. Got the Italian sub and a beer on the side. Make sure to ask for the special sauce on the side as well. This...",
-        "author": "Derek T."
-      }
-    ]
-  },
-  {
-    "id": 173,
     "name": "Lone Pine Eatery",
     "cuisine": "Coffee & Tea",
     "price": "$$",
     "distance": 1.4,
     "rating": 4.3,
     "location": "San Diego",
+    "address": "4535 Towne Centre Ct, San Diego, CA 92121",
     "phone": "",
     "hours": "Open until 2:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/7TX_mzEYO4_hc_FFWGuNFw/o.jpg",
@@ -7430,13 +7559,14 @@
     ]
   },
   {
-    "id": 174,
+    "id": 173,
     "name": "Harry's Coffee Shop",
     "cuisine": "American",
     "price": "$$",
     "distance": 3.5,
     "rating": 4.3,
     "location": "La Jolla",
+    "address": "7545 Girard Ave, La Jolla, CA 92037",
     "phone": "(858) 454-7381",
     "hours": "Open until 2:30 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/LFU2nLiPAxYCtZ2PQzNH7w/o.jpg",
@@ -7473,13 +7603,14 @@
     ]
   },
   {
-    "id": 175,
+    "id": 174,
     "name": "Mendocino Farms",
     "cuisine": "Salad",
     "price": "$$",
     "distance": 0.8,
     "rating": 4.3,
     "location": "La Jolla",
+    "address": "8795 Villa La Jolla Dr, La Jolla, CA 92037",
     "phone": "(858) 731-8130",
     "hours": "Open until 9:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/gn14_aZfGqEjlK_tDdr0AA/o.jpg",
@@ -7516,13 +7647,14 @@
     ]
   },
   {
-    "id": 176,
+    "id": 175,
     "name": "Sandpiper Wood Fired Grill & Oysters",
     "cuisine": "Bars",
     "price": "",
     "distance": 2.2,
     "rating": 4.3,
     "location": "La Jolla",
+    "address": "2259 Avenida De La Playa, La Jolla, CA 92037",
     "phone": "(858) 228-5655",
     "hours": "Open until 9:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/ivurIX-lDtT6FQhd0eJeDg/o.jpg",
@@ -7559,13 +7691,14 @@
     ]
   },
   {
-    "id": 177,
+    "id": 176,
     "name": "The Melt",
     "cuisine": "Sandwiches",
     "price": "$$",
     "distance": 0.7,
     "rating": 4.3,
     "location": "La Jolla",
+    "address": "8849 Villa La Jolla Dr, La Jolla, CA 92037",
     "phone": "(858) 926-7517",
     "hours": "Open until 3:00 AM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/bRaFMdDbnuR6kW8I7SMWCQ/o.jpg",
@@ -7602,6 +7735,50 @@
     ]
   },
   {
+    "id": 177,
+    "name": "Sanford Burnham Medical Research Institute Cafe",
+    "cuisine": "Cafes",
+    "price": "$",
+    "distance": 1.4,
+    "rating": 4.3,
+    "location": "La Jolla",
+    "address": "10901 N Torrey Pines Rd, Bldg 5, La Jolla, CA 92037",
+    "phone": "(858) 646-3100",
+    "hours": "Open until 10:00 AM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/2BhjAXx77-gf5Ob6bDz1lg/o.jpg",
+    "menuImages": [
+      "https://s3-media0.fl.yelpcdn.com/bphoto/2BhjAXx77-gf5Ob6bDz1lg/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/_RTOtOnGTQ4dCWPla7K1pw/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/s4l632czM1qRGYKuB-AViQ/o.jpg"
+    ],
+    "reviews": [
+      {
+        "text": "I love how there's fish for entree every Friday! The teriyaki salmon with brown rice and vegetables I had was very good! The fish was moist. My co-worker...",
+        "author": "Jiaxin G."
+      },
+      {
+        "text": "One of the best values for a weekday lunch on Torrey Pines mesa is located inside Sanford-Burnham Medical Research Institute, which is OPEN TO THE PUBLIC...",
+        "author": "Peijean T."
+      },
+      {
+        "text": "When they have sweet potato fries, you get sweet potato fries.\n\nSadly, Sanford Burnham's Cafe is pretty much the only place to go to get lunch if you work...",
+        "author": "Jessica L."
+      },
+      {
+        "text": "I got the chili dog for today's lunch, but it's not today's story!\n\nThe special of the day is chili dog and a medium soda.  I didn't feel like drinking soda...",
+        "author": "Brandy C."
+      },
+      {
+        "text": "Great little place!! Super friendly..had the Friday special salad bar ( as much as you can fit on your plate) with a choice of clam chowder or turkey chili....",
+        "author": "Ed L."
+      },
+      {
+        "text": "Healthy great food to select from. Places around here are very pricey and Sanford Burnham is very reasonable & near my job.",
+        "author": "Tairra H."
+      }
+    ]
+  },
+  {
     "id": 178,
     "name": "Pacific Cafe & Catering",
     "cuisine": "Coffee & Tea",
@@ -7609,6 +7786,7 @@
     "distance": 0.4,
     "rating": 4.3,
     "location": "La Jolla",
+    "address": "9452 Medical Center Dr, Altman Clinical and Translational Research, La Jolla, CA 92037",
     "phone": "(858) 404-0630",
     "hours": "Open until 3:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/TPlRdkRlfPFr21OfKoldMA/o.jpg",
@@ -7646,57 +7824,15 @@
   },
   {
     "id": 179,
-    "name": "Sanford Burnham Medical Research Institute Cafe",
-    "cuisine": "Cafes",
-    "price": "$",
-    "distance": 1.4,
-    "rating": 4.3,
-    "location": "La Jolla",
-    "phone": "(858) 646-3100",
-    "hours": "Open until 10:00 AM",
-    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/2BhjAXx77-gf5Ob6bDz1lg/o.jpg",
-    "menuImages": [
-      "https://s3-media0.fl.yelpcdn.com/bphoto/2BhjAXx77-gf5Ob6bDz1lg/o.jpg",
-      "https://s3-media0.fl.yelpcdn.com/bphoto/_RTOtOnGTQ4dCWPla7K1pw/o.jpg",
-      "https://s3-media0.fl.yelpcdn.com/bphoto/s4l632czM1qRGYKuB-AViQ/o.jpg"
-    ],
-    "reviews": [
-      {
-        "text": "I love how there's fish for entree every Friday! The teriyaki salmon with brown rice and vegetables I had was very good! The fish was moist. My co-worker...",
-        "author": "Jiaxin G."
-      },
-      {
-        "text": "One of the best values for a weekday lunch on Torrey Pines mesa is located inside Sanford-Burnham Medical Research Institute, which is OPEN TO THE PUBLIC...",
-        "author": "Peijean T."
-      },
-      {
-        "text": "When they have sweet potato fries, you get sweet potato fries.\n\nSadly, Sanford Burnham's Cafe is pretty much the only place to go to get lunch if you work...",
-        "author": "Jessica L."
-      },
-      {
-        "text": "I got the chili dog for today's lunch, but it's not today's story!\n\nThe special of the day is chili dog and a medium soda.  I didn't feel like drinking soda...",
-        "author": "Brandy C."
-      },
-      {
-        "text": "Great little place!! Super friendly..had the Friday special salad bar ( as much as you can fit on your plate) with a choice of clam chowder or turkey chili....",
-        "author": "Ed L."
-      },
-      {
-        "text": "Healthy great food to select from. Places around here are very pricey and Sanford Burnham is very reasonable & near my job.",
-        "author": "Tairra H."
-      }
-    ]
-  },
-  {
-    "id": 180,
     "name": "Cherry Wine Sushi & Burmese Cuisine",
     "cuisine": "Sushi Bars",
     "price": "$$",
     "distance": 3.2,
     "rating": 4.3,
     "location": "La Jolla",
+    "address": "8008 Girard Ave, Ste 210, La Jolla, CA 92037",
     "phone": "(858) 246-7755",
-    "hours": "Open until 9:30 PM",
+    "hours": "Open until 10:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/lAWxa7cFhtjDmw6x1jsGPw/o.jpg",
     "menuImages": [
       "https://s3-media0.fl.yelpcdn.com/bphoto/lAWxa7cFhtjDmw6x1jsGPw/o.jpg",
@@ -7731,13 +7867,14 @@
     ]
   },
   {
-    "id": 181,
+    "id": 180,
     "name": "Nanay's Best BBQ",
     "cuisine": "Barbeque",
     "price": "$$",
     "distance": 3.9,
     "rating": 4.3,
     "location": "San Diego",
+    "address": "6715 Mira Mesa Blvd, Ste 103, San Diego, CA 92121",
     "phone": "(858) 625-0827",
     "hours": "Open until 3:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/lMEJ4D8DCCPW1o5xJwS1ug/o.jpg",
@@ -7774,56 +7911,14 @@
     ]
   },
   {
-    "id": 182,
-    "name": "Main Chick Hot Chicken",
-    "cuisine": "New American",
-    "price": "$$",
-    "distance": 3.9,
-    "rating": 4.3,
-    "location": "San Diego",
-    "phone": "(858) 352-6312",
-    "hours": "Open until 9:00 PM",
-    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/QWtIPugUnvq73_VsGzHsXg/o.jpg",
-    "menuImages": [
-      "https://s3-media0.fl.yelpcdn.com/bphoto/QWtIPugUnvq73_VsGzHsXg/o.jpg",
-      "https://s3-media0.fl.yelpcdn.com/bphoto/-D6Bc6J9pFO7s4e9tfeCkA/o.jpg",
-      "https://s3-media0.fl.yelpcdn.com/bphoto/Uf_N_8CaaCZyhREolZZGGA/o.jpg"
-    ],
-    "reviews": [
-      {
-        "text": "I had a takeout order and it was great.  Something different for our area and tastey.  I had the 3 SPICY tenders w/fries.  I love spicy foods and this was...",
-        "author": "Robert O."
-      },
-      {
-        "text": "Combo #3\n2 Chicken Sandwiches, Seasoned Crinkle Cut Fries, 1 MC Sauce\n\nGreat deal for the cost! I got the mild flavor and the chicken was delicious.",
-        "author": "K P."
-      },
-      {
-        "text": "I had the combo #1 hot chicken sandwich, tender and fries! Great taste, in this day and age good value. Service great got in and out fast.  The fries were...",
-        "author": "Tom R."
-      },
-      {
-        "text": "Main Chick is my favorite Nashville hot chicken tender place of ALL TIME. The seasoning on their chicken tenders is perfect, without fail. The taste...",
-        "author": "Davina N."
-      },
-      {
-        "text": "Definitely work a try if you're on a quest for a great chicken sandwich. Service was quick and there was outside seating available. I would probably pick...",
-        "author": "Mel M."
-      },
-      {
-        "text": "I don't know why I don't go here often... only bad thing is I didn't get my drink that came with my order :/ \n\nBUT... wow. I swear the first time I came...",
-        "author": "Shaianne P."
-      }
-    ]
-  },
-  {
-    "id": 183,
+    "id": 181,
     "name": "King Of Thai Cuisine",
     "cuisine": "Thai",
     "price": "",
     "distance": 3.4,
     "rating": 4.3,
     "location": "La Jolla",
+    "address": "7734 Girard Ave, Ste C, La Jolla, CA 92037",
     "phone": "(858) 456-0466",
     "hours": "Open until 3:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/TI3UtzGBR66sxirEfwYFMg/o.jpg",
@@ -7860,15 +7955,60 @@
     ]
   },
   {
-    "id": 184,
+    "id": 182,
+    "name": "Main Chick Hot Chicken",
+    "cuisine": "New American",
+    "price": "$$",
+    "distance": 3.9,
+    "rating": 4.3,
+    "location": "San Diego",
+    "address": "4705 Clairemont Dr, Ste H, San Diego, CA 92117",
+    "phone": "(858) 352-6312",
+    "hours": "Open until 10:00 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/QWtIPugUnvq73_VsGzHsXg/o.jpg",
+    "menuImages": [
+      "https://s3-media0.fl.yelpcdn.com/bphoto/QWtIPugUnvq73_VsGzHsXg/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/-D6Bc6J9pFO7s4e9tfeCkA/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/Uf_N_8CaaCZyhREolZZGGA/o.jpg"
+    ],
+    "reviews": [
+      {
+        "text": "I had a takeout order and it was great.  Something different for our area and tastey.  I had the 3 SPICY tenders w/fries.  I love spicy foods and this was...",
+        "author": "Robert O."
+      },
+      {
+        "text": "Combo #3\n2 Chicken Sandwiches, Seasoned Crinkle Cut Fries, 1 MC Sauce\n\nGreat deal for the cost! I got the mild flavor and the chicken was delicious.",
+        "author": "K P."
+      },
+      {
+        "text": "I had the combo #1 hot chicken sandwich, tender and fries! Great taste, in this day and age good value. Service great got in and out fast.  The fries were...",
+        "author": "Tom R."
+      },
+      {
+        "text": "Main Chick is my favorite Nashville hot chicken tender place of ALL TIME. The seasoning on their chicken tenders is perfect, without fail. The taste...",
+        "author": "Davina N."
+      },
+      {
+        "text": "Definitely work a try if you're on a quest for a great chicken sandwich. Service was quick and there was outside seating available. I would probably pick...",
+        "author": "Mel M."
+      },
+      {
+        "text": "I used to love this place, went a few times per week. However last week i was served a tender that wasn't cooked through and today was charged $1.39 for the...",
+        "author": "Jim M."
+      }
+    ]
+  },
+  {
+    "id": 183,
     "name": "TEC-Cafe",
     "cuisine": "Cafes",
     "price": "",
     "distance": 0.2,
     "rating": 4.5,
     "location": "San Diego",
+    "address": "9500 Gilman Dr, San Diego, CA 92093",
     "phone": "(858) 822-6983",
-    "hours": "Open until 2:30 PM",
+    "hours": "Open until 12:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/mxOKICgIhrGLedRTNjupRg/o.jpg",
     "menuImages": [
       "https://s3-media0.fl.yelpcdn.com/bphoto/mxOKICgIhrGLedRTNjupRg/o.jpg",
@@ -7903,179 +8043,14 @@
     ]
   },
   {
-    "id": 185,
-    "name": "Off The Plancha",
-    "cuisine": "New Mexican Cuisine",
-    "price": "",
-    "distance": 3.5,
-    "rating": 5.0,
-    "location": "San Diego",
-    "phone": "",
-    "hours": "",
-    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/k8OwMRqQIV8o6KW5zsmKrg/o.jpg",
-    "menuImages": [
-      "https://s3-media0.fl.yelpcdn.com/bphoto/k8OwMRqQIV8o6KW5zsmKrg/o.jpg",
-      "https://s3-media0.fl.yelpcdn.com/bphoto/M0DGN0omNZBGh6_z-QL7bw/o.jpg",
-      "https://s3-media0.fl.yelpcdn.com/bphoto/spS2McrFGHbDuWJVSvMLVQ/o.jpg"
-    ],
-    "reviews": [
-      {
-        "text": "Love the fusion and the flavors! They guys are #legit . One of the best new food finds in awhile. Noodles and your choice of veggie, carne asada, chicken,...",
-        "author": "Greg V."
-      },
-      {
-        "text": "Vietnamese and mexican combine for an explosion in your mouth. And a ton of protein to fuel the body!! Second time was just as good as the first!!",
-        "author": "Tammy J."
-      },
-      {
-        "text": "",
-        "author": ""
-      },
-      {
-        "text": "",
-        "author": ""
-      },
-      {
-        "text": "",
-        "author": ""
-      },
-      {
-        "text": "",
-        "author": ""
-      }
-    ]
-  },
-  {
-    "id": 186,
-    "name": "Nani's Hot Steamy Buns",
-    "cuisine": "Food Stands",
-    "price": "",
-    "distance": 3.4,
-    "rating": 5.0,
-    "location": "San Diego",
-    "phone": "(619) 496-8651",
-    "hours": "",
-    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/uvcv_lOfRX6Cd2Baag6dMg/o.jpg",
-    "menuImages": [
-      "https://s3-media0.fl.yelpcdn.com/bphoto/uvcv_lOfRX6Cd2Baag6dMg/o.jpg"
-    ],
-    "reviews": [
-      {
-        "text": "When I first saw these folks at the La Jolla farmer's market, I was confused. Filipino-style steamed buns, with Greek/Italian/other fusion fillings,...",
-        "author": "Arya A."
-      },
-      {
-        "text": "I liked those steamy buns. Me and my friend went to downtown farmers market on Sunday and I was kinda surprised to see a new vendor so I gave them a chance....",
-        "author": "Vitalii T."
-      },
-      {
-        "text": "",
-        "author": ""
-      },
-      {
-        "text": "",
-        "author": ""
-      },
-      {
-        "text": "",
-        "author": ""
-      },
-      {
-        "text": "",
-        "author": ""
-      }
-    ]
-  },
-  {
-    "id": 187,
-    "name": "Marketplace Grille Delivery",
-    "cuisine": "Restaurants",
-    "price": "",
-    "distance": 3.4,
-    "rating": 5.0,
-    "location": "La Jolla",
-    "phone": "(858) 456-9116",
-    "hours": "",
-    "image": "",
-    "menuImages": [],
-    "reviews": [
-      {
-        "text": "Great food + people. Owner stayed open extra time for me, when everything else was closed and cooked it himself. Much appreciated!!",
-        "author": "Brian F."
-      },
-      {
-        "text": "My favorite place to eat right over there in downtown La Jolla!!! Everyone who works there is awesome and has been since we started going there in 2000!!!...",
-        "author": "Taylor E."
-      },
-      {
-        "text": "",
-        "author": ""
-      },
-      {
-        "text": "",
-        "author": ""
-      },
-      {
-        "text": "",
-        "author": ""
-      },
-      {
-        "text": "",
-        "author": ""
-      }
-    ]
-  },
-  {
-    "id": 188,
-    "name": "BRR GRR",
-    "cuisine": "Food Trucks",
-    "price": "",
-    "distance": 14.2,
-    "rating": 4.3,
-    "location": "San Diego",
-    "phone": "",
-    "hours": "Open until 10:00 PM",
-    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/ra2w8LwLuj8uS22SFM4cew/o.jpg",
-    "menuImages": [
-      "https://s3-media0.fl.yelpcdn.com/bphoto/ra2w8LwLuj8uS22SFM4cew/o.jpg",
-      "https://s3-media0.fl.yelpcdn.com/bphoto/dGavspaWnirN_fTe429sCg/o.jpg",
-      "https://s3-media0.fl.yelpcdn.com/bphoto/rzW5wOFMuZrcaO8DhEcXTQ/o.jpg"
-    ],
-    "reviews": [
-      {
-        "text": "BRR GRR is DEE-LISSHH-USS! Saw this truck and had to try. We ordered a bunch of different items but I'll highlight my favorites. First I'll start with the...",
-        "author": "Russell T."
-      },
-      {
-        "text": "The Brr Grr stix were delicious! Great balance of breading, beef, pickles, and cheese. I ordered three but was full after two. Also got some tots and the...",
-        "author": "Samantha C."
-      },
-      {
-        "text": "Burger sticks I was not expected but it is soooo good!!!  Fiesta Burger and Brisket burger is to die for... Wing with Carabean is awesome !  caramelized...",
-        "author": "Isao T."
-      },
-      {
-        "text": "Just had food from this Food Truck while at New English Brewing. I would absolutely eat from this food truck again. We got the burger, wings, and french...",
-        "author": "Erica S."
-      },
-      {
-        "text": "10/10 great burger and wings. Perfect pairing for a beer.  They don't skimp on anything, large burger patties and lots of cheese.",
-        "author": "Lisa C."
-      },
-      {
-        "text": "This is the best food truck i have ever experienced! Great customer service and WONDERFUL food!!",
-        "author": "Zo A."
-      }
-    ]
-  },
-  {
-    "id": 189,
+    "id": 184,
     "name": "Chameleon Cuisine",
     "cuisine": "Food Trucks",
     "price": "$$",
     "distance": 12.8,
     "rating": 4.3,
     "location": "San Diego",
+    "address": "San Diego, CA 92102",
     "phone": "(619) 980-4870",
     "hours": "Open until 10:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/R0XEJBU0XZXcxAr7oiEWVA/o.jpg",
@@ -8112,29 +8087,28 @@
     ]
   },
   {
-    "id": 190,
-    "name": "Familia Catering",
+    "id": 185,
+    "name": "Nani's Hot Steamy Buns",
     "cuisine": "Food Stands",
     "price": "",
-    "distance": 3.6,
+    "distance": 3.4,
     "rating": 5.0,
     "location": "San Diego",
-    "phone": "(619) 292-9359",
+    "address": "9932 Mesa Rim Rd, San Diego Farmers Markets, San Diego, CA 92121",
+    "phone": "(619) 496-8651",
     "hours": "",
-    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/vVRqc3KOxpQu9I9ZjxQyQg/o.jpg",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/uvcv_lOfRX6Cd2Baag6dMg/o.jpg",
     "menuImages": [
-      "https://s3-media0.fl.yelpcdn.com/bphoto/vVRqc3KOxpQu9I9ZjxQyQg/o.jpg",
-      "https://s3-media0.fl.yelpcdn.com/bphoto/xHV7YVy41Rd92sRY-Dee8w/o.jpg",
-      "https://s3-media0.fl.yelpcdn.com/bphoto/oC_oBu5URq-osk1VPHU4zA/o.jpg"
+      "https://s3-media0.fl.yelpcdn.com/bphoto/uvcv_lOfRX6Cd2Baag6dMg/o.jpg"
     ],
     "reviews": [
       {
-        "text": "La Familia Catering is a new vendor at the La Jolla Open Aire Market. I was pleased to learn that they were serving breakfast, and omelettes of all things...",
-        "author": "Jack M."
+        "text": "When I first saw these folks at the La Jolla farmer's market, I was confused. Filipino-style steamed buns, with Greek/Italian/other fusion fillings,...",
+        "author": "Arya A."
       },
       {
-        "text": "Catered for my company and all the food was excellent great carnitas and the fish tacos were amazing!!!",
-        "author": "William W."
+        "text": "I liked those steamy buns. Me and my friend went to downtown farmers market on Sunday and I was kinda surprised to see a new vendor so I gave them a chance....",
+        "author": "Vitalii T."
       },
       {
         "text": "",
@@ -8155,13 +8129,98 @@
     ]
   },
   {
-    "id": 191,
+    "id": 186,
+    "name": "BRR GRR",
+    "cuisine": "Food Trucks",
+    "price": "",
+    "distance": 14.2,
+    "rating": 4.3,
+    "location": "San Diego",
+    "address": "4637 Market St, San Diego, CA 92102",
+    "phone": "",
+    "hours": "Open until 10:00 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/ra2w8LwLuj8uS22SFM4cew/o.jpg",
+    "menuImages": [
+      "https://s3-media0.fl.yelpcdn.com/bphoto/ra2w8LwLuj8uS22SFM4cew/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/dGavspaWnirN_fTe429sCg/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/rzW5wOFMuZrcaO8DhEcXTQ/o.jpg"
+    ],
+    "reviews": [
+      {
+        "text": "BRR GRR is DEE-LISSHH-USS! Saw this truck and had to try. We ordered a bunch of different items but I'll highlight my favorites. First I'll start with the...",
+        "author": "Russell T."
+      },
+      {
+        "text": "The Brr Grr stix were delicious! Great balance of breading, beef, pickles, and cheese. I ordered three but was full after two. Also got some tots and the...",
+        "author": "Samantha C."
+      },
+      {
+        "text": "Burger sticks I was not expected but it is soooo good!!!  Fiesta Burger and Brisket burger is to die for... Wing with Carabean is awesome !  caramelized...",
+        "author": "Isao T."
+      },
+      {
+        "text": "Just had food from this Food Truck while at New English Brewing. I would absolutely eat from this food truck again. We got the burger, wings, and french...",
+        "author": "Erica S."
+      },
+      {
+        "text": "10/10 great burger and wings. Perfect pairing for a beer.  They don't skimp on anything, large burger patties and lots of cheese.",
+        "author": "Lisa C."
+      },
+      {
+        "text": "This is the best food truck i have ever experienced! Great customer service and WONDERFUL food!!",
+        "author": "Zo A."
+      }
+    ]
+  },
+  {
+    "id": 187,
+    "name": "Marketplace Grille Delivery",
+    "cuisine": "Restaurants",
+    "price": "",
+    "distance": 3.4,
+    "rating": 5.0,
+    "location": "La Jolla",
+    "address": "1030 Torrey Pines Rd, Ste C, La Jolla, CA 92037",
+    "phone": "(858) 456-9116",
+    "hours": "",
+    "image": "",
+    "menuImages": [],
+    "reviews": [
+      {
+        "text": "Great food + people. Owner stayed open extra time for me, when everything else was closed and cooked it himself. Much appreciated!!",
+        "author": "Brian F."
+      },
+      {
+        "text": "My favorite place to eat right over there in downtown La Jolla!!! Everyone who works there is awesome and has been since we started going there in 2000!!!...",
+        "author": "Taylor E."
+      },
+      {
+        "text": "",
+        "author": ""
+      },
+      {
+        "text": "",
+        "author": ""
+      },
+      {
+        "text": "",
+        "author": ""
+      },
+      {
+        "text": "",
+        "author": ""
+      }
+    ]
+  },
+  {
+    "id": 188,
     "name": "Buonasera",
     "cuisine": "Pizza",
     "price": "$",
     "distance": 3.9,
     "rating": 4.3,
     "location": "Del Mar",
+    "address": "2212 Carmel Valley Rd, Ste 1, Del Mar, CA 92014",
     "phone": "(858) 925-7136",
     "hours": "Open until 10:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/jKb_1zHMMOI0DnvPmwXluA/o.jpg",
@@ -8198,13 +8257,58 @@
     ]
   },
   {
-    "id": 192,
+    "id": 189,
+    "name": "Familia Catering",
+    "cuisine": "Food Stands",
+    "price": "",
+    "distance": 3.6,
+    "rating": 5.0,
+    "location": "San Diego",
+    "address": "7335 Girard Ave, San Diego, CA 92037",
+    "phone": "(619) 292-9359",
+    "hours": "",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/vVRqc3KOxpQu9I9ZjxQyQg/o.jpg",
+    "menuImages": [
+      "https://s3-media0.fl.yelpcdn.com/bphoto/vVRqc3KOxpQu9I9ZjxQyQg/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/xHV7YVy41Rd92sRY-Dee8w/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/oC_oBu5URq-osk1VPHU4zA/o.jpg"
+    ],
+    "reviews": [
+      {
+        "text": "La Familia Catering is a new vendor at the La Jolla Open Aire Market. I was pleased to learn that they were serving breakfast, and omelettes of all things...",
+        "author": "Jack M."
+      },
+      {
+        "text": "Catered for my company and all the food was excellent great carnitas and the fish tacos were amazing!!!",
+        "author": "William W."
+      },
+      {
+        "text": "",
+        "author": ""
+      },
+      {
+        "text": "",
+        "author": ""
+      },
+      {
+        "text": "",
+        "author": ""
+      },
+      {
+        "text": "",
+        "author": ""
+      }
+    ]
+  },
+  {
+    "id": 190,
     "name": "Grater Grilled Cheese",
     "cuisine": "Sandwiches",
     "price": "",
     "distance": 2.0,
     "rating": 4.3,
     "location": "San Diego",
+    "address": "9450 Scranton Rd, Ste 1142, San Diego, CA 92121",
     "phone": "(858) 352-6563",
     "hours": "Open until 5:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/PpZfj8lm5Sv7lFrcmfRX_Q/o.jpg",
@@ -8241,15 +8345,60 @@
     ]
   },
   {
-    "id": 193,
+    "id": 191,
+    "name": "Off The Plancha",
+    "cuisine": "New Mexican Cuisine",
+    "price": "",
+    "distance": 3.5,
+    "rating": 5.0,
+    "location": "San Diego",
+    "address": "7811 Eads Ave, Unit 104, San Diego, CA 92037",
+    "phone": "",
+    "hours": "",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/k8OwMRqQIV8o6KW5zsmKrg/o.jpg",
+    "menuImages": [
+      "https://s3-media0.fl.yelpcdn.com/bphoto/k8OwMRqQIV8o6KW5zsmKrg/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/M0DGN0omNZBGh6_z-QL7bw/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/spS2McrFGHbDuWJVSvMLVQ/o.jpg"
+    ],
+    "reviews": [
+      {
+        "text": "Love the fusion and the flavors! They guys are #legit . One of the best new food finds in awhile. Noodles and your choice of veggie, carne asada, chicken,...",
+        "author": "Greg V."
+      },
+      {
+        "text": "Vietnamese and mexican combine for an explosion in your mouth. And a ton of protein to fuel the body!! Second time was just as good as the first!!",
+        "author": "Tammy J."
+      },
+      {
+        "text": "",
+        "author": ""
+      },
+      {
+        "text": "",
+        "author": ""
+      },
+      {
+        "text": "",
+        "author": ""
+      },
+      {
+        "text": "",
+        "author": ""
+      }
+    ]
+  },
+  {
+    "id": 192,
     "name": "Curry Up Now",
     "cuisine": "Indian",
     "price": "",
     "distance": 0.1,
     "rating": 4.3,
     "location": "La Jolla",
+    "address": "9700 Gilman Dr Pmb 138, La Jolla, CA 92093",
     "phone": "(858) 289-6289",
-    "hours": "Open until 10:00 PM",
+    "hours": "Open until 9:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/WygKXo_xSJINrntt2e4zkQ/o.jpg",
     "menuImages": [
       "https://s3-media0.fl.yelpcdn.com/bphoto/WygKXo_xSJINrntt2e4zkQ/o.jpg",
@@ -8284,15 +8433,16 @@
     ]
   },
   {
-    "id": 194,
+    "id": 193,
     "name": "Charminar Indian Restaurant & Catering",
     "cuisine": "Indian",
     "price": "$$",
     "distance": 3.9,
     "rating": 4.2,
     "location": "San Diego",
+    "address": "6755 Mira Mesa Blvd, Ste 111, San Diego, CA 92121",
     "phone": "(858) 263-7878",
-    "hours": "Open until 10:00 PM",
+    "hours": "Open until 11:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/uZjyEFHKmzwBn7nbD85HdA/o.jpg",
     "menuImages": [
       "https://s3-media0.fl.yelpcdn.com/bphoto/uZjyEFHKmzwBn7nbD85HdA/o.jpg",
@@ -8327,15 +8477,16 @@
     ]
   },
   {
-    "id": 195,
+    "id": 194,
     "name": "Piatti",
     "cuisine": "Italian",
     "price": "$$$",
     "distance": 2.2,
     "rating": 4.2,
     "location": "Playa La Jolla",
+    "address": "2182 Avenida De Ln, Playa La Jolla, CA 92037",
     "phone": "(858) 454-1589",
-    "hours": "Open until 9:00 PM",
+    "hours": "Open until 9:30 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/OdVlXPJ5efbh_k-tsZnNHQ/o.jpg",
     "menuImages": [
       "https://s3-media0.fl.yelpcdn.com/bphoto/OdVlXPJ5efbh_k-tsZnNHQ/o.jpg",
@@ -8370,13 +8521,14 @@
     ]
   },
   {
-    "id": 196,
+    "id": 195,
     "name": "Ujin",
     "cuisine": "Ramen",
     "price": "",
     "distance": 1.8,
     "rating": 4.2,
     "location": "San Diego",
+    "address": "8935 Towne Centre Dr, San Diego, CA 92122",
     "phone": "",
     "hours": "Open until 9:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/PaWk8Qo1f5QLfS26HJ2vzQ/o.jpg",
@@ -8413,13 +8565,14 @@
     ]
   },
   {
-    "id": 197,
+    "id": 196,
     "name": "Queenstown Village",
     "cuisine": "Burgers",
     "price": "$$",
     "distance": 3.2,
     "rating": 4.2,
     "location": "San Diego",
+    "address": "1044 Wall St, San Diego, CA 92037",
     "phone": "(858) 352-6595",
     "hours": "Open until 9:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/v_6c3xr-MUx5LWTUojPOAg/o.jpg",
@@ -8456,13 +8609,14 @@
     ]
   },
   {
-    "id": 198,
+    "id": 197,
     "name": "Dough Momma Pizzeria",
     "cuisine": "Pizza",
     "price": "$",
     "distance": 2.2,
     "rating": 4.2,
     "location": "La Jolla",
+    "address": "2152 Avenida De La Playa, La Jolla, CA 92037",
     "phone": "(858) 246-6692",
     "hours": "Open until 9:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/ruPZP6RWWUGeUJ2-Lwvr_Q/o.jpg",
@@ -8499,13 +8653,14 @@
     ]
   },
   {
-    "id": 199,
+    "id": 198,
     "name": "Cheese Shop",
     "cuisine": "Sandwiches",
     "price": "$$",
     "distance": 2.2,
     "rating": 4.2,
     "location": "La Jolla",
+    "address": "2165 Avenida De La Playa, La Jolla, CA 92037",
     "phone": "(858) 459-3921",
     "hours": "Open until 4:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/ZwJGvHb-A6QWdohFeffbQw/o.jpg",
@@ -8542,6 +8697,50 @@
     ]
   },
   {
+    "id": 199,
+    "name": "De Nunno",
+    "cuisine": "Italian",
+    "price": "$$",
+    "distance": 1.5,
+    "rating": 4.2,
+    "location": "San Diego",
+    "address": "4545 La Jolla Village Dr, San Diego, CA 92122",
+    "phone": "",
+    "hours": "Open until 8:30 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/YH6y8u1CkeqK7ZQQfA9SBA/o.jpg",
+    "menuImages": [
+      "https://s3-media0.fl.yelpcdn.com/bphoto/YH6y8u1CkeqK7ZQQfA9SBA/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/0Rmp-K4MtrWUxA8-AIAVOg/o.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/GUZ_TN-i3GHs51sR8c0pTw/o.jpg"
+    ],
+    "reviews": [
+      {
+        "text": "I stopped by today, it was my first time here and I loved the prosciutto focaccia sandwich. Both gentlemen working here were very kind, also loved the...",
+        "author": "Iris C."
+      },
+      {
+        "text": "Don't be dissuaded by the fact that it's in a mall food court: De Nunno is legit. Their pasta is honestly some of the tastiest I've had in SD, including...",
+        "author": "Natalie R."
+      },
+      {
+        "text": "I love Italian food and I can be very picky with my stars for this type of cuisine but De Nunno easily gets 5 stars from me!\n\nI've eaten here multiple times...",
+        "author": "Idelle D."
+      },
+      {
+        "text": "My go to pasta spot at UTC! Pasta is made fresh daily and dishes made to order. Looks like they added a couple of new dishes since I was last here: creamy...",
+        "author": "Tracie M."
+      },
+      {
+        "text": "Omg I went here not knowing how delicious this would be, my kid wanted pasta and we got the kids plate which is really big enough for an adult. It was fresh...",
+        "author": "Crystal C."
+      },
+      {
+        "text": "Nicest people ever working there and pasta was good butt a bit on the pricey side for a food court mall",
+        "author": "Lene V."
+      }
+    ]
+  },
+  {
     "id": 200,
     "name": "Guiltea Cravings",
     "cuisine": "Coffee & Tea",
@@ -8549,6 +8748,7 @@
     "distance": 4.7,
     "rating": 4.2,
     "location": "San Diego",
+    "address": "5497 Clairemont Mesa Blvd, San Diego, CA 92117",
     "phone": "(858) 430-6420",
     "hours": "Open until 10:00 PM",
     "image": "https://s3-media0.fl.yelpcdn.com/bphoto/Sl9ZQTwT2FbfH4gIzAFicA/o.jpg",

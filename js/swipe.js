@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   });
   }
   let data = JSON.parse(localStorage.getItem('restaurantData'));
+
   if (!data) {
       const res = await fetch('data/restaurants.json');
       data = await res.json();
@@ -155,7 +156,9 @@ data.forEach(r => {
       <!-- Front -->
       <div class="card-front">
         <h2>${r.name}</h2>
-        <img src="${r.image}" alt="${r.name}" class="card-img" />
+          <div class="card-img-container">
+            <img src="${r.image || 'assets/restaurant.jpg'}" alt="${r.name}" class="card-img" />
+          </div>
         <div class="details">
           <span class="rating">
             <img src="assets/star-icon.png" alt="star" class="icon" />
