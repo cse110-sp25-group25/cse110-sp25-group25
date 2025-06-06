@@ -232,10 +232,10 @@ nav ul {
   border-radius: 50%;
   border: 0.2em solid #b4d2ba;
   position: absolute;
-  top: -2em;
+  top: -1.5em;
   left: 0;
   right: 0;
-  margin-inline: auto;
+  margin: auto;
 }
 
 .instruction-step button {
