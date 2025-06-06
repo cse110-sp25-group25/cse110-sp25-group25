@@ -79,6 +79,7 @@ To work smoothly as a team, follow these rules when contributing:
 2. Right-click `index.html` 
 3. Choose **“Open with Live Server”**
 4. If a new browser tab doesn’t automatically show up, go to `http://127.0.0.1:{PORTNUMBER}/index.html`
+5. Make sure to **clear localStorage** before using the website
 
 ### How do I test my code for correctness and quality?
 - We use Jest and ESLint locally, and check for other tests in GitHub PRs through GitHub actions. Learn more in our [CI/CD Pipeline Folder](admin\cipipeline).
