@@ -220,6 +220,15 @@ function confirmSelection(type) {
 }
 
 
+//Set up event listeners for progress bar steps
+document.querySelectorAll('.step').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const type = btn.getAttribute('data-step');
+    showOptions(type);
+  });
+});
+
+
 // function to check positive/numeric input
 /**
  * Validates that the input value is a positive number.
