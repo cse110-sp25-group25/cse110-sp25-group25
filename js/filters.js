@@ -241,7 +241,7 @@ document.querySelectorAll('.step').forEach(btn => {
   btn.addEventListener('click', () => {
     const oldType = STEPS[current];
     const newType = btn.getAttribute('data-step');
-    confirmSelection(oldType, newType);
+    confirmAndChangeSelection(oldType, newType);
   });
 });
 
