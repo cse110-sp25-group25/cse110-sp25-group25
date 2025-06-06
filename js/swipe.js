@@ -346,6 +346,23 @@ function handleViewedCard(id) {
   }
 }
 
+
+/**
+ * Hides the swipe card interface and displays the end screen when all cards have been swiped.
+ * 
+ * This function performs the following steps:
+ * 1. Hides the card container and swipe buttons.
+ * 2. Shows the end screen along with “View Rejected” and “Full Reset” buttons.
+ * 3. Disables the “View Rejected” button if there are no rejected cards.
+ * 4. Attaches click handlers:
+ *    - “View Rejected” button: Renders only the cards that were swiped left (rejected), 
+ *      then re-displays the swipe interface for those cards.
+ *    - “Full Reset” button: Clears all viewed card state, resets the deck to its full set,
+ *      and re-displays the swipe interface for all restaurants.
+ *
+ * @function
+ * @returns {void}
+ */ 
 function checkIfAllSwiped() {
     const endScreen = document.getElementById("end-screen");
     const cardContainer = document.getElementById("card-container");
