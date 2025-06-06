@@ -470,7 +470,7 @@ nav ul {
       }
 
       > img:hover {
-        filter: brightness(80%)
+        opacity: 60%;
       }
    }
  }
