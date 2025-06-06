@@ -219,7 +219,6 @@ nav ul {
 .instruction-step {
   background-color: #f3f4e4;
   position: relative;
-  max-width: 25%;
   margin: 1rem;
   padding: 2em;
   border-radius: 20px;
@@ -250,6 +249,24 @@ nav ul {
   left: 0;
   right: 0;
   margin-inline: auto;
+}
+
+/* landing instructions desktop */
+@media (min-width:961px) {
+  #instruction-container {
+    flex-direction: row;
+  }
+}
+
+/* landing instructions mobile/splitscreen */
+@media (max-width:960px) {
+  #instruction-container {
+    flex-direction: column;
+  }
+  
+  .instruction-step {
+    margin-bottom: 4em;
+  }
 }
 
 /* swipe reviews */
