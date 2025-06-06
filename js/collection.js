@@ -1,6 +1,7 @@
 window.addEventListener('DOMContentLoaded', init);
 
 function init() {
+
     renderDeck();
 
     const clearBtn = document.getElementById('clear-deck-btn');
