@@ -325,6 +325,22 @@ nav ul {
    padding: 40px 0;
 }
 
+
+/* filters progress bar styles */
+
+.step {
+  background: none;
+  padding: 0;
+}
+
+.step:hover .step-text {
+  filter: brightness(60%);
+}
+
+.step:hover .step-line {
+  filter: brightness(60%);
+}
+
 /* — Swipe Header — */
 .swipe-header {
    position: absolute;
