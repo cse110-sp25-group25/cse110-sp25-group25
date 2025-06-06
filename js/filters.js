@@ -83,7 +83,6 @@ function finalise() {
  * @param {string} type - The type of filter to show options for ('cuisine', 'price', 'distance', 'rating')
  */
 function showOptions(type) {
-  document.querySelector('.filter-selection').classList.add('hidden');
   document.querySelectorAll('.filter-options').forEach(el => el.classList.add('hidden'));
   document.getElementById(`${type}-options`).classList.remove('hidden');
 
@@ -116,6 +115,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       cuisineGrid.appendChild(btn);
     });
 
+    showOptions('cuisine')
   }
   
   // Set up event listeners for filter buttons
@@ -129,12 +129,6 @@ document.querySelectorAll('.option-btn').forEach(btn => {
       siblings.forEach(b => b.classList.remove('selected'));
       btn.classList.add('selected');
     }
-  });
-  const skipAll = document.getElementById('skip-btn');
-
-  skipAll.addEventListener('click', () => {
-    // leave defaults (every filter empty/null)
-    window.location.href = 'swipe.html';  
   });
 });
 
@@ -225,6 +219,4 @@ function validatePositiveNumber(value) {
 
 
 // to pass ESlint
-
-window.showOptions = showOptions;
 window.confirmSelection = confirmSelection;
