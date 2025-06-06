@@ -31,11 +31,12 @@ if (viewed) {
 
 if (!data || data.length === 0) {
     console.warn("no data, can't render");
+    checkIfAllSwiped();
     return;
 }
 
 renderRestaurant(data);
-setupButtons();
+setupButtons(data);
 });
 
 /**
@@ -270,7 +271,10 @@ card.classList.remove('flipped');
 /**
 * Sets up accept/reject button logic and swiping transitions.
 */
-function setupButtons() {
+function setupButtons(data) {
+let swipedCount   = 0;
+const totalCards  = data.length;
+
 const declineBtn = document.querySelector('button[title="Reject"]');
 const acceptBtn = document.querySelector('button[title="Accept"]');
 
@@ -284,10 +288,15 @@ declineBtn.addEventListener("click", () => {
         current.classList.remove('swipe-left', 'active-card');
 
         const newId = Number(current.id.split('_')[1]) + 1;
+        swipedCount += 1;
+
         const newCard = document.getElementById(`card_${newId}`);
         if (newCard) {
             newCard.style.display = 'block';
             newCard.classList.add('active-card');
+        }
+        if (swipedCount == totalCards) {
+          checkIfAllSwiped();
         }
     }, 500);
 
@@ -304,10 +313,15 @@ acceptBtn.addEventListener("click", () => {
         current.classList.remove('swipe-right', 'active-card');
 
         const newId = Number(current.id.split('_')[1]) + 1;
+        swipedCount += 1;
+
         const newCard = document.getElementById(`card_${newId}`);
         if (newCard) {
             newCard.style.display = 'block';
             newCard.classList.add('active-card');
+        }
+        if (swipedCount == totalCards){
+          checkIfAllSwiped();
         }
     }, 500);
 
@@ -330,4 +344,109 @@ function handleViewedCard(id) {
     viewed.push(id);
     localStorage.setItem('viewed', JSON.stringify(viewed));
   }
+}
+
+
+/**
+ * Hides the swipe card interface and displays the end screen when all cards have been swiped.
+ * 
+ * This function performs the following steps:
+ * 1. Hides the card container and swipe buttons.
+ * 2. Shows the end screen along with “View Rejected” and “Full Reset” buttons.
+ * 3. Disables the “View Rejected” button if there are no rejected cards.
+ * 4. Attaches click handlers:
+ *    - “View Rejected” button: Renders only the cards that were swiped left (rejected), 
+ *      then re-displays the swipe interface for those cards.
+ *    - “Full Reset” button: Clears all viewed card state, resets the deck to its full set,
+ *      and re-displays the swipe interface for all restaurants.
+ *
+ * @function
+ * @returns {void}
+ */ 
+function checkIfAllSwiped() {
+    const endScreen = document.getElementById("end-screen");
+    const cardContainer = document.getElementById("card-container");
+    // const resetButton = document.querySelector('.button-type3');
+    const swipeButtons = document.querySelector('.swipe-buttons');
+
+    // hide cardContainer
+    cardContainer.style.display = "none";
+    // hide swipe buttons
+    swipeButtons.style.display = "none";
+    // display end screen
+    endScreen.style.display = "block";
+
+    // get the new buttons
+    const viewRejectedBtn = document.getElementById("view-rejected-btn");
+    const fullResetBtn    = document.getElementById("full-reset-btn");
+    
+    // make them appear
+    viewRejectedBtn.style.display = "block";
+    fullResetBtn.style.display = "block";
+
+    if (getRejectedData().length == 0) {
+      viewRejectedBtn.style.display = "none";
+    }
+
+    // —— Button #1: View rejected cards ——
+    viewRejectedBtn.onclick = () => {
+      // 1) Compute only those restaurants the user swiped left on
+      const rejectedData = getRejectedData();
+      if (rejectedData.length === 0) {
+        
+        return;
+      }
+
+      endScreen.style.display = "none"; // hide endscreen
+      swipeButtons.style.display = "flex"; // display swipe buttons
+      cardContainer.style.display = "flex"; // display cards
+      
+      // only render rejected resturant cards
+      renderRestaurant(rejectedData);
+      setupButtons(rejectedData);
+    };
+
+    // —— Button #2: Fully reset “viewed” ——
+    fullResetBtn.onclick = () => {
+      // 1) Clear all viewed‐IDs (so nothing is considered “seen”)
+      const allRestaurantData = clearAllViewedAndReturnData();
+
+      // 2) Hide the end screen and re‐show the swipe buttons
+      endScreen.style.display = "none";
+      swipeButtons.style.display = "flex";
+      cardContainer.style.display = "flex"; // display cards
+
+      // 3) Render the entire deck (freshData). 
+      renderRestaurant(allRestaurantData);
+      setupButtons(allRestaurantData);
+    };
+}
+
+
+/**
+ * Return an array of restaurant objects that were "rejected":
+ * those with ID ∈ viewed[] but not ∈ deck[].
+ */
+function getRejectedData() {
+  const viewed = JSON.parse(localStorage.getItem('viewed')) || [];
+  
+  // read the saved deck 
+  const deck = JSON.parse(localStorage.getItem('deck')) || [];
+
+  // build set of rejected cards
+  const acceptedIds = new Set(deck.map(r => r.id));
+  const rejectedIds = viewed.filter(id => !acceptedIds.has(id));
+
+  const allRestaurants = JSON.parse(localStorage.getItem('restaurantData')) || [];
+  return allRestaurants.filter(r => rejectedIds.includes(r.id));
+}
+
+/**
+ * Clears the 'viewed' list entirely, then returns all restaurants
+ * (so the caller can re-render the full deck).
+ */
+function clearAllViewedAndReturnData() {
+  localStorage.removeItem('viewed');
+  localStorage.removeItem('deck');
+  return JSON.parse(localStorage.getItem('restaurantData')) || [];
 }
