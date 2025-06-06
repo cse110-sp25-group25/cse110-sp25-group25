@@ -163,16 +163,16 @@ document.querySelectorAll('.option-btn').forEach(btn => {
  * @return {void}
  * */
 function confirmSelection(type) {
-  confirmSelection(type, null);
+  confirmAndChangeSelection(type, null);
 }
 
 /**
- * Confirms the user's selection for a specific filter type and updates the userSelections object.
+ * Confirms the user's selection, updates the userSelections object, and redirects the user to a specified filter.
  * @param {string} type - The type of filter being confirmed (e.g., 'cuisine', 'price', 'distance', 'rating').
  * @param {string} newType - The next filter to show (if using navigation)
  * @return {void}
  * */
-function confirmSelection(type, newType) {
+function confirmAndChangeSelection(type, newType) {
   if (type === 'cuisine') {
     const selected = document.querySelectorAll('#cuisine-options .option-btn.selected');
     if (selected === '') {                       // user left it blank  ⇒  skip
