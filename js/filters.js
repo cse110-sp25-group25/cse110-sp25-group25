@@ -101,11 +101,11 @@ function showOptions(type) {
 
 document.addEventListener('DOMContentLoaded', async () => {
   const cuisineGrid = document.getElementById('cuisine-grid');
-  if (cuisineGrid) {
-    
-    cuisineGrid.innerHTML = '';
+  const starContainer = document.getElementById('star-container');
 
-    // Get all unique cuisines
+  // Load cuisines dynamically
+  if (cuisineGrid) {
+    cuisineGrid.innerHTML = '';
     const cuisines = await getUniqueCuisines();
     cuisines.forEach(cuisine => {
       const btn = document.createElement('button');
@@ -114,8 +114,26 @@ document.addEventListener('DOMContentLoaded', async () => {
       btn.textContent = cuisine;
       cuisineGrid.appendChild(btn);
     });
+  }
 
     showOptions('cuisine')
+  // Load stars dynamically
+  if (starContainer) {
+    for (let i = 1; i <= 5; i++) {
+      const star = document.createElement('img');
+      star.src = 'assets/star-icon.png';
+      star.alt = `${i} star`;
+      star.classList.add('star');
+      star.dataset.value = i;
+      star.addEventListener('click', () => {
+        document.querySelectorAll('.star').forEach(s => s.classList.remove('selected'));
+        for (let j = 0; j < i; j++) {
+          document.querySelectorAll('.star')[j].classList.add('selected');
+        }
+        userSelections.rating = i;
+      });
+      starContainer.appendChild(star);
+    }
   }
   
   // Set up event listeners for filter buttons
@@ -181,15 +199,11 @@ function confirmSelection(type) {
   
   //need to check how rating works (logic currently PLACEHOLDER)
   if (type === 'rating') {
-    const val = document.getElementById('rating-input').value;
-    if (validatePositiveNumber(val) && val >= 0 && val <= 5) {
-      userSelections.rating = parseFloat(val);
-    } else if (val === '') { // user left it blank  ⇒  skip
+    const selectedStars = document.querySelectorAll('.star.selected');
+    if (selectedStars.length === 0) {
       userSelections.rating = null;
-    }
-    else {
-      alert('Please enter a valid rating (0–5).');
-      return;
+    } else {
+      userSelections.rating = selectedStars.length;
     }
   }
 
