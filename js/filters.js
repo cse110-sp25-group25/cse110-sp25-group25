@@ -101,8 +101,6 @@ function showOptions(type) {
 
 document.addEventListener('DOMContentLoaded', async () => {
   const cuisineGrid = document.getElementById('cuisine-grid');
-  const skipAll = document.getElementById('skip-btn');
-  const doneBtn = document.getElementById('done-btn');
   const starContainer = document.getElementById('star-container');
 
   // Load cuisines dynamically

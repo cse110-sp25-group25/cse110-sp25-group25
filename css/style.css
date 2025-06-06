@@ -597,13 +597,13 @@ nav ul {
   background-color: #b4d2ba;
 
   cursor: pointer;
-  outline: none;
+  border: none;
   margin: 0.5rem;                /* small gap between the two buttons */
 }
 
 #view-rejected-btn:focus,
 #full-reset-btn:focus {
-  outline: none;
+  border: none;
   box-shadow: 0 0 0 3px rgba(74, 74, 56, 0.3);
 }
 /* ---------------------------------------------------------- */
