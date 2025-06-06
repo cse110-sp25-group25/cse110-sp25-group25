@@ -1,5 +1,4 @@
 html, body {
-  /* overflow: hidden; */
   height: 100%;
 }
 
@@ -283,6 +282,7 @@ object-fit: cover;
   html,
   body {
     overflow-x: hidden;
+    overflow-y: auto;
     max-width: 100%;
     margin: 0;
     padding: 0;
@@ -292,9 +292,10 @@ object-fit: cover;
     flex-direction: column;       /* instead of row */
     height: auto;                 /* allow natural page height */
     width: 100vw;            /* force exactly the viewport width */
-    max-width: 100vw;        /* ensure it never shrinks below full‐width */
+    max-width: 100vw;
     margin: 0;
     padding:0;
+    overflow-y: auto;
   }
 
 
@@ -326,15 +327,24 @@ object-fit: cover;
 }
 
   .card-area {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    height: 100%;
     width: 100%;
   }
+
+.cards-scroll {
+  flex: 1 1 auto;       /* take all remaining vertical space inside .card-area */
+  overflow-y: auto;     /* enable its own vertical scrollbar */
+  /* optional padding if you want a little gutter inside it: */
+}
 
   /* 5) Adjust your grid so cards shrink a bit on phone */
   .deck-list {
     grid-template-columns: repeat(2, minmax(0, 48%)); 
-    gap: 1rem;                    /* smaller gap between cards */
-    /* padding-left: 0.5rem;         less side padding */
-    /* padding-right: 0.5rem; */
+    gap: 1rem;
     justify-content: center;
   }
 
@@ -366,6 +376,7 @@ object-fit: cover;
     max-width: 100%;
     position: static;
     top: auto;
+    overflow-y: auto;     /* enable its own vertical scrollbar */
   }
 
     .collection-card-front .tags {
