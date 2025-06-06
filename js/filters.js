@@ -12,14 +12,18 @@ const userSelections = {
  * @returns {string[]} An alphabetically sorted array of unique cuisine strings.
  */
 async function getUniqueCuisines() {
+  //clear restaurantData in localStorage
+  localStorage.removeItem('restaurantData');
   let all = JSON.parse(localStorage.getItem('restaurantData') || '[]');
   if (all.length === 0) {
 
     const res = await fetch('data/restaurants.json');
     all = await res.json();
     localStorage.setItem('restaurantData', JSON.stringify(all));
+
   
   }
+  
   all = JSON.parse(localStorage.getItem('restaurantData') || '[]');
   const set = new Set(all.map(r => r.cuisine).filter(c => typeof c === 'string'));
   return Array.from(set).sort((a, b) => a.localeCompare(b));

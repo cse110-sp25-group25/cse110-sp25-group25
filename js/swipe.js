@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   });
   }
   let data = JSON.parse(localStorage.getItem('restaurantData'));
+
   if (!data) {
       const res = await fetch('data/restaurants.json');
       data = await res.json();
@@ -107,13 +108,33 @@ reviewDiv.id = `${side}_review_${id}`;
 
 let innerHTML = '';
 for (let i = 0; i < reviews.length; i++) {
-    innerHTML += `<p>"${reviews[i].text}"<br><span>- ${reviews[i].author}</span></p>`;
+  innerHTML += `<p class="review-text">"${reviews[i].text}"<br><span>- ${reviews[i].author}</span></p>`;
 }
 
 reviewDiv.innerHTML = innerHTML;
 reviewDiv.style.display = 'none';
 
 return reviewDiv;
+}
+
+/**
+ * Ensures that there are exactly three images in the array.
+ * If there are fewer than three, it fills the rest with default images.
+ * @param {Array<string>} imgArray - Array of image URLs.
+ * @returns {Array<string>} Array with exactly three image URLs.
+ * */
+function ensureThreeImages(imgArray) {
+  const fallbackImages = [
+    "assets/default1.jpg",
+    "assets/default2.jpg",
+    "assets/default3.jpg",
+  ];
+
+  const images = (imgArray || []).slice(0, 3);
+  while (images.length < 3) {
+    images.push(fallbackImages[images.length]);
+  }
+  return images;
 }
 
 /**
@@ -136,7 +157,9 @@ data.forEach(r => {
       <!-- Front -->
       <div class="card-front">
         <h2>${r.name}</h2>
-        <img src="${r.image}" alt="${r.name}" class="card-img" />
+          <div class="card-img-container">
+            <img src="${r.image || 'assets/restaurant.jpg'}" alt="${r.name}" class="card-img" />
+          </div>
         <div class="details">
           <span class="rating">
             <img src="assets/star-icon.png" alt="star" class="icon" />
@@ -170,7 +193,7 @@ data.forEach(r => {
             ${r.phone}
           </p>
           <div class="menu-images">
-            ${(r.menuImages || []).map(src => `<img src="${src}" alt="food">`).join('')}
+            ${ensureThreeImages(r.menuImages).map(src => `<img src="${src}" alt="food">`).join('')}
           </div>
           <a href="#" class="view-menu">View Menu ↗</a>
         </div>
