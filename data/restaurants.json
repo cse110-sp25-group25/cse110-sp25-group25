@@ -1,215 +1,5 @@
 [
   {
-    "id": 1,
-    "name": "Sakura Sushi",
-    "cuisine": "Japanese",
-    "price": "$$",
-    "distance": 1.2,
-    "rating": 4.6,
-    "location": "Downtown",
-    "phone": "123 - 456 - 7890",
-    "hours": "Open until 9:00 PM",
-    "image": "assets/restaurant.jpg",
-    "menuImages": ["assets/sushi-1.png", "assets/sushi-2.png", "assets/sushi-3.png"],
-    "reviews": [
-      { "text": "Fresh and delicious", "author": "customer 1" },
-      { "text": "Great sushi rolls", "author": "customer 2" },
-      { "text": "Cozy ambiance", "author": "customer 3" },
-      { "text": "Authentic taste", "author": "customer 4" },
-      { "text": "Fast service", "author": "customer 5" },
-      { "text": "Would come again", "author": "customer 6" }
-    ]
-  },
-  {
-    "id": 2,
-    "name": "Pasta Paradise",
-    "cuisine": "Italian",
-    "price": "$$$",
-    "distance": 3.5,
-    "rating": 4.2,
-    "location": "Uptown",
-    "phone": "987 - 654 - 3210",
-    "hours": "Open until 10:00 PM",
-    "image": "assets/restaurant.jpg",
-    "menuImages": ["assets/sushi-1.png", "assets/sushi-2.png", "assets/sushi-3.png"],
-    "reviews": [
-      { "text": "Authentic Italian flavors", "author": "guest 1" },
-      { "text": "Loved the fettuccine", "author": "guest 2" },
-      { "text": "Romantic ambiance", "author": "guest 3" },
-      { "text": "Top notch wine list", "author": "guest 4" },
-      { "text": "Attentive staff", "author": "guest 5" },
-      { "text": "Would visit again", "author": "guest 6" }
-    ]
-  },
-  {
-    "id": 3,
-    "name": "Burger Barn",
-    "cuisine": "American",
-    "price": "$",
-    "distance": 0.8,
-    "rating": 4.0,
-    "location": "Midtown",
-    "phone": "456 - 789 - 1234",
-    "hours": "Open until 8:00 PM",
-    "image": "assets/restaurant.jpg",
-    "menuImages": ["assets/sushi-1.png", "assets/sushi-2.png", "assets/sushi-3.png"],
-    "reviews": [
-      { "text": "Juiciest burger in town", "author": "local fan" },
-      { "text": "Crispy fries", "author": "customer A" },
-      { "text": "Great value", "author": "customer B" },
-      { "text": "Quick service", "author": "customer C" },
-      { "text": "Kid friendly", "author": "customer D" },
-      { "text": "Simple and tasty", "author": "customer E" }
-    ]
-  },
-  {
-    "id": 4,
-    "name": "Curry House",
-    "cuisine": "Indian",
-    "price": "$$",
-    "distance": 2.0,
-    "rating": 4.7,
-    "location": "Downtown",
-    "phone": "222 - 333 - 4444",
-    "hours": "Open until 10:00 PM",
-    "image": "assets/restaurant.jpg",
-    "menuImages": ["assets/sushi-1.png", "assets/sushi-2.png", "assets/sushi-3.png"],
-    "reviews": [
-      { "text": "Spicy and flavorful", "author": "foodie 1" },
-      { "text": "Best naan I've had", "author": "foodie 2" },
-      { "text": "Tandoori was perfect", "author": "foodie 3" },
-      { "text": "Good vegetarian options", "author": "foodie 4" },
-      { "text": "Will recommend", "author": "foodie 5" },
-      { "text": "Loved the samosas", "author": "foodie 6" }
-    ]
-  },
-  {
-    "id": 5,
-    "name": "Taco Town",
-    "cuisine": "Mexican",
-    "price": "$",
-    "distance": 1.5,
-    "rating": 4.3,
-    "location": "Suburbs",
-    "phone": "888 - 999 - 7777",
-    "hours": "Open until 11:00 PM",
-    "image": "assets/restaurant.jpg",
-    "menuImages": ["assets/sushi-1.png", "assets/sushi-2.png", "assets/sushi-3.png"],
-    "reviews": [
-      { "text": "Authentic street tacos", "author": "Carlos" },
-      { "text": "So many salsas!", "author": "Amy" },
-      { "text": "Birria is fire", "author": "Tony" },
-      { "text": "Cheap and amazing", "author": "Nina" },
-      { "text": "Lively vibe", "author": "Ben" },
-      { "text": "Big portions", "author": "Kelly" }
-    ]
-  },
-  {
-    "id": 6,
-    "name": "Pho Palace",
-    "cuisine": "Vietnamese",
-    "price": "$$",
-    "distance": 2.3,
-    "rating": 4.4,
-    "location": "Midtown",
-    "phone": "323 - 111 - 2222",
-    "hours": "Open until 9:30 PM",
-    "image": "assets/restaurant.jpg",
-    "menuImages": ["assets/sushi-1.png", "assets/sushi-2.png", "assets/sushi-3.png"],
-    "reviews": [
-      { "text": "Rich broth", "author": "Quang" },
-      { "text": "Fresh herbs", "author": "Annie" },
-      { "text": "Banh mi also great", "author": "Tommy" },
-      { "text": "Cozy place", "author": "Tram" },
-      { "text": "Pho tai was perfect", "author": "Lan" },
-      { "text": "Love the ambiance", "author": "Ken" }
-    ]
-  },
-  {
-    "id": 7,
-    "name": "Dragon Wok",
-    "cuisine": "Chinese",
-    "price": "$$",
-    "distance": 3.1,
-    "rating": 4.1,
-    "location": "Chinatown",
-    "phone": "555 - 111 - 5555",
-    "hours": "Open until 10:30 PM",
-    "image": "assets/restaurant.jpg",
-    "menuImages": ["assets/sushi-1.png", "assets/sushi-2.png", "assets/sushi-3.png"],
-    "reviews": [
-      { "text": "Classic takeout feel", "author": "Jing" },
-      { "text": "Orange chicken = win", "author": "Bob" },
-      { "text": "Lo mein is bomb", "author": "Daisy" },
-      { "text": "Fast delivery", "author": "Steve" },
-      { "text": "Egg rolls are crispy", "author": "Mark" },
-      { "text": "Nice lunch combos", "author": "Sue" }
-    ]
-  },
-  {
-    "id": 8,
-    "name": "The Greek Spot",
-    "cuisine": "Greek",
-    "price": "$$",
-    "distance": 1.9,
-    "rating": 4.5,
-    "location": "Downtown",
-    "phone": "999 - 222 - 1111",
-    "hours": "Open until 10:00 PM",
-    "image": "assets/restaurant.jpg",
-    "menuImages": ["assets/sushi-1.png", "assets/sushi-2.png", "assets/sushi-3.png"],
-    "reviews": [
-      { "text": "Great gyros", "author": "George" },
-      { "text": "Fresh pita", "author": "Niko" },
-      { "text": "Feta everything", "author": "Sophie" },
-      { "text": "Fast service", "author": "Maria" },
-      { "text": "Lamb was perfect", "author": "Alex" },
-      { "text": "Good prices", "author": "Theo" }
-    ]
-  },
-  {
-    "id": 9,
-    "name": "Bagel Bros",
-    "cuisine": "Breakfast",
-    "price": "$",
-    "distance": 0.5,
-    "rating": 4.0,
-    "location": "Midtown",
-    "phone": "444 - 333 - 2222",
-    "hours": "Open until 2:00 PM",
-    "image": "assets/restaurant.jpg",
-    "menuImages": ["assets/sushi-1.png", "assets/sushi-2.png", "assets/sushi-3.png"],
-    "reviews": [
-      { "text": "Perfect lox bagel", "author": "Liam" },
-      { "text": "Great coffee too", "author": "Emma" },
-      { "text": "Toasted to perfection", "author": "Olivia" },
-      { "text": "Quick morning fix", "author": "Noah" },
-      { "text": "Fresh every day", "author": "Ava" },
-      { "text": "Love the vibe", "author": "Mia" }
-    ]
-  },
-  {
-    "id": 10,
-    "name": "Green Garden",
-    "cuisine": "Vegan",
-    "price": "$$",
-    "distance": 2.7,
-    "rating": 4.8,
-    "location": "Uptown",
-    "phone": "111 - 222 - 3333",
-    "hours": "Open until 8:30 PM",
-    "image": "assets/restaurant.jpg",
-    "menuImages": ["assets/sushi-1.png", "assets/sushi-2.png", "assets/sushi-3.png"],
-    "reviews": [
-      { "text": "So many plant-based options", "author": "Sam" },
-      { "text": "Love the smoothies", "author": "Kim" },
-      { "text": "Tofu wrap was amazing", "author": "Leo" },
-      { "text": "Clean and green", "author": "Zoe" },
-      { "text": "Big vegan menu", "author": "Max" },
-      { "text": "Really filling meals", "author": "Ella" }
-    ]
-  },
-  {
     "id": 51,
     "name": "Ajisen Ramen San Diego",
     "cuisine": "Japanese",
@@ -219,7 +9,7 @@
     "location": "Convoy",
     "phone": "858 - 277-1380",
     "hours": "Open until 9 PM",
-    "image": "assets/ajisen-ramen-san-diego.jpeg",
+    "image": "assets/restaurants/ajisen-ramen-san-diego.jpeg",
     "menuImages": ["assets/sushi-1.png", "assets/sushi-2.png", "assets/sushi-3.png"],
     "reviews": [
       { "text": "Ramen tastes very good", "author": "Tam" },
@@ -240,7 +30,7 @@
     "location": "Convoy",
     "phone": "(858) 565-8861",
     "hours": "Open Until 9 PM",
-    "image": "assets/bistro-kaz.jpeg",
+    "image": "assets/restaurants/bistro-kaz.jpeg",
     "menuImages": ["assets/sushi-1.png", "assets/sushi-2.png", "assets/sushi-3.png"],
     "reviews": [
       { "text": "I absolutely love this restaurant!", "author": "Jennifer W." },
@@ -261,7 +51,7 @@
     "location": "Convoy",
     "phone": "858 - 836 - 1287",
     "hours": "Open Until 1 AM",
-    "image": "assets/bonchon---convoy.jpeg",
+    "image": "assets/restaurants/bonchon---convoy.jpeg",
     "menuImages": ["assets/sushi-1.png", "assets/sushi-2.png", "assets/sushi-3.png"],
     "reviews": [
       { "text": "The chicken is perfectly crispy and flavorful.", "author": "Alex P." },
@@ -282,7 +72,7 @@
     "location": "Convoy",
     "phone": "858 - 571 - 7947",
     "hours": "Open Until 9:30 PM",
-    "image": "assets/cafe-hue.jpeg",
+    "image": "assets/restaurants/cafe-hue.jpeg",
     "menuImages": ["assets/sushi-1.png", "assets/sushi-2.png", "assets/sushi-3.png"],
     "reviews": [
       { "text": "The dessert selection is absolutely delightful.", "author": "Sophie L." },
@@ -303,7 +93,7 @@
     "location": "Convoy",
     "phone": "858 - 278 - 2525",
     "hours": "Open Until 9 PM",
-    "image": "assets/cali-banh-mi.jpeg",
+    "image": "assets/restaurants/cali-banh-mi.jpeg",
     "menuImages": ["assets/sushi-1.png", "assets/sushi-2.png", "assets/sushi-3.png"],
     "reviews": [
       { "text": "The banh mi sandwiches are fresh and delicious.", "author": "Ryan T." },
@@ -324,7 +114,7 @@
     "location": "Convoy",
     "phone": "858 - 277 - 8900",
     "hours": "Open Until 9 PM",
-    "image": "assets/cdd-tofu-grill.jpeg",
+    "image": "assets/restaurants/cdd-tofu-grill.jpeg",
     "menuImages": ["assets/sushi-1.png", "assets/sushi-2.png", "assets/sushi-3.png"],
     "reviews": [
       { "text": "The tofu stew is comforting and flavorful.", "author": "Sara L." },
@@ -345,7 +135,7 @@
     "location": "Convoy",
     "phone": "858 - 499 - 8963",
     "hours": "Open Until 9 PM",
-    "image": "assets/chef-chin.jpeg",
+    "image": "assets/restaurants/chef-chin.jpeg",
     "menuImages": ["assets/sushi-1.png", "assets/sushi-2.png", "assets/sushi-3.png"],
     "reviews": [
       { "text": "The hot pot broth is rich and flavorful.", "author": "Kevin P." },
@@ -366,7 +156,7 @@
     "location": "Convoy",
     "phone": "858 - 650 - 3333",
     "hours": "Open Until 9 PM",
-    "image": "assets/china-max.jpeg",
+    "image": "assets/restaurants/china-max.jpeg",
     "menuImages": ["assets/sushi-1.png", "assets/sushi-2.png", "assets/sushi-3.png"],
     "reviews": [
       { "text": "The dim sum selection is outstanding.", "author": "Jessica W." },
@@ -387,7 +177,7 @@
     "location": "Convoy",
     "phone": "858 - 268 - 0835",
     "hours": "Open Until 9 PM",
-    "image": "assets/chon-ju-jip.jpeg",
+    "image": "assets/restaurants/chon-ju-jip.jpeg",
     "menuImages": ["assets/sushi-1.png", "assets/sushi-2.png", "assets/sushi-3.png"],
     "reviews": [
       { "text": "The bibimbap is fresh and flavorful.", "author": "Natalie F." },
@@ -408,7 +198,7 @@
     "location": "Convoy",
     "phone": "858 - 569 - 9171",
     "hours": "Open Until 9 PM",
-    "image": "assets/chopstix.jpeg",
+    "image": "assets/restaurants/chopstix.jpeg",
     "menuImages": ["assets/sushi-1.png", "assets/sushi-2.png", "assets/sushi-3.png"],
     "reviews": [
       { "text": "The udon noodles are perfectly chewy.", "author": "Angela S." },
@@ -429,7 +219,7 @@
     "location": "Convoy",
     "phone": "858 - 565 - 1288",
     "hours": "Open Until 9 PM",
-    "image": "assets/chopstix-too.jpeg",
+    "image": "assets/restaurants/chopstix-too.jpeg",
     "menuImages": ["assets/sushi-1.png", "assets/sushi-2.png", "assets/sushi-3.png"],
     "reviews": [
       { "text": "Sushi rolls are fresh and flavorful.", "author": "Tina P." },
@@ -450,7 +240,7 @@
     "location": "Convoy",
     "phone": "",
     "hours": "Open Until 9 PM",
-    "image": "assets/chungchun-ssal-hot-dog.png",
+    "image": "assets/restaurants/chungchun-ssal-hot-dog.png",
     "menuImages": ["assets/sushi-1.png", "assets/sushi-2.png", "assets/sushi-3.png"],
     "reviews": [
       { "text": "The corn dogs are crispy and flavorful.", "author": "Jason K." },
@@ -471,7 +261,7 @@
     "location": "Convoy",
     "phone": "858 - 384 - 7974",
     "hours": "Open Until 9 PM",
-    "image": "assets/common-theory.jpeg",
+    "image": "assets/restaurants/common-theory.jpeg",
     "menuImages": ["assets/sushi-1.png", "assets/sushi-2.png", "assets/sushi-3.png"],
     "reviews": [
       { "text": "The craft beer selection is impressive.", "author": "Mark H." },
@@ -492,7 +282,7 @@
     "location": "Convoy",
     "phone": "858 - 283 - 5437",
     "hours": "Open Until 9 PM",
-    "image": "assets/convoy-tofu-house.jpeg",
+    "image": "assets/restaurants/convoy-tofu-house.jpeg",
     "menuImages": ["assets/sushi-1.png", "assets/sushi-2.png", "assets/sushi-3.png"],
     "reviews": [
       { "text": "The tofu soup is spicy and comforting.", "author": "David J." },
@@ -513,7 +303,7 @@
     "location": "Convoy",
     "phone": "858 - 565 - 1678",
     "hours": "Open Until 9 PM",
-    "image": "assets/crab-hut.jpeg",
+    "image": "assets/restaurants/crab-hut.jpeg",
     "menuImages": ["assets/sushi-1.png", "assets/sushi-2.png", "assets/sushi-3.png"],
     "reviews": [
       { "text": "The seafood boil is generous and delicious.", "author": "Linda S." },
@@ -534,7 +324,7 @@
     "location": "Convoy",
     "phone": "858 - 430 - 6001",
     "hours": "Open Until 2 AM",
-    "image": "assets/cross-street.jpeg",
+    "image": "assets/restaurants/cross-street.jpeg",
     "menuImages": ["assets/sushi-1.png", "assets/sushi-2.png", "assets/sushi-3.png"],
     "reviews": [
       { "text": "The chicken wings are crispy and juicy.", "author": "Nathan V." },
@@ -555,7 +345,7 @@
     "location": "Convoy",
     "phone": "858 - 573 - 2585",
     "hours": "Open Until 10 PM",
-    "image": "assets/dae-jang-keum-korean-bbq.jpeg",
+    "image": "assets/restaurants/dae-jang-keum-korean-bbq.jpeg",
     "menuImages": ["assets/sushi-1.png", "assets/sushi-2.png", "assets/sushi-3.png"],
     "reviews": [
       { "text": "The beef bulgogi is tender and flavorful.", "author": "Hannah S." },
@@ -576,7 +366,7 @@
     "location": "Convoy",
     "phone": "858 - 560 - 0990",
     "hours": "Open Until 10 PM",
-    "image": "assets/dduriba.jpeg",
+    "image": "assets/restaurants/dduriba.jpeg",
     "menuImages": ["assets/sushi-1.png", "assets/sushi-2.png", "assets/sushi-3.png"],
     "reviews": [
       { "text": "The tteokbokki is spicy and satisfying.", "author": "Julia L." },
@@ -597,7 +387,7 @@
     "location": "Convoy",
     "phone": "858 - 282 - 0702",
     "hours": "Open Until 9 PM",
-    "image": "assets/de-niro-ristorante.jpeg",
+    "image": "assets/restaurants/de-niro-ristorante.jpeg",
     "menuImages": ["assets/sushi-1.png", "assets/sushi-2.png", "assets/sushi-3.png"],
     "reviews": [
       { "text": "The pasta dishes are flavorful and fresh.", "author": "Alicia B." },
@@ -618,7 +408,7 @@
     "location": "Convoy",
     "phone": "858 - 268 - 9638",
     "hours": "Open Until 9 PM",
-    "image": "assets/dumpling-inn-shanghai-saloon.jpeg",
+    "image": "assets/restaurants/dumpling-inn-shanghai-saloon.jpeg",
     "menuImages": ["assets/sushi-1.png", "assets/sushi-2.png", "assets/sushi-3.png"],
     "reviews": [
       { "text": "The soup dumplings are juicy and delicious.", "author": "Emily R." },
@@ -639,7 +429,7 @@
     "location": "Convoy",
     "phone": "858 - 565 - 6888",
     "hours": "Open Until 9 PM",
-    "image": "assets/emerald-restaurant.jpeg",
+    "image": "assets/restaurants/emerald-restaurant.jpeg",
     "menuImages": ["assets/sushi-1.png", "assets/sushi-2.png", "assets/sushi-3.png"],
     "reviews": [
       { "text": "The dim sum offerings are varied and tasty.", "author": "Tina H." },
@@ -660,7 +450,7 @@
     "location": "Convoy",
     "phone": "858 - 576 - 2526",
     "hours": "Open Until 9 PM",
-    "image": "assets/epic-wings.png",
+    "image": "assets/restaurants/epic-wings.png",
     "menuImages": ["assets/sushi-1.png", "assets/sushi-2.png", "assets/sushi-3.png"],
     "reviews": [
       { "text": "The wings are saucy and delicious.", "author": "Aiden R." },
@@ -681,7 +471,7 @@
     "location": "Convoy",
     "phone": "858 - 292 - 0499",
     "hours": "Open Until 9 PM",
-    "image": "assets/friends-house-korean.jpeg",
+    "image": "assets/restaurants/friends-house-korean.jpeg",
     "menuImages": ["assets/sushi-1.png", "assets/sushi-2.png", "assets/sushi-3.png"],
     "reviews": [
       { "text": "The kimchi stew is spicy and comforting.", "author": "Natalie F." },
@@ -702,7 +492,7 @@
     "location": "Convoy",
     "phone": "858 - 430 - 6689",
     "hours": "Open Until 10 PM",
-    "image": "assets/fusion-izakaya-52.jpeg",
+    "image": "assets/restaurants/fusion-izakaya-52.jpeg",
     "menuImages": ["assets/sushi-1.png", "assets/sushi-2.png", "assets/sushi-3.png"],
     "reviews": [
       { "text": "The sushi is fresh and beautifully presented.", "author": "Jessica W." },
@@ -723,7 +513,7 @@
     "location": "Convoy",
     "phone": "858 - 279 - 7959",
     "hours": "Open Until 9 PM",
-    "image": "assets/gala-chicken.jpeg",
+    "image": "assets/restaurants/gala-chicken.jpeg",
     "menuImages": ["assets/sushi-1.png", "assets/sushi-2.png", "assets/sushi-3.png"],
     "reviews": [
       { "text": "The honey garlic wings are sweet and savory.", "author": "Aaron K." },
@@ -744,7 +534,7 @@
     "location": "Convoy",
     "phone": "858 - 277 - 2220",
     "hours": "Open Until 9 PM",
-    "image": "assets/grandma-tofu-bbq.jpeg",
+    "image": "assets/restaurants/grandma-tofu-bbq.jpeg",
     "menuImages": ["assets/sushi-1.png", "assets/sushi-2.png", "assets/sushi-3.png"],
     "reviews": [
       { "text": "The tofu soup is rich and comforting.", "author": "Angela S." },
@@ -765,7 +555,7 @@
     "location": "Convoy",
     "phone": "858 - 292 - 5555",
     "hours": "Open Until 9 PM",
-    "image": "assets/green-china-grill.jpeg",
+    "image": "assets/restaurants/green-china-grill.jpeg",
     "menuImages": ["assets/sushi-1.png", "assets/sushi-2.png", "assets/sushi-3.png"],
     "reviews": [
       { "text": "The stir-fry dishes are fresh and tasty.", "author": "Monica P." },
@@ -786,7 +576,7 @@
     "location": "Convoy",
     "phone": "858 - 565 - 0403",
     "hours": "Open Until 10 PM",
-    "image": "assets/handoo-korean-bbq.jpeg",
+    "image": "assets/restaurants/handoo-korean-bbq.jpeg",
     "menuImages": ["assets/sushi-1.png", "assets/sushi-2.png", "assets/sushi-3.png"],
     "reviews": [
       { "text": "The marinated meats are perfectly seasoned.", "author": "Aiden R." },
@@ -807,7 +597,7 @@
     "location": "Convoy",
     "phone": "858 - 430 - 6177",
     "hours": "Open Until 9 PM",
-    "image": "assets/harmony-potsticker.jpeg",
+    "image": "assets/restaurants/harmony-potsticker.jpeg",
     "menuImages": ["assets/sushi-1.png", "assets/sushi-2.png", "assets/sushi-3.png"],
     "reviews": [
       { "text": "The potstickers are crispy and well-seasoned.", "author": "Jason R." },
@@ -828,7 +618,7 @@
     "location": "Convoy",
     "phone": "858 - 430 - 6815",
     "hours": "Open Until 10 PM",
-    "image": "assets/hi-street-kitchen-and-tap.jpeg",
+    "image": "assets/restaurants/hi-street-kitchen-and-tap.jpeg",
     "menuImages": ["assets/sushi-1.png", "assets/sushi-2.png", "assets/sushi-3.png"],
     "reviews": [
       { "text": "The poke bowls are fresh and flavorful.", "author": "Natalie F." },
@@ -849,7 +639,7 @@
     "location": "Convoy",
     "phone": "858 - 210 - 5056",
     "hours": "Open Until 10 PM",
-    "image": "assets/hidden-fish.jpeg",
+    "image": "assets/restaurants/hidden-fish.jpeg",
     "menuImages": ["assets/sushi-1.png", "assets/sushi-2.png", "assets/sushi-3.png"],
     "reviews": [
       { "text": "The sashimi is fresh and melts in your mouth.", "author": "Aiden M." },
@@ -870,7 +660,7 @@
     "location": "Convoy",
     "phone": "858 - 565 - 8603",
     "hours": "Open Until 10 PM",
-    "image": "assets/ichiros.jpeg",
+    "image": "assets/restaurants/ichiros.jpeg",
     "menuImages": ["assets/sushi-1.png", "assets/sushi-2.png", "assets/sushi-3.png"],
     "reviews": [
       { "text": "The sushi quality is top-notch.", "author": "Jessica W." },
@@ -891,7 +681,7 @@
     "location": "Convoy",
     "phone": "858 - 292 - 1222",
     "hours": "Open Until 9 PM",
-    "image": "assets/imperial-mandarin.jpeg",
+    "image": "assets/restaurants/imperial-mandarin.jpeg",
     "menuImages": ["assets/sushi-1.png", "assets/sushi-2.png", "assets/sushi-3.png"],
     "reviews": [
       { "text": "The Peking duck is succulent and tender.", "author": "Natalie H." },
@@ -912,7 +702,7 @@
     "location": "Convoy",
     "phone": "858 - 569 - 6151",
     "hours": "Open Until 10 PM",
-    "image": "assets/izakaya-sakura.jpeg",
+    "image": "assets/restaurants/izakaya-sakura.jpeg",
     "menuImages": ["assets/sushi-1.png", "assets/sushi-2.png", "assets/sushi-3.png"],
     "reviews": [
       { "text": "The yakitori skewers are perfectly grilled.", "author": "Jessica P." },
@@ -933,7 +723,7 @@
     "location": "Convoy",
     "phone": "858 - 251 - 4071",
     "hours": "Open Until 10 PM",
-    "image": "assets/j-wata-temaki-bar.jpg",
+    "image": "assets/restaurants/j-wata-temaki-bar.jpg",
     "menuImages": ["assets/sushi-1.png", "assets/sushi-2.png", "assets/sushi-3.png"],
     "reviews": [
       { "text": "Temaki hand rolls are fresh and flavorful.", "author": "Aiden R." },
@@ -954,7 +744,7 @@
     "location": "Convoy",
     "phone": "858 - 268 - 0888",
     "hours": "Open Until 9 PM",
-    "image": "assets/jasmine-seafood-restaurant.jpeg",
+    "image": "assets/restaurants/jasmine-seafood-restaurant.jpeg",
     "menuImages": ["assets/sushi-1.png", "assets/sushi-2.png", "assets/sushi-3.png"],
     "reviews": [
       { "text": "Dim sum varieties are plentiful and tasty.", "author": "Natalie W." },
@@ -975,7 +765,7 @@
     "location": "Convoy",
     "phone": "858 - 292 - 4670",
     "hours": "Open Until 10 PM",
-    "image": "assets/jeong-won-bbq-buffet.jpeg",
+    "image": "assets/restaurants/jeong-won-bbq-buffet.jpeg",
     "menuImages": ["assets/sushi-1.png", "assets/sushi-2.png", "assets/sushi-3.png"],
     "reviews": [
       { "text": "The all-you-can-eat BBQ is a great value.", "author": "Ryan P." },
@@ -996,7 +786,7 @@
     "location": "Convoy",
     "phone": "858 - 302 - 9394",
     "hours": "Open Until 9 PM",
-    "image": "assets/joyees.jpeg",
+    "image": "assets/restaurants/joyees.jpeg",
     "menuImages": ["assets/sushi-1.png", "assets/sushi-2.png", "assets/sushi-3.png"],
     "reviews": [
       { "text": "The hot pot is flavorful and well-priced.", "author": "Aiden R." },
@@ -1017,7 +807,7 @@
     "location": "Convoy",
     "phone": "858 - 279 - 6888",
     "hours": "Open Until 9 PM",
-    "image": "assets/k-cuisine.jpeg",
+    "image": "assets/restaurants/k-cuisine.jpeg",
     "menuImages": ["assets/sushi-1.png", "assets/sushi-2.png", "assets/sushi-3.png"],
     "reviews": [
       { "text": "The bibimbap is fresh and flavorful.", "author": "Natalie F." },
@@ -1038,7 +828,7 @@
     "location": "Convoy",
     "phone": "858 - 240 - 2728",
     "hours": "Open Until 9 PM",
-    "image": "assets/kangxi-is-coming.jpeg",
+    "image": "assets/restaurants/kangxi-is-coming.jpeg",
     "menuImages": ["assets/sushi-1.png", "assets/sushi-2.png", "assets/sushi-3.png"],
     "reviews": [
       { "text": "The Peking duck is succulent and tender.", "author": "Natasha W." },
@@ -1059,7 +849,7 @@
     "location": "Convoy",
     "phone": "858 - 430 - 6300",
     "hours": "Open Until 10 PM",
-    "image": "assets/karami-ramen.jpeg",
+    "image": "assets/restaurants/karami-ramen.jpeg",
     "menuImages": ["assets/sushi-1.png", "assets/sushi-2.png", "assets/sushi-3.png"],
     "reviews": [
       { "text": "The tonkotsu broth is rich and creamy.", "author": "Aiden R." },
@@ -1080,7 +870,7 @@
     "location": "Convoy",
     "phone": "858 - 560 - 8859",
     "hours": "Open Until 10 PM",
-    "image": "assets/katsu-cafe.jpeg",
+    "image": "assets/restaurants/katsu-cafe.jpeg",
     "menuImages": ["assets/sushi-1.png", "assets/sushi-2.png", "assets/sushi-3.png"],
     "reviews": [
       { "text": "The tonkatsu cutlet is crispy and juicy.", "author": "Jessica P." },
@@ -1101,7 +891,7 @@
     "location": "Convoy",
     "phone": "",
     "hours": "Open Until 10 PM",
-    "image": "assets/kjodo-bbq.jpeg",
+    "image": "assets/restaurants/kjodo-bbq.jpeg",
     "menuImages": ["assets/sushi-1.png", "assets/sushi-2.png", "assets/sushi-3.png"],
     "reviews": [
       { "text": "The ribs are tender and well-seasoned.", "author": "Natalie W." },
@@ -1122,7 +912,7 @@
     "location": "Convoy",
     "phone": "858 - 514 - 8111",
     "hours": "Open Until 10 PM",
-    "image": "assets/koon-thai-kitchen.jpeg",
+    "image": "assets/restaurants/koon-thai-kitchen.jpeg",
     "menuImages": ["assets/sushi-1.png", "assets/sushi-2.png", "assets/sushi-3.png"],
     "reviews": [
       { "text": "The pad thai is tangy and well-balanced.", "author": "Alice R." },
@@ -1143,7 +933,7 @@
     "location": "Convoy",
     "phone": "858 - 715 - 4605",
     "hours": "Open Until 10 PM",
-    "image": "assets/kura-revolving-sushi-bar.jpeg",
+    "image": "assets/restaurants/kura-revolving-sushi-bar.jpeg",
     "menuImages": ["assets/sushi-1.png", "assets/sushi-2.png", "assets/sushi-3.png"],
     "reviews": [
       { "text": "The conveyor belt sushi offers great variety.", "author": "Jason H." },
@@ -1164,7 +954,7 @@
     "location": "Convoy",
     "phone": "858 - 874 - 7983",
     "hours": "Open Until 9 PM",
-    "image": "assets/lolitas-mexican-food.jpeg",
+    "image": "assets/restaurants/lolitas-mexican-food.jpeg",
     "menuImages": ["assets/sushi-1.png", "assets/sushi-2.png", "assets/sushi-3.png"],
     "reviews": [
       { "text": "The carne asada tacos are packed with flavor.", "author": "Aiden R." },
@@ -1185,7 +975,7 @@
     "location": "Convoy",
     "phone": "858 - 505 - 4175",
     "hours": "Open Until 10 PM",
-    "image": "assets/mada-sao.jpeg",
+    "image": "assets/restaurants/mada-sao.jpeg",
     "menuImages": ["assets/sushi-1.png", "assets/sushi-2.png", "assets/sushi-3.png"],
     "reviews": [
       { "text": "The broth is aromatic and rich.", "author": "Sophie L." },
@@ -1206,7 +996,7 @@
     "location": "Convoy",
     "phone": "858 - 278 - 3300",
     "hours": "Open Until 10 PM",
-    "image": "assets/manna-bbq.jpeg",
+    "image": "assets/restaurants/manna-bbq.jpeg",
     "menuImages": ["assets/sushi-1.png", "assets/sushi-2.png", "assets/sushi-3.png"],
     "reviews": [
       { "text": "The short ribs are tender and flavorful.", "author": "Olivia W." },
@@ -1227,7 +1017,7 @@
     "location": "Convoy",
     "phone": "858 - 279 - 1879",
     "hours": "Open Until 9 PM",
-    "image": "assets/mekong.jpeg",
+    "image": "assets/restaurants/mekong.jpeg",
     "menuImages": ["assets/sushi-1.png", "assets/sushi-2.png", "assets/sushi-3.png"],
     "reviews": [
       { "text": "The pho is fragrant and well-seasoned.", "author": "Aiden R." },
@@ -1248,7 +1038,7 @@
     "location": "Convoy",
     "phone": "858 - 268-8168",
     "hours": "Open Until 9 PM",
-    "image": "assets/boiling-passion.jpeg",
+    "image": "assets/restaurants/boiling-passion.jpeg",
     "menuImages": ["assets/sushi-1.png", "assets/sushi-2.png", "assets/sushi-3.png"],
     "reviews": [
       { "text": "Absolutely delicious Chinese hot pot!", "author": "Jessi E" },
