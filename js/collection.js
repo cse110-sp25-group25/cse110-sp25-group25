@@ -1,4 +1,3 @@
-
 window.addEventListener('DOMContentLoaded', init);
 
 const MOBILE_HIDER = document.createElement('style');
@@ -85,7 +84,7 @@ function init() {
           <h2>${deckBody.dataset.name}</h2>
           <p>
             <img src="assets/location-icon.png" alt="Location" class="icon-img">
-            <a href="#">Undefined</a>
+            ${deckBody.dataset.location}
           </p>
           <p>
             <img src="assets/time-icon.png" alt="Hours" class="icon-img">
@@ -175,15 +174,15 @@ function applyFilters(filters, savedRestaurants, deckList) {
 /**
  * renderDeck
  * ----------
- * Renders the current “deck” of restaurant cards into a container element.
+ * Renders the current "deck" of restaurant cards into a container element.
  * The function:
  *   • Clears any existing cards inside `deckList`.  
- *   • If `subset` is empty → shows an “empty-state” message and hides the
- *     “Clear Deck” button.  
+ *   • If `subset` is empty → shows an "empty-state" message and hides the
+ *     "Clear Deck" button.  
  *   • Otherwise, for each restaurant object it builds a card (`div`) with
  *     name, image, rating, distance, and cuisine tags, wires a click-handler
  *     (`handleCardClick`) that drives the left-side detail panel, and
- *     appends the card to `deckList`.  Finally, it makes the “Clear Deck”
+ *     appends the card to `deckList`.  Finally, it makes the "Clear Deck"
  *     button visible.
  *
  * 
@@ -219,8 +218,6 @@ function renderDeck(subset, deckList) {
                 </div>
                 <div class="tags">
                   <span class="tag">${r["cuisine"]}</span>
-                  <span class="tag">cuisine</span>
-                  <span class="tag">+2</span>
                 </div>
               </div>`;
         div.addEventListener('click', () => handleCardClick(r));
@@ -247,6 +244,7 @@ function handleCardClick(r) {
   deckBody.dataset.name = r.name;
   deckBody.dataset.hours = r.hours;
   deckBody.dataset.phone = r.phone;
+  deckBody.dataset.location = r.location;
   deckBody.dataset.website = r.website ?? "";
   deckBody.dataset.photo1src = r.menuImages[0];
   deckBody.dataset.photo2src = r.menuImages[1];

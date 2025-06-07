@@ -1,56 +1,66 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Restaurant Crisis, a card app for discovering new places to eat.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/filters.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="assets/app-favicon.ico" type="image/x-icon" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Restaurant Crisis, a card app for discovering new places to eat."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/filters.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/app-favicon.ico"
+      type="image/x-icon"
+    />
     <title>Customize Filters - FoodFlip</title>
   </head>
   <body>
-    
     <header>
-      <a href="index.html"><img src="assets/app-icon.png" alt="app icon" class="app-icon" /></a>
-        <!-- nav bar -->
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="collection.html">Collection</a></li>
-                <li><a href="filters.html">Filters</a></li>
-            </ul>
-        </nav>
-        <img src="assets/burger-menu.png" alt="dropdown_icon" class="burger-icon"> 
+      <a href="index.html"
+        ><img src="assets/app-icon.png" alt="app icon" class="app-icon"
+      /></a>
+      <!-- nav bar -->
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="collection.html">Collection</a></li>
+          <li><a href="filters.html">Filters</a></li>
+        </ul>
+      </nav>
+      <img
+        src="assets/burger-menu.png"
+        alt="dropdown_icon"
+        class="burger-icon"
+      />
     </header>
 
     <main>
-        <!-- Progress Step Bar -->
-        <nav class="progress-bar hidden">
-            <div class="step" data-step="cuisine">
-                <span class="step-text">Cuisine</span>
-                <div class="step-line"></div>
-            </div>
-            <div class="step" data-step="price">
-                <span class="step-text">Price</span>
-                <div class="step-line"></div>
-            </div>
-            <div class="step" data-step="distance">
-                <span class="step-text">Distance</span>
-                <div class="step-line"></div>
-            </div>
-            <div class="step" data-step="rating">
-                <span class="step-text">Rating</span>
-                <div class="step-line"></div>
-            </div>
-          </nav>
-
+      <!-- Progress Step Bar -->
+      <nav class="progress-bar hidden">
+        <div class="step" data-step="cuisine">
+          <span class="step-text">Cuisine</span>
+          <div class="step-line"></div>
+        </div>
+        <div class="step" data-step="price">
+          <span class="step-text">Price</span>
+          <div class="step-line"></div>
+        </div>
+        <div class="step" data-step="distance">
+          <span class="step-text">Distance</span>
+          <div class="step-line"></div>
+        </div>
+        <div class="step" data-step="rating">
+          <span class="step-text">Rating</span>
+          <div class="step-line"></div>
+        </div>
+      </nav>
+      <div class="filter-container">
         <!-- Cuisine -->
         <section class="filter-options hidden" id="cuisine-options">
           <h2>What cuisines would you like to try?</h2>
-          <div class="options-grid" id ="cuisine-grid">
-          </div>
+          <div class="options-grid" id="cuisine-grid"></div>
           <form onsubmit="confirmSelection('cuisine'); return false;">
             <button type="submit" class="confirm-btn">Confirm</button>
           </form>
@@ -60,9 +70,15 @@
         <section class="filter-options hidden" id="price-options">
           <h2>What is your price range?</h2>
           <div class="price-options">
-            <button type="button" class="price-btn option-btn" data-price="$">$</button>
-            <button type="button" class="price-btn option-btn" data-price="$$">$$</button>
-            <button type="button" class="price-btn option-btn" data-price="$$$">$$$</button>
+            <button type="button" class="price-btn option-btn" data-price="$">
+              $
+            </button>
+            <button type="button" class="price-btn option-btn" data-price="$$">
+              $$
+            </button>
+            <button type="button" class="price-btn option-btn" data-price="$$$">
+              $$$
+            </button>
           </div>
           <form onsubmit="confirmSelection('price'); return false;">
             <button type="submit" class="confirm-btn">Confirm</button>
@@ -77,7 +93,6 @@
               type="number"
               id="distance-input"
               placeholder="Enter a number or leave blank"
-              
             />
             <button type="submit" class="confirm-btn">Confirm</button>
           </form>
@@ -91,31 +106,22 @@
             <button type="submit" class="confirm-btn">Next</button>
           </form>
         </section>
+      </div>
     </main>
     <section id="summary" class="hidden">
       <h2>Your current filters</h2>
-    
+
       <ul>
-        <li>Cuisine: <span id="sum-cuisine"></span>
-            <button onclick="openForEdit('cuisine')">Edit</button>
-        </li>
-        <li>Max price: <span id="sum-price"></span>
-            <button onclick="openForEdit('price')">Edit</button>
-        </li>
-        <li>Max distance: <span id="sum-distance"></span>
-            <button onclick="openForEdit('distance')">Edit</button>
-        </li>
-        <li>Min rating: <span id="sum-rating"></span>
-            <button onclick="openForEdit('rating')">Edit</button>
-        </li>
+        <li>Cuisine: <span id="sum-cuisine"></span></li>
+        <li>Max price: <span id="sum-price"></span></li>
+        <li>Max distance: <span id="sum-distance"></span></li>
+        <li>Min rating: <span id="sum-rating"></span></li>
       </ul>
-    
+
       <button id="done-btn">Done → Start swiping</button>
     </section>
     <footer></footer>
     <script src="js/scripts.js"></script>
     <script src="js/filters.js"></script>
-
   </body>
 </html>
-

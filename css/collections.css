@@ -157,6 +157,13 @@ padding-right: 1.5rem;
     font-size: 2rem;
     max-width: 100%;
     text-align: center;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.2;
+    max-height: 2.4em; /* 2 lines * 1.2 line-height */
  }
 
  
@@ -415,7 +422,7 @@ object-fit: cover;
   }
 
   /* ---------------------------
-   “Return to collection” Button Styles
+   "Return to collection" Button Styles
    --------------------------- */
     .back-button {
     display: inline-flex;
