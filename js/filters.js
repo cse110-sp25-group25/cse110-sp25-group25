@@ -239,9 +239,6 @@ function confirmAndChangeSelection(type, newType) {
   else {
     showOptions(newType);
   }
-
-  //REMOVE LATER (just for testing)
-  console.log('Current Selections:', userSelections);
 }
 
 

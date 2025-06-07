@@ -18,5 +18,7 @@ export default {
   transform: {},    // suppress babel warning
   verbose: true,
   testMatch: ['**/__tests__/**/*.test.js'],
-  testEnvironment: 'jsdom'
+  testEnvironment: 'jsdom',
+  moduleFileExtensions: ['js', 'json'],
+  testPathIgnorePatterns: ['/node_modules/', '/tests/e2e/']
 };
