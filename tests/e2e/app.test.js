@@ -288,9 +288,21 @@ describe('Restaurant Crisis App', () => {
     expect(deckAfterReject[0].id).toBe(Number(firstCardId));
     
     logStep('Testing card flip');
-    const card = await page.waitForSelector('.restaurant-card', { visible: true });
-    await card.evaluate(c => c.click());
-    expect(await card.evaluate(el => el.classList.contains('flipped'))).toBe(true);
+    // Wait for the next card to be visible and clickable
+    await page.waitForFunction(() => {
+      const card = document.querySelector('.restaurant-card');
+      return card && card.offsetParent !== null;
+    }, { timeout: 10000 });
+    
+    // Click the card using page.click instead of evaluate
+    await page.click('.restaurant-card');
+    
+    // Verify the card is flipped
+    const isFlipped = await page.evaluate(() => {
+      const card = document.querySelector('.restaurant-card');
+      return card ? card.classList.contains('flipped') : false;
+    });
+    expect(isFlipped).toBe(true);
   }, 45000);
 
   // Collection page tests
