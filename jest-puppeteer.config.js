@@ -7,7 +7,14 @@ export default {
     defaultViewport: {
       width: 1280,
       height: 800
-    }
+    },
+    args: [
+      '--no-sandbox',
+      '--disable-setuid-sandbox',
+      '--disable-dev-shm-usage',
+      '--disable-accelerated-2d-canvas',
+      '--disable-gpu'
+    ]
   },
   browserContext: 'default'
 }; 
