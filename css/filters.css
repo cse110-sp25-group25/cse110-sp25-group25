@@ -204,6 +204,24 @@ body {
     animation: fadeIn 0.4s ease-in-out;
   }
 
+  .price-options {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .price-btn {
+    width: 80px;
+    height: 80px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .star-rating {
     display: flex;
     justify-content: center;
@@ -306,6 +324,20 @@ body {
     .option-btn {
       width: 100%;
       max-width: 250px;
+    }
+
+    .price-options {
+      flex-direction: column;
+      align-items: center;
+      gap: 0;
+      max-width: 200px;
+      margin: 0 auto 2rem auto;
+    }
+    
+    .price-btn {
+      width: 80px;
+      height: 80px;
+      font-size: 1.6rem;
     }
 
     .star {

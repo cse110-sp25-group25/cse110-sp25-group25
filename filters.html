@@ -57,14 +57,13 @@
 
         <!-- Price -->
         <section class="filter-options hidden" id="price-options">
-          <h2>Set maximum price ($)</h2>
+          <h2>What is your price range?</h2>
+          <div class="price-options">
+            <button type="button" class="price-btn option-btn" data-price="$">$</button>
+            <button type="button" class="price-btn option-btn" data-price="$$">$$</button>
+            <button type="button" class="price-btn option-btn" data-price="$$$">$$$</button>
+          </div>
           <form onsubmit="confirmSelection('price'); return false;">
-            <input
-              type="number"
-              id="price-input"
-              placeholder="Enter a number or leave blank"
-             
-            />
             <button type="submit" class="confirm-btn">Confirm</button>
           </form>
         </section>
