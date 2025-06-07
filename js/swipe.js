@@ -34,10 +34,24 @@ if (!data || data.length === 0) {
     checkIfAllSwiped();
     return;
 }
-
+data = shuffleArray(data);
 renderRestaurant(data);
 setupButtons(data);
 });
+
+/**
+ * Shuffles the elements of an array in place.
+ * @param {Array} array The array to be shuffled.
+ * @returns {Array} The shuffled array.
+ */
+
+function shuffleArray(array) {
+  for (let i = array.length -1; i> 0; i--) {
+    const j = Math.floor(Math.random() * (i+1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+}
 
 /**
 * A function to remove the subset of data that doesn't satisfy the desired filters
