@@ -11,8 +11,7 @@
 </head>
 <body>
     <header>
-        <img src="assets/app-icon.png" alt="app_icon" class="app-icon"> <!--insert app icon here!-->
-        <!-- nav bar -->
+        <img src="assets/app-icon.png" alt="app_icon" class="app-icon">
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -20,50 +19,69 @@
                 <li><a href="filters.html">Filters</a></li>
             </ul>
         </nav>
-        <img src="assets/burger-menu.png" alt="dropdown_icon" class="burger-icon"> <!-- insert burger icon here!-->
+        <img src="assets/burger-menu.png" alt="dropdown_icon" class="burger-icon">
     </header>
 
     <main>
-       <!-- landing page -->
-       <div class = "main-grid">
-        <section class="hero">
-            <h1>SWIPE. SAVOR. REPEAT.</h1>
-            <p>Let the deck decide where you dine next!</p>
+        <div class="main-grid">
+            <section class="hero">
+                <h1>SWIPE. SAVOR. REPEAT.</h1>
 
-            <div class="hero-buttons">
-                <button class="button-type1" onclick="location.href='swipe.html'">PICK RANDOM</button>
-                <button class="button-type2" onclick="location.href='filters.html'">CHOOSE FILTERS</button>
-            </div>
-        </section>
+                <!-- Mobile card (only shows on small screens) -->
+                <div class="mobile-card-wrapper">
+                    <section class="feature-card">
+                        <h2 class="card-title">Restaurant Title</h2>
+                        <div class="card-image">
+                            <img src="assets/restaurant.jpg" alt="Restaurant Preview" class="restaurant-img"/>
+                        </div>
+                        <div class="card-info">
+                            <div class="info-item">
+                                <img src="assets/star-icon.png" alt="Star Rating" class="icon" />
+                                <span>4.3</span>
+                            </div>
+                            <div class="info-item">
+                                <img src="assets/location-icon.png" alt="Location Icon" class="icon" />
+                                <span>10 mi</span>
+                            </div>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">cuisine</span>
+                        </div>
+                    </section>
+                </div>
 
-        <section class="feature-card">
-            <h2 class="card-title">Restaurant Title</h2>
-         
-            <div class="card-image">
-              <img src="assets/restaurant.jpg" alt="Restaurant Preview" class="restaurant-img"/>
-            </div>
-         
-            <div class="card-info">
-              <div class="info-item">
-                <img src="assets/star-icon.png" alt="Star Rating" class="icon" />
-                <span>4.3</span>
-              </div>
-              <div class="info-item">
-                <img src="assets/location-icon.png" alt="Location Icon" class="icon" />
-                <span>10 mi</span>
-              </div>
-            </div>
-         
-            <div class="tags">
-              <span class="tag">cuisine</span>
-            </div>
-          </section>
-    </div>
-        
+                <p>Let the deck decide where you dine next!</p>
+
+                <div class="hero-buttons">
+                    <button class="button-type1" onclick="location.href='swipe.html'">PICK RANDOM</button>
+                    <button class="button-type2" onclick="location.href='filters.html'">CHOOSE FILTERS</button>
+                </div>
+            </section>
+
+            <!-- Desktop card (hidden on mobile) -->
+            <section class="feature-card feature-card-desktop">
+                <h2 class="card-title">Restaurant Title</h2>
+                <div class="card-image">
+                    <img src="assets/restaurant.jpg" alt="Restaurant Preview" class="restaurant-img"/>
+                </div>
+                <div class="card-info">
+                    <div class="info-item">
+                        <img src="assets/star-icon.png" alt="Star Rating" class="icon" />
+                        <span>4.3</span>
+                    </div>
+                    <div class="info-item">
+                        <img src="assets/location-icon.png" alt="Location Icon" class="icon" />
+                        <span>10 mi</span>
+                    </div>
+                </div>
+                <div class="tags">
+                    <span class="tag">cuisine</span>
+                </div>
+            </section>
+        </div>
     </main>
 
     <footer>
-
     </footer>
 </body>
 </html>
