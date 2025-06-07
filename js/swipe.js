@@ -159,7 +159,7 @@ data.forEach(r => {
           <h2>${r.name}</h2>
           <p>
             <img src="assets/location-icon.png" alt="Location" class="icon-img">
-            <a href="#">${r.address}</a>
+            <a href="#">${r.location}</a>
           </p>
           <p>
             <img src="assets/time-icon.png" alt="Hours" class="icon-img">

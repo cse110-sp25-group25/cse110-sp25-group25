@@ -1,4 +1,2154 @@
-[
+[ 
+  {
+    "id": 51,
+    "name": "George's at the Cove",
+    "cuisine": "American",
+    "price": "$$$",
+    "distance": 0.7,
+    "rating": 4.1,
+    "location": "La Jolla",
+    "phone": "017956722",
+    "hours": "Open until 9 PM",
+    "image": "assets/restaurants/georges-at-the-cove.png",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Amazing flavors and great service!",
+        "author": "Author51"
+      },
+      {
+        "text": "The ambiance is perfect for date nights.",
+        "author": "Author52"
+      },
+      {
+        "text": "Will definitely come back again!",
+        "author": "Author53"
+      },
+      {
+        "text": "The staff was incredibly friendly.",
+        "author": "Author54"
+      },
+      {
+        "text": "One of the best meals I\u2019ve had in La Jolla.",
+        "author": "Author55"
+      },
+      {
+        "text": "Fresh ingredients and lovely presentation.",
+        "author": "Author56"
+      }
+    ]
+  },
+  {
+    "id": 52,
+    "name": "The Cottage La Jolla",
+    "cuisine": "American",
+    "price": "$$",
+    "distance": 1.9,
+    "rating": 4.2,
+    "location": "La Jolla",
+    "phone": "670999249",
+    "hours": "Open until 9 PM",
+    "image": "assets/restaurants/the-cottage-la-jolla.png",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Amazing flavors and great service!",
+        "author": "Author52"
+      },
+      {
+        "text": "The ambiance is perfect for date nights.",
+        "author": "Author53"
+      },
+      {
+        "text": "Will definitely come back again!",
+        "author": "Author54"
+      },
+      {
+        "text": "The staff was incredibly friendly.",
+        "author": "Author55"
+      },
+      {
+        "text": "One of the best meals I\u2019ve had in La Jolla.",
+        "author": "Author56"
+      },
+      {
+        "text": "Fresh ingredients and lovely presentation.",
+        "author": "Author57"
+      }
+    ]
+  },
+  {
+    "id": 53,
+    "name": "Duke's La Jolla",
+    "cuisine": "French",
+    "price": "$$",
+    "distance": 4.5,
+    "rating": 3.5,
+    "location": "La Jolla",
+    "phone": "760034188",
+    "hours": "Open until 9 PM",
+    "image": "assets/restaurants/dukes-la-jolla.png",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Amazing flavors and great service!",
+        "author": "Author53"
+      },
+      {
+        "text": "The ambiance is perfect for date nights.",
+        "author": "Author54"
+      },
+      {
+        "text": "Will definitely come back again!",
+        "author": "Author55"
+      },
+      {
+        "text": "The staff was incredibly friendly.",
+        "author": "Author56"
+      },
+      {
+        "text": "One of the best meals I\u2019ve had in La Jolla.",
+        "author": "Author57"
+      },
+      {
+        "text": "Fresh ingredients and lovely presentation.",
+        "author": "Author58"
+      }
+    ]
+  },
+  {
+    "id": 54,
+    "name": "Catania",
+    "cuisine": "French",
+    "price": "$$",
+    "distance": 0.7,
+    "rating": 4.1,
+    "location": "La Jolla",
+    "phone": "579749030",
+    "hours": "Open until 9 PM",
+    "image": "assets/restaurants/catania.png",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Amazing flavors and great service!",
+        "author": "Author54"
+      },
+      {
+        "text": "The ambiance is perfect for date nights.",
+        "author": "Author55"
+      },
+      {
+        "text": "Will definitely come back again!",
+        "author": "Author56"
+      },
+      {
+        "text": "The staff was incredibly friendly.",
+        "author": "Author57"
+      },
+      {
+        "text": "One of the best meals I\u2019ve had in La Jolla.",
+        "author": "Author58"
+      },
+      {
+        "text": "Fresh ingredients and lovely presentation.",
+        "author": "Author59"
+      }
+    ]
+  },
+  {
+    "id": 55,
+    "name": "Puesto La Jolla",
+    "cuisine": "Italian",
+    "price": "$$",
+    "distance": 4.0,
+    "rating": 4.7,
+    "location": "La Jolla",
+    "phone": "989123012",
+    "hours": "Open until 9 PM",
+    "image": "assets/restaurants/puesto-la-jolla.png",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Amazing flavors and great service!",
+        "author": "Author55"
+      },
+      {
+        "text": "The ambiance is perfect for date nights.",
+        "author": "Author56"
+      },
+      {
+        "text": "Will definitely come back again!",
+        "author": "Author57"
+      },
+      {
+        "text": "The staff was incredibly friendly.",
+        "author": "Author58"
+      },
+      {
+        "text": "One of the best meals I\u2019ve had in La Jolla.",
+        "author": "Author59"
+      },
+      {
+        "text": "Fresh ingredients and lovely presentation.",
+        "author": "Author60"
+      }
+    ]
+  },
+  {
+    "id": 56,
+    "name": "The Marine Room",
+    "cuisine": "Italian",
+    "price": "$$$",
+    "distance": 2.6,
+    "rating": 3.9,
+    "location": "La Jolla",
+    "phone": "690242483",
+    "hours": "Open until 9 PM",
+    "image": "assets/restaurants/the-marine-room.png",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Amazing flavors and great service!",
+        "author": "Author56"
+      },
+      {
+        "text": "The ambiance is perfect for date nights.",
+        "author": "Author57"
+      },
+      {
+        "text": "Will definitely come back again!",
+        "author": "Author58"
+      },
+      {
+        "text": "The staff was incredibly friendly.",
+        "author": "Author59"
+      },
+      {
+        "text": "One of the best meals I\u2019ve had in La Jolla.",
+        "author": "Author60"
+      },
+      {
+        "text": "Fresh ingredients and lovely presentation.",
+        "author": "Author61"
+      }
+    ]
+  },
+  {
+    "id": 57,
+    "name": "Herringbone La Jolla",
+    "cuisine": "American",
+    "price": "$$",
+    "distance": 0.9,
+    "rating": 3.5,
+    "location": "La Jolla",
+    "phone": "925328614",
+    "hours": "Open until 9 PM",
+    "image": "assets/restaurants/herringbone-la-jolla.png",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Amazing flavors and great service!",
+        "author": "Author57"
+      },
+      {
+        "text": "The ambiance is perfect for date nights.",
+        "author": "Author58"
+      },
+      {
+        "text": "Will definitely come back again!",
+        "author": "Author59"
+      },
+      {
+        "text": "The staff was incredibly friendly.",
+        "author": "Author60"
+      },
+      {
+        "text": "One of the best meals I\u2019ve had in La Jolla.",
+        "author": "Author61"
+      },
+      {
+        "text": "Fresh ingredients and lovely presentation.",
+        "author": "Author62"
+      }
+    ]
+  },
+  {
+    "id": 58,
+    "name": "Eddie V's Prime Seafood",
+    "cuisine": "American",
+    "price": "$$$",
+    "distance": 2.3,
+    "rating": 4.7,
+    "location": "La Jolla",
+    "phone": "479357704",
+    "hours": "Open until 9 PM",
+    "image": "assets/restaurants/eddie-vs-prime-seafood.png",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Amazing flavors and great service!",
+        "author": "Author58"
+      },
+      {
+        "text": "The ambiance is perfect for date nights.",
+        "author": "Author59"
+      },
+      {
+        "text": "Will definitely come back again!",
+        "author": "Author60"
+      },
+      {
+        "text": "The staff was incredibly friendly.",
+        "author": "Author61"
+      },
+      {
+        "text": "One of the best meals I\u2019ve had in La Jolla.",
+        "author": "Author62"
+      },
+      {
+        "text": "Fresh ingredients and lovely presentation.",
+        "author": "Author63"
+      }
+    ]
+  },
+  {
+    "id": 59,
+    "name": "NINE-TEN Restaurant & Bar",
+    "cuisine": "French",
+    "price": "$$$",
+    "distance": 3.2,
+    "rating": 4.6,
+    "location": "La Jolla",
+    "phone": "237084678",
+    "hours": "Open until 9 PM",
+    "image": "assets/restaurants/nine-ten-restaurant-and-bar.png",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Amazing flavors and great service!",
+        "author": "Author59"
+      },
+      {
+        "text": "The ambiance is perfect for date nights.",
+        "author": "Author60"
+      },
+      {
+        "text": "Will definitely come back again!",
+        "author": "Author61"
+      },
+      {
+        "text": "The staff was incredibly friendly.",
+        "author": "Author62"
+      },
+      {
+        "text": "One of the best meals I\u2019ve had in La Jolla.",
+        "author": "Author63"
+      },
+      {
+        "text": "Fresh ingredients and lovely presentation.",
+        "author": "Author64"
+      }
+    ]
+  },
+  {
+    "id": 60,
+    "name": "Brockton Villa",
+    "cuisine": "Californian",
+    "price": "$$$",
+    "distance": 4.3,
+    "rating": 4.0,
+    "location": "La Jolla",
+    "phone": "704730831",
+    "hours": "Open until 9 PM",
+    "image": "assets/restaurants/brockton-villa.png",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Amazing flavors and great service!",
+        "author": "Author60"
+      },
+      {
+        "text": "The ambiance is perfect for date nights.",
+        "author": "Author61"
+      },
+      {
+        "text": "Will definitely come back again!",
+        "author": "Author62"
+      },
+      {
+        "text": "The staff was incredibly friendly.",
+        "author": "Author63"
+      },
+      {
+        "text": "One of the best meals I\u2019ve had in La Jolla.",
+        "author": "Author64"
+      },
+      {
+        "text": "Fresh ingredients and lovely presentation.",
+        "author": "Author65"
+      }
+    ]
+  },
+  {
+    "id": 61,
+    "name": "The Taco Stand",
+    "cuisine": "Chinese",
+    "price": "$",
+    "distance": 2.2,
+    "rating": 4.0,
+    "location": "La Jolla",
+    "phone": "083156051",
+    "hours": "Open until 9 PM",
+    "image": "assets/restaurants/the-taco-stand.png",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Amazing flavors and great service!",
+        "author": "Author61"
+      },
+      {
+        "text": "The ambiance is perfect for date nights.",
+        "author": "Author62"
+      },
+      {
+        "text": "Will definitely come back again!",
+        "author": "Author63"
+      },
+      {
+        "text": "The staff was incredibly friendly.",
+        "author": "Author64"
+      },
+      {
+        "text": "One of the best meals I\u2019ve had in La Jolla.",
+        "author": "Author65"
+      },
+      {
+        "text": "Fresh ingredients and lovely presentation.",
+        "author": "Author66"
+      }
+    ]
+  },
+  {
+    "id": 62,
+    "name": "Beaumont's",
+    "cuisine": "Mexican",
+    "price": "$$$",
+    "distance": 1.2,
+    "rating": 3.6,
+    "location": "La Jolla",
+    "phone": "592904600",
+    "hours": "Open until 9 PM",
+    "image": "assets/restaurants/beaumonts.png",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Amazing flavors and great service!",
+        "author": "Author62"
+      },
+      {
+        "text": "The ambiance is perfect for date nights.",
+        "author": "Author63"
+      },
+      {
+        "text": "Will definitely come back again!",
+        "author": "Author64"
+      },
+      {
+        "text": "The staff was incredibly friendly.",
+        "author": "Author65"
+      },
+      {
+        "text": "One of the best meals I\u2019ve had in La Jolla.",
+        "author": "Author66"
+      },
+      {
+        "text": "Fresh ingredients and lovely presentation.",
+        "author": "Author67"
+      }
+    ]
+  },
+  {
+    "id": 63,
+    "name": "Piatti",
+    "cuisine": "American",
+    "price": "$$$",
+    "distance": 2.4,
+    "rating": 4.6,
+    "location": "La Jolla",
+    "phone": "380010725",
+    "hours": "Open until 9 PM",
+    "image": "assets/restaurants/piatti.png",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Amazing flavors and great service!",
+        "author": "Author63"
+      },
+      {
+        "text": "The ambiance is perfect for date nights.",
+        "author": "Author64"
+      },
+      {
+        "text": "Will definitely come back again!",
+        "author": "Author65"
+      },
+      {
+        "text": "The staff was incredibly friendly.",
+        "author": "Author66"
+      },
+      {
+        "text": "One of the best meals I\u2019ve had in La Jolla.",
+        "author": "Author67"
+      },
+      {
+        "text": "Fresh ingredients and lovely presentation.",
+        "author": "Author68"
+      }
+    ]
+  },
+  {
+    "id": 64,
+    "name": "Caroline's Seaside Cafe",
+    "cuisine": "American",
+    "price": "$$",
+    "distance": 4.6,
+    "rating": 4.2,
+    "location": "La Jolla",
+    "phone": "264943102",
+    "hours": "Open until 9 PM",
+    "image": "assets/restaurants/carolines-seaside-cafe.png",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Amazing flavors and great service!",
+        "author": "Author64"
+      },
+      {
+        "text": "The ambiance is perfect for date nights.",
+        "author": "Author65"
+      },
+      {
+        "text": "Will definitely come back again!",
+        "author": "Author66"
+      },
+      {
+        "text": "The staff was incredibly friendly.",
+        "author": "Author67"
+      },
+      {
+        "text": "One of the best meals I\u2019ve had in La Jolla.",
+        "author": "Author68"
+      },
+      {
+        "text": "Fresh ingredients and lovely presentation.",
+        "author": "Author69"
+      }
+    ]
+  },
+  {
+    "id": 65,
+    "name": "Don Bravo",
+    "cuisine": "Thai",
+    "price": "$",
+    "distance": 1.8,
+    "rating": 4.3,
+    "location": "La Jolla",
+    "phone": "070376135",
+    "hours": "Open until 9 PM",
+    "image": "assets/restaurants/don-bravo.png",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Amazing flavors and great service!",
+        "author": "Author65"
+      },
+      {
+        "text": "The ambiance is perfect for date nights.",
+        "author": "Author66"
+      },
+      {
+        "text": "Will definitely come back again!",
+        "author": "Author67"
+      },
+      {
+        "text": "The staff was incredibly friendly.",
+        "author": "Author68"
+      },
+      {
+        "text": "One of the best meals I\u2019ve had in La Jolla.",
+        "author": "Author69"
+      },
+      {
+        "text": "Fresh ingredients and lovely presentation.",
+        "author": "Author70"
+      }
+    ]
+  },
+  {
+    "id": 66,
+    "name": "Bernini's Bistro",
+    "cuisine": "Mexican",
+    "price": "$$",
+    "distance": 4.8,
+    "rating": 5.0,
+    "location": "La Jolla",
+    "phone": "543508749",
+    "hours": "Open until 9 PM",
+    "image": "assets/restaurants/berninis-bistro.png",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Amazing flavors and great service!",
+        "author": "Author66"
+      },
+      {
+        "text": "The ambiance is perfect for date nights.",
+        "author": "Author67"
+      },
+      {
+        "text": "Will definitely come back again!",
+        "author": "Author68"
+      },
+      {
+        "text": "The staff was incredibly friendly.",
+        "author": "Author69"
+      },
+      {
+        "text": "One of the best meals I\u2019ve had in La Jolla.",
+        "author": "Author70"
+      },
+      {
+        "text": "Fresh ingredients and lovely presentation.",
+        "author": "Author71"
+      }
+    ]
+  },
+  {
+    "id": 67,
+    "name": "Brick & Bell Cafe",
+    "cuisine": "French",
+    "price": "$",
+    "distance": 2.9,
+    "rating": 4.4,
+    "location": "La Jolla",
+    "phone": "633594384",
+    "hours": "Open until 9 PM",
+    "image": "assets/restaurants/brick-and-bell-cafe.png",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Amazing flavors and great service!",
+        "author": "Author67"
+      },
+      {
+        "text": "The ambiance is perfect for date nights.",
+        "author": "Author68"
+      },
+      {
+        "text": "Will definitely come back again!",
+        "author": "Author69"
+      },
+      {
+        "text": "The staff was incredibly friendly.",
+        "author": "Author70"
+      },
+      {
+        "text": "One of the best meals I\u2019ve had in La Jolla.",
+        "author": "Author71"
+      },
+      {
+        "text": "Fresh ingredients and lovely presentation.",
+        "author": "Author72"
+      }
+    ]
+  },
+  {
+    "id": 68,
+    "name": "El Pescador Fish Market",
+    "cuisine": "Mexican",
+    "price": "$",
+    "distance": 2.4,
+    "rating": 4.3,
+    "location": "La Jolla",
+    "phone": "793149326",
+    "hours": "Open until 9 PM",
+    "image": "assets/restaurants/el-pescador-fish-market.png",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Amazing flavors and great service!",
+        "author": "Author68"
+      },
+      {
+        "text": "The ambiance is perfect for date nights.",
+        "author": "Author69"
+      },
+      {
+        "text": "Will definitely come back again!",
+        "author": "Author70"
+      },
+      {
+        "text": "The staff was incredibly friendly.",
+        "author": "Author71"
+      },
+      {
+        "text": "One of the best meals I\u2019ve had in La Jolla.",
+        "author": "Author72"
+      },
+      {
+        "text": "Fresh ingredients and lovely presentation.",
+        "author": "Author73"
+      }
+    ]
+  },
+  {
+    "id": 69,
+    "name": "Shiku Sushi",
+    "cuisine": "Japanese",
+    "price": "$",
+    "distance": 4.3,
+    "rating": 3.5,
+    "location": "La Jolla",
+    "phone": "642498272",
+    "hours": "Open until 9 PM",
+    "image": "assets/restaurants/shiku-sushi.png",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Amazing flavors and great service!",
+        "author": "Author69"
+      },
+      {
+        "text": "The ambiance is perfect for date nights.",
+        "author": "Author70"
+      },
+      {
+        "text": "Will definitely come back again!",
+        "author": "Author71"
+      },
+      {
+        "text": "The staff was incredibly friendly.",
+        "author": "Author72"
+      },
+      {
+        "text": "One of the best meals I\u2019ve had in La Jolla.",
+        "author": "Author73"
+      },
+      {
+        "text": "Fresh ingredients and lovely presentation.",
+        "author": "Author74"
+      }
+    ]
+  },
+  {
+    "id": 70,
+    "name": "Himitsu",
+    "cuisine": "Californian",
+    "price": "$$$",
+    "distance": 3.9,
+    "rating": 4.3,
+    "location": "La Jolla",
+    "phone": "350736174",
+    "hours": "Open until 9 PM",
+    "image": "assets/restaurants/himitsu.png",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Amazing flavors and great service!",
+        "author": "Author70"
+      },
+      {
+        "text": "The ambiance is perfect for date nights.",
+        "author": "Author71"
+      },
+      {
+        "text": "Will definitely come back again!",
+        "author": "Author72"
+      },
+      {
+        "text": "The staff was incredibly friendly.",
+        "author": "Author73"
+      },
+      {
+        "text": "One of the best meals I\u2019ve had in La Jolla.",
+        "author": "Author74"
+      },
+      {
+        "text": "Fresh ingredients and lovely presentation.",
+        "author": "Author75"
+      }
+    ]
+  },
+  {
+    "id": 71,
+    "name": "Sugar and Scribe",
+    "cuisine": "Italian",
+    "price": "$$$",
+    "distance": 1.6,
+    "rating": 4.2,
+    "location": "La Jolla",
+    "phone": "117477391",
+    "hours": "Open until 9 PM",
+    "image": "assets/restaurants/sugar-and-scribe.png",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Amazing flavors and great service!",
+        "author": "Author71"
+      },
+      {
+        "text": "The ambiance is perfect for date nights.",
+        "author": "Author72"
+      },
+      {
+        "text": "Will definitely come back again!",
+        "author": "Author73"
+      },
+      {
+        "text": "The staff was incredibly friendly.",
+        "author": "Author74"
+      },
+      {
+        "text": "One of the best meals I\u2019ve had in La Jolla.",
+        "author": "Author75"
+      },
+      {
+        "text": "Fresh ingredients and lovely presentation.",
+        "author": "Author76"
+      }
+    ]
+  },
+  {
+    "id": 72,
+    "name": "Prepkitchen La Jolla",
+    "cuisine": "American",
+    "price": "$",
+    "distance": 1.8,
+    "rating": 4.0,
+    "location": "La Jolla",
+    "phone": "811963227",
+    "hours": "Open until 9 PM",
+    "image": "assets/restaurants/prepkitchen-la-jolla.png",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Amazing flavors and great service!",
+        "author": "Author72"
+      },
+      {
+        "text": "The ambiance is perfect for date nights.",
+        "author": "Author73"
+      },
+      {
+        "text": "Will definitely come back again!",
+        "author": "Author74"
+      },
+      {
+        "text": "The staff was incredibly friendly.",
+        "author": "Author75"
+      },
+      {
+        "text": "One of the best meals I\u2019ve had in La Jolla.",
+        "author": "Author76"
+      },
+      {
+        "text": "Fresh ingredients and lovely presentation.",
+        "author": "Author77"
+      }
+    ]
+  },
+  {
+    "id": 73,
+    "name": "Blue Ocean/Harumama La Jolla",
+    "cuisine": "American",
+    "price": "$$$",
+    "distance": 4.3,
+    "rating": 4.4,
+    "location": "La Jolla",
+    "phone": "978697924",
+    "hours": "Open until 9 PM",
+    "image": "assets/restaurants/harumama-la-jolla.png",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Amazing flavors and great service!",
+        "author": "Author73"
+      },
+      {
+        "text": "The ambiance is perfect for date nights.",
+        "author": "Author74"
+      },
+      {
+        "text": "Will definitely come back again!",
+        "author": "Author75"
+      },
+      {
+        "text": "The staff was incredibly friendly.",
+        "author": "Author76"
+      },
+      {
+        "text": "One of the best meals I\u2019ve had in La Jolla.",
+        "author": "Author77"
+      },
+      {
+        "text": "Fresh ingredients and lovely presentation.",
+        "author": "Author78"
+      }
+    ]
+  },
+  {
+    "id": 74,
+    "name": "Sushi Mori",
+    "cuisine": "Mexican",
+    "price": "$$$",
+    "distance": 3.4,
+    "rating": 3.5,
+    "location": "La Jolla",
+    "phone": "839900765",
+    "hours": "Open until 9 PM",
+    "image": "assets/restaurants/sushi-mori.png",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Amazing flavors and great service!",
+        "author": "Author74"
+      },
+      {
+        "text": "The ambiance is perfect for date nights.",
+        "author": "Author75"
+      },
+      {
+        "text": "Will definitely come back again!",
+        "author": "Author76"
+      },
+      {
+        "text": "The staff was incredibly friendly.",
+        "author": "Author77"
+      },
+      {
+        "text": "One of the best meals I\u2019ve had in La Jolla.",
+        "author": "Author78"
+      },
+      {
+        "text": "Fresh ingredients and lovely presentation.",
+        "author": "Author79"
+      }
+    ]
+  },
+  {
+    "id": 75,
+    "name": "The Spot",
+    "cuisine": "Japanese",
+    "price": "$$",
+    "distance": 0.7,
+    "rating": 4.6,
+    "location": "La Jolla",
+    "phone": "157738734",
+    "hours": "Open until 9 PM",
+    "image": "assets/restaurants/the-spot.png",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Amazing flavors and great service!",
+        "author": "Author75"
+      },
+      {
+        "text": "The ambiance is perfect for date nights.",
+        "author": "Author76"
+      },
+      {
+        "text": "Will definitely come back again!",
+        "author": "Author77"
+      },
+      {
+        "text": "The staff was incredibly friendly.",
+        "author": "Author78"
+      },
+      {
+        "text": "One of the best meals I\u2019ve had in La Jolla.",
+        "author": "Author79"
+      },
+      {
+        "text": "Fresh ingredients and lovely presentation.",
+        "author": "Author80"
+      }
+    ]
+  },
+  {
+    "id": 76,
+    "name": "Public House La Jolla",
+    "cuisine": "Californian",
+    "price": "$$$",
+    "distance": 3.7,
+    "rating": 4.5,
+    "location": "La Jolla",
+    "phone": "725795376",
+    "hours": "Open until 9 PM",
+    "image": "assets/restaurants/public-house-la-jolla.png",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Amazing flavors and great service!",
+        "author": "Author76"
+      },
+      {
+        "text": "The ambiance is perfect for date nights.",
+        "author": "Author77"
+      },
+      {
+        "text": "Will definitely come back again!",
+        "author": "Author78"
+      },
+      {
+        "text": "The staff was incredibly friendly.",
+        "author": "Author79"
+      },
+      {
+        "text": "One of the best meals I\u2019ve had in La Jolla.",
+        "author": "Author80"
+      },
+      {
+        "text": "Fresh ingredients and lovely presentation.",
+        "author": "Author81"
+      }
+    ]
+  },
+  {
+    "id": 77,
+    "name": "Manhattan of La Jolla",
+    "cuisine": "Italian",
+    "price": "$",
+    "distance": 3.5,
+    "rating": 4.4,
+    "location": "La Jolla",
+    "phone": "914404767",
+    "hours": "Open until 9 PM",
+    "image": "assets/restaurants/manhattan-of-la-jolla.png",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Amazing flavors and great service!",
+        "author": "Author77"
+      },
+      {
+        "text": "The ambiance is perfect for date nights.",
+        "author": "Author78"
+      },
+      {
+        "text": "Will definitely come back again!",
+        "author": "Author79"
+      },
+      {
+        "text": "The staff was incredibly friendly.",
+        "author": "Author80"
+      },
+      {
+        "text": "One of the best meals I\u2019ve had in La Jolla.",
+        "author": "Author81"
+      },
+      {
+        "text": "Fresh ingredients and lovely presentation.",
+        "author": "Author82"
+      }
+    ]
+  },
+  {
+    "id": 78,
+    "name": "La Dolce Vita",
+    "cuisine": "French",
+    "price": "$$",
+    "distance": 0.7,
+    "rating": 4.6,
+    "location": "La Jolla",
+    "phone": "851277003",
+    "hours": "Open until 9 PM",
+    "image": "assets/restaurants/la-dolce-vita.png",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Amazing flavors and great service!",
+        "author": "Author78"
+      },
+      {
+        "text": "The ambiance is perfect for date nights.",
+        "author": "Author79"
+      },
+      {
+        "text": "Will definitely come back again!",
+        "author": "Author80"
+      },
+      {
+        "text": "The staff was incredibly friendly.",
+        "author": "Author81"
+      },
+      {
+        "text": "One of the best meals I\u2019ve had in La Jolla.",
+        "author": "Author82"
+      },
+      {
+        "text": "Fresh ingredients and lovely presentation.",
+        "author": "Author83"
+      }
+    ]
+  },
+  {
+    "id": 79,
+    "name": "Sammy's Woodfired Pizza",
+    "cuisine": "Sushi",
+    "price": "$$$",
+    "distance": 4.4,
+    "rating": 3.9,
+    "location": "La Jolla",
+    "phone": "433003895",
+    "hours": "Open until 9 PM",
+    "image": "assets/restaurants/sammys-woodfired-pizza.png",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Amazing flavors and great service!",
+        "author": "Author79"
+      },
+      {
+        "text": "The ambiance is perfect for date nights.",
+        "author": "Author80"
+      },
+      {
+        "text": "Will definitely come back again!",
+        "author": "Author81"
+      },
+      {
+        "text": "The staff was incredibly friendly.",
+        "author": "Author82"
+      },
+      {
+        "text": "One of the best meals I\u2019ve had in La Jolla.",
+        "author": "Author83"
+      },
+      {
+        "text": "Fresh ingredients and lovely presentation.",
+        "author": "Author84"
+      }
+    ]
+  },
+  {
+    "id": 80,
+    "name": "Elixir Espresso & Wine Bar",
+    "cuisine": "Sushi",
+    "price": "$$$",
+    "distance": 4.1,
+    "rating": 3.5,
+    "location": "La Jolla",
+    "phone": "424638959",
+    "hours": "Open until 9 PM",
+    "image": "assets/restaurants/elixir-espresso-and-wine-bar.png",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Amazing flavors and great service!",
+        "author": "Author80"
+      },
+      {
+        "text": "The ambiance is perfect for date nights.",
+        "author": "Author81"
+      },
+      {
+        "text": "Will definitely come back again!",
+        "author": "Author82"
+      },
+      {
+        "text": "The staff was incredibly friendly.",
+        "author": "Author83"
+      },
+      {
+        "text": "One of the best meals I\u2019ve had in La Jolla.",
+        "author": "Author84"
+      },
+      {
+        "text": "Fresh ingredients and lovely presentation.",
+        "author": "Author85"
+      }
+    ]
+  },
+  {
+    "id": 81,
+    "name": "Ambrogio15",
+    "cuisine": "Italian",
+    "price": "$$$",
+    "distance": 4.4,
+    "rating": 4.2,
+    "location": "La Jolla",
+    "phone": "736708830",
+    "hours": "Open until 9 PM",
+    "image": "assets/restaurants/ambrogio15.png",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Amazing flavors and great service!",
+        "author": "Author81"
+      },
+      {
+        "text": "The ambiance is perfect for date nights.",
+        "author": "Author82"
+      },
+      {
+        "text": "Will definitely come back again!",
+        "author": "Author83"
+      },
+      {
+        "text": "The staff was incredibly friendly.",
+        "author": "Author84"
+      },
+      {
+        "text": "One of the best meals I\u2019ve had in La Jolla.",
+        "author": "Author85"
+      },
+      {
+        "text": "Fresh ingredients and lovely presentation.",
+        "author": "Author86"
+      }
+    ]
+  },
+  {
+    "id": 82,
+    "name": "Cafe Milano",
+    "cuisine": "Italian",
+    "price": "$$$",
+    "distance": 3.2,
+    "rating": 4.1,
+    "location": "La Jolla",
+    "phone": "037797291",
+    "hours": "Open until 9 PM",
+    "image": "assets/restaurants/cafe-milano.png",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Amazing flavors and great service!",
+        "author": "Author82"
+      },
+      {
+        "text": "The ambiance is perfect for date nights.",
+        "author": "Author83"
+      },
+      {
+        "text": "Will definitely come back again!",
+        "author": "Author84"
+      },
+      {
+        "text": "The staff was incredibly friendly.",
+        "author": "Author85"
+      },
+      {
+        "text": "One of the best meals I\u2019ve had in La Jolla.",
+        "author": "Author86"
+      },
+      {
+        "text": "Fresh ingredients and lovely presentation.",
+        "author": "Author87"
+      }
+    ]
+  },
+  {
+    "id": 83,
+    "name": "Bird Rock Coffee Roasters",
+    "cuisine": "Cafe",
+    "price": "$$",
+    "distance": 2.1,
+    "rating": 4.3,
+    "location": "La Jolla",
+    "phone": "863341576",
+    "hours": "Open until 9 PM",
+    "image": "assets/restaurants/bird-rock-coffee-roasters.png",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Amazing flavors and great service!",
+        "author": "Author83"
+      },
+      {
+        "text": "The ambiance is perfect for date nights.",
+        "author": "Author84"
+      },
+      {
+        "text": "Will definitely come back again!",
+        "author": "Author85"
+      },
+      {
+        "text": "The staff was incredibly friendly.",
+        "author": "Author86"
+      },
+      {
+        "text": "One of the best meals I\u2019ve had in La Jolla.",
+        "author": "Author87"
+      },
+      {
+        "text": "Fresh ingredients and lovely presentation.",
+        "author": "Author88"
+      }
+    ]
+  },
+  {
+    "id": 84,
+    "name": "Olive and Basil",
+    "cuisine": "Italian",
+    "price": "$",
+    "distance": 4.4,
+    "rating": 4.9,
+    "location": "La Jolla",
+    "phone": "046585463",
+    "hours": "Open until 9 PM",
+    "image": "assets/restaurants/olive-and-basil.png",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Amazing flavors and great service!",
+        "author": "Author84"
+      },
+      {
+        "text": "The ambiance is perfect for date nights.",
+        "author": "Author85"
+      },
+      {
+        "text": "Will definitely come back again!",
+        "author": "Author86"
+      },
+      {
+        "text": "The staff was incredibly friendly.",
+        "author": "Author87"
+      },
+      {
+        "text": "One of the best meals I\u2019ve had in La Jolla.",
+        "author": "Author88"
+      },
+      {
+        "text": "Fresh ingredients and lovely presentation.",
+        "author": "Author89"
+      }
+    ]
+  },
+  {
+    "id": 85,
+    "name": "Isola Pizza Bar",
+    "cuisine": "Sushi",
+    "price": "$$$",
+    "distance": 2.3,
+    "rating": 3.7,
+    "location": "La Jolla",
+    "phone": "222838319",
+    "hours": "Open until 9 PM",
+    "image": "assets/restaurants/isola-pizza-bar.png",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Amazing flavors and great service!",
+        "author": "Author85"
+      },
+      {
+        "text": "The ambiance is perfect for date nights.",
+        "author": "Author86"
+      },
+      {
+        "text": "Will definitely come back again!",
+        "author": "Author87"
+      },
+      {
+        "text": "The staff was incredibly friendly.",
+        "author": "Author88"
+      },
+      {
+        "text": "One of the best meals I\u2019ve had in La Jolla.",
+        "author": "Author89"
+      },
+      {
+        "text": "Fresh ingredients and lovely presentation.",
+        "author": "Author90"
+      }
+    ]
+  },
+  {
+    "id": 86,
+    "name": "Yard House",
+    "cuisine": "American",
+    "price": "$",
+    "distance": 4.7,
+    "rating": 4.8,
+    "location": "La Jolla",
+    "phone": "006392756",
+    "hours": "Open until 9 PM",
+    "image": "assets/restaurants/yard-house.png",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Amazing flavors and great service!",
+        "author": "Author86"
+      },
+      {
+        "text": "The ambiance is perfect for date nights.",
+        "author": "Author87"
+      },
+      {
+        "text": "Will definitely come back again!",
+        "author": "Author88"
+      },
+      {
+        "text": "The staff was incredibly friendly.",
+        "author": "Author89"
+      },
+      {
+        "text": "One of the best meals I\u2019ve had in La Jolla.",
+        "author": "Author90"
+      },
+      {
+        "text": "Fresh ingredients and lovely presentation.",
+        "author": "Author91"
+      }
+    ]
+  },
+  {
+    "id": 87,
+    "name": "Cava",
+    "cuisine": "Greek",
+    "price": "$",
+    "distance": 0.8,
+    "rating": 3.7,
+    "location": "La Jolla",
+    "phone": "244704710",
+    "hours": "Open until 9 PM",
+    "image": "assets/restaurants/cava.png",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Amazing flavors and great service!",
+        "author": "Author87"
+      },
+      {
+        "text": "The ambiance is perfect for date nights.",
+        "author": "Author88"
+      },
+      {
+        "text": "Will definitely come back again!",
+        "author": "Author89"
+      },
+      {
+        "text": "The staff was incredibly friendly.",
+        "author": "Author90"
+      },
+      {
+        "text": "One of the best meals I\u2019ve had in La Jolla.",
+        "author": "Author91"
+      },
+      {
+        "text": "Fresh ingredients and lovely presentation.",
+        "author": "Author92"
+      }
+    ]
+  },
+  {
+    "id": 88,
+    "name": "Burger King",
+    "cuisine": "American",
+    "price": "$",
+    "distance": 3.3,
+    "rating": 4.2,
+    "location": "La Jolla",
+    "phone": "678143742",
+    "hours": "Open until 9 PM",
+    "image": "assets/restaurants/burger-king.png",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Amazing flavors and great service!",
+        "author": "Author88"
+      },
+      {
+        "text": "The ambiance is perfect for date nights.",
+        "author": "Author89"
+      },
+      {
+        "text": "Will definitely come back again!",
+        "author": "Author90"
+      },
+      {
+        "text": "The staff was incredibly friendly.",
+        "author": "Author91"
+      },
+      {
+        "text": "One of the best meals I\u2019ve had in La Jolla.",
+        "author": "Author92"
+      },
+      {
+        "text": "Fresh ingredients and lovely presentation.",
+        "author": "Author93"
+      }
+    ]
+  },
+  {
+    "id": 89,
+    "name": "Tapex",
+    "cuisine": "Chinese",
+    "price": "$",
+    "distance": 0,
+    "rating": 4.5,
+    "location": "La Jolla",
+    "phone": "179868970",
+    "hours": "Open until 9 PM",
+    "image": "assets/restaurants/tapex.png",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Amazing flavors and great service!",
+        "author": "Author89"
+      },
+      {
+        "text": "The ambiance is perfect for date nights.",
+        "author": "Author90"
+      },
+      {
+        "text": "Will definitely come back again!",
+        "author": "Author91"
+      },
+      {
+        "text": "The staff was incredibly friendly.",
+        "author": "Author92"
+      },
+      {
+        "text": "One of the best meals I\u2019ve had in La Jolla.",
+        "author": "Author93"
+      },
+      {
+        "text": "Fresh ingredients and lovely presentation.",
+        "author": "Author94"
+      }
+    ]
+  },
+  {
+    "id": 90,
+    "name": "Dirty Birds",
+    "cuisine": "American",
+    "price": "$$",
+    "distance": 0.0,
+    "rating": 3.9,
+    "location": "La Jolla",
+    "phone": "040481392",
+    "hours": "Open until 9 PM",
+    "image": "assets/restaurants/dirty-birds.png",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Amazing flavors and great service!",
+        "author": "Author90"
+      },
+      {
+        "text": "The ambiance is perfect for date nights.",
+        "author": "Author91"
+      },
+      {
+        "text": "Will definitely come back again!",
+        "author": "Author92"
+      },
+      {
+        "text": "The staff was incredibly friendly.",
+        "author": "Author93"
+      },
+      {
+        "text": "One of the best meals I\u2019ve had in La Jolla.",
+        "author": "Author94"
+      },
+      {
+        "text": "Fresh ingredients and lovely presentation.",
+        "author": "Author95"
+      }
+    ]
+  },
+  {
+    "id": 91,
+    "name": "Barbarella Restaurant & Bar",
+    "cuisine": "Californian",
+    "price": "$$",
+    "distance": 3.9,
+    "rating": 4.7,
+    "location": "La Jolla",
+    "phone": "375535534",
+    "hours": "Open until 9 PM",
+    "image": "assets/restaurants/barbarella-restaurant-and-bar.png",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Amazing flavors and great service!",
+        "author": "Author91"
+      },
+      {
+        "text": "The ambiance is perfect for date nights.",
+        "author": "Author92"
+      },
+      {
+        "text": "Will definitely come back again!",
+        "author": "Author93"
+      },
+      {
+        "text": "The staff was incredibly friendly.",
+        "author": "Author94"
+      },
+      {
+        "text": "One of the best meals I\u2019ve had in La Jolla.",
+        "author": "Author95"
+      },
+      {
+        "text": "Fresh ingredients and lovely presentation.",
+        "author": "Author96"
+      }
+    ]
+  },
+  {
+    "id": 92,
+    "name": "We Olive & Wine Bar",
+    "cuisine": "American",
+    "price": "$",
+    "distance": 3.6,
+    "rating": 3.7,
+    "location": "La Jolla",
+    "phone": "654858351",
+    "hours": "Open until 9 PM",
+    "image": "assets/restaurants/we-olive-and-wine-bar.png",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Amazing flavors and great service!",
+        "author": "Author92"
+      },
+      {
+        "text": "The ambiance is perfect for date nights.",
+        "author": "Author93"
+      },
+      {
+        "text": "Will definitely come back again!",
+        "author": "Author94"
+      },
+      {
+        "text": "The staff was incredibly friendly.",
+        "author": "Author95"
+      },
+      {
+        "text": "One of the best meals I\u2019ve had in La Jolla.",
+        "author": "Author96"
+      },
+      {
+        "text": "Fresh ingredients and lovely presentation.",
+        "author": "Author97"
+      }
+    ]
+  },
+  {
+    "id": 93,
+    "name": "The Promiscuous Fork",
+    "cuisine": "Californian",
+    "price": "$$",
+    "distance": 1.5,
+    "rating": 4.2,
+    "location": "La Jolla",
+    "phone": "116038864",
+    "hours": "Open until 9 PM",
+    "image": "assets/restaurants/the-promiscuous-fork.png",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Amazing flavors and great service!",
+        "author": "Author93"
+      },
+      {
+        "text": "The ambiance is perfect for date nights.",
+        "author": "Author94"
+      },
+      {
+        "text": "Will definitely come back again!",
+        "author": "Author95"
+      },
+      {
+        "text": "The staff was incredibly friendly.",
+        "author": "Author96"
+      },
+      {
+        "text": "One of the best meals I\u2019ve had in La Jolla.",
+        "author": "Author97"
+      },
+      {
+        "text": "Fresh ingredients and lovely presentation.",
+        "author": "Author98"
+      }
+    ]
+  },
+  {
+    "id": 94,
+    "name": "Spice & Rice Thai Kitchen",
+    "cuisine": "Thai",
+    "price": "$",
+    "distance": 1.2,
+    "rating": 5.0,
+    "location": "La Jolla",
+    "phone": "551639598",
+    "hours": "Open until 9 PM",
+    "image": "assets/restaurants/spice-and-rice-thai-kitchen.png",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Amazing flavors and great service!",
+        "author": "Author94"
+      },
+      {
+        "text": "The ambiance is perfect for date nights.",
+        "author": "Author95"
+      },
+      {
+        "text": "Will definitely come back again!",
+        "author": "Author96"
+      },
+      {
+        "text": "The staff was incredibly friendly.",
+        "author": "Author97"
+      },
+      {
+        "text": "One of the best meals I\u2019ve had in La Jolla.",
+        "author": "Author98"
+      },
+      {
+        "text": "Fresh ingredients and lovely presentation.",
+        "author": "Author99"
+      }
+    ]
+  },
+  {
+    "id": 95,
+    "name": "India Palace",
+    "cuisine": "Indian",
+    "price": "$",
+    "distance": 3.9,
+    "rating": 4.4,
+    "location": "La Jolla",
+    "phone": "866123956",
+    "hours": "Open until 9 PM",
+    "image": "assets/restaurants/india-palace.png",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Amazing flavors and great service!",
+        "author": "Author95"
+      },
+      {
+        "text": "The ambiance is perfect for date nights.",
+        "author": "Author96"
+      },
+      {
+        "text": "Will definitely come back again!",
+        "author": "Author97"
+      },
+      {
+        "text": "The staff was incredibly friendly.",
+        "author": "Author98"
+      },
+      {
+        "text": "One of the best meals I\u2019ve had in La Jolla.",
+        "author": "Author99"
+      },
+      {
+        "text": "Fresh ingredients and lovely presentation.",
+        "author": "Author100"
+      }
+    ]
+  },
+  {
+    "id": 96,
+    "name": "La Jolla Brewing Company",
+    "cuisine": "French",
+    "price": "$",
+    "distance": 1.7,
+    "rating": 3.6,
+    "location": "La Jolla",
+    "phone": "925757785",
+    "hours": "Open until 9 PM",
+    "image": "assets/restaurants/la-jolla-brewing-company.png",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Amazing flavors and great service!",
+        "author": "Author96"
+      },
+      {
+        "text": "The ambiance is perfect for date nights.",
+        "author": "Author97"
+      },
+      {
+        "text": "Will definitely come back again!",
+        "author": "Author98"
+      },
+      {
+        "text": "The staff was incredibly friendly.",
+        "author": "Author99"
+      },
+      {
+        "text": "One of the best meals I\u2019ve had in La Jolla.",
+        "author": "Author100"
+      },
+      {
+        "text": "Fresh ingredients and lovely presentation.",
+        "author": "Author101"
+      }
+    ]
+  },
+  {
+    "id": 97,
+    "name": "Roppongi Restaurant",
+    "cuisine": "French",
+    "price": "$$",
+    "distance": 4.6,
+    "rating": 4.3,
+    "location": "La Jolla",
+    "phone": "697265265",
+    "hours": "Open until 9 PM",
+    "image": "assets/restaurants/roppongi.png",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Amazing flavors and great service!",
+        "author": "Author97"
+      },
+      {
+        "text": "The ambiance is perfect for date nights.",
+        "author": "Author98"
+      },
+      {
+        "text": "Will definitely come back again!",
+        "author": "Author99"
+      },
+      {
+        "text": "The staff was incredibly friendly.",
+        "author": "Author100"
+      },
+      {
+        "text": "One of the best meals I\u2019ve had in La Jolla.",
+        "author": "Author101"
+      },
+      {
+        "text": "Fresh ingredients and lovely presentation.",
+        "author": "Author102"
+      }
+    ]
+  },
+  {
+    "id": 98,
+    "name": "Zen Curry House",
+    "cuisine": "Japanese",
+    "price": "$$$",
+    "distance": 4.3,
+    "rating": 4.0,
+    "location": "La Jolla",
+    "phone": "148782930",
+    "hours": "Open until 9 PM",
+    "image": "assets/restaurants/zen-curry-house.png",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Amazing flavors and great service!",
+        "author": "Author98"
+      },
+      {
+        "text": "The ambiance is perfect for date nights.",
+        "author": "Author99"
+      },
+      {
+        "text": "Will definitely come back again!",
+        "author": "Author100"
+      },
+      {
+        "text": "The staff was incredibly friendly.",
+        "author": "Author101"
+      },
+      {
+        "text": "One of the best meals I\u2019ve had in La Jolla.",
+        "author": "Author102"
+      },
+      {
+        "text": "Fresh ingredients and lovely presentation.",
+        "author": "Author103"
+      }
+    ]
+  },
+  {
+    "id": 99,
+    "name": "Pho La Jolla",
+    "cuisine": "Vietnamese",
+    "price": "$",
+    "distance": 1.5,
+    "rating": 1.4,
+    "location": "La Jolla",
+    "phone": "843924290",
+    "hours": "Open until 9 PM",
+    "image": "assets/restaurants/pho-la-jolla.png",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Some of the worst pho ever!",
+        "author": "Author99"
+      },
+      {
+        "text": "The ambiance is perfect for date nights.",
+        "author": "Author100"
+      },
+      {
+        "text": "Will definitely come back again!",
+        "author": "Author101"
+      },
+      {
+        "text": "The staff was incredibly friendly.",
+        "author": "Author102"
+      },
+      {
+        "text": "One of the best meals I\u2019ve had in La Jolla.",
+        "author": "Author103"
+      },
+      {
+        "text": "Fresh ingredients and lovely presentation.",
+        "author": "Author104"
+      }
+    ]
+  },
+  {
+    "id": 100,
+    "name": "Chipotle",
+    "cuisine": "Mexican",
+    "price": "$",
+    "distance": 1.0,
+    "rating": 4.4,
+    "location": "La Jolla",
+    "phone": "851447271",
+    "hours": "Open until 9 PM",
+    "image": "assets/restaurants/chipotle.png",
+    "menuImages": [
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
+    ],
+    "reviews": [
+      {
+        "text": "Amazing flavors and great service!",
+        "author": "Author100"
+      },
+      {
+        "text": "The ambiance is perfect for date nights.",
+        "author": "Author101"
+      },
+      {
+        "text": "Will definitely come back again!",
+        "author": "Author102"
+      },
+      {
+        "text": "The staff was incredibly friendly.",
+        "author": "Author103"
+      },
+      {
+        "text": "One of the best meals I\u2019ve had in La Jolla.",
+        "author": "Author104"
+      },
+      {
+        "text": "Fresh ingredients and lovely presentation.",
+        "author": "Author105"
+      }
+    ]
+  },
   {
     "id": 201,
     "name": "Ajisen Ramen San Diego",
