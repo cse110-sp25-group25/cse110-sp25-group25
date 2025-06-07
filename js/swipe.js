@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     clearBtn.addEventListener('click', () => {
       localStorage.removeItem('userSelections');
       window.location.reload();
-
   });
   }
   let data = JSON.parse(localStorage.getItem('restaurantData'));

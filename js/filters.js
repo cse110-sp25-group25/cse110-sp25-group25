@@ -239,8 +239,6 @@ function confirmAndChangeSelection(type, newType) {
   else {
     showOptions(newType);
   }
-
-
 }
 
 
