@@ -32,7 +32,7 @@ function renderDeck() {
         div.innerHTML = `
             <h2>${r["name"]}</h2>
             <img
-                src="assets/restaurant.jpg"
+                src="${r.image || 'assets/restaurant.jpg'}"
                 alt="restaurant"
                 class="card-img"
             />

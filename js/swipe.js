@@ -155,7 +155,7 @@ data.forEach(r => {
     <div class="card-inner">
       <!-- Front -->
       <div class="card-front">
-        <h2>${r.name}</h2>
+        <h2 class="restaurant-name">${r.name}</h2>
           <div class="card-img-container">
             <img src="${r.image || 'assets/restaurant.jpg'}" alt="${r.name}" class="card-img" />
           </div>
