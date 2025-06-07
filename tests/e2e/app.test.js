@@ -266,6 +266,10 @@ describe('Restaurant Crisis App', () => {
     expect(deckAfterAccept.length).toBe(1);
     expect(deckAfterAccept[0].id).toBe(Number(firstCardId));
     
+    // Wait for the next card to be visible
+    logStep('Waiting for next card after accept');
+    await page.waitForSelector('.restaurant-card', { visible: true, timeout: 15000 });
+    
     // Get the ID of the second card before rejecting it
     logStep('Getting second card ID');
     const secondCardId = await page.evaluate(() => {
@@ -291,11 +295,22 @@ describe('Restaurant Crisis App', () => {
     // Wait for the next card to be visible and clickable
     await page.waitForFunction(() => {
       const card = document.querySelector('.restaurant-card');
-      return card && card.offsetParent !== null;
-    }, { timeout: 10000 });
+      if (!card) return false;
+      const rect = card.getBoundingClientRect();
+      return rect.width > 0 && rect.height > 0 && card.offsetParent !== null;
+    }, { timeout: 15000 });
     
-    // Click the card using page.click instead of evaluate
-    await page.click('.restaurant-card');
+    // Wait for any animations to complete
+    await page.evaluate(() => new Promise(resolve => setTimeout(resolve, 1000)));
+    
+    // Click the card using evaluate to ensure it's clickable
+    await page.evaluate(() => {
+      const card = document.querySelector('.restaurant-card');
+      if (card) card.click();
+    });
+    
+    // Wait for the flip animation to complete
+    await page.evaluate(() => new Promise(resolve => setTimeout(resolve, 500)));
     
     // Verify the card is flipped
     const isFlipped = await page.evaluate(() => {
