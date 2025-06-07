@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', async () => {
   if (clearBtn) {
     clearBtn.addEventListener('click', () => {
       localStorage.removeItem('userSelections');
-      alert('All filters have been cleared. To set new ones, go back to the filters page.');
       window.location.reload();
 
   });

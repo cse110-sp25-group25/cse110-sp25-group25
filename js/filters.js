@@ -230,9 +230,7 @@ function confirmAndChangeSelection(type, newType) {
     showOptions(newType);
   }
 
-  //REMOVE LATER (just for testing)
-  console.log('Current Selections:', userSelections);
-  alert(`Saved ${type} selection!`);
+
 }
 
 
