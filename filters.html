@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/filters.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Restaurant Crisis</title>
+    <link rel="shortcut icon" href="assets/app-favicon.ico" type="image/x-icon" />
+    <title>Customize Filters - FoodFlip</title>
   </head>
   <body>
     
@@ -26,7 +27,7 @@
 
     <main>
         <!-- Progress Step Bar -->
-        <div class="progress-bar hidden">
+        <nav class="progress-bar hidden">
             <div class="step" data-step="cuisine">
                 <span class="step-text">Cuisine</span>
                 <div class="step-line"></div>
@@ -43,7 +44,7 @@
                 <span class="step-text">Rating</span>
                 <div class="step-line"></div>
             </div>
-        </div>
+          </nav>
 
         <!-- Cuisine -->
         <section class="filter-options hidden" id="cuisine-options">
@@ -85,15 +86,10 @@
 
         <!-- Rating -->
         <section class="filter-options hidden" id="rating-options">
-          <h2>Set minimum rating</h2>
+          <h2>What is the lowest rating you will accept?</h2>
+          <div id="star-container" class="star-rating"></div>
           <form onsubmit="confirmSelection('rating'); return false;">
-            <input
-              type="number"
-              id="rating-input"
-              placeholder="Enter a number between 0 and 5 or leave blank if you don't care"
-              
-            />
-            <button type="submit" class="confirm-btn">Confirm</button>
+            <button type="submit" class="confirm-btn">Next</button>
           </form>
         </section>
     </main>
