@@ -12,7 +12,11 @@ const userSelections = {
  * @returns {string[]} An alphabetically sorted array of unique cuisine strings.
  */
 async function getUniqueCuisines() {
+  //reload restaurant data from restaurants.json no matter what
+  // (to avoid issues with localStorage in case of changes)
+
   let all = JSON.parse(localStorage.getItem('restaurantData') || '[]');
+
   if (all.length === 0) {
 
     const res = await fetch('data/restaurants.json');
