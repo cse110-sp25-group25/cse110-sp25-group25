@@ -265,6 +265,9 @@ body {
       flex-direction: column;
       align-items: center;
     }
+    .filter-container {
+      width: 100%;
+    }
 
     .progress-bar {
       padding: 0 1rem;
