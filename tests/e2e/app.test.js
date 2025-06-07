@@ -234,22 +234,78 @@ describe('Restaurant Crisis App', () => {
     logStep('Testing swipe interactions');
     await page.goto(`${BASE_URL}/swipe.html`);
     
-    // Wait for the card container to be loaded
+    // Wait for the card container to be loaded and visible
+    logStep('Waiting for card container');
     await page.waitForSelector('#card-container', { visible: true });
+    
+    // Wait for the first card to be fully loaded
+    logStep('Waiting for first card to load');
+    await page.waitForFunction(() => {
+      const card = document.querySelector('.restaurant-card');
+      return card && card.offsetParent !== null;
+    }, { timeout: 10000 });
+    
+    // Get the ID of the first card before accepting it
+    logStep('Getting first card ID');
+    const firstCardId = await page.evaluate(() => {
+      const card = document.querySelector('.restaurant-card');
+      return card ? card.getAttribute('data-id') : null;
+    });
+    expect(firstCardId).not.toBeNull();
     
     logStep('Testing accept button');
     const acceptBtn = await page.waitForSelector('button[title="Accept"]', { visible: true });
     await acceptBtn.evaluate(btn => btn.click());
     
+    // Verify the card was added to the deck
+    logStep('Verifying card was added to deck');
+    const deckAfterAccept = await page.evaluate(() => {
+      const deck = JSON.parse(localStorage.getItem('deck') || '[]');
+      return deck;
+    });
+    expect(deckAfterAccept.length).toBe(1);
+    expect(deckAfterAccept[0].id).toBe(Number(firstCardId));
+    
+    // Wait for the next card to be visible
+    logStep('Waiting for next card after accept');
+    await page.waitForFunction(() => {
+      const card = document.querySelector('.restaurant-card');
+      return card && card.offsetParent !== null;
+    }, { timeout: 10000 });
+    
+    // Get the ID of the second card before rejecting it
+    logStep('Getting second card ID');
+    const secondCardId = await page.evaluate(() => {
+      const card = document.querySelector('.restaurant-card');
+      return card ? card.getAttribute('data-id') : null;
+    });
+    expect(secondCardId).not.toBeNull();
+    
     logStep('Testing reject button');
     const rejectBtn = await page.waitForSelector('button[title="Reject"]', { visible: true });
     await rejectBtn.evaluate(btn => btn.click());
+    
+    // Verify the deck still only contains the first card
+    logStep('Verifying deck after reject');
+    const deckAfterReject = await page.evaluate(() => {
+      const deck = JSON.parse(localStorage.getItem('deck') || '[]');
+      return deck;
+    });
+    expect(deckAfterReject.length).toBe(1);
+    expect(deckAfterReject[0].id).toBe(Number(firstCardId));
+    
+    // Wait for the next card to be visible
+    logStep('Waiting for next card after reject');
+    await page.waitForFunction(() => {
+      const card = document.querySelector('.restaurant-card');
+      return card && card.offsetParent !== null;
+    }, { timeout: 10000 });
     
     logStep('Testing card flip');
     const card = await page.waitForSelector('.restaurant-card', { visible: true });
     await card.evaluate(c => c.click());
     expect(await card.evaluate(el => el.classList.contains('flipped'))).toBe(true);
-  }, 30000);
+  }, 45000);
 
   // Collection page tests
   test('should handle collection interactions', async () => {
