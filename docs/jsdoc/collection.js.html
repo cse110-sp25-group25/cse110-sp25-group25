@@ -26,8 +26,7 @@
     
     <section>
         <article>
-            <pre class="prettyprint source linenums"><code>
-window.addEventListener('DOMContentLoaded', init);
+            <pre class="prettyprint source linenums"><code>window.addEventListener('DOMContentLoaded', init);
 
 const MOBILE_HIDER = document.createElement('style');
 MOBILE_HIDER.innerHTML = `.hidden { display: none !important; }`;
@@ -113,7 +112,7 @@ function init() {
           &lt;h2>${deckBody.dataset.name}&lt;/h2>
           &lt;p>
             &lt;img src="assets/location-icon.png" alt="Location" class="icon-img">
-            &lt;a href="#">Undefined&lt;/a>
+            ${deckBody.dataset.location}
           &lt;/p>
           &lt;p>
             &lt;img src="assets/time-icon.png" alt="Hours" class="icon-img">
@@ -203,15 +202,15 @@ function applyFilters(filters, savedRestaurants, deckList) {
 /**
  * renderDeck
  * ----------
- * Renders the current “deck” of restaurant cards into a container element.
+ * Renders the current "deck" of restaurant cards into a container element.
  * The function:
  *   • Clears any existing cards inside `deckList`.  
- *   • If `subset` is empty → shows an “empty-state” message and hides the
- *     “Clear Deck” button.  
+ *   • If `subset` is empty → shows an "empty-state" message and hides the
+ *     "Clear Deck" button.  
  *   • Otherwise, for each restaurant object it builds a card (`div`) with
  *     name, image, rating, distance, and cuisine tags, wires a click-handler
  *     (`handleCardClick`) that drives the left-side detail panel, and
- *     appends the card to `deckList`.  Finally, it makes the “Clear Deck”
+ *     appends the card to `deckList`.  Finally, it makes the "Clear Deck"
  *     button visible.
  *
  * 
@@ -234,7 +233,7 @@ function renderDeck(subset, deckList) {
               &lt;div class="collection-card-front">
                 &lt;h2>${r["name"]}&lt;/h2>
                 &lt;img
-                  src="assets/restaurant.jpg"
+                  src=${r["image"]}
                   alt="restaurant"
                   class="card-img"
                 />
@@ -247,8 +246,6 @@ function renderDeck(subset, deckList) {
                 &lt;/div>
                 &lt;div class="tags">
                   &lt;span class="tag">${r["cuisine"]}&lt;/span>
-                  &lt;span class="tag">cuisine&lt;/span>
-                  &lt;span class="tag">+2&lt;/span>
                 &lt;/div>
               &lt;/div>`;
         div.addEventListener('click', () => handleCardClick(r));
@@ -275,6 +272,7 @@ function handleCardClick(r) {
   deckBody.dataset.name = r.name;
   deckBody.dataset.hours = r.hours;
   deckBody.dataset.phone = r.phone;
+  deckBody.dataset.location = r.location;
   deckBody.dataset.website = r.website ?? "";
   deckBody.dataset.photo1src = r.menuImages[0];
   deckBody.dataset.photo2src = r.menuImages[1];
@@ -307,7 +305,7 @@ function handleCardClick(r) {
   deckBody.innerHTML = `
     &lt;article class="detail-card">
       &lt;h3>${r.name}&lt;/h3>
-      &lt;img src="assets/restaurant.jpg" alt="restaurant" class="card-img"/>
+      &lt;img src=${r["image"]} alt="restaurant" class="card-img"/>
       &lt;div class="details">
         &lt;img src="assets/dark-star-icon.png" alt="star icon" class="emoji"/>
         &lt;span class="rating"> ${r["rating"]} &lt;/span>
@@ -333,13 +331,13 @@ function handleCardClick(r) {
 </div>
 
 <nav>
-    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#applyFilters">applyFilters</a></li><li><a href="global.html#buildCuisineFilter">buildCuisineFilter</a></li><li><a href="global.html#checkIfAllSwiped">checkIfAllSwiped</a></li><li><a href="global.html#clearAllViewedAndReturnData">clearAllViewedAndReturnData</a></li><li><a href="global.html#confirmAndChangeSelection">confirmAndChangeSelection</a></li><li><a href="global.html#confirmSelection">confirmSelection</a></li><li><a href="global.html#createReviewElement">createReviewElement</a></li><li><a href="global.html#finalise">finalise</a></li><li><a href="global.html#getRejectedData">getRejectedData</a></li><li><a href="global.html#getUniqueCuisines">getUniqueCuisines</a></li><li><a href="global.html#handleCardClick">handleCardClick</a></li><li><a href="global.html#handleViewedCard">handleViewedCard</a></li><li><a href="global.html#removeViewed">removeViewed</a></li><li><a href="global.html#renderDeck">renderDeck</a></li><li><a href="global.html#renderRestaurant">renderRestaurant</a></li><li><a href="global.html#resetCard">resetCard</a></li><li><a href="global.html#saveToDeck">saveToDeck</a></li><li><a href="global.html#setupButtons">setupButtons</a></li><li><a href="global.html#setupFlipping">setupFlipping</a></li><li><a href="global.html#showOptions">showOptions</a></li><li><a href="global.html#updateProgressBar">updateProgressBar</a></li><li><a href="global.html#validatePositiveNumber">validatePositiveNumber</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#applyFilters">applyFilters</a></li><li><a href="global.html#buildCuisineFilter">buildCuisineFilter</a></li><li><a href="global.html#checkIfAllSwiped">checkIfAllSwiped</a></li><li><a href="global.html#clearAllViewedAndReturnData">clearAllViewedAndReturnData</a></li><li><a href="global.html#confirmAndChangeSelection">confirmAndChangeSelection</a></li><li><a href="global.html#confirmSelection">confirmSelection</a></li><li><a href="global.html#createReviewElement">createReviewElement</a></li><li><a href="global.html#finalise">finalise</a></li><li><a href="global.html#getRejectedData">getRejectedData</a></li><li><a href="global.html#getUniqueCuisines">getUniqueCuisines</a></li><li><a href="global.html#handleCardClick">handleCardClick</a></li><li><a href="global.html#handleViewedCard">handleViewedCard</a></li><li><a href="global.html#removeViewed">removeViewed</a></li><li><a href="global.html#renderDeck">renderDeck</a></li><li><a href="global.html#renderRestaurant">renderRestaurant</a></li><li><a href="global.html#resetCard">resetCard</a></li><li><a href="global.html#saveToDeck">saveToDeck</a></li><li><a href="global.html#setupButtons">setupButtons</a></li><li><a href="global.html#setupFlipping">setupFlipping</a></li><li><a href="global.html#showOptions">showOptions</a></li><li><a href="global.html#shuffleArray">shuffleArray</a></li><li><a href="global.html#updateProgressBar">updateProgressBar</a></li><li><a href="global.html#validatePositiveNumber">validatePositiveNumber</a></li></ul>
 </nav>
 
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.4</a> on Sat Jun 07 2025 01:01:14 GMT+0000 (Coordinated Universal Time)
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.4</a> on Sat Jun 07 2025 20:07:38 GMT+0000 (Coordinated Universal Time)
 </footer>
 
 <script> prettyPrint(); </script>
