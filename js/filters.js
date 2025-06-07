@@ -117,6 +117,19 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
 
     showOptions('cuisine')
+
+  // Set up price button selection
+  const priceButtons = document.querySelectorAll('.price-btn');
+  priceButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      priceButtons.forEach(btn => btn.classList.remove('selected'));
+      this.classList.add('selected');
+      
+      // Store the selected price range in userSelections
+      userSelections.price = this.dataset.price;
+    });
+  });
+
   // Load stars dynamically
   if (starContainer) {
     for (let i = 1; i <= 5; i++) {
@@ -182,15 +195,12 @@ function confirmAndChangeSelection(type, newType) {
   }
 
   if (type === 'price') {
-    const val = document.getElementById('price-input').value;
-    if (validatePositiveNumber(val)) {
-      userSelections.price = parseFloat(val);
-    } else if (val === '') { // user left it blank  ⇒  skip
-      userSelections.price = null;
-    }
-    else{
-      alert('Please enter a valid max price.');
-      return;
+    const selectedPriceBtn = document.querySelector('.price-btn.selected');
+    if (selectedPriceBtn) {
+      userSelections.price = selectedPriceBtn.dataset.price;
+    } 
+    else { // user left it blank  ⇒  skip
+      userSelections.price = null; 
     }
   }
 
