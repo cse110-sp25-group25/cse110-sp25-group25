@@ -948,6 +948,184 @@ This function performs the following steps:
     
 
     
+    <h4 class="name" id="confirmAndChangeSelection"><span class="type-signature"></span>confirmAndChangeSelection<span class="signature">(type, newType)</span><span class="type-signature"> &rarr; {void}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Confirms the user's selection, updates the userSelections object, and redirects the user to a specified filter.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>type</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The type of filter being confirmed (e.g., 'cuisine', 'price', 'distance', 'rating').</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>newType</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The next filter to show (if using navigation)</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="filters.js.html">filters.js</a>, <a href="filters.js.html#line175">line 175</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">void</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
     <h4 class="name" id="confirmSelection"><span class="type-signature"></span>confirmSelection<span class="signature">(type)</span><span class="type-signature"> &rarr; {void}</span></h4>
     
 
@@ -3356,7 +3534,7 @@ and then adds the 'active' class to the step that matches the current active ind
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="filters.js.html">filters.js</a>, <a href="filters.js.html#line229">line 229</a>
+        <a href="filters.js.html">filters.js</a>, <a href="filters.js.html#line255">line 255</a>
     </li></ul></dd>
     
 
@@ -3424,13 +3602,13 @@ and then adds the 'active' class to the step that matches the current active ind
 </div>
 
 <nav>
-    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#applyFilters">applyFilters</a></li><li><a href="global.html#buildCuisineFilter">buildCuisineFilter</a></li><li><a href="global.html#checkIfAllSwiped">checkIfAllSwiped</a></li><li><a href="global.html#clearAllViewedAndReturnData">clearAllViewedAndReturnData</a></li><li><a href="global.html#confirmSelection">confirmSelection</a></li><li><a href="global.html#createReviewElement">createReviewElement</a></li><li><a href="global.html#finalise">finalise</a></li><li><a href="global.html#getRejectedData">getRejectedData</a></li><li><a href="global.html#getUniqueCuisines">getUniqueCuisines</a></li><li><a href="global.html#handleCardClick">handleCardClick</a></li><li><a href="global.html#handleViewedCard">handleViewedCard</a></li><li><a href="global.html#removeViewed">removeViewed</a></li><li><a href="global.html#renderDeck">renderDeck</a></li><li><a href="global.html#renderRestaurant">renderRestaurant</a></li><li><a href="global.html#resetCard">resetCard</a></li><li><a href="global.html#saveToDeck">saveToDeck</a></li><li><a href="global.html#setupButtons">setupButtons</a></li><li><a href="global.html#setupFlipping">setupFlipping</a></li><li><a href="global.html#showOptions">showOptions</a></li><li><a href="global.html#updateProgressBar">updateProgressBar</a></li><li><a href="global.html#validatePositiveNumber">validatePositiveNumber</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#applyFilters">applyFilters</a></li><li><a href="global.html#buildCuisineFilter">buildCuisineFilter</a></li><li><a href="global.html#checkIfAllSwiped">checkIfAllSwiped</a></li><li><a href="global.html#clearAllViewedAndReturnData">clearAllViewedAndReturnData</a></li><li><a href="global.html#confirmAndChangeSelection">confirmAndChangeSelection</a></li><li><a href="global.html#confirmSelection">confirmSelection</a></li><li><a href="global.html#createReviewElement">createReviewElement</a></li><li><a href="global.html#finalise">finalise</a></li><li><a href="global.html#getRejectedData">getRejectedData</a></li><li><a href="global.html#getUniqueCuisines">getUniqueCuisines</a></li><li><a href="global.html#handleCardClick">handleCardClick</a></li><li><a href="global.html#handleViewedCard">handleViewedCard</a></li><li><a href="global.html#removeViewed">removeViewed</a></li><li><a href="global.html#renderDeck">renderDeck</a></li><li><a href="global.html#renderRestaurant">renderRestaurant</a></li><li><a href="global.html#resetCard">resetCard</a></li><li><a href="global.html#saveToDeck">saveToDeck</a></li><li><a href="global.html#setupButtons">setupButtons</a></li><li><a href="global.html#setupFlipping">setupFlipping</a></li><li><a href="global.html#showOptions">showOptions</a></li><li><a href="global.html#updateProgressBar">updateProgressBar</a></li><li><a href="global.html#validatePositiveNumber">validatePositiveNumber</a></li></ul>
 </nav>
 
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.4</a> on Fri Jun 06 2025 21:55:51 GMT+0000 (Coordinated Universal Time)
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.4</a> on Sat Jun 07 2025 01:01:14 GMT+0000 (Coordinated Universal Time)
 </footer>
 
 <script> prettyPrint(); </script>
