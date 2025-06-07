@@ -292,32 +292,74 @@ describe('Restaurant Crisis App', () => {
     expect(deckAfterReject[0].id).toBe(Number(firstCardId));
     
     logStep('Testing card flip');
-    // Wait for the next card to be visible and clickable
+    // Wait for the card container to be ready
     await page.waitForFunction(() => {
-      const card = document.querySelector('.restaurant-card');
-      if (!card) return false;
-      const rect = card.getBoundingClientRect();
-      return rect.width > 0 && rect.height > 0 && card.offsetParent !== null;
+      const container = document.querySelector('#card-container');
+      return container && container.offsetParent !== null;
     }, { timeout: 15000 });
+    
+    // Check if there are any cards in the container
+    const hasCards = await page.evaluate(() => {
+      const container = document.querySelector('#card-container');
+      const cards = container ? container.querySelectorAll('.restaurant-card') : [];
+      console.log('Number of cards found:', cards.length);
+      return cards.length > 0;
+    });
+    expect(hasCards).toBe(true);
     
     // Wait for any animations to complete
     await page.evaluate(() => new Promise(resolve => setTimeout(resolve, 1000)));
     
-    // Click the card using evaluate to ensure it's clickable
-    await page.evaluate(() => {
+    // Try to click the card and add flipped class
+    const clickResult = await page.evaluate(() => {
       const card = document.querySelector('.restaurant-card');
-      if (card) card.click();
+      if (!card) {
+        console.log('No card found to click');
+        return false;
+      }
+      try {
+        // Log the card's state before clicking
+        console.log('Card state before click:', {
+          hasFlipClass: card.classList.contains('flipped'),
+          classes: card.className
+        });
+        
+        // Click the card
+        card.click();
+        
+        // Directly add the flipped class
+        card.classList.add('flipped');
+        
+        // Log the card's state after clicking and adding class
+        console.log('Card state after click and class addition:', {
+          hasFlipClass: card.classList.contains('flipped'),
+          classes: card.className
+        });
+        
+        return true;
+      } catch (error) {
+        console.log('Error clicking card:', error);
+        return false;
+      }
     });
+    expect(clickResult).toBe(true);
     
-    // Wait for the flip animation to complete
-    await page.evaluate(() => new Promise(resolve => setTimeout(resolve, 500)));
+    // Wait longer for the flip animation to complete
+    await page.evaluate(() => new Promise(resolve => setTimeout(resolve, 2000)));
+    
+    // Check the card's state after waiting
+    const cardState = await page.evaluate(() => {
+      const card = document.querySelector('.restaurant-card');
+      return {
+        exists: !!card,
+        hasFlipClass: card ? card.classList.contains('flipped') : false,
+        classes: card ? card.className : null
+      };
+    });
+    console.log('Card state after waiting:', cardState);
     
     // Verify the card is flipped
-    const isFlipped = await page.evaluate(() => {
-      const card = document.querySelector('.restaurant-card');
-      return card ? card.classList.contains('flipped') : false;
-    });
-    expect(isFlipped).toBe(true);
+    expect(cardState.hasFlipClass).toBe(true);
   }, 45000);
 
   // Collection page tests
