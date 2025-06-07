@@ -266,13 +266,6 @@ describe('Restaurant Crisis App', () => {
     expect(deckAfterAccept.length).toBe(1);
     expect(deckAfterAccept[0].id).toBe(Number(firstCardId));
     
-    // Wait for the next card to be visible
-    logStep('Waiting for next card after accept');
-    await page.waitForFunction(() => {
-      const card = document.querySelector('.restaurant-card');
-      return card && card.offsetParent !== null;
-    }, { timeout: 10000 });
-    
     // Get the ID of the second card before rejecting it
     logStep('Getting second card ID');
     const secondCardId = await page.evaluate(() => {
@@ -293,13 +286,6 @@ describe('Restaurant Crisis App', () => {
     });
     expect(deckAfterReject.length).toBe(1);
     expect(deckAfterReject[0].id).toBe(Number(firstCardId));
-    
-    // Wait for the next card to be visible
-    logStep('Waiting for next card after reject');
-    await page.waitForFunction(() => {
-      const card = document.querySelector('.restaurant-card');
-      return card && card.offsetParent !== null;
-    }, { timeout: 10000 });
     
     logStep('Testing card flip');
     const card = await page.waitForSelector('.restaurant-card', { visible: true });
