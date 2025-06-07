@@ -47,7 +47,7 @@ describe('Restaurant Crisis App', () => {
   test('should load the home page', async () => {
     logStep('Testing home page load');
     const title = await page.title();
-    expect(title).toBe('Restaurant Crisis');
+    expect(title).toBe('FoodFlip');
   }, 10000);
 
   test('should navigate to filters page', async () => {
@@ -58,7 +58,7 @@ describe('Restaurant Crisis App', () => {
       page.click('a[href="filters.html"]')
     ]);
     const title = await page.title();
-    expect(title).toBe('Restaurant Crisis');
+    expect(title).toBe('Customize Filters - FoodFlip');
   }, 10000);
 
   test('should navigate to collection page', async () => {
@@ -69,7 +69,7 @@ describe('Restaurant Crisis App', () => {
       page.click('a[href="collection.html"]')
     ]);
     const title = await page.title();
-    expect(title).toBe('Restaurant Crisis');
+    expect(title).toBe('View Collection - FoodFlip');
   }, 10000);
 
   test('should navigate to swipe page', async () => {
@@ -82,7 +82,7 @@ describe('Restaurant Crisis App', () => {
       page.click('button.button-type1')
     ]);
     const title = await page.title();
-    expect(title).toBe('Swipe Restaurants');
+    expect(title).toBe('Browse Restaurants - FoodFlip');
   }, 15000);
 
   // Filters page tests
@@ -122,15 +122,11 @@ describe('Restaurant Crisis App', () => {
       return priceOptions && !priceOptions.classList.contains('hidden');
     }, { timeout: 10000 });
     
-    logStep('Testing price input');
-    await page.waitForSelector('#price-input', { visible: true });
-    await page.waitForFunction(() => {
-      const input = document.querySelector('#price-input');
-      return input && !input.disabled;
-    }, { timeout: 10000 });
-    
-    await page.type('#price-input', '2');
-    logStep('Price entered: 2');
+    logStep('Testing price selection');
+    const priceBtn = await page.waitForSelector('.price-btn', { visible: true });
+    await priceBtn.evaluate(btn => btn.click());
+    expect(await priceBtn.evaluate(el => el.classList.contains('selected'))).toBe(true);
+    logStep('Price selected');
     
     // Wait for the confirm button to be visible and clickable
     logStep('Waiting for price confirm button');
