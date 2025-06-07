@@ -3,18 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Swipe Restaurants</title>
   <link
     href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Permanent+Marker&display=swap"
     rel="stylesheet"
   />
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="shortcut icon" href="assets/app-favicon.ico" type="image/x-icon" />
+  <title>Browse Restaurants - FoodFlip</title>
 </head>
 
 <body>
   <!-- Header -->
   <header>
-    <img src="assets/app-icon.png" alt="app icon" class="app-icon" />
+    <a href="index.html"><img src="assets/app-icon.png" alt="app icon" class="app-icon" /></a>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -23,52 +24,61 @@
       </ul>
     </nav>
     <img src="assets/burger-menu.png" alt="menu" class="burger-icon" />
+
   </header>
+  <div class="header-action-bar">
+    <button id="clear-filters-btn" class="button-type2">Clear Filters</button>
+  </div>
 
   <!-- Swipe Layout -->
   <main class="swipe-layout">
     <div class="swipe-container">
-      <!-- Left Hint -->
-      <div class="swipe-hint left-hint">
-        <img src="assets/left-arrow.png" alt="Swipe Left" class="hint-icon" />
-        <span class="hint-text">
-          swipe left<br/>
-          to get a new card
-        </span>
-      </div>
 
       <!-- Left Reviews -->
       <div id="left-review-container"></div>
-
-      <!-- Card Container -->
-      <div id="card-container"></div>
+      
+      <!-- Card and Buttons Container -->
+      <div class="card-buttons-container">
+        <!-- Card -->
+        <div id="card-container">
+        </div>
+        
+        <!-- Accept / Reject Buttons -->
+        <div class="swipe-buttons">
+          <button title="Reject">
+            <img src="assets/decline-icon.png" alt="Reject" />
+          </button>
+          <button title="Accept">
+            <img src="assets/accept-icon.png" alt="Accept" />
+          </button>
+        </div>
+      </div>
+      
+      <!--------------- End Screen --------------->
+      <div id="end-screen" class="end-screen"  style="display: none;">
+        <h2>You've reached the end!</h2>
+        <div class="buttons-div">
+          <!-- Button #1: view rejected cards -->
+          <button id="view-rejected-btn" class="button-type3">
+            Go look at rejected cards
+          </button>
+  
+          <!-- Button #2: reset all viewed -->
+          <button id="full-reset-btn" class="button-type3">
+            Reset all viewed
+          </button>
+        </div>
+      </div>
 
       <!-- Right Reviews -->
       <div id="right-review-container"></div>
-
-      <!-- Right Hint -->
-      <div class="swipe-hint right-hint">
-        <img src="assets/right-arrow.png" alt="Swipe Right" class="hint-icon" />
-        <span class="hint-text">
-          swipe right<br/>
-          to save to collection
-        </span>
-      </div>
     </div>
 
-    <!-- Accept / Reject Buttons -->
-    <div class="swipe-buttons">
-      <button class="button-type2" title="Reject">
-        <img src="assets/decline-icon.png" alt="Reject" />
-      </button>
-      <button class="button-type2" title="Accept">
-        <img src="assets/accept-icon.png" alt="Accept" />
-      </button>
-    </div>
+
   </main>
+    <!-- Scripts -->
+    <script src="js/scripts.js"></script>  <!-- for navbar toggling, etc. -->
+    <script src="js/swipe.js"></script>    <!-- rendering & swipe/flip logic -->
+  </body>
 
-  <!-- Scripts -->
-  <script src="js/scripts.js"></script>  <!-- for navbar toggling, etc. -->
-  <script src="js/swipe.js"></script>    <!-- rendering & swipe/flip logic -->
-</body>
 </html>

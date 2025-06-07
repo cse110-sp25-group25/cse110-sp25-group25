@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="6" failures="0" errors="0" time="0.466">
+  <testsuite name="Swipe Utility Functions" errors="0" failures="0" skipped="0" timestamp="2025-06-07T20:22:03" time="0.082" tests="2">
+    <testcase classname="Swipe Utility Functions applyFilters filters based on cuisine" name="Swipe Utility Functions applyFilters filters based on cuisine" time="0.001">
+    </testcase>
+    <testcase classname="Swipe Utility Functions removeViewed filters out viewed IDs" name="Swipe Utility Functions removeViewed filters out viewed IDs" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="validatePositiveNumber" errors="0" failures="0" skipped="0" timestamp="2025-06-07T20:22:04" time="0.041" tests="4">
+    <testcase classname="validatePositiveNumber returns true for positive numbers" name="validatePositiveNumber returns true for positive numbers" time="0.001">
+    </testcase>
+    <testcase classname="validatePositiveNumber returns false for negative numbers" name="validatePositiveNumber returns false for negative numbers" time="0">
+    </testcase>
+    <testcase classname="validatePositiveNumber returns false for non-numeric input" name="validatePositiveNumber returns false for non-numeric input" time="0">
+    </testcase>
+    <testcase classname="validatePositiveNumber parses numbers with extra spaces" name="validatePositiveNumber parses numbers with extra spaces" time="0">
+    </testcase>
+  </testsuite>
+</testsuites>

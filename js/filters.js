@@ -6,6 +6,24 @@ const userSelections = {
     rating: null,
   };
 
+  /**
+ * Retrieves a sorted list of unique cuisines from restaurant data stored in localStorage.
+ *
+ * @returns {string[]} An alphabetically sorted array of unique cuisine strings.
+ */
+async function getUniqueCuisines() {
+  let all = JSON.parse(localStorage.getItem('restaurantData') || '[]');
+  if (all.length === 0) {
+
+    const res = await fetch('data/restaurants.json');
+    all = await res.json();
+    localStorage.setItem('restaurantData', JSON.stringify(all));
+  
+  }
+  all = JSON.parse(localStorage.getItem('restaurantData') || '[]');
+  const set = new Set(all.map(r => r.cuisine).filter(c => typeof c === 'string'));
+  return Array.from(set).sort((a, b) => a.localeCompare(b));
+}
 const STEPS = ['cuisine', 'price', 'distance', 'rating'];
 let current   = 0;          // index inside STEPS
 let editMode  = false;      // true = user only fixes one step, then exit
@@ -39,6 +57,11 @@ function nextStep() {
   }
 }
 
+/**
+ * Finalizes the filter selections and displays a summary.
+ *  *
+ * @returns {void}
+ * */
 function finalise() {
   document.getElementById('sum-cuisine' ).textContent = userSelections.cuisine.join(', ') || '—';
   document.getElementById('sum-price'   ).textContent = userSelections.price    ?? '—';
@@ -60,7 +83,6 @@ function finalise() {
  * @param {string} type - The type of filter to show options for ('cuisine', 'price', 'distance', 'rating')
  */
 function showOptions(type) {
-  document.querySelector('.filter-selection').classList.add('hidden');
   document.querySelectorAll('.filter-options').forEach(el => el.classList.add('hidden'));
   document.getElementById(`${type}-options`).classList.remove('hidden');
 
@@ -74,10 +96,62 @@ function showOptions(type) {
     updateProgressBar();
   }
 }
+
+// Event listener for DOMContentLoaded to initialize the filter options
+
+document.addEventListener('DOMContentLoaded', async () => {
+  const cuisineGrid = document.getElementById('cuisine-grid');
+  const starContainer = document.getElementById('star-container');
+
+  // Load cuisines dynamically
+  if (cuisineGrid) {
+    cuisineGrid.innerHTML = '';
+    const cuisines = await getUniqueCuisines();
+    cuisines.forEach(cuisine => {
+      const btn = document.createElement('button');
+      btn.classList.add('option-btn');
+      btn.setAttribute('data-value', cuisine);
+      btn.textContent = cuisine;
+      cuisineGrid.appendChild(btn);
+    });
+  }
+
+    showOptions('cuisine')
+
+  // Set up price button selection
+  const priceButtons = document.querySelectorAll('.price-btn');
+  priceButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      priceButtons.forEach(btn => btn.classList.remove('selected'));
+      this.classList.add('selected');
+      
+      // Store the selected price range in userSelections
+      userSelections.price = this.dataset.price;
+    });
+  });
+
+  // Load stars dynamically
+  if (starContainer) {
+    for (let i = 1; i <= 5; i++) {
+      const star = document.createElement('img');
+      star.src = 'assets/star-icon.png';
+      star.alt = `${i} star`;
+      star.classList.add('star');
+      star.dataset.value = i;
+      star.addEventListener('click', () => {
+        document.querySelectorAll('.star').forEach(s => s.classList.remove('selected'));
+        for (let j = 0; j < i; j++) {
+          document.querySelectorAll('.star')[j].classList.add('selected');
+        }
+        userSelections.rating = i;
+      });
+      starContainer.appendChild(star);
+    }
+  }
   
+  // Set up event listeners for filter buttons
 document.querySelectorAll('.option-btn').forEach(btn => {
   btn.addEventListener('click', () => {
-    // For multi-select (Cuisine), allow multiple
     if (btn.closest('#cuisine-options')) {
       btn.classList.toggle('selected');
     } else {
@@ -88,36 +162,30 @@ document.querySelectorAll('.option-btn').forEach(btn => {
     }
   });
 });
-document.addEventListener('DOMContentLoaded', () => {
-  const skipAll = document.getElementById('skip-btn');
 
-  skipAll.addEventListener('click', () => {
-    // leave defaults (every filter empty/null)
-    window.location.href = 'swipe.html';  
+  document.getElementById('done-btn').addEventListener('click', () => {
+    window.location.href = 'swipe.html';        // or swipe.html
   });
-});
-
-// document.getElementById('skip-btn').addEventListener('click', () => {
-//   const step = STEPS[current];
-//   userSelections[step] = step === 'cuisine' ? [] : null;
-
-//   localStorage.setItem('userSelections', JSON.stringify(userSelections));
-
-//   if (editMode) {
-//     finalise();
-//   } else {
-//     nextStep();
-//   }
-// });
-
-document.getElementById('done-btn').addEventListener('click', () => {
-  window.location.href = 'swipe.html';        // or swipe.html
-});
+  });
 
   
 
-// confirm selection
+/**
+ * Confirms the user's selection for a specific filter type and updates the userSelections object.
+ * @param {string} type - The type of filter being confirmed (e.g., 'cuisine', 'price', 'distance', 'rating').
+ * @return {void}
+ * */
 function confirmSelection(type) {
+  confirmAndChangeSelection(type, null);
+}
+
+/**
+ * Confirms the user's selection, updates the userSelections object, and redirects the user to a specified filter.
+ * @param {string} type - The type of filter being confirmed (e.g., 'cuisine', 'price', 'distance', 'rating').
+ * @param {string} newType - The next filter to show (if using navigation)
+ * @return {void}
+ * */
+function confirmAndChangeSelection(type, newType) {
   if (type === 'cuisine') {
     const selected = document.querySelectorAll('#cuisine-options .option-btn.selected');
     if (selected === '') {                       // user left it blank  ⇒  skip
@@ -127,15 +195,12 @@ function confirmSelection(type) {
   }
 
   if (type === 'price') {
-    const val = document.getElementById('price-input').value;
-    if (validatePositiveNumber(val)) {
-      userSelections.price = parseFloat(val);
-    } else if (val === '') { // user left it blank  ⇒  skip
-      userSelections.price = null;
-    }
-    else{
-      alert('Please enter a valid max price.');
-      return;
+    const selectedPriceBtn = document.querySelector('.price-btn.selected');
+    if (selectedPriceBtn) {
+      userSelections.price = selectedPriceBtn.dataset.price;
+    } 
+    else { // user left it blank  ⇒  skip
+      userSelections.price = null; 
     }
   }
 
@@ -154,32 +219,45 @@ function confirmSelection(type) {
   
   //need to check how rating works (logic currently PLACEHOLDER)
   if (type === 'rating') {
-    const val = document.getElementById('rating-input').value;
-    if (validatePositiveNumber(val) && val >= 0 && val <= 5) {
-      userSelections.rating = parseFloat(val);
-    } else if (val === '') { // user left it blank  ⇒  skip
+    const selectedStars = document.querySelectorAll('.star.selected');
+    if (selectedStars.length === 0) {
       userSelections.rating = null;
-    }
-    else {
-      alert('Please enter a valid rating (0–5).');
-      return;
+    } else {
+      userSelections.rating = selectedStars.length;
     }
   }
 
   localStorage.setItem('userSelections', JSON.stringify(userSelections));
 
-  if (editMode) {
-    finalise();          // one-shot edit → exit
-  } else {
-    nextStep();          // continue to next question
+  if (newType == null) {
+    if (editMode) {
+      finalise();          // one-shot edit → exit
+    } else {
+      nextStep();          // continue to next question
+    }
   }
-  //REMOVE LATER (just for testing)
-  console.log('Current Selections:', userSelections);
-  alert(`Saved ${type} selection!`);
+  else {
+    showOptions(newType);
+  }
 }
 
 
+//Set up event listeners for progress bar steps
+document.querySelectorAll('.step').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const oldType = STEPS[current];
+    const newType = btn.getAttribute('data-step');
+    confirmAndChangeSelection(oldType, newType);
+  });
+});
+
+
 // function to check positive/numeric input
+/**
+ * Validates that the input value is a positive number.
+ * @param {string} value - The input value to validate.
+ * @returns {boolean} True if the value is a valid positive number, false otherwise.
+ */
 function validatePositiveNumber(value) {
   const num = parseFloat(value);
   return !isNaN(num) && num >= 0;
@@ -187,6 +265,4 @@ function validatePositiveNumber(value) {
 
 
 // to pass ESlint
-
-window.showOptions = showOptions;
 window.confirmSelection = confirmSelection;

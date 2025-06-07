@@ -113,7 +113,6 @@ body {
   }
   
   /* Type 1 Buttons: Skip & Confirm */
-  .skip-btn,
   .confirm-btn {
     background-color: #4b543b;
     color: #f3f4e4;
@@ -158,6 +157,7 @@ body {
     width: 140px;
     text-align: center;
     transition: background-color 0.3s ease;
+    margin: 1rem; 
   }
   
   .option-btn:hover {
@@ -169,7 +169,19 @@ body {
     background-color: #dce2aa;
     color: #4b543b;
   }
+  #cuisine-grid {
+    /* turn it into a responsive grid that auto–fits */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
   
+    /* the first value = row gap, second = column gap */
+    gap: 2rem 2.5rem;
+  
+    /* keep the whole block centred in its section */
+    max-width: 600px;          /* tweak as you like */
+    margin: 0 auto 3rem auto;  /* centers horizontally, adds space below */
+    justify-items: center;     /* centre each button inside its cell */
+  }
   /* Distance, Price, and Rating Inputs */
   input[type="number"],
   input[type="text"] {
@@ -190,6 +202,44 @@ body {
   /* Fade-in animation for filter options */
   .filter-options {
     animation: fadeIn 0.4s ease-in-out;
+  }
+
+  .price-options {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .price-btn {
+    width: 80px;
+    height: 80px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .star-rating {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-bottom: 2rem;
+  }
+  
+  .star {
+    width: 80px;
+    height: 80px;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: transform 0.2s, opacity 0.2s;
+  }
+  
+  .star.selected {
+    opacity: 1;
+    transform: scale(1.1);
   }
 
   @keyframes fadeIn {
@@ -214,6 +264,9 @@ body {
       display: flex;
       flex-direction: column;
       align-items: center;
+    }
+    .filter-container {
+      width: 100%;
     }
 
     .progress-bar {
@@ -275,5 +328,29 @@ body {
       width: 100%;
       max-width: 250px;
     }
+
+    .price-options {
+      flex-direction: column;
+      align-items: center;
+      gap: 0;
+      max-width: 200px;
+      margin: 0 auto 2rem auto;
+    }
+    
+    .price-btn {
+      width: 80px;
+      height: 80px;
+      font-size: 1.6rem;
+    }
+
+    .star {
+      width: 32px;
+      height: 32px;
+    }
+  
+    .star.selected {
+      transform: scale(1.05);
+    }
+
   }
   

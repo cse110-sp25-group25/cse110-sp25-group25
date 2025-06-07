@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: collection.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: collection.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>window.addEventListener('DOMContentLoaded', init);
+
+const MOBILE_HIDER = document.createElement('style');
+MOBILE_HIDER.innerHTML = `.hidden { display: none !important; }`;
+document.head.appendChild(MOBILE_HIDER);
+
+function init() {
+
+    const deckList = document.querySelector(".deck-list");
+    const clearBtn = document.querySelector('.clear-deck-btn');
+    const cuisineFilter = document.getElementById('cuisine-filter');
+    const ratingsFilter = document.getElementById('ratings-filter');
+    const distanceFilter = document.getElementById('distance-filter');
+    const savedRestaurants = JSON.parse(localStorage.getItem('deck')) || [];
+
+    // back button for mobile view
+    const backBtnContainer = document.getElementById("back-button-container");
+    backBtnContainer.classList.add('hidden');
+    
+    // left view card div
+    const deckBody = document.getElementById('left-body');
+
+    const isMobile = window.matchMedia("(max-width: 600px)").matches;
+    if (isMobile) {
+      deckBody.classList.add('hidden');
+    }
+
+    // render resturant cards if they exist
+    if(savedRestaurants.length === 0) {
+        renderDeck([], deckList);
+    } else{
+        buildCuisineFilter(savedRestaurants, cuisineFilter); // populate filter
+    }
+
+    // make the clear button functionality
+    clearBtn.addEventListener('click', () => {
+        localStorage.removeItem('deck');
+        localStorage.removeItem('viewed');
+        renderDeck([], deckList);
+    });
+
+    const filters = {
+        cuisine: 'all',
+        ratingMax: 'all',
+        distanceMax: 'all'
+    };
+
+    cuisineFilter.addEventListener('change', ({ target }) => {
+        filters.cuisine = target.value.toLowerCase();
+        applyFilters(filters, savedRestaurants, deckList);
+    });
+
+    ratingsFilter.addEventListener('change', ({ target }) => {
+        filters.ratingMax = target.value;   // leave as string, parse in applyFilters
+        applyFilters(filters, savedRestaurants, deckList);
+    });
+
+    distanceFilter.addEventListener('change', ({ target }) => {
+        filters.distanceMax = target.value;
+        applyFilters(filters, savedRestaurants, deckList);
+    });
+
+    applyFilters(filters, savedRestaurants, deckList);
+
+
+    // functionality when clicking on left view card on screen
+    deckBody.addEventListener('click', () => {
+      if (deckBody.dataset.side == "back") {
+        // show the frontside of the card
+        handleCardClick(deckBody._r);
+        return;
+      }
+      if (deckBody.dataset.side == "front"){
+        // show the backside of the card
+        deckBody.dataset.side = "back";
+        const menuImages = [
+          deckBody.dataset.photo1src,
+          deckBody.dataset.photo2src,
+          deckBody.dataset.photo3src
+        ];
+        deckBody.innerHTML=`
+        &lt;div class="collection-card-back">                
+        &lt;div class="card-details">
+          &lt;h2>${deckBody.dataset.name}&lt;/h2>
+          &lt;p>
+            &lt;img src="assets/location-icon.png" alt="Location" class="icon-img">
+            ${deckBody.dataset.location}
+          &lt;/p>
+          &lt;p>
+            &lt;img src="assets/time-icon.png" alt="Hours" class="icon-img">
+            ${deckBody.dataset.hours}
+          &lt;/p>
+          &lt;p>
+            &lt;img src="assets/phone-icon.png" alt="Phone" class="icon-img">
+            ${deckBody.dataset.phone}
+          &lt;/p>
+          &lt;div class="menu-images">
+            ${(menuImages || []).map(src => `&lt;img src="${src}" alt="food">`).join('')}
+          &lt;/div>
+          &lt;a href="#" class="view-menu">View Menu ↗&lt;/a>
+        &lt;/div>
+      &lt;/div>`
+      }
+    });
+}
+
+
+/**
+ * buildCuisineFilter
+ * ------------------
+ * Given an array of saved restaurant objects, extracts the distinct
+ * `cuisine` values and appends them as &lt;option> elements to the 'cuisine' filter
+ *
+ * @param {Array&lt;{cuisine: string }>} savedRestaurants  Array of restaurant
+ *        objects; each may carry a `cuisine` string (e.g. "Italian").
+ * @param {HTMLSelectElement}          filterSelect       The &lt;select> element
+ *        that will receive the dynamically-created &lt;option> children.
+ *
+ * @returns {void}  (options are added in-place; nothing is returned)
+ */
+function buildCuisineFilter(savedResturants, filterSelect) {
+    const cuisines = [...new Set(
+        savedResturants.map(r => r.cuisine)
+            .filter(Boolean)
+        )];
+
+    cuisines.forEach(c => {
+      const opt = document.createElement('option');
+      opt.value = c.toLowerCase();
+      opt.textContent = c;
+      filterSelect.appendChild(opt);
+    });
+  }
+
+
+/**
+ * Filters the saved restaurants based on selected criteria and updates the displayed deck.
+ *
+ * @param {Object} filters - The filter criteria.
+ * @param {string} filters.cuisine - The cuisine to filter by ('all' for no filter).
+ * @param {string} filters.ratingMax - The maximum rating to include ('all' for no filter).
+ * @param {string} filters.distanceMax - The maximum distance to include ('all' for no filter).
+ * @param {Array&lt;Object>} savedRestaurants - The array of restaurant objects to filter.
+ *   Each restaurant object is expected to have at least the following properties:
+ *   - {string} cuisine - The cuisine type.
+ *   - {string|number} rating - The restaurant rating.
+ *   - {string|number} distance - The restaurant distance.
+ * @param {HTMLElement} deckList - The DOM element where filtered restaurant cards will be rendered.
+ */
+function applyFilters(filters, savedRestaurants, deckList) {
+  const subset = savedRestaurants.filter(r => {
+    // Cuisine
+    const cuisineOk =
+      filters.cuisine === 'all' ||
+      (r.cuisine || '').toLowerCase() === filters.cuisine;
+
+    // Rating ≤ selected
+    const ratingOk =
+      filters.ratingMax === 'all' ||
+      (parseFloat(r.rating) || 0) &lt;= parseFloat(filters.ratingMax);
+
+    // Distance ≤ selected
+    const distanceOk =
+      filters.distanceMax === 'all' ||
+      (parseFloat(r.distance) || 0) &lt;= parseFloat(filters.distanceMax);
+
+    // Only keep restaurants that satisfy all filters
+    return cuisineOk &amp;&amp; ratingOk &amp;&amp; distanceOk;
+  });
+
+  renderDeck(subset, deckList);
+}
+
+/**
+ * renderDeck
+ * ----------
+ * Renders the current "deck" of restaurant cards into a container element.
+ * The function:
+ *   • Clears any existing cards inside `deckList`.  
+ *   • If `subset` is empty → shows an "empty-state" message and hides the
+ *     "Clear Deck" button.  
+ *   • Otherwise, for each restaurant object it builds a card (`div`) with
+ *     name, image, rating, distance, and cuisine tags, wires a click-handler
+ *     (`handleCardClick`) that drives the left-side detail panel, and
+ *     appends the card to `deckList`.  Finally, it makes the "Clear Deck"
+ *     button visible.
+ *
+ * 
+ * @param {Array} subset            Restaurants to render.
+ * @param {HTMLElement} deckList    Container that receives the generated cards.
+ * @returns {void}                  (DOM is updated in place; no return value)
+ */
+function renderDeck(subset, deckList) {
+    deckList.innerHTML = ''
+    if(!subset || subset.length == 0) {
+      deckList.innerHTML ='&lt;p class="empty-state" role="status">You haven\'t saved any restaurants yet. Swipe right on the main page to add some.&lt;/p>';
+      document.querySelector('.clear-deck-btn').style.display = "none";
+      return;
+    }
+
+    subset.forEach(r => {
+        const div = document.createElement("div");
+        // div.className = "collection-card-front";
+        div.innerHTML=`
+              &lt;div class="collection-card-front">
+                &lt;h2>${r["name"]}&lt;/h2>
+                &lt;img
+                  src=${r["image"]}
+                  alt="restaurant"
+                  class="card-img"
+                />
+                &lt;div class="details">
+                  &lt;img src="assets/dark-star-icon.png" alt="star icon" class="emoji"/>
+                  &lt;span class="rating"> ${r["rating"]} &lt;/span>
+                  &lt;span>&lt;/span>
+                  &lt;img src="assets/location-icon.png" alt="star icon" class="emoji"/>
+                  &lt;span class="distance">${r["distance"]} mi&lt;/span>
+                &lt;/div>
+                &lt;div class="tags">
+                  &lt;span class="tag">${r["cuisine"]}&lt;/span>
+                &lt;/div>
+              &lt;/div>`;
+        div.addEventListener('click', () => handleCardClick(r));
+
+        deckList.appendChild(div);
+        document.querySelector('.clear-deck-btn').style.display = "flex";
+    });
+  }
+
+
+/**
+ * Handles the event when a restaurant card is clicked.
+ * Updates the detail view on the left panel with information about the selected restaurant.
+ *
+ * @param {Object} r - The restaurant object containing details to display.
+ * @param {string} r.name - The name of the restaurant.
+ * @param {string} r.cuisine - The type of cuisine the restaurant offers.
+ * @param {string} [r.description] - The description of the restaurant.
+ */
+function handleCardClick(r) {
+  const deckBody = document.getElementById('left-body');
+  deckBody._r = r;
+  deckBody.dataset.side = "front";
+  deckBody.dataset.name = r.name;
+  deckBody.dataset.hours = r.hours;
+  deckBody.dataset.phone = r.phone;
+  deckBody.dataset.location = r.location;
+  deckBody.dataset.website = r.website ?? "";
+  deckBody.dataset.photo1src = r.menuImages[0];
+  deckBody.dataset.photo2src = r.menuImages[1];
+  deckBody.dataset.photo3src = r.menuImages[2];
+
+  const isMobile = window.matchMedia("(max-width: 600px)").matches;
+  if (isMobile){
+    // remove card area if in mobile view
+    deckBody.classList.remove('hidden');
+    const cardArea = document.querySelector('.card-area');
+    cardArea.classList.add('hidden');
+ 
+    // go back button
+    const backBtnContainer = document.getElementById("back-button-container");
+    backBtnContainer.innerHTML = `
+    &lt;button id="back-button" class="back-button">
+      &lt;span class="back-button-arrow">←&lt;/span>
+      &lt;span class="back-button-text"> Return to Collection&lt;/span>
+    &lt;/button>`;
+    backBtnContainer.classList.remove('hidden');
+
+    backBtnContainer.addEventListener('click', () => {
+      // hide 
+      deckBody.classList.add('hidden');
+      backBtnContainer.classList.add('hidden');
+      cardArea.classList.remove('hidden');
+    });
+  }
+  
+  deckBody.innerHTML = `
+    &lt;article class="detail-card">
+      &lt;h3>${r.name}&lt;/h3>
+      &lt;img src=${r["image"]} alt="restaurant" class="card-img"/>
+      &lt;div class="details">
+        &lt;img src="assets/dark-star-icon.png" alt="star icon" class="emoji"/>
+        &lt;span class="rating"> ${r["rating"]} &lt;/span>
+        &lt;span>&lt;/span>
+        &lt;img src="assets/location-icon.png" alt="star icon" class="emoji"/>
+        &lt;span class="distance">${r["distance"]} mi&lt;/span>
+      &lt;/div>
+      &lt;div class="tags">
+        &lt;span class="tag">${r.cuisine}&lt;/span>
+        &lt;span class="tag">cuisine&lt;/span>
+        &lt;span class="tag">+2&lt;/span>
+      &lt;/div>
+      &lt;p>${r.description ?? ''}&lt;/p>
+    &lt;/article>
+  `;
+}</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#applyFilters">applyFilters</a></li><li><a href="global.html#buildCuisineFilter">buildCuisineFilter</a></li><li><a href="global.html#checkIfAllSwiped">checkIfAllSwiped</a></li><li><a href="global.html#clearAllViewedAndReturnData">clearAllViewedAndReturnData</a></li><li><a href="global.html#confirmAndChangeSelection">confirmAndChangeSelection</a></li><li><a href="global.html#confirmSelection">confirmSelection</a></li><li><a href="global.html#createReviewElement">createReviewElement</a></li><li><a href="global.html#finalise">finalise</a></li><li><a href="global.html#getRejectedData">getRejectedData</a></li><li><a href="global.html#getUniqueCuisines">getUniqueCuisines</a></li><li><a href="global.html#handleCardClick">handleCardClick</a></li><li><a href="global.html#handleViewedCard">handleViewedCard</a></li><li><a href="global.html#removeViewed">removeViewed</a></li><li><a href="global.html#renderDeck">renderDeck</a></li><li><a href="global.html#renderRestaurant">renderRestaurant</a></li><li><a href="global.html#resetCard">resetCard</a></li><li><a href="global.html#saveToDeck">saveToDeck</a></li><li><a href="global.html#setupButtons">setupButtons</a></li><li><a href="global.html#setupFlipping">setupFlipping</a></li><li><a href="global.html#showOptions">showOptions</a></li><li><a href="global.html#shuffleArray">shuffleArray</a></li><li><a href="global.html#updateProgressBar">updateProgressBar</a></li><li><a href="global.html#validatePositiveNumber">validatePositiveNumber</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.4</a> on Sat Jun 07 2025 20:07:38 GMT+0000 (Coordinated Universal Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>
