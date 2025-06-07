@@ -194,8 +194,82 @@ nav ul {
    border: none;
 }
 
+/* landing page instructions */
 
+#instructions {
+  background-color: #b4d2ba;
+  padding: 4rem 4rem 8rem 4rem;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+}
 
+#instructions h1 {
+  font-size: 3rem;
+  color: #4b543b;
+  font-family: 'Permanent Marker', cursive;
+  font-weight: 200;
+  margin-bottom: 2em;
+}
+
+#instruction-container {
+  display: flex;
+}
+
+.instruction-step {
+  background-color: #f3f4e4;
+  position: relative;
+  margin: 1rem;
+  padding: 2em;
+  border-radius: 20px;
+}
+
+.instruction-step h1 {
+  background-color: #f3f4e4;
+  height: 2em;
+  width: 2em;
+  line-height: 2em;
+  border-radius: 50%;
+  border: 0.2em solid #b4d2ba;
+  position: absolute;
+  top: -1.5em;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.instruction-step button {
+  width: fit-content;
+  padding: 1em 2em;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 10px;
+  position: absolute;
+  bottom: -1em;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+/* landing instructions desktop */
+@media (min-width:961px) {
+  #instruction-container {
+    flex-direction: row;
+  }
+}
+
+/* landing instructions mobile/splitscreen */
+@media (max-width:960px) {
+  #instruction-container {
+    flex-direction: column;
+  }
+  
+  .instruction-step {
+    margin-bottom: 4em;
+  }
+}
+
+/* swipe reviews */
 
  #left-review-container {
    margin: 0 1rem; /* or padding */
@@ -323,6 +397,21 @@ nav ul {
    margin: 0 auto;
    margin-top: 2rem;
    padding: 40px 0;
+}
+
+
+/* filters progress bar styles */
+
+.step {
+  cursor: pointer;
+}
+
+.step:hover .step-text {
+  filter: brightness(60%);
+}
+
+.step:hover .step-line {
+  filter: brightness(60%);
 }
 
 /* — Swipe Header — */
@@ -559,6 +648,55 @@ nav ul {
    width: 64px;                 /* size your arrow images */
    height: auto;
  }
+
+ .emoji {
+   height: 20px;
+   width: 20px;
+   margin-top: 0.2rem;
+}
+
+
+/* ----------------------------------------------------------
+   End of swiping buttons and end screen
+   ---------------------------------------------------------- */
+
+.end-screen h2{
+  text-align: center;
+}
+
+.end-screen .buttons-div{
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#view-rejected-btn,
+#full-reset-btn {
+  /* Use a clean, legible sans-serif */
+  font-family: "Segoe UI", Roboto, sans-serif;
+  font-size: 1rem;               /* ~16px text */
+  font-weight: 500;
+  color: #4a4a38;
+
+  /* Generous padding for a “pill” shape */
+  padding: 0.75rem 1.5rem;       /* 12px top/bottom, 24px left/right */
+  border: 2px solid transparent;/* we’ll override per button below */
+  border-radius: 999px;          /* fully rounded edges */
+  background-color: #b4d2ba;
+
+  cursor: pointer;
+  border: none;
+  margin: 0.5rem;                /* small gap between the two buttons */
+}
+
+#view-rejected-btn:focus,
+#full-reset-btn:focus {
+  border: none;
+  box-shadow: 0 0 0 3px rgba(74, 74, 56, 0.3);
+}
+/* ---------------------------------------------------------- */
+
  
   /* — Swipe Animations — */
  .restaurant-card.swipe-right {

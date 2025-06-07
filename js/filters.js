@@ -83,7 +83,6 @@ function finalise() {
  * @param {string} type - The type of filter to show options for ('cuisine', 'price', 'distance', 'rating')
  */
 function showOptions(type) {
-  document.querySelector('.filter-selection').classList.add('hidden');
   document.querySelectorAll('.filter-options').forEach(el => el.classList.add('hidden'));
   document.getElementById(`${type}-options`).classList.remove('hidden');
 
@@ -102,11 +101,11 @@ function showOptions(type) {
 
 document.addEventListener('DOMContentLoaded', async () => {
   const cuisineGrid = document.getElementById('cuisine-grid');
-  if (cuisineGrid) {
-    
-    cuisineGrid.innerHTML = '';
+  const starContainer = document.getElementById('star-container');
 
-    // Get all unique cuisines
+  // Load cuisines dynamically
+  if (cuisineGrid) {
+    cuisineGrid.innerHTML = '';
     const cuisines = await getUniqueCuisines();
     cuisines.forEach(cuisine => {
       const btn = document.createElement('button');
@@ -115,7 +114,26 @@ document.addEventListener('DOMContentLoaded', async () => {
       btn.textContent = cuisine;
       cuisineGrid.appendChild(btn);
     });
+  }
 
+    showOptions('cuisine')
+  // Load stars dynamically
+  if (starContainer) {
+    for (let i = 1; i <= 5; i++) {
+      const star = document.createElement('img');
+      star.src = 'assets/star-icon.png';
+      star.alt = `${i} star`;
+      star.classList.add('star');
+      star.dataset.value = i;
+      star.addEventListener('click', () => {
+        document.querySelectorAll('.star').forEach(s => s.classList.remove('selected'));
+        for (let j = 0; j < i; j++) {
+          document.querySelectorAll('.star')[j].classList.add('selected');
+        }
+        userSelections.rating = i;
+      });
+      starContainer.appendChild(star);
+    }
   }
   
   // Set up event listeners for filter buttons
@@ -129,12 +147,6 @@ document.querySelectorAll('.option-btn').forEach(btn => {
       siblings.forEach(b => b.classList.remove('selected'));
       btn.classList.add('selected');
     }
-  });
-  const skipAll = document.getElementById('skip-btn');
-
-  skipAll.addEventListener('click', () => {
-    // leave defaults (every filter empty/null)
-    window.location.href = 'swipe.html';  
   });
 });
 
@@ -151,6 +163,16 @@ document.querySelectorAll('.option-btn').forEach(btn => {
  * @return {void}
  * */
 function confirmSelection(type) {
+  confirmAndChangeSelection(type, null);
+}
+
+/**
+ * Confirms the user's selection, updates the userSelections object, and redirects the user to a specified filter.
+ * @param {string} type - The type of filter being confirmed (e.g., 'cuisine', 'price', 'distance', 'rating').
+ * @param {string} newType - The next filter to show (if using navigation)
+ * @return {void}
+ * */
+function confirmAndChangeSelection(type, newType) {
   if (type === 'cuisine') {
     const selected = document.querySelectorAll('#cuisine-options .option-btn.selected');
     if (selected === '') {                       // user left it blank  ⇒  skip
@@ -187,29 +209,41 @@ function confirmSelection(type) {
   
   //need to check how rating works (logic currently PLACEHOLDER)
   if (type === 'rating') {
-    const val = document.getElementById('rating-input').value;
-    if (validatePositiveNumber(val) && val >= 0 && val <= 5) {
-      userSelections.rating = parseFloat(val);
-    } else if (val === '') { // user left it blank  ⇒  skip
+    const selectedStars = document.querySelectorAll('.star.selected');
+    if (selectedStars.length === 0) {
       userSelections.rating = null;
-    }
-    else {
-      alert('Please enter a valid rating (0–5).');
-      return;
+    } else {
+      userSelections.rating = selectedStars.length;
     }
   }
 
   localStorage.setItem('userSelections', JSON.stringify(userSelections));
 
-  if (editMode) {
-    finalise();          // one-shot edit → exit
-  } else {
-    nextStep();          // continue to next question
+  if (newType == null) {
+    if (editMode) {
+      finalise();          // one-shot edit → exit
+    } else {
+      nextStep();          // continue to next question
+    }
   }
+  else {
+    showOptions(newType);
+  }
+
   //REMOVE LATER (just for testing)
   console.log('Current Selections:', userSelections);
   alert(`Saved ${type} selection!`);
 }
+
+
+//Set up event listeners for progress bar steps
+document.querySelectorAll('.step').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const oldType = STEPS[current];
+    const newType = btn.getAttribute('data-step');
+    confirmAndChangeSelection(oldType, newType);
+  });
+});
 
 
 // function to check positive/numeric input
@@ -225,6 +259,4 @@ function validatePositiveNumber(value) {
 
 
 // to pass ESlint
-
-window.showOptions = showOptions;
 window.confirmSelection = confirmSelection;

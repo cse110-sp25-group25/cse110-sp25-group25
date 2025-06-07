@@ -1,4 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: collection.js</title>
 
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: collection.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>
 window.addEventListener('DOMContentLoaded', init);
 
 const MOBILE_HIDER = document.createElement('style');
@@ -80,27 +108,27 @@ function init() {
           deckBody.dataset.photo3src
         ];
         deckBody.innerHTML=`
-        <div class="collection-card-back">                
-        <div class="card-details">
-          <h2>${deckBody.dataset.name}</h2>
-          <p>
-            <img src="assets/location-icon.png" alt="Location" class="icon-img">
-            <a href="#">Undefined</a>
-          </p>
-          <p>
-            <img src="assets/time-icon.png" alt="Hours" class="icon-img">
+        &lt;div class="collection-card-back">                
+        &lt;div class="card-details">
+          &lt;h2>${deckBody.dataset.name}&lt;/h2>
+          &lt;p>
+            &lt;img src="assets/location-icon.png" alt="Location" class="icon-img">
+            &lt;a href="#">Undefined&lt;/a>
+          &lt;/p>
+          &lt;p>
+            &lt;img src="assets/time-icon.png" alt="Hours" class="icon-img">
             ${deckBody.dataset.hours}
-          </p>
-          <p>
-            <img src="assets/phone-icon.png" alt="Phone" class="icon-img">
+          &lt;/p>
+          &lt;p>
+            &lt;img src="assets/phone-icon.png" alt="Phone" class="icon-img">
             ${deckBody.dataset.phone}
-          </p>
-          <div class="menu-images">
-            ${(menuImages || []).map(src => `<img src="${src}" alt="food">`).join('')}
-          </div>
-          <a href="#" class="view-menu">View Menu ↗</a>
-        </div>
-      </div>`
+          &lt;/p>
+          &lt;div class="menu-images">
+            ${(menuImages || []).map(src => `&lt;img src="${src}" alt="food">`).join('')}
+          &lt;/div>
+          &lt;a href="#" class="view-menu">View Menu ↗&lt;/a>
+        &lt;/div>
+      &lt;/div>`
       }
     });
 }
@@ -110,12 +138,12 @@ function init() {
  * buildCuisineFilter
  * ------------------
  * Given an array of saved restaurant objects, extracts the distinct
- * `cuisine` values and appends them as <option> elements to the 'cuisine' filter
+ * `cuisine` values and appends them as &lt;option> elements to the 'cuisine' filter
  *
- * @param {Array<{cuisine: string }>} savedRestaurants  Array of restaurant
+ * @param {Array&lt;{cuisine: string }>} savedRestaurants  Array of restaurant
  *        objects; each may carry a `cuisine` string (e.g. "Italian").
- * @param {HTMLSelectElement}          filterSelect       The <select> element
- *        that will receive the dynamically-created <option> children.
+ * @param {HTMLSelectElement}          filterSelect       The &lt;select> element
+ *        that will receive the dynamically-created &lt;option> children.
  *
  * @returns {void}  (options are added in-place; nothing is returned)
  */
@@ -141,7 +169,7 @@ function buildCuisineFilter(savedResturants, filterSelect) {
  * @param {string} filters.cuisine - The cuisine to filter by ('all' for no filter).
  * @param {string} filters.ratingMax - The maximum rating to include ('all' for no filter).
  * @param {string} filters.distanceMax - The maximum distance to include ('all' for no filter).
- * @param {Array<Object>} savedRestaurants - The array of restaurant objects to filter.
+ * @param {Array&lt;Object>} savedRestaurants - The array of restaurant objects to filter.
  *   Each restaurant object is expected to have at least the following properties:
  *   - {string} cuisine - The cuisine type.
  *   - {string|number} rating - The restaurant rating.
@@ -158,15 +186,15 @@ function applyFilters(filters, savedRestaurants, deckList) {
     // Rating ≤ selected
     const ratingOk =
       filters.ratingMax === 'all' ||
-      (parseFloat(r.rating) || 0) <= parseFloat(filters.ratingMax);
+      (parseFloat(r.rating) || 0) &lt;= parseFloat(filters.ratingMax);
 
     // Distance ≤ selected
     const distanceOk =
       filters.distanceMax === 'all' ||
-      (parseFloat(r.distance) || 0) <= parseFloat(filters.distanceMax);
+      (parseFloat(r.distance) || 0) &lt;= parseFloat(filters.distanceMax);
 
     // Only keep restaurants that satisfy all filters
-    return cuisineOk && ratingOk && distanceOk;
+    return cuisineOk &amp;&amp; ratingOk &amp;&amp; distanceOk;
   });
 
   renderDeck(subset, deckList);
@@ -194,7 +222,7 @@ function applyFilters(filters, savedRestaurants, deckList) {
 function renderDeck(subset, deckList) {
     deckList.innerHTML = ''
     if(!subset || subset.length == 0) {
-      deckList.innerHTML ='<p class="empty-state" role="status">You haven\'t saved any restaurants yet. Swipe right on the main page to add some.</p>';
+      deckList.innerHTML ='&lt;p class="empty-state" role="status">You haven\'t saved any restaurants yet. Swipe right on the main page to add some.&lt;/p>';
       document.querySelector('.clear-deck-btn').style.display = "none";
       return;
     }
@@ -203,26 +231,26 @@ function renderDeck(subset, deckList) {
         const div = document.createElement("div");
         // div.className = "collection-card-front";
         div.innerHTML=`
-              <div class="collection-card-front">
-                <h2>${r["name"]}</h2>
-                <img
-                  src=${r["image"]}
+              &lt;div class="collection-card-front">
+                &lt;h2>${r["name"]}&lt;/h2>
+                &lt;img
+                  src="assets/restaurant.jpg"
                   alt="restaurant"
                   class="card-img"
                 />
-                <div class="details">
-                  <img src="assets/dark-star-icon.png" alt="star icon" class="emoji"/>
-                  <span class="rating"> ${r["rating"]} </span>
-                  <span></span>
-                  <img src="assets/location-icon.png" alt="star icon" class="emoji"/>
-                  <span class="distance">${r["distance"]} mi</span>
-                </div>
-                <div class="tags">
-                  <span class="tag">${r["cuisine"]}</span>
-                  <span class="tag">cuisine</span>
-                  <span class="tag">+2</span>
-                </div>
-              </div>`;
+                &lt;div class="details">
+                  &lt;img src="assets/dark-star-icon.png" alt="star icon" class="emoji"/>
+                  &lt;span class="rating"> ${r["rating"]} &lt;/span>
+                  &lt;span>&lt;/span>
+                  &lt;img src="assets/location-icon.png" alt="star icon" class="emoji"/>
+                  &lt;span class="distance">${r["distance"]} mi&lt;/span>
+                &lt;/div>
+                &lt;div class="tags">
+                  &lt;span class="tag">${r["cuisine"]}&lt;/span>
+                  &lt;span class="tag">cuisine&lt;/span>
+                  &lt;span class="tag">+2&lt;/span>
+                &lt;/div>
+              &lt;/div>`;
         div.addEventListener('click', () => handleCardClick(r));
 
         deckList.appendChild(div);
@@ -262,10 +290,10 @@ function handleCardClick(r) {
     // go back button
     const backBtnContainer = document.getElementById("back-button-container");
     backBtnContainer.innerHTML = `
-    <button id="back-button" class="back-button">
-      <span class="back-button-arrow">←</span>
-      <span class="back-button-text"> Return to Collection</span>
-    </button>`;
+    &lt;button id="back-button" class="back-button">
+      &lt;span class="back-button-arrow">←&lt;/span>
+      &lt;span class="back-button-text"> Return to Collection&lt;/span>
+    &lt;/button>`;
     backBtnContainer.classList.remove('hidden');
 
     backBtnContainer.addEventListener('click', () => {
@@ -277,22 +305,44 @@ function handleCardClick(r) {
   }
   
   deckBody.innerHTML = `
-    <article class="detail-card">
-      <h3>${r.name}</h3>
-      <img src=${r["image"]} alt="restaurant" class="card-img"/>
-      <div class="details">
-        <img src="assets/dark-star-icon.png" alt="star icon" class="emoji"/>
-        <span class="rating"> ${r["rating"]} </span>
-        <span></span>
-        <img src="assets/location-icon.png" alt="star icon" class="emoji"/>
-        <span class="distance">${r["distance"]} mi</span>
-      </div>
-      <div class="tags">
-        <span class="tag">${r.cuisine}</span>
-        <span class="tag">cuisine</span>
-        <span class="tag">+2</span>
-      </div>
-      <p>${r.description ?? ''}</p>
-    </article>
+    &lt;article class="detail-card">
+      &lt;h3>${r.name}&lt;/h3>
+      &lt;img src="assets/restaurant.jpg" alt="restaurant" class="card-img"/>
+      &lt;div class="details">
+        &lt;img src="assets/dark-star-icon.png" alt="star icon" class="emoji"/>
+        &lt;span class="rating"> ${r["rating"]} &lt;/span>
+        &lt;span>&lt;/span>
+        &lt;img src="assets/location-icon.png" alt="star icon" class="emoji"/>
+        &lt;span class="distance">${r["distance"]} mi&lt;/span>
+      &lt;/div>
+      &lt;div class="tags">
+        &lt;span class="tag">${r.cuisine}&lt;/span>
+        &lt;span class="tag">cuisine&lt;/span>
+        &lt;span class="tag">+2&lt;/span>
+      &lt;/div>
+      &lt;p>${r.description ?? ''}&lt;/p>
+    &lt;/article>
   `;
-}
+}</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#applyFilters">applyFilters</a></li><li><a href="global.html#buildCuisineFilter">buildCuisineFilter</a></li><li><a href="global.html#checkIfAllSwiped">checkIfAllSwiped</a></li><li><a href="global.html#clearAllViewedAndReturnData">clearAllViewedAndReturnData</a></li><li><a href="global.html#confirmAndChangeSelection">confirmAndChangeSelection</a></li><li><a href="global.html#confirmSelection">confirmSelection</a></li><li><a href="global.html#createReviewElement">createReviewElement</a></li><li><a href="global.html#finalise">finalise</a></li><li><a href="global.html#getRejectedData">getRejectedData</a></li><li><a href="global.html#getUniqueCuisines">getUniqueCuisines</a></li><li><a href="global.html#handleCardClick">handleCardClick</a></li><li><a href="global.html#handleViewedCard">handleViewedCard</a></li><li><a href="global.html#removeViewed">removeViewed</a></li><li><a href="global.html#renderDeck">renderDeck</a></li><li><a href="global.html#renderRestaurant">renderRestaurant</a></li><li><a href="global.html#resetCard">resetCard</a></li><li><a href="global.html#saveToDeck">saveToDeck</a></li><li><a href="global.html#setupButtons">setupButtons</a></li><li><a href="global.html#setupFlipping">setupFlipping</a></li><li><a href="global.html#showOptions">showOptions</a></li><li><a href="global.html#updateProgressBar">updateProgressBar</a></li><li><a href="global.html#validatePositiveNumber">validatePositiveNumber</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.4</a> on Sat Jun 07 2025 01:01:14 GMT+0000 (Coordinated Universal Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>
