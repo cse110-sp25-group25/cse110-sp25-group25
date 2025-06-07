@@ -136,7 +136,7 @@ body {
     font-weight: 200;
  }
  
- 
+
  .hero p {
     margin-bottom: 30px;
     color: #4b543b;
@@ -197,13 +197,54 @@ body {
     margin-top: 3rem;
  
  
+    width: 320px;
+    height: 460px;
+    overflow: hidden;
+    
     border: 1px solid #aaa;
     padding: 20px;
     border-radius: 12px;
+    perspective: 1000px;
  }
  
+ .example-inner-card {
+   position: relative;
+   width: 100%;
+   height: 100%;
+   text-align: center;
+   transition: transform 0.6s;
+   transform-style: preserve-3d;
+   
+ }
+
+.feature-card:hover .example-inner-card {
+  transform: rotateY(180deg);
+}
+
+.example-card-front, .example-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.example-card-front {
+  color: black;
+}
+
+.example-card-back {
+  background-color: white;
+  color: black;
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 0.25rem;
+}
  
- .feature-card h2 {
+ .card-title {
     margin-top: 0;
     font-weight: normal;
     color: #3a3f2c;
@@ -296,59 +337,68 @@ body {
     padding: 40px 0;
  }
  
-   @media (max-width: 550px) {
-      .main-grid {
-         position: relative;
-         display: flex;
-         flex-direction: column;
-         align-items: center;
-         padding: 20px;
-         margin-top: -4rem;
-      }
  
-      .hero {
-         align-items: center;
-         flex-direction: column;
-      }
-   
-      .hero h1 {
-         align-items: center;
-         text-align: center;
-         flex-direction: column;
-         font-size: 2rem;
-         line-height: 1.5;
-      }
+ /* mobile landing page */
+   @media (max-width: 550px) {
+    .main-grid {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+ 
+ 
+    .hero {
+        align-items: center;
+        flex-direction: column;
+    }
+ 
+ 
+    .hero h1 {
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        font-size: 2rem;
+        line-height: 1.5;
+        margin-top: -4rem;
+        margin-bottom: 18rem;
+    }
 
-      .hero p {
-         text-align: center;
-         flex-direction: column;
-         font-size: 1.2rem;
-         line-height: 1.5;
-      }
-   
-      .hero-buttons {
-         align-items: center;
-      }
-   
-      .feature-card {
-         border: 1px solid #aaa;
-         padding: 10px;
-         border-radius: 12px;
-         transform: scale(90%);
-         margin-top: -4rem;
-   
-         position: relative;
-         align-self: center;
-         width: 300px;
-      }
-   
-      .card-image {
-         width: 70%;
-         height: 200px;
-      }
-   }
-
-
+   .hero p {
+        text-align: center;
+        flex-direction: column;
+        font-size: 1.2rem;
+        line-height: 1.5;
+        max-width: 250px;
+    }
+ 
+    .hero-buttons {
+        align-items: center;
+    }
+ 
+ 
+    .feature-card {
+        border: 1px solid #aaa;
+        padding: 10px;
+        border-radius: 12px;
+        transform: scale(50%);
+        
+        margin-top: 0.5rem;
+        position: absolute;
+        align-self: center;
+        width: 300px;
+        height: 400px;
+    }
+ 
+ 
+    .card-image {
+        width: 70%;
+        height: 200px;
+    }
+ 
+ 
+ } 
  
    /* — Restaurant Card — */
   .restaurant-card {
