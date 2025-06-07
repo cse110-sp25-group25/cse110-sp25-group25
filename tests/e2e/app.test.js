@@ -1,6 +1,6 @@
 /* global page */
 
-const BASE_URL = 'http://127.0.0.1:5500';
+const BASE_URL = 'http://127.0.0.1:3000';
 
 // Helper function to log steps
 const logStep = (step) => {
