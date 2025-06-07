@@ -206,7 +206,7 @@ function renderDeck(subset, deckList) {
               <div class="collection-card-front">
                 <h2>${r["name"]}</h2>
                 <img
-                  src="assets/restaurant.jpg"
+                  src=${r["image"]}
                   alt="restaurant"
                   class="card-img"
                 />
@@ -279,7 +279,7 @@ function handleCardClick(r) {
   deckBody.innerHTML = `
     <article class="detail-card">
       <h3>${r.name}</h3>
-      <img src="assets/restaurant.jpg" alt="restaurant" class="card-img"/>
+      <img src=${r["image"]} alt="restaurant" class="card-img"/>
       <div class="details">
         <img src="assets/dark-star-icon.png" alt="star icon" class="emoji"/>
         <span class="rating"> ${r["rating"]} </span>
