@@ -6,7 +6,6 @@ body {
    margin: 0;
  }
 
-
 /* Nav bar styles */
 header {
    padding: 10px 20px;
@@ -936,6 +935,7 @@ nav ul {
     display: block;
     margin: 3rem 0 0 0;
   }
+  
   .hero {
     align-items: center;
     text-align: center;

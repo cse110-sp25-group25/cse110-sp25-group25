@@ -1,3 +1,5 @@
+'use strict';
+
 window.addEventListener('DOMContentLoaded', init);
 
 const MOBILE_HIDER = document.createElement('style');
@@ -26,9 +28,9 @@ function init() {
     }
 
     // render resturant cards if they exist
-    if(savedRestaurants.length === 0) {
+    if (savedRestaurants.length === 0) {
         renderDeck([], deckList);
-    } else{
+    } else {
         buildCuisineFilter(savedRestaurants, cuisineFilter); // populate filter
     }
 
@@ -192,7 +194,7 @@ function applyFilters(filters, savedRestaurants, deckList) {
  */
 function renderDeck(subset, deckList) {
     deckList.innerHTML = ''
-    if(!subset || subset.length == 0) {
+    if (!subset || subset.length == 0) {
       deckList.innerHTML ='<p class="empty-state" role="status">You haven\'t saved any restaurants yet. Swipe right on the main page to add some.</p>';
       document.querySelector('.clear-deck-btn').style.display = "none";
       return;

@@ -1,6 +1,5 @@
+'use strict';
 // import {applyFilters, removeViewed} from './swipe.utils.js'
-
-
 // This script handles the swipe functionality for restaurant cards, including filtering, flipping, and saving to a deck.
 document.addEventListener('DOMContentLoaded', async () => {
   const clearBtn = document.getElementById('clear-filters-btn');
@@ -99,12 +98,12 @@ const all = JSON.parse(localStorage.getItem('restaurantData'));
 const saved = JSON.parse(localStorage.getItem('deck')) || [];
 
 const toAdd = all.find(r => r.id === id);
-if(!toAdd) {
+if (!toAdd) {
   return;
 }
 
 const exists = saved.some( r=> r.id === id);
-if(!exists) {
+if (!exists) {
     saved.push(toAdd);
     localStorage.setItem('deck', JSON.stringify(saved));
 }
