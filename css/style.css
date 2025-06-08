@@ -49,7 +49,7 @@ nav ul {
 
 
 /* desktop navbar */
-@media (min-width:551px) {
+@media (min-width:601px) {
    header {
        display: flex;
        justify-content: space-between;
@@ -85,7 +85,7 @@ nav ul {
 
 
 /* mobile navbar */
-@media (max-width:550px) {
+@media (max-width:600px) {
    header {
        overflow: hidden;
        padding: 0;
@@ -183,6 +183,7 @@ nav ul {
    background-color: #4b543b;
    color: white;
    border: none;
+   width: 100%;
 }
 
 
@@ -303,20 +304,67 @@ nav ul {
 .feature-card {
    flex: 1;
    max-width: 300px;
-   background-color: #ffffff;
+   background-color: #f3f4e4;
    flex-direction: column;
    align-items: center;
    text-align: center;
    margin-top: 3rem;
 
+   width: 320px;
+   height: 460px;
+   border: none;
 
-   border: 1px solid #aaa;
-   padding: 20px;
-   border-radius: 12px;
+   border-radius: 20px;
+   perspective: 1000px;
+   position: relative;
 }
 
+.example-inner-card {
+   position: relative;
+   width: 100%;
+   height: 100%;
+   text-align: center;
+   transition: transform 0.6s;
+   transform-style: preserve-3d;
+   border: 1px solid #aaa;
+   border-radius: 20px;
+}
 
-.feature-card h2 {
+.feature-card:hover .example-inner-card {
+   transform: rotateY(180deg);
+}
+
+.example-card-front, .example-card-back {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   -webkit-backface-visibility: hidden;
+   backface-visibility: hidden;
+}
+
+.example-card-front {
+   background-color: white;
+   color: black;
+   border-radius: 20px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin: auto;
+}
+
+.example-card-back {
+   background-color: white;
+   color: black;
+   transform: rotateY(180deg);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: auto;
+   border-radius: 20px;
+}
+
+.card-title {
    margin-top: 0;
    font-weight: normal;
    color: #3a3f2c;
@@ -409,6 +457,51 @@ nav ul {
    padding: 40px 0;
 }
 
+/* mobile landing page */
+@media (max-width: 600px) {
+  .main-grid {
+     position: relative;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding: 20px;
+     margin-top: -4rem;
+  }
+
+  .hero {
+     align-items: center;
+     flex-direction: column;
+  }
+
+  .hero h1 {
+     align-items: center;
+     text-align: center;
+     flex-direction: column;
+     font-size: 2rem;
+     line-height: 1.5;
+  }
+
+  .hero p {
+     text-align: center;
+     flex-direction: column;
+     font-size: 1.2rem;
+     line-height: 1.5;
+  }
+
+  .hero-buttons {
+     align-items: center;
+  }
+
+  .feature-card {
+     transform: scale(0.9);
+     margin-top: -4rem;
+  }
+
+  .card-image {
+     width: 70%;
+     height: 200px;
+  }
+}
 
 /* filters progress bar styles */
 
@@ -694,8 +787,6 @@ nav ul {
 .card-details p {
    text-align: left;
    width: 100%;
-   display: flex;
-   align-items: center;
    gap: 0.5rem;
    margin: 0.75rem 0;
 }
@@ -765,9 +856,15 @@ nav ul {
   align-items: center;
 }
 
-
+.feature-card-desktop {
+  display: block;
+}
+.mobile-card-wrapper {
+  display: none;
+}
+  
 /* Mobile reviews */
-@media (max-width: 550px) {
+@media (max-width: 600px) {
   .swipe-container {
     flex-direction: column;
     gap: 0;
@@ -776,8 +873,6 @@ nav ul {
 
   .card-buttons-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     gap: 1rem;
     width: 100%;
     order: 1;
@@ -819,5 +914,19 @@ nav ul {
   .reviews p {
     margin: 0.5rem 0;
     text-align: center;
+  }
+  
+  .feature-card-desktop {
+    display: none;
+  }
+
+  .mobile-card-wrapper {
+    display: block;
+    margin: 3rem 0 0 0;
+  }
+  .hero {
+    align-items: center;
+    text-align: center;
+    padding: 35px 20px; 
   }
 }
