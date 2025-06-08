@@ -1,3 +1,5 @@
+'use strict';
+
 // js/swipe.utils.js
 function applyFilters(data, filters) {
     return data.filter(r => {
