@@ -8,34 +8,38 @@ document.addEventListener('DOMContentLoaded', async () => {
     clearBtn.addEventListener('click', () => {
       localStorage.removeItem('userSelections');
       window.location.reload();
-  });
+    });
   }
-  const res = await fetch('data/restaurants.json');
-  let data = await res.json();
+
+  // Ensure restaurantData is always set in localStorage
+  let data = JSON.parse(localStorage.getItem('restaurantData'));
   if (!data) {
-      const res = await fetch('data/restaurants.json');
-      data = await res.json();
-      localStorage.setItem('restaurantData', JSON.stringify(data));
+    const res = await fetch('data/restaurants.json');
+    data = await res.json();
+    localStorage.setItem('restaurantData', JSON.stringify(data));
   }
 
-const filters = JSON.parse(localStorage.getItem('userSelections'));
-if (filters) {
+  // Now, always use a fresh copy from localStorage
+  data = JSON.parse(localStorage.getItem('restaurantData'));
+
+  const filters = JSON.parse(localStorage.getItem('userSelections'));
+  if (filters) {
     data = applyFilters(data, filters);
-}
+  }
 
-const viewed = JSON.parse(localStorage.getItem('viewed'));
-if (viewed) {
+  const viewed = JSON.parse(localStorage.getItem('viewed'));
+  if (viewed) {
     data = removeViewed(data, viewed);
-}
+  }
 
-if (!data || data.length === 0) {
+  if (!data || data.length === 0) {
     console.warn("no data, can't render");
     checkIfAllSwiped();
     return;
-}
-data = shuffleArray(data);
-renderRestaurant(data);
-setupButtons(data);
+  }
+  data = shuffleArray(data);
+  renderRestaurant(data);
+  setupButtons(data);
 });
 
 /**
@@ -365,12 +369,12 @@ function handleViewedCard(id) {
  * 
  * This function performs the following steps:
  * 1. Hides the card container and swipe buttons.
- * 2. Shows the end screen along with “View Rejected” and “Full Reset” buttons.
- * 3. Disables the “View Rejected” button if there are no rejected cards.
+ * 2. Shows the end screen along with "View Rejected" and "Full Reset" buttons.
+ * 3. Disables the "View Rejected" button if there are no rejected cards.
  * 4. Attaches click handlers:
- *    - “View Rejected” button: Renders only the cards that were swiped left (rejected), 
+ *    - "View Rejected" button: Renders only the cards that were swiped left (rejected), 
  *      then re-displays the swipe interface for those cards.
- *    - “Full Reset” button: Clears all viewed card state, resets the deck to its full set,
+ *    - "Full Reset" button: Clears all viewed card state, resets the deck to its full set,
  *      and re-displays the swipe interface for all restaurants.
  *
  * @function
@@ -419,9 +423,9 @@ function checkIfAllSwiped() {
       setupButtons(rejectedData);
     };
 
-    // —— Button #2: Fully reset “viewed” ——
+    // —— Button #2: Fully reset "viewed" ——
     fullResetBtn.onclick = () => {
-      // 1) Clear all viewed‐IDs (so nothing is considered “seen”)
+      // 1) Clear all viewed‐IDs (so nothing is considered "seen")
       const allRestaurantData = clearAllViewedAndReturnData();
 
       // 2) Hide the end screen and re‐show the swipe buttons
