@@ -131,6 +131,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       
       // Store the selected price range in userSelections
       userSelections.price = this.dataset.price;
+      updateSummary();
     });
   });
 
@@ -148,6 +149,7 @@ document.addEventListener('DOMContentLoaded', async () => {
           document.querySelectorAll('.star')[j].classList.add('selected');
         }
         userSelections.rating = i;
+        updateSummary();
       });
       starContainer.appendChild(star);
     }
@@ -158,6 +160,10 @@ document.querySelectorAll('.option-btn').forEach(btn => {
   btn.addEventListener('click', () => {
     if (btn.closest('#cuisine-options')) {
       btn.classList.toggle('selected');
+      // Update cuisine selections
+      const selected = document.querySelectorAll('#cuisine-options .option-btn.selected');
+      userSelections.cuisine = Array.from(selected).map(btn => btn.dataset.value);
+      updateSummary();
     } else {
       // For others, make single select
       const siblings = btn.parentElement.querySelectorAll('.option-btn');
@@ -270,3 +276,22 @@ function validatePositiveNumber(value) {
 
 // to pass ESlint
 window.confirmSelection = confirmSelection;
+
+/**
+ * Updates the summary section with current selections
+ */
+function updateSummary() {
+  document.getElementById('sum-cuisine').textContent = userSelections.cuisine.join(', ') || '—';
+  document.getElementById('sum-price').textContent = userSelections.price ?? '—';
+  document.getElementById('sum-distance').textContent = userSelections.distance ?? '—';
+  document.getElementById('sum-rating').textContent = userSelections.rating ?? '—';
+}
+
+// In the distance input handler
+document.getElementById('distance-input').addEventListener('input', (e) => {
+  const val = e.target.value;
+  if (validatePositiveNumber(val)) {
+    userSelections.distance = parseFloat(val);
+    updateSummary();
+  }
+});
