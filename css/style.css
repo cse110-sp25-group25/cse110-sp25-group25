@@ -492,7 +492,7 @@ nav ul {
   }
 
   .feature-card {
-     transform: scale(90%);
+     transform: scale(0.9);
      margin-top: -4rem;
   }
 
