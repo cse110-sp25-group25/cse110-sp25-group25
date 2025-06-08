@@ -59,7 +59,7 @@ nav ul {
 
    nav a {
       display: flex !important;
-       transition: color 0.2s;
+      transition: color 0.2s;
    }
 
 
@@ -70,7 +70,7 @@ nav ul {
 
 
    nav a:hover {
-    color: #f3f4e4;
+       color: #f3f4e4;
    }
 
 
@@ -468,7 +468,6 @@ nav ul {
      padding: 20px;
      margin-top: -1px;
      z-index: 10;
-     /* background-color: red; */
   }
 
   .hero {
