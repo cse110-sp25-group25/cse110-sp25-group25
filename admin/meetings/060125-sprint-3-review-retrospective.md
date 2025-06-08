@@ -1,8 +1,8 @@
-# Sprint Review & Retrospective Notes (05-31)
+# Sprint Review & Retrospective Notes (06-01)
 
-**Date:** 05-31-2025
+**Date:** 06-01-2025
 
-**Sprint Duration:** 12:00 - 13:00
+**Sprint Duration:** 5/26 - 6/01
 
 **Attendees:** Kevin, Harry, Kate, Evan, Kalkin, Yilin, Cass, Harrison, Ethan, Nathan
 
