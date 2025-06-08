@@ -136,7 +136,7 @@ To work smoothly as a team, follow these rules when contributing:
 - **Initial Roadmap/ Project Planning**
   - [Roadmap](admin/meetings/team/05-01.md)
 - **Sprint 1 (Week 6)** *{Release Version 0.1.0}*
-  - [Planning](admin/meetings/team/05-06.md)
+  - [Planning](admin/meetings/team/05-05.md)
   - This is before we got the class assignment. So, we didn't do the review & retrospective
 - **Sprint 2 (Week 7)** *{Release Version 0.2.0}*
   - [Planning](admin/meetings/team/05-12.md)
