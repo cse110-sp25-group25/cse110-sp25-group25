@@ -97,9 +97,9 @@ To work smoothly as a team, follow these rules when contributing:
 
 ### I don’t know what to build next!
 - Here are some features we want to implement in the future. Feel free to pick any one!
-    - Implement an actual GPS to see user location
-    - Implement a dark mode appearance
-    - Implement "deck" feature for users to group together restaurant cards
+    - [Implement an actual GPS to see user location](https://github.com/cse110-sp25-group25/cse110-sp25-group25/issues/185) 
+    - [Implement a dark mode appearance](https://github.com/cse110-sp25-group25/cse110-sp25-group25/issues/186)
+    - [Implement "deck" feature for users to group together restaurant cards](https://github.com/cse110-sp25-group25/cse110-sp25-group25/issues/187)
 
 **✅ Stay consistent, commit often, and ask questions if you're stuck!**
 
