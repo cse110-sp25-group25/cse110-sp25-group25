@@ -88,4 +88,6 @@ Hi I’m Thomas Nghiem and I’m a second year Computer Engineering major. I’m
 
 <!--Thomas' Picture -->
 
+#### Yilin Zhang
+Hi I am Yilin and I am third year computer science major. I am interested in front end development. My favoriate sport is swimming.
 
