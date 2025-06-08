@@ -761,6 +761,18 @@ nav ul {
    z-index: 2; /* Ensure it's above the back side initially */
 }
 
+.card-front h2{
+  font-size: 2rem;
+  max-width: 100%;
+  text-align: center;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.2;
+  max-height: 2.4em; /* 2 lines * 1.2 line-height */
+}
 
 .card-back {
    background-color: #ffffff;
