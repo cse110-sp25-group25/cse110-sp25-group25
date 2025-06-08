@@ -35,36 +35,39 @@ document.addEventListener('DOMContentLoaded', async () => {
   if (clearBtn) {
     clearBtn.addEventListener('click', () => {
       localStorage.removeItem('userSelections');
-      alert('All filters have been cleared. To set new ones, go back to the filters page.');
       window.location.reload();
-
-  });
+    });
   }
+
+  // Ensure restaurantData is always set in localStorage
   let data = JSON.parse(localStorage.getItem('restaurantData'));
   if (!data) {
-      const res = await fetch('data/restaurants.json');
-      data = await res.json();
-      localStorage.setItem('restaurantData', JSON.stringify(data));
+    const res = await fetch('data/restaurants.json');
+    data = await res.json();
+    localStorage.setItem('restaurantData', JSON.stringify(data));
   }
 
-const filters = JSON.parse(localStorage.getItem('userSelections'));
-if (filters) {
+  // Now, always use a fresh copy from localStorage
+  data = JSON.parse(localStorage.getItem('restaurantData'));
+
+  const filters = JSON.parse(localStorage.getItem('userSelections'));
+  if (filters) {
     data = applyFilters(data, filters);
-}
+  }
 
-const viewed = JSON.parse(localStorage.getItem('viewed'));
-if (viewed) {
+  const viewed = JSON.parse(localStorage.getItem('viewed'));
+  if (viewed) {
     data = removeViewed(data, viewed);
-}
+  }
 
-if (!data || data.length === 0) {
+  if (!data || data.length === 0) {
     console.warn("no data, can't render");
     checkIfAllSwiped();
     return;
-}
-data = shuffleArray(data);
-renderRestaurant(data);
-setupButtons(data);
+  }
+  data = shuffleArray(data);
+  renderRestaurant(data);
+  setupButtons(data);
 });
 
 /**
@@ -394,12 +397,12 @@ function handleViewedCard(id) {
  * 
  * This function performs the following steps:
  * 1. Hides the card container and swipe buttons.
- * 2. Shows the end screen along with “View Rejected” and “Full Reset” buttons.
- * 3. Disables the “View Rejected” button if there are no rejected cards.
+ * 2. Shows the end screen along with "View Rejected" and "Full Reset" buttons.
+ * 3. Disables the "View Rejected" button if there are no rejected cards.
  * 4. Attaches click handlers:
- *    - “View Rejected” button: Renders only the cards that were swiped left (rejected), 
+ *    - "View Rejected" button: Renders only the cards that were swiped left (rejected), 
  *      then re-displays the swipe interface for those cards.
- *    - “Full Reset” button: Clears all viewed card state, resets the deck to its full set,
+ *    - "Full Reset" button: Clears all viewed card state, resets the deck to its full set,
  *      and re-displays the swipe interface for all restaurants.
  *
  * @function
@@ -448,9 +451,9 @@ function checkIfAllSwiped() {
       setupButtons(rejectedData);
     };
 
-    // —— Button #2: Fully reset “viewed” ——
+    // —— Button #2: Fully reset "viewed" ——
     fullResetBtn.onclick = () => {
-      // 1) Clear all viewed‐IDs (so nothing is considered “seen”)
+      // 1) Clear all viewed‐IDs (so nothing is considered "seen")
       const allRestaurantData = clearAllViewedAndReturnData();
 
       // 2) Hide the end screen and re‐show the swipe buttons
@@ -501,13 +504,13 @@ function clearAllViewedAndReturnData() {
 </div>
 
 <nav>
-    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#applyFilters">applyFilters</a></li><li><a href="global.html#buildCuisineFilter">buildCuisineFilter</a></li><li><a href="global.html#checkIfAllSwiped">checkIfAllSwiped</a></li><li><a href="global.html#clearAllViewedAndReturnData">clearAllViewedAndReturnData</a></li><li><a href="global.html#confirmAndChangeSelection">confirmAndChangeSelection</a></li><li><a href="global.html#confirmSelection">confirmSelection</a></li><li><a href="global.html#createReviewElement">createReviewElement</a></li><li><a href="global.html#finalise">finalise</a></li><li><a href="global.html#getRejectedData">getRejectedData</a></li><li><a href="global.html#getUniqueCuisines">getUniqueCuisines</a></li><li><a href="global.html#handleCardClick">handleCardClick</a></li><li><a href="global.html#handleViewedCard">handleViewedCard</a></li><li><a href="global.html#removeViewed">removeViewed</a></li><li><a href="global.html#renderDeck">renderDeck</a></li><li><a href="global.html#renderRestaurant">renderRestaurant</a></li><li><a href="global.html#resetCard">resetCard</a></li><li><a href="global.html#saveToDeck">saveToDeck</a></li><li><a href="global.html#setupButtons">setupButtons</a></li><li><a href="global.html#setupFlipping">setupFlipping</a></li><li><a href="global.html#showOptions">showOptions</a></li><li><a href="global.html#shuffleArray">shuffleArray</a></li><li><a href="global.html#updateProgressBar">updateProgressBar</a></li><li><a href="global.html#validatePositiveNumber">validatePositiveNumber</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#applyFilters">applyFilters</a></li><li><a href="global.html#buildCuisineFilter">buildCuisineFilter</a></li><li><a href="global.html#checkIfAllSwiped">checkIfAllSwiped</a></li><li><a href="global.html#clearAllViewedAndReturnData">clearAllViewedAndReturnData</a></li><li><a href="global.html#confirmAndChangeSelection">confirmAndChangeSelection</a></li><li><a href="global.html#confirmSelection">confirmSelection</a></li><li><a href="global.html#createReviewElement">createReviewElement</a></li><li><a href="global.html#finalise">finalise</a></li><li><a href="global.html#getRejectedData">getRejectedData</a></li><li><a href="global.html#getUniqueCuisines">getUniqueCuisines</a></li><li><a href="global.html#handleCardClick">handleCardClick</a></li><li><a href="global.html#handleViewedCard">handleViewedCard</a></li><li><a href="global.html#removeViewed">removeViewed</a></li><li><a href="global.html#renderDeck">renderDeck</a></li><li><a href="global.html#renderRestaurant">renderRestaurant</a></li><li><a href="global.html#resetCard">resetCard</a></li><li><a href="global.html#saveToDeck">saveToDeck</a></li><li><a href="global.html#setupButtons">setupButtons</a></li><li><a href="global.html#setupFlipping">setupFlipping</a></li><li><a href="global.html#showOptions">showOptions</a></li><li><a href="global.html#shuffleArray">shuffleArray</a></li><li><a href="global.html#updateProgressBar">updateProgressBar</a></li><li><a href="global.html#updateSummary">updateSummary</a></li><li><a href="global.html#validatePositiveNumber">validatePositiveNumber</a></li></ul>
 </nav>
 
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.4</a> on Sat Jun 07 2025 20:07:38 GMT+0000 (Coordinated Universal Time)
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.4</a> on Sun Jun 08 2025 21:10:44 GMT+0000 (Coordinated Universal Time)
 </footer>
 
 <script> prettyPrint(); </script>
