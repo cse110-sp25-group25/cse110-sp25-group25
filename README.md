@@ -1,5 +1,5 @@
-# Food Flip (Team 25 | Quarter Life Crisis)
-[Food Flip](https://cse110-sp25-group25.github.io/cse110-sp25-group25): A CSE 110 Project (Team 25)
+# FoodFlip (Team 25 | Quarter Life Crisis)
+[FoodFlip](https://cse110-sp25-group25.github.io/cse110-sp25-group25): A CSE 110 Project (Team 25)
 
 > ▶️ **README Table of Contents**
 > 
@@ -79,6 +79,7 @@ To work smoothly as a team, follow these rules when contributing:
 2. Right-click `index.html` 
 3. Choose **“Open with Live Server”**
 4. If a new browser tab doesn’t automatically show up, go to `http://127.0.0.1:{PORTNUMBER}/index.html`
+5. Make sure to **clear localStorage** before using the website
 
 ### How do I test my code for correctness and quality?
 - We use Jest and ESLint locally, and check for other tests in GitHub PRs through GitHub actions. Learn more in our [CI/CD Pipeline Folder](admin\cipipeline).
@@ -90,6 +91,9 @@ To work smoothly as a team, follow these rules when contributing:
         - `npm run test`
     - To run the linter, simply run
         - `npx eslint ./`
+      - To run the E2E (end to end) testing with Puppeteer
+        - `npx http-server . -p 3000`
+        - `npm run test:e2e`
 
 ### I don’t know what to build next!
 - Here are some features we want to implement in the future. Feel free to pick any one!
@@ -145,9 +149,9 @@ To work smoothly as a team, follow these rules when contributing:
   - [Review & Retrospective](admin/meetings/060125-sprint-3-review-retrospective.md)
 - **Sprint 5 (Week 10)** *{Release Version 1.0.0}*
   - [Planning](admin/meetings/team/06-02.md)
-  - [Review & Retrospective]()
+  - [Review & Retrospective](admin/meetings/060725-sprint-4-review-retrospective.md)
 
-## External Resources Used During Final Project
+### External Resources Used During Final Project
 - [Research and UI/UX Miro Board](https://miro.com/app/board/uXjVI-bk2XA=/)
 - [Story Points Tracker Google Sheet](https://docs.google.com/spreadsheets/d/1KHr-oWJG1LsK_x6JcyCNjkuOzHwOuADGSEI65wSjzXE/edit?gid=0)
 
@@ -174,6 +178,7 @@ To work smoothly as a team, follow these rules when contributing:
 
 ### Team Status Video
 - [Team Status Video 1 (YouTube Link)](https://www.youtube.com/watch?v=xgqD52VNC9c)
+- [Final Video - Public (YouTube Link)](https://youtu.be/RsdXc6LISlE)
 
 ---
 
