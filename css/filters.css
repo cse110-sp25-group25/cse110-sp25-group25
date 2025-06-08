@@ -165,10 +165,6 @@ body {
     color: #4b543b;
   }
   
-  .option-btn.selected {
-    background-color: #dce2aa;
-    color: #4b543b;
-  }
   #cuisine-grid {
     /* turn it into a responsive grid that auto–fits */
     display: grid;
@@ -338,6 +334,7 @@ body {
       flex-direction: column;
       align-items: center;
     }
+    
     .filter-container {
       width: 100%;
     }
