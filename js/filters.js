@@ -14,7 +14,9 @@ const userSelections = {
 async function getUniqueCuisines() {
   //reload restaurant data from restaurants.json no matter what
   // (to avoid issues with localStorage in case of changes)
-
+  //reset all so that the pages site actually makes sense
+  localStorage.removeItem('restaurantData');
+  
   let all = JSON.parse(localStorage.getItem('restaurantData') || '[]');
 
   if (all.length === 0) {

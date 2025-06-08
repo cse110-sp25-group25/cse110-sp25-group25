@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       window.location.reload();
   });
   }
+  
   const res = await fetch('data/restaurants.json');
   let data = await res.json();
   if (!data) {
