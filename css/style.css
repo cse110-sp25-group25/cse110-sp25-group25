@@ -58,6 +58,7 @@ nav ul {
 
 
    nav a {
+      display: flex !important;
        transition: color 0.2s;
    }
 
@@ -69,7 +70,7 @@ nav ul {
 
 
    nav a:hover {
-       color: #f3f4e4;
+    color: #f3f4e4;
    }
 
 
@@ -465,7 +466,9 @@ nav ul {
      flex-direction: column;
      align-items: center;
      padding: 20px;
-     margin-top: -4rem;
+     margin-top: -1px;
+     z-index: 10;
+     /* background-color: red; */
   }
 
   .hero {
@@ -479,6 +482,7 @@ nav ul {
      flex-direction: column;
      font-size: 2rem;
      line-height: 1.5;
+     margin-top: -10px;
   }
 
   .hero p {
