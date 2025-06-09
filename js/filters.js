@@ -21,7 +21,7 @@ async function getUniqueCuisines() {
 
   if (all.length === 0) {
 
-    const res = await fetch('/data/restaurants.json');
+    const res = await fetch('../data/restaurants.json');
     all = await res.json();
     localStorage.setItem('restaurantData', JSON.stringify(all));
   
