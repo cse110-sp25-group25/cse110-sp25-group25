@@ -141,7 +141,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   if (starContainer) {
     for (let i = 1; i <= 5; i++) {
       const star = document.createElement('img');
-      star.src = '/assets/star-icon.png';
+      star.src = '../assets/star-icon.png';
       star.alt = `${i} star`;
       star.classList.add('star');
       star.dataset.value = i;
