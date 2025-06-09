@@ -2161,9 +2161,9 @@
     "hours": "Open until 12:00 AM",
     "image": "assets/restaurants/taco.png",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       { "text": "Amazing seafood tower! The shrimp were perfectly cooked", "author": "Maria S." },
@@ -2186,9 +2186,9 @@
     "hours": "Open until 10:00 PM",
     "image": "assets/restaurants/momoshabu.png",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       { "text": "Authentic Korean hot pot experience. The broth is incredibly flavorful", "author": "Hannah W." },
@@ -2211,9 +2211,9 @@
     "hours": "Open until 10:00 PM",
     "image": "assets/restaurants/bafang.png",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       { "text": "Good dumplings but service can be slow during peak hours", "author": "Tony L." },
@@ -2236,9 +2236,9 @@
     "hours": "Open until 8:00 PM",
     "image": "assets/restaurants/fishcake.png",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       { "text": "Sue is an absolute gem! The kimchi jjigae tastes like my grandmother's", "author": "Grace K." },
@@ -2261,9 +2261,9 @@
     "hours": "Open until 9:00 PM",
     "image": "assets/restaurants/shwarmaguys.png",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       { "text": "Generous portions and great prices. The chicken shawarma is my go-to", "author": "Ahmed H." },
@@ -2286,9 +2286,9 @@
     "hours": "Open until 9:00 PM",
     "image": "assets/restaurants/tulum.png",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"  
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"  
     ],
     "reviews": [
       { "text": "Fresh seafood with authentic Mexican flavors. The ceviche is outstanding", "author": "Carlos M." },
@@ -2311,9 +2311,9 @@
     "hours": "Open until 2:30 PM",
     "image": "assets/restaurants/momkitch.png",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       { "text": "Homestyle Chinese cooking at its best. The braised pork belly is tender", "author": "Wei L." },
@@ -2336,9 +2336,9 @@
     "hours": "Open until 5:00 PM",
     "image": "assets/restaurants/thienhong.png",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       { "text": "Authentic Vietnamese pho with rich, flavorful broth. Best in the area", "author": "Linh N." },
@@ -2361,9 +2361,9 @@
     "hours": "Open until 3:00 PM",
     "image": "assets/restaurants/frenchoven.png",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       { "text": "Authentic French pastries and excellent coffee. The croissants are buttery perfection", "author": "Marie D." },
@@ -2386,9 +2386,9 @@
     "hours": "Open until 7:00 PM",
     "image": "assets/restaurants/hawaiinkal.png",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       { "text": "Authentic Hawaiian plate lunches. The kalua pig is smoky and tender", "author": "Kailani H." },
@@ -2411,9 +2411,9 @@
     "hours": "Open until 9:00 PM",
     "image": "assets/restaurants/saigoncorner.png",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       { "text": "Solid Vietnamese food with consistent quality. The pho tai is my regular order", "author": "Mike H." },
@@ -2436,9 +2436,9 @@
     "hours": "Open until 8:30 PM",
     "image": "assets/restaurants/gravityheights.png",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       { "text": "Great craft beer selection and solid pub food. The IPA flight is impressive", "author": "Chris B." },
@@ -2461,9 +2461,9 @@
     "hours": "Open until 8:00 PM",
     "image": "assets/restaurants/ngonngon.png",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       { "text": "Exceptional Vietnamese food! The pho broth is rich and deeply flavored", "author": "Anna V." },
@@ -2486,9 +2486,9 @@
     "hours": "Open until 3:00 PM",
     "image": "assets/restaurants/jufeng.png",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       { "text": "Handmade dumplings with thin, delicate skins. The pork and chive are outstanding", "author": "Emily Z." },
@@ -2511,9 +2511,9 @@
     "hours": "Open until 10:00 PM",
     "image": "assets/restaurants/dintaifung.png",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       { "text": "World-famous xiaolongbao lives up to the hype. Each dumpling is perfectly pleated", "author": "Grace T." },
@@ -2536,9 +2536,9 @@
     "hours": "Open until 11:00 PM",
     "image": "assets/restaurants/postino.png",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       { "text": "Perfect date night spot with extensive wine selection. The bruschetta board is amazing", "author": "Sophie M." },
@@ -2561,9 +2561,9 @@
     "hours": "Open until 3:00 PM",
     "image": "assets/restaurants/treehouse.png",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       { "text": "Absolutely perfect brunch spot! The pancakes are fluffy clouds of heaven", "author": "Madison B." },
@@ -2586,9 +2586,9 @@
     "hours": "Open until 10:00 PM",
     "image": "assets/restaurants/lilsakana.png",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       { "text": "Great value for all-you-can-eat sushi. The salmon and tuna are fresh", "author": "Kevin W." },
@@ -2611,9 +2611,9 @@
     "hours": "Open until 3:00 PM",
     "image": "assets/restaurants/naynaybest.png",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       { "text": "Authentic Filipino BBQ with sweet and savory flavors. The pork skewers are addictive", "author": "Maria C." },
@@ -2636,9 +2636,9 @@
     "hours": "Open until 9:00 PM",
     "image": "assets/restaurants/serpentinecider.png",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       {
@@ -2667,9 +2667,9 @@
     "hours": "Open until 2:00 PM",
     "image": "assets/restaurants/momopara.png",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       {
@@ -2698,9 +2698,9 @@
     "hours": "Open until 9:00 PM",
     "image": "assets/restaurants/56thai.png",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       {
@@ -2729,9 +2729,9 @@
     "hours": "Open until 2:00 AM",
     "image": "assets/restaurants/blazzer.png.png",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       {
@@ -2760,9 +2760,9 @@
     "hours": "Open until 2:00 PM",
     "image": "assets/restaurants/menyaultra.png",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       {
@@ -2791,9 +2791,9 @@
     "hours": "Open until 9:00 PM",
     "image": "assets/restaurants/calienglish.png",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       {
@@ -2822,9 +2822,9 @@
     "hours": "Open until 11:00 PM",
     "image": "assets/restaurants/stonebrew.png",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       {
@@ -2853,9 +2853,9 @@
     "hours": "Open until 9:00 PM",
     "image": "assets/restaurants/dumplingsnmore.png",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       {
@@ -2884,9 +2884,9 @@
     "hours": "Open until 10:00 PM",
     "image": "assets/restaurants/barndoorpub.png",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       {
@@ -2915,9 +2915,9 @@
     "hours": "Open until 2:30 PM",
     "image": "assets/restaurants/sunnyside.png",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       {
@@ -2946,9 +2946,9 @@
     "hours": "Open until 2:00 PM",
     "image": "assets/restaurants/homesweet.png",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       {
@@ -2977,9 +2977,9 @@
     "hours": "Open until 12:00 AM",
     "image": "assets/restaurants/tjtacos.png",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       {
@@ -3008,9 +3008,9 @@
     "hours": "Open until 10:00 PM",
     "image": "assets/restaurants/hbros.png",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       {
@@ -3039,9 +3039,9 @@
     "hours": "Open until 10:00 PM",
     "image": "assets/restaurants/bagocrab.png",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       {
@@ -3070,9 +3070,9 @@
     "hours": "Open until 10:00 PM",
     "image": "assets/restaurants/burgerbench.png",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       {
@@ -3101,9 +3101,9 @@
     "hours": "Open until 9:00 PM",
     "image": "assets/restaurants/vintana.png",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       {
@@ -3132,9 +3132,9 @@
     "hours": "Open until 10:00 PM",
     "image": "assets/restaurants/bubbas.png",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       {
@@ -3163,9 +3163,9 @@
     "hours": "Hours not available",
     "image": "assets/restaurants/onemorebite.png",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       {
@@ -3194,9 +3194,9 @@
     "hours": "Open until 9:00 PM",
     "image": "assets/restaurants/craftandtacos.png",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       {
@@ -3225,9 +3225,9 @@
     "hours": "Open until 10:00 PM",
     "image": "assets/restaurants/fourtunas.png",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       {
@@ -3256,9 +3256,9 @@
     "hours": "Open until 11:45 PM",
     "image": "assets/restaurants/uppereast.png",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       {
@@ -3287,9 +3287,9 @@
     "hours": "Open until 9:00 PM",
     "image": "assets/restaurants/alibaba.png",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       {
@@ -3321,9 +3321,9 @@
     "hours": "Open until 9:00 PM",
     "image": "assets/restaurants/farmtosmash.png",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       {
@@ -3355,9 +3355,9 @@
     "hours": "Open until 11:00 PM",
     "image": "assets/restaurants/draftrepub.png",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       {
@@ -3389,9 +3389,9 @@
     "hours": "Open until 8:00 PM",
     "image": "assets/restaurants/oldworldmeat.png",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       {
@@ -3423,9 +3423,9 @@
     "hours": "Open until 9:00 PM",
     "image": "assets/restaurants/blackandblue.png",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       {
@@ -3457,9 +3457,9 @@
     "hours": "Open until 9:00 PM",
     "image": "assets/restaurants/bellamys.png",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       {
@@ -3491,9 +3491,9 @@
     "hours": "Open until 9:00 PM",
     "image": "assets/restaurants/kebabshop.png",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       {
@@ -3525,9 +3525,9 @@
     "hours": "Open until 9:30 PM",
     "image": "assets/restaurants/mirincafe.png",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       {
@@ -3559,9 +3559,9 @@
     "hours": "Open until 10:00 PM",
     "image": "assets/restaurants/harlows.png",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       {
@@ -3593,9 +3593,9 @@
     "hours": "Open until 10:00 PM",
     "image": "assets/restaurants/shabuworks.png",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       {
@@ -3629,9 +3629,9 @@
     "hours": "Open until 9 PM",
     "image": "assets/restaurants/ajisen-ramen-san-diego.jpeg",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       {
@@ -3672,9 +3672,9 @@
     "hours": "Open Until 9 PM",
     "image": "assets/restaurants/bistro-kaz.jpeg",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       {
@@ -3715,9 +3715,9 @@
     "hours": "Open Until 1 AM",
     "image": "assets/restaurants/bonchon---convoy.jpeg",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       {
@@ -3758,9 +3758,9 @@
     "hours": "Open Until 9:30 PM",
     "image": "assets/restaurants/cafe-hue.jpeg",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       {
@@ -3801,9 +3801,9 @@
     "hours": "Open Until 9 PM",
     "image": "assets/restaurants/cali-banh-mi.jpeg",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       {
@@ -3844,9 +3844,9 @@
     "hours": "Open Until 9 PM",
     "image": "assets/restaurants/cdd-tofu-grill.jpeg",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       {
@@ -3887,9 +3887,9 @@
     "hours": "Open Until 9 PM",
     "image": "assets/restaurants/chef-chin.jpeg",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       {
@@ -3930,9 +3930,9 @@
     "hours": "Open Until 9 PM",
     "image": "assets/restaurants/china-max.jpeg",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       {
@@ -3973,9 +3973,9 @@
     "hours": "Open Until 9 PM",
     "image": "assets/restaurants/chon-ju-jip.jpeg",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       {
@@ -4016,9 +4016,9 @@
     "hours": "Open Until 9 PM",
     "image": "assets/restaurants/chopstix.jpeg",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       {
@@ -4059,9 +4059,9 @@
     "hours": "Open Until 9 PM",
     "image": "assets/restaurants/chopstix-too.jpeg",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       {
@@ -4102,9 +4102,9 @@
     "hours": "Open Until 9 PM",
     "image": "assets/restaurants/chungchun-ssal-hot-dog.png",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       {
@@ -4145,9 +4145,9 @@
     "hours": "Open Until 9 PM",
     "image": "assets/restaurants/common-theory.jpeg",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       {
@@ -4188,9 +4188,9 @@
     "hours": "Open Until 9 PM",
     "image": "assets/restaurants/convoy-tofu-house.jpeg",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       {
@@ -4231,9 +4231,9 @@
     "hours": "Open Until 9 PM",
     "image": "assets/restaurants/crab-hut.jpeg",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       {
@@ -4274,9 +4274,9 @@
     "hours": "Open Until 2 AM",
     "image": "assets/restaurants/cross-street.jpeg",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       {
@@ -4317,9 +4317,9 @@
     "hours": "Open Until 10 PM",
     "image": "assets/restaurants/dae-jang-keum-korean-bbq.jpeg",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       {
@@ -4360,9 +4360,9 @@
     "hours": "Open Until 10 PM",
     "image": "assets/restaurants/dduriba.jpeg",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       {
@@ -4403,9 +4403,9 @@
     "hours": "Open Until 9 PM",
     "image": "assets/restaurants/de-niro-ristorante.jpeg",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       {
@@ -4446,9 +4446,9 @@
     "hours": "Open Until 9 PM",
     "image": "assets/restaurants/dumpling-inn-shanghai-saloon.jpeg",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       {
@@ -4489,9 +4489,9 @@
     "hours": "Open Until 9 PM",
     "image": "assets/restaurants/emerald-restaurant.jpeg",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       {
@@ -4532,9 +4532,9 @@
     "hours": "Open Until 9 PM",
     "image": "assets/restaurants/epic-wings.png",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       {
@@ -4575,9 +4575,9 @@
     "hours": "Open Until 9 PM",
     "image": "assets/restaurants/friends-house-korean.jpeg",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       {
@@ -4618,9 +4618,9 @@
     "hours": "Open Until 10 PM",
     "image": "assets/restaurants/fusion-izakaya-52.jpeg",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       {
@@ -4661,9 +4661,9 @@
     "hours": "Open Until 9 PM",
     "image": "assets/restaurants/gala-chicken.jpeg",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       {
@@ -4704,9 +4704,9 @@
     "hours": "Open Until 9 PM",
     "image": "assets/restaurants/grandma-tofu-bbq.jpeg",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       {
@@ -4747,9 +4747,9 @@
     "hours": "Open Until 9 PM",
     "image": "assets/restaurants/green-china-grill.jpeg",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       {
@@ -4790,9 +4790,9 @@
     "hours": "Open Until 10 PM",
     "image": "assets/restaurants/handoo-korean-bbq.jpeg",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       {
@@ -4833,9 +4833,9 @@
     "hours": "Open Until 9 PM",
     "image": "assets/restaurants/harmony-potsticker.jpeg",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       {
@@ -4876,9 +4876,9 @@
     "hours": "Open Until 10 PM",
     "image": "assets/restaurants/hi-street-kitchen-and-tap.jpeg",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       {
@@ -4919,9 +4919,9 @@
     "hours": "Open Until 10 PM",
     "image": "assets/restaurants/hidden-fish.jpeg",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       {
@@ -4962,9 +4962,9 @@
     "hours": "Open Until 10 PM",
     "image": "assets/restaurants/ichiros.jpeg",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       {
@@ -5005,9 +5005,9 @@
     "hours": "Open Until 9 PM",
     "image": "assets/restaurants/imperial-mandarin.jpeg",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       {
@@ -5048,9 +5048,9 @@
     "hours": "Open Until 10 PM",
     "image": "assets/restaurants/izakaya-sakura.jpeg",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       {
@@ -5091,9 +5091,9 @@
     "hours": "Open Until 10 PM",
     "image": "assets/restaurants/j-wata-temaki-bar.jpg",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       {
@@ -5134,9 +5134,9 @@
     "hours": "Open Until 9 PM",
     "image": "assets/restaurants/jasmine-seafood-restaurant.jpeg",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       {
@@ -5177,9 +5177,9 @@
     "hours": "Open Until 10 PM",
     "image": "assets/restaurants/jeong-won-bbq-buffet.jpeg",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       {
@@ -5220,9 +5220,9 @@
     "hours": "Open Until 9 PM",
     "image": "assets/restaurants/joyees.jpeg",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       {
@@ -5263,9 +5263,9 @@
     "hours": "Open Until 9 PM",
     "image": "assets/restaurants/k-cuisine.jpeg",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       {
@@ -5306,9 +5306,9 @@
     "hours": "Open Until 9 PM",
     "image": "assets/restaurants/kangxi-is-coming.jpeg",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       {
@@ -5349,9 +5349,9 @@
     "hours": "Open Until 10 PM",
     "image": "assets/restaurants/karami-ramen.jpeg",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       {
@@ -5392,9 +5392,9 @@
     "hours": "Open Until 10 PM",
     "image": "assets/restaurants/katsu-cafe.jpeg",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       {
@@ -5435,9 +5435,9 @@
     "hours": "Open Until 10 PM",
     "image": "assets/restaurants/kjodo-bbq.jpeg",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       {
@@ -5478,9 +5478,9 @@
     "hours": "Open Until 10 PM",
     "image": "assets/restaurants/koon-thai-kitchen.jpeg",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       {
@@ -5521,9 +5521,9 @@
     "hours": "Open Until 10 PM",
     "image": "assets/restaurants/kura-revolving-sushi-bar.jpeg",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       {
@@ -5564,9 +5564,9 @@
     "hours": "Open Until 9 PM",
     "image": "assets/restaurants/lolitas-mexican-food.jpeg",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       {
@@ -5607,9 +5607,9 @@
     "hours": "Open Until 10 PM",
     "image": "assets/restaurants/mada-sao.jpeg",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       {
@@ -5650,9 +5650,9 @@
     "hours": "Open Until 10 PM",
     "image": "assets/restaurants/manna-bbq.jpeg",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       {
@@ -5693,9 +5693,9 @@
     "hours": "Open Until 9 PM",
     "image": "assets/restaurants/mekong.jpeg",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       {
@@ -5736,9 +5736,9 @@
     "hours": "Open Until 9 PM",
     "image": "assets/restaurants/boiling-passion.jpeg",
     "menuImages": [
-      "assets/sushi-1.png",
-      "assets/sushi-2.png",
-      "assets/sushi-3.png"
+      "assets/food-1.png",
+      "assets/food-2.png",
+      "assets/food-3.png"
     ],
     "reviews": [
       {
