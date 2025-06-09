@@ -154,11 +154,11 @@ data.forEach(r => {
         <img src="/${r.image}" alt="${r.name}" class="card-img" />
         <div class="details">
           <span class="rating">
-            <img src="/assets/star-icon.png" alt="star" class="icon" />
+            <img src="../assets/star-icon.png" alt="star" class="icon" />
             ${r.rating}
           </span>
           <span class="distance">
-            <img src="/assets/location-icon.png" alt="location" class="icon" />
+            <img src="../assets/location-icon.png" alt="location" class="icon" />
             ${r.distance} mi
           </span>
         </div>
@@ -173,15 +173,15 @@ data.forEach(r => {
         <div class="card-details">
           <h2>${r.name}</h2>
           <p>
-            <img src="/assets/location-icon.png" alt="Location" class="icon-img">
+            <img src="../assets/location-icon.png" alt="Location" class="icon-img">
             <a href="#">${r.location}</a>
           </p>
           <p>
-            <img src="/assets/time-icon.png" alt="Hours" class="icon-img">
+            <img src="../assets/time-icon.png" alt="Hours" class="icon-img">
             ${r.hours}
           </p>
           <p>
-            <img src="/assets/phone-icon.png" alt="Phone" class="icon-img">
+            <img src="../assets/phone-icon.png" alt="Phone" class="icon-img">
             ${r.phone}
           </p>
           <div class="menu-images">

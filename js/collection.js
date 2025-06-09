@@ -7,8 +7,9 @@ MOBILE_HIDER.innerHTML = `.hidden { display: none !important; }`;
 document.head.appendChild(MOBILE_HIDER);
 
 function init() {
-
     const deckList = document.querySelector(".deck-list");
+    if (!deckList) return; // Only run on pages with a deck-list
+
     const clearBtn = document.querySelector('.clear-deck-btn');
     const cuisineFilter = document.getElementById('cuisine-filter');
     const ratingsFilter = document.getElementById('ratings-filter');
@@ -17,7 +18,9 @@ function init() {
 
     // back button for mobile view
     const backBtnContainer = document.getElementById("back-button-container");
-    backBtnContainer.classList.add('hidden');
+    if (backBtnContainer) {
+        backBtnContainer.classList.add('hidden');
+    }
     
     // left view card div
     const deckBody = document.getElementById('left-body');
@@ -85,15 +88,15 @@ function init() {
         <div class="card-details">
           <h2>${deckBody.dataset.name}</h2>
           <p>
-            <img src="/assets/location-icon.png" alt="Location" class="icon-img">
+            <img src="../assets/location-icon.png" alt="Location" class="icon-img">
             ${deckBody.dataset.location}
           </p>
           <p>
-            <img src="/assets/time-icon.png" alt="Hours" class="icon-img">
+            <img src="../assets/time-icon.png" alt="Hours" class="icon-img">
             ${deckBody.dataset.hours}
           </p>
           <p>
-            <img src="/assets/phone-icon.png" alt="Phone" class="icon-img">
+            <img src="../assets/phone-icon.png" alt="Phone" class="icon-img">
             ${deckBody.dataset.phone}
           </p>
           <div class="menu-images">
@@ -212,10 +215,10 @@ function renderDeck(subset, deckList) {
                   class="card-img"
                 />
                 <div class="details">
-                  <img src="/assets/dark-star-icon.png" alt="star icon" class="emoji"/>
+                  <img src="../assets/dark-star-icon.png" alt="star icon" class="emoji"/>
                   <span class="rating"> ${r["rating"]} </span>
                   <span></span>
-                  <img src="/assets/location-icon.png" alt="star icon" class="emoji"/>
+                  <img src="../assets/location-icon.png" alt="star icon" class="emoji"/>
                   <span class="distance">${r["distance"]} mi</span>
                 </div>
                 <div class="tags">
@@ -281,10 +284,10 @@ function handleCardClick(r) {
       <h3>${r.name}</h3>
       <img src=/${r["image"]} alt="restaurant" class="card-img"/>
       <div class="details">
-        <img src="/assets/dark-star-icon.png" alt="star icon" class="emoji"/>
+        <img src="../assets/dark-star-icon.png" alt="star icon" class="emoji"/>
         <span class="rating"> ${r["rating"]} </span>
         <span></span>
-        <img src="/assets/location-icon.png" alt="star icon" class="emoji"/>
+        <img src="../assets/location-icon.png" alt="star icon" class="emoji"/>
         <span class="distance">${r["distance"]} mi</span>
       </div>
       <div class="tags">
