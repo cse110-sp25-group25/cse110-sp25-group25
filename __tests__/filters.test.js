@@ -1,7 +1,4 @@
-function validatePositiveNumber(value) {
-    const num = parseFloat(value);
-    return !isNaN(num) && num >= 0;
-  }
+import { validatePositiveNumber } from '../js/filters.js';
 
 describe('validatePositiveNumber', () => {
   test('returns true for positive numbers', () => {

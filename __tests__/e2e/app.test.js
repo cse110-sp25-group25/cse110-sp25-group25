@@ -52,10 +52,10 @@ describe('Restaurant Crisis App', () => {
 
   test('should navigate to filters page', async () => {
     logStep('Testing navigation to filters page');
-    await waitForClickable('a[href="filters.html"]');
+    await waitForClickable('a[href="pages/filters.html"]');
     await Promise.all([
       page.waitForNavigation({ waitUntil: 'networkidle0' }),
-      page.click('a[href="filters.html"]')
+      page.click('a[href="pages/filters.html"]')
     ]);
     const title = await page.title();
     expect(title).toBe('Customize Filters - FoodFlip');
@@ -63,10 +63,10 @@ describe('Restaurant Crisis App', () => {
 
   test('should navigate to collection page', async () => {
     logStep('Testing navigation to collection page');
-    await waitForClickable('a[href="collection.html"]');
+    await waitForClickable('a[href="pages/collection.html"]');
     await Promise.all([
       page.waitForNavigation({ waitUntil: 'networkidle0' }),
-      page.click('a[href="collection.html"]')
+      page.click('a[href="pages/collection.html"]')
     ]);
     const title = await page.title();
     expect(title).toBe('View Collection - FoodFlip');
@@ -88,7 +88,7 @@ describe('Restaurant Crisis App', () => {
   // Filters page tests
   test('should handle filter selections', async () => {
     logStep('Testing filter selections');
-    await page.goto(`${BASE_URL}/filters.html`);
+    await page.goto(`${BASE_URL}/pages/filters.html`);
     
     // Wait for cuisine options to be loaded
     logStep('Waiting for cuisine options to load');
@@ -202,7 +202,7 @@ describe('Restaurant Crisis App', () => {
 
   test('should handle clear filters button', async () => {
     logStep('Testing clear filters button');
-    await page.goto(`${BASE_URL}/swipe.html`);
+    await page.goto(`${BASE_URL}/pages/swipe.html`);
     
     // Wait for the clear filters button to be visible
     logStep('Waiting for clear filters button');
@@ -228,7 +228,7 @@ describe('Restaurant Crisis App', () => {
   // Swipe page tests
   test('should handle swipe interactions', async () => {
     logStep('Testing swipe interactions');
-    await page.goto(`${BASE_URL}/swipe.html`);
+    await page.goto(`${BASE_URL}/pages/swipe.html`);
     
     // Wait for the card container to be loaded and visible
     logStep('Waiting for card container');
@@ -361,7 +361,7 @@ describe('Restaurant Crisis App', () => {
   // Collection page tests
   test('should handle collection interactions', async () => {
     logStep('Testing collection interactions');
-    await page.goto(`${BASE_URL}/collection.html`);
+    await page.goto(`${BASE_URL}/pages/collection.html`);
     
     // Wait for the page to be fully loaded
     await page.waitForSelector('.deck-list', { visible: true });
@@ -389,7 +389,7 @@ describe('Restaurant Crisis App', () => {
 
   test('should handle clear deck button', async () => {
     logStep('Testing clear deck button');
-    await page.goto(`${BASE_URL}/collection.html`);
+    await page.goto(`${BASE_URL}/pages/collection.html`);
     
     await page.waitForSelector('.deck-list', { visible: true });
     const clearBtn = await page.waitForSelector('.clear-deck-btn', { visible: true });

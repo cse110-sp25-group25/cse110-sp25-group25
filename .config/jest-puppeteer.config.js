@@ -1,6 +1,7 @@
 import { env } from 'process';
 
 export default {
+  rootDir: '../',
   launch: {
     headless: env.CI === 'true',
     slowMo: env.CI === 'true' ? 100 : 0,

@@ -13,8 +13,9 @@
     "puppeteer": "^24.10.0"
   },
   "scripts": {
-    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --coverage",
-    "test:e2e": "node --experimental-vm-modules node_modules/jest/bin/jest.js -c jest.e2e.config.js",
-    "test:e2e:watch": "node --experimental-vm-modules node_modules/jest/bin/jest.js -c jest.e2e.config.js --watch"
+    "lint": "node --experimental-vm-modules node_modules/eslint/bin/eslint.js ./ --ignore-pattern docs/  --config .config/eslint.config.js",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --coverage --config .config/jest.config.js",
+    "test:e2e": "node --experimental-vm-modules node_modules/jest/bin/jest.js -c .config/jest.e2e.config.js",
+    "test:e2e:watch": "node --experimental-vm-modules node_modules/jest/bin/jest.js -c .config/jest.e2e.config.js --watch"
   }
 }

@@ -35,12 +35,12 @@ jobs:
     - name: Install modules
       run: npm install
     - name: Run ESLint
-      run: npx eslint . --ignore-pattern docs/
+      run: npm run lint
     - name: Upload reports
       uses: actions/upload-artifact@v4
       with:
         name: lint-reports
-        path: eslint.sarif
+        path: .config/eslint.sarif
 
   validate-html:
     runs-on: ubuntu-latest
