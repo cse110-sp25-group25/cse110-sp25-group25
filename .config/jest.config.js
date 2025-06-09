@@ -1,7 +1,8 @@
-// jest.config.js
+// .config/jest.config.js
 export default {
+  rootDir: '../',
   collectCoverage: true,
-  collectCoverageFrom: ['js/**/*.utils.js'],
+  collectCoverageFrom: ['js/**/*.js'],
   coverageDirectory: 'docs/coverage',
   reporters: [
     'default',
@@ -17,7 +18,7 @@ export default {
 
   transform: {},    // suppress babel warning
   verbose: true,
-  testMatch: ['**/__tests__/**/*.test.js'],
+  testMatch: ['**/__tests__/*.test.js'],
   testEnvironment: 'jsdom',
   moduleFileExtensions: ['js', 'json'],
   testPathIgnorePatterns: ['/node_modules/', '/tests/e2e/']

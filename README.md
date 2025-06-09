@@ -84,13 +84,12 @@ To work smoothly as a team, follow these rules when contributing:
 ### How do I test my code for correctness and quality?
 - We use Jest and ESLint locally, and check for other tests in GitHub PRs through GitHub actions. Learn more in our [CI/CD Pipeline Folder](admin\cipipeline).
 - Steps
-    - Install the following dependencies:
-        - `npm install --save-dev eslint @eslint/js`
-        `npm install --save-dev jest`
+    - Install dependencies:
+        - `npm install`
     - To run the tests, simply run
         - `npm run test`
     - To run the linter, simply run
-        - `npx eslint ./`
+        - `npm run lint`
       - To run the E2E (end to end) testing with Puppeteer
         - `npx http-server . -p 3000`
         - `npm run test:e2e`
