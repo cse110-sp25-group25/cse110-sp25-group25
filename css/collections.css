@@ -14,6 +14,7 @@ main.collection {
 /* Left info panel */
 .left-panel {
     flex: 0 0 30%;
+    min-width: 250px;          /* ensure minimum width for readability */
     max-width: 35%;
     padding: 1rem;
     max-height: 100%;
@@ -22,7 +23,7 @@ main.collection {
     position: static;             /* remove sticky behavior for simplicity */
     top: auto;                    /* reset the top offset */
     margin: 0;
-  }
+}
 
 .left-panel h2 {
     font-size: 2.25rem;
@@ -40,6 +41,8 @@ main.collection {
     align-items: center;
     justify-content: center;
     padding: 1rem;
+    overflow-y: auto;           /* allow vertical scrolling */
+    overflow-x: auto;           /* allow horizontal scrolling */
 }
 .empty-msg {
     text-align: center;
@@ -367,14 +370,25 @@ object-fit: cover;
 
   .left-body {
     position: static;
-    max-height: 50%;
+    max-height:550px;
+    padding: 0.75rem;     /* reduce padding on mobile */
+    border-radius: 2rem;  /* reduce border radius on mobile */
+    overflow-y: auto;     /* ensure vertical scrolling works */
+    overflow-x: auto;     /* ensure horizontal scrolling works */
   }
 
   .left-panel {
-    max-width: 100%;
+    max-width: 90%;
+    min-width: 200px;      /* slightly smaller minimum width on mobile */
     position: static;
     top: auto;
     overflow-y: auto;     /* enable its own vertical scrollbar */
+    padding: 0.5rem;      /* reduce padding on mobile */
+    margin: 0 auto;
+  }
+
+  .left-panel h2 {
+    text-align: center;
   }
 
     .collection-card-front .tags {
