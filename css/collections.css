@@ -35,7 +35,7 @@ main.collection {
     height: 70vh; /* shrink-wrap to its content */
     margin-top: 1rem;
     background: #fff;
-    border-radius: 4rem;
+    border-radius: 2rem;
     position: sticky;
     display: flex;
     align-items: center;
@@ -251,8 +251,8 @@ max-width: 100%;
  
  
 .collection-card-back .menu-images img {
-width: 100px;
-height: 100px;
+width: 70px;
+height: 70px;
 border-radius: 8px;
 object-fit: cover;
 }
@@ -375,16 +375,14 @@ object-fit: cover;
     border-radius: 2rem;  /* reduce border radius on mobile */
     overflow-y: auto;     /* ensure vertical scrolling works */
     overflow-x: auto;     /* ensure horizontal scrolling works */
+    width: 100%;          /* ensure full width of parent */
   }
 
   .left-panel {
-    max-width: 90%;
-    min-width: 200px;      /* slightly smaller minimum width on mobile */
-    position: static;
-    top: auto;
-    overflow-y: auto;     /* enable its own vertical scrollbar */
-    padding: 0.5rem;      /* reduce padding on mobile */
+    max-width: 80%;
+    min-width: unset;
     margin: 0 auto;
+    padding: 0.5rem;
   }
 
   .left-panel h2 {
@@ -411,10 +409,6 @@ object-fit: cover;
   }
 
     /* ---- "backside" ----  */
-
-    /* .collection-card-back {
-    height: 50%;
-  } */
     .collection-card-back .card-details {
     padding: 0.5rem 0.75rem;
     display: flex;
