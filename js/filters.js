@@ -185,7 +185,7 @@ document.querySelectorAll('.option-btn').forEach(btn => {
 });
 
   document.getElementById('done-btn').addEventListener('click', () => {
-    window.location.href = 'swipe.html';        // or swipe.html
+    window.location.href = 'swipe.html';
   });
   });
 

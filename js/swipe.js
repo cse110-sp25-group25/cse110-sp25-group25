@@ -151,7 +151,7 @@ data.forEach(r => {
       <!-- Front -->
       <div class="card-front">
         <h2>${r.name}</h2>
-        <img src="/${r.image}" alt="${r.name}" class="card-img" />
+        <img src="../${r.image}" alt="${r.name}" class="card-img" />
         <div class="details">
           <span class="rating">
             <img src="../assets/star-icon.png" alt="star" class="icon" />
@@ -185,7 +185,7 @@ data.forEach(r => {
             ${r.phone}
           </p>
           <div class="menu-images">
-            ${(r.menuImages || []).map(src => `<img src="/${src}" alt="food">`).join('')}
+            ${(r.menuImages || []).map(src => `<img src="../${src}" alt="food">`).join('')}
           </div>
           <a href="#" class="view-menu">View Menu ↗</a>
         </div>
