@@ -1,4 +1,4 @@
-import { applyFilters, removeViewed } from '../js/swipe.utils.js';
+import { applyFilters, removeViewed } from '../js/swipe.js';
 
 describe('Swipe Utility Functions', () => {
   const mockData = [

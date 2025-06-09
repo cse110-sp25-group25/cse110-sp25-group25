@@ -21,7 +21,7 @@ async function getUniqueCuisines() {
 
   if (all.length === 0) {
 
-    const res = await fetch('data/restaurants.json');
+    const res = await fetch('/data/restaurants.json');
     all = await res.json();
     localStorage.setItem('restaurantData', JSON.stringify(all));
   
@@ -141,7 +141,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   if (starContainer) {
     for (let i = 1; i <= 5; i++) {
       const star = document.createElement('img');
-      star.src = 'assets/star-icon.png';
+      star.src = '/assets/star-icon.png';
       star.alt = `${i} star`;
       star.classList.add('star');
       star.dataset.value = i;
@@ -155,6 +155,15 @@ document.addEventListener('DOMContentLoaded', async () => {
       });
       starContainer.appendChild(star);
     }
+
+    // In the distance input handler
+    document.getElementById('distance-input').addEventListener('input', (e) => {
+      const val = e.target.value;
+      if (validatePositiveNumber(val)) {
+        userSelections.distance = parseFloat(val);
+        updateSummary();
+      }
+    });
   }
   
   // Set up event listeners for filter buttons
@@ -289,11 +298,4 @@ function updateSummary() {
   document.getElementById('sum-rating').textContent = userSelections.rating ?? '—';
 }
 
-// In the distance input handler
-document.getElementById('distance-input').addEventListener('input', (e) => {
-  const val = e.target.value;
-  if (validatePositiveNumber(val)) {
-    userSelections.distance = parseFloat(val);
-    updateSummary();
-  }
-});
+export { validatePositiveNumber }

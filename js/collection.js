@@ -85,19 +85,19 @@ function init() {
         <div class="card-details">
           <h2>${deckBody.dataset.name}</h2>
           <p>
-            <img src="assets/location-icon.png" alt="Location" class="icon-img">
+            <img src="/assets/location-icon.png" alt="Location" class="icon-img">
             ${deckBody.dataset.location}
           </p>
           <p>
-            <img src="assets/time-icon.png" alt="Hours" class="icon-img">
+            <img src="/assets/time-icon.png" alt="Hours" class="icon-img">
             ${deckBody.dataset.hours}
           </p>
           <p>
-            <img src="assets/phone-icon.png" alt="Phone" class="icon-img">
+            <img src="/assets/phone-icon.png" alt="Phone" class="icon-img">
             ${deckBody.dataset.phone}
           </p>
           <div class="menu-images">
-            ${(menuImages || []).map(src => `<img src="${src}" alt="food">`).join('')}
+            ${(menuImages || []).map(src => `<img src="/${src}" alt="food">`).join('')}
           </div>
           <a href="#" class="view-menu">View Menu ↗</a>
         </div>
@@ -207,15 +207,15 @@ function renderDeck(subset, deckList) {
               <div class="collection-card-front">
                 <h2>${r["name"]}</h2>
                 <img
-                  src=${r["image"]}
+                  src=/${r["image"]}
                   alt="restaurant"
                   class="card-img"
                 />
                 <div class="details">
-                  <img src="assets/dark-star-icon.png" alt="star icon" class="emoji"/>
+                  <img src="/assets/dark-star-icon.png" alt="star icon" class="emoji"/>
                   <span class="rating"> ${r["rating"]} </span>
                   <span></span>
-                  <img src="assets/location-icon.png" alt="star icon" class="emoji"/>
+                  <img src="/assets/location-icon.png" alt="star icon" class="emoji"/>
                   <span class="distance">${r["distance"]} mi</span>
                 </div>
                 <div class="tags">
@@ -279,12 +279,12 @@ function handleCardClick(r) {
   deckBody.innerHTML = `
     <article class="detail-card">
       <h3>${r.name}</h3>
-      <img src=${r["image"]} alt="restaurant" class="card-img"/>
+      <img src=/${r["image"]} alt="restaurant" class="card-img"/>
       <div class="details">
-        <img src="assets/dark-star-icon.png" alt="star icon" class="emoji"/>
+        <img src="/assets/dark-star-icon.png" alt="star icon" class="emoji"/>
         <span class="rating"> ${r["rating"]} </span>
         <span></span>
-        <img src="assets/location-icon.png" alt="star icon" class="emoji"/>
+        <img src="/assets/location-icon.png" alt="star icon" class="emoji"/>
         <span class="distance">${r["distance"]} mi</span>
       </div>
       <div class="tags">
