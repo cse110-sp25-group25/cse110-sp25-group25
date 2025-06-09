@@ -2150,6 +2150,1305 @@
     ]
   },
   {
+    "id": 101,
+    "name": "El Viejon Seafood and Brunch",
+    "cuisine": "Seafood",
+    "price": "$$",
+    "distance": 1.82,
+    "rating": 4.6,
+    "address": "9837 Mira Mesa Blvd, San Diego, CA 92131",
+    "phone": "(858) 368-9162",
+    "hours": "Open until 12:00 AM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/eHkZt9E6mc387xYqiP49-g/o.jpg",
+    "menuImages": [
+      "assets/sushi-1.png",
+      "assets/sushi-2.png",
+      "assets/sushi-3.png"
+    ],
+    "reviews": [
+      { "text": "Amazing seafood tower! The shrimp were perfectly cooked", "author": "Maria S." },
+      { "text": "Best brunch spot in Mira Mesa. The crab Benedict is to die for", "author": "David L." },
+      { "text": "Fresh fish and generous portions. Will definitely be back", "author": "Jennifer K." },
+      { "text": "Great atmosphere and friendly staff. The fish tacos are excellent", "author": "Mike R." },
+      { "text": "Pricey but worth it for the quality. Love their weekend specials", "author": "Sarah M." },
+      { "text": "Late night seafood cravings satisfied! Open until midnight is a plus", "author": "Carlos V." }
+    ]
+  },
+  {
+    "id": 102,
+    "name": "Mokkoji Shabu Shabu",
+    "cuisine": "Hot Pot",
+    "price": "$$$",
+    "distance": 0.94,
+    "rating": 4.6,
+    "address": "8981 Mira Mesa Blvd, San Diego, CA 92126",
+    "phone": "(858) 397-2157",
+    "hours": "Open until 10:00 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/NTfdUgOUrow2Qtm6VVR0Pw/o.jpg",
+    "menuImages": [
+      "assets/sushi-1.png",
+      "assets/sushi-2.png",
+      "assets/sushi-3.png"
+    ],
+    "reviews": [
+      { "text": "Authentic Korean hot pot experience. The broth is incredibly flavorful", "author": "Hannah W." },
+      { "text": "Fresh ingredients and great service. Perfect for cold nights", "author": "James P." },
+      { "text": "Love the all-you-can-eat option. Great variety of meats and vegetables", "author": "Lisa C." },
+      { "text": "Clean restaurant with attentive staff. The wagyu beef is amazing", "author": "Robert T." },
+      { "text": "Fun dining experience with friends. The banchan selection is excellent", "author": "Amy H." },
+      { "text": "A bit expensive but the quality justifies the price. Highly recommend", "author": "Kevin M." }
+    ]
+  },
+  {
+    "id": 103,
+    "name": "Bafang Dumpling",
+    "cuisine": "Taiwanese",
+    "price": "$$",
+    "distance": 0.49,
+    "rating": 3.8,
+    "address": "9690 Reagan Rd, Ste 104, San Diego, CA 92126",
+    "phone": "(858) 368-9999",
+    "hours": "Open until 10:00 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/Pq5RN6ma17-mTwQTa-z6yw/o.jpg",
+    "menuImages": [
+      "assets/sushi-1.png",
+      "assets/sushi-2.png",
+      "assets/sushi-3.png"
+    ],
+    "reviews": [
+      { "text": "Good dumplings but service can be slow during peak hours", "author": "Tony L." },
+      { "text": "Authentic Taiwanese flavors. The pork and chive dumplings are my favorite", "author": "Michelle Z." },
+      { "text": "Decent food but nothing spectacular. The noodle soups are better than dumplings", "author": "Steve K." },
+      { "text": "Family-run feel with homestyle cooking. Beef noodle soup is comforting", "author": "Diana R." },
+      { "text": "Hit or miss depending on the day. Sometimes dumplings are overcooked", "author": "Jason B." },
+      { "text": "Good value for money. The potstickers have a nice crispy bottom", "author": "Angela F." }
+    ]
+  },
+  {
+    "id": 104,
+    "name": "Sue's Korean Kitchen",
+    "cuisine": "Korean",
+    "price": "$$",
+    "distance": 1.9,
+    "rating": 4.8,
+    "address": "6755 Mira Mesa Blvd, Ste 109, San Diego, CA 92121",
+    "phone": "(858) 352-6511",
+    "hours": "Open until 8:00 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/d3TunuAWgr4uM0ebeUUTeQ/o.jpg",
+    "menuImages": [
+      "assets/sushi-1.png",
+      "assets/sushi-2.png",
+      "assets/sushi-3.png"
+    ],
+    "reviews": [
+      { "text": "Sue is an absolute gem! The kimchi jjigae tastes like my grandmother's", "author": "Grace K." },
+      { "text": "Authentic home-style Korean food. The bulgogi is perfectly marinated", "author": "Daniel P." },
+      { "text": "Small place but huge flavors. Sue remembers your order after a few visits", "author": "Rebecca N." },
+      { "text": "Best Korean comfort food in San Diego. The bibimbap is outstanding", "author": "Mark S." },
+      { "text": "Cash only but worth it. The banchan are always fresh and refilled generously", "author": "Stephanie L." },
+      { "text": "Hidden gem! Sue's hospitality makes you feel like family", "author": "Eric W." }
+    ]
+  },
+  {
+    "id": 105,
+    "name": "Shawarma Guys",
+    "cuisine": "Halal",
+    "price": "$$",
+    "distance": 0.5,
+    "rating": 4.5,
+    "address": "9690 Reagan Rd, Ste 103, San Diego, CA 92126",
+    "phone": "(858) 800-1018",
+    "hours": "Open until 9:00 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/9Ibjk2MYioeQPxZMrfIy5A/o.jpg",
+    "menuImages": [
+      "assets/sushi-1.png",
+      "assets/sushi-2.png",
+      "assets/sushi-3.png"
+    ],
+    "reviews": [
+      { "text": "Generous portions and great prices. The chicken shawarma is my go-to", "author": "Ahmed H." },
+      { "text": "Fresh ingredients and flavorful meat. The garlic sauce is addictive", "author": "Jennifer M." },
+      { "text": "Quick service and friendly staff. Perfect for a healthy lunch", "author": "Omar T." },
+      { "text": "The lamb platter is incredible. Rice is perfectly cooked", "author": "Sarah D." },
+      { "text": "Clean and efficient. The hummus and pita are always fresh", "author": "Michael R." },
+      { "text": "Great value Mediterranean food. The falafel is crispy and well-seasoned", "author": "Fatima A." }
+    ]
+  },
+  {
+    "id": 106,
+    "name": "Tulum Seafood",
+    "cuisine": "Mexican",
+    "price": "$$",
+    "distance": 0.56,
+    "rating": 4.3,
+    "address": "10631 Camino Ruiz, San Diego, CA 92126",
+    "phone": "(858) 397-2108",
+    "hours": "Open until 9:00 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/h_mMD2F4wiRz8BD-AIvUdA/o.jpg",
+    "menuImages": [
+      "assets/sushi-1.png",
+      "assets/sushi-2.png",
+      "assets/sushi-3.png"  
+    ],
+    "reviews": [
+      { "text": "Fresh seafood with authentic Mexican flavors. The ceviche is outstanding", "author": "Carlos M." },
+      { "text": "Great fish tacos and friendly service. The salsa verde is perfect", "author": "Linda J." },
+      { "text": "Good portions and reasonable prices. The shrimp cocktail is refreshing", "author": "Ricardo V." },
+      { "text": "Vibrant atmosphere and tasty food. The mango habanero sauce is amazing", "author": "Ashley K." },
+      { "text": "Authentic Mexican seafood. The aguachile is spicy and delicious", "author": "Diego R." },
+      { "text": "Family-friendly spot with great margaritas. The whole fried fish is impressive", "author": "Patricia W." }
+    ]
+  },
+  {
+    "id": 107,
+    "name": "Mom Kitchen",
+    "cuisine": "Chinese",
+    "price": "$$",
+    "distance": 1.11,
+    "rating": 4.1,
+    "address": "9178 Mira Mesa Blvd, San Diego, CA 92126",
+    "phone": "(858) 666-7557",
+    "hours": "Open until 2:30 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/BCH4Qa__KC5NclwtlR8Zmg/o.jpg",
+    "menuImages": [
+      "assets/sushi-1.png",
+      "assets/sushi-2.png",
+      "assets/sushi-3.png"
+    ],
+    "reviews": [
+      { "text": "Homestyle Chinese cooking at its best. The braised pork belly is tender", "author": "Wei L." },
+      { "text": "Limited hours but worth the visit. The mapo tofu is authentic", "author": "Susan C." },
+      { "text": "Simple decor but amazing flavors. The dan dan noodles have perfect spice", "author": "Andrew T." },
+      { "text": "Cash only but reasonable prices. The kung pao chicken is excellent", "author": "Helen W." },
+      { "text": "Small menu but everything is well-executed. The hot pot is comforting", "author": "Peter K." },
+      { "text": "Friendly owner who takes pride in the food. The fried rice is perfectly seasoned", "author": "Mary G." }
+    ]
+  },
+  {
+    "id": 108,
+    "name": "Thien Huong",
+    "cuisine": "Vietnamese",
+    "price": "$$",
+    "distance": 1.29,
+    "rating": 4.4,
+    "address": "9349 Mira Mesa Blvd, San Diego, CA 92126",
+    "phone": "(858) 368-9018",
+    "hours": "Open until 5:00 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/NEUU6q7N5ZtMV-MIU_2FlA/o.jpg",
+    "menuImages": [
+      "assets/sushi-1.png",
+      "assets/sushi-2.png",
+      "assets/sushi-3.png"
+    ],
+    "reviews": [
+      { "text": "Authentic Vietnamese pho with rich, flavorful broth. Best in the area", "author": "Linh N." },
+      { "text": "Fresh herbs and quality ingredients. The grilled pork banh mi is fantastic", "author": "Tom B." },
+      { "text": "Family-owned with traditional recipes. The spring rolls are perfectly crispy", "author": "Jessica H." },
+      { "text": "Limited hours but worth planning around. The beef noodle soup is comforting", "author": "Ryan M." },
+      { "text": "Generous portions and fair prices. The Vietnamese coffee is strong and sweet", "author": "Nancy P." },
+      { "text": "Simple atmosphere but exceptional food. The lemongrass chicken is aromatic", "author": "Kevin L." }
+    ]
+  },
+  {
+    "id": 109,
+    "name": "The French Oven",
+    "cuisine": "Coffee & Tea",
+    "price": "$",
+    "distance": 3.85,
+    "rating": 4.6,
+    "address": "10299 Scripps Trail, Ste E, San Diego, CA 92131",
+    "phone": "(858) 766-8706",
+    "hours": "Open until 3:00 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/xaVPCqHVXFVUFp7wjtZ1IA/o.jpg",
+    "menuImages": [
+      "assets/sushi-1.png",
+      "assets/sushi-2.png",
+      "assets/sushi-3.png"
+    ],
+    "reviews": [
+      { "text": "Authentic French pastries and excellent coffee. The croissants are buttery perfection", "author": "Marie D." },
+      { "text": "Cozy cafe with European charm. The pain au chocolat is as good as Paris", "author": "Philippe R." },
+      { "text": "Great spot for breakfast or afternoon coffee. The quiche lorraine is delicious", "author": "Amanda S." },
+      { "text": "French owner brings authenticity. The macarons are colorful and tasty", "author": "Robert K." },
+      { "text": "Limited seating but worth the wait. The cafe au lait is perfectly balanced", "author": "Catherine M." },
+      { "text": "Hidden gem for French pastries. The eclairs are filled generously with cream", "author": "Jean-Paul L." }
+    ]
+  },
+  {
+    "id": 110,
+    "name": "Kalei's Kitchenette",
+    "cuisine": "Hawaiian",
+    "price": "$$",
+    "distance": 3.4,
+    "rating": 4.3,
+    "address": "9926 Carmel Mountain Rd, Ste F, San Diego, CA 92129",
+    "phone": "(619) 738-4731",
+    "hours": "Open until 7:00 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/eldenkDK9VQJDQWdGca1Yw/o.jpg",
+    "menuImages": [
+      "assets/sushi-1.png",
+      "assets/sushi-2.png",
+      "assets/sushi-3.png"
+    ],
+    "reviews": [
+      { "text": "Authentic Hawaiian plate lunches. The kalua pig is smoky and tender", "author": "Kailani H." },
+      { "text": "Massive portions and island flavors. The loco moco is comfort food at its best", "author": "Derek T." },
+      { "text": "Friendly staff with aloha spirit. The poke bowls are fresh and flavorful", "author": "Melissa W." },
+      { "text": "Taste of Hawaii in San Diego. The macaroni salad is surprisingly addictive", "author": "Jake R." },
+      { "text": "Casual atmosphere and good prices. The katsu chicken is crispy and juicy", "author": "Brenda M." },
+      { "text": "Family-run with authentic recipes. The spam musubi brings back island memories", "author": "Keoni P." }
+    ]
+  },
+  {
+    "id": 111,
+    "name": "Saigon Corner",
+    "cuisine": "Vietnamese",
+    "price": "$$",
+    "distance": 0.71,
+    "rating": 4.1,
+    "address": "10550 Camino Ruiz, Ste A, San Diego, CA 92126",
+    "phone": "(858) 956-0828",
+    "hours": "Open until 9:00 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/pOXa6hUbgQHs2llbxs4FNw/o.jpg",
+    "menuImages": [
+      "assets/sushi-1.png",
+      "assets/sushi-2.png",
+      "assets/sushi-3.png"
+    ],
+    "reviews": [
+      { "text": "Solid Vietnamese food with consistent quality. The pho tai is my regular order", "author": "Mike H." },
+      { "text": "Good value and decent portions. The vermicelli bowls are fresh and light", "author": "Tiffany L." },
+      { "text": "Standard Vietnamese fare. The spring rolls could use more filling", "author": "Brian K." },
+      { "text": "Convenient location and friendly service. The beef pho broth is flavorful", "author": "Sandra R." },
+      { "text": "Not the best Vietnamese in town but reliable. The grilled pork is well-seasoned", "author": "Alex M." },
+      { "text": "Clean restaurant with quick service. The iced coffee is strong and refreshing", "author": "Jennifer C." }
+    ]
+  },
+  {
+    "id": 112,
+    "name": "Gravity Heights - Sorrento Valley",
+    "cuisine": "Brewpubs",
+    "price": "$$",
+    "distance": 2.95,
+    "rating": 4.2,
+    "address": "9920 Pacific Heights Blvd, San Diego, CA 92121",
+    "phone": "(858) 283-8206",
+    "hours": "Open until 8:30 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/3lwLJ5R29bTA3MbylztGCg/o.jpg",
+    "menuImages": [
+      "assets/sushi-1.png",
+      "assets/sushi-2.png",
+      "assets/sushi-3.png"
+    ],
+    "reviews": [
+      { "text": "Great craft beer selection and solid pub food. The IPA flight is impressive", "author": "Chris B." },
+      { "text": "Modern brewery with good atmosphere. The buffalo cauliflower is surprisingly good", "author": "Rachel P." },
+      { "text": "Dog-friendly patio and knowledgeable staff. The burger is juicy and well-prepared", "author": "Matt S." },
+      { "text": "Good spot for after-work drinks. The fish tacos pair well with their wheat beer", "author": "Lauren D." },
+      { "text": "Decent food but beer is the star. The hazy IPA is perfectly balanced", "author": "Tyler R." },
+      { "text": "Clean modern space with outdoor seating. The pretzel with beer cheese is a must", "author": "Nicole K." }
+    ]
+  },
+  {
+    "id": 113,
+    "name": "Ngon Ngon To Go",
+    "cuisine": "Vietnamese",
+    "price": "$$",
+    "distance": 0.71,
+    "rating": 4.8,
+    "address": "10550 Camino Ruiz, San Diego, CA 92126",
+    "phone": "(858) 888-6177",
+    "hours": "Open until 8:00 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/2Jtqa2nq29F1ZB038dP40Q/o.jpg",
+    "menuImages": [
+      "assets/sushi-1.png",
+      "assets/sushi-2.png",
+      "assets/sushi-3.png"
+    ],
+    "reviews": [
+      { "text": "Exceptional Vietnamese food! The pho broth is rich and deeply flavored", "author": "Anna V." },
+      { "text": "Best banh mi in San Diego. The bread is perfectly crispy with generous filling", "author": "John T." },
+      { "text": "Small takeout spot with huge flavors. The lemongrass beef is aromatic and tender", "author": "Linda M." },
+      { "text": "Family recipes passed down generations. Everything tastes authentic and fresh", "author": "David L." },
+      { "text": "Quick service and reasonable prices. The broken rice with grilled pork is amazing", "author": "Stephanie W." },
+      { "text": "Hidden gem that locals love. The Vietnamese iced coffee is perfectly sweet", "author": "Paul R." }
+    ]
+  },
+  {
+    "id": 114,
+    "name": "Ju Feng Yuan Dumpling Cafe",
+    "cuisine": "Chinese",
+    "price": "$$",
+    "distance": 4.99,
+    "rating": 4.4,
+    "address": "12265 Scripps Poway Pkwy, Ste B109, Poway, CA 92064",
+    "phone": "(858) 999-9689",
+    "hours": "Open until 3:00 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/AutGAvTssixxRAXMTwlWaw/o.jpg",
+    "menuImages": [
+      "assets/sushi-1.png",
+      "assets/sushi-2.png",
+      "assets/sushi-3.png"
+    ],
+    "reviews": [
+      { "text": "Handmade dumplings with thin, delicate skins. The pork and chive are outstanding", "author": "Emily Z." },
+      { "text": "Authentic Northern Chinese cuisine. The pan-fried dumplings have perfect crispy bottoms", "author": "Richard H." },
+      { "text": "Limited hours but worth the trip from San Diego. The hot and sour soup is excellent", "author": "Margaret K." },
+      { "text": "Small family restaurant with big flavors. The beef noodle soup is hearty and warming", "author": "Steven L." },
+      { "text": "Fresh ingredients and traditional techniques. The steamed dumplings are juicy inside", "author": "Carol R." },
+      { "text": "Consistent quality and friendly service. The scallion pancakes are crispy and flaky", "author": "William M." }
+    ]
+  },
+  {
+    "id": 115,
+    "name": "Din Tai Fung",
+    "cuisine": "Taiwanese",
+    "price": "$$$",
+    "distance": 5.1,
+    "rating": 4.4,
+    "address": "4301 La Jolla Village Dr, Ste 2000, San Diego, CA 92122",
+    "phone": "(858) 375-5988",
+    "hours": "Open until 10:00 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/VmEJ0hAKdzeid6JOV9PA5w/o.jpg",
+    "menuImages": [
+      "assets/sushi-1.png",
+      "assets/sushi-2.png",
+      "assets/sushi-3.png"
+    ],
+    "reviews": [
+      { "text": "World-famous xiaolongbao lives up to the hype. Each dumpling is perfectly pleated", "author": "Grace T." },
+      { "text": "Pricey but exceptional quality. The soup dumplings burst with flavorful broth", "author": "Michael C." },
+      { "text": "Consistent across all locations. The truffle and pork dumplings are luxurious", "author": "Janet W." },
+      { "text": "Long wait but worth it. The shrimp and pork shumai are delicate and tasty", "author": "Kenneth L." },
+      { "text": "Upscale Chinese dining experience. The dan dan noodles have perfect spice balance", "author": "Diana P." },
+      { "text": "Professional service and pristine kitchen. The chocolate xiaolongbao is a fun dessert", "author": "Robert S." }
+    ]
+  },
+  {
+    "id": 116,
+    "name": "Postino Del Mar",
+    "cuisine": "Wine Bars",
+    "price": "$$",
+    "distance": 5.67,
+    "rating": 4.6,
+    "address": "3745 Paseo Place, Ste 800, San Diego, CA 92130",
+    "phone": "(619) 567-2111",
+    "hours": "Open until 11:00 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/KAhdAsbKxeQxqjDO_q-Seg/o.jpg",
+    "menuImages": [
+      "assets/sushi-1.png",
+      "assets/sushi-2.png",
+      "assets/sushi-3.png"
+    ],
+    "reviews": [
+      { "text": "Perfect date night spot with extensive wine selection. The bruschetta board is amazing", "author": "Sophie M." },
+      { "text": "Cozy atmosphere with knowledgeable staff. The charcuterie pairs perfectly with wine", "author": "James R." },
+      { "text": "Great happy hour deals on wine and food. The fig and goat cheese bruschetta is divine", "author": "Ashley K." },
+      { "text": "Romantic ambiance with dim lighting. The burrata is creamy and fresh", "author": "Marcus D." },
+      { "text": "Trendy spot that gets busy. The wine flights let you try multiple varieties", "author": "Vanessa L." },
+      { "text": "Upscale wine bar with quality ingredients. The prosciutto melts in your mouth", "author": "Christopher T." }
+    ]
+  },
+  {
+    "id": 117,
+    "name": "Treehouse",
+    "cuisine": "Breakfast & Brunch",
+    "price": "N/A",
+    "distance": 2.89,
+    "rating": 5.0,
+    "address": "9945 Pacific Heights Blvd, Ste 200, San Diego, CA 92121",
+    "phone": "",
+    "hours": "Open until 3:00 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/c4ngymz26bpBmbDwzloOnw/o.jpg",
+    "menuImages": [
+      "assets/sushi-1.png",
+      "assets/sushi-2.png",
+      "assets/sushi-3.png"
+    ],
+    "reviews": [
+      { "text": "Absolutely perfect brunch spot! The pancakes are fluffy clouds of heaven", "author": "Madison B." },
+      { "text": "Everything is made with love and attention. The avocado toast is beautifully presented", "author": "Taylor S." },
+      { "text": "Small menu but everything is executed flawlessly. The breakfast burrito is massive", "author": "Jordan K." },
+      { "text": "Friendly staff and cozy atmosphere. The French toast is crispy outside, custardy inside", "author": "Alexis R." },
+      { "text": "Worth the wait for a table. The eggs Benedict has the perfect hollandaise", "author": "Blake M." },
+      { "text": "Fresh ingredients and creative combinations. The seasonal fruit bowl is gorgeous", "author": "Casey L." }
+    ]
+  },
+  {
+    "id": 118,
+    "name": "Little Sakana All You Can Eat Sushi",
+    "cuisine": "Sushi Bars",
+    "price": "$$$",
+    "distance": 0.37,
+    "rating": 4.3,
+    "address": "8270 Mira Mesa Blvd, Ste E, San Diego, CA 92126",
+    "phone": "(858) 860-5000",
+    "hours": "Open until 10:00 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/hxHaha-lQIjYx9iJANe1yg/o.jpg",
+    "menuImages": [
+      "assets/sushi-1.png",
+      "assets/sushi-2.png",
+      "assets/sushi-3.png"
+    ],
+    "reviews": [
+      { "text": "Great value for all-you-can-eat sushi. The salmon and tuna are fresh", "author": "Kevin W." },
+      { "text": "Wide variety of rolls and sashimi. The tempura is light and crispy", "author": "Lisa H." },
+      { "text": "Perfect for groups and big appetites. The spicy tuna roll is consistently good", "author": "Aaron P." },
+      { "text": "Quality is decent for the price point. The miso soup is a nice starter", "author": "Jessica M." },
+      { "text": "Can get busy during dinner rush. The California rolls are well-made", "author": "Ryan T." },
+      { "text": "Good selection of cooked options too. The chicken teriyaki is tender and flavorful", "author": "Brittany K." }
+    ]
+  },
+  {
+    "id": 119,
+    "name": "Nanay's Best BBQ",
+    "cuisine": "Barbeque",
+    "price": "$$",
+    "distance": 1.89,
+    "rating": 4.3,
+    "address": "6715 Mira Mesa Blvd, Ste 103, San Diego, CA 92121",
+    "phone": "(858) 625-0827",
+    "hours": "Open until 3:00 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/lMEJ4D8DCCPW1o5xJwS1ug/o.jpg",
+    "menuImages": [
+      "assets/sushi-1.png",
+      "assets/sushi-2.png",
+      "assets/sushi-3.png"
+    ],
+    "reviews": [
+      { "text": "Authentic Filipino BBQ with sweet and savory flavors. The pork skewers are addictive", "author": "Maria C." },
+      { "text": "Limited hours but worth planning around. The chicken inasal is perfectly charred", "author": "Jose R." },
+      { "text": "Reminds me of home cooking. The longanisa is spiced just right", "author": "Carmen L." },
+      { "text": "Great prices and generous portions. The garlic rice pairs perfectly with everything", "author": "Francisco M." },
+      { "text": "Family-run with traditional recipes. The lumpia are crispy and well-filled", "author": "Rosa V." },
+      { "text": "Casual atmosphere and friendly service. The pancit is loaded with vegetables and meat", "author": "Antonio S." }
+    ]
+  },
+  {
+    "id": 120,
+    "name": "Serpentine Cider",
+    "cuisine": "Cideries",
+    "price": "$",
+    "distance": 1.75,
+    "rating": 4.7,
+    "address": "8665 Miralani Dr, Ste 100, San Diego, CA 92126",
+    "phone": "(858) 201-5032",
+    "hours": "Open until 9:00 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/TWdNWufodoKGg7f-5FLyMA/o.jpg",
+    "menuImages": [
+      "assets/sushi-1.png",
+      "assets/sushi-2.png",
+      "assets/sushi-3.png"
+    ],
+    "reviews": [
+      {
+        "user": "Sarah M.",
+        "rating": 5,
+        "comment": "Amazing selection of craft ciders! The tasting flight was perfect and the staff really knew their stuff. Love the cozy atmosphere.",
+        "date": "2024-11-15"
+      },
+      {
+        "user": "Mike T.",
+        "rating": 4,
+        "comment": "Great local spot with unique flavors. The apple-ginger cider was outstanding. Wish they had more food options though.",
+        "date": "2024-10-28"
+      }
+    ]
+  },
+  {
+    "id": 121,
+    "name": "Mo-Mo-Paradise",
+    "cuisine": "Japanese",
+    "price": "$$$",
+    "distance": 0.5,
+    "rating": 4.0,
+    "address": "8120 Mira Mesa Blvd, Unit 102, San Diego, CA 92126",
+    "phone": "(858) 397-2224",
+    "hours": "Open until 2:00 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/AXoO5kpZjj1-rqUeSbQSOg/o.jpg",
+    "menuImages": [
+      "assets/sushi-1.png",
+      "assets/sushi-2.png",
+      "assets/sushi-3.png"
+    ],
+    "reviews": [
+      {
+        "user": "Jessica L.",
+        "rating": 4,
+        "comment": "Solid shabu-shabu experience. The meat quality was good and broth was flavorful. Service was attentive. A bit pricey but worth it for special occasions.",
+        "date": "2024-12-01"
+      },
+      {
+        "user": "David K.",
+        "rating": 3,
+        "comment": "Food was decent but nothing exceptional. The lunch hours are quite limited which is inconvenient. Staff was friendly though.",
+        "date": "2024-11-20"
+      }
+    ]
+  },
+  {
+    "id": 122,
+    "name": "56 Thai Cafe",
+    "cuisine": "Thai",
+    "price": "N/A",
+    "distance": 2.96,
+    "rating": 4.9,
+    "address": "7825 Highlands Village Pl, Ste E104, San Diego, CA 92129",
+    "phone": "(858) 324-0082",
+    "hours": "Open until 9:00 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/B-URItUCqocN-rc1R_8KMQ/o.jpg",
+    "menuImages": [
+      "assets/sushi-1.png",
+      "assets/sushi-2.png",
+      "assets/sushi-3.png"
+    ],
+    "reviews": [
+      {
+        "user": "Amanda R.",
+        "rating": 5,
+        "comment": "Hands down the best pad thai in San Diego! Authentic flavors, perfect spice level, and generous portions. The green curry is incredible too.",
+        "date": "2024-11-30"
+      },
+      {
+        "user": "Carlos P.",
+        "rating": 5,
+        "comment": "Hidden gem! Everything we ordered was phenomenal. The tom kha soup was perfect and the mango sticky rice was the best I've had outside Thailand.",
+        "date": "2024-11-18"
+      }
+    ]
+  },
+  {
+    "id": 123,
+    "name": "Blazzers",
+    "cuisine": "Food Trucks",
+    "price": "$$",
+    "distance": 1.55,
+    "rating": 4.5,
+    "address": "9756 Mira Mesa Blvd, San Diego, CA 92126",
+    "phone": "(858) 774-7202",
+    "hours": "Open until 2:00 AM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/rhU6H_2kYSh45IYunMKa5A/o.jpg",
+    "menuImages": [
+      "assets/sushi-1.png",
+      "assets/sushi-2.png",
+      "assets/sushi-3.png"
+    ],
+    "reviews": [
+      {
+        "user": "Tony B.",
+        "rating": 5,
+        "comment": "Perfect late night spot! The loaded fries are massive and the burgers are juicy. Great value for money and they're open so late.",
+        "date": "2024-12-03"
+      },
+      {
+        "user": "Lisa H.",
+        "rating": 4,
+        "comment": "Good food truck fare. The chicken sandwich was really tasty and the portions are huge. Can get a bit busy on weekends but worth the wait.",
+        "date": "2024-11-25"
+      }
+    ]
+  },
+  {
+    "id": 124,
+    "name": "Menya Ultra - Mira Mesa",
+    "cuisine": "Ramen",
+    "price": "$$",
+    "distance": 0.62,
+    "rating": 4.3,
+    "address": "8141 Mira Mesa Blvd, San Diego, CA 92126",
+    "phone": "(858) 397-2247",
+    "hours": "Open until 2:00 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/zMTCp9805eP-n4zNGFPj2A/o.jpg",
+    "menuImages": [
+      "assets/sushi-1.png",
+      "assets/sushi-2.png",
+      "assets/sushi-3.png"
+    ],
+    "reviews": [
+      {
+        "user": "Kevin W.",
+        "rating": 4,
+        "comment": "Rich, flavorful tonkotsu broth and perfectly cooked noodles. The chashu was tender and melted in my mouth. Wish they were open for dinner too!",
+        "date": "2024-11-28"
+      },
+      {
+        "user": "Rachel M.",
+        "rating": 4,
+        "comment": "Excellent ramen quality. The spicy miso was my favorite. Only downside is the limited hours - they close pretty early for lunch only.",
+        "date": "2024-11-12"
+      }
+    ]
+  },
+  {
+    "id": 125,
+    "name": "California English",
+    "cuisine": "British",
+    "price": "$$$",
+    "distance": 3.84,
+    "rating": 3.9,
+    "address": "9276 Scranton Rd, San Diego, CA 92121",
+    "phone": "(858) 201-3461",
+    "hours": "Open until 9:00 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/70pkrnqE3pIH-PGWKACL8w/o.jpg",
+    "menuImages": [
+      "assets/sushi-1.png",
+      "assets/sushi-2.png",
+      "assets/sushi-3.png"
+    ],
+    "reviews": [
+      {
+        "user": "James D.",
+        "rating": 4,
+        "comment": "Nice authentic British pub feel. The fish and chips were solid and the bangers and mash reminded me of London. Good beer selection too.",
+        "date": "2024-11-22"
+      },
+      {
+        "user": "Emma S.",
+        "rating": 3,
+        "comment": "Decent British food but a bit overpriced for what you get. The shepherd's pie was tasty but small portion. Service was slow.",
+        "date": "2024-11-05"
+      }
+    ]
+  },
+  {
+    "id": 126,
+    "name": "Stone Brewing World Bistro & Gardens",
+    "cuisine": "Breweries",
+    "price": "$$",
+    "distance": 3.08,
+    "rating": 3.8,
+    "address": "1999 Citracado Pkwy, Escondido, CA 92029",
+    "phone": "(760) 294-7866",
+    "hours": "Open until 11:00 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/5xweQ_wt8f23Ief1unTQog/o.jpg",
+    "menuImages": [
+      "assets/sushi-1.png",
+      "assets/sushi-2.png",
+      "assets/sushi-3.png"
+    ],
+    "reviews": [
+      {
+        "user": "Brad C.",
+        "rating": 4,
+        "comment": "Beautiful location with great outdoor seating. The IPA selection is fantastic and the garlic fries are addictive. Food is decent but you come for the beer.",
+        "date": "2024-12-02"
+      },
+      {
+        "user": "Michelle F.",
+        "rating": 3,
+        "comment": "Nice atmosphere and good beers but the food was just okay. Service was a bit slow considering it wasn't that busy. The gardens are beautiful though.",
+        "date": "2024-11-14"
+      }
+    ]
+  },
+  {
+    "id": 127,
+    "name": "Dumplings N More",
+    "cuisine": "Chinese",
+    "price": "$$",
+    "distance": 0.58,
+    "rating": 4.4,
+    "address": "1507 East Valley Pkwy, Ste 1, Escondido, CA 92027",
+    "phone": "(760) 688-6158",
+    "hours": "Open until 9:00 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/wXCUorL0PBsqEMtn0xCD4w/o.jpg",
+    "menuImages": [
+      "assets/sushi-1.png",
+      "assets/sushi-2.png",
+      "assets/sushi-3.png"
+    ],
+    "reviews": [
+      {
+        "user": "Helen Z.",
+        "rating": 5,
+        "comment": "Best dumplings in North County! Hand-made and so flavorful. The pork and chive dumplings are my favorite. Great authentic Chinese food.",
+        "date": "2024-11-26"
+      },
+      {
+        "user": "Robert L.",
+        "rating": 4,
+        "comment": "Really good Chinese comfort food. The beef noodle soup is hearty and the dumplings are made fresh. Portions are generous for the price.",
+        "date": "2024-11-10"
+      }
+    ]
+  },
+  {
+    "id": 128,
+    "name": "Barn Door Public House",
+    "cuisine": "Beer Gardens",
+    "price": "$$",
+    "distance": 2.98,
+    "rating": 4.6,
+    "address": "2500 S Escondido Blvd, Escondido, CA 92025",
+    "phone": "",
+    "hours": "Open until 10:00 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/oZXeKViHWp0AMLBeiTwjYw/o.jpg",
+    "menuImages": [
+      "assets/sushi-1.png",
+      "assets/sushi-2.png",
+      "assets/sushi-3.png"
+    ],
+    "reviews": [
+      {
+        "user": "Steve A.",
+        "rating": 5,
+        "comment": "Love this place! Great outdoor space, excellent craft beer selection, and the wings are phenomenal. Perfect spot to watch the game with friends.",
+        "date": "2024-12-01"
+      },
+      {
+        "user": "Kelly R.",
+        "rating": 4,
+        "comment": "Fun atmosphere and good food. The pretzel bites with beer cheese are amazing. Gets pretty crowded on weekend nights but that adds to the energy.",
+        "date": "2024-11-17"
+      }
+    ]
+  },
+  {
+    "id": 129,
+    "name": "Sunny Side Kitchen",
+    "cuisine": "Sandwiches",
+    "price": "$$",
+    "distance": 1.33,
+    "rating": 4.8,
+    "address": "155 S Orange St, Escondido, CA 92025",
+    "phone": "(760) 294-4450",
+    "hours": "Open until 2:30 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/gXbNO7NATTf3XmPZF5ePmg/o.jpg",
+    "menuImages": [
+      "assets/sushi-1.png",
+      "assets/sushi-2.png",
+      "assets/sushi-3.png"
+    ],
+    "reviews": [
+      {
+        "user": "Maria G.",
+        "rating": 5,
+        "comment": "Best breakfast sandwiches in town! The ingredients are so fresh and the bread is perfect. The avocado toast is incredible too. Worth the early hours!",
+        "date": "2024-11-29"
+      },
+      {
+        "user": "John P.",
+        "rating": 5,
+        "comment": "Amazing little spot! The turkey club is loaded with quality ingredients and the coffee is excellent. Staff is super friendly and welcoming.",
+        "date": "2024-11-21"
+      }
+    ]
+  },
+  {
+    "id": 130,
+    "name": "Home Sweet Home Cafe",
+    "cuisine": "American",
+    "price": "$$",
+    "distance": 2.53,
+    "rating": 4.5,
+    "address": "662 Enterprise St, Escondido, CA 92029",
+    "phone": "(760) 743-2233",
+    "hours": "Open until 2:00 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/1kMLg3MxtFB7Xom1N5x_LA/o.jpg",
+    "menuImages": [
+      "assets/sushi-1.png",
+      "assets/sushi-2.png",
+      "assets/sushi-3.png"
+    ],
+    "reviews": [
+      {
+        "user": "Nancy K.",
+        "rating": 5,
+        "comment": "True to its name - feels like home! The pancakes are fluffy and huge, and the omelets are packed with fresh ingredients. Great comfort food.",
+        "date": "2024-11-27"
+      },
+      {
+        "user": "Michael D.",
+        "rating": 4,
+        "comment": "Solid American breakfast spot. The biscuits and gravy are hearty and the hash browns are crispy. Can get busy on weekends but service is friendly.",
+        "date": "2024-11-13"
+      }
+    ]
+  },
+  {
+    "id": 131,
+    "name": "TJ Tacos",
+    "cuisine": "Mexican",
+    "price": "$$",
+    "distance": 0.38,
+    "rating": 4.2,
+    "address": "802 E Valley Pkwy, Escondido, CA 92025",
+    "phone": "(760) 294-7511",
+    "hours": "Open until 12:00 AM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/aGww_iEs8qD6CrP5JsIsBw/o.jpg",
+    "menuImages": [
+      "assets/sushi-1.png",
+      "assets/sushi-2.png",
+      "assets/sushi-3.png"
+    ],
+    "reviews": [
+      {
+        "user": "Carlos M.",
+        "rating": 4,
+        "comment": "Authentic Mexican flavors and great late night hours. The carne asada tacos are flavorful and the salsa verde has a nice kick. Good value.",
+        "date": "2024-12-04"
+      },
+      {
+        "user": "Jennifer L.",
+        "rating": 4,
+        "comment": "Solid taco spot with fresh ingredients. The fish tacos are my go-to and the portions are generous. Perfect for a quick, satisfying meal.",
+        "date": "2024-11-19"
+      }
+    ]
+  },
+  {
+    "id": 132,
+    "name": "H Brothers",
+    "cuisine": "Comfort Food",
+    "price": "$$",
+    "distance": 0.93,
+    "rating": 4.5,
+    "address": "212 E Grand Ave, Escondido, CA 92025",
+    "phone": "(442) 999-5542",
+    "hours": "Open until 10:00 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/8MBmUvzD7vmjuQXmUQi0MA/o.jpg",
+    "menuImages": [
+      "assets/sushi-1.png",
+      "assets/sushi-2.png",
+      "assets/sushi-3.png"
+    ],
+    "reviews": [
+      {
+        "user": "Patricia W.",
+        "rating": 5,
+        "comment": "Amazing comfort food! The mac and cheese is creamy perfection and the fried chicken is crispy and juicy. Feels like grandma's cooking.",
+        "date": "2024-11-30"
+      },
+      {
+        "user": "Chris T.",
+        "rating": 4,
+        "comment": "Great hearty meals and reasonable prices. The meatloaf dinner is huge and delicious. Service is warm and friendly. Definitely coming back!",
+        "date": "2024-11-16"
+      }
+    ]
+  },
+  {
+    "id": 133,
+    "name": "Bag O Crab",
+    "cuisine": "Seafood",
+    "price": "$$",
+    "distance": 0.64,
+    "rating": 4.5,
+    "address": "1535 E Valley Pkwy, Ste 102, Escondido, CA 92027",
+    "phone": "(760) 294-8065",
+    "hours": "Open until 10:00 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/LX84xvyOv90rSeW0MwgH7g/o.jpg",
+    "menuImages": [
+      "assets/sushi-1.png",
+      "assets/sushi-2.png",
+      "assets/sushi-3.png"
+    ],
+    "reviews": [
+      {
+        "user": "Andrew H.",
+        "rating": 5,
+        "comment": "Best seafood boil in the area! The Cajun spice blend is perfect and the crab is fresh and sweet. Messy but so worth it. Bring your appetite!",
+        "date": "2024-12-02"
+      },
+      {
+        "user": "Samantha B.",
+        "rating": 4,
+        "comment": "Fun dining experience! The shrimp and sausage combo was delicious. Gets your hands dirty but that's part of the charm. Great for groups.",
+        "date": "2024-11-24"
+      }
+    ]
+  },
+  {
+    "id": 134,
+    "name": "Burger Bench",
+    "cuisine": "Burgers",
+    "price": "$$",
+    "distance": 0.91,
+    "rating": 4.5,
+    "address": "237 E Grand Ave, Escondido, CA 92025",
+    "phone": "(760) 294-2001",
+    "hours": "Open until 10:00 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/6NIuI9z4kpQ6e81ZON6RTw/o.jpg",
+    "menuImages": [
+      "assets/sushi-1.png",
+      "assets/sushi-2.png",
+      "assets/sushi-3.png"
+    ],
+    "reviews": [
+      {
+        "user": "Tyler S.",
+        "rating": 5,
+        "comment": "Incredible burgers! The beef is high quality and cooked perfectly. The truffle fries are addictive. Best burger spot in Escondido hands down.",
+        "date": "2024-11-28"
+      },
+      {
+        "user": "Ashley C.",
+        "rating": 4,
+        "comment": "Great gourmet burgers with creative toppings. The sweet potato fries are excellent too. A bit pricey but worth it for the quality.",
+        "date": "2024-11-11"
+      }
+    ]
+  },
+  {
+    "id": 135,
+    "name": "Vintana Wine + Dine",
+    "cuisine": "New American",
+    "price": "$$",
+    "distance": 2.4,
+    "rating": 4.0,
+    "address": "1205 Auto Pk Way, Escondido, CA 92029",
+    "phone": "(760) 745-7777",
+    "hours": "Open until 9:00 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/emTrdx2eF6axtzS0rq7FWw/o.jpg",
+    "menuImages": [
+      "assets/sushi-1.png",
+      "assets/sushi-2.png",
+      "assets/sushi-3.png"
+    ],
+    "reviews": [
+      {
+        "user": "Catherine R.",
+        "rating": 4,
+        "comment": "Nice upscale dining with good wine selection. The salmon was cooked perfectly and the ambiance is great for date night. Service was professional.",
+        "date": "2024-11-25"
+      },
+      {
+        "user": "Daniel F.",
+        "rating": 4,
+        "comment": "Solid new American cuisine. The duck breast was flavorful and well-presented. Wine list is extensive. A good choice for special occasions.",
+        "date": "2024-11-08"
+      }
+    ]
+  },
+  {
+    "id": 136,
+    "name": "Bubba's",
+    "cuisine": "Salad",
+    "price": "N/A",
+    "distance": 1.08,
+    "rating": 4.0,
+    "address": "136 W Grand Ave, Escondido, CA 92025",
+    "phone": "(442) 257-2716",
+    "hours": "Open until 10:00 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/U51RzqivQ8ambVSXyf-a3A/o.jpg",
+    "menuImages": [
+      "assets/sushi-1.png",
+      "assets/sushi-2.png",
+      "assets/sushi-3.png"
+    ],
+    "reviews": [
+      {
+        "user": "Laura J.",
+        "rating": 4,
+        "comment": "Fresh, healthy options with generous portions. The Cobb salad is loaded with ingredients and the dressings are house-made. Good for a light meal.",
+        "date": "2024-11-23"
+      },
+      {
+        "user": "Mark E.",
+        "rating": 4,
+        "comment": "Great salad bar with lots of variety. Everything tastes fresh and they have good protein options. Perfect for when you want something healthy.",
+        "date": "2024-11-06"
+      }
+    ]
+  },
+  {
+    "id": 137,
+    "name": "One More Bite Dumpling House",
+    "cuisine": "Shanghainese",
+    "price": "$$",
+    "distance": 5.55,
+    "rating": 4.8,
+    "address": "803 S Twin Oaks Valley Rd, San Marcos, CA 92078",
+    "phone": "(442) 515-3429",
+    "hours": "Hours not available",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/injvcopgjGJeockyKZM8WQ/o.jpg",
+    "menuImages": [
+      "assets/sushi-1.png",
+      "assets/sushi-2.png",
+      "assets/sushi-3.png"
+    ],
+    "reviews": [
+      {
+        "user": "Grace C.",
+        "rating": 5,
+        "comment": "Authentic Shanghainese cuisine! The xiaolongbao (soup dumplings) are incredible - so much flavor in each bite. Hidden gem worth the drive.",
+        "date": "2024-11-26"
+      },
+      {
+        "user": "William Z.",
+        "rating": 5,
+        "comment": "Best dumplings I've had outside of Shanghai! The pan-fried dumplings are crispy and juicy. Everything is made fresh. Highly recommend!",
+        "date": "2024-11-09"
+      }
+    ]
+  },
+  {
+    "id": 138,
+    "name": "Craft and Taco Lounge",
+    "cuisine": "Tacos",
+    "price": "$$",
+    "distance": 1.39,
+    "rating": 4.6,
+    "address": "511 W Valley Pkwy, Escondido, CA 92025",
+    "phone": "(442) 999-5858",
+    "hours": "Open until 9:00 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/j35H-VoivB46zZL8U1cEMQ/o.jpg",
+    "menuImages": [
+      "assets/sushi-1.png",
+      "assets/sushi-2.png",
+      "assets/sushi-3.png"
+    ],
+    "reviews": [
+      {
+        "user": "Ricardo V.",
+        "rating": 5,
+        "comment": "Gourmet tacos with creative combinations! The Korean BBQ taco is amazing and the craft beer selection is excellent. Great atmosphere too.",
+        "date": "2024-12-01"
+      },
+      {
+        "user": "Hannah M.",
+        "rating": 4,
+        "comment": "Really good fusion tacos and strong margaritas. The fish taco with mango salsa was my favorite. Nice modern vibe and friendly service.",
+        "date": "2024-11-15"
+      }
+    ]
+  },
+  {
+    "id": 139,
+    "name": "Four Tunas Fish & Bar",
+    "cuisine": "Seafood",
+    "price": "$$",
+    "distance": 0.92,
+    "rating": 4.3,
+    "address": "601 North Broadway, Ste D, Escondido, CA 92025",
+    "phone": "(760) 975-3950",
+    "hours": "Open until 10:00 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/XNKZRhU28wNT8KaMCwxm7w/o.jpg",
+    "menuImages": [
+      "assets/sushi-1.png",
+      "assets/sushi-2.png",
+      "assets/sushi-3.png"
+    ],
+    "reviews": [
+      {
+        "user": "Ocean L.",
+        "rating": 4,
+        "comment": "Fresh seafood and great sushi selection. The ahi tuna was perfectly seared and the California roll was generous. Good happy hour deals too.",
+        "date": "2024-11-27"
+      },
+      {
+        "user": "Frank R.",
+        "rating": 4,
+        "comment": "Nice seafood spot with good variety. The fish and chips were crispy and the clam chowder was creamy. Reasonable prices for the quality.",
+        "date": "2024-11-12"
+      }
+    ]
+  },
+  {
+    "id": 140,
+    "name": "Upper East on Grand",
+    "cuisine": "Bars",
+    "price": "N/A",
+    "distance": 0.98,
+    "rating": 4.8,
+    "address": "155 E Grand Ave, Escondido, CA 92025",
+    "phone": "(442) 277-4123",
+    "hours": "Open until 11:45 PM",
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/mc1gljCU1Jj1-YDqQ2njGA/o.jpg",
+    "menuImages": [
+      "assets/sushi-1.png",
+      "assets/sushi-2.png",
+      "assets/sushi-3.png"
+    ],
+    "reviews": [
+      {
+        "user": "Jake B.",
+        "rating": 5,
+        "comment": "Awesome cocktail bar! The bartenders really know their craft and the atmosphere is upscale but not pretentious. Great date spot.",
+        "date": "2024-12-03"
+      },
+      {
+        "user": "Megan S.",
+        "rating": 5,
+        "comment": "Best cocktails in Escondido! Creative drinks and the bartenders are super knowledgeable. Love the modern vibe and it's never too crowded.",
+        "date": "2024-11-20"
+      }
+    ]
+  },
+  [
+  {
+    "id": 141,
+    "reviews": [
+      {
+        "user": "Hannah L.",
+        "rating": 5,
+        "date": "2025-06-02",
+        "comment": "Incredible flavors and friendly service! The lamb shawarma wrap was perfectly seasoned and juicy. Will definitely come back."
+      },
+      {
+        "user": "Mark T.",
+        "rating": 4,
+        "date": "2025-05-28",
+        "comment": "Great hummus and fresh pita, though the falafel was a tad dry. Cozy atmosphere and attentive staff."
+      }
+    ]
+  },
+  {
+    "id": 142,
+    "reviews": [
+      {
+        "user": "Jordan S.",
+        "rating": 5,
+        "date": "2025-06-05",
+        "comment": "Best smashed burger I’ve ever had! The toppings are inventive and the fries are perfectly crispy."
+      },
+      {
+        "user": "Emily R.",
+        "rating": 4,
+        "date": "2025-06-01",
+        "comment": "Fast service and delicious burgers, but the bun fell apart a bit. Still a solid spot for a casual meal."
+      }
+    ]
+  },
+  {
+    "id": 143,
+    "reviews": [
+      {
+        "user": "Carlos M.",
+        "rating": 4,
+        "date": "2025-05-30",
+        "comment": "Great selection of craft beers on tap and a lively outdoor patio. Food was good, though a bit pricey."
+      },
+      {
+        "user": "Sophia K.",
+        "rating": 5,
+        "date": "2025-06-03",
+        "comment": "Loved the beer flight sampler and the pretzel was soft and warm. Perfect spot for happy hour!"
+      }
+    ]
+  },
+  {
+    "id": 144,
+    "reviews": [
+      {
+        "user": "Liam P.",
+        "rating": 5,
+        "date": "2025-05-25",
+        "comment": "Quality meats and excellent service at Old World. The sausage sampler is a must-try."
+      },
+      {
+        "user": "Olivia W.",
+        "rating": 4,
+        "date": "2025-06-04",
+        "comment": "Friendly staff and fresh cuts. The bacon was out of this world, but parking was a bit tight."
+      }
+    ]
+  },
+  {
+    "id": 145,
+    "reviews": [
+      {
+        "user": "David H.",
+        "rating": 5,
+        "date": "2025-06-06",
+        "comment": "Incredible steaks cooked to perfection. The wine pairing was spot on. Worth the splurge!"
+      },
+      {
+        "user": "Natalie Z.",
+        "rating": 4,
+        "date": "2025-06-01",
+        "comment": "Elegant atmosphere and attentive service. Our filet mignon was delicious, though sides were average."
+      }
+    ]
+  },
+  {
+    "id": 146,
+    "reviews": [
+      {
+        "user": "Grace C.",
+        "rating": 4,
+        "date": "2025-05-29",
+        "comment": "Charming decor and innovative dishes. The smoked salmon benedict was a highlight."
+      },
+      {
+        "user": "Ethan B.",
+        "rating": 5,
+        "date": "2025-06-03",
+        "comment": "Fantastic new American fare. Tried the pork belly — tender and flavorful. Will return soon."
+      }
+    ]
+  },
+  {
+    "id": 147,
+    "reviews": [
+      {
+        "user": "Chloe S.",
+        "rating": 5,
+        "date": "2025-05-27",
+        "comment": "Fresh and vibrant salads with generous portions. The chicken gyro salad was outstanding."
+      },
+      {
+        "user": "Ryan G.",
+        "rating": 4,
+        "date": "2025-06-02",
+        "comment": "Great healthy options. The falafel was crispy but could use more seasoning."
+      }
+    ]
+  },
+  {
+    "id": 148,
+    "reviews": [
+      {
+        "user": "Mia J.",
+        "rating": 5,
+        "date": "2025-06-04",
+        "comment": "Authentic sushi and sashimi. The toro melt roll was creamy and perfectly balanced."
+      },
+      {
+        "user": "Noah D.",
+        "rating": 4,
+        "date": "2025-05-31",
+        "comment": "Good quality and fresh fish, though service was a bit slow on a busy night."
+      }
+    ]
+  },
+  {
+    "id": 149,
+    "reviews": [
+      {
+        "user": "Avery F.",
+        "rating": 4,
+        "date": "2025-06-05",
+        "comment": "Lovely outdoor seating with great views. The burger was tasty, but the fries were soggy."
+      },
+      {
+        "user": "Lucas N.",
+        "rating": 5,
+        "date": "2025-06-02",
+        "comment": "Fantastic ambiance and friendly staff. The fish tacos were flavorful and fresh."
+      }
+    ]
+  },
+  {
+    "id": 150,
+    "reviews": [
+      {
+        "user": "Zoe P.",
+        "rating": 5,
+        "date": "2025-06-03",
+        "comment": "Amazing broth and high-quality meats for hot pot. Great communal dining experience."
+      },
+      {
+        "user": "Jack L.",
+        "rating": 4,
+        "date": "2025-05-29",
+        "comment": "Wide variety of ingredients and fresh vegetables. Broth was a bit salty for my taste."
+      }
+    ]
+  },
+
+
+  {
     "id": 201,
     "name": "Ajisen Ramen San Diego",
     "cuisine": "Japanese",
@@ -4299,4 +5598,5 @@
       }
     ]
   }
+]
 ]
