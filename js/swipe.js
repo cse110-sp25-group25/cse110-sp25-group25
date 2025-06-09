@@ -381,13 +381,15 @@ function handleViewedCard(id) {
 function checkIfAllSwiped() {
     const endScreen = document.getElementById("end-screen");
     const cardContainer = document.getElementById("card-container");
-    // const resetButton = document.querySelector('.button-type3');
     const swipeButtons = document.querySelector('.swipe-buttons');
+    const cardHint = document.querySelector('.card-hint');
 
     // hide cardContainer
     cardContainer.style.display = "none";
     // hide swipe buttons
     swipeButtons.style.display = "none";
+    // hide card hint
+    if (cardHint) cardHint.style.display = "none";
     // display end screen
     endScreen.style.display = "block";
 
