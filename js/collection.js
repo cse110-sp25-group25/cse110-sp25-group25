@@ -7,8 +7,9 @@ MOBILE_HIDER.innerHTML = `.hidden { display: none !important; }`;
 document.head.appendChild(MOBILE_HIDER);
 
 function init() {
-
     const deckList = document.querySelector(".deck-list");
+    if (!deckList) return; // Only run on pages with a deck-list
+
     const clearBtn = document.querySelector('.clear-deck-btn');
     const cuisineFilter = document.getElementById('cuisine-filter');
     const ratingsFilter = document.getElementById('ratings-filter');
@@ -17,7 +18,9 @@ function init() {
 
     // back button for mobile view
     const backBtnContainer = document.getElementById("back-button-container");
-    backBtnContainer.classList.add('hidden');
+    if (backBtnContainer) {
+        backBtnContainer.classList.add('hidden');
+    }
     
     // left view card div
     const deckBody = document.getElementById('left-body');
