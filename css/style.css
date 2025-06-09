@@ -945,3 +945,11 @@ nav ul {
     padding: 35px 20px; 
   }
 }
+
+.card-hint {
+  text-align: center;
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  font-style: italic;
+}
