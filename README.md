@@ -14,6 +14,7 @@
 >   - [ADRs](#adrs)
 >   - [CI/CD Pipeline](#cicd-pipeline)
 >   - [Team Status Video](#team-status-video)
+>   - [Final Videos](#final-videos)
 > - [Non-Assignment Additional Artifacts](#non-assignment-additional-artifacts)
 
 
@@ -33,7 +34,7 @@
 ---
 ## 📜 Documentation
 
-Documentation for code can be viewed [here](https://cse110-sp25-group25.github.io/cse110-sp25-group25/docs/jsdoc). Documentation is maintained automatically with JS Docs.
+Documentation for code can be viewed [here](https://cse110-sp25-group25.github.io/cse110-sp25-group25/docs/jsdoc). Documentation is maintained automatically with **JS Docs**.
 
 ---
 
@@ -82,23 +83,25 @@ To work smoothly as a team, follow these rules when contributing:
 5. Make sure to **clear localStorage** before using the website
 
 ### How do I test my code for correctness and quality?
-- We use Jest and ESLint locally, and check for other tests in GitHub PRs through GitHub actions. Learn more in our [CI/CD Pipeline Folder](admin\cipipeline).
+- We use Jest and ESLint locally, and check for other tests in GitHub PRs through GitHub actions. Learn more in our [CI/CD Pipeline Folder](admin/cipipeline).
 - Steps
-    - Install dependencies:
-        - `npm install`
+    - Install the following dependencies:
+        - `npm install --save-dev eslint @eslint/js`
+        `npm install --save-dev jest`
     - To run the tests, simply run
         - `npm run test`
     - To run the linter, simply run
-        - `npm run lint`
+        - `npx eslint ./`
       - To run the E2E (end to end) testing with Puppeteer
         - `npx http-server . -p 3000`
         - `npm run test:e2e`
 
 ### I don’t know what to build next!
 - Here are some features we want to implement in the future. Feel free to pick any one!
-    - [Implement an actual GPS to see user location](https://github.com/cse110-sp25-group25/cse110-sp25-group25/issues/185) 
-    - [Implement a dark mode appearance](https://github.com/cse110-sp25-group25/cse110-sp25-group25/issues/186)
-    - [Implement "deck" feature for users to group together restaurant cards](https://github.com/cse110-sp25-group25/cse110-sp25-group25/issues/187)
+    - Implement an actual GPS to see user location ([Issue #185](https://github.com/cse110-sp25-group25/cse110-sp25-group25/issues/185))
+    - Implement a dark mode appearance ([Issue #186](https://github.com/cse110-sp25-group25/cse110-sp25-group25/issues/186))
+    - Implement "deck" feature for users to group together restaurant cards ([Issue #187](https://github.com/cse110-sp25-group25/cse110-sp25-group25/issues/187))
+    - Use Jupyter Notebook to Feed data into `restaruants.json` ([Issue #217](https://github.com/cse110-sp25-group25/cse110-sp25-group25/issues/217))
 
 **✅ Stay consistent, commit often, and ask questions if you're stuck!**
 
@@ -131,11 +134,11 @@ To work smoothly as a team, follow these rules when contributing:
 - [All TA Meeting notes](admin/meetings/ta)
 - **Final Project Brainstorming**
   - [Project Pitch Session Meeting Notes](admin/meetings/team/04-24-brainstorm.md)
-  - [Research and Brainstorming of App (Miro Board Screenshots)](specs/brainstorm)
+  - [Research and Brainstorming of App (Miro Board Screenshots)](admin/specs/brainstorm)
 - **Initial Roadmap/ Project Planning**
   - [Roadmap](admin/meetings/team/05-01.md)
 - **Sprint 1 (Week 6)** *{Release Version 0.1.0}*
-  - [Planning](admin/meetings/team/05-05.md)
+  - [Planning](admin/meetings/team/05-06.md)
   - This is before we got the class assignment. So, we didn't do the review & retrospective
 - **Sprint 2 (Week 7)** *{Release Version 0.2.0}*
   - [Planning](admin/meetings/team/05-12.md)
@@ -153,17 +156,19 @@ To work smoothly as a team, follow these rules when contributing:
 ### External Resources Used During Final Project
 - [Research and UI/UX Miro Board](https://miro.com/app/board/uXjVI-bk2XA=/)
 - [Story Points Tracker Google Sheet](https://docs.google.com/spreadsheets/d/1KHr-oWJG1LsK_x6JcyCNjkuOzHwOuADGSEI65wSjzXE/edit?gid=0)
+- [Retrospective Miro Board](https://miro.com/app/board/uXjVI0PCs7Q=/)
 
 ### ADRs
+- [MADR Template](admin/adr/adr-template.md)
 - **Checkpoint 1**
-  - [Choosing Figma](specs/adrs/050925-Choose-Figma.md)
-  - [Choosing JEST](specs/adrs/051025-Choosing-JEST.md)
+  - [Choosing Figma](admin/adr/050925-Choose-Figma.md)
+  - [Choosing JEST](admin/adr/051025-Choosing-JEST.md)
 - **Checkpoint 2**
-  - [Choosing GitHub Pages](specs/adrs/052325-Choosing-Github-Pages.md)
-  - [Choosing Local Storage](specs/adrs/052225-Choose-Local-Storage.md)
-  - [Choosing JS Docs](specs/adrs/052525-Choosing-JSDocs.md)
-  - [Choosing Quality Monitor](specs/adrs/052425-Choosing-Quality-Monitor.md)
-  - [Choosing Puppeteer](specs/adrs/060325-Choosing-Puppeteer.md)
+  - [Choosing GitHub Pages](admin/adr/052325-Choosing-Github-Pages.md)
+  - [Choosing Local Storage](admin/adr/052225-Choose-Local-Storage.md)
+  - [Choosing JS Docs](admin/adr/052525-Choosing-JSDocs.md)
+  - [Choosing Quality Monitor](admin/adr/052425-Choosing-Quality-Monitor.md)
+  - [Choosing Puppeteer](admin/adr/060325-Choosing-Puppeteer.md)
 
 ### CI/CD Pipeline
 - **Phase 1**
@@ -177,9 +182,14 @@ To work smoothly as a team, follow these rules when contributing:
 
 ### Team Status Video
 - [Team Status Video 1 (YouTube Link)](https://www.youtube.com/watch?v=xgqD52VNC9c)
+
+### Final Videos
 - [Final Video - Public (YouTube Link)](https://youtu.be/RsdXc6LISlE)
+- [Final Video - Private (YouTube Link)](https://youtu.be/fJ2mBWyTGKA)
 
 ---
 
 ## Non-Assignment Additional Artifacts
+- [Code Style Guidelines](admin/specs/coding-style-guide.md)
 - [Stakeholder Testing](docs/stakeholder-testing.md)
+- [User Acceptance Testing](https://docs.google.com/spreadsheets/d/1zkcEC4RRC5TPlvkgCrcp4gYG2d2CrjXKZdi5RZDwySs/edit?usp=sharing)

@@ -20,8 +20,3 @@
   - Make the logo clickable
 - Any gaps or issues?
   - Nope
-
-fix =
-
-
-like =
