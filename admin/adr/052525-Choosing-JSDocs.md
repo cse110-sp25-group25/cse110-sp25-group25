@@ -6,7 +6,7 @@ consulted: {Shelby}
 informed: {Evan, Harry, Harrison, Kate, Ethan, Kalkin, Joshua, Nathan, Joshua, Cass, Yilin, Thomas}
 ---
 
-# Choosing Local Storage
+# Choosing JSDocs
 
 ## Context and Problem Statement
 
