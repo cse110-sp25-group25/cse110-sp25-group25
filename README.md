@@ -85,9 +85,8 @@ To work smoothly as a team, follow these rules when contributing:
 ### How do I test my code for correctness and quality?
 - We use Jest and ESLint locally, and check for other tests in GitHub PRs through GitHub actions. Learn more in our [CI/CD Pipeline Folder](admin/cipipeline).
 - Steps
-    - Install the following dependencies:
-        - `npm install --save-dev eslint @eslint/js`
-        `npm install --save-dev jest`
+    - Install dependencies:
+        - `npm install`
     - To run the tests, simply run
         - `npm run test`
     - To run the linter, simply run
@@ -101,7 +100,7 @@ To work smoothly as a team, follow these rules when contributing:
     - Implement an actual GPS to see user location ([Issue #185](https://github.com/cse110-sp25-group25/cse110-sp25-group25/issues/185))
     - Implement a dark mode appearance ([Issue #186](https://github.com/cse110-sp25-group25/cse110-sp25-group25/issues/186))
     - Implement "deck" feature for users to group together restaurant cards ([Issue #187](https://github.com/cse110-sp25-group25/cse110-sp25-group25/issues/187))
-    - Use Jupyter Notebook to Feed data into `restaruants.json` ([Issue #217](https://github.com/cse110-sp25-group25/cse110-sp25-group25/issues/217))
+    - Use Jupyter Notebook to feed data into `restaruants.json` ([Issue #217](https://github.com/cse110-sp25-group25/cse110-sp25-group25/issues/217))
 
 **✅ Stay consistent, commit often, and ask questions if you're stuck!**
 
